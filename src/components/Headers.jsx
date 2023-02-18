@@ -23,10 +23,10 @@ const Headers = () => {
                 About Alexa
              </a> 
              <a href ="a" className=""> 
-                Services
-             </a> 
-             <a href ="a" className=""> 
                 Desarrollos
+             </a>  
+             <a href ="a" className=""> 
+                Services
              </a> 
          </nav>
          <button 
