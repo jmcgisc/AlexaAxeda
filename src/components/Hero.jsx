@@ -19,7 +19,7 @@ export const Hero = () => {
                 <p className="text-gray-500 text-xl leading-[2.5rem]">Tu legado es lo más importante, por eso desarrollamos proyectos en las zonas de mayor crecimiento y demanda con un solo objetivo en mente: Generar abundancia para nuestros inversionistas.</p>
     
                 <div className="flex flex-col md:flex-row items-center gap-4">
-                    <button className="w-full xl:w-auto bg-primary text-white py-2 px-8 rounded-xl text-xl">
+                    <button className="w-full xl:w-auto bg-primary text-white py-2 px-8 rounded-xl text-xl shadow-lg shadow-indigo-500/40">
                         Contáctame 
                     </button>
                     <button className="flex items-center justify-start text-left gap-4 py-9 px-20 rounded-xl text-xl" >

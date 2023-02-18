@@ -4,6 +4,8 @@ import React from 'react'
 import { Hero } from "./components/Hero" 
 import Menciones from "./components/Menciones" 
 import Desarrollos from "./components/Desarrollos"
+import Reviews from "./components/Reviews"
+import Footer from "./components/Footer"
 
 function App() {
 
@@ -12,7 +14,9 @@ function App() {
           <Headers/>
           <Hero/>  
           <Desarrollos/>
+          <Reviews/>
           <Menciones/>
+          <Footer/>
 
       </div>
   );
