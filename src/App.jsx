@@ -1,14 +1,16 @@
 
 import Headers from "./components/Headers"
 import React from 'react'
-import { Hero } from "./components/Hero"
+import { Hero } from "./components/Hero" 
+import Menciones from "./components/Menciones"
 
 function App() {
 
   return( 
-      <div> 
+      <div>  
           <Headers/>
-          <Hero/>
+          <Hero/> 
+          <Menciones/>
       </div>
   );
 } 
