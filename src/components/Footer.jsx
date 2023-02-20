@@ -32,11 +32,7 @@ const Footer = () => {
           <a href="#" className="block text-white p-4 bg-primary rounded-full">
             {" "}
             <RiTwitterLine />{" "}
-          </a>
-          <a href="#" className="block text-white p-4 bg-primary rounded-full">
-            {" "}
-            <RiGithubLine />{" "}
-          </a>
+          </a> 
         </nav>
       </div>
       <div className="mt-8">

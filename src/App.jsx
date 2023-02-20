@@ -6,6 +6,7 @@ import Menciones from "./components/Menciones"
 import Desarrollos from "./components/Desarrollos"
 import Reviews from "./components/Reviews"
 import Footer from "./components/Footer"
+import FormularioContacto from "./components/FormularioContacto"
 
 function App() {
 
@@ -16,6 +17,8 @@ function App() {
           <Desarrollos/>
           <Reviews/>
           <Menciones/>
+          <FormularioContacto/>
+        
           <Footer/>
 
       </div>
