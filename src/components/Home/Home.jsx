@@ -1,8 +1,13 @@
 import React from 'react'
 import {RiCheckboxBlankCircleFill, RiPlayFill, RiStarFill} from "react-icons/ri"
+import Menciones from "./Menciones" 
+import Desarrollos from "./Desarrollos"
+import Reviews from "./Reviews"
+import FormularioContacto from "./FormularioContacto"
 
-export const Hero = () => {
+export const Home = () => {
     return ( 
+        <>
         <section id="home" className="min-h-[90vh] grid grid-cols-1 xl:grid-cols-8">  
         {/*Information*/}
         <div className="md:col-span-5 flex items-center justify-center p-12 py-8 xl:p-16">
@@ -33,8 +38,8 @@ export const Hero = () => {
             <div className="md:col-span-3 flex items-center justify-center relative">
             {/* Content image */}
             <div>
-            <img  src="Alexa-removebg-preview.png"
-                className="w-[250px] h-[250px] md:w-[250px] md:h-[250px] object-cover xl:-mt-8"
+            <img    src="Alexa-removebg-preview.png"
+                    className="w-[250px] h-[250px] md:w-[250px] md:h-[250px] object-cover xl:-mt-8" 
             />
             <div className="relative bg-white shadow-xl rounded-lg p-4 flex flex-col justify-center gap-2 max-w-[250px] mx-auto -mt-12">
                 <div className="flex items-center">
@@ -73,6 +78,7 @@ export const Hero = () => {
                 </div>
             </div>
             </div>
+
             {/* Circle */}
             <div className="absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 w-[280px] h-[280px] md:w-[380px] md:h-[380px] bg-white border-[10px] border-primary rounded-full -z-10"></div>
 
@@ -90,6 +96,15 @@ export const Hero = () => {
             className="w-10 h-10 md:w-20 md:h-20 object-cover rounded-full absolute bottom-[5%] left-[15%] xl:left-[3%] -rotate-12"
             />
             </div>
+            
             </section> 
+            
+            {/*Body Page*/}
+            <Desarrollos/>
+            <Reviews/>
+            <Menciones/>
+            <FormularioContacto/> 
+        </>
     ) 
+
 }
