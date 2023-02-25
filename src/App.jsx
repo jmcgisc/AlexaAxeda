@@ -36,7 +36,7 @@ function App() {
             <Route path = '/components/footer/Terminos'       element ={ <Terminos/> } />
             <Route path = '/components/footer/Privacidad'     element ={ <Privacidad/> } /> */}
                 
-          </Routes> 
+          </Routes>  
  
         <Footer/>     
               {/* 
