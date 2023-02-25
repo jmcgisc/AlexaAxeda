@@ -5,7 +5,7 @@ import Rosavento  from "./components/Desarrollos/Rosavento"
 import Rosenda    from "./components/Desarrollos/Rosenda"
 import Indo       from "./components/Desarrollos/Indo"
 import Footer     from "./components/Footer"
-import Bio        from "./components/footer/Bio"
+// import Bio        from "./components/footer/Bio"
 import Prensa     from "./components/footer/Prensa" 
 import Inversores from "./components/footer/Inversores"
 import Eventos    from "./components/footer/Eventos"
@@ -29,7 +29,7 @@ function App() {
             <Route path = '/indo'      element ={ <Indo/> } />
 
             {/* Footer */}
-            <Route path = '/components/footer/Bio'            element ={ <Bio/> } />
+            {/* <Route path = '/components/footer/Bio'            element ={ <Bio/> } /> */}
             <Route path = '/components/footer/Prensa'         element ={ <Prensa/> } />
             <Route path = '/components/footer/Inversores'     element ={ <Inversores/> } />
             <Route path = '/components/footer/Eventos'        element ={ <Eventos/> } />
