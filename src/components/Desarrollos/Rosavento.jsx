@@ -7,10 +7,22 @@ const Rosavento = () => {
             <div className ="flex flex-cols py-8 px-6 ">
                 <ReactPlayer
                     url='https://www.youtube.com/watch?v=e6qNM45bUHg'
+                    className='react-player' 
+                    controls
+                    playIcon	
+                    width='1000px'
+                    height='563px' 
+                />
+            </div>
+
+            <div className ="flex flex-cols py-8 px-6 ">
+                <ReactPlayer
+                    url=' https://www.youtube.com/watch?v=pnsNE5oqZOo&t=3s'
                     className='react-player'
-                    playing
-                    width='30%'
-                    height='30%'
+                    controls
+                    playIcon	
+                    width='1000px'
+                    height='563px' 
                 />
             </div>
         </>
