@@ -13,9 +13,9 @@ const Desarrollos = () => {
             </div>
             {/*Desarrollos*/}
             <div className="grid grid-cols-1 xl:grid-cols-2 gap-8">
-                <div className="flex flex-col gap-2   rounded-3xl"> 
+                <div className="flex flex-col gap-2 rounded-3xl"> 
 
-                <img src="INDO.webp" className="w-full h-[650px] rounded-3xl" />
+                <img src="INDO.webp" className="w-full h-56 xl:h-[590px] rounded-3xl" />
                     <p className="text-gray-500"> Terrenos industriales en Yucatán
                       <h3 className="text-2xl font-bold">INDO Parque Industrial</h3>
                     </p>
