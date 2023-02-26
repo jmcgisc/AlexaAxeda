@@ -5,18 +5,16 @@ import {BiChevronDown}          from "react-icons/bi"
 import { NavLink }                     from "react-router-dom"; 
 import { Menu, Transition }            from '@headlessui/react' 
 
-
 function classNames(...classes) {
    return classes.filter(Boolean).join(' ')
  }
  
-
 const Headers = () => {
     const [showMenu, setShowMenu] = useState (false);
     return (
      <header className="flex flex-cols items-center justify-between  w-full py-4 px-8 h-[10vh] z-50" >
 
-      <div className="xl:w-1/6  basis-2/5 text-center mt-3">
+      <div className="xl:w-1/6  basis-2/5 text-center mt-3 pl-7">
          <a href="/" className="text-2xl font-bold relative p-1 bg-white">
                <img className=" " src={image} alt="Logotipo Axeda"/>  
          </a>
@@ -29,8 +27,9 @@ const Headers = () => {
       >
             
          <div className ="inline-flex w-full justify-center rounded-md border border-gray-300 bg-white px-4 py-2 
-         text-sm font-medium text-gray-700 font-mono	
-         shadow-sm hover:bg-gray-50 focus:outline-none focus:border-orange-600 focus:ring-orange-600 block w-full rounded-md sm:text-sm focus:ring-1">
+            text-sm font-medium text-gray-700 font-mono	
+            shadow-sm hover:bg-gray-50 focus:outline-none focus:border-orange-600 focus:ring-orange-600 block w-full 
+            rounded-md sm:text-sm focus:ring-1">
 
             <NavLink to = "/" > Home</NavLink> 
 
@@ -77,15 +76,15 @@ const Headers = () => {
                <div className="py-1">
                   <Menu.Item>
                   {({ active }) => ( 
-                     <a
-                        href="/rosenda"
-                        className={classNames(
+                       <NavLink  className ={classNames(
                         active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
                         'block px-4 py-2 text-sm font-mono text-center'
                         )}
-                     >
-                        Rosenda
-                     </a>
+ 
+                           to="/rosenda" 
+                        >
+                           Rosenda  
+                     </NavLink>
                   )}
                   </Menu.Item>
                </div> 
@@ -93,15 +92,15 @@ const Headers = () => {
                <div className="py-1">
                   <Menu.Item>
                   {({ active }) => (
-                     <a
-                        href="/Indo"
-                        className={classNames(
+                       <NavLink  className ={classNames(
                         active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
                         'block px-4 py-2 text-sm font-mono text-center'
                         )}
-                     >
-                        Indo
-                     </a>
+ 
+                           to="/indo" 
+                        >
+                           Indo  
+                     </NavLink>
                   )}
                   </Menu.Item>
                </div> 
