@@ -43,37 +43,127 @@ const FormularioContacto = () => {
 
                                 <div>
                                     <label for="" class="text-sm">Correo electrónico*</label>
-                                    <input type="text" placeholder="Correo electrónico*" className="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 outline-none 
+                                    <input type="text" placeholder="inversor@gmail.com" className="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 outline-none 
                                     focus:ring-2 focus:ring-teal-300 "/>
                                 </div>
 
                                 <div>
                                     <label for="" class="text-sm">Número de movil*</label>
-                                    <input type="text" placeholder="Número de movil*" className="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 outline-none 
+                                    <input type="text" placeholder="+52 55 55 55 55 55" className="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 outline-none 
                                     focus:ring-2 focus:ring-teal-300 "/>
                                 </div>
 
                                 <div>
                                     <label for="" class="text-sm">Desarrollo de interés</label>
-                                    <input type="text" placeholder="Desarrollo de interés" className="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 outline-none 
-                                    focus:ring-2 focus:ring-teal-300 "/>
+                               
                                 </div>
 
                                 <div>
-                                    <label for="" class="text-sm">alguna pregunta del terreno...</label> 
-                                    <input type="text" placeholder="xxxx" className="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 outline-none 
-                                    focus:ring-2 focus:ring-teal-300 "/>
+                                <select className="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 outline-none 
+                                    focus:ring-2 focus:ring-teal-300">
+                                        <option className="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 outline-none 
+                                            focus:ring-2 focus:ring-teal-300 " >
+                                            Click para ver opciones
+                                        </option>
+
+                                        <option value="Merida">
+                                            Rosavento Mérida
+                                        </option>
+
+                                        <option value ="Cancun"> 
+                                            Rosavento Cancún
+                                        </option>
+
+                                        <option value="Indo">
+                                             Indo
+                                        </option>
+
+                                        <option value="Rosenda Temozon">
+                                             Rosenda Temozón
+                                        </option>
+
+                                        <option value="Rosavento Merida y Cancun">
+                                             Rosavento Mérida y Cancún 
+                                        </option>
+
+                                        <option value="Terravento">
+                                             Terravento
+                                        </option>
+                                    </select> 
                                 </div>
 
                                 <div>
                                     <label for="" class="text-sm">Inversión estimada para el enganche</label> 
-                                    <input type="text" placeholder="Inversión estimada para el enganche" className="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 outline-none 
-                                    focus:ring-2 focus:ring-teal-300 "/>
+                                </div>
+
+                                <div>
+                                <select  className="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 outline-none 
+                                    focus:ring-2 focus:ring-teal-300">
+
+                                        <option className="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 outline-none 
+                                            focus:ring-2 focus:ring-teal-300 ">
+                                            Click para ver opciones
+                                        </option>
+
+                                        <option className="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 outline-none 
+                                            focus:ring-2 focus:ring-teal-300 " value="Al rededor de  $45,000 mil y mensualidades 1890 de enganche 140 m2 de terreno">
+                                            Al rededor de  $45,000 mil y mensualidades 1890 de enganche 140 m2 de terreno
+                                        </option>
+
+                                        <option className="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 outline-none 
+                                            focus:ring-2 focus:ring-teal-300 " value="Al rededor de $95,000 mil y mensualidades 6500 de enganche 300 m2 de terreno">
+                                            Al rededor de $95,000 mil y mensualidades 6500 de enganche 300 m2 de terreno
+                                        </option>
+
+                                        <option className="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 outline-none 
+                                            focus:ring-2 focus:ring-teal-300 " value="Aun no se,  esto evaluandolo">
+                                            Aun no lo sé, estoy evaluandolo
+                                        </option>
+                                </select >
+                                </div>
+
+                                <div>
+                                    <label for="" class="text-sm">Interesado en: </label> 
+                                </div>
+                                
+                                <div>
+
+                                <select  className="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 outline-none 
+                                    focus:ring-2 focus:ring-teal-300">
+
+                                        <option value="opcion 3" >
+                                            Click para ver opciones
+                                        </option>
+
+                                        <option value="Quiero comprar un terreno residencial para construir una casa">
+                                            Quiero comprar un terreno residencial para construir una casa
+                                        </option>
+
+                                        <option value="Quiero empezar a invertir en bienes inmuebles por primera vez">
+                                            Quiero empezar a invertir en bienes inmuebles por primera vez
+                                        </option>
+
+                                        <option value="Quiero invertir en un patrimonio para mi familia">
+                                            Quiero invertir en un patrimonio para mi familia
+                                        </option>
+
+                                        <option value="Quiero comprar un terreno para después re-vender y generar ingresos">
+                                            Quiero comprar un terreno para después re-vender y generar ingresos
+                                        </option>
+
+                                        <option value="Quiero comprar un terreno para tener un lugar para vacacionar con mi familia">
+                                            Quiero comprar un terreno para tener un lugar para vacacionar con mi familia
+                                        </option>
+
+                                        <option value="Estoy interesado pero aún no se para que usaré mi terreno">
+                                            Estoy interesado pero aún no se para que usaré mi terreno
+                                        </option>
+                                </select >            
                                 </div>
 
                                 <div>
                                     <label for="" class="text-sm">Mensaje</label> 
-                                    <input type="text" placeholder="Mensaje" className="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 outline-none 
+                                    <input type="text" placeholder="Deja que te asesoremos, escribenos cualquier duda y con gusta te atenderemos" className="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 outline-none 
                                     focus:ring-2 focus:ring-teal-300 "/>
                                 </div>
  

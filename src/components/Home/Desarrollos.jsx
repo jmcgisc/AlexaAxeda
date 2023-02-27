@@ -15,14 +15,13 @@ const Desarrollos = () => {
             <div className="grid grid-cols-1 xl:grid-cols-2 gap-8">
                 <div className="flex flex-col gap-2 rounded-3xl"> 
 
-                <img src="INDO.webp" className="w-full h-56 xl:h-[590px] rounded-3xl" />
-                    <p className="text-gray-500"> Terrenos industriales en Yucatán
-                      <h3 className="text-2xl font-bold">INDO Parque Industrial</h3>
-                    </p>
-                        <p className="text-gray-500 ">
-                        Yucatán es considerado como el estado con mayor crecimiento económico de México, además es líder en la generación y distribución de energía eléctrica.
-                        </p> 
+                    <img src="carrusel11.jpg" className="w-full h-56 xl:h-[590px] rounded-3xl" />
+                        <p className="text-gray-500"> Tu terreno en el paraíso.
+                        <h3 className="text-2xl font-bold">Rosavento Cancún</h3>
+                        </p>
+                        <p className="text-gray-500 ">Terrenos residenciales en Cancún. Mensualidades desde $3,097.05 MX.</p> 
                 </div>
+
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
 
                     <div className="flex flex-col gap-4">
@@ -33,14 +32,7 @@ const Desarrollos = () => {
                             <h3 className="text-2xl font-bold text-gray-400 ">ROSAVENTO Ciudad Maya </h3>
                     </div>
 
-                    <div className="flex flex-col gap-4">
-                        <img src="carrusel11.jpg" className="w-full h-56 object-cover rounded-3xl 
-                        transition duration-700 ease-in-out transform hover:-translate-y-1 hover:scale-110 hover:shadow-2xl
-                        "/>
-                        <p className="text-gray-500"> Terrenos residenciales en Cancún. Mensualidades desde $3,097.05 MXN </p>
-                            <h3 className="text-2xl font-bold text-gray-400 ">ROSAVENTO Cancún </h3>
-                    </div>
-
+             
                     <div className="flex flex-col gap-4">
                         <img src="rosenda.webp" className="w-full h-56 object-cover rounded-3xl 
                         transition duration-700 ease-in-out transform hover:-translate-y-1 hover:scale-110 hover:shadow-2xl
@@ -56,6 +48,15 @@ const Desarrollos = () => {
                         "/>
                         <p className="text-gray-500"> La  plusvalía inmobiliaria en Mérida creció un 7.4% y tiene un escenario de crecimiento hacia la próxima década. </p>
                             <h3 className="text-2xl font-bold text-gray-400 ">Terravento Pedregal Residencial </h3>
+                    </div>
+
+                    <div className="flex flex-col gap-4">
+                            <img src="INDO.webp" className="w-full h-56 object-cover rounded-3xl 
+                            transition duration-700 ease-in-out transform hover:-translate-y-1 hover:scale-110 hover:shadow-2xl
+                            "/>
+                            <p className="text-gray-500"> 
+                            Yucatán es considerado como el estado con mayor crecimiento económico de México, además es líder en la generación y distribución de energía eléctrica. </p>
+                                <h3 className="text-2xl font-bold text-gray-400 ">INDO Parque Industrial</h3>
                     </div>
 
                     
