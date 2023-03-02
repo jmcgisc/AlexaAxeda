@@ -6,7 +6,7 @@ const FormularioContacto = () => {
     return ( 
         <div className ="antialiased bg-gray-100 overflow-hidden">
 
-            <div className="flex flex-col w-full justify-center items-center overflow-hidden">
+            <div className="flex flex-col grid grid-cols-1 w-full justify-center items-center overflow-hidden">
                 <div className ="flex flex-col md:flex-row md:space-x-6 md:space-y-0 space-y-6 bg-cyan-700 p-8 rounded-xl shadow-lg text-white overflow-hidden">  
                         
                         <div className ="flex flex-col space-y-8 justify-berween">
@@ -36,25 +36,31 @@ const FormularioContacto = () => {
 
                             <form action ="" className="flex flex-col space-y-4 " >
                                 <div>
-                                    <label for="" class="text-sm">Nombre Completo*</label>
-                                    <input type="text" placeholder="Nombre Completo" className="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 outline-none 
+                                    <label  for="fname" class="text-sm text-sm after:content-['*'] after:ml-0.5 after:text-red-500">
+                                        Nombre Completo</label>
+                                    <input  type="text" placeholder="Nombre Completo" 
+                                            className="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 outline-none requiere
                                     focus:ring-2 focus:ring-teal-300 "/>
                                 </div>
 
-                                <div>
-                                    <label for="" class="text-sm">Correo electrónico*</label>
-                                    <input type="text" placeholder="inversor@gmail.com" className="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 outline-none 
-                                    focus:ring-2 focus:ring-teal-300 "/>
+                                <div> 
+                                    <label  for="" class="text-sm after:content-['*'] after:ml-0.5 after:text-red-500">
+                                        Correo electrónico </label>
+                                    <input  type="email" placeholder="inversor@gmail.com" 
+                                            className="w-full rounded-md px-4 py-2 outline-none ring-1 ring-gray-300 focus:ring-2 focus:ring-teal-300 invalid:border-pink-500 invalid:text-pink-600 peer focus:invalid:border-pink-500 focus:invalid:ring-pink-500"/>
+                                        <p class="mt-2 invisible peer-invalid:visible text-pink-600 text-sm">
+                                            Por favor introduce un E-mail valido.
+                                        </p>
                                 </div>
 
                                 <div>
-                                    <label for="" class="text-sm">Número de movil*</label>
+                                    <label for="" class="text-sm">Número de movil</label>
                                     <input type="text" placeholder="+52 55 55 55 55 55" className="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 outline-none 
                                     focus:ring-2 focus:ring-teal-300 "/>
                                 </div>
 
                                 <div>
-                                    <label for="" class="text-sm">Desarrollo de interés</label>
+                                    <label for="" class="text-sm">Desarrollos</label>
                                
                                 </div>
 
@@ -63,7 +69,7 @@ const FormularioContacto = () => {
                                     focus:ring-2 focus:ring-teal-300">
                                         <option className="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 outline-none 
                                             focus:ring-2 focus:ring-teal-300 " >
-                                            Click para ver opciones
+                                            Estoy interesado/a en...
                                         </option>
 
                                         <option value="Merida">
@@ -163,8 +169,10 @@ const FormularioContacto = () => {
 
                                 <div>
                                     <label for="" class="text-sm">Mensaje</label> 
-                                    <input type="text" placeholder="Deja que te asesoremos, escribenos cualquier duda y con gusta te atenderemos" className="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 outline-none 
-                                    focus:ring-2 focus:ring-teal-300 "/>
+                                    <textarea
+                                    type="textarea" placeholder="Deja que te asesoremos, escribenos cualquier duda y con gusto te atenderemos" className="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 outline-none 
+                                    focus:ring-2 focus:ring-teal-300"
+                                    />
                                 </div>
  
                                 <button
