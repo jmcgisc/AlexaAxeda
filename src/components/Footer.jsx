@@ -32,15 +32,15 @@ const Footer = () => {
         </div>
         {/* Social media */}
         <nav className="flex items-center gap-4">
-          <a href="#" className="block text-white p-4 bg-primary rounded-full">
+          <a href="#" className="block text-white p-4 bg-axeda rounded-full">
             {" "}
             <RiInstagramLine />{" "}
           </a>
-          <a href="#" className="block text-white p-4 bg-primary rounded-full">
+          <a href="#" className="block text-white p-4 bg-axeda rounded-full">
             {" "}
             <RiFacebookLine />{" "}
           </a>
-          <a href="#" className="block text-white p-4 bg-primary rounded-full">
+          <a href="#" className="block text-white p-4 bg-axeda rounded-full">
             {" "}
             <RiTwitterLine />{" "}
           </a> 
@@ -78,7 +78,7 @@ const Footer = () => {
 
           <button
             type="button"
-            className="font-semibold py-2 px-6 bg-primary text-white rounded-xl shadow-lg shadow-indigo-500/40"
+            className="font-semibold py-2 px-6 bg-axeda text-white rounded-xl shadow-lg shadow-indigo-500/40"
           >
             Contáctame
           </button>

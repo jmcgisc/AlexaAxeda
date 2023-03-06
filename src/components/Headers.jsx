@@ -1,7 +1,7 @@
 import React, { Fragment, useState }   from "react";
 import image                           from "./images/axeda-logo.png"
 import {RiMenuLine, RiCloseLine}       from "react-icons/ri"
-import {BiChevronDown}          from "react-icons/bi"
+import {BiChevronDown}                 from "react-icons/bi"
 import { NavLink }                     from "react-router-dom"; 
 import { Menu, Transition }            from '@headlessui/react' 
 
@@ -12,7 +12,7 @@ function classNames(...classes) {
 const Headers = () => {
     const [showMenu, setShowMenu] = useState (false);
     return (
-     <header className="flex flex-cols items-center justify-between  w-full py-4 px-8 h-[10vh] z-50" >
+     <header className="flex flex-cols items-center justify-between w-full py-4 px-8 h-[10vh] z-50" >
 
       <div className="xl:w-1/6  basis-2/5 text-center mt-3 pl-7">
          <a href="/" className="text-2xl font-bold relative p-1 bg-white">
@@ -27,7 +27,7 @@ const Headers = () => {
       >
             
          <div className ="inline-flex w-full justify-center rounded-md border border-gray-300 bg-white px-4 py-2 
-            text-9xl text-gray-700 font-sans	
+             text-gray-700 font-sans	 sm:text-sm
             shadow-sm hover:bg-gray-50 focus:outline-none focus:border-orange-600 focus:ring-orange-600 block w-full 
             rounded-md sm:text-sm focus:ring-1">
 
