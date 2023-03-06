@@ -4,10 +4,74 @@ import Banner from "../Aux/Banner"
 
 const Rosavento = () => { 
     return (
-        <>
+        <> 
+
+<div className="bg-no-repeat bg-cover bg-center bg-fixed w-full h-full bg-auto
+        bg-[url('https://st.depositphotos.com/1491329/2197/i/950/depositphotos_21976063-stock-photo-ik-kil-cenote-chichen-itza.jpg')]">
+            INVIERTE DESDE $2,571,426 MXN
+ 
+
+ Este desarrollo está inspirado en la arquitectura de las antiguas ciudades mayas y busca celebrar la naturaleza exterior, escondiendo las edificaciones entre la selva para ofrecerte un ambiente privado, orgánico y tranquilo. Aquí, vivirás rodeado de vegetación endémica que será el escenario perfecto para tu casa, ese lugar especial para ti y tu familia.
+ 
+  
+ 
+ CTA-Kaybe-Lotes-2    INVIERTE DESDE $2,571,426 MXN
+ 
+
+ Este desarrollo está inspirado en la arquitectura de las antiguas ciudades mayas y busca celebrar la naturaleza exterior, escondiendo las edificaciones entre la selva para ofrecerte un ambiente privado, orgánico y tranquilo. Aquí, vivirás rodeado de vegetación endémica que será el escenario perfecto para tu casa, ese lugar especial para ti y tu familia.
+ 
+  
+ 
+ CTA-Kaybe-Lotes-2    INVIERTE DESDE $2,571,426 MXN
+ 
+
+ Este desarrollo está inspirado en la arquitectura de las antiguas ciudades mayas y busca celebrar la naturaleza exterior, escondiendo las edificaciones entre la selva para ofrecerte un ambiente privado, orgánico y tranquilo. Aquí, vivirás rodeado de vegetación endémica que será el escenario perfecto para tu casa, ese lugar especial para ti y tu familia.
+ 
+  
+ 
+ CTA-Kaybe-Lotes-2    INVIERTE DESDE $2,571,426 MXN
+ 
+
+ Este desarrollo está inspirado en la arquitectura de las antiguas ciudades mayas y busca celebrar la naturaleza exterior, escondiendo las edificaciones entre la selva para ofrecerte un ambiente privado, orgánico y tranquilo. Aquí, vivirás rodeado de vegetación endémica que será el escenario perfecto para tu casa, ese lugar especial para ti y tu familia.
+ 
+  
+ 
+ CTA-Kaybe-Lotes-2    INVIERTE DESDE $2,571,426 MXN
+ 
+
+ Este desarrollo está inspirado en la arquitectura de las antiguas ciudades mayas y busca celebrar la naturaleza exterior, escondiendo las edificaciones entre la selva para ofrecerte un ambiente privado, orgánico y tranquilo. Aquí, vivirás rodeado de vegetación endémica que será el escenario perfecto para tu casa, ese lugar especial para ti y tu familia.
+ 
+  
+ 
+ CTA-Kaybe-Lotes-2
+        </div>
+//paralax
+        <div className="h4/5">
+
+        </div>
+        <div className ="flex bg-axeda overflow-hidden justify-content-center mt-md-3 mb-3">
+
+            <Banner/> 
+        </div>
         
-        <Banner/>
-        
+        <div className="bg-no-repeat bg-cover bg-center bg-fixed w-full h-full
+        bg-[url('/public/fondo2.jpg')] text-white hover:bg-gradient-to-r">
+              <div class="flex flex-wrap grid grid-cols-6 gap-4"> 
+            <div class="col-start-1 col-end-3"></div> 
+            <div class="col-start-2 col-span-4 ">
+                <h2 className="text-xl ">Descubre las  </h2>
+                <h1 className="text-2xl underline italic font-bold tracking-wide">oportunidades de Rosavento</h1>
+            </div>
+            <div class="col-start-2 col-end-7 py-3 px-8 ">
+                <p>Elige e invierte en tu próximo patrimonio en las zonas con mejor plusvalía de Mérida y  Cancún. </p>
+            </div>
+        </div>
+        </div>
+
+ 
+
+       
+
         <div class="flex flex-wrap grid grid-cols-6 gap-4"> 
             <div class="col-start-1 col-end-3"></div> 
             <div class="col-start-2 col-span-4 ">
@@ -34,8 +98,6 @@ const Rosavento = () => {
             <div class="md:col-start-4"></div>
         </div>
 
-        
- 
  
         <div class="grid grid-cols-6 gap-4 mx-auto py-8"> 
             <div class="col-start-1 col-end-3 "></div>

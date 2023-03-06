@@ -12,23 +12,23 @@ export const Home = () => {
         {/*Information*/}
         <div className="md:col-span-5 flex items-center justify-center p-12 py-8 xl:p-16">
             <div className="flex flex-col gap-10">
-                <h1 className="text-4xl xl:text-7xl font-bold xl:leading-[7.5rem]">
+                <h1 className="text-4xl xl:text-7xl font-bold xl:leading-[7.5rem]"> 
                     INVERSIONES INMOBILIARIAS EN LAS ZONAS DE MÁS ALTA {"  "}
-                    <span className="text-primary px-4 py-2 border-8 border-primary relative inline-block">PLUSVALÍA
-                    <RiCheckboxBlankCircleFill className="text-white text-base absolute -left-5 -top-4 p-2 bg-primary rounded-full box-content"/>
-                    <RiCheckboxBlankCircleFill className="text-white text-base absolute -right-5 -top-4 p-2 bg-primary rounded-full box-content"/>
-                    <RiCheckboxBlankCircleFill className="text-white text-base absolute -left-5 -bottom-4 p-2 bg-primary rounded-full box-content"/>
-                    <RiCheckboxBlankCircleFill className="text-white text-base absolute -right-5 -bottom-4 p-2 bg-primary rounded-full box-content"/>
+                    <span className="text-axeda px-4 py-2 border-8 border-axeda relative inline-block">PLUSVALÍA
+                    <RiCheckboxBlankCircleFill className="text-white text-base absolute -left-5 -top-4 p-2 bg-axeda rounded-full box-content"/>
+                    <RiCheckboxBlankCircleFill className="text-white text-base absolute -right-5 -top-4 p-2 bg-axeda rounded-full box-content"/>
+                    <RiCheckboxBlankCircleFill className="text-white text-base absolute -left-5 -bottom-4 p-2 bg-axeda rounded-full box-content"/>
+                    <RiCheckboxBlankCircleFill className="text-white text-base absolute -right-5 -bottom-4 p-2 bg-axeda rounded-full box-content"/>
                     </span>
                  </h1>
                 <p className="text-gray-500 text-xl leading-[2.5rem]">Tu legado es lo más importante, por eso desarrollamos proyectos en las zonas de mayor crecimiento y demanda con un solo objetivo en mente: Generar abundancia para nuestros inversionistas.</p>
     
                 <div className="flex flex-col md:flex-row items-center gap-4">
-                    <button className="w-full xl:w-auto bg-primary text-white py-2 px-8 rounded-xl text-xl shadow-lg shadow-indigo-500/40">
+                    <button className="w-full xl:w-auto bg-axeda text-white py-2 px-8 rounded-xl text-xl shadow-lg shadow-indigo-500/40">
                         Contáctame 
                     </button>
                     <button className="flex items-center justify-start text-left gap-4 py-9 px-20 rounded-xl text-xl" >
-                        <RiPlayFill className="bg-primary text-white p-4 rounded-full box-content"/> 
+                        <RiPlayFill className="bg-axeda text-white p-4 rounded-full box-content"/> 
                         Mira nuestro <br/> video de los principales desarrollos 
                     </button>
                 </div>
@@ -68,11 +68,11 @@ export const Home = () => {
                 Clientes Satisfechos
                 </h2>
                 <div className="flex items-center gap-2 text-lg text-gray-500">
-                <RiStarFill className="text-primary" /> 5.0 (+1000 testimonios)
+                <RiStarFill className="text-axeda" /> 5.0 (+1000 testimonios)
                 </div>
                 <div className="absolute -right-12 -bottom-12 -z-10">
                 <div className="relative">
-                    <RiCheckboxBlankCircleFill className="text-primary text-8xl" />
+                    <RiCheckboxBlankCircleFill className="text-axeda text-8xl" />
                     <div className="absolute left-0 top-0 bg-white w-14 h-14"></div>
                 </div>
                 </div>
@@ -80,7 +80,7 @@ export const Home = () => {
             </div>
 
             {/* Circle */}
-            <div className="absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 w-[280px] h-[280px] md:w-[380px] md:h-[380px] bg-white border-[10px] border-primary rounded-full -z-10"></div>
+            <div className="absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 w-[280px] h-[280px] md:w-[380px] md:h-[380px] bg-white border-[10px] border-axeda rounded-full -z-10"></div>
 
             {/* Logos */}
             <img
