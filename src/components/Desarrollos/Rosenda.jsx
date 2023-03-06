@@ -1,5 +1,6 @@
 import React from 'react'
-import ReactPlayer from 'react-player'
+import ReactPlayer from 'react-player' 
+import pdf from '../../../public/ROSENDA_Brochure.pdf'
 
 const Rosenda = () => {
     return (
@@ -25,6 +26,15 @@ const Rosenda = () => {
                     height='563px' 
                 />
             </div>
+
+            <div> 
+                <button className={`btn`}>
+                    <a href={pdf} target="_blank" rel="noopener noreferrer" download="ROSENDA_Brochure.pdf"> 
+                        Brochure Rosenda  
+                    </a>
+                </button> 
+            </div>
+
         </>
     )
 }

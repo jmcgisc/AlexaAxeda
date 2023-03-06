@@ -1,5 +1,6 @@
 import React from 'react'
 import ReactPlayer from 'react-player'
+import pdf from '../../../public/INDO_Brochure.pdf'
 
 const Indo = () => {
     return (
@@ -36,6 +37,15 @@ const Indo = () => {
                     height='563px' 
                 />
             </div>
+
+            <div> 
+                <button className={`btn`}>
+                    <a href={pdf} target="_blank" rel="noopener noreferrer" download="INDO_Brochure.pdf"> 
+                    Brochure Indo   
+                    </a>
+                </button> 
+            </div>
+
 
         </>
     )

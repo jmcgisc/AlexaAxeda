@@ -12,7 +12,7 @@ export default function App() {
       <MDBCarouselItem
         className='max-w-screen-lg '
         itemId={1}
-        src='https://mdbootstrap.com/img/new/slides/041.jpg'
+        src='/public/fachada_rosavento_1.jpg'
         alt='...'
       >
         <h5>First slide label</h5>
@@ -21,7 +21,7 @@ export default function App() {
       <MDBCarouselItem
         className='max-w-screen-lg'
         itemId={2}
-        src='https://mdbootstrap.com/img/new/slides/042.jpg'
+        src='/public/fachada_rosavento_2.jpg'
         alt='...'
       >
         <h5>Second slide label</h5>
@@ -30,7 +30,7 @@ export default function App() {
       <MDBCarouselItem
         className='max-w-screen-lg'
         itemId={3}
-        src='https://mdbootstrap.com/img/new/slides/043.jpg'
+        src='/public/fachada_rosavento_3.jpg'
         alt='...'
       >
         <h5>Third slide label</h5>
