@@ -1,8 +1,8 @@
-import React from 'react'
-import ReactPlayer from 'react-player'
-import Banner from "../Aux/Banner"
-import pdf from '../../../public/ROSAVENTO CANCÚN_Brochure.pdf'
-import pdf from '../../../public/Brochure_Rosavento_Merida.pdf'
+import React        from 'react'
+import ReactPlayer  from 'react-player'
+import Banner       from "../Aux/Banner"
+import pdfC         from '../../../public/ROSAVENTO CANCÚN_Brochure.pdf'
+import pdfM         from '../../../public/Brochure_Rosavento_Merida.pdf'
 
 const Rosavento = () => { 
     return (
@@ -162,7 +162,7 @@ const Rosavento = () => {
 
         <div> 
             <button className={`btn`}>
-                <a href={pdf} target="_blank" rel="noopener noreferrer" download="ROSAVENTO CANCÚN_Brochure.pdf"> 
+                <a href={pdfC} target="_blank" rel="noopener noreferrer" download="ROSAVENTO CANCÚN_Brochure.pdf"> 
                     Brochure Rosavento Cancún 
                 </a>
             </button> 
@@ -170,7 +170,7 @@ const Rosavento = () => {
 
         <div> 
             <button className={`btn`}>
-                <a href={pdf} target="_blank" rel="noopener noreferrer" download="Brochure_Rosavento_Merida.pdf"> 
+                <a href={pdfM} target="_blank" rel="noopener noreferrer" download="Brochure_Rosavento_Merida.pdf"> 
                     Brochure Rosavento Mérida 
                 </a>
             </button> 
