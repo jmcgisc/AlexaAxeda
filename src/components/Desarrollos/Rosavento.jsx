@@ -8,86 +8,73 @@ const Rosavento = () => {
     return (
         <> 
 
-        <div className="bg-no-repeat bg-cover bg-center bg-fixed bg-auto opacity-70
-                bg-[url('https://st.depositphotos.com/1491329/2197/i/950/depositphotos_21976063-stock-photo-ik-kil-cenote-chichen-itza.jpg')]">
-
-           <div className="bg-no-repeat bg-cover bg-center bg-fixed w-full h-full py-2
-                                                                bg-[url('/public/fondo2.jpg')] text-white ">
-
-              <div class="flex flex-wrap grid grid-cols-6 gap-4"> 
-            <div class="col-start-1 col-end-3"></div> 
-            <div class="col-start-2 col-span-4 ">
-                <h2 className="text-3xl text-center ">Descubre las  </h2>
-                <h1 className="text-5xl font-bold py-3 tracking-wide text-center">OPORTUNIDADES DE ROSAVENTO</h1>
+            <div className="bg-[url('/public/homeBack1.png')]
+            
+            "> 
+            <img src="carrusel11.jpg" className=" clip-path-mypolygon
+                        "/> 
             </div>
-            <div class="col-start-1 col-end-7 py-3 text-center ">
+ 
+        <div className="flex flex-wrap grid grid-cols-6 gap-4"> 
+            <div className="col-start-1 col-end-3"></div> 
+            <div className="col-start-2 col-span-4 ">
+                <h2 className="text-xl ">Descubre las  </h2>
+                <h1 className="text-2xl underline italic font-bold tracking-wide">oportunidades de Rosavento</h1>
+            </div>
+            <div className="col-start-2 col-end-7 py-3 px-8 ">
                 <p>Elige e invierte en tu próximo patrimonio en las zonas con mejor plusvalía de Mérida y  Cancún. </p>
             </div>
-            </div>
-            </div>
-        </div> 
-        <div className="h4/5">
+        </div>
 
+
+        <div className="grid md:grid-cols-4 gap-8">
+            <div className="md:col-start-1 "></div>
+            <div className="md:col-start-2 "> 
+                <img    className="md:w-[350px] md:h-[450px] hover:shadow-2xl rounded-3xl" 
+                        src="oportunidades-rosavento-cun.webp"/>
+            </div>
+
+            <div className="md:col-start-3 ">   
+                <img    className="md:w-[350px] md:h-[450px] hover:shadow-2xl rounded-3xl  " 
+                        src="oportunidades-rosavento-mid.webp" />
+            </div>
+
+            <div className="md:col-start-4"></div>
+        </div> 
+
+        <div className="h4/5">
         </div>
         <div className ="flex bg-axeda overflow-hidden justify-content-center mt-md-3 mb-3">
-
-            <Banner/> 
+            {/* <Banner/>  */}
         </div>
         
-        <div className="bg-no-repeat bg-cover bg-center bg-fixed w-full h-full
-            bg-[url('/public/fondo2.jpg')] text-white hover:bg-gradient-to-r">
-                <div class="flex flex-wrap grid grid-cols-6 gap-4"> 
-                <div class="col-start-1 col-end-3"></div> 
-                <div class="col-start-2 col-span-4 ">
-                    <h2 className="text-xl ">Descubre las  </h2>
-                    <h1 className="text-2xl underline italic font-bold tracking-wide">oportunidades de Rosavento</h1>
+        <div className="bg-no-repeat bg-cover bg-center bg-fixed
+            bg-[url('/public/fondo2.jpg')] text-white ">
+                <div className="flex flex-wrap grid grid-cols-6 gap-4"> 
+                <div className="col-start-1 col-end-3"></div> 
+                <div className="col-start-2 col-span-4 ">
+                    <h2 className="text-xl ">Terrenos residenciales al norte de Mérida   </h2>
+                    <h1 className="text-2xl underline italic font-bold tracking-wide">Un paraíso con mensualidades desde $1,992.00 MXN.</h1>
                 </div>
-                <div class="col-start-2 col-end-7 py-3 px-8 ">
+                <div className="col-start-2 col-end-7 py-3 px-8 ">
                     <p>Elige e invierte en tu próximo patrimonio en las zonas con mejor plusvalía de Mérida y  Cancún. </p>
                 </div>
             </div>
         </div>
 
-
-        <div class="flex flex-wrap grid grid-cols-6 gap-4"> 
-            <div class="col-start-1 col-end-3"></div> 
-            <div class="col-start-2 col-span-4 ">
-                <h2 className="text-xl ">Descubre las  </h2>
-                <h1 className="text-2xl underline italic font-bold tracking-wide">oportunidades de Rosavento</h1>
-            </div>
-            <div class="col-start-2 col-end-7 py-3 px-8 ">
-                <p>Elige e invierte en tu próximo patrimonio en las zonas con mejor plusvalía de Mérida y  Cancún. </p>
-            </div>
-        </div>
-
-        <div class="grid md:grid-cols-4 gap-8">
-            <div class="md:col-start-1 "></div>
-            <div class="md:col-start-2 "> 
-                <img    className="md:w-[350px] md:h-[450px] hover:shadow-2xl rounded-3xl" 
-                        src="oportunidades-rosavento-cun.webp"/>
-            </div>
-
-            <div class="md:col-start-3 ">   
-                <img    className="md:w-[350px] md:h-[450px] hover:shadow-2xl rounded-3xl  " 
-                        src="oportunidades-rosavento-mid.webp" />
-            </div>
-
-            <div class="md:col-start-4"></div>
-        </div>
-
  
-        <div class="grid grid-cols-6 gap-4 mx-auto py-8"> 
-            <div class="col-start-1 col-end-3 "></div>
-            <div class="col-end-7 col-span-2 "></div>
-            <div class="col-start-2 col-span-4">
+        <div className="grid grid-cols-6 gap-4 mx-auto py-8"> 
+            <div className="col-start-1 col-end-3 "></div>
+            <div className="col-end-7 col-span-2 "></div>
+            <div className="col-start-2 col-span-4">
                 <h2 className="text-xl italic">Conoce los beneficios de la </h2>
                 <h1 className="text-2xl underline italic font-bold tracking-wide">ubicación de tu próxima inversión.</h1>
             </div>
-            <div class="col-start-2 col-end-7 ..."> 
+            <div className="col-start-2 col-end-7 ..."> 
             </div>
         </div>
  
-        <div class="grid grid-cols-4 gap-4">
+        <div className="grid grid-cols-4 gap-4">
             <div></div>
             <div className="col-start-2" >
                 <div className ="flex flex-cols py-8 px-6 ">
@@ -116,7 +103,7 @@ const Rosavento = () => {
         </div>
 
     
-        <div class="grid grid-cols-4 gap-4">
+        <div className="grid grid-cols-4 gap-4">
             <div></div>
             
             <div>
@@ -145,7 +132,7 @@ const Rosavento = () => {
             </div>
         </div>
 
-        <div class="grid grid-cols-4 gap-4">
+        <div className="grid grid-cols-4 gap-4">
             <div></div>
             
             <div>
