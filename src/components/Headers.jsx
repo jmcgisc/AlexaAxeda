@@ -14,17 +14,17 @@ const Headers = () => {
     const [showMenu, setShowMenu] = useState (false);
     return (
    <> 
-      <div className="flex flex-row-reverse flex-wrap bg-axeda sticky top-0 left-0 right-0"> 
-               <div className="flex text-gray-100 px-1 py-1 text-base">Línea Asesor AXEDA:
+      <div className="flex flex-row-reverse flex-wrap fixed top-0 left-0 right-0 bg-axeda "> 
+               <div className="flex text-gray-100 px-4 -py-4 text-base font-mono">Línea Asesor AXEDA:
                   <div className="text-base px-1">
-                  <a href="tel:+525570137764" class="text-white text-base px-1">+(52) 55 7013 7764</a>
+                  <a href="tel:+525570137764" className="text-white text-base px-1">+(52) 55 7013 7764</a>
                      
                   </div>
                   <div className="flex-1 w-6 py-1">
                      <RiPhoneFill/>
                   </div>
                    <div className="text-base px-1">
-                     | Email: <a href="asesor.alexadelgado@gmail.com" class="text-white text-base px-1">asesor.alexadelgado@gmail.com</a>
+                     | Email: <a href="asesor.alexadelgado@gmail.com" className="text-white text-base px-1">asesor.alexadelgado@gmail.com</a>
                    </div>
                   <div className="py-1">
                      <RiMailFill/> 
@@ -32,10 +32,10 @@ const Headers = () => {
                </div> 
       </div>
 
-     <header className="flex flex-cols items-center justify-between w-full py-20 px-8 h-[10vh] z-50 sticky top-6  bg-white">
+     <header className="flex flex-cols items-center justify-between py-14 px-8 h-[10vh] z-50 sticky top-6 bg-white">
 
-      <div className="xl:w-1/6  basis-2/5 text-center mt-3 pl-7 bg-white">
-         <a href="/" className="text-2xl font-bold relative p-1 bg-white">
+      <div className="xl:w-1/6 basis-2/5 text-center mt-0 pl-7 bg-white">
+         <a href="/" className="text-sm font-bold relative p-1 bg-white">
                <img className=" " src={image} alt="Logotipo Axeda"/>  
          </a>
       </div>
