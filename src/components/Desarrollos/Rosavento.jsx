@@ -65,98 +65,104 @@ const Rosavento = () => {
             <hr
                 class="my-12 h-0.5 border-t-0 bg-neutral-100 opacity-100 dark:opacity-50" />
 
-            <div className="bg-[url('/public/backGreen.png')]">
-                        <div class="grid grid-cols-4 gap-4 place-items-center" > 
-                            <div className  ="flex flex-wrap"/> 
-
-                            <div className  ="flex flex-wrap">
-                                <img src="amenidades.png" className="h-28 w-14 py-4"/>
-                                <p className ="text-4xl text-white flex-wrap flex py-12 px-8">
-                                    Amenidades
-                                </p>
-                            </div>      
-
-                            <div className  ="flex flex-wrap">
-                                <img src="areasv.png" className="h-28 w-14 py-4"/>
-                                <p className ="text-4xl text-white flex-wrap flex py-12 px-4">
-                                    Áreas Verdes
-                                </p>
-                            </div> 
-
-                            <div></div> 
-                            <div></div> 
-
-                            <div className  ="flex flex-wrap">
-                                <img src="plusvalia.png" className="h-28 w-14 py-4"/>
-                                <p className ="text-4xl text-white flex-wrap flex py-8 px-8">
-                                    Plusvalía
-                                </p>
-                            </div> 
-
-                            <div className  ="flex flex-wrap">
-                                <img src="maps.png" className="h-28 w-14 py-4"/>
-                                <p className ="text-4xl text-white flex-wrap flex py-8 px-8">
-                                    Ubicación
-                                </p>
-                            </div>  
-                            
-                            <div></div> 
-                            <div></div> 
-
-                            <div className  ="flex flex-wrap">
-                                <img src="desarrollos.png" className="h-28 w-14 py-4"/>
-                                <p className ="text-4xl text-white flex-wrap flex py-8 px-8">
-                                    Desarrollos
-                                </p>
-                            </div> 
-
-                            <div className  ="flex flex-wrap">
-                                <div>
-                                <img src="familia.png" className="h-28 w-14 py-4"/>
-                                </div>
-                                <p className ="text-4xl text-white flex-wrap flex py-8 px-8">
-                                    Ambiente familiar
-                                </p>
-                            </div>  
-
-                            <div></div> 
-                            <div></div>     
-
-                            <div className  ="flex flex-wrap">
-                                <img src="ubicacion.png" className="h-28 w-14 py-4"/>
-                                <p className ="text-4xl text-white flex-wrap flex py-8 px-8">
-                                    hola
-                                </p>
-                            </div>    
-                            <div className  ="flex flex-wrap">
-                                <img src="credito.png" className="h-28 w-14 py-4"/>
-                                <p className ="text-4xl text-white flex-wrap flex py-8 px-8">
-                                    Facilidad de pago
-                                </p>
-                            </div>   
-
+            <div class="grid grid-cols-8 gap-2 place-content-evenly bg-[url('/public/backGreen.png')]">
+                <div></div>
+                <div></div>
+                <div>
+                    <img src="amenidades.png" className="h-28 w-14 py-4"/>     
                 </div>
+                <div className="py-6">
+                    <p className ="text-3xl text-white py-10">Amenidades</p>
+                </div>
+                <div></div>
+                <div> 
+                    <img src="plusvalia.png" className="h-28 w-14 py-4"/>
+                </div>
+                <div>
+                    <p className ="text-3xl text-white py-10">Plusvalía</p>
+                </div>
+                <div></div>
+
+                <div></div>
+                <div></div>
+                <div>
+
+                <img src="areasv.png" className="h-28 w-14 py-4"/>
+                </div>
+                <div>
+
+                <p className ="text-3xl text-white  py-10">Áreas Verdes</p>
+                </div>
+                <div></div>
+                <div>
+                    
+                <img src="maps.png" className="h-28 w-14 py-4"/>
+                </div>
+                <div>
+
+                <p className ="text-3xl text-white py-10 ">Ubicación</p>
+                </div>
+                <div></div>
+
+                <div></div>
+                <div></div>
+                <div>
+                    <img src="ubicacion.png" className="h-28 w-14 py-4"/>
+                </div>
+                <div>
+
+                <p className ="text-3xl text-white  py-10">Ubicación</p>
+                </div>
+                <div></div>
+                <div>
+
+                <img src="credito.png" className="h-28 w-14 py-4"/>
+                </div>
+                <div>
+
+                <p className ="text-3xl text-white py-10 ">Facilidad de pago</p>
+                </div>
+                <div></div>
+
+                <div></div>
+                <div></div>
+                <div>
+
+                <img src="desarrollos.png" className="h-28 w-14 py-4"/>
+                </div>
+                <div>
+                    <p className ="text-3xl text-white py-10">Desarrollos</p>
+                </div>
+                <div></div>
+                <div>
+                    <img src="familia.png" className="h-28 w-14 py-4"/>
+                </div>
+                <div>
+                    <p className ="text-3xl text-white py-10">Ambiente Familiar</p>
+                </div>
+                <div></div>
             </div>
+            
+            <hr
+                class="my-12 h-0.5 border-t-0 bg-neutral-100 opacity-100 dark:opacity-50" />
 
             <div className ="container mx-auto grid grid-cols-4">
-                <div className="col-start-1 col-end-4 col-span-2 px-12"> 
+                <div className="col-start-1 col-end-4 col-span-2 px-12 "> 
                     <h2 className="font-serif text-3xl tracking-wider leading-normal text-orange-900">
                         Desarrollado por
                     </h2>
                     <h2 className="font-serif text-3xl tracking-wider leading-normal text-rose-900 px-16">
-                    Grupo
+                        Grupo
                         <strong class="underline decoration-axeda/[.33]"> Axeda.</strong>
                     </h2>
                 </div>
-
                 <div class="col-start-1 col-end-3 py-16 px-20">
                     <h2 className="">
-                     Una empresa inmobiliaria que busca facilitar el acceso al mundo de las inversiones  de forma inteligente y 
-                     promoviendo alta calidad de vida, desarrollando bienes inmuebles en  las zonas de mayor crecimiento y demanda del 
-                     sureste mexicano, con un solo objetivo en  mente: Superar sus límites y generar abundancia a sus inversionistas. 
+                    Una empresa inmobiliaria que busca facilitar el acceso al mundo de las inversiones  de forma inteligente y 
+                    promoviendo alta calidad de vida, desarrollando bienes inmuebles en  las zonas de mayor crecimiento y demanda del 
+                    sureste mexicano, con un solo objetivo en  mente: Superar sus límites y generar abundancia a sus inversionistas. 
                     </h2>  
                 </div>
-
                 <div class="col-start-3 col-end-3 py-4">
                 <ReactPlayer
                             url=' https://www.youtube.com/watch?v=pnsNE5oqZOo&t=3s'
@@ -181,70 +187,70 @@ const Rosavento = () => {
             </div>
 
 
-        <div className="grid md:grid-cols-4 gap-8">
-            <div className="md:col-start-1 "></div>
-            <div className="md:col-start-2 "> 
-                <img    className="md:w-[350px] md:h-[450px] hover:shadow-2xl rounded-3xl" 
-                        src="oportunidades-rosavento-cun.webp"/>
+            <div className="grid md:grid-cols-4 gap-8">
+                <div className="md:col-start-1 "></div>
+                <div className="md:col-start-2 "> 
+                    <img    className="md:w-[350px] md:h-[450px] hover:shadow-2xl rounded-3xl" 
+                            src="oportunidades-rosavento-cun.webp"/>
+                </div>
+
+                <div className="md:col-start-3 ">   
+                    <img    className="md:w-[350px] md:h-[450px] hover:shadow-2xl rounded-3xl  " 
+                            src="oportunidades-rosavento-mid.webp" />
+                </div>
+
+                <div className="md:col-start-4"></div>
+            </div> 
+
+            <div className="h4/5">
             </div>
-
-            <div className="md:col-start-3 ">   
-                <img    className="md:w-[350px] md:h-[450px] hover:shadow-2xl rounded-3xl  " 
-                        src="oportunidades-rosavento-mid.webp" />
+            <div className ="flex bg-axeda overflow-hidden justify-content-center mt-md-3 mb-3">
+                {/* <Banner/>  */}
             </div>
-
-            <div className="md:col-start-4"></div>
-        </div> 
-
-        <div className="h4/5">
-        </div>
-        <div className ="flex bg-axeda overflow-hidden justify-content-center mt-md-3 mb-3">
-            {/* <Banner/>  */}
-        </div>
         
-        <div className="bg-no-repeat bg-cover bg-center bg-fixed
-            bg-[url('/public/fondo2.jpg')] text-white ">
-                <div className="flex flex-wrap grid grid-cols-6 gap-4"> 
-                <div className="col-start-1 col-end-3"></div> 
-                <div className="col-start-2 col-span-4 ">
-                    <h2 className="text-xl ">Terrenos residenciales al norte de Mérida   </h2>
-                    <h1 className="text-2xl underline italic font-bold tracking-wide">Un paraíso con mensualidades desde $1,992.00 MXN.</h1>
-                </div>
-                <div className="col-start-2 col-end-7 py-3 px-8 ">
-                    <p>Elige e invierte en tu próximo patrimonio en las zonas con mejor plusvalía de Mérida y  Cancún. </p>
+            <div className="bg-no-repeat bg-cover bg-center bg-fixed
+                bg-[url('/public/fondo2.jpg')] text-white ">
+                    <div className="flex flex-wrap grid grid-cols-6 gap-4"> 
+                    <div className="col-start-1 col-end-3"></div> 
+                    <div className="col-start-2 col-span-4 ">
+                        <h2 className="text-xl ">Terrenos residenciales al norte de Mérida   </h2>
+                        <h1 className="text-2xl underline italic font-bold tracking-wide">Un paraíso con mensualidades desde $1,992.00 MXN.</h1>
+                    </div>
+                    <div className="col-start-2 col-end-7 py-3 px-8 ">
+                        <p>Elige e invierte en tu próximo patrimonio en las zonas con mejor plusvalía de Mérida y  Cancún. </p>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div className="grid grid-cols-4 gap-4">
-            <div></div>
-            
-            <div>
-                <p className="py-8">
-                Rosavento 
-                 </p> 
-                  <p className="py-8">
-                  Un desarrollo con un concepto único en el sureste de México, donde gracias a su  ubicación en las mejores zonas de 
-                  Mérida y Cancún, es ideal para alcanzar tus objetivos de  inversión, ya sea para contruir tu patrimonio o para generar 
-                  rendimientos gracias a su  plusvalía en ascenso. Además, cuenta con características y amenidades premium en las que toda la  familia podrán disfrutar de una vida tranquila en Mérida y Cancún.  
-                </p>
+            <div className="grid grid-cols-4 gap-4">
+                <div></div>
+                
+                <div>
+                    <p className="py-8">
+                    Rosavento 
+                    </p> 
+                    <p className="py-8">
+                    Un desarrollo con un concepto único en el sureste de México, donde gracias a su  ubicación en las mejores zonas de 
+                    Mérida y Cancún, es ideal para alcanzar tus objetivos de  inversión, ya sea para contruir tu patrimonio o para generar 
+                    rendimientos gracias a su  plusvalía en ascenso. Además, cuenta con características y amenidades premium en las que toda la  familia podrán disfrutar de una vida tranquila en Mérida y Cancún.  
+                    </p>
+                </div>
             </div>
-        </div>
 
-        <div> 
-            <button className={`btn`}>
-                <a href={pdfC} target="_blank" rel="noopener noreferrer" download="ROSAVENTO CANCÚN_Brochure.pdf"> 
-                    Brochure Rosavento Cancún 
-                </a>
-            </button> 
-        </div>
+            <div> 
+                <button className={`btn`}>
+                    <a href={pdfC} target="_blank" rel="noopener noreferrer" download="ROSAVENTO CANCÚN_Brochure.pdf"> 
+                        Brochure Rosavento Cancún 
+                    </a>
+                </button> 
+            </div>
 
-        <div> 
-            <button className={`btn`}>
-                <a href={pdfM} target="_blank" rel="noopener noreferrer" download="Brochure_Rosavento_Merida.pdf"> 
-                    Brochure Rosavento Mérida 
-                </a>
-            </button> 
+            <div> 
+                <button className={`btn`}>
+                    <a href={pdfM} target="_blank" rel="noopener noreferrer" download="Brochure_Rosavento_Merida.pdf"> 
+                        Brochure Rosavento Mérida 
+                    </a>
+                </button> 
         </div>
 
         </>
