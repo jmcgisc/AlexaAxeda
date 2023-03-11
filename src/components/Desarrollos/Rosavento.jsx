@@ -65,84 +65,40 @@ const Rosavento = () => {
             <hr
                 class="my-12 h-0.5 border-t-0 bg-neutral-100 opacity-100 dark:opacity-50" />
 
-            <div class="grid grid-cols-8 gap-2 place-content-evenly bg-[url('/public/backGreen.png')]">
+            <div class="grid grid-cols-7 gap-4 place-items-center bg-[url('/public/backGreen.png')]">
                 <div></div>
+                        <img src="amenidades.png" className="h-28 w-14 py-4 "/>    
+                        <p className ="text-4xl text-axeda py-10">Amenidades</p>
                 <div></div>
-                <div>
-                    <img src="amenidades.png" className="h-28 w-14 py-4"/>     
-                </div>
-                <div className="py-6">
-                    <p className ="text-3xl text-white py-10">Amenidades</p>
-                </div>
-                <div></div>
-                <div> 
-                    <img src="plusvalia.png" className="h-28 w-14 py-4"/>
-                </div>
-                <div>
-                    <p className ="text-3xl text-white py-10">Plusvalía</p>
-                </div>
+                        <img src="maps.png" className="h-28 w-14 py-4"/>
+                        <p className ="text-4xl text-axeda py-10 ">Ubicación</p>
                 <div></div>
 
                 <div></div>
+                        <img src="plusvalia.png" className="h-28 w-14 py-4"/>
+                        <p className ="text-4xl text-axeda py-10">Plusvalía</p>
                 <div></div>
-                <div>
-
-                <img src="areasv.png" className="h-28 w-14 py-4"/>
-                </div>
-                <div>
-
-                <p className ="text-3xl text-white  py-10">Áreas Verdes</p>
-                </div>
+                        <img src="areasv.png" className="h-28 w-14 py-4"/>
+                        <p className ="text-4xl text-axeda  py-10">Áreas Verdes</p>
                 <div></div>
-                <div>
-                    
-                <img src="maps.png" className="h-28 w-14 py-4"/>
-                </div>
-                <div>
-
-                <p className ="text-3xl text-white py-10 ">Ubicación</p>
-                </div>
+ 
+                <div></div>
+                        <img src="familia.png" className="h-28 w-14 py-4"/>
+                        <p className ="text-4xl text-axeda py-10">Ambiente Familiar</p>
+                <div></div>
+                        <img src="credito.png" className="h-28 w-14 py-4"/>
+                        <p className ="text-4xl text-axeda py-10 ">Facilidad de pago</p>
                 <div></div>
 
+                <div></div> 
+                        <img src="desarrollos.png" className="h-28 w-14 py-4"/>
+                        <p className ="text-4xl text-axeda py-10">Desarrollos</p>
                 <div></div>
-                <div></div>
-                <div>
-                    <img src="ubicacion.png" className="h-28 w-14 py-4"/>
-                </div>
-                <div>
-
-                <p className ="text-3xl text-white  py-10">Ubicación</p>
-                </div>
-                <div></div>
-                <div>
-
-                <img src="credito.png" className="h-28 w-14 py-4"/>
-                </div>
-                <div>
-
-                <p className ="text-3xl text-white py-10 ">Facilidad de pago</p>
-                </div>
-                <div></div>
-
-                <div></div>
-                <div></div>
-                <div>
-
-                <img src="desarrollos.png" className="h-28 w-14 py-4"/>
-                </div>
-                <div>
-                    <p className ="text-3xl text-white py-10">Desarrollos</p>
-                </div>
-                <div></div>
-                <div>
-                    <img src="familia.png" className="h-28 w-14 py-4"/>
-                </div>
-                <div>
-                    <p className ="text-3xl text-white py-10">Ambiente Familiar</p>
-                </div>
+                        <img src="ubicacion.png" className="h-28 w-14 py-4"/>
+                        <p className ="text-4xl text-axeda py-10 ">Facilidad de pago</p>
                 <div></div>
             </div>
-            
+ 
             <hr
                 class="my-12 h-0.5 border-t-0 bg-neutral-100 opacity-100 dark:opacity-50" />
 
