@@ -131,17 +131,23 @@ const Rosavento = () => {
                 </div>
             </div>
 
-            <div className="flex flex-wrap grid grid-cols-6 gap-4"> 
-                <div className="col-start-1 col-end-3"></div> 
-                <div className="col-start-2 col-span-4 ">
-                    <h2 className="text-xl ">Descubre las </h2>
-                    <h1 className="text-2xl underline italic font-bold tracking-wide">oportunidades de Rosavento</h1>
-                </div>
-                <div className="col-start-2 col-end-7 py-3 px-8 ">
-                    <p>Elige e invierte en tu próximo patrimonio en las zonas con mejor plusvalía de Mérida y  Cancún. </p>
+            <hr
+                class="my-12 h-0.5 border-t-0 bg-neutral-100 opacity-100 dark:opacity-50" />
+
+            <div className ="container mx-auto grid grid-cols-4">
+                <div className="col-start-1 col-end-4 col-span-2 px-12"> 
+                    <h2 className="font-serif text-3xl tracking-wider leading-normal text-orange-900">
+                            Descubre las 
+                    </h2>
+                    <h2 className="font-serif text-3xl tracking-wider leading-normal text-rose-900 px-16">
+                            oportunidades de  
+                        <strong class="underline decoration-axeda/[.33]"> Rosavento. </strong>
+                    </h2>
+                    <div className="col-start-2 col-end-7 py-3 px-8 ">
+                        <p>Elige e invierte en tu próximo patrimonio en las zonas con mejor plusvalía de Mérida y  Cancún. </p>
+                    </div>
                 </div>
             </div>
-
 
             <div className="grid md:grid-cols-4 gap-8">
                 <div className="md:col-start-1 "></div>
@@ -157,6 +163,9 @@ const Rosavento = () => {
 
                 <div className="md:col-start-4"></div>
             </div> 
+            <hr
+                class="my-12 h-0.5 border-t-0 bg-neutral-100 opacity-100 dark:opacity-50" />
+
 
             <div className="h4/5">
             </div>
@@ -181,6 +190,9 @@ const Rosavento = () => {
             <div className="grid grid-cols-4 gap-4">
                 <div></div>
                 
+            <hr
+                class="my-12 h-0.5 border-t-0 bg-neutral-100 opacity-100 dark:opacity-50" />
+
                 <div>
                     <p className="py-8">
                     Rosavento 
