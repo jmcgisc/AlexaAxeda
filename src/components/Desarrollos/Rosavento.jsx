@@ -10,20 +10,21 @@ const Rosavento = () => {
             <div className="bg-[url('/public/homeBack1.png')] flex flex-row-reverse "> 
                 <img src="carrusel11.jpg" className="ellipse(50% 65% at 70% 50%)"/> 
             </div>
+
             <hr
                 class="my-12 h-0.5 border-t-0 bg-neutral-100 opacity-100 dark:opacity-50" />
 
-            <div className ="container mx-auto grid grid-cols-4">
-                <div className="col-start-1 col-end-4 col-span-2 px-12"> 
-                    <h2 className="font-serif text-3xl tracking-wider leading-normal text-orange-900">
+            <div className ="container mx-auto grid grid-cols-1 xl:grid-cols-4 gap-8">
+                <div className="col-start-1 col-end-4 xl:col-span-2"> 
+                    <h2 className="font-serif text-base md:text-xl xl:text-3xl tracking-wider leading-normal xl:col-span-2 text-orange-900">
                         Conoce los beneficios de  
                     </h2>
-                    <h2 className="font-serif text-3xl tracking-wider leading-normal text-rose-900 px-16">
+                    <h2 className="font-serif text-base md:text-xl xl:text-3xl tracking-wider leading-normal xl:col-span-2 text-rose-900 px-4 xl:px-16">
                         ubicación de tu
                         <strong class="underline decoration-axeda/[.33]"> próxima inversión. </strong>
                     </h2>
                 </div>
-
+{/* 
                 <div className="col-start-3 col-end-4 col-span-2 px-12">
                     <button className="">
 
@@ -37,39 +38,45 @@ const Rosavento = () => {
                     <li class="nav-item" role="presentation">
                         <a class="nav-link" id="tab-elem-widget_1673888685032-2" data-toggle="tab" href="#tab-widget_1673888685032-2" role="tab" aria-controls="tab-widget_1673888685032-2" aria-selected="false">Quintana Roo</a>
                     </li>
-                </ul>
-                
-                {/*                 
-                <div class="col-start-1 col-end-2 py-4 px-20 mx-auto sm:w-auto">
+                </ul> */}      
+            </div>
+            
+            <div className="p-12">
+            <div className="grid grid-cols-1 xl:grid-cols-2 xl:px-20 gap-8">
+                <div className="flex flex-col gap-2 rounded-3xl"> 
 
-
-                        <ReactPlayer
+                <ReactPlayer
                             url='https://www.youtube.com/watch?v=e6qNM45bUHg'
                             className='react-player' 
                             controls
                             playIcon	
                             width='100%'
                             height='100%' 
-                        />
-                </div>  */}
- 
-                <div class="col-start-3 mx-auto">
-                    <p className="py-8">
+                />
+                </div>
+
+                <div className="grid grid-cols-1 xl:grid-cols-2 gap-4 xl:py-20 xl:px-20">
+
+                    <div className="flex flex-col gap-6"> 
+                        <p className="text-gray-500"> 
                         Destaca por su belleza, cultura, calidad de vida y seguridad, lo que la ha posicionado a su capital entre las mejores 
                         ciudades para vivir e invertir del sureste mexicano.
-                    </p>  
-                    <p className="py-8">
+                         </p>
+                        <p className="text-gray-500"> 
                         Su ubicación permite gran conectividad hacia diversos sitios de interés, así como a otros países a través de su Aeropuerto 
                         Internacional y el Puerto de Progreso.
-                    </p>
+                         </p>
+                           
+                    </div>
+
                 </div>
+            </div>
             </div>
  
             <hr
                 class="my-12 h-0.5 border-t-0 bg-neutral-100 opacity-100 dark:opacity-50" />
  
-
-            <div class="grid grid-cols-7 gap-4 place-items-center py-30 bg-[url('/public/backGreen.png')]">
+            <div class="grid xl:grid-cols-7 xl:gap-4 place-items-center xl:py-30 bg-[url('/public/backGreen.png')]">
                 <div></div>
                         <img src="amenidades.png" className="h-28 w-14 py-4 "/>    
                         <p className ="text-3xl text-axeda py-10">Amenidades</p>
@@ -106,8 +113,8 @@ const Rosavento = () => {
             <hr
                 class="my-12 h-0.5 border-t-0 bg-neutral-100 opacity-100 dark:opacity-50" />
 
-            <div className ="container mx-auto grid grid-cols-4">
-                <div className="col-start-1 col-end-4 col-span-2 px-12 "> 
+            <div className ="container mx-auto grid grid-cols-1 xl:grid-cols-4 gap-8">
+                <div className="col-start-1 col-end-4 xl:col-span-2"> 
                     <h2 className="font-serif text-3xl tracking-wider leading-normal text-orange-900">
                         Desarrollado por
                     </h2>
@@ -115,40 +122,59 @@ const Rosavento = () => {
                         Grupo
                         <strong class="underline decoration-axeda/[.33]"> Axeda.</strong>
                     </h2>
+                </div> 
+{/* 
+                <div className="col-start-3 col-end-4 col-span-2 px-12">
+                    <button className="">
+
+                    </button>
                 </div>
-                <div class="col-start-1 col-end-3 py-16 px-20">
-                    <h2 className="">
-                    Una empresa inmobiliaria que busca facilitar el acceso al mundo de las inversiones  de forma inteligente y 
-                    promoviendo alta calidad de vida, desarrollando bienes inmuebles en  las zonas de mayor crecimiento y demanda del 
-                    sureste mexicano, con un solo objetivo en  mente: Superar sus límites y generar abundancia a sus inversionistas. 
-                    </h2>  
+
+                <ul class="nav nav-tabs mb-4 justify-content-end" id="investmentTab-widget_1673888685032" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link active" id="tab-elem-widget_1673888685032-1" data-toggle="tab" href="#tab-widget_1673888685032-1" role="tab" aria-controls="tab-widget_1673888685032-1" aria-selected="true">Yucatán</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" id="tab-elem-widget_1673888685032-2" data-toggle="tab" href="#tab-widget_1673888685032-2" role="tab" aria-controls="tab-widget_1673888685032-2" aria-selected="false">Quintana Roo</a>
+                    </li>
+                </ul> */}      
+            </div>
+            
+            <div className="p-12">
+            <div className="grid grid-cols-1 xl:grid-cols-2 xl:px-20 gap-8">
+
+                <div className="grid grid-cols-1 xl:grid-cols-2 gap-4 xl:py-20 xl:px-20">
+
+                    <div className="flex flex-col gap-6"> 
+                        <p className="text-gray-500"> 
+                        Una empresa inmobiliaria que busca facilitar el acceso al mundo de las inversiones  de forma inteligente y 
+                        promoviendo alta calidad de vida, desarrollando bienes inmuebles en  las zonas de mayor crecimiento y demanda del 
+                        sureste mexicano, con un solo objetivo en  mente: 
+                         </p>
+                        <p className="text-gray-500"> 
+                        Superar sus límites y generar abundancia a sus inversionistas. 
+                         </p>
+                           
+                    </div>
+
                 </div>
-                {/* <div class="col-start-3 col-end-3 py-4">
+                <div className="flex flex-col gap-2 rounded-3xl"> 
+
                 <ReactPlayer
                             url=' https://www.youtube.com/watch?v=pnsNE5oqZOo&t=3s'
                             className='react-player' 
                             controls
                             playIcon	
-                            width='533px'
-                            height='300px' 
-                        />
-                </div> */}
+                            width='100%'
+                            height='100%' 
+                />
+                </div>
             </div>
+            </div>
+
 
             <hr
                 class="my-12 h-0.5 border-t-0 bg-neutral-100 opacity-100 dark:opacity-50" />
-
-<div class="mx-auto ">
-
-<ReactPlayer
-                            url=' https://www.youtube.com/watch?v=pnsNE5oqZOo&t=3s'
-    className='react-player' 
-    controls
-    playIcon	
-    width='100%'
-    height='100%' 
-/>
-</div> 
 
             <div className ="container mx-auto grid grid-cols-4">
                 <div className="col-start-1 col-end-4 col-span-2 px-12"> 

@@ -11,6 +11,7 @@ const Desarrollos = () => {
                     Desarrollos residenciales en Cancún y Mérida. Departamentos con las mejores ubicaciones y más.
                 </p>
             </div>
+            
             {/*Desarrollos*/}
             <div className="grid grid-cols-1 xl:grid-cols-2 gap-8">
                 <div className="flex flex-col gap-2 rounded-3xl"> 
