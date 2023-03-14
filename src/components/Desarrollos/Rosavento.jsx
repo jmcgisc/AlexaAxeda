@@ -13,7 +13,7 @@ const Rosavento = () => {
             </div>
 
             <hr
-                class="my-12 h-0.5 border-t-0 bg-neutral-100 opacity-100 dark:opacity-50" />
+                className="my-12 h-0.5 border-t-0 bg-neutral-100 opacity-100 dark:opacity-50" />
 
             <div className ="container mx-auto grid grid-cols-1 xl:grid-cols-4 gap-4">
                 <div className="col-start-1 col-end-4 xl:col-span-2"> 
@@ -22,7 +22,7 @@ const Rosavento = () => {
                     </h2>
                     <h2 className="font-serif text-2xl md:text-xl xl:text-3xl tracking-widest leading-normal text-rose-900 px-4 xl:px-16">
                         ubicación de tu
-                        <strong class="underline decoration-axeda/[.33]"> próxima inversión. </strong>
+                        <strong className="underline decoration-axeda/[.33]"> próxima inversión. </strong>
                     </h2>
                 </div>
             {/* 
@@ -32,12 +32,12 @@ const Rosavento = () => {
                     </button>
                 </div>
 
-                <ul class="nav nav-tabs mb-4 justify-content-end" id="investmentTab-widget_1673888685032" role="tablist">
-                    <li class="nav-item" role="presentation">
-                        <a class="nav-link active" id="tab-elem-widget_1673888685032-1" data-toggle="tab" href="#tab-widget_1673888685032-1" role="tab" aria-controls="tab-widget_1673888685032-1" aria-selected="true">Yucatán</a>
+                <ul className="nav nav-tabs mb-4 justify-content-end" id="investmentTab-widget_1673888685032" role="tablist">
+                    <li className="nav-item" role="presentation">
+                        <a className="nav-link active" id="tab-elem-widget_1673888685032-1" data-toggle="tab" href="#tab-widget_1673888685032-1" role="tab" aria-controls="tab-widget_1673888685032-1" aria-selected="true">Yucatán</a>
                     </li>
-                    <li class="nav-item" role="presentation">
-                        <a class="nav-link" id="tab-elem-widget_1673888685032-2" data-toggle="tab" href="#tab-widget_1673888685032-2" role="tab" aria-controls="tab-widget_1673888685032-2" aria-selected="false">Quintana Roo</a>
+                    <li className="nav-item" role="presentation">
+                        <a className="nav-link" id="tab-elem-widget_1673888685032-2" data-toggle="tab" href="#tab-widget_1673888685032-2" role="tab" aria-controls="tab-widget_1673888685032-2" aria-selected="false">Quintana Roo</a>
                     </li>
                 </ul> */}      
             </div>
@@ -73,9 +73,9 @@ const Rosavento = () => {
             </div>
  
             <hr
-                class="my-12 h-0.5 border-t-0 bg-neutral-100 opacity-100 dark:opacity-50" />
+                className="my-12 h-0.5 border-t-0 bg-neutral-100 opacity-100 dark:opacity-50" />
  
-            <div class="grid xl:grid-cols-7 xl:gap-4 place-items-center xl:py-30 bg-[url('/public/backGreen.png')]">
+            <div className="grid xl:grid-cols-7 xl:gap-4 place-items-center xl:py-30 bg-[url('/public/backGreen.png')]">
                 <div></div>
                         <img src="amenidades.png" className="h-28 w-14 py-4 "/>    
                         <p className ="text-3xl text-axeda py-10">Amenidades</p>
@@ -110,7 +110,7 @@ const Rosavento = () => {
             </div>
  
             <hr
-                class="my-12 h-0.5 border-t-0 bg-neutral-100 opacity-100 dark:opacity-50" />
+                className="my-12 h-0.5 border-t-0 bg-neutral-100 opacity-100 dark:opacity-50" />
 
             <div className ="container mx-auto grid grid-cols-1 xl:grid-cols-4 gap-8">
                 <div className="col-start-1 col-end-4 xl:col-span-2"> 
@@ -119,7 +119,7 @@ const Rosavento = () => {
                     </h2>
                     <h2 className="font-serif text-2xl xl:text-3xl tracking-widest leading-normal text-rose-900 px-16">
                         Grupo
-                        <strong class="underline decoration-axeda/[.33]"> Axeda.</strong>
+                        <strong className="underline decoration-axeda/[.33]"> Axeda.</strong>
                     </h2>
                 </div>  
             </div>
@@ -157,7 +157,7 @@ const Rosavento = () => {
             </div>
 
             <hr
-                class="my-12 h-0.5 border-t-0 bg-neutral-100 opacity-100 dark:opacity-50" /> 
+                className="my-12 h-0.5 border-t-0 bg-neutral-100 opacity-100 dark:opacity-50" /> 
 
             <div className ="container mx-auto grid grid-cols-1 xl:grid-cols-4 ">
                 <div className="col-start-1 col-end-4 xl:col-span-2"> 
@@ -166,7 +166,7 @@ const Rosavento = () => {
                     </h2>
                     <h2 className="font-serif text-2xl xl:text-3xl tracking-widest leading-normal text-rose-900 px-6 xl:px-16">
                             
-                        <strong class="underline decoration-axeda/[.33]"> Rosavento. </strong>
+                        <strong className="underline decoration-axeda/[.33]"> Rosavento. </strong>
                     </h2>
 
                     <div className="col-start-2 col-end-7 py-6 px-6 ">
@@ -190,9 +190,9 @@ const Rosavento = () => {
 
                 <div className="md:col-start-4"></div>
             </div> 
-            <hr
-                class="my-12 h-0.5 border-t-0 bg-neutral-100 opacity-100 dark:opacity-50" />
 
+            <hr
+                className="my-12 h-0.5 border-t-0 bg-neutral-100 opacity-100 dark:opacity-50" />
 
             <div className="h4/5">
             </div>
@@ -215,9 +215,7 @@ const Rosavento = () => {
             </div>
 
             <hr
-                class="my-12 h-0.5 border-t-0 bg-neutral-100 opacity-100 dark:opacity-50" />
-
-
+                className="my-12 h-0.5 border-t-0 bg-neutral-100 opacity-100 dark:opacity-50" />
 
             <div className="grid grid-cols">   
                 
@@ -245,7 +243,7 @@ const Rosavento = () => {
             </div>
 
             <hr
-                class="my-12 h-0.5 border-t-0 bg-neutral-100 opacity-100 dark:opacity-50" />
+                className="my-12 h-0.5 border-t-0 bg-neutral-100 opacity-100 dark:opacity-50" />
 
             <div className="flex flex-wrap grid gap-2 grid-cols-2 place-items-center">
                 <div> 
@@ -269,7 +267,7 @@ const Rosavento = () => {
                 </div>
             </div>
 
-            <FormularioContacto/> 
+            <FormularioContacto/>  
         </>
     )
 }
