@@ -55,10 +55,6 @@ const Footer = () => {
           <p  className="text-gray-300 mt-4 hover:text-white transition-colors"> 
             <NavLink to = "/components/footer/Bio" > Alexa Delgado </NavLink>
           </p>
-
-           <p  className="text-gray-300 mt-4 hover:text-white transition-colors">
-            <NavLink to = "/components/footer/Prensa" > Noticias de Prensa </NavLink>
-          </p>
  
           <p  className="text-gray-300 mt-4 hover:text-white transition-colors">
             <NavLink to = "/components/footer/Inversores" > Inversores </NavLink>
@@ -68,12 +64,9 @@ const Footer = () => {
             <NavLink to = "/components/footer/Eventos" > Eventos </NavLink>
           </p>
           
-          <p  className="text-gray-300 mt-4 hover:text-white transition-colors">
-            <NavLink to = "/components/footer/Terminos" > Términos de uso</NavLink>
-          </p>
 
           <p  className="text-gray-300 mt-4 hover:text-white transition-colors">
-            <NavLink to = "/components/footer/Privacidad" > Política de Privacidad y Cookies</NavLink>
+            <NavLink to = "/components/footer/Privacidad" > Política de Privacidad</NavLink>
           </p>
 
           <button
