@@ -3,6 +3,7 @@ import ReactPlayer  from 'react-player'
 import Banner       from "../Aux/Banner"
 import pdfC         from '../../../public/ROSAVENTO CANCÚN_Brochure.pdf'
 import pdfM         from '../../../public/Brochure_Rosavento_Merida.pdf'
+import FormularioContacto from "./../Home/FormularioContacto"
 
 const Rosavento = () => { 
     return (
@@ -14,17 +15,17 @@ const Rosavento = () => {
             <hr
                 class="my-12 h-0.5 border-t-0 bg-neutral-100 opacity-100 dark:opacity-50" />
 
-            <div className ="container mx-auto grid grid-cols-1 xl:grid-cols-4 gap-8">
+            <div className ="container mx-auto grid grid-cols-1 xl:grid-cols-4 gap-4">
                 <div className="col-start-1 col-end-4 xl:col-span-2"> 
-                    <h2 className="font-serif text-base md:text-xl xl:text-3xl tracking-wider leading-normal xl:col-span-2 text-orange-900">
-                        Conoce los beneficios de  
+                    <h2 className="font-serif text-2xl xl:text-4xl tracking-widest leading-normal xl:col-span-2 text-orange-900">
+                        Conoce los beneficios de la
                     </h2>
-                    <h2 className="font-serif text-base md:text-xl xl:text-3xl tracking-wider leading-normal xl:col-span-2 text-rose-900 px-4 xl:px-16">
+                    <h2 className="font-serif text-2xl md:text-xl xl:text-3xl tracking-widest leading-normal text-rose-900 px-4 xl:px-16">
                         ubicación de tu
                         <strong class="underline decoration-axeda/[.33]"> próxima inversión. </strong>
                     </h2>
                 </div>
-{/* 
+            {/* 
                 <div className="col-start-3 col-end-4 col-span-2 px-12">
                     <button className="">
 
@@ -41,9 +42,9 @@ const Rosavento = () => {
                 </ul> */}      
             </div>
             
-            <div className="p-12">
+            <div className="p-12 xs:p-6">
             <div className="grid grid-cols-1 xl:grid-cols-2 xl:px-20 gap-8">
-                <div className="flex flex-col gap-2 rounded-3xl"> 
+                <div className="flex flex-col"> 
 
                 <ReactPlayer
                             url='https://www.youtube.com/watch?v=e6qNM45bUHg'
@@ -55,20 +56,18 @@ const Rosavento = () => {
                 />
                 </div>
 
-                <div className="grid grid-cols-1 xl:grid-cols-2 gap-4 xl:py-20 xl:px-20">
+                <div className="grid grid-cols-1 gap-4 xl:py-20 xl:px-20">
 
-                    <div className="flex flex-col gap-6"> 
-                        <p className="text-gray-500"> 
-                        Destaca por su belleza, cultura, calidad de vida y seguridad, lo que la ha posicionado a su capital entre las mejores 
-                        ciudades para vivir e invertir del sureste mexicano.
+                    <div className="flex flex-col gap-4"> 
+                        <p className="text-gray-500 text-xl text-justify"> 
+                            Destaca por su belleza, cultura, calidad de vida y seguridad, lo que la ha posicionado a su capital entre las mejores 
+                            ciudades para vivir e invertir del sureste mexicano.
                          </p>
-                        <p className="text-gray-500"> 
-                        Su ubicación permite gran conectividad hacia diversos sitios de interés, así como a otros países a través de su Aeropuerto 
-                        Internacional y el Puerto de Progreso.
+                        <p className="text-gray-500 text-xl text-justify"> 
+                            Su ubicación permite gran conectividad hacia diversos sitios de interés, así como a otros países a través de su Aeropuerto 
+                            Internacional y el Puerto de Progreso.
                          </p>
-                           
                     </div>
-
                 </div>
             </div>
             </div>
@@ -115,49 +114,34 @@ const Rosavento = () => {
 
             <div className ="container mx-auto grid grid-cols-1 xl:grid-cols-4 gap-8">
                 <div className="col-start-1 col-end-4 xl:col-span-2"> 
-                    <h2 className="font-serif text-3xl tracking-wider leading-normal text-orange-900">
+                    <h2 className="font-serif text-2xl xl:text-3xl tracking-widest leading-normal text-orange-900">
                         Desarrollado por
                     </h2>
-                    <h2 className="font-serif text-3xl tracking-wider leading-normal text-rose-900 px-16">
+                    <h2 className="font-serif text-2xl xl:text-3xl tracking-widest leading-normal text-rose-900 px-16">
                         Grupo
                         <strong class="underline decoration-axeda/[.33]"> Axeda.</strong>
                     </h2>
-                </div> 
-{/* 
-                <div className="col-start-3 col-end-4 col-span-2 px-12">
-                    <button className="">
-
-                    </button>
-                </div>
-
-                <ul class="nav nav-tabs mb-4 justify-content-end" id="investmentTab-widget_1673888685032" role="tablist">
-                    <li class="nav-item" role="presentation">
-                        <a class="nav-link active" id="tab-elem-widget_1673888685032-1" data-toggle="tab" href="#tab-widget_1673888685032-1" role="tab" aria-controls="tab-widget_1673888685032-1" aria-selected="true">Yucatán</a>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <a class="nav-link" id="tab-elem-widget_1673888685032-2" data-toggle="tab" href="#tab-widget_1673888685032-2" role="tab" aria-controls="tab-widget_1673888685032-2" aria-selected="false">Quintana Roo</a>
-                    </li>
-                </ul> */}      
+                </div>  
             </div>
             
-            <div className="p-12">
+            <div className="p-12 xs:p-6">
             <div className="grid grid-cols-1 xl:grid-cols-2 xl:px-20 gap-8">
 
-                <div className="grid grid-cols-1 xl:grid-cols-2 gap-4 xl:py-20 xl:px-20">
+                <div className="grid grid-cols-1 xl:py-20 xl:px-20">
 
-                    <div className="flex flex-col gap-6"> 
-                        <p className="text-gray-500"> 
+                    <div className="flex flex-col gap-4"> 
+                        <p className="text-gray-500 text-justify text-xl"> 
                         Una empresa inmobiliaria que busca facilitar el acceso al mundo de las inversiones  de forma inteligente y 
                         promoviendo alta calidad de vida, desarrollando bienes inmuebles en  las zonas de mayor crecimiento y demanda del 
                         sureste mexicano, con un solo objetivo en  mente: 
-                         </p>
-                        <p className="text-gray-500"> 
+                        </p>
+
+                        <p className="text-gray-500 text-justify text-xl"> 
                         Superar sus límites y generar abundancia a sus inversionistas. 
                          </p>
-                           
                     </div>
-
                 </div>
+
                 <div className="flex flex-col gap-2 rounded-3xl"> 
 
                 <ReactPlayer
@@ -172,24 +156,25 @@ const Rosavento = () => {
             </div>
             </div>
 
-
             <hr
-                class="my-12 h-0.5 border-t-0 bg-neutral-100 opacity-100 dark:opacity-50" />
+                class="my-12 h-0.5 border-t-0 bg-neutral-100 opacity-100 dark:opacity-50" /> 
 
-            <div className ="container mx-auto grid grid-cols-4">
-                <div className="col-start-1 col-end-4 col-span-2 px-12"> 
-                    <h2 className="font-serif text-3xl tracking-wider leading-normal text-orange-900">
-                            Descubre las 
+            <div className ="container mx-auto grid grid-cols-1 xl:grid-cols-4 ">
+                <div className="col-start-1 col-end-4 xl:col-span-2"> 
+                    <h2 className="font-serif text-2xl tracking-widest leading-normal text-orange-900">
+                            Descubre las oportunidades de  
                     </h2>
-                    <h2 className="font-serif text-3xl tracking-wider leading-normal text-rose-900 px-16">
-                            oportunidades de  
+                    <h2 className="font-serif text-2xl xl:text-3xl tracking-widest leading-normal text-rose-900 px-6 xl:px-16">
+                            
                         <strong class="underline decoration-axeda/[.33]"> Rosavento. </strong>
                     </h2>
-                    <div className="col-start-2 col-end-7 py-3 px-8 ">
+
+                    <div className="col-start-2 col-end-7 py-6 px-6 ">
                         <p>Elige e invierte en tu próximo patrimonio en las zonas con mejor plusvalía de Mérida y  Cancún. </p>
                     </div>
-                </div>
+                </div>  
             </div>
+              
 
             <div className="grid md:grid-cols-4 gap-8">
                 <div className="md:col-start-1 "></div>
@@ -229,22 +214,34 @@ const Rosavento = () => {
                 </div>
             </div>
 
-            <div className="grid grid-cols-4 gap-4">
-                <div></div>
-                
             <hr
                 class="my-12 h-0.5 border-t-0 bg-neutral-100 opacity-100 dark:opacity-50" />
 
-                <div>
-                    <p className="py-8">
-                    Rosavento 
-                    </p> 
-                    <p className="py-8">
-                    Un desarrollo con un concepto único en el sureste de México, donde gracias a su  ubicación en las mejores zonas de 
-                    Mérida y Cancún, es ideal para alcanzar tus objetivos de  inversión, ya sea para contruir tu patrimonio o para generar 
-                    rendimientos gracias a su  plusvalía en ascenso. Además, cuenta con características y amenidades premium en las que toda la  familia podrán disfrutar de una vida tranquila en Mérida y Cancún.  
-                    </p>
-                </div>
+
+
+            <div className="grid grid-cols">   
+                
+            <div className ="mx-auto grid grid-cols-2 ">
+                <div className="col-start-1 col-end-4 xl:col-span-4 xl:px-12"> 
+                    <h2 className="font-serif text-3xl tracking-widest leading-normal text-orange-900">
+                        Rosavento
+                    </h2> 
+                    <div className="col-start-2 col-end-8 py-6 px-6 text-gray-500 text-justify text-xl tracking-widest">
+                        <p>
+                            Un desarrollo con un concepto único en el sureste de México, donde gracias a su  ubicación en las mejores zonas de 
+                            Mérida y Cancún, es ideal para alcanzar tus objetivos de  inversión, ya sea para contruir tu patrimonio o para generar 
+                            rendimientos gracias a su  plusvalía en ascenso.
+                        </p>
+                    </div>
+
+                    <div className="col-start-2 col-end-8 py-6 px-6 text-gray-500 text-justify text-xl tracking-widest">
+                        <p>
+                            Además, cuenta con características y amenidades premium en las que toda la  
+                            familia podrán disfrutar de una vida tranquila en Mérida y Cancún.
+                        </p>
+                    </div>
+                </div>  
+            </div>
             </div>
 
             <hr
@@ -272,9 +269,7 @@ const Rosavento = () => {
                 </div>
             </div>
 
-            <hr
-                class="my-12 h-0.5 border-t-0 bg-neutral-100 opacity-100 dark:opacity-50" />
-
+            <FormularioContacto/> 
         </>
     )
 }

@@ -14,34 +14,38 @@ const Headers = () => {
     const [showMenu, setShowMenu] = useState (false);
     return (
    <> 
-      <div className="flex flex-row-reverse flex-wrap fixed top-0 left-0 right-0 bg-axeda "> 
-               <div className="flex text-gray-100 px-4 -py-4 text-base font-mono">Línea Asesor AXEDA:
+      <nav className="xl:visible flex flex-cols flex-row-reverse w-full bg-axeda fixed top-0 left-0 right-0 w-full "> 
+               <div className="flex text-gray-100 text-base">Línea Asesor AXEDA:
+                  
                   <div className="text-base px-1">
-                  <a href="tel:+525570137764" className="text-white text-base px-1">+(52) 55 7013 7764</a>
-                     
+                     <a href="tel:+525570137764" class="text-white text-base px-1">+(52) 55 7013 7764</a>
                   </div>
-                  <div className="flex-1 w-6 py-1">
+
+                  <div className="w-6 py-1">
                      <RiPhoneFill/>
                   </div>
-                   <div className="text-base px-1">
-                     | Email: <a href="asesor.alexadelgado@gmail.com" className="text-white text-base px-1">asesor.alexadelgado@gmail.com</a>
+
+                   <div className="text-base">| Email: 
+                     <a href="asesor.alexadelgado@gmail.com" class="text-white text-base px-1">asesor.alexadelgado@gmail.com</a>
                    </div>
-                  <div className="py-1">
+
+                  <div className="w-6 py-1">
                      <RiMailFill/> 
                   </div>
+
                </div> 
-      </div>
+      </nav>
 
-     <header className="flex flex-cols items-center justify-between py-14 px-8 h-[10vh] z-50 sticky top-6 bg-white">
+     <header className="flex flex-cols items-center justify-between w-full py-20 px-8 h-[10vh] z-50 sticky top-6  bg-white">
 
-      <div className="xl:w-1/6 basis-2/5 text-center mt-0 pl-7 bg-white">
-         <a href="/" className="text-sm font-bold relative p-1 bg-white">
+      <div className="xl:w-1/6  basis-2/5 text-center mt-3 pl-7 bg-white">
+         <a href="/" className="text-2xl font-bold relative p-1 bg-white">
                <img className=" " src={image} alt="Logotipo Axeda"/>  
          </a>
       </div>
 
       <nav
-         className={`fixed bg-white w-[68 %] md:w-[25%] xl:w-full h-full ${showMenu ? "left-0" : "-left-full"} top-0 xl:static flex-1 flex flex-col xl:flex-row items-center justify-center gap-10 transition-all duration-500 z-50`}
+         className={`fixed bg-white w-[68%] md:w-[25%] xl:w-full h-full ${showMenu ? "left-0" : "-left-full"} top-0 xl:static flex-1 flex flex-col xl:flex-row items-center justify-center gap-10 transition-all duration-500 z-50`}
       >
             
          <div className ="px-22 py-2 inline-flex w-full justify-center rounded-md border border-gray-300 bg-white text-gray-700 font-sans sm:text-sm
@@ -119,7 +123,7 @@ const Headers = () => {
                      </Menu.Item>
                   </div> 
                </Menu.Items>
-               </Transition>
+               </Transition> 
             </Menu> 
 
          <div className ="px-22 py-2 inline-flex justify-center rounded-md border border-gray-300 bg-white text-sm text-center font-mono font-medium text-gray-700 shadow-sm 
