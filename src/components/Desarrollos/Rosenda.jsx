@@ -57,36 +57,36 @@ const Rosenda = () => {
             <hr
                 className="my-12 h-0.5 border-t-0 bg-neutral-100 opacity-100 dark:opacity-50" />
  
-            <div className="grid xl:grid-cols-7 xl:gap-4 place-items-center xl:py-30 bg-[url('/public/backGreen.png')]">
+            <div className="grid xl:grid-cols-7 xl:gap-4 place-items-center xl:py-30 bg-[url('/public/homeBack1.png')]">
                 <div></div>
-                        <img src="amenidades.png" className="h-28 w-14 py-4 "/>    
+                        <img src="amenidades_azul.png" className="h-28 w-14 py-4 "/>    
                         <p className ="text-3xl text-axeda py-10">Amenidades</p>
                 <div></div>
-                        <img src="maps.png" className="h-28 w-14 py-4"/>
+                        <img src="maps_azul.png" className="h-28 w-14 py-4"/>
                         <p className ="text-3xl text-axeda py-10 ">Ubicación</p>
                 <div></div>
 
                 <div></div>
-                        <img src="plusvalia.png" className="h-28 w-14 py-4"/>
+                        <img src="plusvalia_azul.png" className="h-28 w-14 py-4"/>
                         <p className ="text-3xl text-axeda py-10">Plusvalía</p>
                 <div></div>
-                        <img src="areasv.png" className="h-28 w-14 py-4"/>
+                        <img src="areasv_azul.png" className="h-28 w-14 py-4"/>
                         <p className ="text-3xl text-axeda  py-10">Áreas Verdes</p>
                 <div></div>
  
                 <div></div>
-                        <img src="familia.png" className="h-28 w-14 py-4"/>
+                        <img src="familia_azul.png" className="h-28 w-14 py-4"/>
                         <p className ="text-3xl text-axeda py-10">Ambiente Familiar</p>
                 <div></div>
-                        <img src="credito.png" className="h-28 w-14 py-4"/>
+                        <img src="credito_azul.png" className="h-28 w-14 py-4"/>
                         <p className ="text-3xl text-axeda py-10 ">Facilidad de pago</p>
                 <div></div>
 
                 <div></div> 
-                        <img src="desarrollos.png" className="h-28 w-14 py-4"/>
+                        <img src="desarrollos_azul.png" className="h-28 w-14 py-4"/>
                         <p className ="text-3xl text-axeda py-10">Desarrollos</p>
                 <div></div>
-                        <img src="ubicacion.png" className="h-28 w-14 py-4"/>
+                        <img src="ubicacion_azul.png" className="h-28 w-14 py-4"/>
                         <p className ="text-3xl text-axeda py-10 ">Facilidad de pago</p>
                 <div></div>
             </div>
@@ -106,8 +106,8 @@ const Rosenda = () => {
                 </div>  
             </div>
             
-            <div className="p-12 xs:p-6">
-            <div className="grid grid-cols-1 xl:grid-cols-2 xl:px-20 gap-8">
+            <div className="p-10 xs:p-6">
+            <div className="grid grid-cols-1 xl:grid-cols-2 xl:px-20 gap-4">
 
                 <div className="grid grid-cols-1 xl:py-20 xl:px-20">
 
@@ -129,8 +129,7 @@ const Rosenda = () => {
                 <ReactPlayer
                             url='https://www.youtube.com/watch?v=pnsNE5oqZOo&t=3s'
                             className='react-player' 
-                            controls
-                            playIcon	
+                            controls 
                             width='100%'
                             height='100%' 
                 />
@@ -151,7 +150,7 @@ const Rosenda = () => {
                         <a href={pdf} target="_blank" rel="noopener noreferrer" download="ROSENDA_Brochure.pdf"> 
                             <img    className="w-22 h-20 py-2" 
                                     src="brochure.png"/> 
-                                    Brochure Rosenda
+                                    Descarga el Brochure Rosenda
                         </a>
                     </button> 
                 </div>

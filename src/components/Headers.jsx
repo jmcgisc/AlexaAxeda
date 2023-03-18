@@ -14,11 +14,15 @@ const Headers = () => {
     const [showMenu, setShowMenu] = useState (false);
     return (
    <> 
-      <nav className="xl:visible flex flex-cols flex-row-reverse w-full bg-axeda fixed top-0 left-0 right-0 w-full "> 
-               <div className="flex text-gray-100 text-base">Línea Asesor AXEDA:
+
+
+     <header className="flex flex-cols items-center justify-between w-full py-20 px-8 h-[10vh] z-50 sticky top-6  bg-white">
+
+     <div className="flex xl:flex-row-reverse bg-axeda fixed top-0 left-0 right-0 w-full"> 
+               <div className="flex text-gray-100 text-base">Línea Asesor `¡+ç:
                   
                   <div className="text-base px-1">
-                     <a href="tel:+525570137764" class="text-white text-base px-1">+(52) 55 7013 7764</a>
+                     <a href="tel:+525570137764" className="text-white text-base px-1">+(52) 55 7013 7764</a>
                   </div>
 
                   <div className="w-6 py-1">
@@ -26,7 +30,7 @@ const Headers = () => {
                   </div>
 
                    <div className="text-base">| Email: 
-                     <a href="asesor.alexadelgado@gmail.com" class="text-white text-base px-1">asesor.alexadelgado@gmail.com</a>
+                     <a href="asesor.alexadelgado@gmail.com" className="text-white text-base px-1">asesor.alexadelgado@gmail.com</a>
                    </div>
 
                   <div className="w-6 py-1">
@@ -34,9 +38,7 @@ const Headers = () => {
                   </div>
 
                </div> 
-      </nav>
-
-     <header className="flex flex-cols items-center justify-between w-full py-20 px-8 h-[10vh] z-50 sticky top-6  bg-white">
+      </div>
 
       <div className="xl:w-1/6  basis-2/5 text-center mt-3 pl-7 bg-white">
          <a href="/" className="text-2xl font-bold relative p-1 bg-white">
