@@ -49,8 +49,7 @@ const Rosavento = () => {
                 <ReactPlayer
                             url='https://www.youtube.com/watch?v=e6qNM45bUHg'
                             className='react-player' 
-                            controls
-                            playIcon	
+                            controls 
                             width='100%'
                             height='100%' 
                 />
@@ -147,8 +146,7 @@ const Rosavento = () => {
                 <ReactPlayer
                             url=' https://www.youtube.com/watch?v=pnsNE5oqZOo&t=3s'
                             className='react-player' 
-                            controls
-                            playIcon	
+                            controls 
                             width='100%'
                             height='100%' 
                 />
@@ -252,7 +250,7 @@ const Rosavento = () => {
                         </a>
                             <img    className="w-22 h-20 py-2 " 
                                     src="brochure.png"/> 
-                                    Brochure Rosavento Cancún 
+                                    Descarga el Brochure Rosavento Cancún 
                     </button> 
                 </div>
 
@@ -261,7 +259,7 @@ const Rosavento = () => {
                         <a href={pdfM} target="_blank" rel="noopener noreferrer" download="Brochure_Rosavento_Merida.pdf"> 
                             <img    className="w-22 h-20 py-2" 
                                     src="brochure.png"/> 
-                                    Brochure Rosavento Mérida 
+                                    Descarga el Brochure Rosavento Mérida 
                         </a>
                     </button> 
                 </div>

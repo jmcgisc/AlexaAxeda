@@ -36,7 +36,7 @@ const FormularioContacto = () => {
 
                             <form action ="" className="flex flex-col space-y-4 " >
                                 <div>
-                                    <label  for="fname" class="text-sm text-sm after:content-['*'] after:ml-0.5 after:text-red-500">
+                                    <label className="text-sm text-sm after:content-['*'] after:ml-0.5 after:text-red-500">
                                         Nombre Completo</label>
                                     <input  type="text" placeholder="Nombre Completo" 
                                             className="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 outline-none requiere
@@ -44,27 +44,27 @@ const FormularioContacto = () => {
                                 </div>
 
                                 <div className=""> 
-                                    <label  for="" class="text-sm after:content-['*'] after:ml-0.5 after:text-red-500">
+                                    <label className="text-sm after:content-['*'] after:ml-0.5 after:text-red-500">
                                         Correo Electrónico </label> 
 
                                     <input  type="email" 
-                                            required class="peer w-full rounded-md px-4 py-2 outline-none ring-1 ring-gray-300 focus:ring-2 
+                                            required className="peer w-full rounded-md px-4 py-2 outline-none ring-1 ring-gray-300 focus:ring-2 
                                             focus:ring-teal-300 invalid:border-pink-500 invalid:text-pink-600 focus:invalid:border-pink-500 
                                             focus:invalid:ring-pink-500" placeholder="asesor.alexadelgado@gmail.com" 
                                        />
-                                        <p class="peer-valid:invisible text-pink-600 text-sm">
+                                        <p className="peer-valid:invisible text-pink-600 text-sm">
                                             Por favor introduce un E-mail valido.
                                         </p> 
                                 </div> 
                                         
                                 <div>
-                                    <label for="" class="text-sm after:content-['*'] after:ml-0.5 after:text-red-500">Teléfono Móvil</label>
+                                    <label className="text-sm after:content-['*'] after:ml-0.5 after:text-red-500">Teléfono Móvil</label>
                                     <input type="text" placeholder="+52 55 55 55 55 55" className="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 outline-none 
                                     focus:ring-2 focus:ring-teal-300 "/>
                                 </div>
 
                                 <div>
-                                    <label for="" class="text-sm">Desarrollos</label>
+                                    <label className="text-sm">Desarrollos</label>
                                
                                 </div>
 
@@ -103,7 +103,7 @@ const FormularioContacto = () => {
                                 </div>
 
                                 <div>
-                                    <label for="" class="text-sm">Inversión estimada para el enganche</label> 
+                                    <label className="text-sm">Inversión estimada para el enganche</label> 
                                 </div>
 
                                 <div>
@@ -133,7 +133,7 @@ const FormularioContacto = () => {
                                 </div>
 
                                 <div>
-                                    <label for="" class="text-sm">Interesado en: </label> 
+                                    <label  className="text-sm">Interesado en: </label> 
                                 </div>
                                 
                                 <div>
@@ -172,7 +172,7 @@ const FormularioContacto = () => {
                                 </div>
 
                                 <div>
-                                    <label for="" class="text-sm">Mensaje</label> 
+                                    <label className="text-sm">Mensaje</label> 
                                     <textarea
                                     type="textarea" placeholder="Deja que te asesoremos, escribenos cualquier duda y con gusto te atenderemos" className="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 outline-none 
                                     focus:ring-2 focus:ring-teal-300"

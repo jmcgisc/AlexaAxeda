@@ -1,64 +1,9 @@
-// import React from 'react'
-// import ReactPlayer from 'react-player'
-// import pdf from '../../../public/INDO_Brochure.pdf'
-
-// const Indo = () => {
-//     return (
-//         <>
-//             <div className ="flex flex-cols py-8 px-6 ">
-//                 <ReactPlayer
-//                     url='https://www.youtube.com/watch?v=e6qNM45bUHg'
-//                     className='react-player'
-//                     controls
-//                     playIcon	
-//                     width='1000px'
-//                     height='563px' 
-//                 />
-//             </div>
-
-//             <div className ="flex flex-cols py-8 px-6 ">
-//                 <ReactPlayer
-//                     url='https://www.youtube.com/watch?v=0a1AdQCK8yY'
-//                     className='react-player'
-//                     controls
-//                     playIcon	
-//                     width='1000px'
-//                     height='563px' 
-//                 />
-//             </div>
-
-//             <div className ="flex flex-cols py-8 px-6 ">
-//                 <ReactPlayer
-//                     url=' https://www.youtube.com/watch?v=pnsNE5oqZOo&t=3s'
-//                     className='react-player'
-//                     controls
-//                     playIcon	
-//                     width='1000px'
-//                     height='563px' 
-//                 />
-//             </div>
-
-//             <div> 
-//                 <button className={`btn`}>
-//                     <a href={pdf} target="_blank" rel="noopener noreferrer" download="INDO_Brochure.pdf"> 
-//                     Brochure Indo   
-//                     </a>
-//                 </button> 
-//             </div>
-
-
-//         </>
-//     )
-// }
-
-// export default Indo
-
-
 import React        from 'react'
 import ReactPlayer  from 'react-player'
-import Banner       from "../Aux/Banner"
-import pdf from '../../../public/ROSENDA_Brochure.pdf'
-import FormularioContacto from "./../Home/FormularioContacto"
+import Banner       from "../Aux/Banner" 
+import pdf from '../../../public/INDO_Brochure.pdf'
+import FormularioContacto from "./../Home/FormularioContacto" 
+import MapSection from '../Aux/Map'
 
 const Indo = () => { 
     return (
@@ -89,8 +34,7 @@ const Indo = () => {
                 <ReactPlayer
                             url='https://www.youtube.com/watch?v=0a1AdQCK8yY&t=5s'
                             className='react-player' 
-                            controls
-                            playIcon	
+                            controls 
                             width='100%'
                             height='100%' 
                 />
@@ -111,17 +55,17 @@ const Indo = () => {
             <hr
                 className="my-12 h-0.5 border-t-0 bg-neutral-100 opacity-100 dark:opacity-50" />
  
-            <div className="grid xl:grid-cols-7 xl:gap-4 place-items-center xl:py-30 bg-[url('/public/backGreen.png')]">
+            <div className="grid xl:grid-cols-7 xl:gap-4 place-items-center xl:py-30 bg-[url('/public/homeBack2.png')]">
                 <div></div>
                         <img src="amenidades.png" className="h-28 w-14 py-4 "/>    
                         <p className ="text-3xl text-axeda py-10">Amenidades</p>
                 <div></div>
-                        <img src="maps.png" className="h-28 w-14 py-4"/>
+                        <img src="maps_azul.png" className="h-28 w-14 py-4"/>
                         <p className ="text-3xl text-axeda py-10 ">Ubicación</p>
                 <div></div>
 
                 <div></div>
-                        <img src="plusvalia.png" className="h-28 w-14 py-4"/>
+                        <img src="plusvalia_azul.png" className="h-28 w-14 py-4"/>
                         <p className ="text-3xl text-axeda py-10">Plusvalía</p>
                 <div></div>
                         <img src="areasv.png" className="h-28 w-14 py-4"/>
@@ -132,12 +76,12 @@ const Indo = () => {
                         <img src="familia.png" className="h-28 w-14 py-4"/>
                         <p className ="text-3xl text-axeda py-10">Ambiente Familiar</p>
                 <div></div>
-                        <img src="credito.png" className="h-28 w-14 py-4"/>
+                        <img src="credito_azul.png" className="h-28 w-14 py-4"/>
                         <p className ="text-3xl text-axeda py-10 ">Facilidad de pago</p>
                 <div></div>
 
                 <div></div> 
-                        <img src="desarrollos.png" className="h-28 w-14 py-4"/>
+                        <img src="desarrollos_azul.png" className="h-28 w-14 py-4"/>
                         <p className ="text-3xl text-axeda py-10">Desarrollos</p>
                 <div></div>
                         <img src="ubicacion.png" className="h-28 w-14 py-4"/>
@@ -183,8 +127,7 @@ const Indo = () => {
                 <ReactPlayer
                             url='https://www.youtube.com/watch?v=pnsNE5oqZOo&t=3s'
                             className='react-player' 
-                            controls
-                            playIcon	
+                            controls 
                             width='100%'
                             height='100%' 
                 />
@@ -194,18 +137,37 @@ const Indo = () => {
 
             <hr
                 className="my-12 h-0.5 border-t-0 bg-neutral-100 opacity-100 dark:opacity-50" /> 
- 
 
                 <div className="place-items-center "> 
                     <button className={`btn`} >
-                        <a href={pdf} target="_blank" rel="noopener noreferrer" download="ROSENDA_Brochure.pdf"> 
+                        <a href={pdf} target="_blank" rel="noopener noreferrer" download="INDO_Brochure.pdf"> 
                             <img    className="w-22 h-20 py-2" 
                                     src="brochure.png"/> 
-                                    Brochure Rosenda
+                                    Descarga el Brochure Indo
                         </a>
                     </button> 
                 </div>
             <FormularioContacto/>  
+
+
+            <hr
+                className="my-12 h-0.5 border-t-0 bg-neutral-100 opacity-100 dark:opacity-50" /> 
+ 
+
+            <div className="p-12 xs:p-6">
+            <div className="grid grid-cols-1 xl:grid-cols-2 xl:px-20 gap-8"> 
+
+                <div className="grid grid-cols-1 gap-4 xl:py-20 xl:px-20">
+
+                    <div className="flex flex-col gap-4"> 
+
+                    <MapSection  /> 
+
+
+                    </div>
+                </div>
+            </div>
+            </div>
         </>
     )
 }
