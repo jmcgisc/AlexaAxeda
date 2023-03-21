@@ -9,7 +9,7 @@ const Rosavento = () => {
     return (
         <> 
             <div className="bg-[url('/public/homeBack1.png')] flex flex-row-reverse "> 
-                <img src="carrusel11.jpg" className="ellipse(50% 65% at 70% 50%)"/> 
+                <img src="carrusel11.jpg" className="ellipse-desarrollos"/> 
             </div>
 
             <hr
@@ -58,11 +58,11 @@ const Rosavento = () => {
                 <div className="grid grid-cols-1 gap-4 xl:py-20 xl:px-20">
 
                     <div className="flex flex-col gap-4"> 
-                        <p className="text-gray-500 text-xl text-justify"> 
+                        <p className="font-body text-xl text-gray-500 text-justify"> 
                             Destaca por su belleza, cultura, calidad de vida y seguridad, lo que la ha posicionado a su capital entre las mejores 
                             ciudades para vivir e invertir del sureste mexicano.
                          </p>
-                        <p className="text-gray-500 text-xl text-justify"> 
+                        <p className="font-body text-xl text-gray-500 text-justify"> 
                             Su ubicación permite gran conectividad hacia diversos sitios de interés, así como a otros países a través de su Aeropuerto 
                             Internacional y el Puerto de Progreso.
                          </p>
@@ -129,15 +129,15 @@ const Rosavento = () => {
                 <div className="grid grid-cols-1 xl:py-20 xl:px-20">
 
                     <div className="flex flex-col gap-4"> 
-                        <p className="text-gray-500 text-justify text-xl"> 
+                        <p className="font-body text-xl text-gray-500 text-justify"> 
                         Una empresa inmobiliaria que busca facilitar el acceso al mundo de las inversiones  de forma inteligente y 
                         promoviendo alta calidad de vida, desarrollando bienes inmuebles en  las zonas de mayor crecimiento y demanda del 
                         sureste mexicano, con un solo objetivo en  mente: 
                         </p>
 
-                        <p className="text-gray-500 text-justify text-xl"> 
+                        <p className="font-body text-xl text-gray-500 text-justify"> 
                         Superar sus límites y generar abundancia a sus inversionistas. 
-                         </p>
+                        </p>
                     </div>
                 </div>
 
@@ -219,10 +219,10 @@ const Rosavento = () => {
                 
             <div className ="mx-auto grid grid-cols-2 ">
                 <div className="col-start-1 col-end-4 xl:col-span-4 xl:px-12"> 
-                    <h2 className="font-serif text-3xl tracking-widest leading-normal text-orange-900">
+                    <h2 className="font-title text-3xl tracking-widest leading-normal text-orange-900">
                         Rosavento
                     </h2> 
-                    <div className="col-start-2 col-end-8 py-6 px-6 text-gray-500 text-justify text-xl tracking-widest">
+                    <div className="font-body col-start-2 col-end-8 py-6 px-6 text-gray-500 text-justify text-xl tracking-widest">
                         <p>
                             Un desarrollo con un concepto único en el sureste de México, donde gracias a su  ubicación en las mejores zonas de 
                             Mérida y Cancún, es ideal para alcanzar tus objetivos de  inversión, ya sea para contruir tu patrimonio o para generar 
@@ -230,7 +230,7 @@ const Rosavento = () => {
                         </p>
                     </div>
 
-                    <div className="col-start-2 col-end-8 py-6 px-6 text-gray-500 text-justify text-xl tracking-widest">
+                    <div className="font-body col-start-2 col-end-8 py-6 px-6 text-gray-500 text-justify text-xl tracking-widest">
                         <p>
                             Además, cuenta con características y amenidades premium en las que toda la  
                             familia podrán disfrutar de una vida tranquila en Mérida y Cancún.

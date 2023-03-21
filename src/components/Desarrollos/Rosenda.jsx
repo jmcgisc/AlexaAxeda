@@ -8,7 +8,7 @@ const Rosenda = () => {
     return (
         <> 
             <div className="bg-[url('/public/homeBack1.png')] flex flex-row-reverse "> 
-                <img src="carrusel11.jpg" className="ellipse(50% 65% at 70% 50%)"/> 
+                <img src="carrusel11.jpg" className="ellipse-desarrollos"/> 
             </div>
 
             <hr
@@ -42,11 +42,11 @@ const Rosenda = () => {
 
                 <div className="grid grid-cols-1 gap-4 xl:py-20 xl:px-20">
                     <div className="flex flex-col gap-4"> 
-                        <p className="text-gray-500 text-xl text-justify"> 
+                        <p className="font-body text-xl text-gray-500 text-justify"> 
                             Es una colección de 51 departamentos exclusivos con 8 modelos diferentes que conjugan armonía, 
                             calidez y funcionalidad; adaptándose a tu estilo de vida, ubicados en una de las zonas más exclusivas en Mérida. 
                         </p>
-                        <p className="text-gray-500 text-xl text-justify"> 
+                        <p className="font-body text-xl text-gray-500 text-justify"> 
                             Cuenta con amenidades, así como proximidad a complejos comerciales de prestigio, hospitales y servicios de primer nivel.
                         </p>
                     </div>
@@ -112,13 +112,13 @@ const Rosenda = () => {
                 <div className="grid grid-cols-1 xl:py-20 xl:px-20">
 
                     <div className="flex flex-col gap-4"> 
-                        <p className="text-gray-500 text-justify text-xl"> 
+                        <p className="font-body text-xl text-gray-500 text-justify"> 
                             Una empresa inmobiliaria que busca facilitar el acceso al mundo de las inversiones  de forma inteligente y 
                             promoviendo alta calidad de vida, desarrollando bienes inmuebles en  las zonas de mayor crecimiento y demanda del 
                             sureste mexicano, con un solo objetivo en  mente: 
                         </p>
-
-                        <p className="text-gray-500 text-justify text-xl"> 
+ 
+                        <p className="font-body text-xl text-gray-500 text-justify"> 
                             Superar sus límites y generar abundancia a sus inversionistas. 
                         </p>
                     </div>
@@ -138,12 +138,7 @@ const Rosenda = () => {
             </div>
 
             <hr
-                className="my-12 h-0.5 border-t-0 bg-neutral-100 opacity-100 dark:opacity-50" /> 
-
-
-            <hr
-                className="my-12 h-0.5 border-t-0 bg-neutral-100 opacity-100 dark:opacity-50" />
-
+                className="my-12 h-0.5 border-t-0 bg-neutral-100 opacity-100 dark:opacity-50"/> 
 
                 <div className="place-items-center "> 
                     <button className={`btn`} >

@@ -19,7 +19,7 @@ const Headers = () => {
      <header className="flex flex-cols items-center justify-between w-full py-20 px-8 h-[10vh] z-50 sticky top-6  bg-white">
 
      <div className="flex xl:flex-row-reverse bg-axeda fixed top-0 left-0 right-0 w-full"> 
-               <div className="flex text-gray-100 text-base">Línea Asesor `¡+ç:
+               <div className="flex text-gray-100 text-base">Línea Asesor :
                   
                   <div className="text-base px-1">
                      <a href="tel:+525570137764" className="text-white text-base px-1">+(52) 55 7013 7764</a>
@@ -29,7 +29,7 @@ const Headers = () => {
                      <RiPhoneFill/>
                   </div>
 
-                   <div className="text-base">| Email: 
+                   <div className="text-base">|   Email : 
                      <a href="asesor.alexadelgado@gmail.com" className="text-white text-base px-1">asesor.alexadelgado@gmail.com</a>
                    </div>
 
