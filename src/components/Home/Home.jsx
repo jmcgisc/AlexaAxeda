@@ -12,7 +12,7 @@ export const Home = () => {
         {/*Information*/}
         <div className="md:col-span-5 flex items-center justify-center p-12 py-8 xl:p-16">
             <div className="flex flex-col gap-10">
-                <h1 className="text-4xl xl:text-7xl font-bold xl:leading-[7.5rem]"> 
+                <h1 className="text-4xl xl:text-7xl font-title xl:leading-[7.5rem]"> 
                     INVERSIONES INMOBILIARIAS EN LAS ZONAS DE MÁS ALTA {"  "}
                     <span className="text-axeda px-4 py-2 border-8 border-axeda relative inline-block">PLUSVALÍA
                     <RiCheckboxBlankCircleFill className="text-white text-base absolute -left-5 -top-4 p-2 bg-axeda rounded-full box-content"/>
@@ -27,11 +27,17 @@ export const Home = () => {
                     <button className="w-full xl:w-auto bg-axeda text-white py-2 px-8 rounded-xl text-xl shadow-lg shadow-indigo-500/40">
                         Contáctame 
                     </button>
-                    <button className="flex items-center justify-start text-left gap-4 py-9 px-20 rounded-xl text-xl" >
-                        <RiPlayFill className="bg-axeda text-white p-4 rounded-full box-content"/> 
-                        Mira nuestro <br/> video de los principales desarrollos 
+                    <button  onClick={(e) => {
+                            e.preventDefault();
+                            window.location.href='https://eva3d.com/recorridos-virtuales-360/axeda/rosavento/index.htm';
+                            }} 
+                            className="text-xl flex items-center justify-start text-left gap-4 py-9 px-20 rounded-xl 
+                            hover:drop-shadow-xl
+                            " >
+                                <RiPlayFill className="bg-axeda text-white p-8 rounded-full box-content"/> 
+                                Mira nuestro recorrido 360º 
                     </button>
-                </div>
+                </div> 
             </div>  
         </div>
 
