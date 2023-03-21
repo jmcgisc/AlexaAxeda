@@ -1,3 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital@0;1&family=Cagliostro&family=Cormorant+Garamond:wght@300&family=Poppins:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital@0;1&family=Cagliostro&family=Cormorant+Garamond:wght@300&family=Poppins:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital@0;1&family=Cagliostro&family=Cormorant+Garamond:wght@300&family=EB+Garamond&family=Poppins:wght@100&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+
+    .ellipse-desarrollos {
+ 
+        clip-path: ellipse(50% 85% at 60% 50%);
+ 
+    }
+ 
+ } 

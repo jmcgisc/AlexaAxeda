@@ -3,16 +3,14 @@ import { Icon } from '@iconify/react'
 import locationIcon from '@iconify/icons-mdi/map-marker'
 import { GoogleMap, LoadScript } from '@react-google-maps/api';
 
-import './map.css'
-
 const containerStyle = {
   width: '400px',
   height: '400px'
 };
 
 const center = {
-  lat: -3.745,
-  lng: -38.523
+  lat: 21.098064163906468,
+  lng: -89.39039837301571
 };
 
 class Map extends Component {
@@ -24,7 +22,7 @@ class Map extends Component {
         <GoogleMap
           mapContainerStyle={containerStyle}
           center={center}
-          zoom={10}
+          zoom={13}
         >
           { /* Child components, such as markers, info windows, etc. */ }
           <></>
@@ -33,26 +31,6 @@ class Map extends Component {
     )
   }
 }
-// 
-// const Map = ({ location, zoomLevel }) => (
-    // <div className="map"> 
-{/*    */}
-      {/* <div className="google-map">  */}
-        {/* <GoogleMapReact */}
-          // bootstrapURLKeys={{ key: '' }}
-          // defaultCenter={location}
-          // defaultZoom={zoomLevel}
-        // >
-          {/* <LocationPin */}
-            // lat={location.lat}
-            // lng={location.lng}
-            // text={location.address}
-          // />
-        {/* </GoogleMapReact> */}
-      {/* </div>  */}
-    {/* </div> */}
-  // )
-
 
 export default Map
   
