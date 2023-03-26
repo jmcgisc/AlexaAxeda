@@ -3,7 +3,7 @@ import {RiCheckboxBlankCircleFill, RiPlayFill, RiStarFill} from "react-icons/ri"
 import Menciones from "./Menciones" 
 import Desarrollos from "./Desarrollos"
 import Reviews from "./Reviews"
-import FormularioContacto from "./FormularioContacto"
+import FormularioContacto from "../Aux/FormularioContacto"
 
 export const Home = () => {
     return ( 
