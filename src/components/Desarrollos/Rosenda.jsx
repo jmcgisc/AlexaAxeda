@@ -2,14 +2,50 @@ import React        from 'react'
 import ReactPlayer  from 'react-player'
 import Banner       from "../Aux/Banner"
 import pdf from '../../../public/ROSENDA_Brochure.pdf'
-import FormularioContacto from "./../Home/FormularioContacto"
+import FormularioContacto from "../Aux/FormularioContacto"
 
-const Rosenda = () => { 
+const Rosenda = () => {  
     return (
         <> 
-            <div className="bg-[url('/public/homeBack1.png')] flex flex-row-reverse "> 
-                <img src="carrusel11.jpg" className="ellipse-desarrollos"/> 
+        <div className="grid-cols-2 bg-[url('/public/homeBack1.png')]">
+            {/*Desarrollos*/}
+
+            <div className="grid grid-cols-4 xl:grid-cols-2 gap-4">
+                <div className="flex flex-col grid-cols-4 gap-2 rounded-3xl"> 
+
+                <div class="grid grid-cols-3 gap-4">
+                    <div></div> 
+                    <div></div>
+                <div class="col-span-2 ..."></div>
+                    <div></div>
+                    <div></div>
+                <div class="col-span-2 ...">
+                    <h1 className="text-[40px] text-axeda font-title col-start-2 col-end-1 py-5">
+                        ROSENDA TEMOZÓN -</h1>
+                        <p className ="text-gray-700 text-xl font-sans py-5">
+                            DEPARTAMENTOS EN MÉRIDA ZONA NORTE DESDE 1.5 MDP
+                        </p>   
+
+                        <p className="text-axeda font-title text-2xl">
+                                ROSENDA TEMOZÓN II
+                        </p>   
+                        <p className="font-sans py-4 text-justify"> 
+                                Tras el éxito de nuestro proyecto Rosenda, vendido en su totalidad de menos de 50 días; hemos creado Rosenda Temozón II, una colección de 80 departamentos en 10 modelos diferentes.
+                        </p>
+
+                </div>
+                </div>
+                </div>
+
+                <div className="grid grid-cols-1 md:grid-cols-1 gap-8">
+ 
+                <div className="flex flex-row-reverse "> 
+                    <img src="fachada_rosavento_2.jpg" className="w-full h-56 xl:h-[600px] ellipse-desarrollos"/> 
+                </div>
+ 
+                </div>
             </div>
+        </div> 
 
             <hr
                 className="my-12 h-0.5 border-t-0 bg-neutral-100 opacity-100 dark:opacity-50" />

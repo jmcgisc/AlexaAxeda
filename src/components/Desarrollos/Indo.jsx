@@ -2,36 +2,57 @@ import React        from 'react'
 import ReactPlayer  from 'react-player'
 import Banner       from "../Aux/Banner" 
 import pdf from '../../../public/INDO_Brochure.pdf'
-import FormularioContacto from "./../Home/FormularioContacto" 
+import FormularioContacto from "../Aux/FormularioContacto" 
 import MapSection from '../Aux/Map'
 
 const Indo = () => { 
     return (
         <> 
-            <div className="bg-[url('/public/homeBack1.png')] flex flex-row-reverse "> 
-                <img src="carrusel11.jpg" className="ellipse-desarrollos"/> 
-            </div>
+            
+     
+     <div className="grid-cols-2 bg-[url('/public/homeBack1.png')]">
+            {/*Desarrollos*/}
 
+            <div className="grid grid-cols-4 xl:grid-cols-2 gap-4">
+                <div className="flex flex-col grid-cols-4 gap-2 rounded-3xl"> 
+
+                <div class="grid grid-cols-3 gap-4">
+                    <div></div> 
+                    <div></div>
+                <div class="col-span-2 ..."></div>
+                    <div></div>
+                    <div></div>
+                <div class="col-span-2 ...">
+                    <h1 className="text-[40px] text-axeda font-title col-start-2 col-end-1 py-5">
+                        ROSENDA INDO -</h1>
+                        <p className ="text-gray-700 text-xl font-sans py-5">
+                        TERRENOS INDUSTRIALES EN PREVENTA MENSUALIDADES DESDE $5,250.00 MXN
+                        </p>   
+ 
+                        <p className="font-sans py-4 text-justify"> 
+                        Terrenos industriales en Yucatán.
+                        </p>
+
+                </div>
+                </div>
+                </div>
+
+                <div className="grid grid-cols-1 md:grid-cols-1 gap-8">
+ 
+                <div className="flex flex-row-reverse "> 
+                    <img src="fachada_rosavento_2.jpg" className="w-full h-56 xl:h-[600px] ellipse-desarrollos"/> 
+                </div>
+ 
+                </div>
+            </div>
+        </div> 
+        
             <hr
-                className="my-12 h-0.5 border-t-0 bg-neutral-100 opacity-100 dark:opacity-50" />
-
-            <div className ="container mx-auto grid grid-cols-1 xl:grid-cols-4 gap-4">
-                <div className="col-start-1 col-end-4 xl:col-span-2"> 
-                    <h2 className="font-title text-2xl xl:text-4xl tracking-widest leading-normal xl:col-span-2 text-orange-900">
-                        INDO Parque Industrial
-                    </h2>  
-                    <h2 className="font-serif text-2xl md:text-xl xl:text-3xl tracking-widest leading-normal text-rose-900 px-4 xl:px-16
-                        xl:py-2
-                    ">
-                    Terrenos industriales en 
-                        <strong className="underline decoration-axeda/[.33]"> Yucatán. </strong>
-                    </h2>
-                </div>   
-            </div>
+                className="my-12 h-0.5 border-t-0 bg-neutral-100 opacity-100 dark:opacity-50 rounded-lg" />
             
             <div className="p-12 xs:p-6">
-            <div className="grid grid-cols-1 xl:grid-cols-2 xl:px-20 xl_ gap-8">
-                <div className="flex flex-col"> 
+            <div className="grid grid-cols-1 xl:grid-cols-2 xl:px-20 xl_ gap-8 ">
+                <div className="flex flex-col "> 
 
                 <ReactPlayer
                             url='https://www.youtube.com/watch?v=0a1AdQCK8yY&t=5s'
@@ -43,7 +64,7 @@ const Indo = () => {
                 </div>
 
                 <div className="grid grid-cols-1 gap-4 xl:py-20 xl:px-20">
-                        <p className="font-body xl:leading-10 text-xl text-gray-500 text-justify "> 
+                        <p className="font-body xl:leading-10 text-xl text-gray-700 text-justify "> 
                             Es un parque industrial a 12 minutos del libramiento de Mérida, con gran vanguardia de tecnología en materia de 
                             seguridad para sus operaciones y funcionalidad, integrado por grandes vialidades, áreas verdes y recreativas como cancha de 
                             fútbol y amenidades idóneas para el esparcimiento del personal. 
@@ -135,20 +156,15 @@ const Indo = () => {
 
             <hr
                 className="my-12 h-0.5 border-t-0 bg-neutral-100 opacity-100 dark:opacity-50" /> 
- 
 
-            <div className="p-12 xs:p-6">
-            <div className="grid grid-cols-1 xl:grid-cols-2 xl:px-20 gap-8"> 
+            <div className="p-12 xs:p-6"> 
 
                 <div className="grid grid-cols-1 gap-4 xl:py-20 xl:px-20">
 
-                    <div className="flex flex-col gap-4"> 
+                    <div className="w-full flex flex-col py-14 px-4 md:px-24 bg-secondary-light"> 
 
-                    <MapSection  /> 
-
-
-                    </div>
-                </div>
+                        <MapSection  /> 
+                    </div> 
             </div>
             </div>
 

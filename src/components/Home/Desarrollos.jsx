@@ -4,10 +4,10 @@ const Desarrollos = () => {
     return (
         <div className="p-12">
             <div className="mb-8 ">
-                <h1 className="text-[40px] font-bold ">
+                <h1 className="text-[40px] font-title ">
                     Conoce nuestros desarrollos
                 </h1>
-                <p className="text-xl text-gray-500 py-2 font-sans">
+                <p className="text-xl text-gray-500 py-4 font-sans">
                     Desarrollos residenciales en Cancún y Mérida. Departamentos con las mejores ubicaciones y más.
                 </p>
             </div>
