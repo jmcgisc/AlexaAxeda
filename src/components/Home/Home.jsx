@@ -29,7 +29,7 @@ export const Home = () => {
                     </button>
                     <button  onClick={(e) => {
                             e.preventDefault();
-                            window.location.href='https://eva3d.com/recorridos-virtuales-360/axeda/rosavento/index.htm';
+                            window.open('https://eva3d.com/recorridos-virtuales-360/axeda/rosavento/index.htm', '_blank');
                             }} 
                             className="text-xl flex items-center justify-start text-left gap-4 py-9 px-20 rounded-xl 
                             hover:drop-shadow-xl

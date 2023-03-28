@@ -4,7 +4,7 @@ const Menciones = () => {
     return (
         <div className="bg-gray-300 p-8 flex flex-col items-center justify-center gap-8 mt-20 xl:mt-0 overflow-x-auto">
             <h1 className="text-2xl font-medium text-gray-800 text-center">Menciones por grandes empresas y medios periodisticos </h1>
-            <div className="flex flex-col md:flex-row flex-wrap items-center gap-20">
+            <div className="flex flex-col md:flex-row flex-wrap items-center gap-20 ">
                 
                 <a  title="Presentan Rosavento Ciudad Maya, en la ''zona dorada'' entre Mérida y Progreso lajornadamaya" href="https://www.lajornadamaya.mx/yucatan/193749/presentan-rosavento-ciudad-maya-en-la-zona-dorada-entre-merida-y-progreso"  
                     target="_blank" alt="Presentan Rosavento Ciudad Maya, en la ''zona dorada'' entre Mérida y Progreso La jornada maya">

@@ -67,7 +67,7 @@ const FormularioContacto = () => {
                         
                         <div className ="flex flex-col space-y-8 justify-berween">
                             <div>    
-                                <h1 className="font-title text-7xl tracking-wide py-20"> Contáctame </h1>
+                                <h1 className="font-title text-5xl xl:text-7xl tracking-wide py-10 xl:py-20"> Contáctame </h1>
                                 <p  className ="p-2 text-cyan-100 text-sm">Te asesoramos desde el primer momento y te acompañamos en todo el proceso de compra, estás a un paso de comenzar con la mejor inversión</p>
                             </div> 
                             <div className="inline-flex space-x-2 items-center">
