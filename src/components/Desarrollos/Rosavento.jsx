@@ -199,7 +199,7 @@ const Rosavento = () => {
             </div>
             </div>
 
-            <hr
+            {/* <hr
                 className="my-12 h-0.5 border-t-0 bg-neutral-100 opacity-100 dark:opacity-50" /> 
 
             <div className ="container mx-auto grid grid-cols-1 xl:grid-cols-4 ">
@@ -216,9 +216,9 @@ const Rosavento = () => {
                         <p>Elige e invierte en tu próximo patrimonio en las zonas con mejor plusvalía de Mérida y  Cancún. </p>
                     </div>
                 </div>  
-            </div>
+            </div> */}
               
-
+{/* 
             <div className="grid md:grid-cols-4 gap-8">
                 <div className="md:col-start-1 "></div>
                 <div className="md:col-start-2 "> 
@@ -232,16 +232,17 @@ const Rosavento = () => {
                 </div>
 
                 <div className="md:col-start-4"></div>
-            </div> 
+            </div>  */}
 
-            <hr
+            {/* <hr
                 className="my-12 h-0.5 border-t-0 bg-neutral-100 opacity-100 dark:opacity-50" />
 
             <div className="h4/5">
             </div>
             <div className ="flex bg-axeda overflow-hidden justify-content-center mt-md-3 mb-3">
+              */}
                 {/* <Banner/>  */}
-            </div>
+            {/* </div>
         
             <div className="bg-no-repeat bg-cover bg-center bg-fixed
                 bg-[url('/public/fondo2.jpg')] text-white ">
@@ -255,19 +256,19 @@ const Rosavento = () => {
                         <p>Elige e invierte en tu próximo patrimonio en las zonas con mejor plusvalía de Mérida y  Cancún. </p>
                     </div>
                 </div>
-            </div>
+            </div> */}
 
             <hr
                 className="my-12 h-0.5 border-t-0 bg-neutral-100 opacity-100 dark:opacity-50" />
 
             <div className="grid grid-cols">   
                 
-            <div className ="mx-auto grid grid-cols-2 ">
+            <div className ="mx-auto grid grid-cols-2 bg-gray-100">
                 <div className="col-start-1 col-end-4 xl:col-span-4 xl:px-12"> 
-                    <h2 className="font-title text-3xl tracking-widest leading-normal text-orange-900">
+                    <h2 className="font-title text-3xl tracking-widest leading-normal text-orange-900 px-12">
                         Rosavento
                     </h2> 
-                    <div className="font-body col-start-2 col-end-8 py-6 px-6 text-gray-500 text-justify text-xl tracking-widest">
+                    <div className="font-sans col-start-2 col-end-8 py-6 px-6 text-gray-500 text-justify text-xl tracking-widest">
                         <p>
                             Un desarrollo con un concepto único en el sureste de México, donde gracias a su  ubicación en las mejores zonas de 
                             Mérida y Cancún, es ideal para alcanzar tus objetivos de  inversión, ya sea para contruir tu patrimonio o para generar 
@@ -275,7 +276,7 @@ const Rosavento = () => {
                         </p>
                     </div>
 
-                    <div className="font-body col-start-2 col-end-8 py-6 px-6 text-gray-500 text-justify text-xl tracking-widest">
+                    <div className="font-sans col-start-2 col-end-8 py-6 px-6 text-gray-500 text-justify text-xl tracking-widest">
                         <p>
                             Además, cuenta con características y amenidades premium en las que toda la  
                             familia podrán disfrutar de una vida tranquila en Mérida y Cancún.

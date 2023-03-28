@@ -66,8 +66,8 @@ const Footer = () => {
           
 
           <p  className="text-gray-300 mt-4 hover:text-white transition-colors">
-            <NavLink to = "/components/Aux/privacidad" > Política de Privacidad</NavLink>
-          </p>
+            <NavLink to = "/privacidad" > Política de Privacidad</NavLink>
+          </p> 
 
           <button
             type="button"
