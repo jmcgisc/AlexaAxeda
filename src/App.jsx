@@ -3,6 +3,7 @@ import 'mdb-react-ui-kit/dist/css/mdb.min.css';
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import Headers    from "./components/Headers"
 import { Home }   from "./components/Home/Home" 
+import Terravento from "./components/Desarrollos/Terravento"
 import Rosavento  from "./components/Desarrollos/Rosavento"
 import Rosenda    from "./components/Desarrollos/Rosenda"
 import Indo       from "./components/Desarrollos/Indo"
@@ -25,10 +26,11 @@ function App() {
         <Headers/> 
           <Routes>
             {/*Home*/}
-            <Route path = '/' element ={ <Home/> } />
-            <Route path = '/rosavento' element ={ <Rosavento/> } />
-            <Route path = '/rosenda'   element ={ <Rosenda/> } />
-            <Route path = '/indo'      element ={ <Indo/> } />
+            <Route path = '/'             element ={ <Home/> } />
+            <Route path = '/rosavento'    element ={ <Rosavento/> } />
+            <Route path = '/rosenda'      element ={ <Rosenda/> } />
+            <Route path = '/indo'         element ={ <Indo/> } />
+            <Route path = '/terravento'   element ={ <Terravento/> } />
 
             {/* Footer */}
             {/* <Route path = '/components/footer/Bio'            element ={ <Bio/> } /> */}

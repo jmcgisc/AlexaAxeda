@@ -2,8 +2,8 @@ import React        from 'react'
 import ReactPlayer  from 'react-player'
 import Banner       from "../Aux/Banner" 
 import pdf from '../../../public/INDO_Brochure.pdf'
-import FormularioContacto from "../Aux/FormularioContacto" 
-import MapSection from '../Aux/Map'
+import FormularioContacto from "../Aux/FormularioContacto"  
+import LayoutMap from '../Aux/LayoutMap'
 
 const Indo = () => { 
     return (
@@ -13,23 +13,23 @@ const Indo = () => {
      <div className="grid-cols-2 bg-[url('/public/homeBack1.png')]">
             {/*Desarrollos*/}
 
-            <div className="grid grid-cols-4 xl:grid-cols-2 gap-4">
+            <div className="grid xl:grid-cols-2 gap-4">
                 <div className="flex flex-col grid-cols-4 gap-2 rounded-3xl"> 
 
-                <div class="grid grid-cols-3 gap-4">
+                <div class="grid grid-cols-1 xl:grid-cols-3 gap-4">
                     <div></div> 
                     <div></div>
                 <div class="col-span-2 ..."></div>
                     <div></div>
                     <div></div>
                 <div class="col-span-2 ...">
-                    <h1 className="text-[40px] text-axeda font-title col-start-2 col-end-1 py-5">
-                        ROSENDA INDO -</h1>
-                        <p className ="text-gray-700 text-xl font-sans py-5">
+                    <h1 className="text-[40px] text-axeda font-title col-start-2 col-end-1 xl:py-5">
+                        -ROSENDA INDO-</h1>
+                        <p className ="text-gray-700 text-xl font-sans px-2 py-4">
                         TERRENOS INDUSTRIALES EN PREVENTA MENSUALIDADES DESDE $5,250.00 MXN
                         </p>   
  
-                        <p className="font-sans py-4 text-justify"> 
+                        <p className="font-sans py-4 px-2 text-xl text-justify"> 
                         Terrenos industriales en Yucatán.
                         </p>
 
@@ -40,7 +40,7 @@ const Indo = () => {
                 <div className="grid grid-cols-1 md:grid-cols-1 gap-8">
  
                 <div className="flex flex-row-reverse "> 
-                    <img src="fachada_rosavento_2.jpg" className="w-full h-56 xl:h-[600px] ellipse-desarrollos"/> 
+                    <img src="fachada_rosavento_2.jpg" className="w-full h-56 xl:h-[600px] xl:ellipse-desarrollos"/> 
                 </div>
  
                 </div>
@@ -64,7 +64,7 @@ const Indo = () => {
                 </div>
 
                 <div className="grid grid-cols-1 gap-4 xl:py-20 xl:px-20">
-                        <p className="font-body xl:leading-10 text-xl text-gray-700 text-justify "> 
+                        <p className="font-chivo xl:leading-10 text-xl text-gray-700 text-justify "> 
                             Es un parque industrial a 12 minutos del libramiento de Mérida, con gran vanguardia de tecnología en materia de 
                             seguridad para sus operaciones y funcionalidad, integrado por grandes vialidades, áreas verdes y recreativas como cancha de 
                             fútbol y amenidades idóneas para el esparcimiento del personal. 
@@ -115,30 +115,32 @@ const Indo = () => {
 
             <div className ="container mx-auto grid grid-cols-1 xl:grid-cols-4 gap-8">
                 <div className="col-start-1 col-end-4 xl:col-span-2"> 
-                    <h2 className="font-serif text-2xl xl:text-3xl tracking-widest leading-normal text-orange-900">
+                    <h2 className="font-title text-2xl xl:text-3xl tracking-widest leading-normal text-orange-900">
                         Desarrollado por
                     </h2>
-                    <h2 className="font-serif text-2xl xl:text-3xl tracking-widest leading-normal text-rose-900 px-16">
+                    <h2 className="font-title text-2xl xl:text-3xl tracking-widest leading-normal text-rose-900 px-16">
                         Grupo
                         <strong className="underline decoration-axeda/[.33]"> Axeda.</strong>
                     </h2>
                 </div>  
             </div>
             
-            <div className="p-12 xs:p-6">
-            <div className="grid grid-cols-1 xl:grid-cols-2 xl:px-20">
+            <div className="p-10 xs:p-6">
+            <div className="grid grid-cols-1 xl:grid-cols-2 xl:px-20 gap-4">
 
                 <div className="grid grid-cols-1 xl:py-20 xl:px-20">
- 
-                        <p className="font-body text-xl xl:leading-10 text-gray-500 text-justify"> 
+
+                    <div className="flex flex-col gap-4"> 
+                        <p className="font-chivo text-xl text-gray-500 text-justify"> 
                             Una empresa inmobiliaria que busca facilitar el acceso al mundo de las inversiones  de forma inteligente y 
                             promoviendo alta calidad de vida, desarrollando bienes inmuebles en  las zonas de mayor crecimiento y demanda del 
                             sureste mexicano, con un solo objetivo en  mente: 
                         </p>
-
-                        <p className="font-body text-xl xl:leading-10 text-gray-500 text-justify xl:py-2"> 
+ 
+                        <p className="font-chivo text-xl text-gray-500 text-justify"> 
                             Superar sus límites y generar abundancia a sus inversionistas. 
-                        </p> 
+                        </p>
+                    </div>
                 </div>
 
                 <div className="flex flex-col gap-2 rounded-3xl"> 
@@ -153,23 +155,14 @@ const Indo = () => {
                 </div>
             </div>
             </div>
+ 
+            <hr
+                className="my-12 h-0.5 border-t-0 bg-neutral-100 opacity-100 dark:opacity-50" />
+
+            <LayoutMap/>    
 
             <hr
-                className="my-12 h-0.5 border-t-0 bg-neutral-100 opacity-100 dark:opacity-50" /> 
-
-            <div className="p-12 xs:p-6"> 
-
-                <div className="grid grid-cols-1 gap-4 xl:py-20 xl:px-20">
-
-                    <div className="w-full flex flex-col py-14 px-4 md:px-24 bg-secondary-light"> 
-
-                        <MapSection  /> 
-                    </div> 
-            </div>
-            </div>
-
-            <hr
-                className="my-12 h-0.5 border-t-0 bg-neutral-100 opacity-100 dark:opacity-50" /> 
+                className="my-12 h-0.5 border-t-0 bg-neutral-100 opacity-100 dark:opacity-50 " />
 
                 <div className="place-items-center "> 
                     <button className={`btn`} >

@@ -1,5 +1,5 @@
 import React from 'react'
-import {RiMenuLine, RiCloseLine, RiDoubleQuotesL, RiDoubleQuotesR} from "react-icons/ri"
+import {RiDoubleQuotesL, RiDoubleQuotesR} from "react-icons/ri"
 
 const Reviews = () => {
     return (

@@ -17,6 +17,7 @@ module.exports = {
       fontFamily: { 
               title:  ['Cagliostro', 'Helvetica', 'Arial'],
               body:   ['Poppins'],
+              chivo:  ['Chivo'],
               sans:   ["Cagliostro",  ...defaultTheme.fontFamily.sans],
               serif:  ["Cormorant Garamond","Bodoni Moda",  ...defaultTheme.fontFamily.serif],
                   },
