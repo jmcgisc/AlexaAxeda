@@ -27,6 +27,7 @@ export const Home = () => {
                     <button className="w-full xl:w-auto bg-axeda text-white py-2 px-8 rounded-xl text-xl shadow-lg shadow-indigo-500/40">
                         Contáctame 
                     </button>
+                    
                     <button  onClick={(e) => {
                             e.preventDefault();
                             window.open('https://eva3d.com/recorridos-virtuales-360/axeda/rosavento/index.htm', '_blank');

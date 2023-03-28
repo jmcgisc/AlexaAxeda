@@ -58,7 +58,7 @@ const Headers = () => {
       
             <Menu as="div" className="relative inline-block text-left">
                <div >
-                  <Menu.Button className="px-22 py-2 inline-flex justify-center rounded-md border border-gray-300 bg-white text-sm font-medium text-gray-700 font-mono	
+                  <Menu.Button className="px-16 py-2 inline-flex justify-center rounded-md border border-gray-300 bg-white text-sm font-medium text-gray-700 font-mono	
                   shadow-sm hover:bg-gray-50 focus:outline-none focus:border-orange-600 focus:ring-orange-600 block w-full rounded-md  focus:ring-1">
                      Desarrollos 
                      <BiChevronDown className ="-mr-1 ml-2 h-5 w-5" aria-hidden="true" />
