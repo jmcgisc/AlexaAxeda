@@ -46,7 +46,7 @@ const Headers = () => {
       </div>
 
       <nav
-         className={`fixed bg-white w-[68%] md:w-[25%] xl:w-full h-full ${showMenu ? "left-0" : "-left-full"} top-0 xl:static flex-1 flex flex-col xl:flex-row items-center justify-center gap-10 transition-all duration-500 z-50`}
+         className={`fixed bg-white w-[68%] md:w-[25%] xl:w-full h-full ${showMenu ? "left-0" : "-left-full"} top-0 xl:static flex-1 flex flex-col xl:flex-row items-center justify-center gap-14 transition-all duration-500 z-50`}
       >
             
          <div className ="px-22 py-2 inline-flex w-full justify-center rounded-md border border-gray-300 bg-white text-gray-700 font-sans sm:text-sm
