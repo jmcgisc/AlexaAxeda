@@ -6,14 +6,15 @@ import { Home }   from "./components/Home/Home"
 import Terravento from "./components/Desarrollos/Terravento"
 import Rosavento  from "./components/Desarrollos/Rosavento"
 import Rosenda    from "./components/Desarrollos/Rosenda"
-import Indo       from "./components/Desarrollos/Indo"
+import Indo       from "./components/Desarrollos/Indo" 
 import Footer     from "./components/Footer"
 // import Bio        from "./components/footer/Bio"
 // import Prensa     from "./components/footer/Prensa" 
 // import Inversores from "./components/footer/Inversores"
 // import Eventos    from "./components/footer/Eventos"
 // import Terminos   from "./components/footer/Terminos"
-// import Privacidad from "./components/footer/Privacidad"
+// 
+import Privacidad from "./components/Aux/Privacidad"
 
 import { Routes, Route , BrowserRouter} 
                   from 'react-router-dom'
@@ -31,14 +32,14 @@ function App() {
             <Route path = '/rosenda'      element ={ <Rosenda/> } />
             <Route path = '/indo'         element ={ <Indo/> } />
             <Route path = '/terravento'   element ={ <Terravento/> } />
+            <Route path = '/privacidad'   element ={ <Privacidad/> } />
 
             {/* Footer */}
             {/* <Route path = '/components/footer/Bio'            element ={ <Bio/> } /> */}
             {/* <Route path = '/components/footer/Prensa'         element ={ <Prensa/> } />
             <Route path = '/components/footer/Inversores'     element ={ <Inversores/> } />
             <Route path = '/components/footer/Eventos'        element ={ <Eventos/> } />
-            <Route path = '/components/footer/Terminos'       element ={ <Terminos/> } />
-            <Route path = '/components/footer/Privacidad'     element ={ <Privacidad/> } /> */}
+            <Route path = '/components/footer/Terminos'       element ={ <Terminos/> } /> */}
                 
           </Routes>  
  

@@ -19,7 +19,7 @@ const Terravento = () => {
                     <div></div>  
                 <div class="grid sm:px-2 col-span-2">
                     <h1 className="text-[40px] text-axeda font-title xl:col-start-2 col-end-1 xl:py-2">
-                        Rosavento - Tierra Maya -</h1>
+                        -Terravento-</h1>
                         <p className ="text-gray-600 text-xl font-sans py-4">
                             Terrenos residenciales al norte de Mérida  
                                 Un paraíso con mensualidades desde $1,992.00 MXN 

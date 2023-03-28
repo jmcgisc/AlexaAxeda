@@ -15,37 +15,30 @@ const Rosavento = () => {
             <div className="grid xl:grid-cols-2 gap-4">
                 <div className="flex flex-col grid-cols-4 gap-2 rounded-3xl"> 
 
-                <div class="grid grid-cols-1 xl:grid-cols-3 gap-4">
-                    <div></div> 
-                    <div></div>
-                <div class="col-span-2 ..."></div>
-                    <div></div>
-                    <div></div>  
-                <div class="grid col-span-2">
-                    <h1 className="text-[40px] text-axeda font-title col-start-2 col-end-1 py-3">
+                <div class="grid grid-cols-1">  
+                    <h1 className="text-[50px] text-axeda font-title px-12 mt-20 ">
                         Rosavento -Tierra Maya-</h1>
-                        <p className ="text-gray-600 text-xl font-sans text-justify px-2 py-2">
+                        <p className ="text-gray-600 text-xl font-sans text-justify px-12 py-2">
                             Terrenos residenciales al norte de Mérida  
                                 Un paraíso con mensualidades desde $1,992.00 MXN 
                         </p>   
 
-                        <p className="text-axeda font-title text-2xl py-2 mt-3 px-2">
+                        <p className="text-axeda font-title text-3xl px-12 py-2 mt-3">
                             Rosavento Merida
                         </p>   
 
-                        <p className="font-sans text-justify px-2">
+                        <p className="font-sans text-justify px-12">
                             Nuestros terrenos residenciales se encuentran situados dentro de un desarrollo al norte de Mérida, con todos los servicios a pie de lote. Su excelente ubicación ofrece cercanía con hospitales de primer nivel y centros comerciales; así como de playas y sitios turísticos.
                         </p>
 
-                        <p className="text-axeda font-title text-2xl py-2 mt-3 px-2">
+                        <p className="text-axeda font-title text-3xl py-2 mt-3 px-12">
                             Rosavento Cancún
                         </p>   
 
-                        <p className="font-sans text-justify px-2">
+                        <p className="font-sans text-justify px-12">
                             Nuestros terrenos se encuentran dentro de un desarrollo residencial con amenidades que aseguran tu calidad de vida, seguridad y la plusvalía de tu patrimonio. La ubicación perfecta para invertir y disfrutar de la vida que siempre quisiste en el caribe mexicano.
                         </p>
-                </div>
-                </div>
+                </div> 
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-1 gap-8">
