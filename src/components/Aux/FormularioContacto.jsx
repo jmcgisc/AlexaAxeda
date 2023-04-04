@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react'
+import React, {useState, useEffect, useRef} from 'react'
 import {RiPhoneFill, RiMailFill} from "react-icons/ri"
 import {ImLocation} from "react-icons/im"
 import emailjs from 'emailjs-com'
@@ -8,6 +8,7 @@ import SelectFieldsBudget       from './SelectFieldsBudget'
 import SelectFieldsProperties   from './SelectFieldsProperties'
 import SelectFieldsInvestment   from './SelectFieldsInvestment'
 import TextAreaField from './TextAreaField' 
+import ReCAPTCHA from "react-google-recaptcha";
 
 const FormularioContacto = () => {
 
@@ -51,6 +52,19 @@ const FormularioContacto = () => {
                         console.log ('Failed send Email', error)
                     })
                 }
+
+    const [captchaValido, cambiarCaptchaValido] = useState(null); 
+    
+    const captcha = useRef(null);
+    
+    const onChangeCaptcha = () => {
+      if (captcha.current.getValue()) {
+        cambiarCaptchaValido(true)
+      } else {
+        cambiarCaptchaValido(false)
+      }
+    }
+              
 
     useEffect(() => {
         if(status === 'SUCCESS'){
@@ -107,6 +121,21 @@ const FormularioContacto = () => {
                                 >
                                     Envíar Formulario
                                 </button>
+
+                                <br></br>
+                            <div class="text-center">
+                                <ReCAPTCHA
+                                ref={captcha}
+                                onChange={onChangeCaptcha}
+                                sitekey={import.meta.env.VITE_PUBLIC_KEY_CAPTCHA}
+                                theme="white"
+                                />
+                            </div>
+                            {captchaValido === false &&
+                                <div className="text-blue-20 br-100 text-center font-sans text-SM font-medium uppercase">
+                                    Valida que no eres un Robot
+                                </div>}
+
                             </form> 
                           
                         </div>   
