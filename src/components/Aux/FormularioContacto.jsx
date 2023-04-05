@@ -35,22 +35,27 @@ const FormularioContacto = () => {
       
     const handleSubmit = (e) => {
             e.preventDefault(); 
-            emailjs.send('service_nnxz7td', 'template_9h35fdq', values, 'dl2zb3hc6kkbEGaOj')
-                .then(response => {
-                    console.log('Success!!', response);
-                    setValues({
-                        nombreCompleto: '',
-                        telefonoMovil: '',
-                        email: '',
-                        desarrollos: '',
-                        presupuesto: '',
-                        interesadoEn: '',
-                        mensaje: '',
-                    })
-                    setStatus('SUCCESS')
-                    }, error => {
-                        console.log ('Failed send Email', error)
-                    })
+
+            if (captchaValido === true) {
+                emailjs.send('service_nnxz7td', 'template_9h35fdq', values, 'dl2zb3hc6kkbEGaOj')
+                    .then(response => {
+                        console.log('Success!!', response);
+                        setValues({
+                            nombreCompleto: '',
+                            telefonoMovil: '',
+                            email: '',
+                            desarrollos: '',
+                            presupuesto: '',
+                            interesadoEn: '',
+                            mensaje: '',
+                        })
+                        setStatus('SUCCESS')
+                        }, error => {
+                            console.log ('Failed send Email', error)
+                        })
+             }else {
+                cambiarCaptchaValido(false);
+              }
                 }
 
     const [captchaValido, cambiarCaptchaValido] = useState(null); 
@@ -123,18 +128,19 @@ const FormularioContacto = () => {
                                 </button>
 
                                 <br></br>
-                            <div class="text-center">
-                                <ReCAPTCHA
-                                ref={captcha}
-                                onChange={onChangeCaptcha}
-                                sitekey={import.meta.env.VITE_PUBLIC_KEY_CAPTCHA}
-                                theme="white"
-                                />
-                            </div>
-                            {captchaValido === false &&
-                                <div className="text-blue-20 br-100 text-center font-sans text-SM font-medium uppercase">
-                                    Valida que no eres un Robot
-                                </div>}
+                                
+                                <div class="text-center">
+                                    <ReCAPTCHA
+                                    ref={captcha}
+                                    onChange={onChangeCaptcha}
+                                    sitekey={import.meta.env.VITE_PUBLIC_KEY_CAPTCHA}
+                                    theme="white"
+                                    />
+                                </div>
+                                {captchaValido === false &&
+                                    <div className="text-blue-20 br-100 text-center font-sans text-SM font-medium uppercase">
+                                        Valida que no eres un Robot
+                                    </div>}
 
                             </form> 
                           
