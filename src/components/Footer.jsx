@@ -1,22 +1,15 @@
 import React from "react";
-import { Link, NavLink } from "react-router-dom"; 
+import { NavLink }  from "react-router-dom"; 
+import {RiPlayFill} from "react-icons/ri"
 
 import image from "./images/axeda-logo.png"
-// Icons
-import { 
-  RiInstagramLine,
-  RiFacebookLine,
-  RiTwitterLine,
-} from "react-icons/ri";
 
-const LinkTailwind = ({ url, text }) =>
-  <li>
-    <Link href={url}>
-      <a className="sm:text-xs md:text-base text-yellow-500 no-underline hover:underline hover:text-blue-200 font-mono">
-        {text}
-      </a>
-    </Link>
-  </li>
+// Icons 
+import {FaTiktok, 
+        FaFacebook, 
+        FaTwitter, 
+        FaInstagramSquare, 
+        FaLinkedin}       from "react-icons/fa"
   
 const Footer = () => {
   return (
@@ -25,58 +18,78 @@ const Footer = () => {
 
         {/* Logo */}
         <div className="w-1/6">
-        <a href="#" className="text-2xl font-bold relative p-1 bg-white">
-                 <img className=" " src={image} alt="Logotipo Axeda"/>  
-         </a>
+          <a href="#" className="text-2xl font-bold relative p-1 bg-white">
+                  <img className=" " src={image} alt="Logotipo Axeda"/>  
+          </a>
 
         </div>
+
         {/* Social media */}
         <nav className="flex items-center gap-4">
           <a href="#" className="block text-white p-4 bg-axeda rounded-full">
             {" "}
-            <RiInstagramLine />{" "}
+            <FaInstagramSquare />{" "}
           </a>
           <a href="#" className="block text-white p-4 bg-axeda rounded-full">
             {" "}
-            <RiFacebookLine />{" "}
+            <FaFacebook />{" "}
           </a>
           <a href="#" className="block text-white p-4 bg-axeda rounded-full">
             {" "}
-            <RiTwitterLine />{" "}
+            <FaTwitter />{" "}
+          </a> 
+          <a href="#" className="block text-white p-4 bg-axeda rounded-full">
+            {" "}
+            <FaLinkedin />{" "}
+          </a> 
+          <a href="#" className="block text-white p-4 bg-axeda rounded-full">
+            {" "}
+            <FaTiktok />{" "}
           </a> 
         </nav>
       </div> 
+
+      {/* 2da Línea Footer */}
       <div className="mt-8">
         <h3 className="text-lg font-bold text-white text-center md:text-left">
           Acerca de Axeda 
         </h3>
+
         <nav className="mt-4 flex flex-col md:flex-row items-center justify-between gap-4">
   
-          <p  className="text-gray-300 mt-4 hover:text-white transition-colors"> 
+          <p  className="text-gray-200 lg:text-xl lg:mt-4"> 
             <NavLink to = "/components/footer/Bio" > Alexa Delgado </NavLink>
           </p>
  
-          <p  className="text-gray-300 mt-4 hover:text-white transition-colors">
+          <p  className="text-gray-200 lg:text-xl lg:mt-4">
             <NavLink to = "/components/footer/Inversores" > Inversores </NavLink>
           </p>
 
-          <p  className="text-gray-300 mt-4 hover:text-white transition-colors">
+          <p  className="text-gray-200 lg:text-xl lg:mt-4">
             <NavLink to = "/components/footer/Eventos" > Eventos </NavLink>
           </p>
           
-
-          <p  className="text-gray-300 mt-4 hover:text-white transition-colors">
+          <p  className="text-gray-200 lg:text-xl lg:mt-4">
             <NavLink to = "/privacidad" > Política de Privacidad</NavLink>
           </p> 
-
-          <button
-            type="button"
-            className="font-semibold py-2 px-6 bg-axeda text-white rounded-xl shadow-lg shadow-indigo-500/40"
-          >
-            Contáctame
+ 
+          <button  
+            onClick={(e) => {
+                e.preventDefault();
+                window.open('https://eva3d.com/recorridos-virtuales-360/axeda/rosavento/index.htm', '_blank');
+                }} 
+                className="text-2xl flex items-center justify-start gap-4 py-9 px-20 rounded-xl text-gray-200
+                hover:drop-shadow-xl
+                " >
+                    
+                    <RiPlayFill className="bg-axeda p-8 rounded-full box-content"/> 
+                      Recorrido 360º 
           </button>
+
         </nav>
       </div>
+
+      {/* CopyRight */}
       <div className="mt-20">
         <p className="text-gray-300 text-center">
           © Alexa Delgado Axeda 2023 - All Rights Reserved

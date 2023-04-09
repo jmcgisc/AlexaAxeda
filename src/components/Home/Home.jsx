@@ -72,7 +72,7 @@ export const Home = () => {
                 />
                 </div>
                 <h2 className="text-xl font-bold tracking-[1px] text-gray-800">
-                Clientes Satisfechos
+                    Te asesoramos desde el inicio
                 </h2>
                 <div className="flex items-center gap-2 text-lg text-gray-500">
                 <RiStarFill className="text-axeda" /> 5.0 (+1000 testimonios)

@@ -10,45 +10,49 @@ import Slider from './Slider'
 const Rosavento = () => { 
     return (
         <>  
+        {/*Slider Mobile*/}
         <div className="lg:hidden">
-        <div className="grid grid-cols-1 gap-8">
-                    <div className="flex flex-row-reverse sm:col-start-1 w-full h-56 xl:h-[600px] xl:ellipse-desarrollos"> 
-                        <Slider/>
-                    </div>
+            <div className="grid grid-cols-1 gap-8">
+                <div className="flex flex-row-reverse sm:col-start-1 w-full h-56 xl:h-[600px] xl:ellipse-desarrollos"> 
+                    <Slider/>
                 </div>
+            </div>
         </div>
+
+        {/*Background*/}
         <div className="grid-cols-2 bg-[url('/public/homeBack1.png')]">
-            {/*Desarrollos*/}
-
-            <div className="grid xl:grid-cols-2 gap-4">
-                <div className="flex flex-col lg:grid-cols-4 lg:gap-2 rounded-3xl"> 
-
+        
+        {/*Desarrollos*/}
+        <div className="grid xl:grid-cols-2 gap-4">
+            <div className="flex flex-col lg:grid-cols-4 lg:gap-2 rounded-3xl"> 
                 <div className="grid grid-cols-1">  
-                    <h1 className="text-[45px] text-axeda font-title px-12 mt-10 lg:mt-24 ">
-                        Rosavento -Tierra Maya-</h1>
+                    <h1 className="text-[45px] text-axeda font-title px-12 mt-10 lg:mt-18 ">
+                        Rosavento -Tierra Maya-
+                    </h1>
                         <p className ="text-gray-600 text-xl font-body text-justify px-12 py-2">
                             Terrenos residenciales al norte de Mérida  
                                 Un paraíso con mensualidades desde $1,992.00 MXN 
                         </p>   
 
-                        <p className="text-axeda font-title text-3xl px-12 py-2 mt-3">
-                            Rosavento Merida
-                        </p>   
+                    <h2 className="text-axeda font-title text-3xl px-12 py-2 mt-3">
+                        Rosavento Merida
+                    </h2>   
 
-                        <p className="text-gray-600 text-base font-body text-justify px-12 py-2">
+                        <p className="text-gray-700 text-base font-body text-justify tracking-widest px-12 py-2">
                             Nuestros terrenos residenciales se encuentran situados dentro de un desarrollo al norte de Mérida, con todos los servicios a pie de lote. Su excelente ubicación ofrece cercanía con hospitales de primer nivel y centros comerciales; así como de playas y sitios turísticos.
                         </p>
 
-                        <p className="text-axeda font-title text-3xl py-2 mt-3 px-12">
-                            Rosavento Cancún
-                        </p>   
+                    <h2 className="text-axeda font-title text-3xl py-2 mt-3 px-12">
+                        Rosavento Cancún
+                    </h2>   
  
-                        <p className="text-gray-600 text-base font-body text-justify px-12 py-2">
+                        <p className="text-gray-700 text-base font-body text-justify tracking-widest px-12 py-2">
                             Nuestros terrenos se encuentran dentro de un desarrollo residencial con amenidades que aseguran tu calidad de vida, seguridad y la plusvalía de tu patrimonio. La ubicación perfecta para invertir y disfrutar de la vida que siempre quisiste en el caribe mexicano.
                         </p>
                 </div> 
-                </div>
+            </div>
 
+        {/*Slider LG*/}
                 <div className="hidden lg:grid lg:grid-cols-1 lg:gap-8">
                     <div className="flex flex-row-reverse sm:col-start-1 w-full h-56 xl:h-[600px] xl:ellipse-desarrollos"> 
                         <Slider/>
@@ -57,10 +61,8 @@ const Rosavento = () => {
             </div>
         </div>
 
-
-        <div className="grid grid-cols-1 lg:grid-cols-7 lg:gap-20 place-items-center
-        
-        bg-[url('/public/homeBack2.png')]">
+        {/*Imagen Beneficios PlusValia*/}
+        <div className="grid grid-cols-1 lg:grid-cols-7 lg:gap-20 place-items-center bg-[url('/public/homeBack2.png')]">
 
             <div class="lg:col-start-1 lg:col-end-5">
                 <img class="hover:shadow-lg dark:hover:shadow-black/30" alt="cancun zona hotelera" src="https://paseodelaselva.com/hana/wp-content/themes/paseoHana/assets/homeSlide3.png"
@@ -68,12 +70,13 @@ const Rosavento = () => {
             </div>
 
             <div class="lg:col-span-3 flex flex-col justify-center"> 
-                <h1 class="font-sans text-lg uppercase tracking-[0.5rem] mb-4"><span>Cancún</span>, Invierte de forma inteligente</h1>
+                <h1 class="font-sans text-lg uppercase tracking-[0.5rem] mb-4 italic text-clip"><span>Cancún</span>, Invierte de forma inteligente</h1>
             </div>
         </div> 
-
-            <hr
-                className="my-12 h-0.5 border-t-0 bg-neutral-100 opacity-100 dark:opacity-50" />
+ 
+        {/*Beneficios*/}
+        <hr
+            className="my-12 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-500 to-transparent opacity-25 dark:opacity-100"/>
 
         <div className ="container mx-auto grid grid-cols-1 xl:grid-cols-4 gap-4">
             <div className="col-start-1 col-end-4 xl:col-span-2"> 
@@ -86,6 +89,7 @@ const Rosavento = () => {
                 </h2>
             </div>
 
+        {/*separacion*/}
         {/* 
                 <div className="col-start-3 col-end-4 col-span-2 px-12">
                     <button className="">
@@ -119,11 +123,11 @@ const Rosavento = () => {
                 <div className="grid grid-cols-1 gap-4 xl:py-20 xl:px-20">
 
                     <div className="flex flex-col gap-4"> 
-                        <p className="font-chivo text-xl text-gray-500 text-justify"> 
+                        <p className="font-body tracking-wide text-xl text-gray-800 text-justify"> 
                             Destaca por su belleza, cultura, calidad de vida y seguridad, lo que la ha posicionado a su capital entre las mejores 
                             ciudades para vivir e invertir del sureste mexicano.
                          </p>
-                        <p className="font-chivo text-xl text-gray-500 text-justify"> 
+                        <p className="font-body tracking-wide text-xl text-gray-800 text-justify"> 
                             Su ubicación permite gran conectividad hacia diversos sitios de interés, así como a otros países a través de su Aeropuerto 
                             Internacional y el Puerto de Progreso.
                          </p>
@@ -131,14 +135,39 @@ const Rosavento = () => {
                 </div>
             </div>
             </div>
+
+
+        {/*MasterPlan*/} 
+        <hr
+            className="my-12 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-500 to-transparent opacity-25 dark:opacity-100"/>
+
+        <div className="grid grid-cols-1 lg:gap-20 place-items-center bg-[url('/public/homeBack2.png')]">
+            <h1 className="text-axeda font-title lg:text-5xl mb-6 mt-5">
+                ROSAVENTO MÁSTER PLAN 
+            </h1> 
+                </div>
+
+        <div className="grid grid-cols-1 lg:grid-cols-7 lg:gap-20 place-items-center bg-[url('/public/homeBack2.png')]">
+
+            <div class="lg:col-start-2  lg:col-end-3 flex flex-col justify-center"> 
+                <h1 class="font-sans text-lg uppercase tracking-[0.5rem] mb-4 italic text-clip"><span>Cancún</span>, Invierte de forma inteligente</h1>
+            </div>
+
+            <div class="lg:col-start-3 lg:col-end-7">
+                <img class="hover:shadow-lg dark:hover:shadow-black/30" alt="cancun zona hotelera"                     
+                        src="MasterPlanRosavento.png"
+                        alt="MasterPlan Rosavento Axeda Cancún" />
+                </div>
+        </div> 
  
-            <hr
-                className="my-12 h-0.5 border-t-0 bg-neutral-100 opacity-100 dark:opacity-50" />
- 
+        {/*Amenidades*/}
+        <hr
+            className="my-12 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-500 to-transparent opacity-25 dark:opacity-100"/>
+
             <div className="grid xl:grid-cols-7 xl:gap-4 place-items-center xl:py-30 bg-[url('/public/backGreen.png')]">
                 <div></div>
                         <img src="amenidades.png" className="h-28 w-14 py-4 "/>    
-                        <p className ="text-3xl text-axeda font-light py-10">Amenidades</p>
+                        <p className ="text-3xl text-axeda font-light py-10 ">Amenidades</p>
                 <div></div>
                         <img src="maps.png" className="h-28 w-14 py-4"/>
                         <p className ="text-3xl text-axeda font-light py-10 ">Ubicación</p>
@@ -169,21 +198,28 @@ const Rosavento = () => {
                 <div></div>
             </div>
  
-            <hr
-                className="my-12 h-0.5 border-t-0 bg-neutral-100 opacity-100 dark:opacity-50 " />
+        {/*Mapa*/}
+        <hr
+            className="my-12 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-500 to-transparent opacity-25 dark:opacity-100"/>
 
             <LayoutMap/>    
 
- 
-            <hr
-                className="my-12 h-0.5 border-t-0 bg-neutral-100 opacity-100 dark:opacity-50 " />
+        {/*Master Plan*/}
+        <hr
+            className="my-12 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-500 to-transparent opacity-25 dark:opacity-100"/>
+
+
+
+        {/*By Grupo Axeda*/}
+        <hr
+            className="my-12 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-500 to-transparent opacity-25 dark:opacity-100"/>
 
             <div className ="container mx-auto grid grid-cols-1 xl:grid-cols-4 gap-8 ">
                 <div className="col-start-1 col-end-4 xl:col-span-2"> 
-                    <h2 className="font-title text-2xl xl:text-3xl tracking-widest leading-normal text-orange-900 px-16">
+                    <h2 className="font-title text-2xl xl:text-3xl tracking-wide leading-normal text-orange-900 px-16">
                         Desarrollado por
                     </h2>
-                    <h2 className="font-title text-2xl xl:text-3xl tracking-widest leading-normal text-rose-900 xl:px-28">
+                    <h2 className="font-title text-2xl xl:text-3xl tracking-wide leading-normal text-rose-900 xl:px-28">
                         Grupo
                         <strong className="underline decoration-axeda/[.33]"> Axeda.</strong>
                     </h2>
@@ -195,13 +231,13 @@ const Rosavento = () => {
 
                 <div className="grid grid-cols-1 xl:py-20 xl:px-20">
                     <div className="flex flex-col gap-8"> 
-                        <p className="font-chivo text-xl text-gray-500 text-justify"> 
+                        <p className="font-body text-xl text-gray-800 tracking-wide text-justify"> 
                             Una empresa inmobiliaria que busca facilitar el acceso al mundo de las inversiones  de forma inteligente y 
                             promoviendo alta calidad de vida, desarrollando bienes inmuebles en  las zonas de mayor crecimiento y demanda del 
                             sureste mexicano, con un solo objetivo en  mente: 
                         </p>
 
-                        <p className="font-chivo text-xl text-gray-500 text-justify"> 
+                        <p className="font-body text-xl text-gray-800 text-justify"> 
                             Superar sus límites y generar abundancia a sus inversionistas. 
                         </p>
                     </div>
@@ -260,13 +296,14 @@ const Rosavento = () => {
                     </div>
                 </div>
             </div> */}
+ 
+        {/*Rosavento*/}
+        <hr
+            className="my-12 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-500 to-transparent opacity-25 dark:opacity-100"/>
 
-            <hr
-                className="my-12 h-0.5 border-t-0 bg-neutral-100 opacity-100 dark:opacity-50" />
-
-            <div className="grid grid-cols">   
+        <div className="grid grid-cols">   
                 
-            <div className ="mx-auto grid grid-cols-2 bg-gray-100">
+            <div className ="mx-auto grid grid-cols-2  border-t-0 bg-transparent bg-gradient-to-r from-transparen">
                 <div className="col-start-1 col-end-4 xl:col-span-4 xl:px-12"> 
                     <h2 className="font-title text-3xl tracking-widest leading-normal text-orange-900 px-12">
                         Rosavento
@@ -287,10 +324,11 @@ const Rosavento = () => {
                     </div>
                 </div>  
             </div>
-            </div>
+        </div>
 
-            <hr
-                className="my-12 h-0.5 border-t-0 bg-neutral-100 opacity-100 dark:opacity-50" />
+        {/*Brochure*/}
+        <hr
+            className="my-12 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-500 to-transparent opacity-25 dark:opacity-100"/>
 
             <div className="flex flex-wrap grid gap-2 grid-cols-2 place-items-center">
                 <div> 
@@ -313,6 +351,10 @@ const Rosavento = () => {
                     </button> 
                 </div>
             </div>
+
+        {/*Formulario*/}
+        <hr
+            className="my-12 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-500 to-transparent opacity-25 dark:opacity-100"/>
 
             <FormularioContacto/>  
         </>
