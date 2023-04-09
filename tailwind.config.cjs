@@ -18,6 +18,7 @@ module.exports = {
               title:  ['Cagliostro', 'Helvetica', 'Arial'],
               body:   ['Poppins'],
               chivo:  ['Chivo'],
+              bodoni: ['Bodoni Moda'],
               sans:   ["Cagliostro",  ...defaultTheme.fontFamily.sans],
               serif:  ["Cormorant Garamond","Bodoni Moda",  ...defaultTheme.fontFamily.serif],
                   },

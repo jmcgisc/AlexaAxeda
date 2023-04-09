@@ -7,20 +7,26 @@ import FormularioContacto from "../Aux/FormularioContacto"
 import LayoutMap from '../Aux/LayoutMap' 
 import Slider from './Slider'
 
-
 const Rosavento = () => { 
     return (
         <>  
+        <div className="lg:hidden">
+        <div className="grid grid-cols-1 gap-8">
+                    <div className="flex flex-row-reverse sm:col-start-1 w-full h-56 xl:h-[600px] xl:ellipse-desarrollos"> 
+                        <Slider/>
+                    </div>
+                </div>
+        </div>
         <div className="grid-cols-2 bg-[url('/public/homeBack1.png')]">
             {/*Desarrollos*/}
 
             <div className="grid xl:grid-cols-2 gap-4">
-                <div className="flex flex-col grid-cols-4 gap-2 rounded-3xl"> 
+                <div className="flex flex-col lg:grid-cols-4 lg:gap-2 rounded-3xl"> 
 
                 <div className="grid grid-cols-1">  
-                    <h1 className="text-[50px] text-axeda font-title px-12 mt-20 ">
+                    <h1 className="text-[45px] text-axeda font-title px-12 mt-10 lg:mt-24 ">
                         Rosavento -Tierra Maya-</h1>
-                        <p className ="text-gray-600 text-xl font-sans text-justify px-12 py-2">
+                        <p className ="text-gray-600 text-xl font-body text-justify px-12 py-2">
                             Terrenos residenciales al norte de Mérida  
                                 Un paraíso con mensualidades desde $1,992.00 MXN 
                         </p>   
@@ -29,33 +35,45 @@ const Rosavento = () => {
                             Rosavento Merida
                         </p>   
 
-                        <p className="font-sans text-justify px-12">
+                        <p className="text-gray-600 text-base font-body text-justify px-12 py-2">
                             Nuestros terrenos residenciales se encuentran situados dentro de un desarrollo al norte de Mérida, con todos los servicios a pie de lote. Su excelente ubicación ofrece cercanía con hospitales de primer nivel y centros comerciales; así como de playas y sitios turísticos.
                         </p>
 
                         <p className="text-axeda font-title text-3xl py-2 mt-3 px-12">
                             Rosavento Cancún
                         </p>   
-
-                        <p className="font-sans text-justify px-12">
+ 
+                        <p className="text-gray-600 text-base font-body text-justify px-12 py-2">
                             Nuestros terrenos se encuentran dentro de un desarrollo residencial con amenidades que aseguran tu calidad de vida, seguridad y la plusvalía de tu patrimonio. La ubicación perfecta para invertir y disfrutar de la vida que siempre quisiste en el caribe mexicano.
                         </p>
                 </div> 
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-1 gap-8">
-
-                <div className="flex flex-row-reverse w-full h-56 xl:h-[600px] xl:ellipse-desarrollos"> 
-                    <Slider/>
-                </div>
- 
+                <div className="grid grid-cols-1 gap-8">
+                    <div className="flex flex-row-reverse sm:col-start-1 w-full h-56 xl:h-[600px] xl:ellipse-desarrollos"> 
+                        <Slider/>
+                    </div>
                 </div>
             </div>
         </div>
 
+
+        <div className="grid grid-cols-1 lg:grid-cols-7 lg:gap-20 place-items-center
+        
+        bg-[url('/public/homeBack2.png')]">
+
+            <div class="lg:col-start-1 lg:col-end-5">
+                <img class="hover:shadow-lg dark:hover:shadow-black/30" alt="cancun zona hotelera" src="https://paseodelaselva.com/hana/wp-content/themes/paseoHana/assets/homeSlide3.png"
+                    alt="Cancun" />
+            </div>
+
+            <div class="lg:col-span-3 flex flex-col justify-center"> 
+                <h1 class="font-sans text-lg uppercase tracking-[0.5rem] mb-4"><span>Cancún</span>, Invierte de forma inteligente</h1>
+            </div>
+        </div> 
+
             <hr
                 className="my-12 h-0.5 border-t-0 bg-neutral-100 opacity-100 dark:opacity-50" />
-
 
         <div className ="container mx-auto grid grid-cols-1 xl:grid-cols-4 gap-4">
             <div className="col-start-1 col-end-4 xl:col-span-2"> 
@@ -67,6 +85,7 @@ const Rosavento = () => {
                     <strong className="underline decoration-axeda/[.33]"> próxima inversión. </strong>
                 </h2>
             </div>
+
         {/* 
                 <div className="col-start-3 col-end-4 col-span-2 px-12">
                     <button className="">
@@ -119,34 +138,34 @@ const Rosavento = () => {
             <div className="grid xl:grid-cols-7 xl:gap-4 place-items-center xl:py-30 bg-[url('/public/backGreen.png')]">
                 <div></div>
                         <img src="amenidades.png" className="h-28 w-14 py-4 "/>    
-                        <p className ="text-3xl text-axeda py-10">Amenidades</p>
+                        <p className ="text-3xl text-axeda font-light py-10">Amenidades</p>
                 <div></div>
                         <img src="maps.png" className="h-28 w-14 py-4"/>
-                        <p className ="text-3xl text-axeda py-10 ">Ubicación</p>
+                        <p className ="text-3xl text-axeda font-light py-10 ">Ubicación</p>
                 <div></div>
 
                 <div></div>
                         <img src="plusvalia.png" className="h-28 w-14 py-4"/>
-                        <p className ="text-3xl text-axeda py-10">Plusvalía</p>
+                        <p className ="text-3xl text-axeda font-light py-10">Plusvalía</p>
                 <div></div>
                         <img src="areasv.png" className="h-28 w-14 py-4"/>
-                        <p className ="text-3xl text-axeda  py-10">Áreas Verdes</p>
+                        <p className ="text-3xl text-axeda font-light py-10">Áreas Verdes</p>
                 <div></div>
  
                 <div></div>
                         <img src="familia.png" className="h-28 w-14 py-4"/>
-                        <p className ="text-3xl text-axeda py-10">Ambiente Familiar</p>
+                        <p className ="text-3xl text-axeda font-light py-10">Ambiente Familiar</p>
                 <div></div>
                         <img src="credito.png" className="h-28 w-14 py-4"/>
-                        <p className ="text-3xl text-axeda py-10 ">Facilidad de pago</p>
+                        <p className ="text-3xl text-axeda font-light py-10 ">Facilidad de pago</p>
                 <div></div>
 
                 <div></div> 
                         <img src="desarrollos.png" className="h-28 w-14 py-4"/>
-                        <p className ="text-3xl text-axeda py-10">Desarrollos</p>
+                        <p className ="text-3xl text-axeda font-light py-10">Desarrollos</p>
                 <div></div>
                         <img src="ubicacion.png" className="h-28 w-14 py-4"/>
-                        <p className ="text-3xl text-axeda py-10 ">Facilidad de pago</p>
+                        <p className ="text-3xl text-axeda font-light py-10 ">Facilidad de pago</p>
                 <div></div>
             </div>
  
