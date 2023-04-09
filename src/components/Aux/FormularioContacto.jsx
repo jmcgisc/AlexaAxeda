@@ -128,13 +128,13 @@ const FormularioContacto = () => {
                                 </button>
 
                                 <br></br>
-                                
-                                <div class="text-center">
+                                 
+                                <div className="text-center">
                                     <ReCAPTCHA
                                     ref={captcha}
                                     onChange={onChangeCaptcha}
                                     sitekey={import.meta.env.VITE_PUBLIC_KEY_CAPTCHA}
-                                    theme="white"
+                                    theme="light" 
                                     />
                                 </div>
                                 {captchaValido === false &&
