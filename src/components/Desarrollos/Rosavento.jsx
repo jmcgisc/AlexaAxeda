@@ -49,7 +49,7 @@ const Rosavento = () => {
                 </div> 
                 </div>
 
-                <div className="grid grid-cols-1 gap-8">
+                <div className="hidden lg:grid lg:grid-cols-1 lg:gap-8">
                     <div className="flex flex-row-reverse sm:col-start-1 w-full h-56 xl:h-[600px] xl:ellipse-desarrollos"> 
                         <Slider/>
                     </div>
