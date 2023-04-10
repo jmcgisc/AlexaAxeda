@@ -136,23 +136,29 @@ const Rosavento = () => {
             </div>
             </div>
 
-
         {/*MasterPlan*/} 
         <hr
             className="my-12 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-500 to-transparent opacity-25 dark:opacity-100"/>
 
-        <div className="grid grid-cols-1 lg:gap-20 place-items-center bg-[url('/public/homeBack2.png')]">
-            <h1 className="text-axeda font-title lg:text-5xl mt-5">
-                ROSAVENTO MÁSTER PLAN 
-            </h1> 
+        <div className="grid grid-cols-1 flex flex-cols lg:grid-cols-6 bg-[url('/public/homeBack2.png')]">
 
-            <p className="text-gray-600 text-xl font-body text-justify px-12 py-2">
-            El máster plan de Rosavento incluye 142 lotes unifamiliares excelentes para construir casas o villas individuales.
+            <div className="lg:col-start-3 lg:col-end-6 mb-5">
+                <h1 className="text-axeda font-title lg:text-5xl mt-5">
+                    ROSAVENTO MÁSTER PLAN 
+                </h1> 
+            </div>
+
+            <div className ="lg:col-start-2 lg:col-end-6  mb-5">
+                <h2 className ="text-gray-600 text-xl text-center font-body text-justify px-12 py-2"> 
+                    El máster plan de Rosavento incluye 142 lotes unifamiliares excelentes para construir casas o villas individuales.
                     Las medidas de los terrenos van desde 240 m2
- 
-                <img  src="MasterPlanRosavento.png"
-                        alt="MasterPlan Rosavento Axeda Cancún" /> 
-            </p>
+                </h2>
+            </div>
+
+            <div className="lg:col-start-2 lg:col-end-6">
+                <img src="MasterPlanRosavento.png"
+                            alt="MasterPlan Rosavento Axeda Cancún" /> 
+            </div>
         </div>
  
         {/*Amenidades*/}
