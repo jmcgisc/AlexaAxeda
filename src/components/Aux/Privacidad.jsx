@@ -5,7 +5,7 @@ const Privacidad = () => {
   return (
         <>
         <div>
-            <h1 class="text-axeda text-center font-title text-2xl lg:text-5xl mt-5"><span>Axeda </span>- Política de privacidad-</h1>
+            <h1 class="text-axeda text-center font-title text-2xl lg:text-5xl mt-12 mb-4"><span>Axeda </span>- Política de privacidad-</h1>
         </div> 
 
         {/*Texto politica privacidad*/}
