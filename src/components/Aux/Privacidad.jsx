@@ -26,7 +26,7 @@ const Privacidad = () => {
                 <h2 className="text-gray-600 text-xl font-body text-justify py-2">
                     TRATAMIENTO DE DATOS PERSONALES
                 </h2>
-            </div>
+            </div> 
         </div>
         
         <p className="mb-3 mt-3 px-3 text-base">
