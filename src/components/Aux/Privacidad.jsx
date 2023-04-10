@@ -1,4 +1,5 @@
 import React from 'react'
+import FormularioContacto from "../Aux/FormularioContacto"
 
 const Privacidad = () => {
   return (
@@ -112,6 +113,12 @@ const Privacidad = () => {
             Nuestro sitio web https://axeda.mx garantiza que la información personal que usted envía cuenta con la seguridad necesaria. Los datos ingresados por usuario o en el caso de requerir una validación de los pedidos no serán entregados a terceros, salvo que deba ser revelada en cumplimiento a una orden judicial o requerimientos legales.
             Enterado del presente aviso, el usuario manifiesta su conformidad que la empresa utilice sus datos personales para tal efecto, así como a recibir en lo subsecuente cualquier tipo de información que se encuentre relacionada con el servicio o desarrollo adquirido.
         </p> 
+
+        {/*Formulario*/}
+        <hr
+            className="my-12 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-500 to-transparent opacity-25 dark:opacity-100"/>
+
+            <FormularioContacto/>  
 
     </>
     )
