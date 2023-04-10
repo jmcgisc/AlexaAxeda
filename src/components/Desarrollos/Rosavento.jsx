@@ -196,7 +196,7 @@ const Rosavento = () => {
                         <p className ="text-3xl text-axeda font-light py-10">Áreas Verdes</p>
                 <div></div>
  
-                <div></div>
+                <div></div>º
                         <img src="familia.png" className="h-28 w-14 py-4"/>
                         <p className ="text-3xl text-axeda font-light py-10">Ambiente Familiar</p>
                 <div></div>
