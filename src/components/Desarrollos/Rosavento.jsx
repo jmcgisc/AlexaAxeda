@@ -3,6 +3,7 @@ import ReactPlayer  from 'react-player'
 import Banner       from "../Aux/Banner"
 import pdfC         from '../../../public/ROSAVENTO CANCÚN_Brochure.pdf'
 import pdfM         from '../../../public/Brochure_Rosavento_Merida.pdf'
+import pdfP         from '../../../public/ROSAVENTO Maya_Master Plan.pdf'
 import FormularioContacto from "../Aux/FormularioContacto"
 import LayoutMap from '../Aux/LayoutMap' 
 import Slider from './Slider'
@@ -143,7 +144,7 @@ const Rosavento = () => {
         <div className="grid grid-cols-1 flex flex-cols lg:grid-cols-6 bg-[url('/public/homeBack2.png')]">
 
             <div className="lg:col-start-3 lg:col-end-6 mb-5">
-                <h1 className="text-axeda font-title lg:text-5xl mt-5">
+                <h1 className="text-axeda text-center font-title text-2xl lg:text-5xl mt-5">
                     ROSAVENTO MÁSTER PLAN 
                 </h1> 
             </div>
@@ -158,14 +159,27 @@ const Rosavento = () => {
             <div className="lg:col-start-2 lg:col-end-6">
                 <img src="MasterPlanRosavento.png"
                             alt="MasterPlan Rosavento Axeda Cancún" /> 
-            </div>
+            </div>   
         </div>
+
+        {/*Master plan*/}
+        <div className="lg:col-start-2 lg:col-end-6">
+                <div className="place-items-center "> 
+                        <button className={`btn`} >
+                            <a href={pdfP} target="_blank" rel="noopener noreferrer" download="ROSAVENTO Maya_Master Plan.pdf"> 
+                                <img    className="w-22 h-20 py-2" 
+                                        src="brochure.png"/> 
+                                        Descarga nuestro máster plan
+                            </a>
+                        </button> 
+                    </div>
+            </div>
  
         {/*Amenidades*/}
         <hr
             className="my-12 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-500 to-transparent opacity-25 dark:opacity-100"/>
 
-            <div className="grid xl:grid-cols-7 xl:gap-4 place-items-center xl:py-30 bg-[url('/public/backGreen.png')]">
+            <div className="grid grid-cols-1 xl:grid-cols-7 xl:gap-4 place-items-center xl:py-30 bg-[url('/public/backGreen.png')]">
                 <div></div>
                         <img src="amenidades.png" className="h-28 w-14 py-4 "/>    
                         <p className ="text-3xl text-axeda font-light py-10 ">Amenidades</p>
