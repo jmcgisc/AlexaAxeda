@@ -164,22 +164,22 @@ const Rosavento = () => {
 
         {/*Master plan*/}
         <div className="lg:col-start-2 lg:col-end-6">
-                <div className="place-items-center "> 
-                        <button className={`btn`} >
-                            <a href={pdfP} target="_blank" rel="noopener noreferrer" download="ROSAVENTO Maya_Master Plan.pdf"> 
-                                <img    className="w-22 h-20 py-2" 
-                                        src="brochure.png"/> 
-                                        Descarga nuestro máster plan
-                            </a>
-                        </button> 
-                    </div>
+            <div className="place-items-center "> 
+                    <button className={`btn`} >
+                        <a href={pdfP} target="_blank" rel="noopener noreferrer" download="ROSAVENTO Maya_Master Plan.pdf"> 
+                            <img    className="w-22 h-20 py-2" 
+                                    src="brochure.png"/> 
+                                    Descarga nuestro máster plan
+                        </a>
+                    </button> 
             </div>
+        </div>
  
         {/*Amenidades*/}
         <hr
             className="my-12 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-500 to-transparent opacity-25 dark:opacity-100"/>
 
-            <div className="grid grid-cols-1 xl:grid-cols-7 xl:gap-4 place-items-center xl:py-30 bg-[url('/public/backGreen.png')]">
+            <div className="grid grid-cols-1 lg:grid-cols-7 lg:gap-4 place-items-center lg:py-30 bg-[url('/public/backGreen.png')]">
                 <div></div>
                         <img src="amenidades.png" className="h-28 w-14 py-4 "/>    
                         <p className ="text-3xl text-axeda font-light py-10 ">Amenidades</p>
@@ -209,7 +209,7 @@ const Rosavento = () => {
                         <p className ="text-3xl text-axeda font-light py-10">Desarrollos</p>
                 <div></div>
                         <img src="ubicacion.png" className="h-28 w-14 py-4"/>
-                        <p className ="text-3xl text-axeda font-light py-10 ">Facilidad de pago</p>
+                        <p className ="text-3xl text-axeda font-light py-10 ">Seguridad</p>
                 <div></div>
             </div>
  
