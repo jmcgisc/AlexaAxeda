@@ -26,26 +26,26 @@ const Footer = () => {
 
         {/* Social media */}
         <nav className="flex items-center gap-4">
-          <a href="#" className="block text-white p-4 bg-axeda rounded-full">
-            {" "}
-            <FaInstagramSquare />{" "}
+          <a href="https://www.instagram.com/asesor.alexadelgado/"          target= "_blank" className="block text-white p-4 bg-axeda rounded-full"> 
+            <FaInstagramSquare />
           </a>
-          <a href="#" className="block text-white p-4 bg-axeda rounded-full">
-            {" "}
-            <FaFacebook />{" "}
+
+          <a href="https://www.facebook.com/profile.php?id=100063816524796" target= "_blank" className="block text-white p-4 bg-axeda rounded-full">
+            <FaFacebook />
           </a>
+
           <a href="#" className="block text-white p-4 bg-axeda rounded-full">
-            {" "}
-            <FaTwitter />{" "}
+            <FaTwitter />
           </a> 
-          <a href="#" className="block text-white p-4 bg-axeda rounded-full">
-            {" "}
-            <FaLinkedin />{" "}
+
+          <a href="https://mx.linkedin.com/in/alexa-delgado-37201b214"       target= "_blank"className="block text-white p-4 bg-axeda rounded-full">
+            <FaLinkedin />
           </a> 
-          <a href="#" className="block text-white p-4 bg-axeda rounded-full">
-            {" "}
-            <FaTiktok />{" "}
+
+          <a href="https://www.tiktok.com/@alexadelgadoasesor?is_from_webapp=1&sender_device=pc" className="block text-white p-4 bg-axeda rounded-full">
+            <FaTiktok />
           </a> 
+
         </nav>
       </div> 
 
