@@ -9,6 +9,7 @@ import Rosenda    from "./components/Desarrollos/Rosenda"
 import Indo       from "./components/Desarrollos/Indo" 
 import Privacidad from "./components/Aux/Privacidad"
 import Footer     from "./components/Footer"
+import { FloatingWhatsApp } from 'react-floating-whatsapp'
 // import Bio        from "./components/footer/Bio"
 // import Prensa     from "./components/footer/Prensa" 
 // import Inversores from "./components/footer/Inversores"
@@ -40,7 +41,19 @@ function App() {
             <Route path = '/components/footer/Eventos'        element ={ <Eventos/> } />
             <Route path = '/components/footer/Terminos'       element ={ <Terminos/> } /> */}
                 
-          </Routes>  
+          </Routes>
+          
+          <FloatingWhatsApp
+              phoneNumber="525570137764"
+              accountName="Asesor Alexa"
+              allowEsc
+              allowClickAway
+              notification 
+              notificationSound 
+              statusMessage = "Desarrollos Axeda"
+              darkMode="enable"
+              chatMessage ="¡Hola! ¿En que proyecto estas interesado? 🤝 "   
+        />
  
         <Footer/>     
               {/* 

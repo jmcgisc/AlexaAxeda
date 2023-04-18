@@ -1,51 +1,55 @@
-import React        from 'react'
-import ReactPlayer  from 'react-player'
-import Banner       from "../Aux/Banner"
-import pdf from '../../../public/ROSENDA_Brochure.pdf'
-import FormularioContacto from "../Aux/FormularioContacto"
-import LayoutMap from '../Aux/LayoutMap'
+import React        from 'react';
+import ReactPlayer  from 'react-player';
+import Banner       from "../Aux/Banner";
+import pdf from '../../../public/ROSENDA_Brochure.pdf';
+import FormularioContacto from "../Aux/FormularioContacto";
+import LayoutMap from '../Aux/LayoutMap';
+import Slider from './Slider';
 
 const Rosenda = () => {  
     return (
         <> 
-        <div className="grid-cols-2 bg-[url('/public/homeBack1.png')]">
-            {/*Desarrollos*/}
-
-            <div className="grid xl:grid-cols-2 gap-4">
-                <div className="flex flex-col grid-cols-4 gap-2 rounded-3xl"> 
-
-                <div class="grid grid-cols-1 xl:grid-cols-3 gap-4">
-                    <div></div> 
-                    <div></div>
-                <div class="col-span-2 ..."></div>
-                    <div></div>
-                    <div></div>
-                <div class="grid col-span-2 px-2">
-                    <h1 className="text-[40px] text-axeda font-title col-start-2 col-end-1 xl:py-5">
-                        ROSENDA TEMOZÓN -</h1>
-                        <p className ="text-gray-700 text-xl font-sans px-2 py-4">
-                            DEPARTAMENTOS EN MÉRIDA ZONA NORTE DESDE 1.5 MDP
-                        </p>   
-
-                        <p className="text-axeda font-title text-2xl">
-                                ROSENDA TEMOZÓN II
-                        </p>   
-                        <p className="font-sans py-4 text-justify"> 
-                                Tras el éxito de nuestro proyecto Rosenda, vendido en su totalidad de menos de 50 días; hemos creado Rosenda Temozón II, una colección de 80 departamentos en 10 modelos diferentes.
-                        </p>
-
-                </div>
-                </div>
-                </div>
-
-                <div className="grid grid-cols-1 md:grid-cols-1 gap-8">
- 
-                <div className="flex flex-row-reverse "> 
-                    <img src="fachada_rosavento_2.jpg" className="w-full h-56 xl:h-[600px] xl:ellipse-desarrollos"/> 
-                </div>
- 
+        {/*Slider Mobile*/}
+        <div className="lg:hidden">
+            <div className="grid grid-cols-1 gap-8">
+                <div className="flex flex-row-reverse sm:col-start-1 w-full h-56 xl:h-[600px] xl:ellipse-desarrollos"> 
+                    <Slider/>
                 </div>
             </div>
+        </div>
+
+        {/*Background*/}
+        <div className="grid-cols-2 bg-[url('/public/homeBack1.png')]">
+
+        {/*Desarrollos*/}
+        <div className="grid xl:grid-cols-2 gap-4">
+            <div className="flex flex-col lg:grid-cols-4 lg:gap-2 rounded-3xl"> 
+                <div className="grid grid-cols-1 lg:mt-24">  
+                    <h1 className="text-[45px] text-axeda font-title px-12 mt-10 lg:mt-18 ">
+                        ROSENDA TEMOZÓN 
+                    </h1>
+                        <p className ="text-gray-600 text-xl font-body text-justify px-12">
+                            Departamentos en Mérida Zona Norte desde 1.5 MDP
+                        </p>   
+
+                    <h1 className="text-[45px] text-axeda font-title px-12 mt-10 lg:mt-18 ">
+                        ROSENDA TEMOZÓN II
+                    </h1>   
+
+                        <p className="text-gray-700 text-base font-body text-justify tracking-widest px-12 py-2">
+                            Tras el éxito de nuestro proyecto Rosenda, vendido en su totalidad de menos de 50 días; hemos creado Rosenda Temozón II, una colección de 80 departamentos en 10 modelos diferentes.
+                        </p>
+                </div> 
+            </div>
+
+            {/*Slider LG*/}
+            <div className="hidden lg:grid lg:grid-cols-1 lg:gap-8">
+                <div className="flex flex-row-reverse sm:col-start-1 w-full h-56 xl:h-[600px] xl:ellipse-desarrollos"> 
+                    <Slider/>
+                </div>
+            </div>
+
+        </div> 
         </div> 
 
             <hr
