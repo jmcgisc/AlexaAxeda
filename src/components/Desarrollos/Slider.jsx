@@ -12,7 +12,7 @@ import './Rosavento/styles.css'
 // import required modules
 import { EffectFade, Autoplay, Pagination, Navigation } from 'swiper';
 
-export default function Slider() {
+export default function Slider(props) {
   const progressCircle = useRef(null);
   const progressContent = useRef(null);
   const onAutoplayTimeLeft = (s, time, progress) => {

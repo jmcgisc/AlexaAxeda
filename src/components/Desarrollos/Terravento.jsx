@@ -2,61 +2,56 @@ import React        from 'react'
 import ReactPlayer  from 'react-player'
 import Banner       from "../Aux/Banner" 
 import FormularioContacto from "../Aux/FormularioContacto"
+import SliderTerravento from './SliderTerravento';
 
 const Terravento = () => { 
     return (
         <>
-        <div className="grid-cols-2 bg-[url('/public/homeBack1.png')]">
-            {/*Desarrollos*/}
-
-            <div className="grid xl:grid-cols-2 gap-4">
-                <div className="flex flex-col grid-cols-4 gap-2 rounded-3xl"> 
-                <div class="grid grid-cols-1 xl:grid-cols-3 gap-4">
-                    <div></div> 
-                    <div></div>
-                <div class="col-span-2 ..."></div>
-                    <div></div>
-                    <div></div>  
-                <div class="grid sm:px-2 col-span-2">
-                    <h1 className="text-[40px] text-axeda font-title xl:col-start-2 col-end-1 xl:py-2">
-                        -Terravento-</h1>
-                        <p className ="text-gray-600 text-xl font-sans py-4">
-                            Terrenos residenciales al norte de Mérida  
-                                Un paraíso con mensualidades desde $1,992.00 MXN 
-                        </p>   
-
-                        <p className="text-axeda font-title text-2xl">
-                            Rosavento Merida
-                        </p>   
-
-                        <p className="font-sans py-2 text-justify">
-                            Nuestros terrenos residenciales se encuentran situados dentro de un desarrollo al norte de Mérida, con todos los servicios a pie de lote. Su excelente ubicación ofrece cercanía con hospitales de primer nivel y centros comerciales; así como de playas y sitios turísticos.
-                        </p>
-
-                        <p className="text-axeda font-title text-2xl py-2 mt-3">
-                            Rosavento Cancún
-                        </p>   
-
-                        <p className="font-sans py-2 text-justify">
-                            Nuestros terrenos se encuentran dentro de un desarrollo residencial con amenidades que aseguran tu calidad de vida, seguridad y la plusvalía de tu patrimonio. La ubicación perfecta para invertir y disfrutar de la vida que siempre quisiste en el caribe mexicano.
-                        </p>
-                </div>
-                </div>
-                </div>
-
-                <div className="grid grid-cols-1 md:grid-cols-1 gap-8">
-
-
-                <div className="flex flex-row-reverse "> 
-                    <img src="carrusel11.jpg" className="w-full h-56 xl:h-[600px] xl:ellipse-desarrollos"/> 
-                </div>
- 
+        {/*Slider Mobile*/}
+        <div className="lg:hidden">
+            <div className="grid grid-cols-1 gap-8">
+                <div className="flex flex-row-reverse sm:col-start-1 w-full h-56 xl:h-[600px] xl:ellipse-desarrollos"> 
+                    <SliderTerravento/>
                 </div>
             </div>
         </div>
 
-            <hr
-                className="my-12 h-0.5 border-t-0 bg-neutral-100 opacity-100 dark:opacity-50" />
+        {/*Background*/}
+        <div className="grid-cols-2 bg-[url('/public/homeBack1.png')]">
+
+        {/*Desarrollos*/}
+        <div className="grid xl:grid-cols-2 gap-4">
+            <div className="flex flex-col lg:grid-cols-4 lg:gap-2 rounded-3xl"> 
+                <div className="grid grid-cols-1">  
+                    <h1 className="text-[45px] text-axeda font-title px-12 mt-10 lg:mt-24">
+                        Terravento -Pedregal Residencial-
+                    </h1>
+                        <p className ="text-gray-600 text-xl font-body text-justify px-12 py-2">
+                           Un desarrollo de 412 terrenos residenciales, ubicados al noreste de Mérida, a solo 25 minutos de las hermosas playas que conforman la costa esmeralda de Yucatán.
+                        </p>   
+
+                    <h2 className="text-axeda font-title text-3xl px-12 py-2 mt-3">
+                        Rosavento Merida
+                    </h2>   
+
+                        <p className="text-gray-700 text-base font-body text-justify tracking-widest px-12 py-2">
+                            Nuestros terrenos residenciales se encuentran situados dentro de un desarrollo al norte de Mérida, con todos los servicios a pie de lote. Su excelente ubicación ofrece cercanía con hospitales de primer nivel y centros comerciales; así como de playas y sitios turísticos.
+                        </p>
+
+                </div> 
+            </div>
+
+        {/*Slider LG*/}
+                <div className="hidden lg:grid lg:grid-cols-1 lg:gap-8">
+                    <div className="flex flex-row-reverse sm:col-start-1 w-full h-56 xl:h-[600px] xl:ellipse-desarrollos"> 
+                        <SliderTerravento/>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr
+            className="my-12 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-500 to-transparent opacity-25 dark:opacity-100"/>
 
             <div className ="container mx-auto grid grid-cols-1 xl:grid-cols-4 gap-4">
                 <div className="col-start-1 col-end-4 xl:col-span-2"> 
@@ -67,22 +62,7 @@ const Terravento = () => {
                         ubicación de tu
                         <strong className="underline decoration-axeda/[.33]"> próxima inversión. </strong>
                     </h2>
-                </div>
-            {/* 
-                <div className="col-start-3 col-end-4 col-span-2 px-12">
-                    <button className="">
-
-                    </button>
-                </div>
-
-                <ul className="nav nav-tabs mb-4 justify-content-end" id="investmentTab-widget_1673888685032" role="tablist">
-                    <li className="nav-item" role="presentation">
-                        <a className="nav-link active" id="tab-elem-widget_1673888685032-1" data-toggle="tab" href="#tab-widget_1673888685032-1" role="tab" aria-controls="tab-widget_1673888685032-1" aria-selected="true">Yucatán</a>
-                    </li>
-                    <li className="nav-item" role="presentation">
-                        <a className="nav-link" id="tab-elem-widget_1673888685032-2" data-toggle="tab" href="#tab-widget_1673888685032-2" role="tab" aria-controls="tab-widget_1673888685032-2" aria-selected="false">Quintana Roo</a>
-                    </li>
-                </ul> */}      
+                </div>    
             </div>
             
             <div className="p-12 xs:p-6">
@@ -115,7 +95,7 @@ const Terravento = () => {
             </div>
  
             <hr
-                className="my-12 h-0.5 border-t-0 bg-neutral-100 opacity-100 dark:opacity-50" />
+            className="my-12 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-500 to-transparent opacity-25 dark:opacity-100"/>
  
             <div className="grid xl:grid-cols-7 xl:gap-4 place-items-center xl:py-30 bg-[url('/public/backGreen.png')]">
                 <div></div>
@@ -150,9 +130,10 @@ const Terravento = () => {
                         <p className ="text-3xl text-axeda py-10 ">Facilidad de pago</p>
                 <div></div>
             </div>
- 
-            <hr
-                className="my-12 h-0.5 border-t-0 bg-neutral-100 opacity-100 dark:opacity-50" />
+
+        <hr
+            className="my-12 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-500 to-transparent opacity-25 dark:opacity-100"/>
+
 
             <div className ="container mx-auto grid grid-cols-1 xl:grid-cols-4 gap-8">
                 <div className="col-start-1 col-end-4 xl:col-span-2"> 
@@ -196,44 +177,9 @@ const Terravento = () => {
                 </div>
             </div>
             </div>
-
+  
             <hr
-                className="my-12 h-0.5 border-t-0 bg-neutral-100 opacity-100 dark:opacity-50" /> 
-
-            <div className ="container mx-auto grid grid-cols-1 xl:grid-cols-4 ">
-                <div className="col-start-1 col-end-4 xl:col-span-2"> 
-                    <h2 className="font-serif text-2xl tracking-widest leading-normal text-orange-900">
-                            Descubre las oportunidades de  
-                    </h2>
-                    <h2 className="font-serif text-2xl xl:text-3xl tracking-widest leading-normal text-rose-900 px-6 xl:px-16">
-                            
-                        <strong className="underline decoration-axeda/[.33]"> Rosavento. </strong>
-                    </h2>
-
-                    <div className="col-start-2 col-end-7 py-6 px-6 ">
-                        <p>Elige e invierte en tu próximo patrimonio en las zonas con mejor plusvalía de Mérida y  Cancún. </p>
-                    </div>
-                </div>  
-            </div>
-              
-
-            <div className="grid md:grid-cols-4 gap-8">
-                <div className="md:col-start-1 "></div>
-                <div className="md:col-start-2 "> 
-                    <img    className="md:w-[350px] md:h-[450px] hover:shadow-2xl rounded-3xl" 
-                            src="oportunidades-rosavento-cun.webp"/>
-                </div>
-
-                <div className="md:col-start-3 ">   
-                    <img    className="md:w-[350px] md:h-[450px] hover:shadow-2xl rounded-3xl  " 
-                            src="oportunidades-rosavento-mid.webp" />
-                </div>
-
-                <div className="md:col-start-4"></div>
-            </div> 
-
-            <hr
-                className="my-12 h-0.5 border-t-0 bg-neutral-100 opacity-100 dark:opacity-50" />
+            className="my-12 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-500 to-transparent opacity-25 dark:opacity-100"/>
 
             <div className="h4/5">
             </div>
@@ -254,39 +200,9 @@ const Terravento = () => {
                     </div>
                 </div>
             </div>
-
+ 
             <hr
-                className="my-12 h-0.5 border-t-0 bg-neutral-100 opacity-100 dark:opacity-50" />
-
-            <div className="grid grid-cols">   
-                
-            <div className ="mx-auto grid grid-cols-2 ">
-                <div className="col-start-1 col-end-4 xl:col-span-4 xl:px-12"> 
-                    <h2 className="font-title text-3xl tracking-widest leading-normal text-orange-900">
-                        Rosavento
-                    </h2> 
-                    <div className="font-body col-start-2 col-end-8 py-6 px-6 text-gray-500 text-justify text-xl tracking-widest">
-                        <p>
-                            Un desarrollo con un concepto único en el sureste de México, donde gracias a su  ubicación en las mejores zonas de 
-                            Mérida y Cancún, es ideal para alcanzar tus objetivos de  inversión, ya sea para contruir tu patrimonio o para generar 
-                            rendimientos gracias a su  plusvalía en ascenso.
-                        </p>
-                    </div>
-
-                    <div className="font-body col-start-2 col-end-8 py-6 px-6 text-gray-500 text-justify text-xl tracking-widest">
-                        <p>
-                            Además, cuenta con características y amenidades premium en las que toda la  
-                            familia podrán disfrutar de una vida tranquila en Mérida y Cancún.
-                        </p>
-                    </div>
-                </div>  
-            </div>
-            </div>
-
-            <hr
-                className="my-12 h-0.5 border-t-0 bg-neutral-100 opacity-100 dark:opacity-50" />
-
-  
+            className="my-12 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-500 to-transparent opacity-25 dark:opacity-100"/>
 
             <FormularioContacto/>  
         </>

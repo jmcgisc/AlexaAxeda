@@ -53,7 +53,7 @@ const Rosenda = () => {
         </div> 
 
             <hr
-                className="my-12 h-0.5 border-t-0 bg-neutral-100 opacity-100 dark:opacity-50" />
+                className="my-12 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-500 to-transparent opacity-25 dark:opacity-100"/>
 
             <div className ="container mx-auto grid grid-cols-1 xl:grid-cols-4 gap-4">
                 <div className="col-start-1 col-end-4 xl:col-span-2"> 
@@ -96,7 +96,7 @@ const Rosenda = () => {
             </div>
  
             <hr
-                className="my-12 h-0.5 border-t-0 bg-neutral-100 opacity-100 dark:opacity-50" />
+                className="my-12 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-500 to-transparent opacity-25 dark:opacity-100"/>
  
             <div className="grid xl:grid-cols-7 xl:gap-4 place-items-center xl:py-30 bg-[url('/public/homeBack1.png')]">
                 <div></div>
@@ -130,15 +130,16 @@ const Rosenda = () => {
                         <img src="ubicacion_azul.png" className="h-28 w-14 py-4"/>
                         <p className ="text-3xl text-axeda py-10 ">Facilidad de pago</p>
                 <div></div>
-            </div>
- 
+            </div> 
+
             <hr
-                className="my-12 h-0.5 border-t-0 bg-neutral-100 opacity-100 dark:opacity-50" />
+                className="my-12 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-500 to-transparent opacity-25 dark:opacity-100"/>
+
 
             <LayoutMap/>    
 
             <hr
-                className="my-12 h-0.5 border-t-0 bg-neutral-100 opacity-100 dark:opacity-50 " />
+                className="my-12 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-500 to-transparent opacity-25 dark:opacity-100"/>
 
             <div className ="container mx-auto grid grid-cols-1 xl:grid-cols-4 gap-8">
                 <div className="col-start-1 col-end-4 xl:col-span-2"> 
