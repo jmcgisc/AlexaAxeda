@@ -1,12 +1,12 @@
 import React     ,   { useRef, useState } from 'react';
-import ReactPlayer  from 'react-player'
-import Banner       from "../Aux/Banner"
-import pdfC         from '../../../public/ROSAVENTO CANCÚN_Brochure.pdf'
-import pdfM         from '../../../public/Brochure_Rosavento_Merida.pdf'
-import pdfP         from '../../../public/ROSAVENTO Maya_Master Plan.pdf'
-import FormularioContacto from "../Aux/FormularioContacto"
-import LayoutMap from '../Aux/LayoutMap' 
-import Slider from './Slider'
+import ReactPlayer  from 'react-player';
+import Banner       from "../Aux/Banner";
+import pdfC         from '../../../public/ROSAVENTO CANCÚN_Brochure.pdf';
+import pdfM         from '../../../public/Brochure_Rosavento_Merida.pdf';
+import pdfP         from '../../../public/ROSAVENTO Maya_Master Plan.pdf';
+import FormularioContacto from "../Aux/FormularioContacto";
+import LayoutMap from '../Aux/LayoutMap';
+import Slider from './Slider';
 
 const Rosavento = () => { 
     return (
