@@ -4,46 +4,59 @@ import Banner       from "../Aux/Banner"
 import pdf from '../../../public/INDO_Brochure.pdf'
 import FormularioContacto from "../Aux/FormularioContacto"  
 import LayoutMap from '../Aux/LayoutMap'
+import Slider from './Slider';
 
 const Indo = () => { 
     return (
         <> 
-            
-     
-     <div className="grid-cols-2 bg-[url('/public/homeBack1.png')]">
-            {/*Desarrollos*/}
+          {/*Slider Mobile*/}
+          <div className="lg:hidden">
+            <div className="grid grid-cols-1 gap-8">
+                <div className="flex flex-row-reverse sm:col-start-1 w-full h-56 xl:h-[600px] xl:ellipse-desarrollos"> 
+                    <Slider/>
+                </div>
+            </div>
+        </div>
 
-            <div className="grid xl:grid-cols-2 gap-4">
-                <div className="flex flex-col grid-cols-4 gap-2 rounded-3xl"> 
-
-                <div class="grid grid-cols-1 xl:grid-cols-3 gap-4">
-                    <div></div> 
-                    <div></div>
-                <div class="col-span-2 ..."></div>
-                    <div></div>
-                    <div></div>
-                <div class="col-span-2 ...">
-                    <h1 className="text-[40px] text-axeda font-title col-start-2 col-end-1 xl:py-5">
-                        -ROSENDA INDO-</h1>
-                        <p className ="text-gray-700 text-xl font-sans px-2 py-4">
-                        TERRENOS INDUSTRIALES EN PREVENTA MENSUALIDADES DESDE $5,250.00 MXN
+        {/*Background*/}
+        <div className="grid-cols-2 bg-[url('/public/homeBack1.png')]">
+        
+        {/*Desarrollos*/}
+        <div className="grid xl:grid-cols-2 gap-4">
+            <div className="flex flex-col lg:grid-cols-4 lg:gap-2 rounded-3xl"> 
+                <div className="grid grid-cols-1">  
+                    <h1 className="text-[45px] text-axeda font-title px-12 mt-24 lg:mt-24 ">
+                        -ROSENDA INDO-
+                    </h1>
+                        <p className ="text-gray-600 text-xl font-body text-justify px-12 py-12">
+                            TERRENOS INDUSTRIALES EN PREVENTA MENSUALIDADES DESDE $5,250.00 MXN
                         </p>   
- 
-                        <p className="font-sans py-4 px-2 text-xl text-justify"> 
-                        Terrenos industriales en Yucatán.
+
+                        <p className="text-gray-700 text-base font-body text-justify tracking-widest px-12 py-8">
+                            Es un parque industrial a 12 minutos del libramiento de Mérida, con gran vanguardia de tecnología en materia de seguridad para sus operaciones y funcionalidad, integrado por grandes vialidades, áreas verdes y recreativas como cancha de fútbol y amenidades idóneas para el esparcimiento del personal.
                         </p>
+                </div> 
+            </div>
 
+        {/*Slider LG*/}
+                <div className="hidden lg:grid lg:grid-cols-1 lg:gap-8">
+                    <div className="flex flex-row-reverse sm:col-start-1 w-full h-56 xl:h-[600px] xl:ellipse-desarrollos"> 
+                        <Slider/>
+                    </div>
                 </div>
-                </div>
-                </div>
+            </div>
+        </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-1 gap-8">
- 
-                <div className="flex flex-row-reverse "> 
-                    <img src="fachada_rosavento_2.jpg" className="w-full h-56 xl:h-[600px] xl:ellipse-desarrollos"/> 
-                </div>
- 
-                </div>
+        {/*Imagen Beneficios PlusValia*/}
+        <div className="grid grid-cols-1 lg:grid-cols-7 lg:gap-20 place-items-center bg-[url('/public/homeBack2.png')]">
+
+            <div class="lg:col-start-1 lg:col-end-5">
+                <img class="hover:shadow-lg dark:hover:shadow-black/30" alt="cancun zona hotelera" src="https://paseodelaselva.com/hana/wp-content/themes/paseoHana/assets/homeSlide3.png"
+                    alt="Cancun" />
+            </div>
+
+            <div class="lg:col-span-3 flex flex-col justify-center"> 
+                <h1 class="font-sans text-lg uppercase tracking-[0.5rem] mb-4 italic text-clip"><span>Cancún</span>, Invierte de forma inteligente</h1>
             </div>
         </div> 
         
