@@ -1,4 +1,5 @@
 import React      from 'react'
+import { Navigate } from 'react-router';
 import 'mdb-react-ui-kit/dist/css/mdb.min.css';
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import Headers    from "./components/Headers"
@@ -10,15 +11,32 @@ import Indo       from "./components/Desarrollos/Indo"
 import Privacidad from "./components/Aux/Privacidad"
 import Footer     from "./components/Footer"
 import { FloatingWhatsApp } from 'react-floating-whatsapp'
+import Error404 from "./Error404"
+
+// import { initializeApp } from "firebase/app";
+// import { getAnalytics } from "firebase/analytics";
 // import Bio        from "./components/footer/Bio"
 // import Prensa     from "./components/footer/Prensa" 
 // import Inversores from "./components/footer/Inversores"
 // import Eventos    from "./components/footer/Eventos"
 // import Terminos   from "./components/footer/Terminos"
 
-
 import { Routes, Route , BrowserRouter} 
                   from 'react-router-dom'
+
+const firebaseConfig = {
+  apiKey: "AIzaSyA4PbTwng883Rp6ob3XXRGAFaPkYt6DIrs",
+  authDomain: "axedaterrenoscancun.firebaseapp.com",
+  projectId: "axedaterrenoscancun",
+  storageBucket: "axedaterrenoscancun.appspot.com",
+  messagingSenderId: "1037310248574",
+  appId: "1:1037310248574:web:465e311c787be99324fa2f",
+  measurementId: "G-W1M6YXQPPG"
+};
+
+// Initialize Firebase
+// const app = initializeApp(firebaseConfig);
+// const analytics = getAnalytics(app);
 
 function App() { 
    
@@ -34,7 +52,8 @@ function App() {
             <Route path = '/indo'         element ={ <Indo/> } />
             <Route path = '/terravento'   element ={ <Terravento/> } />
             {/* Footer */}
-            <Route path = '/privacidad'   element ={ <Privacidad/> } />
+            <Route path = '/privacidad'   element ={ <Privacidad/> } /> 
+            <Route path="*" element={<Error404 />} />
             {/* <Route path = '/components/footer/Bio'            element ={ <Bio/> } /> */}
             {/* <Route path = '/components/footer/Prensa'         element ={ <Prensa/> } />
             <Route path = '/components/footer/Inversores'     element ={ <Inversores/> } />
