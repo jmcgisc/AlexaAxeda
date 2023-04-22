@@ -7,6 +7,11 @@ import SliderTerravento from './SliderTerravento';
 const Terravento = () => { 
     return (
         <>
+
+
+            
+
+        
         {/*Slider Mobile*/}
         <div className="lg:hidden">
             <div className="grid grid-cols-1 gap-8">
@@ -27,15 +32,16 @@ const Terravento = () => {
                         Terravento -Pedregal Residencial-
                     </h1>
                         <p className ="text-gray-600 text-xl font-body text-justify px-12 py-2">
-                           Un desarrollo de 412 terrenos residenciales, ubicados al noreste de Mérida, a solo 25 minutos de las hermosas playas que conforman la costa esmeralda de Yucatán.
+                           Un desarrollo de 412 terrenos residenciales, ubicados al noreste de Mérida, a solo 25 minutos de las hermosas 
+                           playas que conforman la costa esmeralda de Yucatán.
                         </p>   
 
-                    <h2 className="text-axeda font-title text-3xl px-12 py-2 mt-3">
-                        Rosavento Merida
-                    </h2>   
+                    <h3 className="text-axeda font-title text-3xl px-12 py-2 mt-20">
+                        Amenidades exclusivas para los residentes
+                    </h3>   
 
                         <p className="text-gray-700 text-base font-body text-justify tracking-widest px-12 py-2">
-                            Nuestros terrenos residenciales se encuentran situados dentro de un desarrollo al norte de Mérida, con todos los servicios a pie de lote. Su excelente ubicación ofrece cercanía con hospitales de primer nivel y centros comerciales; así como de playas y sitios turísticos.
+                            Un lugar donde el estilo mediterraneo y el cuidado en los detalles convergen bajo un lujo discreto    
                         </p>
 
                 </div> 
