@@ -2,16 +2,13 @@ import React        from 'react'
 import ReactPlayer  from 'react-player'
 import Banner       from "../Aux/Banner" 
 import FormularioContacto from "../Aux/FormularioContacto"
-import SliderTerravento from './SliderTerravento';
+import SliderTerravento from './SliderTerravento'; 
 
 const Terravento = () => { 
     return (
-        <>
-
-
-            
-
-        
+        <> 
+              
+         
         {/*Slider Mobile*/}
         <div className="lg:hidden">
             <div className="grid grid-cols-1 gap-8">
