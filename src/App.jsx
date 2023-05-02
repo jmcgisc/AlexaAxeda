@@ -9,6 +9,7 @@ import Rosavento  from "./components/Desarrollos/Rosavento"
 import Rosenda    from "./components/Desarrollos/Rosenda"
 import Indo       from "./components/Desarrollos/Indo" 
 import Privacidad from "./components/Aux/Privacidad"
+import Bio        from "./components/Aux/Bio"
 import Footer     from "./components/Footer"
 import { FloatingWhatsApp } from 'react-floating-whatsapp'
 import Error404 from "./Error404"
@@ -45,6 +46,8 @@ function App() {
       <BrowserRouter>
         <Headers/> 
           <Routes>
+            {/*Header*/}
+            <Route path = '/bio'          element ={ <Bio/> } /> 
             {/*Home*/}
             <Route path = '/'             element ={ <Home/> } />
             <Route path = '/rosavento'    element ={ <Rosavento/> } />

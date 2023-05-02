@@ -66,7 +66,10 @@ const Rosavento = () => {
         <div className="grid grid-cols-1 lg:grid-cols-7 lg:gap-20 place-items-center bg-[url('/public/homeBack2.png')]">
 
             <div class="lg:col-start-1 lg:col-end-5">
-                <img class="hover:shadow-lg dark:hover:shadow-black/30" alt="cancun zona hotelera" src="https://paseodelaselva.com/hana/wp-content/themes/paseoHana/assets/homeSlide3.png"
+                <img class="hover:shadow-lg dark:hover:shadow-black/30" alt="cancun zona hotelera" 
+                
+                src="https://paseodelaselva.com/hana/wp-content/themes/paseoHana/assets/homeSlide3.png"
+                
                     alt="Cancun" />
             </div>
 
@@ -79,63 +82,50 @@ const Rosavento = () => {
         <hr
             className="my-12 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-500 to-transparent opacity-25 dark:opacity-100"/>
 
-        <div className ="container mx-auto grid grid-cols-1 xl:grid-cols-4 gap-4">
-            <div className="col-start-1 col-end-4 xl:col-span-2"> 
-                <h2 className="font-title text-2xl xl:text-4xl tracking-widest leading-normal xl:col-span-2 text-orange-900">
-                    Conoce los beneficios de la
-                </h2>
-                <h2 className="font-title text-3xl md:text-xl xl:text-3xl tracking-widest leading-normal text-rose-900 px-4 xl:px-16">
-                    ubicación de tu
-                    <strong className="underline decoration-axeda/[.33]"> próxima inversión. </strong>
-                </h2>
-            </div>
+        <div class="bg-white dark:bg-gray-900">
+            <div class="container px-6 py-10 mx-auto">
+                <h1 class="text-3xl font-title text-center text-gray-800 capitalize lg:text-4xl dark:text-white"> Conoce los beneficios de la  ubicación de tu próxima inversión.</h1>
 
-        {/*separacion*/}
-        {/* 
-                <div className="col-start-3 col-end-4 col-span-2 px-12">
-                    <button className="">
+                <div class="mt-8 lg:-mx-6 lg:flex lg:items-center">
+                    <div className="object-cover  w-full lg:mx-6 lg:w-1/2 rounded-xl h-72 lg:h-96">
+                        <ReactPlayer
+                                            url='https://www.youtube.com/watch?v=e6qNM45bUHg'
+                                            className='react-player' 
+                                            controls 
+                                            width='100%'
+                                            height='100%' 
+                        />
 
-                    </button>
-                </div>
+                    </div>
+            {/* <img class="object-cover w-full lg:mx-6 lg:w-1/2 rounded-xl h-72 lg:h-96" src="https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"alt=""/> */}
 
-                <ul className="nav nav-tabs mb-4 justify-content-end" id="investmentTab-widget_1673888685032" role="tablist">
-                    <li className="nav-item" role="presentation">
-                        <a className="nav-link active" id="tab-elem-widget_1673888685032-1" data-toggle="tab" href="#tab-widget_1673888685032-1" role="tab" aria-controls="tab-widget_1673888685032-1" aria-selected="true">Yucatán</a>
-                    </li>
-                    <li className="nav-item" role="presentation">
-                        <a className="nav-link" id="tab-elem-widget_1673888685032-2" data-toggle="tab" href="#tab-widget_1673888685032-2" role="tab" aria-controls="tab-widget_1673888685032-2" aria-selected="false">Quintana Roo</a>
-                    </li>
-                </ul> */}      
-            </div>
-            
-            <div className="p-12 xs:p-6">
-            <div className="grid grid-cols-1 xl:grid-cols-2 xl:px-20 gap-8">
-                <div className="flex flex-col"> 
+                <div class="mt-6 lg:w-1/2 lg:mt-0 lg:mx-6 ">
+                    <p class="text-sm text-blue-500 uppercase">category</p>
 
-                <ReactPlayer
-                            url='https://www.youtube.com/watch?v=e6qNM45bUHg'
-                            className='react-player' 
-                            controls 
-                            width='100%'
-                            height='100%' 
-                />
-                </div>
+                    <a href="#" class="block mt-4 text-2xl font-semibold text-gray-800 hover:underline dark:text-white md:text-3xl">
+                        All the features you want to know
+                    </a>
 
-                <div className="grid grid-cols-1 gap-4 xl:py-20 xl:px-20">
-
-                    <div className="flex flex-col gap-4"> 
-                        <p className="font-body tracking-wide text-xl text-gray-800 text-justify"> 
-                            Destaca por su belleza, cultura, calidad de vida y seguridad, lo que la ha posicionado a su capital entre las mejores 
-                            ciudades para vivir e invertir del sureste mexicano.
-                         </p>
-                        <p className="font-body tracking-wide text-xl text-gray-800 text-justify"> 
+                    <p class="mt-3 text-sm text-gray-500 dark:text-gray-300 md:text-sm">
                             Su ubicación permite gran conectividad hacia diversos sitios de interés, así como a otros países a través de su Aeropuerto 
                             Internacional y el Puerto de Progreso.
-                         </p>
+                    </p>
+
+                    <a href="#" class="inline-block mt-2 text-blue-500 underline hover:text-blue-400">Read more</a>
+
+                    <div class="flex items-center mt-6">
+                        <img class="object-cover object-center w-10 h-10 rounded-full" src="https://images.unsplash.com/photo-1531590878845-12627191e687?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80" alt=""/>
+
+                        <div class="mx-4">
+                            <h1 class="text-sm text-gray-700 dark:text-gray-200">Amelia. Anderson</h1>
+                            <p class="text-sm text-gray-500 dark:text-gray-400">Lead Developer</p>
+                        </div>
+                    </div>
                     </div>
                 </div>
             </div>
-            </div>
+        </div>
+ 
 
         {/*MasterPlan*/} 
         <hr
@@ -222,50 +212,58 @@ const Rosavento = () => {
         {/*By Grupo Axeda*/}
         <hr
             className="my-12 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-500 to-transparent opacity-25 dark:opacity-100"/>
+        
+        {/*/ Desarrollos Axeda */}
+        <div class="bg-white dark:bg-gray-900">
+            <div class="container px-6 py-10 mx-auto">
+                <h1 class="text-3xl font-title text-center text-gray-800 capitalize lg:text-4xl dark:text-white"> 
+                Desarrollado por Grupo
+                <strong className="underline decoration-axeda/[.33]"> AXEDA.</strong>
+                </h1>
 
-            <div className ="container mx-auto grid grid-cols-1 xl:grid-cols-4 gap-8 ">
-                <div className="col-start-1 col-end-4 xl:col-span-2"> 
-                    <h2 className="font-title text-2xl xl:text-3xl tracking-wide leading-normal text-orange-900 px-16">
-                        Desarrollado por
-                    </h2>
-                    <h2 className="font-title text-2xl xl:text-3xl tracking-wide leading-normal text-rose-900 xl:px-28">
-                        Grupo
-                        <strong className="underline decoration-axeda/[.33]"> Axeda.</strong>
-                    </h2>
-                </div>  
-            </div>
-            
-            <div className="p-12 xs:p-6">
-            <div className="grid grid-cols-1 xl:grid-cols-2 xl:px-20 gap-8 ">
+                <div class="mt-8 lg:-mx-6 lg:flex lg:items-center">
+                    <div className="object-cover  w-full lg:mx-6 lg:w-1/2 rounded-xl h-72 lg:h-96">
+                        <ReactPlayer
+                                    url='https://www.youtube.com/watch?v=e6qNM45bUHg'
+                                    className='react-player' 
+                                    controls 
+                                    width='100%'
+                                    height='100%' 
+                        />
 
-                <div className="grid grid-cols-1 xl:py-20 xl:px-20">
-                    <div className="flex flex-col gap-8"> 
-                        <p className="font-body text-xl text-gray-800 tracking-wide text-justify"> 
+                    </div>
+            {/* <img class="object-cover w-full lg:mx-6 lg:w-1/2 rounded-xl h-72 lg:h-96" src="https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"alt=""/> */}
+
+                <div class="mt-6 lg:w-1/2 lg:mt-0 lg:mx-6 ">
+                    <p class="text-sm text-blue-500 uppercase">category</p>
+
+                    <a href="#" class="block mt-4 text-2xl font-semibold text-gray-800 hover:underline dark:text-white md:text-3xl">
+                        All the features you want to know
+                    </a>
+
+                    <p class="mt-3 text-sm text-gray-500 dark:text-gray-300 md:text-sm">
                             Una empresa inmobiliaria que busca facilitar el acceso al mundo de las inversiones  de forma inteligente y 
                             promoviendo alta calidad de vida, desarrollando bienes inmuebles en  las zonas de mayor crecimiento y demanda del 
                             sureste mexicano, con un solo objetivo en  mente: 
-                        </p>
 
-                        <p className="font-body text-xl text-gray-800 text-justify"> 
                             Superar sus límites y generar abundancia a sus inversionistas. 
-                        </p>
+                    </p>
+
+                    <a href="#" class="inline-block mt-2 text-blue-500 underline hover:text-blue-400">Read more</a>
+
+                    <div class="flex items-center mt-6">
+                        <img class="object-cover object-center w-10 h-10 rounded-full" src="https://images.unsplash.com/photo-1531590878845-12627191e687?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80" alt=""/>
+
+                        <div class="mx-4">
+                            <h1 class="text-sm text-gray-700 dark:text-gray-200">Amelia. Anderson</h1>
+                            <p class="text-sm text-gray-500 dark:text-gray-400">Lead Developer</p>
+                        </div>
+                    </div>
                     </div>
                 </div>
-
-                <div className="flex flex-col gap-2 rounded-3xl"> 
-
-                <ReactPlayer
-                            url=' https://www.youtube.com/watch?v=pnsNE5oqZOo&t=3s'
-                            className='react-player' 
-                            controls 
-                            width='100%'
-                            height='100%' 
-                />
-                </div>
             </div>
-            </div>
+        </div>
 
-          
 {/* 
             <div className="grid md:grid-cols-4 gap-8">
                 <div className="md:col-start-1 "></div>
