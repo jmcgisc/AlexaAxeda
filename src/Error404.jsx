@@ -13,21 +13,22 @@ const contentStyle = { width: 1000 };
                 <div className="bg-white shadow overflow-hidden sm:rounded-lg pb-8">
                 <div className="border-t border-gray-200 text-center pt-8">
                     <h1 className="text-9xl font-bold text-axeda">404</h1>
-                    <h1 className="text-6xl font-medium py-8">Oops! Pagina no encontrada</h1>
-                        <p className="text-2xl pb-8 px-12 font-medium">Oops! La página que buscas ya no existe o se ha mudado a las paradisiacas tierras de Axeda, sigue navegando con nosotros junto con tu asesora Alexa Delgado.</p>
-                            <a href="/" rel="noopener noreferrer">
-                                <button className="bg-gradient-to-r from-axeda to-red-500 hover:from-pink-500 hover:to-orange-500 text-white font-b px-6 py-3 rounded-md mr-6" 
-                                >HOME</button>
-                            </a>
+                    <h1 className="text-4xl lg:text-6xl lg:font-medium  py-8">Oops! Pagina no encontrada</h1>
+                        <p className="text-2xl pb-8 px-12 lg:font-medium text-base">La página que buscas ya no existe o se ha mudado a las paradisiacas tierras de Axeda, sigue navegando con nosotros junto con tu asesora Alexa Delgado.</p>
                             
                             <Popup trigger={<button className= "bg-gradient-to-r from-axeda to-red-500 hover:from-pink-500 hover:to-orange-500 text-white font-b px-6 py-3 rounded-md mr-6" 
-                                > Contáctame</button>
-                                }{...{   contentStyle }}
+                            > Contáctame</button>} {...{   contentStyle }}
                                 position="right center">
                                 <div className="flex flex-full">
                                     <FormularioContactoPopup/>
                                 </div>
                             </Popup> 
+                            
+                            <a href="/" rel="noopener noreferrer">
+                                <button className="bg-gradient-to-r from-axeda to-red-500 hover:from-pink-500 hover:to-orange-500 text-white font-b px-6 py-3 rounded-md mr-6" 
+                                >HOME</button>
+                            </a>
+                            
                 </div>
                 </div>
                 </div>

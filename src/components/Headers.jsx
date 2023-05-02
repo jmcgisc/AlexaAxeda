@@ -76,23 +76,7 @@ const Headers = () => {
                >
 
                <Menu.Items className="absolute right-0 z-10 mt-2 w-56 origin-top-right divide-y divide-gray-100 rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
-                  
-               <div className="py-1">
-                     <Menu.Item>
-                     {({ active }) => (
-                        <NavLink  className ={classNames(
-                           active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
-                           'block px-4 py-2 text-sm font-mono text-center'
-                           )}
-   
-                              to="/terravento" 
-                           >
-                              Terravento  
-                        </NavLink>
-                     )}
-                     </Menu.Item>
-                  </div> 
-                  
+             
                   <div className="py-1">
                      <Menu.Item>
                      {({ active }) => (
@@ -119,7 +103,7 @@ const Headers = () => {
    
                               to="/rosenda" 
                            >
-                              Rosenda  
+                              Rosenda II
                         </NavLink>
                      )}
                      </Menu.Item>
@@ -140,13 +124,30 @@ const Headers = () => {
                      )}
                      </Menu.Item>
                   </div> 
+                       
+                  <div className="py-1">
+                     <Menu.Item>
+                     {({ active }) => (
+                        <NavLink  className ={classNames(
+                           active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
+                           'block px-4 py-2 text-sm font-mono text-center'
+                           )}
+   
+                              to="/terravento" 
+                           >
+                              Terravento  
+                        </NavLink>
+                     )}
+                     </Menu.Item>
+                  </div> 
+                  
                </Menu.Items>
                </Transition> 
             </Menu> 
 
          <div className ="px-22 py-2 inline-flex justify-center rounded-md border border-gray-300 bg-white text-sm text-center font-mono font-medium text-gray-700 shadow-sm 
                hover:bg-gray-50 focus:outline-none focus:border-orange-600 focus:ring-orange-600 block w-full rounded-md sm:text-sm focus:ring-1">
-            <NavLink className ="text-center " to = "/footer/bio" >Alexa Delgado</NavLink>     
+            <NavLink className ="text-center " to = "/bio" >Alexa Delgado</NavLink>     
          </div> 
           
       </nav>

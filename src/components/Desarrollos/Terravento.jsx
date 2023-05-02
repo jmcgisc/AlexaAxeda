@@ -7,8 +7,6 @@ import SliderTerravento from './SliderTerravento';
 const Terravento = () => { 
     return (
         <> 
-              
-         
         {/*Slider Mobile*/}
         <div className="lg:hidden">
             <div className="grid grid-cols-1 gap-8">
@@ -53,52 +51,76 @@ const Terravento = () => {
             </div>
         </div>
 
+        {/*Imagen Beneficios PlusValia*/}
+        <div className="grid grid-cols-1 lg:grid-cols-7 lg:gap-20 place-items-center bg-[url('/public/homeBack2.png')]">
+
+            <div class="lg:col-start-1 lg:col-end-5">
+                <img class="hover:shadow-lg dark:hover:shadow-black/30" alt="ciudad de Mérida" src="merida.jpg" />
+            </div>
+
+            <div class="lg:col-span-3 flex flex-col justify-center"> 
+                <h1 class="font-sans text-lg uppercase tracking-[0.5rem] mb-4 italic text-clip"><span>Mérida</span>, 
+             la animada capital del estado de Yucatán en México, tiene una rica herencia maya y colonial.</h1>
+            </div>
+        </div> 
+
+          {/*Beneficios Terravento*/}
         <hr
             className="my-12 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-500 to-transparent opacity-25 dark:opacity-100"/>
+         
+        <div class="bg-white dark:bg-gray-900">
+            <div class="container px-6 py-10 mx-auto">
+                <h1 class="text-3xl font-title text-center text-gray-800 capitalize lg:text-4xl dark:text-white"> 
+                Pedregal Residencial Beneficios 
+                <strong className="underline decoration-axeda/[.33]"> terravento.</strong>
+                </h1>
 
-            <div className ="container mx-auto grid grid-cols-1 xl:grid-cols-4 gap-4">
-                <div className="col-start-1 col-end-4 xl:col-span-2"> 
-                    <h2 className="font-title text-2xl xl:text-4xl tracking-widest leading-normal xl:col-span-2 text-orange-900">
-                        Conoce los beneficios de la
-                    </h2>
-                    <h2 className="font-serif text-2xl md:text-xl xl:text-3xl tracking-widest leading-normal text-rose-900 px-4 xl:px-16">
-                        ubicación de tu
-                        <strong className="underline decoration-axeda/[.33]"> próxima inversión. </strong>
-                    </h2>
-                </div>    
-            </div>
-            
-            <div className="p-12 xs:p-6">
-            <div className="grid grid-cols-1 xl:grid-cols-2 xl:px-20 gap-8">
-                <div className="flex flex-col"> 
+                <div class="mt-8 lg:-mx-6 lg:flex lg:items-center">
+                    <div className="object-cover  w-full lg:mx-6 lg:w-1/2 rounded-xl h-72 lg:h-96">
+                        <ReactPlayer
+                                    url='https://www.youtube.com/watch?v=QOOoKhYc9cI&t=8sg'
+                                    className='react-player' 
+                                    controls 
+                                    width='100%'
+                                    height='100%' 
+                        />
+                    </div>
+                    
+            {/* <img class="object-cover w-full lg:mx-6 lg:w-1/2 rounded-xl h-72 lg:h-96" src="https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"alt=""/> */}
 
-                <ReactPlayer
-                            url='https://www.youtube.com/watch?v=e6qNM45bUHg'
-                            className='react-player' 
-                            controls 
-                            width='100%'
-                            height='100%' 
-                />
-                </div>
+                <div class="mt-6 lg:w-1/2 lg:mt-0 lg:mx-6 ">
+                    <p class="text-sm text-blue-500 uppercase">category</p>
 
-                <div className="grid grid-cols-1 gap-4 xl:py-20 xl:px-20">
+                    <a href="#" class="block mt-4 text-2xl font-semibold text-gray-800 hover:underline dark:text-white md:text-3xl">
+                        All the features you want to know
+                    </a>
 
-                    <div className="flex flex-col gap-4"> 
-                        <p className="font-chivo text-xl text-gray-500 text-justify"> 
-                            Destaca por su belleza, cultura, calidad de vida y seguridad, lo que la ha posicionado a su capital entre las mejores 
-                            ciudades para vivir e invertir del sureste mexicano.
-                         </p>
-                        <p className="font-body text-xl text-gray-500 text-justify"> 
-                            Su ubicación permite gran conectividad hacia diversos sitios de interés, así como a otros países a través de su Aeropuerto 
-                            Internacional y el Puerto de Progreso.
-                         </p>
+                    <p className="font-chivo text-xl text-gray-500 text-justify "> 
+                        Es un desarrollo residenciales diseñado con la finalidad de rodearse de bienestar, y sumergirse en la armonía que brinda el lugar más pacífico de sureste de México.
+                    </p>
+
+                    <p className="font-body text-xl text-gray-500 text-justify"> 
+                          
+                        Un lugar donde el estilo mediterráneo y el cuidado de los detalles convergen bajo el lujo discreto, creando espacios que reflejan la calidez humana y el espíritu de sentirse en
+                        libertad.
+
+                        Un desarrollo residencial al noreste de Mérida, a sólo 30 minutos de las hermosas playas que conforman la Costa Esmeralda de Yucatán.
+                    </p>
+
+                    <a href="#" class="inline-block mt-2 text-blue-500 underline hover:text-blue-400">Read more</a>
+
+                    <div class="flex items-center mt-6">
+                        <img class="object-cover object-center w-10 h-10 rounded-full" src="https://images.unsplash.com/photo-1531590878845-12627191e687?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80" alt=""/>
+
+                        <div class="mx-4">
+                            <h1 class="text-sm text-gray-700 dark:text-gray-200">Amelia. Anderson</h1>
+                            <p class="text-sm text-gray-500 dark:text-gray-400">Lead Developer</p>
+                        </div>
+                    </div>
                     </div>
                 </div>
             </div>
-            </div>
- 
-            <hr
-            className="my-12 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-500 to-transparent opacity-25 dark:opacity-100"/>
+        </div>
  
             <div className="grid xl:grid-cols-7 xl:gap-4 place-items-center xl:py-30 bg-[url('/public/backGreen.png')]">
                 <div></div>
@@ -134,58 +156,66 @@ const Terravento = () => {
                 <div></div>
             </div>
 
+
+        {/*By Grupo Axeda*/}
+        <hr
+            className="my-12 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-500 to-transparent opacity-25 dark:opacity-100"/>
+        
+        {/*/ Desarrollos Axeda */}
+        <div class="bg-white dark:bg-gray-900">
+            <div class="container px-6 py-10 mx-auto">
+                <h1 class="text-3xl font-title text-center text-gray-800 capitalize lg:text-4xl dark:text-white"> 
+                Desarrollado por Grupo
+                <strong className="underline decoration-axeda/[.33]"> AXEDA.</strong>
+                </h1>
+
+                <div class="mt-8 lg:-mx-6 lg:flex lg:items-center">
+                    <div className="object-cover  w-full lg:mx-6 lg:w-1/2 rounded-xl h-72 lg:h-96">
+                        <ReactPlayer
+                                    url='https://www.youtube.com/watch?v=e6qNM45bUHg'
+                                    className='react-player' 
+                                    controls 
+                                    width='100%'
+                                    height='100%' 
+                        />
+
+                    </div>
+
+            {/* <img class="object-cover w-full lg:mx-6 lg:w-1/2 rounded-xl h-72 lg:h-96" src="https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"alt=""/> */}
+
+                <div class="mt-6 lg:w-1/2 lg:mt-0 lg:mx-6 ">
+                    <p class="text-sm text-blue-500 uppercase">category</p>
+
+                    <a href="#" class="block mt-4 text-2xl font-semibold text-gray-800 hover:underline dark:text-white md:text-3xl">
+                        All the features you want to know
+                    </a>
+
+                    <p class="mt-3 text-sm text-gray-500 dark:text-gray-300 md:text-sm">
+                            Una empresa inmobiliaria que busca facilitar el acceso al mundo de las inversiones  de forma inteligente y 
+                            promoviendo alta calidad de vida, desarrollando bienes inmuebles en  las zonas de mayor crecimiento y demanda del 
+                            sureste mexicano, con un solo objetivo en  mente: 
+
+                            Superar sus límites y generar abundancia a sus inversionistas. 
+                    </p>
+
+                    <a href="#" class="inline-block mt-2 text-blue-500 underline hover:text-blue-400">Read more</a>
+
+                    <div class="flex items-center mt-6">
+                        <img class="object-cover object-center w-10 h-10 rounded-full" src="https://images.unsplash.com/photo-1531590878845-12627191e687?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80" alt=""/>
+
+                        <div class="mx-4">
+                            <h1 class="text-sm text-gray-700 dark:text-gray-200">Amelia. Anderson</h1>
+                            <p class="text-sm text-gray-500 dark:text-gray-400">Lead Developer</p>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <hr
             className="my-12 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-500 to-transparent opacity-25 dark:opacity-100"/>
 
-
-            <div className ="container mx-auto grid grid-cols-1 xl:grid-cols-4 gap-8">
-                <div className="col-start-1 col-end-4 xl:col-span-2"> 
-                    <h2 className="font-serif text-2xl xl:text-3xl tracking-widest leading-normal text-orange-900">
-                        Desarrollado por
-                    </h2>
-                    <h2 className="font-serif text-2xl xl:text-3xl tracking-widest leading-normal text-rose-900 px-16">
-                        Grupo
-                        <strong className="underline decoration-axeda/[.33]"> Axeda.</strong>
-                    </h2>
-                </div>  
-            </div>
-            
-            <div className="p-12 xs:p-6">
-            <div className="grid grid-cols-1 xl:grid-cols-2 xl:px-20 gap-8">
-
-                <div className="grid grid-cols-1 xl:py-20 xl:px-20">
-
-                    <div className="flex flex-col gap-4"> 
-                        <p className="font-body text-xl text-gray-500 text-justify"> 
-                        Una empresa inmobiliaria que busca facilitar el acceso al mundo de las inversiones  de forma inteligente y 
-                        promoviendo alta calidad de vida, desarrollando bienes inmuebles en  las zonas de mayor crecimiento y demanda del 
-                        sureste mexicano, con un solo objetivo en  mente: 
-                        </p>
-
-                        <p className="font-body text-xl text-gray-500 text-justify"> 
-                        Superar sus límites y generar abundancia a sus inversionistas. 
-                        </p>
-                    </div>
-                </div>
-
-                <div className="flex flex-col gap-2 rounded-3xl"> 
-
-                <ReactPlayer
-                            url=' https://www.youtube.com/watch?v=pnsNE5oqZOo&t=3s'
-                            className='react-player' 
-                            controls 
-                            width='100%'
-                            height='100%' 
-                />
-                </div>
-            </div>
-            </div>
-  
-            <hr
-            className="my-12 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-500 to-transparent opacity-25 dark:opacity-100"/>
-
-            <div className="h4/5">
-            </div>
             <div className ="flex bg-axeda overflow-hidden justify-content-center mt-md-3 mb-3">
                 {/* <Banner/>  */}
             </div>
