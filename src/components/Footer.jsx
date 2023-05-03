@@ -58,7 +58,7 @@ const Footer = () => {
         <nav className="mt-4 flex flex-col md:flex-row items-center justify-between gap-4">
   
           <p  className="text-gray-200 lg:text-xl lg:mt-4"> 
-            <NavLink to = "/components/footer/Bio" > Alexa Delgado </NavLink>
+            <NavLink to = "/bio" > Alexa Delgado </NavLink>
           </p>
  
           <p  className="text-gray-200 lg:text-xl lg:mt-4">
@@ -71,6 +71,10 @@ const Footer = () => {
           
           <p  className="text-gray-200 lg:text-xl lg:mt-4">
             <NavLink to = "/privacidad" > Política de Privacidad</NavLink>
+          </p> 
+
+          <p  className="text-gray-200 lg:text-xl lg:mt-4">
+            <NavLink to = "https://blog.axeda.mx/" > Blog</NavLink>
           </p> 
  
           <button  
