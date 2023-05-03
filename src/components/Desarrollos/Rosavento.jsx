@@ -78,13 +78,13 @@ const Rosavento = () => {
             </div>
         </div> 
  
-        {/*Beneficios*/}
+        {/*Beneficios Yucatán*/}
         <hr
             className="my-12 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-500 to-transparent opacity-25 dark:opacity-100"/>
 
         <div class="bg-white dark:bg-gray-900">
             <div class="container px-6 py-10 mx-auto">
-                <h1 class="text-3xl font-title text-center text-gray-800 capitalize lg:text-4xl dark:text-white"> Conoce los beneficios de la  ubicación de tu próxima inversión.</h1>
+                <h1 class="text-3xl font-title text-center text-axeda capitalize lg:text-4xl "> Conoce los beneficios de la  ubicación de tu <strong>PRÓXIMA INVERSÓN. </strong></h1>
 
                 <div class="mt-8 lg:-mx-6 lg:flex lg:items-center">
                     <div className="object-cover  w-full lg:mx-6 lg:w-1/2 rounded-xl h-72 lg:h-96">
@@ -94,31 +94,37 @@ const Rosavento = () => {
                                             controls 
                                             width='100%'
                                             height='100%' 
-                        />
-
+                        /> 
                     </div>
             {/* <img class="object-cover w-full lg:mx-6 lg:w-1/2 rounded-xl h-72 lg:h-96" src="https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"alt=""/> */}
 
                 <div class="mt-6 lg:w-1/2 lg:mt-0 lg:mx-6 ">
-                    <p class="text-sm text-blue-500 uppercase">category</p>
+                    <p class="text-sm text-blue-800 uppercase">Yucatán</p>
 
-                    <a href="#" class="block mt-4 text-2xl font-semibold text-gray-800 hover:underline dark:text-white md:text-3xl">
-                        All the features you want to know
+                    <a href="#" class="block mt-4 text-2xl font-semibold text-axeda hover:underline md:text-3xl">
+                        Mérida, Yucatán.
                     </a>
+                    
+                    <p class="mt-3 text-sm text-gray-500 dark:text-gray-600 md:text-sm">
+                            Destaca por su belleza, cultura, calidad de vida y seguridad, lo que la ha posicionado a su capital entre las mejores ciudades para vivir e 
+                            invertir del sureste mexicano.  
+                    </p>
 
-                    <p class="mt-3 text-sm text-gray-500 dark:text-gray-300 md:text-sm">
+                    <p class="mt-3 text-sm text-gray-500 dark:text-gray-600 md:text-sm">
                             Su ubicación permite gran conectividad hacia diversos sitios de interés, así como a otros países a través de su Aeropuerto 
                             Internacional y el Puerto de Progreso.
                     </p>
-
-                    <a href="#" class="inline-block mt-2 text-blue-500 underline hover:text-blue-400">Read more</a>
-
+                    <p class="mt-3 text-sm text-gray-500 dark:text-gray-600 md:text-sm">
+                            “Rosavento lo elegí por su ubicación y porque Mérida es una de las ciudades más  seguras, esta ciudad tiene mucho futuro, 
+                            aparte de que el financiamiento es bastante  cómodo”
+                    </p>
+ 
                     <div class="flex items-center mt-6">
-                        <img class="object-cover object-center w-10 h-10 rounded-full" src="https://images.unsplash.com/photo-1531590878845-12627191e687?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80" alt=""/>
+                        <img class="object-cover object-center w-10 h-10 rounded-full" src="https://axeda.mx/hubfs/Comentario-Erika-Herrera.jpg" alt=""/>
 
                         <div class="mx-4">
-                            <h1 class="text-sm text-gray-700 dark:text-gray-200">Amelia. Anderson</h1>
-                            <p class="text-sm text-gray-500 dark:text-gray-400">Lead Developer</p>
+                            <h1 class="text-sm text-gray-700 dark:text-gray-800">Erika Herrera</h1>
+                            <p class="text-sm text-gray-500 dark:text-gray-400">Inversionista</p>
                         </div>
                     </div>
                     </div>
@@ -126,6 +132,56 @@ const Rosavento = () => {
             </div>
         </div>
  
+        {/*Beneficios Quintana Roo*/}
+        <hr
+            className="my-12 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-500 to-transparent "/>
+
+        <div class="bg-white dark:bg-gray-900">
+            <div class="container px-6 py-10 mx-auto"> 
+
+                <div class="mt-8 lg:-mx-6 lg:flex lg:items-center">
+                   
+            {/* <img class="object-cover w-full lg:mx-6 lg:w-1/2 rounded-xl h-72 lg:h-96" src="https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"alt=""/> */}
+
+                <div class="mt-6 lg:w-1/2 lg:mt-0 lg:mx-6 ">
+                    <p class="text-sm text-blue-800 uppercase">Quintana Roo</p>
+
+                    <a href="#" class="block mt-4 text-2xl font-semibold text-axeda hover:underline md:text-3xl">
+                        Cancún, Quintana Roo.
+                    </a>
+                    
+                    <p class="mt-3 text-sm text-gray-500 dark:text-gray-600 md:text-sm">
+                            Cuenta con municipios turísticos de alta demanda nacional e internacional, gracias a su ubicación privilegiada al colindar con el mar caribe, 
+                            su Aeropuerto Internacional y su estilo de vida donde la naturaleza converge con infraestructuras de primer nivel, favoreciendo las inversiones y plusvalía.
+                    </p>
+ 
+                    <p class="mt-3 text-sm text-gray-500 dark:text-gray-600 md:text-sm">
+                            “Me parece muy interesante todo lo que se ha desarrollado, afortunadamente la  inversión está bien respaldada, además de que la gente que trabaja en 
+                            Axeda es muy  positiva, lo cual te motiva a invertir".
+                    </p>
+ 
+                    <div class="flex items-center mt-6">
+                        <img class="object-cover object-center w-10 h-10 rounded-full" src="https://axeda.mx/hubfs/Comentario-Ignacio-Padilla.jpg" alt=""/>
+
+                        <div class="mx-4">
+                            <h1 class="text-sm text-gray-700 dark:text-gray-800">Ignacio Padilla</h1>
+                            <p class="text-sm text-gray-500 dark:text-gray-400">Inversionista</p>
+                        </div>
+                    </div>
+                    </div> 
+                    
+                    <div className="object-cover  w-full lg:mx-6 lg:w-1/2 rounded-xl h-72 lg:h-96">
+                        <ReactPlayer
+                                            url='https://www.youtube.com/watch?v=KdN-h8qob10'
+                                            className='react-player' 
+                                            controls 
+                                            width='100%'
+                                            height='100%' 
+                        /> 
+                    </div>
+                </div>
+            </div>
+        </div>
 
         {/*MasterPlan*/} 
         <hr
@@ -216,7 +272,7 @@ const Rosavento = () => {
         {/*/ Desarrollos Axeda */}
         <div class="bg-white dark:bg-gray-900">
             <div class="container px-6 py-10 mx-auto">
-                <h1 class="text-3xl font-title text-center text-gray-800 capitalize lg:text-4xl dark:text-white"> 
+                <h1 class="text-3xl font-title text-center text-axeda capitalize lg:text-4xl"> 
                 Desarrollado por Grupo
                 <strong className="underline decoration-axeda/[.33]"> AXEDA.</strong>
                 </h1>
@@ -234,31 +290,19 @@ const Rosavento = () => {
                     </div>
             {/* <img class="object-cover w-full lg:mx-6 lg:w-1/2 rounded-xl h-72 lg:h-96" src="https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"alt=""/> */}
 
-                <div class="mt-6 lg:w-1/2 lg:mt-0 lg:mx-6 ">
-                    <p class="text-sm text-blue-500 uppercase">category</p>
+                <div class="mt-6 lg:w-1/2 lg:mt-0 lg:mx-6 "> 
 
-                    <a href="#" class="block mt-4 text-2xl font-semibold text-gray-800 hover:underline dark:text-white md:text-3xl">
-                        All the features you want to know
-                    </a>
+                    <p class="block mt-4 text-2xl font-semibold text-axeda hover:underline md:text-3xl">
+                        Empresa orgullosamente mexicana
+                    </p>
 
-                    <p class="mt-3 text-sm text-gray-500 dark:text-gray-300 md:text-sm">
+                    <p class="mt-3 text-sm text-gray-500 dark:text-gray-600 md:text-sm">
                             Una empresa inmobiliaria que busca facilitar el acceso al mundo de las inversiones  de forma inteligente y 
                             promoviendo alta calidad de vida, desarrollando bienes inmuebles en  las zonas de mayor crecimiento y demanda del 
                             sureste mexicano, con un solo objetivo en  mente: 
 
                             Superar sus límites y generar abundancia a sus inversionistas. 
                     </p>
-
-                    <a href="#" class="inline-block mt-2 text-blue-500 underline hover:text-blue-400">Read more</a>
-
-                    <div class="flex items-center mt-6">
-                        <img class="object-cover object-center w-10 h-10 rounded-full" src="https://images.unsplash.com/photo-1531590878845-12627191e687?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80" alt=""/>
-
-                        <div class="mx-4">
-                            <h1 class="text-sm text-gray-700 dark:text-gray-200">Amelia. Anderson</h1>
-                            <p class="text-sm text-gray-500 dark:text-gray-400">Lead Developer</p>
-                        </div>
-                    </div>
                     </div>
                 </div>
             </div>
