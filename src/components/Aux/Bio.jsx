@@ -5,40 +5,40 @@ const Bio = () => {
   
         <div>
             <div>
-            <h1 class="text-axeda text-center font-title text-2xl lg:text-5xl mt-12 mb-6">Alexa Delgado </h1>
+            <h1 className="text-axeda text-center font-title text-2xl lg:text-5xl mt-12 mb-6">Alexa Delgado </h1>
         </div> 
   
-        <div class='flex items-center justify-center min-h-screen from-gray-700 via-gray-800 to-gray-900 bg-gradient-to-br'>
-        <div class="relative w-full group max-w-md min-sw-0 mx-auto mt-6 mb-6 break-word bg-white border shadow-2xl dark:bg-gray-800 dark:border-gray-700 md:max-w-sm rounded-xl">
-            <div class="pb-6">
-                <div class="flex flex-wrap justify-center">
-                    <div class="flex justify-center w-full">
-                        <div class="relative">
-                            <img src="Alexa-removebg-preview.png" class="dark:shadow-xl border-white dark:border-gray-800 rounded-full align-middle border-8 absolute -m-16 -ml-18 lg:-ml-16 max-w-[150px]" />
+        <div className='flex items-center justify-center min-h-screen from-gray-700 via-gray-800 to-gray-900 bg-gradient-to-br'>
+        <div className="relative w-full group max-w-md min-sw-0 mx-auto mt-6 mb-6 break-word bg-white border shadow-2xl dark:bg-gray-800 dark:border-gray-700 md:max-w-sm rounded-xl">
+            <div className="pb-6">
+                <div className="flex flex-wrap justify-center">
+                    <div className="flex justify-center w-full">
+                        <div className="relative">
+                            <img src="Alexa-removebg-preview.png" className="dark:shadow-xl border-white dark:border-gray-800 rounded-full align-middle border-8 absolute -m-16 -ml-18 lg:-ml-16 max-w-[150px]" />
                         </div>
                     </div>
                 </div>
-                <div class="mt-20 mt-20 text-center">
-                    <h3 class="mb-4 mt-22 text-2xl font-bold leading-normal text-gray-700 dark:text-gray-300">Tanya Alexa Delgado</h3>
-                    <div class="flex flex-row justify-center w-full mx-auto space-x-2 text-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-gray-400" viewBox="0 0 20 20" fill="currentColor">
+                <div className="mt-20 mt-20 text-center">
+                    <h3 className="mb-4 mt-22 text-2xl font-bold leading-normal text-gray-700 dark:text-gray-300">Tanya Alexa Delgado</h3>
+                    <div className="flex flex-row justify-center w-full mx-auto space-x-2 text-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4 text-gray-400" viewBox="0 0 20 20" fill="currentColor">
                             <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path>
                         </svg> 
-                        <div class="text-sm font-bold tracking-wide text-gray-600 dark:text-gray-300 font-mono text-xl">Coordinadora Comercial</div> 
+                        <div className="text-sm font-bold tracking-wide text-gray-600 dark:text-gray-300 font-mono text-xl">Coordinadora Comercial</div> 
                     </div>
 
-                    <div class="w-full text-center">
-                        <div class="flex justify-center pt-8 pb-0 lg:pt-4">
-                            <div class="flex space-x-2">  
+                    <div className="w-full text-center">
+                        <div className="flex justify-center pt-8 pb-0 lg:pt-4">
+                            <div className="flex space-x-2">  
 
                                 <a
-                                    class="p-1 -m-1 text-gray-400 hover:text-amber-500 focus:outline-none focus-visible:ring-2 ring-primary"
+                                    className="p-1 -m-1 text-gray-400 hover:text-amber-500 focus:outline-none focus-visible:ring-2 ring-primary"
                                     href="https://www.instagram.com/asesor.alexadelgado/"
                                     rel="noopener"
                                     aria-label="Alexa Delgado on Instagram"
                                     target="_blank"
                                 >
-                                    <svg class="w-6 h-6 overflow-visible fill-current" alt="" aria-hidden="true" viewBox="0 0 140 140" xmlns="http://www.w3.org/2000/svg">
+                                    <svg className="w-6 h-6 overflow-visible fill-current" alt="" aria-hidden="true" viewBox="0 0 140 140" xmlns="http://www.w3.org/2000/svg">
                                         <path
                                             fill-rule="evenodd"
                                             clip-rule="evenodd"
@@ -48,13 +48,13 @@ const Bio = () => {
                                 </a>
 
                                 <a
-                                    class="p-1 -m-1 text-gray-400 hover:text-amber-500 focus:outline-none focus-visible:ring-2 ring-primary"
+                                    className="p-1 -m-1 text-gray-400 hover:text-amber-500 focus:outline-none focus-visible:ring-2 ring-primary"
                                     href="https://mx.linkedin.com/in/alexa-delgado-37201b214/"
                                     rel="noopener"
                                     aria-label="Alexa Delgado on Linkedin"
                                     target="_blank"
                                 >
-                                    <svg class="w-6 h-6 overflow-visible fill-current" alt="" aria-hidden="true" viewBox="0 0 140 140">
+                                    <svg className="w-6 h-6 overflow-visible fill-current" alt="" aria-hidden="true" viewBox="0 0 140 140">
                                         <path
                                             d="M23.4 44.59h-4.75a12.76 12.76 0 00-9.73 2.19 9.44 9.44 0 00-2.35 7.12V131a9.08 9.08 0 002.3 7 9.24 9.24 0 006.82 2c2.22 0 4.15-.21 8.24-.06a12 12 0 009.25-2 9.1 9.1 0 002.29-7V53.9a9.44 9.44 0 00-2.34-7.12 12.68 12.68 0 00-9.73-2.19zM21 0A16.19 16.19 0 005.09 15.6 16.52 16.52 0 0021 31.86 16.12 16.12 0 0037 15.6 16.18 16.18 0 0021 0zM99.74 43.63a31.09 31.09 0 00-20.93 6.3A7.25 7.25 0 0077 46.34a6.08 6.08 0 00-4.52-1.78 119.08 119.08 0 00-15 .3c-4.16.84-6.18 3.79-6.18 9V131a9.14 9.14 0 002.28 7 12.06 12.06 0 009.26 2c4.47-.17 5.74.06 8.22.06a9.26 9.26 0 006.83-2 9.12 9.12 0 002.3-7V89.88A12.48 12.48 0 0192.93 76 12.44 12.44 0 01106 89.88V131a9.1 9.1 0 002.29 7 12 12 0 009.24 2c1.83-.07 4-.07 5.8 0a12.09 12.09 0 009.26-2 9.14 9.14 0 002.28-7V78.32a33.07 33.07 0 00-35.13-34.69z"
                                         ></path>
@@ -62,13 +62,13 @@ const Bio = () => {
                                 </a>
 
                                 <a
-                                    class="p-1 -m-1 text-gray-400 hover:text-amber-500 focus:outline-none focus-visible:ring-2 ring-primary"
+                                    className="p-1 -m-1 text-gray-400 hover:text-amber-500 focus:outline-none focus-visible:ring-2 ring-primary"
                                     href="https://www.youtube.com/@alexadelgado8961"
                                     rel="noopener"
                                     aria-label="Alexa Delgado on Youtube"
                                     target="_blank"
                                 >
-                                    <svg class="w-6 h-6 overflow-visible fill-current" alt="" aria-hidden="true" viewBox="0 0 140 140">
+                                    <svg className="w-6 h-6 overflow-visible fill-current" alt="" aria-hidden="true" viewBox="0 0 140 140">
                                         <path
                                             d="M115 15H25A25 25 0 000 40v60a25 25 0 0025 25h90a25 25 0 0025-25V40a25 25 0 00-25-25zM95.71 76.25L63.58 94.1A7.15 7.15 0 0153 87.85v-35.7a7.15 7.15 0 0110.6-6.26l32.11 17.86a7.15 7.15 0 010 12.5z"
                                         ></path>
@@ -78,17 +78,17 @@ const Bio = () => {
                         </div>
                     </div>
                 </div>
-                <div class="pt-6 mx-6 mt-6 text-center border-t border-gray-200 dark:border-gray-700/50">
-                    <div class="flex flex-wrap justify-center">
-                        <div class="w-full px-6">
-                            <p class="mb-4 font-light leading-relaxed text-gray-600 dark:text-gray-400">
+                <div className="pt-6 mx-6 mt-6 text-center border-t border-gray-200 dark:border-gray-700/50">
+                    <div className="flex flex-wrap justify-center">
+                        <div className="w-full px-6">
+                            <p className="mb-4 font-light leading-relaxed text-gray-600 dark:text-gray-400">
 
                             Coordinadora comercial de grupo Axeda con 5 años de experiencia en la comercialización de bienes inmuebles.
 
                             Me especializo en inversiones de preventas generando rendimientos anuales muy por encima del 15%. 
                             </p>
                             
-                            <p class="mb-4 font-light leading-relaxed text-gray-600 dark:text-gray-400">
+                            <p className="mb-4 font-light leading-relaxed text-gray-600 dark:text-gray-400">
                             Mi intención es ayudarte durante todo el proceso para darte la mejor inversión y 
                             mostrarte el camino hacia ella. 
 
@@ -96,17 +96,17 @@ const Bio = () => {
 
                             </p>
                             
-                            <p class="mb-4 font-light leading-relaxed text-gray-800 dark:text-gray-900">
+                            <p className="mb-4 font-light leading-relaxed text-gray-800 dark:text-gray-900">
                             ¡Enhorabuena por la mejor decisión!
 
                             </p>
                             
-                            <p class="mb-4 font-light leading-relaxed text-gray-800 dark:text-gray-400">
+                            <p className="mb-4 font-light leading-relaxed text-gray-800 dark:text-gray-400">
                             AXEDA.
                             
                             </p>
                             
-                            <p class="mb-4 font-light leading-relaxed text-gray-600 dark:text-gray-400">
+                            <p className="mb-4 font-light leading-relaxed text-gray-600 dark:text-gray-400">
                             Empresa dedicada al desarrollo del sector inmobiliario, conformada por profesionales con años 
                             de experiencia en las diferentes áreas que han enfocado sus esfuerzos en la innovación y tecnología para construir 
                             las mejores comunidades en el sureste de México 
@@ -114,13 +114,13 @@ const Bio = () => {
                         </div>
                     </div>
                 </div>
-                <div class="relative h-6 overflow-hidden translate-y-6 rounded-b-xl">
-                    <div class="absolute flex -space-x-12 rounded-b-2xl">
-                        <div class="w-36 h-8 transition-colors duration-200 delay-75 transform skew-x-[35deg] bg-amber-400/90 group-hover:bg-amber-600/90 z-10"></div>
-                        <div class="w-28 h-8 transition-colors duration-200 delay-100 transform skew-x-[35deg] bg-amber-300/90 group-hover:bg-amber-500/90 z-20"></div>
-                        <div class="w-28 h-8 transition-colors duration-200 delay-150 transform skew-x-[35deg] bg-amber-200/90 group-hover:bg-amber-400/90 z-30"></div>
-                        <div class="w-28 h-8 transition-colors duration-200 delay-200 transform skew-x-[35deg] bg-amber-100/90 group-hover:bg-amber-300/90 z-40"></div>
-                        <div class="w-28 h-8 transition-colors duration-200 delay-300 transform skew-x-[35deg] bg-amber-50/90 group-hover:bg-amber-200/90 z-50"></div>
+                <div className="relative h-6 overflow-hidden translate-y-6 rounded-b-xl">
+                    <div className="absolute flex -space-x-12 rounded-b-2xl">
+                        <div className="w-36 h-8 transition-colors duration-200 delay-75 transform skew-x-[35deg] bg-amber-400/90 group-hover:bg-amber-600/90 z-10"></div>
+                        <div className="w-28 h-8 transition-colors duration-200 delay-100 transform skew-x-[35deg] bg-amber-300/90 group-hover:bg-amber-500/90 z-20"></div>
+                        <div className="w-28 h-8 transition-colors duration-200 delay-150 transform skew-x-[35deg] bg-amber-200/90 group-hover:bg-amber-400/90 z-30"></div>
+                        <div className="w-28 h-8 transition-colors duration-200 delay-200 transform skew-x-[35deg] bg-amber-100/90 group-hover:bg-amber-300/90 z-40"></div>
+                        <div className="w-28 h-8 transition-colors duration-200 delay-300 transform skew-x-[35deg] bg-amber-50/90 group-hover:bg-amber-200/90 z-50"></div>
                     </div>
                 </div>
             </div>
