@@ -58,23 +58,39 @@ const Footer = () => {
         <nav className="mt-4 flex flex-col md:flex-row items-center justify-between gap-4">
   
           <p  className="text-gray-200 lg:text-xl lg:mt-4"> 
-            <NavLink to = "/bio" > Alexa Delgado </NavLink>
+            <NavLink  to = "/bio" 
+                      target="_blank"
+            > Alexa Delgado 
+            </NavLink>
           </p>
  
           <p  className="text-gray-200 lg:text-xl lg:mt-4">
-            <NavLink to = "/components/footer/Inversores" > Inversores </NavLink>
+            <NavLink  to = "/components/footer/Inversores" 
+                      target="_blank"
+            > Inversores 
+            </NavLink>
           </p>
 
           <p  className="text-gray-200 lg:text-xl lg:mt-4">
-            <NavLink to = "/components/footer/Eventos" > Eventos </NavLink>
+            <NavLink 
+                      to = "/components/footer/Eventos" 
+                      target="_blank"
+            > Eventos 
+            </NavLink>
           </p>
           
           <p  className="text-gray-200 lg:text-xl lg:mt-4">
-            <NavLink to = "/privacidad" > Política de Privacidad</NavLink>
+            <NavLink  to = "/privacidad" 
+                      target="_blank"
+            > Política de Privacidad
+            </NavLink>
           </p> 
 
           <p  className="text-gray-200 lg:text-xl lg:mt-4">
-            <NavLink to = "https://blog.axeda.mx/" > Blog</NavLink>
+            <NavLink  to = "https://blog.axeda.mx/" 
+                      target="_blank"
+            > Blog
+            </NavLink>
           </p> 
  
           <button  
@@ -91,6 +107,7 @@ const Footer = () => {
           </button>
 
         </nav>
+        
       </div>
 
       {/* CopyRight */}
