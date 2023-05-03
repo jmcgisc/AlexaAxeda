@@ -9,7 +9,7 @@ const Bio = () => {
         </div> 
   
         <div className='flex items-center justify-center min-h-screen from-gray-700 via-gray-800 to-gray-900 bg-gradient-to-br'>
-        <div className="relative w-full group max-w-md min-sw-0 mx-auto mt-6 mb-6 break-word bg-white border shadow-2xl dark:bg-gray-800 dark:border-gray-700 rounded-xl">
+        <div className="relative w-full group max-w-md min-sw-0 mx-auto mt-6 mb-6 break-word bg-white border shadow-2xl dark:bg-gray-800 dark:border-gray-700 max-w-screen-xl w-[50%] rounded-xl">
             <div className="pb-6">
                 <div className="flex flex-wrap justify-center">
                     <div className="flex justify-center w-full">
@@ -79,14 +79,14 @@ const Bio = () => {
                 <div className="pt-6 mx-6 mt-6 text-justify border-t border-gray-200 dark:border-gray-700/50">
                     <div className="flex flex-wrap justify-center">
                         <div className="w-full px-6">
-                            <p className="mb-4 font-light leading-relaxed text-gray-700 dark:text-gray-400">
+                            <p className="mb-4 font-light leading-relaxed tracking-widest text-gray-700 dark:text-gray-400">
 
                             Coordinadora comercial de grupo Axeda con 5 años de experiencia en la comercialización de bienes inmuebles.
 
                             Me especializo en inversiones de preventas generando rendimientos anuales muy por encima del 15%. 
                             </p>
                             
-                            <p className="mb-4 font-light leading-relaxed text-gray-600 dark:text-gray-400">
+                            <p className="mb-4 font-light leading-relaxed text-gray-600 tracking-widest	 dark:text-gray-400">
                             Mi intención es ayudarte durante todo el proceso para darte la mejor inversión y 
                             mostrarte el camino hacia ella. 
 
@@ -94,12 +94,12 @@ const Bio = () => {
 
                             </p>
                             
-                            <p className="mb-4 text-center text-primary font-title text-base leading-relaxed text-gray-800 dark:text-gray-900">
+                            <p className="mb-4 text-center text-primary font-title text-base font-bold leading-relaxed text-gray-800 dark:text-gray-900">
                             ¡Enhorabuena por la mejor decisión!
 
                             </p>
                             
-                            <p className="mb-4 font-light leading-relaxed text-axeda dark:text-gray-400">
+                            <p className="mb-4 italic leading-relaxed text-xl font-body text-axeda dark:text-gray-400">
                             AXEDA.
                             
                             </p>
@@ -114,11 +114,11 @@ const Bio = () => {
                 </div>
                 <div className="relative h-6 overflow-hidden translate-y-6 rounded-b-xl">
                     <div className="absolute flex -space-x-12 rounded-b-2xl">
-                        <div className="w-36 h-8 transition-colors duration-200 delay-75 transform skew-x-[35deg] bg-amber-400/90 group-hover:bg-amber-600/90 z-10"></div>
-                        <div className="w-28 h-8 transition-colors duration-200 delay-100 transform skew-x-[35deg] bg-amber-300/90 group-hover:bg-amber-500/90 z-20"></div>
-                        <div className="w-28 h-8 transition-colors duration-200 delay-150 transform skew-x-[35deg] bg-amber-200/90 group-hover:bg-amber-400/90 z-30"></div>
-                        <div className="w-28 h-8 transition-colors duration-200 delay-200 transform skew-x-[35deg] bg-amber-100/90 group-hover:bg-amber-300/90 z-40"></div>
-                        <div className="w-28 h-8 transition-colors duration-200 delay-300 transform skew-x-[35deg] bg-amber-50/90 group-hover:bg-amber-200/90 z-50"></div>
+                        <div className="w-56 h-8 transition-colors duration-200 delay-75 transform skew-x-[35deg]  bg-amber-400/90 group-hover:bg-amber-600/90 z-10"></div>
+                        <div className="w-48 h-8 transition-colors duration-200 delay-100 transform skew-x-[35deg] bg-amber-300/90 group-hover:bg-amber-500/90 z-20"></div>
+                        <div className="w-48 h-8 transition-colors duration-200 delay-150 transform skew-x-[35deg] bg-amber-200/90 group-hover:bg-amber-400/90 z-30"></div>
+                        <div className="w-48 h-8 transition-colors duration-200 delay-200 transform skew-x-[35deg] bg-amber-100/90 group-hover:bg-amber-300/90 z-40"></div>
+                        <div className="w-48 h-8 transition-colors duration-200 delay-300 transform skew-x-[35deg] bg-amber-50/90 group-hover:bg-amber-200/90 z-50"></div>
                     </div>
                 </div>
             </div>
