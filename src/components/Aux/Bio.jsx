@@ -9,7 +9,7 @@ const Bio = () => {
         </div> 
   
         <div className='flex items-center justify-center min-h-screen from-gray-700 via-gray-800 to-gray-900 bg-gradient-to-br'>
-        <div className="relative w-full group max-w-md min-sw-0 mx-auto mt-6 mb-6 break-word bg-white border shadow-2xl dark:bg-gray-800 dark:border-gray-700 md:max-w-sm rounded-xl">
+        <div className="relative w-full group max-w-md min-sw-0 mx-auto mt-6 mb-6 break-word bg-white border shadow-2xl dark:bg-gray-800 dark:border-gray-700 rounded-xl">
             <div className="pb-6">
                 <div className="flex flex-wrap justify-center">
                     <div className="flex justify-center w-full">
@@ -18,13 +18,11 @@ const Bio = () => {
                         </div>
                     </div>
                 </div>
+
                 <div className="mt-20 mt-20 text-center">
                     <h3 className="mb-4 mt-22 text-2xl font-bold leading-normal text-gray-700 dark:text-gray-300">Tanya Alexa Delgado</h3>
-                    <div className="flex flex-row justify-center w-full mx-auto space-x-2 text-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4 text-gray-400" viewBox="0 0 20 20" fill="currentColor">
-                            <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path>
-                        </svg> 
-                        <div className="text-sm font-bold tracking-wide text-gray-600 dark:text-gray-300 font-mono text-xl">Coordinadora Comercial</div> 
+                    <div className="flex flex-row justify-center w-full mx-auto space-x-2 text-center"> 
+                        <div className="text-sm font-bold tracking-wide text-axeda font-mono text-xl">Coordinadora Comercial</div> 
                     </div>
 
                     <div className="w-full text-center">
@@ -78,10 +76,10 @@ const Bio = () => {
                         </div>
                     </div>
                 </div>
-                <div className="pt-6 mx-6 mt-6 text-center border-t border-gray-200 dark:border-gray-700/50">
+                <div className="pt-6 mx-6 mt-6 text-justify border-t border-gray-200 dark:border-gray-700/50">
                     <div className="flex flex-wrap justify-center">
                         <div className="w-full px-6">
-                            <p className="mb-4 font-light leading-relaxed text-gray-600 dark:text-gray-400">
+                            <p className="mb-4 font-light leading-relaxed text-gray-700 dark:text-gray-400">
 
                             Coordinadora comercial de grupo Axeda con 5 años de experiencia en la comercialización de bienes inmuebles.
 
@@ -96,12 +94,12 @@ const Bio = () => {
 
                             </p>
                             
-                            <p className="mb-4 font-light leading-relaxed text-gray-800 dark:text-gray-900">
+                            <p className="mb-4 text-center text-primary font-title text-base leading-relaxed text-gray-800 dark:text-gray-900">
                             ¡Enhorabuena por la mejor decisión!
 
                             </p>
                             
-                            <p className="mb-4 font-light leading-relaxed text-gray-800 dark:text-gray-400">
+                            <p className="mb-4 font-light leading-relaxed text-axeda dark:text-gray-400">
                             AXEDA.
                             
                             </p>
