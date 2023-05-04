@@ -107,8 +107,57 @@ const Bio = () => {
                             <p className="mb-4 font-light leading-relaxed text-gray-600 dark:text-gray-400">
                             Empresa dedicada al desarrollo del sector inmobiliario, conformada por profesionales con años 
                             de experiencia en las diferentes áreas que han enfocado sus esfuerzos en la innovación y tecnología para construir 
-                            las mejores comunidades en el sureste de México 
+                            las mejores comunidades en el sureste de México, ofrece ventajas tales como:
                     </p>
+ 
+                    <lu>
+                        <li>
+                            Inscritos ante el INSEJUPY (Instituto de Seguridad Jurídica y Patrimonial del Estado de Yucatán
+                        </li>
+
+                        <li>
+                            Fideicomiso
+                        </li>
+
+                        <li>
+                            Servicios a pie de lote
+                        </li>
+
+                        <li>
+                            Reutilización de agua pluvial
+                        </li>
+
+                        <li>
+                            Servicios ocultos
+                        </li>
+
+                        <li>
+                            Alumbrado de planta solar
+                        </li>
+
+                        <li>
+                            Calles de adocreto (mayor durabilidad)
+                        </li>  
+                      
+                        <li>
+                            Solo 10% de Enganche. Más tiempo 240 Meses 
+                        </li>
+
+                        <li>
+
+                            Hasta 48 meses SIN intereses. Cómodas mensualidades 
+                        </li>
+
+                        <li>
+
+                            SIN PENALIZACIÓN POR PAGOS ANTICIPADOS 
+                        </li>
+
+                        <li>
+
+                            SIN REVISIÓN DE BURÓ SIN COMPROBAR INGRESOS SIN AVAL
+                        </li>
+                    </lu>
                         </div>
                     </div>
                 </div>
