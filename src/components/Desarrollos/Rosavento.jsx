@@ -30,7 +30,7 @@ const Rosavento = () => {
                     <h1 className="text-[45px] text-axeda font-title px-12 mt-10 lg:mt-18 ">
                         Rosavento -Tierra Maya-
                     </h1>
-                        <p className ="text-gray-600 text-xl font-body text-justify px-12 py-2">
+                        <p className ="text-gray-600 text-xl font-body text-gray-600 text-bold text-justify px-12 py-2">
                             Terrenos residenciales al norte de Mérida  
                                 Un paraíso con mensualidades desde $1,992.00 MXN 
                         </p>   
@@ -406,7 +406,6 @@ const Rosavento = () => {
         {/*Formulario*/}
         <hr
             className="my-12 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-500 to-transparent opacity-25 dark:opacity-100"/>
-
             <FormularioContacto/>  
         </>
     )
