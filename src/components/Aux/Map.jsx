@@ -27,8 +27,8 @@ const onLoad = marker => {
 class Map extends Component {
   render() {
     return (
-      <LoadScript
-        googleMapsApiKey='AIzaSyC0vqlgE1XvoDzx46EExICcp4REfgfKAAo'
+      <LoadScript 
+        googleMapsApiKey={import.meta.env.VITE_REACT_GOOGLE_AP_KEY}
       >
         <GoogleMap
           id="marker-example"
@@ -36,8 +36,6 @@ class Map extends Component {
           center={center}
           zoom={13}
         >
-
-        { /* Child components, such as markers, info windows, etc. */ }
 
         <Marker
           onLoad={onLoad}
