@@ -33,7 +33,7 @@ class Map extends Component {
           id="marker-example"
           mapContainerStyle={containerStyle}
           center={center}
-          zoom={5}
+          zoom={13}
         >
 
         { /* Child components, such as markers, info windows, etc. */ }
