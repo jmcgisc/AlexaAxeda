@@ -15,9 +15,10 @@ const center = {
 };
 
 const position = {
-  lat: 19.628768151582083,
-  lng: -99.2311101457409
+  lat: 20.98852240519842,
+  lng: -89.61747923034035
 } 
+ 
 
 const onLoad = marker => {
   console.log('marker: ', marker)
