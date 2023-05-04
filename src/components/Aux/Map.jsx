@@ -1,8 +1,7 @@
-import React, { Component }  from 'react' 
-import { Icon } from '@iconify/react'
-import locationIcon from '@iconify/icons-mdi/map-marker'
+import React, { Component }  from 'react'  
 import { GoogleMap, LoadScript } from '@react-google-maps/api';
 import { Marker } from '@react-google-maps/api';
+import { InfoBox } from '@react-google-maps/api';
 
 const containerStyle = {
   width: '1300px',
@@ -37,11 +36,26 @@ class Map extends Component {
           zoom={13}
         >
 
-        <Marker
-          onLoad={onLoad}
-          position={position}
-        />
-          <></>
+          <Marker
+            onLoad={onLoad}
+            position={position}
+          />
+
+
+          <InfoBox
+                onLoad={onLoad}
+                options={options}
+                position={center}
+              >
+                <div style={{ backgroundColor: 'yellow', opacity: 0.75, padding: 12 }}>
+                  <div style={{ fontSize: 16, fontColor: `#08233B` }}>
+                    Rosavento, tu nuevo hogar!
+                  </div>
+                </div>
+              </InfoBox>
+          
+      <>
+        </>
         </GoogleMap>
       </LoadScript>
     )
