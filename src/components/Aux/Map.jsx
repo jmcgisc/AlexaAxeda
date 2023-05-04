@@ -2,6 +2,7 @@ import React, { Component }  from 'react'
 import { Icon } from '@iconify/react'
 import locationIcon from '@iconify/icons-mdi/map-marker'
 import { GoogleMap, LoadScript } from '@react-google-maps/api';
+import { Marker } from '@react-google-maps/api';
 
 const containerStyle = {
   width: '1300px',
@@ -13,6 +14,15 @@ const center = {
   lng: -89.39039837301571
 };
 
+const position = {
+  lat: 19.628768151582083,
+  lng: -99.2311101457409
+} 
+
+const onLoad = marker => {
+  console.log('marker: ', marker)
+}
+
 class Map extends Component {
   render() {
     return (
@@ -20,11 +30,18 @@ class Map extends Component {
         googleMapsApiKey='AIzaSyC0vqlgE1XvoDzx46EExICcp4REfgfKAAo'
       >
         <GoogleMap
+          id="marker-example"
           mapContainerStyle={containerStyle}
           center={center}
-          zoom={13}
+          zoom={5}
         >
-          { /* Child components, such as markers, info windows, etc. */ }
+
+        { /* Child components, such as markers, info windows, etc. */ }
+
+        <Marker
+          onLoad={onLoad}
+          position={position}
+        />
           <></>
         </GoogleMap>
       </LoadScript>
