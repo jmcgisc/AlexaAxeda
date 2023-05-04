@@ -19,7 +19,7 @@ const Rosenda = () => {
         </div>
 
         {/*Background*/}
-        <div className="grid-cols-2 bg-[url('/public/homeBack1.png')]">
+        <div className="grid-cols-2 bg-[url('/public/BackgroundBeach.jpg')]">
 
         {/*Desarrollos*/}
         <div className="grid xl:grid-cols-2 gap-4">
@@ -29,7 +29,7 @@ const Rosenda = () => {
                         ROSENDA TEMOZÓN 
                     </h1>
                         <p className ="text-gray-600 text-xl font-body text-justify px-12">
-                            Departamentos en Mérida Zona Norte desde 1.5 MDP
+                            Departamentos en Mérida Zona Norte desde 1.7 MDP
                         </p>   
 
                     <h1 className="text-[45px] text-axeda font-title px-12 mt-10 lg:mt-18 ">
@@ -80,31 +80,21 @@ const Rosenda = () => {
             {/* <img class="object-cover w-full lg:mx-6 lg:w-1/2 rounded-xl h-72 lg:h-96" src="https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"alt=""/> */}
 
                 <div class="mt-6 lg:w-1/2 lg:mt-0 lg:mx-6 ">
-                    <p class="text-sm text-blue-500 uppercase">category</p>
+                    <p class="text-sm text-blue-500 uppercase">Departamentos</p>
 
                     <a href="#" class="block mt-4 text-2xl font-semibold text-gray-800 hover:underline dark:text-white md:text-3xl">
-                        All the features you want to know
+                        Compra en la zona de mayor auge de la República Mexiana
                     </a>
 
-                    <p class="mt-3 text-sm text-gray-500 dark:text-gray-300 md:text-sm">
+                    <p class="mt-3 text-sm text-gray-500 dark:text-gray-600 md:text-sm">
                             Es una colección de 51 departamentos exclusivos con 8 modelos diferentes que conjugan armonía, 
                             calidez y funcionalidad; adaptándose a tu estilo de vida, ubicados en una de las zonas más exclusivas en Mérida. 
                     </p>
 
-                    <p className="font-chivo text-xl text-gray-500 text-justify"> 
+                    <p className="mt-3 text-sm text-gray-500 dark:text-gray-600 md:text-sm"> 
                             Cuenta con amenidades, así como proximidad a complejos comerciales de prestigio, hospitales y servicios de primer nivel.
                     </p>
 
-                    <a href="#" class="inline-block mt-2 text-blue-500 underline hover:text-blue-400">Read more</a>
-
-                    <div class="flex items-center mt-6">
-                        <img class="object-cover object-center w-10 h-10 rounded-full" src="https://images.unsplash.com/photo-1531590878845-12627191e687?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80" alt=""/>
-
-                        <div class="mx-4">
-                            <h1 class="text-sm text-gray-700 dark:text-gray-200">Amelia. Anderson</h1>
-                            <p class="text-sm text-gray-500 dark:text-gray-400">Lead Developer</p>
-                        </div>
-                    </div>
                     </div>
                 </div>
             </div>
