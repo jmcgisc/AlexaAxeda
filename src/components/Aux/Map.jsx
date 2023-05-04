@@ -33,7 +33,7 @@ class Map extends Component {
         <GoogleMap
           id="marker-example"
           mapContainerStyle={containerStyle}
-          center={center}
+          center={center} 
           zoom={13}
         >
 
