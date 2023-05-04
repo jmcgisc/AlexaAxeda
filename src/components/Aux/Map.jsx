@@ -17,8 +17,9 @@ const position = {
   lat: 20.98852240519842,
   lng: -89.61747923034035
 } 
- 
 
+const options = { closeBoxURL: '', enableEventPropagation: true };
+ 
 const onLoad = marker => {
   console.log('marker: ', marker)
 }
