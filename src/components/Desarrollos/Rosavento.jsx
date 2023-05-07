@@ -7,6 +7,7 @@ import pdfP         from '../../../public/ROSAVENTO Maya_Master Plan.pdf';
 import FormularioContacto from "../Aux/FormularioContacto";
 import LayoutMap from '../Aux/LayoutMap';
 import Slider from './Slider';
+import {RiCheckboxBlankCircleFill, RiPlayFill, RiStarFill} from "react-icons/ri"
 
 const Rosavento = () => { 
     return (
@@ -189,7 +190,7 @@ const Rosavento = () => {
 
         <div className="grid grid-cols-1 flex flex-cols lg:grid-cols-6 bg-[url('/public/homeBack2.png')]">
 
-            <div className="lg:col-start-3 lg:col-end-6 mb-5">
+            <div className="lg:col-start-2 lg:col-end-6 mb-5">
                 <h1 className="text-axeda text-center font-title text-2xl lg:text-5xl mt-5">
                     ROSAVENTO MÁSTER PLAN 
                 </h1> 
@@ -220,7 +221,42 @@ const Rosavento = () => {
                     </button> 
             </div>
         </div>
- 
+
+        {/*MasterPlan*/} 
+        <hr
+            className="my-12 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-500 to-transparent opacity-25 dark:opacity-100"/>
+
+        
+        <div className="grid grid-cols-1 flex flex-cols lg:grid-cols-6  bg-[url('/public/fondo_madera.png')] ">
+
+        <div className="lg:col-start-2 lg:col-end-6 mb-5">
+            <h1 className="text-4xl xl:text-7xl font-title text-red-900 text-center font-title text-2xl lg:text-5xl mt-5">
+                INVIERTE DESDE $4,534,898.94 MXN
+            </h1> 
+        </div>
+
+        <div className ="lg:col-start-2 lg:col-end-6  mb-5">
+            <h2 className ="text-gray-800 text-3xl text-black-800 text-center font-sans text-justify px-12 py-2"> 
+                Este desarrollo está inspirado en la arquitectura de las antiguas ciudades mayas y busca celebrar la naturaleza exterior, escondiendo las edificaciones entre la selva para ofrecerte un ambiente privado, orgánico y tranquilo. Aquí, vivirás rodeado de vegetación endémica que será el escenario perfecto para tu casa, ese lugar especial para ti y tu familia.
+            </h2>
+        </div>
+
+            <div className="lg:col-start-3 lg:col-end-6 mt-2 mb-5"> 
+                <span className="text-4xl xl:text-7xl font-bonodi xl:leading-[5.5rem] text-slate-600 px-24 py-2 border-8 border-axeda relative inline-block">
+                    <a  href={"https://crm.rosavento.mx/cotizador/cancun/cancun_levante/levante_real?vendedor=MTk2%0A"} target="_blank" rel="noopener noreferrer">
+                        Cotiza TU lote
+                    </a>
+                    
+                        <RiCheckboxBlankCircleFill className="text-yellow-900 text-base absolute -left-5 -top-4 p-2 bg-axeda rounded-full box-content"/>
+                        <RiCheckboxBlankCircleFill className="text-yellow-900 text-base absolute -right-5 -top-4 p-2 bg-axeda rounded-full box-content"/>
+                        <RiCheckboxBlankCircleFill className="text-yellow-900 text-base absolute -left-5 -bottom-4 p-2 bg-axeda rounded-full box-content"/>
+                        <RiCheckboxBlankCircleFill className="text-yellow-900 text-base absolute -right-5 -bottom-4 p-2 bg-axeda rounded-full box-content"/>
+                </span> 
+            </div>   
+        </div>
+
+
+
         {/*Amenidades*/}
         <hr
             className="my-12 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-500 to-transparent opacity-25 dark:opacity-100"/>
