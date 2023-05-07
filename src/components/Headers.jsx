@@ -2,7 +2,7 @@ import React, { Fragment, useState }   from "react";
 import image                           from "./images/axeda-logo.png"
 import {RiMenuLine, RiCloseLine}       from "react-icons/ri"
 import {BiChevronDown}                 from "react-icons/bi"
-import { NavLink }                     from "react-router-dom"; 
+import { NavLink, Link}                from "react-router-dom"; 
 import { Menu, Transition }            from '@headlessui/react' 
 import {RiPhoneFill, RiMailFill} from "react-icons/ri"
 
@@ -14,7 +14,6 @@ const Headers = () => {
     const [showMenu, setShowMenu] = useState (false);
     return (
    <> 
-
 
      <header className="flex flex-cols items-center justify-between w-full py-20 px-8 h-[10vh] z-50 sticky top-6  bg-white">
 
@@ -28,14 +27,6 @@ const Headers = () => {
                   <div className="w-6 py-1">
                      <RiPhoneFill/>
                   </div>
-
-                  {/* <div className="text-base">| Email: 
-                     <a href="asesor.alexadelgado@gmail.com" className="text-white text-base px-1">asesor.alexadelgado@gmail.com</a>
-                   </div>
-
-                  <div className="w-6 py-1">
-                     <RiMailFill/> 
-                  </div>  */}
                </div> 
       </div>
 
@@ -80,7 +71,7 @@ const Headers = () => {
                   <div className="py-1">
                      <Menu.Item>
                      {({ active }) => (
-                        <NavLink  className ={classNames(
+                        <Link  className ={classNames(
                            active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
                            'block px-4 py-2 text-sm font-mono text-center'
                            )}
@@ -88,7 +79,7 @@ const Headers = () => {
                               to="/rosavento" 
                            >
                               Rosavento  
-                        </NavLink>
+                        </Link>
                      )}
                      </Menu.Item>
                   </div>
