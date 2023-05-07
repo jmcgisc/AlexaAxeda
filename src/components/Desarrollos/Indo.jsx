@@ -50,13 +50,13 @@ const Indo = () => {
         {/*Imagen Beneficios PlusValia*/}
         <div className="grid grid-cols-1 lg:grid-cols-7 lg:gap-20 place-items-center bg-[url('/public/homeBack2.png')]">
 
-            <div class="lg:col-start-1 lg:col-end-5">
-                <img class="hover:shadow-lg dark:hover:shadow-black/30" alt="cancun zona hotelera" src="https://paseodelaselva.com/hana/wp-content/themes/paseoHana/assets/homeSlide3.png"
+            <div className="lg:col-start-1 lg:col-end-5">
+                <img className="hover:shadow-lg dark:hover:shadow-black/30" alt="cancun zona hotelera" src="https://paseodelaselva.com/hana/wp-content/themes/paseoHana/assets/homeSlide3.png"
                     alt="Cancun" />
             </div>
 
-            <div class="lg:col-span-3 flex flex-col justify-center"> 
-                <h1 class="font-sans text-lg uppercase tracking-[0.5rem] mb-4 italic text-clip"><span>Cancún</span>, Invierte de forma inteligente</h1>
+            <div className="lg:col-span-3 flex flex-col justify-center"> 
+                <h1 className="font-sans text-lg uppercase tracking-[0.5rem] mb-4 italic text-clip"><span>Cancún</span>, Invierte de forma inteligente</h1>
             </div>
         </div> 
         
@@ -126,14 +126,14 @@ const Indo = () => {
         
         {/*By Grupo Axeda*/}
  
-           <div class="bg-white dark:bg-gray-900">
-            <div class="container px-6 py-10 mx-auto">
-                <h1 class="text-3xl font-title text-center text-axeda capitalize lg:text-4xl"> 
+           <div className="bg-white dark:bg-gray-900">
+            <div className="container px-6 py-10 mx-auto">
+                <h1 className="text-3xl font-title text-center text-axeda capitalize lg:text-4xl"> 
                 Desarrollado por Grupo
                 <strong className="underline decoration-axeda/[.33]"> AXEDA.</strong>
                 </h1>
 
-                <div class="mt-8 lg:-mx-6 lg:flex lg:items-center">
+                <div className="mt-8 lg:-mx-6 lg:flex lg:items-center">
                     <div className="object-cover  w-full lg:mx-6 lg:w-1/2 rounded-xl h-72 lg:h-96">
                         <ReactPlayer
                                     url='https://www.youtube.com/watch?v=e6qNM45bUHg'
@@ -145,13 +145,13 @@ const Indo = () => {
 
                     </div> 
                     
-                <div class="mt-6 lg:w-1/2 lg:mt-0 lg:mx-6 "> 
+                <div className="mt-6 lg:w-1/2 lg:mt-0 lg:mx-6 "> 
 
-                    <p class="block mt-4 text-2xl font-semibold text-axeda hover:underline md:text-3xl">
+                    <p className="block mt-4 text-2xl font-semibold text-axeda hover:underline md:text-3xl">
                         Empresa orgullosamente mexicana
                     </p>
 
-                    <p class="mt-3 text-sm text-gray-500 dark:text-gray-600 md:text-sm">
+                    <p className="mt-3 text-sm text-gray-500 dark:text-gray-600 md:text-sm">
                             Una empresa inmobiliaria que busca facilitar el acceso al mundo de las inversiones  de forma inteligente y 
                             promoviendo alta calidad de vida, desarrollando bienes inmuebles en  las zonas de mayor crecimiento y demanda del 
                             sureste mexicano, con un solo objetivo en  mente: 

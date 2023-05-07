@@ -54,7 +54,9 @@ export const Home = () => {
             <div className="md:col-span-3 flex items-center justify-center relative">
             {/* Content image */}
             <div>
-            <img    src="Alexa-removebg-preview.png"
+            {/* <img    src="Alexa-removebg-preview.png" */}
+
+            <img    src="AlexaDelgado.jpg"
                     className="w-[250px] h-[250px] md:w-[250px] md:h-[250px] object-cover xl:-mt-8" 
             />
             <div className="relative bg-white shadow-xl rounded-lg p-4 flex flex-col justify-center gap-2 max-w-[250px] mx-auto -mt-12">
@@ -108,7 +110,7 @@ export const Home = () => {
             className="w-10 h-10 md:w-20 md:h-20 object-cover rounded-full border-l-8 border-gray-600 absolute top-[10%] xl:top-[2%] left-[20%] xl:left-[10%]"
             />
             <img
-            src="Rosavento Cancun .png"
+            src="Rosavento Cancun.png"
             className="w-10 h-10 md:w-20 md:h-20 object-cover rounded-full absolute bottom-[5%] left-[15%] xl:left-[3%] -rotate-12"
             />
             </div>
