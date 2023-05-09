@@ -7,12 +7,14 @@ import pdfP         from '../../../public/ROSAVENTO Maya_Master Plan.pdf';
 import FormularioContacto from "../Aux/FormularioContacto";
 import LayoutMap from '../Aux/LayoutMap';
 import Slider from './Slider';
+import SliderAmenidadesRosavento from './SliderAmenidadesRosavento';
+
 import {RiCheckboxBlankCircleFill} from "react-icons/ri"
 
 const Rosavento = () => { 
     return (
         <>  
-        {/*Slider Mobile*/}
+    {/*Slider Mobile*/}
         <div className="lg:hidden">
             <div className="grid grid-cols-1 gap-8">
                 <div className="flex flex-row-reverse sm:col-start-1 w-full h-56 xl:h-[600px] xl:ellipse-desarrollos"> 
@@ -21,10 +23,10 @@ const Rosavento = () => {
             </div>
         </div>
 
-        {/*Background*/}
+    {/*Background*/}
         <div className="grid-cols-2 bg-[url('/public/homeBack1.png')]">
         
-        {/*Desarrollos*/}
+    {/*Desarrollos*/}
         <div className="grid xl:grid-cols-2 gap-4">
             <div className="flex flex-col lg:grid-cols-4 lg:gap-2 rounded-3xl"> 
                 <div className="grid grid-cols-1">  
@@ -54,7 +56,7 @@ const Rosavento = () => {
                 </div> 
             </div>
 
-        {/*Slider LG*/}
+    {/*Slider LG*/}
                 <div className="hidden lg:grid lg:grid-cols-1 lg:gap-8">
                     <div className="flex flex-row-reverse sm:col-start-1 w-full h-56 xl:h-[600px] xl:ellipse-desarrollos"> 
                         <Slider/>
@@ -79,7 +81,7 @@ const Rosavento = () => {
             </div>
         </div> 
  
-        {/*Beneficios Yucatán*/}
+    {/*Beneficios Yucatán*/}
         <hr
             className="my-12 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-500 to-transparent opacity-25 dark:opacity-100"/>
 
@@ -133,7 +135,7 @@ const Rosavento = () => {
             </div>
         </div>
  
-        {/*Beneficios Quintana Roo*/}
+    {/*Beneficios Quintana Roo*/}
         <hr
             className="my-12 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-500 to-transparent "/>
 
@@ -184,7 +186,7 @@ const Rosavento = () => {
             </div>
         </div>
 
-        {/*MasterPlan*/} 
+    {/*MasterPlan*/} 
         <hr
             className="my-12 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-500 to-transparent opacity-25 dark:opacity-100"/>
 
@@ -209,7 +211,7 @@ const Rosavento = () => {
             </div>   
         </div>
 
-        {/*Master plan*/}
+    {/*Download Master plan*/}
         <div className="lg:col-start-2 lg:col-end-6">
             <div className="place-items-center "> 
                     <button className={`btn`} >
@@ -222,11 +224,10 @@ const Rosavento = () => {
             </div>
         </div>
 
-        {/*Cotizador*/} 
+    {/*Cotizador*/} 
         <hr
             className="my-12 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-500 to-transparent opacity-25 dark:opacity-100"/>
 
-                
         <div className="grid grid-cols-1 flex flex-cols lg:grid-cols-8  bg-[url('/public/fondo_2.png')] ">
 
         <div className="lg:col-start-2 lg:col-end-8 mb-5">
@@ -255,45 +256,59 @@ const Rosavento = () => {
                 </span> 
             </div>   
         </div>
-
-
-        {/*Amenidades*/}
+        
+    
+    {/*Ocultamos para mobile*/} 
+        <div className="hidden lg:grid lg:grid-cols-1 lg:gap-8">
         <hr
             className="my-12 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-500 to-transparent opacity-25 dark:opacity-100"/>
 
-            <div className="grid grid-cols-1 lg:grid-cols-7 lg:gap-4 place-items-center lg:py-30 bg-[url('/public/backGreen.png')]">
+    {/*Amenidades*/} 
+            <div className="grid xl:grid-cols-7 xl:gap-4 place-items-center xl:py-30 bg-[url('/public/backGreen.png')]">
                 <div></div>
                         <img src="amenidades.png" className="h-28 w-14 py-4 "/>    
-                        <p className ="text-3xl text-axeda font-light py-10 ">Amenidades</p>
+                        <p className ="text-3xl text-axeda py-10">Amenidades</p>
                 <div></div>
                         <img src="maps.png" className="h-28 w-14 py-4"/>
-                        <p className ="text-3xl text-axeda font-light py-10 ">Ubicación</p>
+                        <p className ="text-3xl text-axeda py-10 ">Ubicación</p>
                 <div></div>
 
                 <div></div>
                         <img src="plusvalia.png" className="h-28 w-14 py-4"/>
-                        <p className ="text-3xl text-axeda font-light py-10">Plusvalía</p>
+                        <p className ="text-3xl text-axeda py-10">Plusvalía</p>
                 <div></div>
                         <img src="areasv.png" className="h-28 w-14 py-4"/>
-                        <p className ="text-3xl text-axeda font-light py-10">Áreas Verdes</p>
+                        <p className ="text-3xl text-axeda  py-10">Áreas Verdes</p>
                 <div></div>
  
-                <div></div>º
+                <div></div>
                         <img src="familia.png" className="h-28 w-14 py-4"/>
-                        <p className ="text-3xl text-axeda font-light py-10">Ambiente Familiar</p>
+                        <p className ="text-3xl text-axeda py-10">Ambiente Familiar</p>
                 <div></div>
                         <img src="credito.png" className="h-28 w-14 py-4"/>
-                        <p className ="text-3xl text-axeda font-light py-10 ">Facilidad de pago</p>
+                        <p className ="text-3xl text-axeda py-10 ">Facilidad de pago</p>
                 <div></div>
 
                 <div></div> 
                         <img src="desarrollos.png" className="h-28 w-14 py-4"/>
-                        <p className ="text-3xl text-axeda font-light py-10">Desarrollos</p>
+                        <p className ="text-3xl text-axeda py-10">Desarrollos</p>
                 <div></div>
                         <img src="ubicacion.png" className="h-28 w-14 py-4"/>
-                        <p className ="text-3xl text-axeda font-light py-10 ">Seguridad</p>
+                        <p className ="text-3xl text-axeda py-10 ">Facilidad de pago</p>
                 <div></div>
             </div>
+
+        </div>
+
+        {/*Slider Mobile*/}
+        <div className="lg:hidden">
+            <div className="grid grid-cols-1 gap-8">
+                <div className="flex flex-row-reverse sm:col-start-1 w-full h-56 xl:h-[600px] xl:ellipse-desarrollos"> 
+                    <SliderAmenidadesRosavento/>
+                </div>
+            </div>
+        </div>
+            
  
         {/*Mapa*/}
         <hr
