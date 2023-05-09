@@ -7,7 +7,7 @@ import pdfP         from '../../../public/ROSAVENTO Maya_Master Plan.pdf';
 import FormularioContacto from "../Aux/FormularioContacto";
 import LayoutMap from '../Aux/LayoutMap';
 import Slider from './Slider';
-import {RiCheckboxBlankCircleFill, RiPlayFill, RiStarFill} from "react-icons/ri"
+import {RiCheckboxBlankCircleFill} from "react-icons/ri"
 
 const Rosavento = () => { 
     return (
@@ -222,7 +222,7 @@ const Rosavento = () => {
             </div>
         </div>
 
-        {/*MasterPlan*/} 
+        {/*Cotizador*/} 
         <hr
             className="my-12 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-500 to-transparent opacity-25 dark:opacity-100"/>
 
@@ -254,7 +254,6 @@ const Rosavento = () => {
                 </span> 
             </div>   
         </div>
-
 
 
         {/*Amenidades*/}

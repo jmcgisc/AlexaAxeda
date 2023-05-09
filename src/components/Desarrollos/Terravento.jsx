@@ -3,6 +3,7 @@ import ReactPlayer  from 'react-player'
 import Banner       from "../Aux/Banner" 
 import FormularioContacto from "../Aux/FormularioContacto"
 import SliderTerravento from './SliderTerravento'; 
+import {RiCheckboxBlankCircleFill} from "react-icons/ri";
 
 const Terravento = () => { 
     return (
@@ -85,6 +86,8 @@ const Terravento = () => {
                                     height='100%' 
                         />
                     </div>
+
+
                     
             {/* <img class="object-cover w-full lg:mx-6 lg:w-1/2 rounded-xl h-72 lg:h-96" src="https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"alt=""/> */}
 
@@ -144,7 +147,39 @@ const Terravento = () => {
                         <p className ="text-3xl text-axeda py-10 ">Facilidad de pago</p>
                 <div></div>
             </div>
+        
+        {/*Cotizador*/} 
+        <hr
+            className="my-12 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-500 to-transparent opacity-25 dark:opacity-100"/>
 
+        
+        <div className="grid grid-cols-1 flex flex-cols lg:grid-cols-6  bg-[url('/public/fondo_madera.png')] ">
+
+        <div className="lg:col-start-2 lg:col-end-6 mb-5">
+            <h1 className="text-4xl xl:text-7xl font-title text-red-900 text-center font-title text-2xl lg:text-5xl mt-5">
+                INVIERTE DESDE $4,534,898.94 MXN
+            </h1> 
+        </div>
+
+        <div className ="lg:col-start-2 lg:col-end-6  mb-5">
+            <h2 className ="text-gray-800 text-3xl text-black-800 text-center font-sans text-justify px-12 py-2"> 
+                Este desarrollo está inspirado en la arquitectura de las antiguas ciudades mayas y busca celebrar la naturaleza exterior, escondiendo las edificaciones entre la selva para ofrecerte un ambiente privado, orgánico y tranquilo. Aquí, vivirás rodeado de vegetación endémica que será el escenario perfecto para tu casa, ese lugar especial para ti y tu familia.
+            </h2>
+        </div>
+
+            <div className="lg:col-start-3 lg:col-end-6 mt-2 mb-5"> 
+                <span className="text-4xl xl:text-7xl font-bonodi xl:leading-[5.5rem] text-slate-600 px-24 py-2 border-8 border-axeda relative inline-block">
+                    <a  href={"https://crm.rosavento.mx/cotizador/terravento/terravento/terravento?vendedor=MTk2%0A"} target="_blank" rel="noopener noreferrer">
+                        Cotiza TU lote
+                    </a>
+                    
+                        <RiCheckboxBlankCircleFill className="text-yellow-900 text-base absolute -left-5 -top-4 p-2 bg-axeda rounded-full box-content"/>
+                        <RiCheckboxBlankCircleFill className="text-yellow-900 text-base absolute -right-5 -top-4 p-2 bg-axeda rounded-full box-content"/>
+                        <RiCheckboxBlankCircleFill className="text-yellow-900 text-base absolute -left-5 -bottom-4 p-2 bg-axeda rounded-full box-content"/>
+                        <RiCheckboxBlankCircleFill className="text-yellow-900 text-base absolute -right-5 -bottom-4 p-2 bg-axeda rounded-full box-content"/>
+                </span> 
+            </div>   
+        </div>
 
         {/*By Grupo Axeda*/}
         <hr

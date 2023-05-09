@@ -5,6 +5,7 @@ import pdf from '../../../public/ROSENDA_Brochure.pdf';
 import FormularioContacto from "../Aux/FormularioContacto";
 import LayoutMap from '../Aux/LayoutMap';
 import Slider from './Slider';
+import {RiCheckboxBlankCircleFill} from "react-icons/ri"
 
 const Rosenda = () => {  
     return (
@@ -60,7 +61,7 @@ const Rosenda = () => {
                     
                 </h1>
 
-                <h2 className="font-title  text-center text-2xl md:text-xl xl:text-3xl tracking-widest leading-normal text-rose-900 px-4 xl:px-16">
+                <h2 className="font-title  text-center text-2xl md:text-xl xl:text-3xl tracking-widest leading-nordesarl text-rose-900 px-4 xl:px-16">
                         Departamentos en
                         <strong className="underline decoration-axeda/[.33]"> venta. </strong>
                     </h2>
@@ -77,7 +78,7 @@ const Rosenda = () => {
                         />
 
                     </div>
-            {/* <img class="object-cover w-full lg:mx-6 lg:w-1/2 rounded-xl h-72 lg:h-96" src="https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"alt=""/> */}
+            {/* <img class="object-cover w-full lg:mx-6 lg:w-1/2 rounded-xl h-72 lg:h-96" src="https://idesarges.unsplash.com/photo-1590283603385-17ffb3a7f29f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"alt=""/> */}
 
                 <div class="mt-6 lg:w-1/2 lg:mt-0 lg:mx-6 ">
                     <p class="text-sm text-blue-500 uppercase">Departamentos</p>
