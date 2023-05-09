@@ -258,12 +258,13 @@ const Rosavento = () => {
         </div>
         
     
-    {/*Ocultamos para mobile*/} 
+        {/*Ocultamos para mobile*/} 
         <div className="hidden lg:grid lg:grid-cols-1 lg:gap-8">
+            
         <hr
             className="my-12 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-500 to-transparent opacity-25 dark:opacity-100"/>
 
-    {/*Amenidades*/} 
+        {/*Amenidades*/} 
             <div className="grid xl:grid-cols-7 xl:gap-4 place-items-center xl:py-30 bg-[url('/public/backGreen.png')]">
                 <div></div>
                         <img src="amenidades.png" className="h-28 w-14 py-4 "/>    
@@ -302,11 +303,11 @@ const Rosavento = () => {
 
         {/*Slider Mobile*/}
         <div className="lg:hidden">
-            <div className="grid grid-cols-1 gap-8">
-                <div className="flex flex-row-reverse sm:col-start-1 w-full h-56 xl:h-[600px] xl:ellipse-desarrollos"> 
-                    <SliderAmenidadesRosavento/>
+                <div className="grid grid-cols-1 gap-8">
+                    <div className="flex flex-row-reverse sm:col-start-1 w-full h-56 xl:h-[600px] xl:ellipse-desarrollos"> 
+                        <SliderAmenidadesRosavento/>
+                    </div>
                 </div>
-            </div>
         </div>
             
  
