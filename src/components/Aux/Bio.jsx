@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import FormularioContacto from "../Aux/FormularioContacto"
 
 const Bio = () => {
     return (
@@ -174,7 +175,11 @@ const Bio = () => {
         </div>
 
         </div> 
+
+            <FormularioContacto/> 
         </div>
+
+        
     )
 }
 

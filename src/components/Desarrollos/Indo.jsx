@@ -63,33 +63,6 @@ const Indo = () => {
 
         {/*Video Indo*/}
         <hr
-            className="my-12 h-0.5 border-t-0 bg-neutral-100 opacity-100 dark:opacity-50 rounded-lg" />
-            
-        <div className="p-12 xs:p-6">
-        <div className="grid grid-cols-1 xl:grid-cols-2 xl:px-20 xl_ gap-8 ">
-            <div className="flex flex-col "> 
-            <ReactPlayer
-                        url='https://www.youtube.com/watch?v=0a1AdQCK8yY&t=5s'
-                        className='react-player' 
-                        controls 
-                        width='100%'
-                        height='100%' 
-            />
-            </div>
-           
-                <div className="grid grid-cols-1 gap-4 xl:py-20 xl:px-20">
-                        <p className="font-chivo xl:leading-10 text-xl text-gray-700 text-justify "> 
-                            Un parque industrial a 12 minutos del libramiento de Mérida, con gran vanguardia de tecnología en materia de 
-                            seguridad para sus operaciones y funcionalidad, integrado por grandes vialidades, áreas verdes y recreativas como cancha de 
-                            fútbol y amenidades idóneas para el esparcimiento del personal. 
-                        </p> 
-                </div>
-            </div>
-            </div>
-
-
-        {/*Video Indo*/}
-        <hr
             className="my-12 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-500 to-transparent opacity-25 dark:opacity-100"/>
 
            <div className="bg-white dark:bg-gray-900">
@@ -119,7 +92,7 @@ const Indo = () => {
                     </p>
 
                     <p className="mt-3 text-sm text-gray-500 dark:text-gray-600 md:text-sm">
-                            Es un parque industrial a 12 minutos del libramiento de Mérida, con gran vanguardia de tecnología en materia de 
+                            Indo es Parque industrial a 12 minutos del libramiento de Mérida, con gran vanguardia de tecnología en materia de 
                             seguridad para sus operaciones y funcionalidad, integrado por grandes vialidades, áreas verdes y recreativas como cancha de 
                             fútbol y amenidades idóneas para el esparcimiento del personal. 
                     </p>
@@ -169,30 +142,30 @@ const Indo = () => {
         <hr
             className="my-12 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-500 to-transparent opacity-25 dark:opacity-100"/>
 
-        <div className="grid grid-cols-1 flex flex-cols lg:grid-cols-6  bg-[url('/public/fondo_madera.png')] ">
+        <div className="grid grid-cols-1 flex flex-cols lg:grid-cols-8  bg-[url('/public/fondo_madera.png')] ">
 
-        <div className="lg:col-start-2 lg:col-end-6 mb-5">
+        <div className="lg:col-start-3 lg:col-end-7 mb-5">
             <h1 className="text-4xl xl:text-7xl font-title text-axeda text-center font-title text-lg text-2xl lg:text-5xl mt-5">
                 Desde $3,937.50 al mes
             </h1> 
         </div>
 
-        <div className ="lg:col-start-1 lg:col-end-7  mb-5">
+        <div className ="lg:col-start-1 lg:col-end-10  mb-5">
             <h2 className ="text-gray-800 text-4xl text-yellow-100 uppercase text-center font-body text-justify font-extrabold	tracking-widest px-12 py-2"> 
                 INDO en un paraíso productivo, un parque industrial a 12 minutos del libramiento de Mérida.
             </h2>
         </div>
 
-            <div className="lg:col-start-3 lg:col-end-6 mt-2 mb-5"> 
-                <span className="text-4xl xl:text-7xl font-bonodi xl:leading-[5.5rem] text-slate-600 px-24 py-2 border-8 border-axeda relative inline-block">
+            <div className="lg:col-start-3 lg:col-end-8 mt-2 mb-5"> 
+                <span className="text-4xl xl:text-7xl font-bonodi xl:leading-[5.5rem] text-cyan-900 px-24 py-2 border-8 border-axeda relative inline-block">
                     <a  href={"https://crm.rosavento.mx/cotizador/rosavento-indo/indo/indo?vendedor=MTk2%0A"} target="_blank" rel="noopener noreferrer">
                         Cotiza TU lote
                     </a>
                     
-                        <RiCheckboxBlankCircleFill className="text-yellow-900 text-base absolute -left-5 -top-4 p-2 bg-axeda rounded-full box-content"/>
-                        <RiCheckboxBlankCircleFill className="text-yellow-900 text-base absolute -right-5 -top-4 p-2 bg-axeda rounded-full box-content"/>
-                        <RiCheckboxBlankCircleFill className="text-yellow-900 text-base absolute -left-5 -bottom-4 p-2 bg-axeda rounded-full box-content"/>
-                        <RiCheckboxBlankCircleFill className="text-yellow-900 text-base absolute -right-5 -bottom-4 p-2 bg-axeda rounded-full box-content"/>
+                        <RiCheckboxBlankCircleFill className="text-cyan-900 text-base absolute -left-5 -top-4 p-2 bg-axeda rounded-full box-content"/>
+                        <RiCheckboxBlankCircleFill className="text-cyan-900 text-base absolute -right-5 -top-4 p-2 bg-axeda rounded-full box-content"/>
+                        <RiCheckboxBlankCircleFill className="text-cyan-900 text-base absolute -left-5 -bottom-4 p-2 bg-axeda rounded-full box-content"/>
+                        <RiCheckboxBlankCircleFill className="text-cyan-900 text-base absolute -right-5 -bottom-4 p-2 bg-axeda rounded-full box-content"/>
                 </span> 
             </div>   
         </div>
