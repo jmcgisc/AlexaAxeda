@@ -52,6 +52,13 @@ export default function Slider(props) {
                         <p className ="text-3xl text-axeda py-10 ">Ubicación</p>
               </div>
             </SwiperSlide>        
+
+            <SwiperSlide>
+              <div className="grid grid-cols-2 gap-8 place-items-center bg-[url('/public/backGreen.png')]">
+                        <img src="plusvalia.png" className="h-28 w-14 py-4"/>
+                        <p className ="text-3xl text-axeda  py-10">Plusvalía</p>
+              </div>
+            </SwiperSlide>
             
             <SwiperSlide>
               <div className="grid grid-cols-2 gap-8 place-items-center bg-[url('/public/backGreen.png')]">
@@ -60,6 +67,34 @@ export default function Slider(props) {
               </div>
             </SwiperSlide>
 
+            <SwiperSlide>
+              <div className="grid grid-cols-2 gap-8 place-items-center bg-[url('/public/backGreen.png')]">
+                        <img src="credito.png" className="h-28 w-14 py-4"/>
+                        <p className ="text-3xl text-axeda  py-10">Facilidad de pago</p>
+              </div>
+            </SwiperSlide>
+
+            <SwiperSlide>
+              <div className="grid grid-cols-2 gap-8 place-items-center bg-[url('/public/backGreen.png')]">
+                        <img src="desarrollos.png" className="h-28 w-14 py-4"/>
+                        <p className ="text-3xl text-axeda  py-10">Desarrollos</p>
+              </div>
+            </SwiperSlide>
+
+            <SwiperSlide>
+              <div className="grid grid-cols-2 gap-8 place-items-center bg-[url('/public/backGreen.png')]">
+                        <img src="areasv.png" className="h-28 w-14 py-4"/>
+                        <p className ="text-3xl text-axeda  py-10">Áreas Verdes</p>
+              </div>
+            </SwiperSlide>
+
+            <SwiperSlide>
+              <div className="grid grid-cols-2 gap-8 place-items-center bg-[url('/public/backGreen.png')]">
+                        <img src="ubicacion.png" className="h-28 w-14 py-4"/>
+                        <p className ="text-3xl text-axeda  py-10">Facilidad de pago</p>
+              </div>
+            </SwiperSlide>
+ 
         <div className="autoplay-progress" slot="container-end">
           <svg  ref={progressCircle}> 
           </svg>
