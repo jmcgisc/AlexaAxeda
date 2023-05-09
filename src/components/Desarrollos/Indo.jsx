@@ -144,16 +144,10 @@ const Indo = () => {
 
         <div className="grid grid-cols-1 flex flex-cols lg:grid-cols-8  bg-[url('/public/fondo_madera.png')] ">
 
-        <div className="lg:col-start-3 lg:col-end-7 mb-5">
-            <h1 className="text-4xl xl:text-7xl font-title text-axeda text-center font-title text-lg text-2xl lg:text-5xl mt-5">
+        <div className="lg:col-start-2 lg:col-end-8 mb-5">
+            <h1 className="text-4xl xl:text-7xl font-title text-yellow-100 text-center font-title text-lg text-2xl lg:text-5xl mt-5 bg-orange-800 rounded-lg">
                 Desde $3,937.50 al mes
             </h1> 
-        </div>
-
-        <div className ="lg:col-start-1 lg:col-end-10  mb-5">
-            <h2 className ="text-gray-800 text-4xl text-yellow-100 uppercase text-center font-body text-justify font-extrabold	tracking-widest px-12 py-2"> 
-                INDO en un paraíso productivo, un parque industrial a 12 minutos del libramiento de Mérida.
-            </h2>
         </div>
 
             <div className="lg:col-start-3 lg:col-end-8 mt-2 mb-5"> 
@@ -168,6 +162,13 @@ const Indo = () => {
                         <RiCheckboxBlankCircleFill className="text-cyan-900 text-base absolute -right-5 -bottom-4 p-2 bg-axeda rounded-full box-content"/>
                 </span> 
             </div>   
+
+        <div className ="lg:col-start-2 lg:col-end-8  mb-5">
+            <h2 className ="text-gray-800 text-2xl text-yellow-100 uppercase text-center font-body text-justify font-extrabold tracking-widest
+            bg-orange-800 rounded-lg px-12 py-2"> 
+                INDO en un paraíso productivo, un parque industrial a 12 minutos del libramiento de Mérida.
+            </h2>
+        </div>
         </div>
         
         {/*By Grupo Axeda*/}
