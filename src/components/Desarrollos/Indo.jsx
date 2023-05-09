@@ -5,6 +5,7 @@ import pdf from '../../../public/INDO_Brochure.pdf'
 import FormularioContacto from "../Aux/FormularioContacto"  
 import LayoutMap from '../Aux/LayoutMap'
 import Slider from './Slider';
+import {RiCheckboxBlankCircleFill} from "react-icons/ri";
 
 const Indo = () => { 
     return (
@@ -59,32 +60,73 @@ const Indo = () => {
                 <h1 className="font-sans text-lg uppercase tracking-[0.5rem] mb-4 italic text-clip"><span>Cancún</span>, Invierte de forma inteligente</h1>
             </div>
         </div> 
-        
-            <hr
-                className="my-12 h-0.5 border-t-0 bg-neutral-100 opacity-100 dark:opacity-50 rounded-lg" />
+
+        {/*Video Indo*/}
+        <hr
+            className="my-12 h-0.5 border-t-0 bg-neutral-100 opacity-100 dark:opacity-50 rounded-lg" />
             
-            <div className="p-12 xs:p-6">
-            <div className="grid grid-cols-1 xl:grid-cols-2 xl:px-20 xl_ gap-8 ">
-                <div className="flex flex-col "> 
-
-                <ReactPlayer
-                            url='https://www.youtube.com/watch?v=0a1AdQCK8yY&t=5s'
-                            className='react-player' 
-                            controls 
-                            width='100%'
-                            height='100%' 
-                />
-                </div>
-
+        <div className="p-12 xs:p-6">
+        <div className="grid grid-cols-1 xl:grid-cols-2 xl:px-20 xl_ gap-8 ">
+            <div className="flex flex-col "> 
+            <ReactPlayer
+                        url='https://www.youtube.com/watch?v=0a1AdQCK8yY&t=5s'
+                        className='react-player' 
+                        controls 
+                        width='100%'
+                        height='100%' 
+            />
+            </div>
+           
                 <div className="grid grid-cols-1 gap-4 xl:py-20 xl:px-20">
                         <p className="font-chivo xl:leading-10 text-xl text-gray-700 text-justify "> 
-                            Es un parque industrial a 12 minutos del libramiento de Mérida, con gran vanguardia de tecnología en materia de 
+                            Un parque industrial a 12 minutos del libramiento de Mérida, con gran vanguardia de tecnología en materia de 
                             seguridad para sus operaciones y funcionalidad, integrado por grandes vialidades, áreas verdes y recreativas como cancha de 
                             fútbol y amenidades idóneas para el esparcimiento del personal. 
                         </p> 
                 </div>
             </div>
             </div>
+
+
+        {/*Video Indo*/}
+        <hr
+            className="my-12 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-500 to-transparent opacity-25 dark:opacity-100"/>
+
+           <div className="bg-white dark:bg-gray-900">
+            <div className="container px-6 py-10 mx-auto">
+                <h1 className="text-3xl font-title text-center text-axeda capitalize lg:text-4xl text-justify"> 
+                 ¿Por qué 
+                <strong className="underline decoration-axeda/[.33]"> Yucatán </strong>
+                es tan buena opción para invertir?
+                </h1>
+
+                <div className="mt-8 lg:-mx-6 lg:flex lg:items-center">
+                    <div className="object-cover  w-full lg:mx-6 lg:w-1/2 rounded-xl h-72 lg:h-96">
+                        <ReactPlayer
+                                    url='https://www.youtube.com/watch?v=0a1AdQCK8yY&t=5s'
+                                    className='react-player' 
+                                    controls 
+                                    width='100%'
+                                    height='100%' 
+                        />
+
+                    </div> 
+                    
+                <div className="mt-2 lg:w-1/2 lg:mt-0 lg:mx-6 "> 
+
+                    <p className="block mt-2 text-xl font-semibold text-axeda hover:underline md:text-2xl text-justify ">
+                    Durante 2022, Yucatán registró un histórico flujo acumulado de Inversión Extranjera Directa al alcanzar los 535.9 millones de dólares (mdd).
+                    </p>
+
+                    <p className="mt-3 text-sm text-gray-500 dark:text-gray-600 md:text-sm">
+                            Es un parque industrial a 12 minutos del libramiento de Mérida, con gran vanguardia de tecnología en materia de 
+                            seguridad para sus operaciones y funcionalidad, integrado por grandes vialidades, áreas verdes y recreativas como cancha de 
+                            fútbol y amenidades idóneas para el esparcimiento del personal. 
+                    </p>
+                    </div>
+                </div>
+            </div>
+        </div> 
  
             <hr
                 className="my-12 h-0.5 border-t-0 bg-neutral-100 opacity-100 dark:opacity-50" />
@@ -122,10 +164,43 @@ const Indo = () => {
                         <p className ="text-3xl text-axeda py-10 ">Facilidad de pago</p>
                 <div></div>
             </div>
- 
+        
+        {/*Indo*/} 
+        <hr
+            className="my-12 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-500 to-transparent opacity-25 dark:opacity-100"/>
+
+        <div className="grid grid-cols-1 flex flex-cols lg:grid-cols-6  bg-[url('/public/fondo_madera.png')] ">
+
+        <div className="lg:col-start-2 lg:col-end-6 mb-5">
+            <h1 className="text-4xl xl:text-7xl font-title text-axeda text-center font-title text-lg text-2xl lg:text-5xl mt-5">
+                Desde $3,937.50 al mes
+            </h1> 
+        </div>
+
+        <div className ="lg:col-start-1 lg:col-end-7  mb-5">
+            <h2 className ="text-gray-800 text-4xl text-yellow-100 uppercase text-center font-body text-justify font-extrabold	tracking-widest px-12 py-2"> 
+                INDO en un paraíso productivo, un parque industrial a 12 minutos del libramiento de Mérida.
+            </h2>
+        </div>
+
+            <div className="lg:col-start-3 lg:col-end-6 mt-2 mb-5"> 
+                <span className="text-4xl xl:text-7xl font-bonodi xl:leading-[5.5rem] text-slate-600 px-24 py-2 border-8 border-axeda relative inline-block">
+                    <a  href={"https://crm.rosavento.mx/cotizador/rosavento-indo/indo/indo?vendedor=MTk2%0A"} target="_blank" rel="noopener noreferrer">
+                        Cotiza TU lote
+                    </a>
+                    
+                        <RiCheckboxBlankCircleFill className="text-yellow-900 text-base absolute -left-5 -top-4 p-2 bg-axeda rounded-full box-content"/>
+                        <RiCheckboxBlankCircleFill className="text-yellow-900 text-base absolute -right-5 -top-4 p-2 bg-axeda rounded-full box-content"/>
+                        <RiCheckboxBlankCircleFill className="text-yellow-900 text-base absolute -left-5 -bottom-4 p-2 bg-axeda rounded-full box-content"/>
+                        <RiCheckboxBlankCircleFill className="text-yellow-900 text-base absolute -right-5 -bottom-4 p-2 bg-axeda rounded-full box-content"/>
+                </span> 
+            </div>   
+        </div>
         
         {/*By Grupo Axeda*/}
- 
+        <hr
+            className="my-12 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-500 to-transparent opacity-25 dark:opacity-100"/>
+
            <div className="bg-white dark:bg-gray-900">
             <div className="container px-6 py-10 mx-auto">
                 <h1 className="text-3xl font-title text-center text-axeda capitalize lg:text-4xl"> 
