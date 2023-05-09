@@ -100,7 +100,7 @@ const Rosavento = () => {
             {/* <img className="object-cover w-full lg:mx-6 lg:w-1/2 rounded-xl h-72 lg:h-96" src="https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"alt=""/> */}
 
                 <div className="mt-6 lg:w-1/2 lg:mt-0 lg:mx-6 ">
-                    <p className="text-sm text-blue-800 uppercase">Yucatán</p>
+                    <p className="text-base text-cyan-900 font-bodoni uppercase">Yucatán</p>
 
                     <a href="#" className="block mt-4 text-2xl font-semibold text-axeda hover:underline md:text-3xl">
                         Mérida, Yucatán.
@@ -145,7 +145,7 @@ const Rosavento = () => {
             {/* <img className="object-cover w-full lg:mx-6 lg:w-1/2 rounded-xl h-72 lg:h-96" src="https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"alt=""/> */}
 
                 <div className="mt-6 lg:w-1/2 lg:mt-0 lg:mx-6 ">
-                    <p className="text-sm text-blue-800 uppercase">Quintana Roo</p>
+                    <p className="text-base text-cyan-900 font-bodoni uppercase">Quintana Roo</p> 
 
                     <a href="#" className="block mt-4 text-2xl font-semibold text-axeda hover:underline md:text-3xl">
                         Cancún, Quintana Roo.
@@ -226,23 +226,24 @@ const Rosavento = () => {
         <hr
             className="my-12 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-500 to-transparent opacity-25 dark:opacity-100"/>
 
-        
-        <div className="grid grid-cols-1 flex flex-cols lg:grid-cols-6  bg-[url('/public/fondo_madera.png')] ">
+                
+        <div className="grid grid-cols-1 flex flex-cols lg:grid-cols-8  bg-[url('/public/fondo_2.png')] ">
 
-        <div className="lg:col-start-2 lg:col-end-6 mb-5">
-            <h1 className="text-4xl xl:text-7xl font-title text-red-900 text-center font-title text-2xl lg:text-5xl mt-5">
-                INVIERTE DESDE $4,534,898.94 MXN
+        <div className="lg:col-start-2 lg:col-end-8 mb-5">
+            
+            <h1 className="text-4xl xl:text-6xl font-title text-axeda text-center font-title text-lg text-2xl lg:text-5xl mt-5">
+                INVIERTE DESDE $1,906 MXN al mes! 
             </h1> 
         </div>
 
-        <div className ="lg:col-start-2 lg:col-end-6  mb-5">
-            <h2 className ="text-gray-800 text-3xl text-black-800 text-center font-sans text-justify px-12 py-2"> 
-                Este desarrollo está inspirado en la arquitectura de las antiguas ciudades mayas y busca celebrar la naturaleza exterior, escondiendo las edificaciones entre la selva para ofrecerte un ambiente privado, orgánico y tranquilo. Aquí, vivirás rodeado de vegetación endémica que será el escenario perfecto para tu casa, ese lugar especial para ti y tu familia.
+        <div className ="lg:col-start-2 lg:col-end-8  mb-5">
+            <h2 className ="text-gray-800 text-3xl text-white text-center font-sans text-justify px-12 py-2"> 
+                Una ciudad planeada con todo lo que necesitas para disfrutar de la naturaleza.
             </h2>
         </div>
 
-            <div className="lg:col-start-3 lg:col-end-6 mt-2 mb-5"> 
-                <span className="text-4xl xl:text-7xl font-bonodi xl:leading-[5.5rem] text-slate-600 px-24 py-2 border-8 border-axeda relative inline-block">
+        <div className="lg:col-start-3 lg:col-end-8 mt-2 mb-5"> 
+                <span className="text-4xl xl:text-7xl font-body xl:leading-[5.5rem] text-cyan-100 px-24 py-2 border-8 border-axeda relative inline-block">
                     <a  href={"https://crm.rosavento.mx/cotizador/cancun/cancun_levante/levante_real?vendedor=MTk2%0A"} target="_blank" rel="noopener noreferrer">
                         Cotiza TU lote
                     </a>
@@ -384,7 +385,7 @@ const Rosavento = () => {
             </div> */}
  
         {/*Rosavento*/}
-        <hr
+        {/* <hr
             className="my-12 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-500 to-transparent opacity-25 dark:opacity-100"/>
 
         <div className="grid grid-cols">   
@@ -410,7 +411,7 @@ const Rosavento = () => {
                     </div>
                 </div>  
             </div>
-        </div>
+        </div> */}
 
         {/*Brochure*/}
         <hr

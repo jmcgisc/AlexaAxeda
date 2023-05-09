@@ -86,7 +86,7 @@ export const Home = () => {
                     Te asesoramos desde el inicio
                 </h2>
                 <div className="flex items-center gap-2 text-lg text-gray-500">
-                <RiStarFill className="text-axeda" /> 5.0 (+1000 testimonios)
+                <RiStarFill className="text-axeda" /> 5.0 ( + 1000 testimonios)
                 </div>
                 <div className="absolute -right-12 -bottom-12 -z-10">
                 <div className="relative">
