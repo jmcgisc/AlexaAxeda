@@ -3,7 +3,7 @@ import ReactPlayer  from 'react-player';
 import Banner       from "../Aux/Banner";
 import pdf from '../../../public/ROSENDA_Brochure.pdf';
 import FormularioContacto from "../Aux/FormularioContacto";
-import LayoutMap from '../Aux/LayoutMap';
+import MapSection from '../Aux/Map'
 import Slider from './Slider';
 import {RiCheckboxBlankCircleFill} from "react-icons/ri"
 
@@ -141,7 +141,22 @@ const Rosenda = () => {
             <hr
                 className="my-12 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-500 to-transparent opacity-25 dark:opacity-100"/>
 
-            <LayoutMap/>
+
+            <div className="p-8 flex flex-col gap-8 bg-gray-100">
+                    <h1 className="text-[60px] text-center font-title ">
+                            ¡Estarás cerca de todo!
+                    </h1>
+                    <div className="flex justify-center gap-6"> 
+                        <p className="max-w-2xl text-center text-base font-chivo text-gray-400">
+                            La perfecta ubicación del desarrollo en una de las carreteras más importantes de Cancún te conecta en solo minutos a paradisíacas playas.
+                        </p>
+                    </div>
+                        <div className="flex xl:flex-col items-center justify-center gap-8">
+                    <MapSection  
+                        // center={{center}}  
+                        />
+                    </div>
+            </div>   
 
         <hr
             className="my-12 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-500 to-transparent opacity-25 dark:opacity-100"/>
@@ -166,19 +181,21 @@ const Rosenda = () => {
 
                     </div> 
                     
-                <div class="mt-6 lg:w-1/2 lg:mt-0 lg:mx-6 "> 
+                    <div className="mt-6 lg:w-1/2 lg:mt-0 lg:mx-6 "> 
 
-                    <p class="block mt-4 text-2xl font-semibold text-axeda hover:underline md:text-3xl">
-                        Empresa orgullosamente mexicana
-                    </p>
+                        <p className="block mt-4 text-2xl font-semibold text-axeda hover:underline md:text-3xl">
+                            Empresa orgullosamente mexicana
+                        </p>
 
-                    <p class="mt-3 text-sm text-gray-500 dark:text-gray-600 md:text-sm">
-                            Una empresa inmobiliaria que busca facilitar el acceso al mundo de las inversiones  de forma inteligente y 
-                            promoviendo alta calidad de vida, desarrollando bienes inmuebles en  las zonas de mayor crecimiento y demanda del 
-                            sureste mexicano, con un solo objetivo en  mente: 
+                        <p className="mt-3 text-base lg:text-xl lg:tracking-widest text-gray-700 font-body text-justify">
+                                Una empresa inmobiliaria que busca facilitar el acceso al mundo de las inversiones  de forma inteligente y 
+                                promoviendo alta calidad de vida, desarrollando bienes inmuebles en  las zonas de mayor crecimiento y demanda del 
+                                sureste mexicano, con un solo objetivo en  mente: 
 
-                            Superar sus límites y generar abundancia a sus inversionistas. 
-                    </p>
+                        </p>
+                        <p className="mt-3 text-base  lg:text-xl lg:tracking-widest text-gray-700 font-body text-justify">
+                            <strong> Superar sus límites y generar abundancia a sus inversionistas. </strong>
+                        </p>
                     </div>
                 </div>
             </div>

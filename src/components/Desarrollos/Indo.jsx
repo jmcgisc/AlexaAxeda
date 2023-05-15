@@ -3,9 +3,15 @@ import ReactPlayer  from 'react-player'
 import Banner       from "../Aux/Banner" 
 import pdf from '../../../public/INDO_Brochure.pdf'
 import FormularioContacto from "../Aux/FormularioContacto"  
-import LayoutMap from '../Aux/LayoutMap'
-import Slider from './Slider';
+import MapSection from '../Aux/MapIndo'
+import Slider from './SliderIndo';
 import {RiCheckboxBlankCircleFill} from "react-icons/ri";
+
+//Esta dirreccion es la correcta de indo en la pagina de Axeda
+const center = {
+    lat: 21.098023925357964,
+    lng: -89.39039807301391
+  };
 
 const Indo = () => { 
     return (
@@ -20,7 +26,7 @@ const Indo = () => {
         </div>
 
         {/*Background*/}
-        <div className="grid-cols-2 bg-[url('/public/homeBack1.png')]">
+        <div className="grid-cols-2 bg-[url('/public/homeBack2.png')]">
         
         {/*Desarrollos*/}
         <div className="grid xl:grid-cols-2 gap-4">
@@ -29,11 +35,11 @@ const Indo = () => {
                     <h1 className="text-[45px] text-axeda font-title px-12 mt-24 lg:mt-24 ">
                         -ROSENDA INDO-
                     </h1>
-                        <p className ="text-gray-600 text-xl font-body text-justify px-12 py-12">
-                            TERRENOS INDUSTRIALES EN PREVENTA MENSUALIDADES DESDE $5,250.00 MXN
+                        <p className ="text-gray-500 lg:text-2xl font-body text-justify px-12 py-12">
+                            TERRENOS INDUSTRIALES EN <strong>PREVENTA</strong> MENSUALIDADES DESDE <strong> $3,937.50 MXN </strong>
                         </p>   
 
-                        <p className="text-gray-700 text-base font-body text-justify tracking-widest px-12 py-8">
+                        <p className="text-gray-700 text-xl font-body text-justify tracking-widest px-12 py-8">
                             Es un parque industrial a 12 minutos del libramiento de Mérida, con gran vanguardia de tecnología en materia de seguridad para sus operaciones y funcionalidad, integrado por grandes vialidades, áreas verdes y recreativas como cancha de fútbol y amenidades idóneas para el esparcimiento del personal.
                         </p>
                 </div> 
@@ -47,20 +53,7 @@ const Indo = () => {
                 </div>
             </div>
         </div>
-
-        {/*Imagen Beneficios PlusValia*/}
-        <div className="grid grid-cols-1 lg:grid-cols-7 lg:gap-20 place-items-center bg-[url('/public/homeBack2.png')]">
-
-            <div className="lg:col-start-1 lg:col-end-5">
-                <img className="hover:shadow-lg dark:hover:shadow-black/30" alt="cancun zona hotelera" src="https://paseodelaselva.com/hana/wp-content/themes/paseoHana/assets/homeSlide3.png"
-                    alt="Cancun" />
-            </div>
-
-            <div className="lg:col-span-3 flex flex-col justify-center"> 
-                <h1 className="font-sans text-lg uppercase tracking-[0.5rem] mb-4 italic text-clip"><span>Cancún</span>, Invierte de forma inteligente</h1>
-            </div>
-        </div> 
-
+        
         {/*Video Indo*/}
         <hr
             className="my-12 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-500 to-transparent opacity-25 dark:opacity-100"/>
@@ -91,7 +84,7 @@ const Indo = () => {
                     Durante 2022, Yucatán registró un histórico flujo acumulado de Inversión Extranjera Directa al alcanzar los 535.9 millones de dólares (mdd).
                     </p>
 
-                    <p className="mt-3 text-sm text-gray-500 dark:text-gray-600 md:text-sm">
+                    <p className="mt-3 text-base lg:text-xl lg:tracking-widest text-gray-700 font-body text-justify">
                             Indo es Parque industrial a 12 minutos del libramiento de Mérida, con gran vanguardia de tecnología en materia de 
                             seguridad para sus operaciones y funcionalidad, integrado por grandes vialidades, áreas verdes y recreativas como cancha de 
                             fútbol y amenidades idóneas para el esparcimiento del personal. 
@@ -150,8 +143,9 @@ const Indo = () => {
             </h1> 
         </div>
 
-            <div className="lg:col-start-3 lg:col-end-8 mt-2 mb-5"> 
-                <span className="text-4xl xl:text-7xl font-bonodi xl:leading-[5.5rem] text-cyan-900 px-24 py-2 border-8 border-axeda relative inline-block">
+            <div className="lg:col-start-4 lg:col-end-9 mt-2 mb-5"> 
+                <span className="text-4xl xl:text-7xl text-yellow-100 uppercase font-body xl:leading-[5.5rem] text-cyan-900 px-24 py-2 border-8 border-axeda relative inline-block
+                 bg-orange-800 ">
                     <a  href={"https://crm.rosavento.mx/cotizador/rosavento-indo/indo/indo?vendedor=MTk2%0A"} target="_blank" rel="noopener noreferrer">
                         Cotiza TU lote
                     </a>
@@ -194,19 +188,21 @@ const Indo = () => {
 
                     </div> 
                     
-                <div className="mt-6 lg:w-1/2 lg:mt-0 lg:mx-6 "> 
+                    <div className="mt-6 lg:w-1/2 lg:mt-0 lg:mx-6 "> 
 
-                    <p className="block mt-4 text-2xl font-semibold text-axeda hover:underline md:text-3xl">
-                        Empresa orgullosamente mexicana
-                    </p>
+                        <p className="block mt-4 text-2xl font-semibold text-axeda hover:underline md:text-3xl">
+                            Empresa orgullosamente mexicana
+                        </p>
 
-                    <p className="mt-3 text-sm text-gray-500 dark:text-gray-600 md:text-sm">
-                            Una empresa inmobiliaria que busca facilitar el acceso al mundo de las inversiones  de forma inteligente y 
-                            promoviendo alta calidad de vida, desarrollando bienes inmuebles en  las zonas de mayor crecimiento y demanda del 
-                            sureste mexicano, con un solo objetivo en  mente: 
+                        <p className="mt-3 text-base lg:text-xl lg:tracking-widest text-gray-700 font-body text-justify">
+                                Una empresa inmobiliaria que busca facilitar el acceso al mundo de las inversiones  de forma inteligente y 
+                                promoviendo alta calidad de vida, desarrollando bienes inmuebles en  las zonas de mayor crecimiento y demanda del 
+                                sureste mexicano, con un solo objetivo en  mente: 
 
-                            Superar sus límites y generar abundancia a sus inversionistas. 
-                    </p>
+                        </p>
+                        <p className="mt-3 text-base  lg:text-xl lg:tracking-widest text-gray-700 font-body text-justify">
+                            <strong> Superar sus límites y generar abundancia a sus inversionistas. </strong>
+                        </p>
                     </div>
                 </div>
             </div>
@@ -215,7 +211,22 @@ const Indo = () => {
             <hr
                 className="my-12 h-0.5 border-t-0 bg-neutral-100 opacity-100 dark:opacity-50" />
 
-            <LayoutMap/>    
+            <div className="p-8 flex flex-col gap-8 bg-gray-100">
+                    <h1 className="text-[60px] text-center font-title ">
+                            ¡Privilegiada ubicación y conectividad!
+                    </h1>
+                    <div className="flex justify-center gap-6"> 
+                        <p className="max-w-2xl text-center text-base font-chivo text-gray-400">
+                            Yucatán es considerado como el estado con mayor crecimiento económico de México, además es líder en la generación y distribución de energía eléctrica.
+                        </p>
+                    </div>
+                        <div className="flex xl:flex-col items-center justify-center gap-8">
+                    <MapSection  
+                    
+                        // center={{center}}  
+                        />
+                    </div>
+            </div>   
 
             <hr
                 className="my-12 h-0.5 border-t-0 bg-neutral-100 opacity-100 dark:opacity-50 " />

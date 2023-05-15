@@ -151,7 +151,7 @@ const Terravento = () => {
             className="my-12 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-500 to-transparent opacity-25 dark:opacity-100"/>
 
         <div className="grid grid-cols-1 flex flex-cols lg:grid-cols-8  bg-[url('/public/fondo_3.jpg')] ">
-
+Z
         <div className="lg:col-start-2 lg:col-end-8 mb-5">
             <h1 className="text-3xl xl:text-7xl xl:font-title text-yellow-100 text-center text-lg text-2xl lg:text-5xl mt-5 bg-orange-800 rounded-lg">
                 Desde: $1,436.40 MXN al mes!
@@ -159,7 +159,7 @@ const Terravento = () => {
         </div>
 
             <div className="lg:col-start-3 lg:col-end-8 mt-2 mb-5"> 
-                <span className="text-3xl text-center xl:text-7xl font-bonodi xl:leading-[5.5rem] text-cyan-900 px-32 py-2 border-8 border-axeda relative inline-block">
+                <span className="text-xl text-center xl:text-7xl font-bonodi xl:leading-[5.5rem] text-cyan-900 px-32 py-2 border-8 border-axeda relative inline-block">
                     <a lassName="text-center" href={"https://crm.rosavento.mx/cotizador/terravento/terravento/terravento?vendedor=MTk2%0A"} target="_blank" rel="noopener noreferrer">
                         Cotiza TU lote
                     </a>
@@ -203,19 +203,21 @@ const Terravento = () => {
 
                     </div> 
                     
-                <div class="mt-6 lg:w-1/2 lg:mt-0 lg:mx-6 "> 
+                    <div className="mt-6 lg:w-1/2 lg:mt-0 lg:mx-6 "> 
 
-                    <p class="block mt-4 text-2xl font-semibold text-axeda hover:underline md:text-3xl">
-                        Empresa orgullosamente mexicana
-                    </p>
+                        <p className="block mt-4 text-2xl font-semibold text-axeda hover:underline md:text-3xl">
+                            Empresa orgullosamente mexicana
+                        </p>
 
-                    <p class="mt-3 text-sm text-gray-500 dark:text-gray-600 md:text-sm">
-                            Una empresa inmobiliaria que busca facilitar el acceso al mundo de las inversiones  de forma inteligente y 
-                            promoviendo alta calidad de vida, desarrollando bienes inmuebles en  las zonas de mayor crecimiento y demanda del 
-                            sureste mexicano, con un solo objetivo en  mente: 
+                        <p className="mt-3 text-base lg:text-xl lg:tracking-widest text-gray-700 font-body text-justify">
+                                Una empresa inmobiliaria que busca facilitar el acceso al mundo de las inversiones  de forma inteligente y 
+                                promoviendo alta calidad de vida, desarrollando bienes inmuebles en  las zonas de mayor crecimiento y demanda del 
+                                sureste mexicano, con un solo objetivo en  mente: 
 
-                            Superar sus límites y generar abundancia a sus inversionistas. 
-                    </p>
+                        </p>
+                        <p className="mt-3 text-base  lg:text-xl lg:tracking-widest text-gray-700 font-body text-justify">
+                            <strong> Superar sus límites y generar abundancia a sus inversionistas. </strong>
+                        </p>
                     </div>
                 </div>
             </div>

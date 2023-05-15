@@ -21,8 +21,6 @@ const FormularioContacto = () => {
             interesadoEn:   '',
             mensaje:        ''
         });
-         
-        console.log(values);
 
     const handleChange = (e) => {
             setValues(values => ({

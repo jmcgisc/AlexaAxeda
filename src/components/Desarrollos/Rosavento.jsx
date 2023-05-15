@@ -5,12 +5,17 @@ import pdfC         from '../../../public/ROSAVENTO CANCÚN_Brochure.pdf';
 import pdfM         from '../../../public/Brochure_Rosavento_Merida.pdf';
 import pdfP         from '../../../public/ROSAVENTO Maya_Master Plan.pdf';
 import FormularioContacto from "../Aux/FormularioContacto";
-import LayoutMap from '../Aux/LayoutMap';
+import MapSection from '../Aux/Map'
 import Slider from './Slider';
 import SliderAmenidadesRosavento from './SliderAmenidadesRosavento';
 
 import {RiCheckboxBlankCircleFill} from "react-icons/ri"
 
+const center = {
+    lat: 21.098064163906468,
+    lng: -89.39039837301571
+  }; 
+ 
 const Rosavento = () => { 
     return (
         <>  
@@ -228,23 +233,17 @@ const Rosavento = () => {
         <hr
             className="my-12 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-500 to-transparent opacity-25 dark:opacity-100"/>
 
-        <div className="grid grid-cols-1 flex flex-cols lg:grid-cols-8  bg-[url('/public/fondo_2.png')] ">
+        <div className=" grid grid-cols-1 flex flex-cols lg:grid-cols-8 bg-orange-400	 ">
 
-        <div className="lg:col-start-2 lg:col-end-8 mb-5">
+        <div className="lg:col-start-2 lg:col-end-8 mb-5 ">
             
-            <h1 className="text-4xl xl:text-6xl font-title text-axeda text-center font-title text-lg text-2xl lg:text-5xl mt-5">
-                INVIERTE DESDE $1,906 MXN al mes! 
+            <h1 className="text-4xl xl:text-4xl font-title text-white text-center underline font-title text-lg text-2xl lg:text-5xl mt-5">
+                ¡ INVIERTE DESDE $1,906.00 MXN al mes ! 
             </h1> 
         </div>
 
-        <div className ="lg:col-start-2 lg:col-end-8  mb-5">
-            <h2 className ="text-gray-800 text-3xl text-white text-center font-sans text-justify px-12 py-2"> 
-                Una ciudad planeada con todo lo que necesitas para disfrutar de la naturaleza.
-            </h2>
-        </div>
-
-        <div className="lg:col-start-3 lg:col-end-8 mt-2 mb-5"> 
-                <span className="text-4xl xl:text-7xl font-body xl:leading-[5.5rem] text-cyan-100 px-24 py-2 border-8 border-axeda relative inline-block">
+        <div className="lg:col-start-4 lg:col-end-8 mt-2 mb-5"> 
+                <span className="text-2xl xl:text-4xl font-body xl:leading-[5.5rem] text-cyan-100 px-24 py-2 border-8 border-axeda relative inline-block">
                     <a  href={"https://crm.rosavento.mx/cotizador/cancun/cancun_levante/levante_real?vendedor=MTk2%0A"} target="_blank" rel="noopener noreferrer">
                         Cotiza TU lote
                     </a>
@@ -255,8 +254,14 @@ const Rosavento = () => {
                         <RiCheckboxBlankCircleFill className="text-yellow-900 text-base absolute -right-5 -bottom-4 p-2 bg-axeda rounded-full box-content"/>
                 </span> 
             </div>   
+
+        <div className ="lg:col-start-2 lg:col-end-8  mb-5">
+            <h2 className ="text-gray-800 text-3xl text-white text-center font-sans text-justify px-12 py-2"> 
+                Una ciudad planeada con todo lo que necesitas para disfrutar de la naturaleza.
+            </h2>
         </div>
         
+        </div>
     
         {/*Ocultamos para mobile*/} 
         <div className="hidden lg:grid lg:grid-cols-1 lg:gap-8">
@@ -314,8 +319,22 @@ const Rosavento = () => {
         {/*Mapa*/}
         <hr
             className="my-12 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-500 to-transparent opacity-25 dark:opacity-100"/>
-
-            <LayoutMap/>    
+        
+        <div className="p-8 flex flex-col gap-8 bg-gray-100">
+                    <h1 className="text-[60px] text-center font-title ">
+                            ¡Estarás cerca de todo!
+                    </h1>
+                    <div className="flex justify-center gap-6"> 
+                        <p className="max-w-2xl text-center text-base font-chivo text-gray-400">
+                            La perfecta ubicación del desarrollo en una de las carreteras más importantes de Cancún te conecta en solo minutos a paradisíacas playas.
+                        </p>
+                    </div>
+                        <div className="flex xl:flex-col items-center justify-center gap-8">
+                    <MapSection  
+                        // center={{center}}  
+                        />
+                    </div>
+            </div>   
 
         {/*By Grupo Axeda*/}
         <hr
@@ -339,22 +358,24 @@ const Rosavento = () => {
                                     height='100%' 
                         />
 
-                    </div>
+                </div>
             {/* <img className="object-cover w-full lg:mx-6 lg:w-1/2 rounded-xl h-72 lg:h-96" src="https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"alt=""/> */}
 
-                <div className="mt-6 lg:w-1/2 lg:mt-0 lg:mx-6 "> 
+                    <div className="mt-6 lg:w-1/2 lg:mt-0 lg:mx-6 "> 
 
-                    <p className="block mt-4 text-2xl font-semibold text-axeda hover:underline md:text-3xl">
-                        Empresa orgullosamente mexicana
-                    </p>
+                        <p className="block mt-4 text-2xl font-semibold text-axeda hover:underline md:text-3xl">
+                            Empresa orgullosamente mexicana
+                        </p>
 
-                    <p className="mt-3 text-sm text-gray-500 dark:text-gray-600 md:text-sm">
-                            Una empresa inmobiliaria que busca facilitar el acceso al mundo de las inversiones  de forma inteligente y 
-                            promoviendo alta calidad de vida, desarrollando bienes inmuebles en  las zonas de mayor crecimiento y demanda del 
-                            sureste mexicano, con un solo objetivo en  mente: 
+                        <p className="mt-3 text-base lg:text-xl lg:tracking-widest text-gray-700 font-body text-justify">
+                                Una empresa inmobiliaria que busca facilitar el acceso al mundo de las inversiones  de forma inteligente y 
+                                promoviendo alta calidad de vida, desarrollando bienes inmuebles en  las zonas de mayor crecimiento y demanda del 
+                                sureste mexicano, con un solo objetivo en  mente: 
 
-                            Superar sus límites y generar abundancia a sus inversionistas. 
-                    </p>
+                        </p>
+                        <p className="mt-3 text-base  lg:text-xl lg:tracking-widest text-gray-700 font-body text-justify">
+                            <strong> Superar sus límites y generar abundancia a sus inversionistas. </strong>
+                        </p>
                     </div>
                 </div>
             </div>
