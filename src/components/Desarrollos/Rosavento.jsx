@@ -6,7 +6,7 @@ import pdfM         from '../../../public/Brochure_Rosavento_Merida.pdf';
 import pdfP         from '../../../public/ROSAVENTO Maya_Master Plan.pdf';
 import FormularioContacto from "../Aux/FormularioContacto";
 import MapSection from '../Aux/MapRosavento'
-import Slider from './Slider';
+import Slider from './SliderRosavento';
 import SliderAmenidadesRosavento from './SliderAmenidadesRosavento';
 
 import {RiCheckboxBlankCircleFill} from "react-icons/ri"

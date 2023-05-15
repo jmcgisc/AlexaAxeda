@@ -14,17 +14,18 @@ import Footer     from "./components/Footer"
 import { FloatingWhatsApp } from 'react-floating-whatsapp'
 import Error404 from "./Error404"
 
-// import { initializeApp } from "firebase/app";
-// import { getAnalytics } from "firebase/analytics";
-// import Bio        from "./components/footer/Bio"
-// import Prensa     from "./components/footer/Prensa" 
-// import Inversores from "./components/footer/Inversores"
-// import Eventos    from "./components/footer/Eventos"
-// import Terminos   from "./components/footer/Terminos"
-
 import { Routes, Route , BrowserRouter} 
                   from 'react-router-dom'
+// Import the functions you need from the SDKs you need
+// import { initializeApp } from "firebase/app";
+// import { getAnalytics } from "firebase/analytics";
+// import { useLocation } from "react-router";
 
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
   apiKey: "AIzaSyA4PbTwng883Rp6ob3XXRGAFaPkYt6DIrs",
   authDomain: "axedaterrenoscancun.firebaseapp.com",
@@ -37,7 +38,8 @@ const firebaseConfig = {
 
 // Initialize Firebase
 // const app = initializeApp(firebaseConfig);
-// const analytics = getAnalytics(app);
+// const analytics = getAnalytics(app); 
+// const { pathname, search } = useLocation();
 
 function App() { 
    
@@ -64,7 +66,7 @@ function App() {
             <Route path = '/components/footer/Terminos'       element ={ <Terminos/> } /> */}
                 
           </Routes>
-          
+      
           <FloatingWhatsApp
               phoneNumber="525570137764"
               accountName="Asesor Alexa"
