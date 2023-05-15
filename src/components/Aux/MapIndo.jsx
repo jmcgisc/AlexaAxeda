@@ -8,14 +8,15 @@ const containerStyle = {
   height: '400px'
 };
 
- const center = {
-   lat: 21.098064163906468,
-   lng: -89.39039837301571
- };
- 
+//Esta dirreccion es la correcta de indo en la pagina de Axeda
+const center = {
+  lat: 21.098023925357964,
+  lng: -89.39039807301391
+};
+
 const position = {
-  lat: 20.98852240519842,
-  lng: -89.61747923034035
+  lat: 21.098023925357964,
+  lng: -89.39039807301391
 } 
 
 const options = { closeBoxURL: '', enableEventPropagation: true };
@@ -50,7 +51,7 @@ class Map extends Component {
               >
                 <div style={{ backgroundColor: 'yellow', opacity: 0.75, padding: 12 }}>
                   <div style={{ fontSize: 16, fontColor: `#08233B` }}>
-                    Rosavento, tu nuevo hogar!
+                    Indo, ubicación privilegiada!
                   </div>
                 </div>
               </InfoBox>
