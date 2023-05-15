@@ -4,7 +4,7 @@ import Banner       from "../Aux/Banner";
 import pdf from '../../../public/ROSENDA_Brochure.pdf';
 import FormularioContacto from "../Aux/FormularioContacto";
 import MapSection from '../Aux/MapRosenda'
-import Slider from './Slider'; 
+import Slider from './SliderRosenda'; 
 
 const Rosenda = () => {  
     return (

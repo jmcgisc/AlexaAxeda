@@ -6,6 +6,8 @@ import Reviews from "./Reviews"
 import FormularioContacto from "../Aux/FormularioContacto"
 import Popup from 'reactjs-popup';
 import 'reactjs-popup/dist/index.css';
+import { getAnalytics, logEvent, setUserProperties } from "firebase/analytics"; 
+
 import FormularioContactoPopup from '../Aux/FormularioContactoPopup';
 const contentStyle = { width: 1000 }; 
 

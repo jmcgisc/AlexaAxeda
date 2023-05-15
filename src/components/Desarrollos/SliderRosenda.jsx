@@ -39,32 +39,21 @@ export default function Slider() {
         className="mySwiper"
       >
             <SwiperSlide>
-                <img src="Rosavento1.jpg"/> 
+                <img src="Rosenda1.jpg"/> 
             </SwiperSlide>
 
             <SwiperSlide>
-                <img src="Rosavento2.jpg"/> 
+                <img src="Rosenda2.jpg"/> 
             </SwiperSlide>        
             
             <SwiperSlide>
-                <img src="Rosavento3.jpg"/> 
+                <img src="Rosenda3.jpg"/> 
             </SwiperSlide>
 
             <SwiperSlide>
-                <img src="Rosavento4.jpg"/> 
+                <img src="Rosenda4.jpg"/> 
             </SwiperSlide>
-
-            <SwiperSlide>
-                <img src="Rosavento5.jpg"/> 
-            </SwiperSlide>
-
-            <SwiperSlide>
-                <img src="Rosavento6.jpg"/> 
-            </SwiperSlide>
-
-            <SwiperSlide>
-                <img src="Rosavento7.jpg"/> 
-            </SwiperSlide>
+ 
 
         <div className="autoplay-progress" slot="container-end">
           <svg  ref={progressCircle}> 
