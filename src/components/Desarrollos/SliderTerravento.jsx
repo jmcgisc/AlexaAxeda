@@ -54,10 +54,6 @@ export default function Slider() {
                 <img src="Terravento 1.jpg"/> 
             </SwiperSlide>
 
-            <SwiperSlide>
-                <img src="Rosavento 6.jpg"/> 
-            </SwiperSlide>
-
         <div className="autoplay-progress" slot="container-end">
           <svg  ref={progressCircle}> 
           </svg>

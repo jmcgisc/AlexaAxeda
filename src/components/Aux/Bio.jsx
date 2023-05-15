@@ -81,8 +81,10 @@ const Bio = () => {
                     <div className="flex flex-wrap justify-center">
                         <div className="w-full px-6">
                             <p className="mb-4 font-light leading-relaxed tracking-widest text-gray-700 dark:text-gray-400">
-
-                            Coordinadora comercial de grupo Axeda con 5 años de experiencia en la comercialización de bienes inmuebles.
+                            <strong>
+                            ¡Hola!. Mi nombre es Alexa Delgado
+                            </strong>
+                             , soy coordinadora comercial de grupo Axeda con 5 años de experiencia en la comercialización de bienes inmuebles.
 
                             Me especializo en inversiones de preventas generando rendimientos anuales muy por encima del 15%. 
                             </p>
