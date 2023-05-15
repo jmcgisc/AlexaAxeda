@@ -9,13 +9,13 @@ const containerStyle = {
 };
 
  const center = {
-   lat: 21.09949828314364, 
-   lng: -89.3992396873876
- };
+   lat: 21.099458244981633, 
+   lng: -89.39934697574414
+ }; 
  
 const position = {
-  lat: 21.09949828314364, 
-  lng: -89.3992396873876
+  lat: 21.099458244981633, 
+  lng: -89.39934697574414
 } 
 
 const options = { closeBoxURL: '', enableEventPropagation: true };
@@ -25,7 +25,6 @@ const onLoad = marker => {
 
 class Map extends Component {
   render() {
-    // let { center } = this.props;
   
     return (
       <LoadScript 
@@ -50,7 +49,7 @@ class Map extends Component {
               >
                 <div style={{ backgroundColor: 'yellow', opacity: 0.75, padding: 12 }}>
                   <div style={{ fontSize: 16, fontColor: `#08233B` }}>
-                    Rosavento, tu nuevo hogar!
+                    Terravento, tu nuevo hogar!
                   </div>
                 </div>
               </InfoBox>
