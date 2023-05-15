@@ -15,11 +15,10 @@ import { FloatingWhatsApp } from 'react-floating-whatsapp'
 import Error404 from "./Error404"
 
 import { Routes, Route , BrowserRouter} 
-                  from 'react-router-dom'
-// Import the functions you need from the SDKs you need
-// import { initializeApp } from "firebase/app";
-// import { getAnalytics } from "firebase/analytics";
-// import { useLocation } from "react-router";
+                  from 'react-router-dom' 
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+import { useLocation } from "react-router";
 
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries

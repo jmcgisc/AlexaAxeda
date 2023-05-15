@@ -137,9 +137,35 @@ const Rosenda = () => {
                 <div></div>
             </div> 
 
+
+            {/*MasterPlan*/} 
             <hr
                 className="my-12 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-500 to-transparent opacity-25 dark:opacity-100"/>
 
+            <div className="grid grid-cols-1 flex flex-cols lg:grid-cols-6 bg-[url('/public/homeBack2.png')]">
+
+                <div className="lg:col-start-2 lg:col-end-6 mb-5">
+                    <h1 className="text-axeda text-center font-title text-2xl lg:text-5xl mt-5">
+                            ROSENDA TEMOZÓN II
+                    </h1> 
+                </div>
+
+                <div className ="lg:col-start-2 lg:col-end-6  mb-5">
+                    <h2 className ="text-gray-600 text-xl text-center font-body text-justify px-12 py-2"> 
+                        Tras el éxito de nuestro proyecto Rosenda, vendido en su totalidad de menos de 50 días;
+                        hemos creado Rosenda Temozón II, una colección de 80 departamentos en 10 modelos diferentes.
+                    </h2>
+                </div>
+
+                <div className="lg:col-start-3 lg:col-end-6">
+                    <img src="SENDA.jpg"
+                                alt="MasterPlan Rosavento Axeda Cancún" /> 
+                </div>   
+            </div>
+
+            {/* Maps Rosenda */}
+            <hr
+                className="my-12 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-500 to-transparent opacity-25 dark:opacity-100"/>
 
             <div className="p-8 flex flex-col gap-8 bg-gray-100">
                     <h1 className="text-[60px] text-center font-title ">
