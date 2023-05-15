@@ -3,9 +3,8 @@ import ReactPlayer  from 'react-player';
 import Banner       from "../Aux/Banner";
 import pdf from '../../../public/ROSENDA_Brochure.pdf';
 import FormularioContacto from "../Aux/FormularioContacto";
-import MapSection from '../Aux/Map'
-import Slider from './Slider';
-import {RiCheckboxBlankCircleFill} from "react-icons/ri"
+import MapSection from '../Aux/MapRosenda'
+import Slider from './Slider'; 
 
 const Rosenda = () => {  
     return (
@@ -20,7 +19,7 @@ const Rosenda = () => {
         </div>
 
         {/*Background*/}
-        <div className="grid-cols-2 bg-[url('/public/BackgroundBeach.jpg')]">
+        <div className="grid-cols-2 bg-[url('/public/backGreen.png')]">
 
         {/*Desarrollos*/}
         <div className="grid xl:grid-cols-2 gap-4">
@@ -29,15 +28,15 @@ const Rosenda = () => {
                     <h1 className="text-[45px] text-axeda font-title px-12 mt-10 lg:mt-18 ">
                         ROSENDA TEMOZÓN 
                     </h1>
-                        <p className ="text-gray-600 text-xl font-body text-justify px-12">
+                        <p className ="text-gray-100 text-xl font-body text-justify px-12">
                             Departamentos en Mérida Zona Norte desde 1.7 MDP
                         </p>   
 
-                    <h1 className="text-[45px] text-axeda font-title px-12 mt-10 lg:mt-18 ">
+                    <h1 className="text-[45px] text-axeda font-title px-12 py-6 mt-10 lg:mt-18 ">
                         ROSENDA TEMOZÓN II
                     </h1>   
 
-                        <p className="text-gray-700 text-base font-body text-justify tracking-widest px-12 py-2">
+                        <p className="text-gray-100 text-base font-body text-justify tracking-widest px-12 py-2">
                             Tras el éxito de nuestro proyecto Rosenda, vendido en su totalidad de menos de 50 días; hemos creado Rosenda Temozón II, una colección de 80 departamentos en 10 modelos diferentes.
                         </p>
                 </div> 
@@ -61,10 +60,10 @@ const Rosenda = () => {
                     
                 </h1>
 
-                <h2 className="font-title  text-center text-2xl md:text-xl xl:text-3xl tracking-widest leading-nordesarl text-rose-900 px-4 xl:px-16">
+                <h1 className="text-3xl font-title text-center text-axeda capitalize lg:text-4xl ">  
                         Departamentos en
                         <strong className="underline decoration-axeda/[.33]"> venta. </strong>
-                    </h2>
+                    </h1>
                 
                 <div class="mt-8 lg:-mx-6 lg:flex lg:items-center">
                     <div className="object-cover  w-full lg:mx-6 lg:w-1/2 rounded-xl h-72 lg:h-96">
@@ -81,9 +80,9 @@ const Rosenda = () => {
             {/* <img class="object-cover w-full lg:mx-6 lg:w-1/2 rounded-xl h-72 lg:h-96" src="https://idesarges.unsplash.com/photo-1590283603385-17ffb3a7f29f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"alt=""/> */}
 
                 <div class="mt-6 lg:w-1/2 lg:mt-0 lg:mx-6 ">
-                    <p class="text-sm text-blue-500 uppercase">Departamentos</p>
+                    <p className="text-base text-cyan-900 font-bodoni uppercase">Departamentos</p> 
 
-                    <a href="#" class="block mt-4 text-2xl font-semibold text-gray-800 hover:underline dark:text-white md:text-3xl">
+                    <a href="#" class="block mt-4 text-2xl font-semibold text-gray-800 hover:underline md:text-3xl">
                         Compra en la zona de mayor auge de la República Mexiana
                     </a>
 
@@ -144,11 +143,12 @@ const Rosenda = () => {
 
             <div className="p-8 flex flex-col gap-8 bg-gray-100">
                     <h1 className="text-[60px] text-center font-title ">
-                            ¡Estarás cerca de todo!
+                            ¡La mejor Ubicación!
                     </h1>
                     <div className="flex justify-center gap-6"> 
                         <p className="max-w-2xl text-center text-base font-chivo text-gray-400">
-                            La perfecta ubicación del desarrollo en una de las carreteras más importantes de Cancún te conecta en solo minutos a paradisíacas playas.
+                            Al invertir en Rosenda Temozón II, estarás eligiendo vivir en la zona más demandada y equilibrada de la ciudad,
+                            dentro de un área que reúne servicios exclusivos y alta plusvalía al norte de Mérida.
                         </p>
                     </div>
                         <div className="flex xl:flex-col items-center justify-center gap-8">
