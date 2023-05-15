@@ -8,14 +8,14 @@ const containerStyle = {
   height: '400px'
 };
 
- const center = {
-   lat: 21.098064163906468,
-   lng: -89.39039837301571
+const center = {
+  lat: 21.075921183697442, 
+  lng: -89.59896679075213
  };
  
 const position = {
-  lat: 20.98852240519842,
-  lng: -89.61747923034035
+  lat: 21.075921183697442, 
+  lng: -89.59896679075213
 } 
 
 const options = { closeBoxURL: '', enableEventPropagation: true };

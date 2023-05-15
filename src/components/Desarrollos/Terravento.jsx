@@ -1,6 +1,7 @@
 import React        from 'react'
 import ReactPlayer  from 'react-player'
 import Banner       from "../Aux/Banner" 
+import MapSection from '../Aux/MapTerravento'
 import FormularioContacto from "../Aux/FormularioContacto"
 import SliderTerravento from './SliderTerravento'; 
 import {RiCheckboxBlankCircleFill} from "react-icons/ri";
@@ -71,7 +72,7 @@ const Terravento = () => {
          
         <div class="bg-white dark:bg-gray-900">
             <div class="container px-6 py-10 mx-auto">
-                <h1 class="text-3xl font-title text-center text-gray-800 capitalize lg:text-4xl dark:text-white"> 
+                <h1 class="text-3xl font-title text-center text-gray-600 capitalize lg:text-4xl"> 
                 Pedregal Residencial Beneficios 
                 <strong className="underline decoration-axeda/[.33]"> terravento.</strong>
                 </h1>
@@ -91,7 +92,7 @@ const Terravento = () => {
 
                 <div class="mt-6 lg:w-1/2 lg:mt-0 lg:mx-6 "> 
 
-                    <a href="#" class="block mt-4 text-2xl font-semibold text-gray-800 hover:underline dark:text-white md:text-3xl">
+                    <a href="#" class="block mt-4 text-2xl font-semibold text-gray-500 hover:underline md:text-3xl">
                         Mérida, oportunidad única para invertir
                     </a>
 
@@ -146,6 +147,26 @@ const Terravento = () => {
                 <div></div>
             </div>
         
+        {/*Mapa*/}
+        <hr
+            className="my-12 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-500 to-transparent opacity-25 dark:opacity-100"/>
+        
+        <div className="p-8 flex flex-col gap-8 bg-gray-100">
+                    <h1 className="text-[60px] text-center font-title ">
+                            ¡Zonas comerciales, áreas verdes e increibles ventajas cerca de tu terreno!
+                    </h1>
+                    <div className="flex justify-center gap-6"> 
+                        <p className="max-w-2xl text-center text-base font-chivo text-gray-400">
+                            Un desarrollo residencial al noreste de Mérida, a sólo 30 minutos de las hermosas playas que conforman la Costa Esmeralda de Yucatán.
+                        </p>
+                    </div>
+                        <div className="flex xl:flex-col items-center justify-center gap-8">
+                    <MapSection  
+                        // center={{center}}  
+                        />
+                    </div>
+            </div>   
+
         {/*Terravento cotizador*/} 
         <hr
             className="my-12 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-500 to-transparent opacity-25 dark:opacity-100"/>
