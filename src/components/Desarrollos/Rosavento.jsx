@@ -5,7 +5,7 @@ import pdfC         from '../../../public/ROSAVENTO CANCÚN_Brochure.pdf';
 import pdfM         from '../../../public/Brochure_Rosavento_Merida.pdf';
 import pdfP         from '../../../public/ROSAVENTO Maya_Master Plan.pdf';
 import FormularioContacto from "../Aux/FormularioContacto";
-import MapSection from '../Aux/Map'
+import MapSection from '../Aux/MapRosavento'
 import Slider from './Slider';
 import SliderAmenidadesRosavento from './SliderAmenidadesRosavento';
 
@@ -36,7 +36,7 @@ const Rosavento = () => {
             <div className="flex flex-col lg:grid-cols-4 lg:gap-2 rounded-3xl"> 
                 <div className="grid grid-cols-1">  
                     <h1 className="text-[45px] text-axeda font-title px-12 mt-10 lg:mt-18 ">
-                        Rosavento -Tierra Maya-
+                        Rosavento -Ciudad Maya-
                     </h1>
                         <p className ="text-gray-600 text-xl font-body text-gray-600 text-bold text-justify px-12 py-2">
                             Terrenos residenciales al norte de Mérida  
@@ -44,7 +44,7 @@ const Rosavento = () => {
                         </p>   
 
                     <h2 className="text-axeda font-title text-3xl px-12 py-2 mt-3">
-                        Rosavento Merida
+                        Rosavento Mérida
                     </h2>   
 
                         <p className="text-gray-700 text-base font-body text-justify tracking-widest px-12 py-2">

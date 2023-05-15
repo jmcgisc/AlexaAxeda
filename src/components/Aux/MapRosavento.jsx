@@ -9,13 +9,13 @@ const containerStyle = {
 };
 
  const center = {
-   lat: 21.098064163906468,
-   lng: -89.39039837301571
+   lat: 21.189532467553306,
+   lng: -89.7050379
  };
- 
+
 const position = {
-  lat: 20.98852240519842,
-  lng: -89.61747923034035
+  lat: 21.189532467553306,
+  lng: -89.7050379
 } 
 
 const options = { closeBoxURL: '', enableEventPropagation: true };
