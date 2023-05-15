@@ -167,40 +167,40 @@ const Terravento = () => {
                     </div>
             </div>   
 
-        {/*Terravento cotizador*/} 
+    {/*Terravento cotizador*/} 
         <hr
             className="my-12 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-500 to-transparent opacity-25 dark:opacity-100"/>
 
-        <div className="grid grid-cols-1 flex flex-cols lg:grid-cols-8  bg-[url('/public/fondo_3.jpg')] ">
-Z
-        <div className="lg:col-start-2 lg:col-end-8 mb-5">
-            <h1 className="text-3xl xl:text-7xl xl:font-title text-yellow-100 text-center text-lg text-2xl lg:text-5xl mt-5 bg-orange-800 rounded-lg">
-                Desde: $1,436.40 MXN al mes!
+        <div className=" grid grid-cols-1 flex flex-cols lg:grid-cols-8 bg-orange-400">
+
+        <div className="lg:col-start-2 lg:col-end-8 mb-5 ">
+            
+            <h1 className="text-4xl xl:text-4xl font-title text-white text-center underline font-title text-lg text-2xl lg:text-5xl mt-5 bg-orange-800 rounded-lg">
+                ¡ Desde: $1,436.40 MXN al mes !
             </h1> 
         </div>
 
-            <div className="lg:col-start-3 lg:col-end-8 mt-2 mb-5"> 
-                <span className="text-xl text-center xl:text-7xl font-bonodi xl:leading-[5.5rem] text-cyan-900 px-32 py-2 border-8 border-axeda relative inline-block">
-                    <a lassName="text-center" href={"https://crm.rosavento.mx/cotizador/terravento/terravento/terravento?vendedor=MTk2%0A"} target="_blank" rel="noopener noreferrer">
+        <div className="lg:col-start-4 lg:col-end-8 mt-2 mb-5"> 
+                <span className="text-2xl xl:text-4xl font-body xl:leading-[5.5rem] text-cyan-100 px-24 py-2 border-8 border-axeda relative inline-block">
+                    <a  href={"https://crm.rosavento.mx/cotizador/cancun/cancun_levante/levante_real?vendedor=MTk2%0A"} target="_blank" rel="noopener noreferrer">
                         Cotiza TU lote
                     </a>
                     
-                        <RiCheckboxBlankCircleFill className="text-cyan-900 text-base absolute -left-5 -top-4 p-2 bg-axeda rounded-full box-content"/>
-                        <RiCheckboxBlankCircleFill className="text-cyan-900 text-base absolute -right-5 -top-4 p-2 bg-axeda rounded-full box-content"/>
-                        <RiCheckboxBlankCircleFill className="text-cyan-900 text-base absolute -left-5 -bottom-4 p-2 bg-axeda rounded-full box-content"/>
-                        <RiCheckboxBlankCircleFill className="text-cyan-900 text-base absolute -right-5 -bottom-4 p-2 bg-axeda rounded-full box-content"/>
+                        <RiCheckboxBlankCircleFill className="text-orange-400 text-base absolute -left-5 -top-4 p-2 bg-axeda rounded-full box-content"/>
+                        <RiCheckboxBlankCircleFill className="text-orange-400 text-base absolute -right-5 -top-4 p-2 bg-axeda rounded-full box-content"/>
+                        <RiCheckboxBlankCircleFill className="text-orange-400 text-base absolute -left-5 -bottom-4 p-2 bg-axeda rounded-full box-content"/>
+                        <RiCheckboxBlankCircleFill className="text-orange-400 text-base absolute -right-5 -bottom-4 p-2 bg-axeda rounded-full box-content"/>
                 </span> 
             </div>   
 
-        <div className ="lg:col-start-2 lg:col-end-8  mb-5">
-            <h2 className ="text-gray-800 lg:text-2xl text-xl text-yellow-100 uppercase text-center font-body text-justify font-extrabold tracking-widest
-            bg-orange-800 rounded-lg px-12 py-2"> 
-                INDO en un paraíso productivo, un parque industrial a 12 minutos del libramiento de Mérida.
-            </h2>
+            <div className ="lg:col-start-2 lg:col-end-8  mb-5">
+                <h2 className ="text-gray-800 lg:text-2xl text-xl text-yellow-100 uppercase text-center font-body text-justify font-extrabold tracking-widest
+                bg-orange-800 rounded-lg px-12 py-2"> 
+                    INDO en un paraíso productivo, un parque industrial a 12 minutos del libramiento de Mérida.
+                </h2>
+            </div>
         </div>
-        </div>
-        
-
+    
         {/*By Grupo Axeda*/}
         <hr
             className="my-12 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-500 to-transparent opacity-25 dark:opacity-100"/>
