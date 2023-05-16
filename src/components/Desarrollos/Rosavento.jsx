@@ -67,18 +67,17 @@ const Rosavento = () => {
                         <Slider/>
                     </div>
                 </div>
-            </div>
+            </div> 
         </div>
 
         {/*Imagen Beneficios PlusValia*/}
         <div className="grid grid-cols-1 lg:grid-cols-7 lg:gap-20 place-items-center bg-[url('/public/homeBack2.png')]">
 
             <div className="lg:col-start-1 lg:col-end-5">
-                <img className="hover:shadow-lg dark:hover:shadow-black/30" alt="cancun zona hotelera" 
-                
-                src="https://paseodelaselva.com/hana/wp-content/themes/paseoHana/assets/homeSlide3.png"
-                
-                    alt="Cancun" />
+                <img className="hover:shadow-lg dark:hover:shadow-black/30" 
+                        alt="cancun zona hotelera" 
+                        src="Cancun.webp"
+                        />
             </div>
 
             <div className="lg:col-span-3 flex flex-col justify-center"> 

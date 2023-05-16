@@ -60,28 +60,34 @@ export const Home = () => {
 
             <img    src="AlexaDelgado.webp"
                     className="w-[280px] h-[280px] md:w-[280px] md:h-[280px] object-cover xl:-mt-8" 
+                    alt="Asesor Axeda Terrenos en Mérida y Cancún"
             />
             <div className="relative bg-white shadow-xl rounded-lg p-4 flex flex-col justify-center gap-2 max-w-[250px] mx-auto -mt-12">
                 <div className="flex items-center">
                 <img
                     src="https://img.freepik.com/foto-gratis/empresaria-confiada-sonriente-que-presenta-brazos-cruzados_1262-20950.jpg"
                     className="w-10 h-10 object-cover rounded-full ring-2 ring-gray-300"
+                    alt='Persona 1'
                 />
                 <img
                     src="https://img.freepik.com/foto-gratis/hombre-barbudo-feliz-sorprendido-camisa-apuntando-lejos_171337-5021.jpg"
                     className="w-10 h-10 object-cover rounded-full ring-2 ring-gray-300 -ml-4"
+                    alt='Persona 2'
                 />
                 <img
                     src="https://img.freepik.com/foto-gratis/retrato-hombre-afroamericano-inteligente-profesional-pie-manos-cruzadas-sobre-pecho-pose-confianza_176420-33861.jpg"
                     className="w-10 h-10 object-cover rounded-full ring-2 ring-gray-300 -ml-4"
+                    alt='Persona 3'
                 />
                 <img
                     src="https://img.freepik.com/foto-gratis/feliz-joven_1098-20869.jpg"
                     className="w-10 h-10 object-cover rounded-full ring-2 ring-gray-300 -ml-4"
+                    alt='Persona 4'
                 />
                 <img
                     src="https://img.freepik.com/foto-gratis/negocios-finanzas-empleo-concepto-mujeres-emprendedoras-exitosas-joven-empresaria-segura-anteojos-mostrando-gesto-pulgar-arriba-sostenga-computadora-portatil-garantice-mejor-calidad-servicio_1258-59118.jpg"
                     className="w-10 h-10 object-cover rounded-full ring-2 ring-gray-300 -ml-4"
+                    alt='Persona 5'
                 />
                 </div>
                 <h2 className="text-xl font-bold tracking-[1px] text-gray-800">
