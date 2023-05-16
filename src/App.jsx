@@ -58,7 +58,7 @@ function App() {
             <Route path = '/terravento'   element ={ <Terravento/> } />
             {/* Footer */}
             <Route path = '/privacidad'   element ={ <Privacidad/> } /> 
-            <Route path = '/formulariocontacto'   element ={ <FormularioContacto/> } /> 
+            <Route path = '/formulario'   element ={ <FormularioContacto/> } /> 
             <Route path="*" element={<Error404 />} />
                 
           </Routes>
