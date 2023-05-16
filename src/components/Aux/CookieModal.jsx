@@ -5,15 +5,15 @@ export function Cookiemodal(props) {
 
     return (
         <>
-            <div class="relative flex justify-center items-center">
+            <div className="relative flex justify-center items-center">
  
- <button onclick="showMenu(true)" class="focus:ring-2 focus:ring-offset-2 focus:ring-gray-800 focus:outline-none absolute z-0 top-48 py-2 px-7 bg-gray-800 text-white rounded text-base hover:bg-black">Open</button>
+ <button onclick="showMenu(true)" className="focus:ring-2 focus:ring-offset-2 focus:ring-gray-800 focus:outline-none absolute z-0 top-48 py-2 px-7 bg-gray-800 text-white rounded text-base hover:bg-black">Open</button>
 
- <div id="menu" class="w-full h-full bg-gray-900 bg-opacity-80 top-0 fixed sticky-0">
-   <div class="2xl:container  2xl:mx-auto py-48 px-4 md:px-28 flex justify-center items-center">
-     <div class="w-96 md:w-auto dark:bg-gray-800 relative flex flex-col justify-center items-center bg-white py-16 px-4 md:px-24 xl:py-24 xl:px-36">
+ <div id="menu" className="w-full h-full bg-gray-900 bg-opacity-80 top-0 fixed sticky-0">
+   <div className="2xl:container  2xl:mx-auto py-48 px-4 md:px-28 flex justify-center items-center">
+     <div className="w-96 md:w-auto dark:bg-gray-800 relative flex flex-col justify-center items-center bg-white py-16 px-4 md:px-24 xl:py-24 xl:px-36">
        <div role="banner">
-         <svg class="w-20 md:w-24 lg:w-28" viewBox="0 0 112 112" fill="none" xmlns="http://www.w3.org/2000/svg">
+         <svg className="w-20 md:w-24 lg:w-28" viewBox="0 0 112 112" fill="none" xmlns="http://www.w3.org/2000/svg">
            <path d="M107.595 62.8312C106.78 62.9508 105.947 63.0143 105.098 63.0143C97.2875 63.0143 90.6776 57.9049 88.4104 50.8481C88.0228 49.6419 87.0376 48.7131 85.7929 48.4759C72.8221 46.0065 63.0138 34.6192 63.0138 20.9296C63.0138 15.18 64.7493 9.83943 67.7182 5.39136C68.4241 4.33371 67.835 2.92496 66.5877 2.67799C63.163 1.99986 59.6236 1.64111 55.9996 1.64111C25.9779 1.64111 1.64062 25.9784 1.64062 56.0001C1.64062 86.0215 25.9779 110.359 55.9996 110.359C83.0565 110.359 105.429 90.6641 109.638 64.7894C109.829 63.6152 108.771 62.6584 107.595 62.8312Z" fill="#F5B97D" />
            <path d="M31.4506 45.4779C35.3239 45.4779 38.4638 42.338 38.4638 38.4648C38.4638 34.5915 35.3239 31.4517 31.4506 31.4517C27.5774 31.4517 24.4375 34.5915 24.4375 38.4648C24.4375 42.338 27.5774 45.4779 31.4506 45.4779Z" fill="#CD916E" />
            <path d="M34.9563 78.7958C37.8618 78.7958 40.2172 76.4404 40.2172 73.5349C40.2172 70.6293 37.8618 68.2739 34.9563 68.2739C32.0507 68.2739 29.6953 70.6293 29.6953 73.5349C29.6953 76.4404 32.0507 78.7958 34.9563 78.7958Z" fill="#CD916E" />
@@ -47,15 +47,15 @@ export function Cookiemodal(props) {
            <path d="M90.7836 95.5946C81.1638 104.058 68.811 108.718 56.0004 108.718C48.616 108.718 41.4743 107.222 34.7733 104.27C28.2992 101.419 22.5428 97.354 17.6644 92.1878C12.7937 87.0299 9.07149 81.0626 6.60093 74.4515C4.03193 67.5767 2.9454 60.3229 3.3713 52.8918C4.03521 41.3081 8.6738 30.0683 16.4324 21.2424C17.0307 20.5618 16.964 19.5252 16.2835 18.9271C15.6031 18.3288 14.5663 18.3953 13.9682 19.0761C5.7279 28.4495 0.801209 40.392 0.0955215 52.7041C-0.356635 60.5929 0.797928 68.2961 3.52749 75.6002C6.15227 82.6238 10.106 88.9628 15.279 94.4405C20.4601 99.9272 26.5741 104.245 33.451 107.273C40.5713 110.409 48.158 111.999 56.0004 111.999C69.6092 111.999 82.7318 107.048 92.951 98.0579C93.6313 97.4594 93.6975 96.4228 93.099 95.7425C92.5008 95.0624 91.4639 94.9961 90.7836 95.5946Z" fill="#1F2937" />
          </svg>
        </div>
-       <div class="mt-12">
-         <h1 role="main" class="text-3xl dark:text-white lg:text-4xl font-semibold leading-7 lg:leading-9 text-center text-gray-800">We use cookies</h1>
+       <div className="mt-12">
+         <h1 role="main" className="text-3xl dark:text-white lg:text-4xl font-semibold leading-7 lg:leading-9 text-center text-gray-800">We use cookies</h1>
        </div>
-       <div class="mt">
-         <p class="mt-6 sm:w-80 text-base dark:text-white leading-7 text-center text-gray-800">Please, accept these sweeties to continue enjoying our site!</p>
+       <div className="mt">
+         <p className="mt-6 sm:w-80 text-base dark:text-white leading-7 text-center text-gray-800">Please, accept these sweeties to continue enjoying our site!</p>
        </div>
-       <button class="w-full dark:text-gray-800 dark:hover:bg-gray-100 dark:bg-white sm:w-auto mt-14 text-base leading-4 text-center text-white py-6 px-16 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800 bg-gray-800 hover:bg-black">Mmm... Sweet!</button>
-       <a href="javascript:void(0)" class="mt-6 dark:text-white dark:hover:border-white text-base leading-none focus:outline-none hover:border-gray-800 focus:border-gray-800 border-b border-transparent text-center text-gray-800">Nope.. I am on a diet</a>
-       <button onclick="showMenu(true)" class="text-gray-800 dark:text-gray-400 absolute top-8 right-8 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800" aria-label="close">
+       <button className="w-full dark:text-gray-800 dark:hover:bg-gray-100 dark:bg-white sm:w-auto mt-14 text-base leading-4 text-center text-white py-6 px-16 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800 bg-gray-800 hover:bg-black">Mmm... Sweet!</button>
+       <a href="javascript:void(0)" className="mt-6 dark:text-white dark:hover:border-white text-base leading-none focus:outline-none hover:border-gray-800 focus:border-gray-800 border-b border-transparent text-center text-gray-800">Nope.. I am on a diet</a>
+       <button onclick="showMenu(true)" className="text-gray-800 dark:text-gray-400 absolute top-8 right-8 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800" aria-label="close">
          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
            <path d="M18 6L6 18" stroke="currentColor" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" />
            <path d="M6 6L18 18" stroke="currentColor" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" />

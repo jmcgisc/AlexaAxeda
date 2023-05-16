@@ -17,8 +17,8 @@ const Desarrollos = () => {
             <div className="grid grid-cols-1 xl:grid-cols-2 gap-8">
                 <NavLink className ="text-center " to = "/rosavento" > 
                     <div className="flex flex-col gap-2 rounded-3xl"> 
-                            <img src="carrusel8.jpg" className="w-full h-56 xl:h-[600px] rounded-3xl 
-                                    transition duration-700 ease-in-out transform hover:-translate-y-1 hover:scale-70 hover:shadow-2xl" />
+                            <img    src="carrusel8.webp" className="w-full h-56 xl:h-[600px] rounded-3xl transition duration-700 ease-in-out transform hover:-translate-y-1 hover:scale-70 hover:shadow-2xl" 
+                                    alt='Terrenos residenciales Axeda'/>
                                 <p className="text-axeda py-5"> Tu terreno la ciudad más bonita y segura de México.
                                     <h3 className="text-2xl font-bold py-4">ROSAVENTO Ciudad Maya</h3>
                                 </p>
@@ -31,9 +31,9 @@ const Desarrollos = () => {
                     <NavLink className ="text-center " to = "/rosavento" > 
                         <div className="flex flex-col gap-4">
 
-                                <img src="carrusel11.jpg" className="w-full h-56 object-cover rounded-3xl 
-                                transition duration-700 ease-in-out transform hover:-translate-y-1 hover:scale-110 hover:shadow-2xl
-                                "/>
+                                <img    src="carrusel11.webp" className="w-full h-56 object-cover rounded-3xl 
+                                        transition duration-700 ease-in-out transform hover:-translate-y-1 hover:scale-110 hover:shadow-2xl" 
+                                        alt='Desarrollos en Ciudad Maya' />
                                 <p className="text-gray-500 font-chivo"> 
                                 Terrenos residenciales en Cancún. Mensualidades desde $3,097.05 MX.
                                 </p>
@@ -43,9 +43,8 @@ const Desarrollos = () => {
 
                     <NavLink className ="text-center " to = "/rosenda" > 
                         <div className="flex flex-col gap-4">
-                            <img src="rosenda.webp" className="w-full h-56 object-cover rounded-3xl 
-                            transition duration-700 ease-in-out transform hover:-translate-y-1 hover:scale-110 hover:shadow-2xl
-                            "/>
+                            <img    src="rosenda.webp" className="w-full h-56 object-cover rounded-3xl transition duration-700 ease-in-out transform hover:-translate-y-1 hover:scale-110 hover:shadow-2xl" 
+                                    alt='Invierte en rosenda' />
                             <p className="text-gray-500 font-chivo"> Rosenda Temozón II, una colección de 80 departamentos en 10 modelos diferentes. </p>
                                 <h3 className="text-2xl font-bold text-gray-400 ">ROSENDA TEMOZÓN II </h3> 
                         </div>
@@ -53,9 +52,8 @@ const Desarrollos = () => {
 
                     <NavLink className ="text-center " to = "/terravento" > 
                         <div className="flex flex-col gap-4">
-                            <img src="rosenda departamento.webp" className="w-full h-56 object-cover rounded-3xl 
-                            transition duration-700 ease-in-out transform hover:-translate-y-1 hover:scale-110 hover:shadow-2xl
-                            "/>
+                            <img src="rosenda departamento.webp" className="w-full h-56 object-cover rounded-3xl transition duration-700 ease-in-out transform hover:-translate-y-1 hover:scale-110 hover:shadow-2xl" 
+                                alt ='Plusvalía en Mérida'/>
                             <p className="text-gray-500 font-chivo"> La  plusvalía inmobiliaria en Mérida creció un 7.4% y tiene un escenario de crecimiento hacia la próxima década. </p>
                                 <h3 className="text-2xl font-bold text-gray-400 ">Terravento Pedregal Residencial </h3>
                         </div>
@@ -65,7 +63,8 @@ const Desarrollos = () => {
                         <div className="flex flex-col gap-4">
                                 <img src="INDO.webp" className="w-full h-56 object-cover rounded-3xl 
                                 transition duration-700 ease-in-out transform hover:-translate-y-1 hover:scale-110 hover:shadow-2xl
-                                "/>
+                                "
+                                alt='Yucatan crecimiento económico' />
                                 <p className="text-gray-500 font-chivo"> 
                                 Yucatán es considerado como el estado con mayor crecimiento económico de México, además es líder en la generación y distribución de energía eléctrica. </p>
                                     <h3 className="text-2xl font-bold text-gray-400 ">INDO Parque Industrial</h3>
