@@ -59,7 +59,7 @@ export const Home = () => {
             {/* <img    src="Alexa-removebg-preview.png" */}
 
             <img    src="AlexaDelgado.jpg"
-                    className="w-[250px] h-[250px] md:w-[250px] md:h-[250px] object-cover xl:-mt-8" 
+                    className="w-[280px] h-[280px] md:w-[280px] md:h-[280px] object-cover xl:-mt-8" 
             />
             <div className="relative bg-white shadow-xl rounded-lg p-4 flex flex-col justify-center gap-2 max-w-[250px] mx-auto -mt-12">
                 <div className="flex items-center">

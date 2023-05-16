@@ -58,11 +58,6 @@ function App() {
             {/* Footer */}
             <Route path = '/privacidad'   element ={ <Privacidad/> } /> 
             <Route path="*" element={<Error404 />} />
-            {/* <Route path = '/components/footer/Bio'            element ={ <Bio/> } /> */}
-            {/* <Route path = '/components/footer/Prensa'         element ={ <Prensa/> } />
-            <Route path = '/components/footer/Inversores'     element ={ <Inversores/> } />
-            <Route path = '/components/footer/Eventos'        element ={ <Eventos/> } />
-            <Route path = '/components/footer/Terminos'       element ={ <Terminos/> } /> */}
                 
           </Routes>
       
