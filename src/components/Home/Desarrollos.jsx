@@ -61,10 +61,8 @@ const Desarrollos = () => {
 
                     <NavLink className ="text-center " to = "/indo" > 
                         <div className="flex flex-col gap-4">
-                                <img src="INDO.webp" className="w-full h-56 object-cover rounded-3xl 
-                                transition duration-700 ease-in-out transform hover:-translate-y-1 hover:scale-110 hover:shadow-2xl
-                                "
-                                alt='Yucatan crecimiento económico' />
+                                <img src="INDO.webp" className="w-full h-56 object-cover rounded-3xl transition duration-700 ease-in-out transform hover:-translate-y-1 hover:scale-110 hover:shadow-2xl"
+                                    alt='Yucatan crecimiento económico' />
                                 <p className="text-gray-500 font-chivo"> 
                                 Yucatán es considerado como el estado con mayor crecimiento económico de México, además es líder en la generación y distribución de energía eléctrica. </p>
                                     <h3 className="text-2xl font-bold text-gray-400 ">INDO Parque Industrial</h3>

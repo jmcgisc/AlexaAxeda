@@ -6,11 +6,12 @@ import Headers    from "./components/Headers"
 import { Home }   from "./components/Home/Home" 
 import Terravento from "./components/Desarrollos/Terravento"
 import Rosavento  from "./components/Desarrollos/Rosavento"
-import Rosenda    from "./components/Desarrollos/Rosenda"
-import Indo       from "./components/Desarrollos/Indo" 
-import Privacidad from "./components/Aux/Privacidad"
-import Bio        from "./components/Aux/Bio"
-import Footer     from "./components/Footer"
+import Rosenda            from "./components/Desarrollos/Rosenda"
+import Indo               from "./components/Desarrollos/Indo" 
+import Privacidad         from "./components/Aux/Privacidad"
+import FormularioContacto from "./components/Aux/FormularioContacto"
+import Bio                from "./components/Aux/Bio"
+import Footer             from "./components/Footer"
 import { FloatingWhatsApp } from 'react-floating-whatsapp'
 import Error404 from "./Error404"
 
@@ -57,6 +58,7 @@ function App() {
             <Route path = '/terravento'   element ={ <Terravento/> } />
             {/* Footer */}
             <Route path = '/privacidad'   element ={ <Privacidad/> } /> 
+            <Route path = '/formulariocontacto'   element ={ <FormularioContacto/> } /> 
             <Route path="*" element={<Error404 />} />
                 
           </Routes>
