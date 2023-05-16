@@ -40,43 +40,43 @@ const FormularioContacto = () => {
 
                             <form action ="" className="flex flex-col space-y-4" >
                                 <div>
-                                    <label for="" class="text-sm">Nombre Completo*</label>
+                                    <label for="" className="text-sm">Nombre Completo*</label>
                                     <input type="text" placeholder="Nombre Completo" className="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 outline-none 
                                     focus:ring-2 focus:ring-teal-300 "/>
                                 </div>
 
                                 <div>
-                                    <label for="" class="text-sm">Correo electrónico*</label>
+                                    <label for="" className="text-sm">Correo electrónico*</label>
                                     <input type="text" placeholder="Correo electrónico*" className="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 outline-none 
                                     focus:ring-2 focus:ring-teal-300 "/>
                                 </div>
 
                                 <div>
-                                    <label for="" class="text-sm">Número de movil*</label>
+                                    <label for="" className="text-sm">Número de movil*</label>
                                     <input type="text" placeholder="Número de movil*" className="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 outline-none 
                                     focus:ring-2 focus:ring-teal-300 "/>
                                 </div>
 
                                 <div>
-                                    <label for="" class="text-sm">Desarrollo de interés</label>
+                                    <label for="" className="text-sm">Desarrollo de interés</label>
                                     <input type="text" placeholder="Desarrollo de interés" className="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 outline-none 
                                     focus:ring-2 focus:ring-teal-300 "/>
                                 </div>
 
                                 <div>
-                                    <label for="" class="text-sm">alguna pregunta del terreno...</label> 
+                                    <label for="" className="text-sm">alguna pregunta del terreno...</label> 
                                     <input type="text" placeholder="xxxx" className="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 outline-none 
                                     focus:ring-2 focus:ring-teal-300 "/>
                                 </div>
 
                                 <div>
-                                    <label for="" class="text-sm">Inversión estimada para el enganche</label> 
+                                    <label for="" className="text-sm">Inversión estimada para el enganche</label> 
                                     <input type="text" placeholder="Inversión estimada para el enganche" className="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 outline-none 
                                     focus:ring-2 focus:ring-teal-300 "/>
                                 </div>
 
                                 <div>
-                                    <label for="" class="text-sm">Mensaje</label> 
+                                    <label for="" className="text-sm">Mensaje</label> 
                                     <input type="text" placeholder="Mensaje" className="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 outline-none 
                                     focus:ring-2 focus:ring-teal-300 "/>
                                 </div>

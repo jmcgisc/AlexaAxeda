@@ -56,12 +56,12 @@ const Terravento = () => {
         {/*Imagen Beneficios PlusValia*/}
         <div className="grid grid-cols-1 lg:grid-cols-7 lg:gap-20 place-items-center bg-[url('/public/homeBack2.png')]">
 
-            <div class="lg:col-start-1 lg:col-end-5">
-                <img class="hover:shadow-lg dark:hover:shadow-black/30" alt="ciudad de Mérida" src="merida.jpg" />
+            <div className="lg:col-start-1 lg:col-end-5">
+                <img className="hover:shadow-lg dark:hover:shadow-black/30" alt="ciudad de Mérida" src="merida.jpg" />
             </div>
 
-            <div class="lg:col-span-3 flex flex-col justify-center"> 
-                <h1 class="font-sans text-lg uppercase tracking-[0.5rem] mb-4 italic text-clip"><span>Mérida</span>, 
+            <div className="lg:col-span-3 flex flex-col justify-center"> 
+                <h1 className="font-sans text-lg uppercase tracking-[0.5rem] mb-4 italic text-clip"><span>Mérida</span>, 
              la animada capital del estado de Yucatán en México, tiene una rica herencia maya y colonial.</h1>
             </div>
         </div> 
@@ -70,14 +70,14 @@ const Terravento = () => {
         <hr
             className="my-12 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-500 to-transparent opacity-25 dark:opacity-100"/>
          
-        <div class="bg-white dark:bg-gray-900">
-            <div class="container px-6 py-10 mx-auto">
-                <h1 class="text-3xl font-title text-center text-gray-600 capitalize lg:text-4xl"> 
+        <div className="bg-white dark:bg-gray-900">
+            <div className="container px-6 py-10 mx-auto">
+                <h1 className="text-3xl font-title text-center text-gray-600 capitalize lg:text-4xl"> 
                 Pedregal Residencial Beneficios 
                 <strong className="underline decoration-axeda/[.33]"> terravento.</strong>
                 </h1>
 
-                <div class="mt-8 lg:-mx-6 lg:flex lg:items-center">
+                <div className="mt-8 lg:-mx-6 lg:flex lg:items-center">
                     <div className="object-cover  w-full lg:mx-6 lg:w-1/2 rounded-xl h-72 lg:h-96">
                         <ReactPlayer
                                     url='https://www.youtube.com/watch?v=QOOoKhYc9cI&t=8sg'
@@ -88,11 +88,11 @@ const Terravento = () => {
                         />
                     </div>
                     
-            {/* <img class="object-cover w-full lg:mx-6 lg:w-1/2 rounded-xl h-72 lg:h-96" src="https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"alt=""/> */}
+            {/* <img className="object-cover w-full lg:mx-6 lg:w-1/2 rounded-xl h-72 lg:h-96" src="https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"alt=""/> */}
 
-                <div class="mt-6 lg:w-1/2 lg:mt-0 lg:mx-6 "> 
+                <div className="mt-6 lg:w-1/2 lg:mt-0 lg:mx-6 "> 
 
-                    <a href="#" class="block mt-4 text-2xl font-semibold text-gray-500 hover:underline md:text-3xl">
+                    <a href="#" className="block mt-4 text-2xl font-semibold text-gray-500 hover:underline md:text-3xl">
                         Mérida, oportunidad única para invertir
                     </a>
 
@@ -205,14 +205,14 @@ const Terravento = () => {
         <hr
             className="my-12 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-500 to-transparent opacity-25 dark:opacity-100"/>
          
-        <div class="bg-white dark:bg-gray-900">
-            <div class="container px-6 py-10 mx-auto">
-                <h1 class="text-3xl font-title text-center text-axeda capitalize lg:text-4xl"> 
+        <div className="bg-white dark:bg-gray-900">
+            <div className="container px-6 py-10 mx-auto">
+                <h1 className="text-3xl font-title text-center text-axeda capitalize lg:text-4xl"> 
                 Desarrollado por Grupo
                 <strong className="underline decoration-axeda/[.33]"> AXEDA.</strong>
                 </h1>
 
-                <div class="mt-8 lg:-mx-6 lg:flex lg:items-center">
+                <div className="mt-8 lg:-mx-6 lg:flex lg:items-center">
                     <div className="object-cover  w-full lg:mx-6 lg:w-1/2 rounded-xl h-72 lg:h-96">
                         <ReactPlayer
                                     url='https://www.youtube.com/watch?v=e6qNM45bUHg'

@@ -5,12 +5,12 @@ const Privacidad = () => {
   return (
         <>
         <div>
-            <h1 class="text-axeda text-center font-title text-2xl lg:text-5xl mt-12 mb-4"><span>Axeda </span>- Política de privacidad-</h1>
+            <h1 className="text-axeda text-center font-title text-2xl lg:text-5xl mt-12 mb-4"><span>Axeda </span>- Política de privacidad-</h1>
         </div> 
 
         {/*Texto politica privacidad*/}
         <div className="grid grid-cols-1 bg-[url('/public/homeBack2.png')] rounded">
-            <div class="text-gray-600 text-xl font-body text-justify px-12 py-2"> 
+            <div className="text-gray-600 text-xl font-body text-justify px-12 py-2"> 
                 <h2 className="text-gray-600 text-xl font-body text-justify py-2">
                     RESPONSABLE DE LOS DATOS PERSONALES
                 </h2>
@@ -22,7 +22,7 @@ const Privacidad = () => {
         </p>
 
         <div className="grid grid-cols-1 bg-[url('/public/homeBack2.png')] rounded">
-            <div class="text-gray-600 text-xl font-body text-justify px-12 py-2"> 
+            <div className="text-gray-600 text-xl font-body text-justify px-12 py-2"> 
                 <h2 className="text-gray-600 text-xl font-body text-justify py-2">
                     TRATAMIENTO DE DATOS PERSONALES
                 </h2>
@@ -36,7 +36,7 @@ const Privacidad = () => {
         </p>   
 
         <div className="grid grid-cols-1 bg-[url('/public/homeBack2.png')] rounded">
-            <div class="text-gray-600 text-xl font-body text-justify px-12 py-2"> 
+            <div className="text-gray-600 text-xl font-body text-justify px-12 py-2"> 
                 <h2 className="text-gray-600 text-xl font-body text-justify py-2">
                     FINALIDAD Y TRATAMIENTO DE LA INFORMACIÓN PERSONAL
                 </h2>
@@ -55,7 +55,7 @@ const Privacidad = () => {
         </p>   
 
         <div className="grid grid-cols-1 bg-[url('/public/homeBack2.png')] rounded">
-            <div class="text-gray-600 text-xl font-body text-justify px-12 py-2"> 
+            <div className="text-gray-600 text-xl font-body text-justify px-12 py-2"> 
                 <h2 className="text-gray-600 text-xl font-body text-justify py-2">
                     LIMITACIÓN DE USO DE DATOS PERSONALES
                 </h2>
@@ -69,7 +69,7 @@ const Privacidad = () => {
         </p>   
 
         <div className="grid grid-cols-1 bg-[url('/public/homeBack2.png')] rounded">
-            <div class="text-gray-600 text-xl font-body text-justify px-12 py-2"> 
+            <div className="text-gray-600 text-xl font-body text-justify px-12 py-2"> 
                 <h2 className="text-gray-600 text-xl font-body text-justify py-2">
                     LIMITACIÓN AL USO O DIVULGACIÓN DE INFORMACIÓN PERSONAL
                 </h2>
@@ -85,7 +85,7 @@ const Privacidad = () => {
         El ejercicio de estos derechos deberá realizarse previa solicitud a La Empresa y contener al menos lo siguiente:
         </p>  
 
-        <ul role="list" class="marker:text-axeda list-disc pl-5 space-y-3 text-slate-700 mb-3 mt-3">
+        <ul role="list" className="marker:text-axeda list-disc pl-5 space-y-3 text-slate-700 mb-3 mt-3">
             <li>El nombre del titular, domicilio y correo electrónico para comunicarle la respuesta a su solicitud.</li>
             <li>Los documentos que acrediten la identidad o, en su caso, la representación legal del titular.</li>
             <li>La descripción clara y precisa de los Datos Personales respecto de los que se busca ejercer alguno de los derechos antes mencionados.</li>
@@ -100,7 +100,7 @@ const Privacidad = () => {
         </p>  
 
         <div className="grid grid-cols-1 bg-[url('/public/homeBack2.png')] rounded">
-            <div class="text-gray-600 text-xl font-body text-justify px-12 py-2"> 
+            <div className="text-gray-600 text-xl font-body text-justify px-12 py-2"> 
                 <h2 className="text-gray-600 text-xl font-body text-justify py-2">
                     CAMBIOS A ESTE AVISO DE PRIVACIDAD
                 </h2>
