@@ -1,7 +1,7 @@
 import React     ,   { useRef, useState } from 'react';
 import ReactPlayer  from 'react-player';
 import Banner       from "../Aux/Banner";
-import pdfC         from '../../../public/ROSAVENTO CANCÚN_Brochure.pdf';
+import pdfC         from '../../../public/Brochure_Rosavento_Cancun.pdf';
 import pdfM         from '../../../public/Brochure_Rosavento_Merida.pdf';
 import pdfP         from '../../../public/ROSAVENTO Maya_Master Plan.pdf';
 import FormularioContacto from "../Aux/FormularioContacto";
@@ -19,7 +19,7 @@ const center = {
 const Rosavento = () => { 
     return (
         <>  
-    {/*Slider Mobile*/}
+        {/*Slider Mobile*/}
         <div className="lg:hidden">
             <div className="grid grid-cols-1 gap-8">
                 <div className="flex flex-row-reverse sm:col-start-1 w-full h-56 xl:h-[600px] xl:ellipse-desarrollos"> 
@@ -28,10 +28,10 @@ const Rosavento = () => {
             </div>
         </div>
 
-    {/*Background*/}
+        {/*Background*/}
         <div className="grid-cols-2 bg-[url('/public/homeBack1.png')]">
         
-    {/*Desarrollos*/}
+        {/*Desarrollos*/}
         <div className="grid xl:grid-cols-2 gap-4">
             <div className="flex flex-col lg:grid-cols-4 lg:gap-2 rounded-3xl"> 
                 <div className="grid grid-cols-1">  
@@ -39,12 +39,11 @@ const Rosavento = () => {
                         Rosavento -Ciudad Maya-
                     </h1>
                         <p className ="text-gray-600 text-xl font-body text-gray-600 text-bold text-justify px-12 py-2">
-                            Terrenos residenciales al norte de Mérida  
-                                Un paraíso con mensualidades desde $1,992.00 MXN 
+                            Terrenos residenciales al norte de Mérida. Un paraíso con mensualidades desde $1,992.00 MXN 
                         </p>   
 
                     <h2 className="text-axeda font-title text-3xl px-12 py-2 mt-3">
-                        Rosavento Mérida
+                            Rosavento Mérida
                     </h2>   
 
                         <p className="text-gray-700 text-base font-body text-justify tracking-widest px-12 py-2">
@@ -52,7 +51,7 @@ const Rosavento = () => {
                         </p>
 
                     <h2 className="text-axeda font-title text-3xl py-2 mt-3 px-12">
-                        Rosavento Cancún
+                            Rosavento Cancún
                     </h2>   
  
                         <p className="text-gray-700 text-base font-body text-justify tracking-widest px-12 py-2">
@@ -61,10 +60,10 @@ const Rosavento = () => {
                 </div> 
             </div>
 
-    {/*Slider LG*/}
+        {/*Slider LG*/}
                 <div className="hidden lg:grid lg:grid-cols-1 lg:gap-8">
                     <div className="flex flex-row-reverse sm:col-start-1 w-full h-56 xl:h-[600px] xl:ellipse-desarrollos"> 
-                        <Slider/>
+                            <Slider/>
                     </div>
                 </div>
             </div> 
@@ -177,7 +176,7 @@ const Rosavento = () => {
                     </div>
                     </div> 
                     
-                    <div className="object-cover  w-full lg:mx-6 lg:w-1/2 rounded-xl h-72 lg:h-96">
+                    <div className="object-cover mt-4 lg:mt-0 w-full lg:mx-6 lg:w-1/2 rounded-xl h-72 lg:h-96">
                         <ReactPlayer
                                             url='https://www.youtube.com/watch?v=KdN-h8qob10'
                                             className='react-player' 
@@ -232,7 +231,7 @@ const Rosavento = () => {
         <hr
             className="my-12 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-500 to-transparent opacity-25 dark:opacity-100"/>
 
-        <div className=" grid grid-cols-1 flex flex-cols lg:grid-cols-8 bg-orange-400">
+        <div className="grid grid-cols-1 flex flex-cols lg:grid-cols-8 bg-orange-400">
 
         <div className="lg:col-start-2 lg:col-end-8 mb-5 ">
             
@@ -242,7 +241,7 @@ const Rosavento = () => {
         </div>
 
         <div className="lg:col-start-4 lg:col-end-8 mt-2 mb-5"> 
-                <span className="text-2xl xl:text-4xl font-body xl:leading-[5.5rem] text-cyan-100 px-24 py-2 border-8 border-axeda relative inline-block">
+                <span className="text-xl xl:text-4xl font-body xl:leading-[5.5rem] text-cyan-100 px-24 py-2 border-8 border-axeda relative inline-block">
                     <a  href={"https://crm.rosavento.mx/cotizador/cancun/cancun_levante/levante_real?vendedor=MTk2%0A"} target="_blank" rel="noopener noreferrer">
                         Cotiza TU lote
                     </a>
@@ -313,8 +312,7 @@ const Rosavento = () => {
                     </div>
                 </div>
         </div>
-            
- 
+
         {/*Mapa*/}
         <hr
             className="my-12 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-500 to-transparent opacity-25 dark:opacity-100"/>
@@ -456,11 +454,11 @@ const Rosavento = () => {
             <div className="flex flex-wrap grid gap-2 grid-cols-2 place-items-center">
                 <div> 
                     <button className={`btn`}>
-                        <a href={pdfC} target="_blank" rel="noopener noreferrer" download="ROSAVENTO CANCÚN_Brochure.pdf"> 
-                        </a>
-                            <img    className="w-22 h-20 py-2 " 
+                        <a href={pdfC} target="_blank" rel="noopener noreferrer" download="Brochure_Rosavento_Cancun.pdf"> 
+                            <img    className="w-22 h-20 py-2 "
                                     src="brochure.png"/> 
                                     Descarga el Brochure Rosavento Cancún 
+                        </a>
                     </button> 
                 </div>
 
@@ -469,7 +467,7 @@ const Rosavento = () => {
                         <a href={pdfM} target="_blank" rel="noopener noreferrer" download="Brochure_Rosavento_Merida.pdf"> 
                             <img    className="w-22 h-20 py-2" 
                                     src="brochure.png"/> 
-                                    Descarga el Brochure Rosavento Mérida 
+                                    Descarga el Brochure Rosavento Mérida
                         </a>
                     </button> 
                 </div>
