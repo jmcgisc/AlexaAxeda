@@ -6,6 +6,7 @@ import FormularioContacto from "../Aux/FormularioContacto"
 import MapSection from '../Aux/MapIndo'
 import Slider from './SliderIndo';
 import {RiCheckboxBlankCircleFill} from "react-icons/ri";
+import SliderAmenidadesIndo from './SliderAmenidadesIndo';
 
 //Esta dirreccion es la correcta de indo en la pagina de Axeda
 const center = {
@@ -93,9 +94,12 @@ const Indo = () => {
                 </div>
             </div>
         </div> 
- 
-            <hr
-                className="my-12 h-0.5 border-t-0 bg-neutral-100 opacity-100 dark:opacity-50" />
+
+        {/*Ocultamos para mobile*/} 
+        <div className="hidden lg:grid lg:grid-cols-1 lg:gap-8">
+            
+        <hr
+            className="my-12 h-0.5 border-t-0 bg-neutral-100 opacity-100 dark:opacity-50" />
  
             <div className="grid xl:grid-cols-7 xl:gap-4 place-items-center xl:py-30 bg-[url('/public/homeBack2.png')]">
                 <div></div>
@@ -130,6 +134,16 @@ const Indo = () => {
                         <p className ="text-3xl text-axeda py-10 ">Facilidad de pago</p>
                 <div></div>
             </div>
+        </div>
+
+        {/*Slider Mobile*/}
+        <div className="lg:hidden">
+                <div className="grid grid-cols-1 gap-8">
+                    <div className="flex flex-row-reverse sm:col-start-1 w-full h-56 xl:h-[600px] xl:ellipse-desarrollos"> 
+                        <SliderAmenidadesIndo/>
+                    </div>
+                </div>
+        </div>
         
         {/*Indo*/} 
         <hr
