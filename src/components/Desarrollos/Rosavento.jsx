@@ -232,11 +232,10 @@ const Rosavento = () => {
             className="my-12 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-500 to-transparent opacity-25 dark:opacity-100"/>
 
         <div className="grid grid-cols-1 flex flex-cols lg:grid-cols-8 bg-gradient-to-r from-orange-500 to-orange-900">
-        <div className="lg:col-start-2 lg:col-end-8 mb-5 ">
-            
-            <h1 className="text-4xl xl:text-4xl font-title text-white text-center underline font-title text-lg text-2xl lg:text-5xl mt-5">
-                ¡ INVIERTE DESDE $1,906.00 MXN al mes ! 
-            </h1> 
+            <div className="lg:col-start-2 lg:col-end-8 mb-5 ">
+                <h1 className="text-4xl xl:text-4xl font-title text-white text-center underline font-title text-lg text-2xl lg:text-5xl mt-5">
+                    ¡ INVIERTE DESDE $1,906.00 MXN al mes ! 
+                </h1> 
         </div>
 
         <div className="lg:col-start-3 lg:col-end-9 mt-2 mb-5"> 
@@ -244,7 +243,6 @@ const Rosavento = () => {
                     <a  href={"https://crm.rosavento.mx/cotizador/ciudad-maya/bora_cdmaya/bora_real?vendedor=MTk2%0A"} target="_blank" rel="noopener noreferrer">
                         Cotiza TU lote en Bora Real
                     </a>
-                    
                         <RiCheckboxBlankCircleFill className="text-orange-400 text-base absolute -left-5 -top-4 p-2 bg-axeda rounded-full box-content"/>
                         <RiCheckboxBlankCircleFill className="text-orange-400 text-base absolute -right-5 -top-4 p-2 bg-axeda rounded-full box-content"/>
                         <RiCheckboxBlankCircleFill className="text-orange-400 text-base absolute -left-5 -bottom-4 p-2 bg-axeda rounded-full box-content"/>
@@ -257,7 +255,6 @@ const Rosavento = () => {
                 Una ciudad planeada con todo lo que necesitas para disfrutar de la naturaleza.
             </h2>
         </div> </div>
-
 
     {/*Cotizador Cancún*/} 
         <hr

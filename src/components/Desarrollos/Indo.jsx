@@ -145,39 +145,32 @@ const Indo = () => {
                 </div>
         </div>
         
-        {/*Indo*/} 
-        <hr
-            className="my-12 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-500 to-transparent opacity-25 dark:opacity-100"/>
+        {/*Cotizador Indo*/} 
 
-        <div className="grid grid-cols-1 flex flex-cols lg:grid-cols-8  bg-[url('/public/fondo_madera.png')] ">
-
-        <div className="lg:col-start-2 lg:col-end-8 mb-5">
-            <h1 className="text-4xl xl:text-7xl font-title text-yellow-100 text-center font-title text-lg text-2xl lg:text-5xl mt-5 bg-orange-800 rounded-lg">
-                Desde $3,937.50 al mes
-            </h1> 
+        <div className="grid grid-cols-1 flex flex-cols lg:grid-cols-8 bg-gradient-to-r from-orange-500 to-orange-900">
+            <div className="lg:col-start-2 lg:col-end-8 mb-5 ">
+                <h1 className="text-4xl xl:text-4xl font-title text-white text-center underline font-title text-lg text-2xl lg:text-5xl mt-5">
+                    ¡ Desde $3,937.50 al mes ! 
+                </h1> 
         </div>
 
-            <div className="lg:col-start-4 lg:col-end-9 mt-2 mb-5"> 
-                <span className="text-4xl xl:text-7xl text-yellow-100 uppercase font-body xl:leading-[5.5rem] text-cyan-900 px-24 py-2 border-8 border-axeda relative inline-block
-                 bg-orange-800 ">
-                    <a  href={"https://crm.rosavento.mx/cotizador/rosavento-indo/indo/indo?vendedor=MTk2%0A"} target="_blank" rel="noopener noreferrer">
-                        Cotiza TU lote
+        <div className="lg:col-start-4 lg:col-end-9 mt-2 mb-5"> 
+                <span className="text-xl xl:text-4xl font-body xl:leading-[5.5rem] text-cyan-100 px-24 py-2 border-8 border-axeda relative inline-block">
+                    <a  href={"https://crm.rosavento.mx/cotizador/ciudad-maya/bora_cdmaya/bora_real?vendedor=MTk2%0A"} target="_blank" rel="noopener noreferrer">
+                        Cotiza TU lote 
                     </a>
-                    
-                        <RiCheckboxBlankCircleFill className="text-cyan-900 text-base absolute -left-5 -top-4 p-2 bg-axeda rounded-full box-content"/>
-                        <RiCheckboxBlankCircleFill className="text-cyan-900 text-base absolute -right-5 -top-4 p-2 bg-axeda rounded-full box-content"/>
-                        <RiCheckboxBlankCircleFill className="text-cyan-900 text-base absolute -left-5 -bottom-4 p-2 bg-axeda rounded-full box-content"/>
-                        <RiCheckboxBlankCircleFill className="text-cyan-900 text-base absolute -right-5 -bottom-4 p-2 bg-axeda rounded-full box-content"/>
+                        <RiCheckboxBlankCircleFill className="text-orange-400 text-base absolute -left-5 -top-4 p-2 bg-axeda rounded-full box-content"/>
+                        <RiCheckboxBlankCircleFill className="text-orange-400 text-base absolute -right-5 -top-4 p-2 bg-axeda rounded-full box-content"/>
+                        <RiCheckboxBlankCircleFill className="text-orange-400 text-base absolute -left-5 -bottom-4 p-2 bg-axeda rounded-full box-content"/>
+                        <RiCheckboxBlankCircleFill className="text-orange-400 text-base absolute -right-5 -bottom-4 p-2 bg-axeda rounded-full box-content"/>
                 </span> 
             </div>   
 
         <div className ="lg:col-start-2 lg:col-end-8  mb-5">
-            <h2 className ="text-gray-800 text-2xl text-yellow-100 uppercase text-center font-body text-justify font-extrabold tracking-widest
-            bg-orange-800 rounded-lg px-12 py-2"> 
+            <h2 className ="text-gray-800 text-3xl text-white text-center font-sans text-justify px-12 py-2"> 
                 INDO en un paraíso productivo, un parque industrial a 12 minutos del libramiento de Mérida.
             </h2>
-        </div>
-        </div>
+        </div> </div>
         
         {/*By Grupo Axeda*/}
         <hr
