@@ -146,7 +146,6 @@ const Indo = () => {
         </div>
         
         {/*Cotizador Indo*/} 
-
         <div className="grid grid-cols-1 flex flex-cols lg:grid-cols-8 bg-gradient-to-r from-orange-500 to-orange-900">
             <div className="lg:col-start-2 lg:col-end-8 mb-5 ">
                 <h1 className="text-4xl xl:text-4xl font-title text-white text-center underline font-title text-lg text-2xl lg:text-5xl mt-5">
