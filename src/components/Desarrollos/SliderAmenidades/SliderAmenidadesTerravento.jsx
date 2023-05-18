@@ -6,9 +6,8 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
-import "swiper/css/effect-fade";
-import './Rosavento/styles.css'
-
+import "swiper/css/effect-fade"; 
+ 
 // import required modules
 import { EffectFade, Autoplay, Pagination, Navigation } from 'swiper';
 

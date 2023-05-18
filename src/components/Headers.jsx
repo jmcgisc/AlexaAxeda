@@ -43,7 +43,8 @@ const Headers = () => {
          <div className ="px-16 py-2 inline-flex justify-center rounded-md border border-gray-300 bg-white text-sm font-medium text-gray-700 font-mono	
                   shadow-sm hover:bg-gray-50 focus:outline-none focus:border-orange-600 focus:ring-orange-600 block w-full rounded-md  focus:ring-1">
 
-            <NavLink to = "/" > Home</NavLink> 
+            <NavLink onClick ={() => setShowMenu(!showMenu)
+                  } to = "/" > Home</NavLink> 
 
          </div>
       
@@ -71,7 +72,8 @@ const Headers = () => {
                   <div className="py-1">
                      <Menu.Item>
                      {({ active }) => (
-                        <Link  className ={classNames(
+                        <Link  onClick ={() => setShowMenu(!showMenu)
+                        } className ={classNames(
                            active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
                            'block px-4 py-2 text-sm font-mono text-center'
                            )}
@@ -87,7 +89,8 @@ const Headers = () => {
                   <div className="py-1">
                      <Menu.Item>
                      {({ active }) => ( 
-                        <NavLink  className ={classNames(
+                        <NavLink  onClick ={() => setShowMenu(!showMenu)
+                        } className ={classNames(
                            active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
                            'block px-4 py-2 text-sm font-mono text-center'
                            )}
@@ -103,7 +106,8 @@ const Headers = () => {
                   <div className="py-1">
                      <Menu.Item>
                      {({ active }) => (
-                        <NavLink  className ={classNames(
+                        <NavLink  onClick ={() => setShowMenu(!showMenu)
+                        } className ={classNames(
                            active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
                            'block px-4 py-2 text-sm font-mono text-center'
                            )}
@@ -119,7 +123,8 @@ const Headers = () => {
                   <div className="py-1">
                      <Menu.Item>
                      {({ active }) => (
-                        <NavLink  className ={classNames(
+                        <NavLink  onClick ={() => setShowMenu(!showMenu)
+                        } className ={classNames(
                            active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
                            'block px-4 py-2 text-sm font-mono text-center'
                            )}
@@ -138,7 +143,9 @@ const Headers = () => {
 
          <div className ="px-22 py-2 inline-flex justify-center rounded-md border border-gray-300 bg-white text-sm text-center font-mono font-medium text-gray-700 shadow-sm 
                hover:bg-gray-50 focus:outline-none focus:border-orange-600 focus:ring-orange-600 block w-full rounded-md sm:text-sm focus:ring-1">
-            <NavLink className ="text-center " to = "/bio" >Alexa Delgado</NavLink>     
+            <NavLink   onClick ={() => setShowMenu(!showMenu)
+                  } 
+            className ="text-center " to = "/bio" >Alexa Delgado</NavLink>     
          </div> 
           
       </nav>

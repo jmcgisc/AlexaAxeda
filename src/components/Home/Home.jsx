@@ -29,35 +29,33 @@ export const Home = () => {
                  </h1>
                 <p className="text-gray-500 text-xl leading-[2.5rem]">Tu legado es lo más importante, por eso desarrollamos proyectos en las zonas de mayor crecimiento y demanda con un solo objetivo en mente: Generar abundancia para nuestros inversionistas.</p>
     
-                <div className="flex flex-col md:flex-row items-center gap-4">
-          
-                    <Popup trigger={<button className= "w-full xl:w-auto bg-axeda text-white py-2 px-8 rounded-xl text-xl shadow-lg shadow-indigo-500/40" 
-                    > Contáctame</button>} {...{   contentStyle }}
-                        position="right center">
-                        <div className="flex flex-full">
-                            <FormularioContactoPopup/>
-                        </div>
-                    </Popup> 
-                    
-                    <button  onClick={(e) => {
-                            e.preventDefault();
-                            window.open('https://eva3d.com/recorridos-virtuales-360/axeda/rosavento/index.htm', '_blank');
-                            }} 
-                            className="text-xl flex items-center justify-start text-left gap-4 py-9 px-20 rounded-xl 
-                            hover:drop-shadow-xl
-                            " >
-                                <RiPlayFill className="bg-axeda text-white p-8 rounded-full box-content"/> 
-                                Mira nuestro recorrido 360º 
-                    </button>
-                </div> 
-            </div>  
-        </div>
+                    <div className="flex flex-col md:flex-row items-center gap-4">
+            
+                        <Popup trigger={<button className= "w-full xl:w-auto bg-axeda text-white py-2 px-8 rounded-xl text-xl shadow-lg shadow-indigo-500/40" 
+                        > Contáctame</button>} {...{   contentStyle }}
+                            position="right center">
+                            <div className="flex flex-full">
+                                <FormularioContactoPopup/>
+                            </div>
+                        </Popup> 
+                        <button  onClick={(e) => {
+                                e.preventDefault();
+                                window.open('https://eva3d.com/recorridos-virtuales-360/axeda/rosavento/index.htm', '_blank');
+                                }} 
+                                className="text-xl flex items-center justify-start text-left gap-4 py-9 px-20 rounded-xl 
+                                hover:drop-shadow-xl
+                                " >
+                                    <RiPlayFill className="bg-axeda text-white p-8 rounded-full box-content"/> 
+                                    Mira nuestro recorrido 360º 
+                        </button>
+                    </div> 
+                </div>  
+            </div>
 
             <div className="md:col-span-3 flex items-center justify-center relative">
             {/* Content image */}
             <div>
             {/* <img    src="Alexa-removebg-preview.png" */}
-
             <img    src="AlexaDelgado.webp"
                     className="w-[280px] h-[280px] md:w-[280px] md:h-[280px] object-cover xl:-mt-8" 
                     alt="Asesor Axeda Terrenos en Mérida y Cancún"

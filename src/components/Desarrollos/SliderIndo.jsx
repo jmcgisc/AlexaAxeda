@@ -7,7 +7,6 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import "swiper/css/effect-fade";
-import './Rosavento/styles.css'
 
 // import required modules
 import { EffectFade, Autoplay, Pagination, Navigation } from 'swiper';
