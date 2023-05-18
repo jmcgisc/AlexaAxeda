@@ -5,7 +5,9 @@ import pdf from '../../../public/ROSENDA_Brochure.pdf';
 import FormularioContacto from "../Aux/FormularioContacto";
 import MapSection from '../Aux/MapRosenda'
 import Slider from './SliderRosenda'; 
-import SliderAmenidadesRosenda from './SliderAmenidadesRosenda';
+import { Swiper, SwiperSlide } from 'swiper/react'; 
+import SliderAmenidadesRosenda from './SliderAmenidades/SliderAmenidadesRosenda';
+import { Pagination } from "swiper";
 
 const Rosenda = () => {  
     return (
@@ -108,6 +110,15 @@ const Rosenda = () => {
             className="my-12 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-500 to-transparent opacity-25 dark:opacity-100"/>
  
         {/*Amenidades*/} 
+
+        <Swiper
+        pagination={{
+          dynamicBullets: true,
+        }}
+        modules={[Pagination]}
+        className="mySwiper"
+      >
+      <SwiperSlide>
             <div className="grid xl:grid-cols-7 xl:gap-4 place-items-center xl:py-30 bg-[url('/public/homeBack1.png')]">
                 <div></div>
                         <img src="amenidades_azul.png" className="h-28 w-14 py-4 "/>    
@@ -141,6 +152,40 @@ const Rosenda = () => {
                         <p className ="text-3xl text-axeda py-10 ">Facilidad de pago</p>
                 <div></div>
             </div> 
+        </SwiperSlide>
+        <SwiperSlide>
+            <div className="grid xl:grid-cols-7 xl:gap-4 place-items-center xl:py-30 bg-[url('/public/backGreen.png')]">
+                <div></div>
+                        <img src="amenidades.png" className="h-14 w-7 py-4 "/>    
+                        <p className ="text-3xl text-axeda py-10">Amenidades</p>
+                <div></div>
+                        <img src="maps.png" className="h-14 w-7 py-4"/>
+                        <p className ="text-3xl text-axeda py-10 ">Ubicación</p>
+                <div></div>
+                <div></div>
+                        <img src="plusvalia.png" className="h-14 w-7 py-4"/>
+                        <p className ="text-3xl text-axeda py-10">Plusvalía</p>
+                <div></div>
+                        <img src="areasv.png" className="h-14 w-7 py-4"/>
+                        <p className ="text-3xl text-axeda  py-10">Áreas Verdes</p>
+                <div></div>
+                <div></div>
+                        <img src="familia.png" className="h-14 w-7 py-4"/>
+                        <p className ="text-3xl text-axeda py-10">Ambiente Familiar</p>
+                <div></div>
+                        <img src="credito.png" className="h-14 w-7 py-4"/>
+                        <p className ="text-3xl text-axeda py-10 ">Facilidad de pago</p>
+                <div></div>
+                <div></div> 
+                        <img src="desarrollos.png" className="h-14 w-7 py-4"/>
+                        <p className ="text-3xl text-axeda py-10">Desarrollos</p>
+                <div></div>
+                        <img src="ubicacion.png" className="h-14 w-7 py-4"/>
+                        <p className ="text-3xl text-axeda py-10 ">Facilidad de pago</p>
+                <div></div>
+                </div>
+        </SwiperSlide>
+      </Swiper>
 
             </div>
 

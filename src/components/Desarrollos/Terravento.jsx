@@ -4,8 +4,8 @@ import Banner       from "../Aux/Banner"
 import MapSection from '../Aux/MapTerravento'
 import FormularioContacto from "../Aux/FormularioContacto"
 import SliderTerravento from './SliderTerravento'; 
-import {RiCheckboxBlankCircleFill} from "react-icons/ri";
-import SliderAmenidadesIndo from './SliderAmenidadesIndo';
+import {RiCheckboxBlankCircleFill}  from "react-icons/ri";
+import SliderAmenidadesTerravento   from './SliderAmenidades/SliderAmenidadesTerravento';
 
 const Terravento = () => { 
     return (
@@ -160,7 +160,7 @@ const Terravento = () => {
         <div className="lg:hidden">
                 <div className="grid grid-cols-1 gap-8">
                     <div className="flex flex-row-reverse sm:col-start-1 w-full h-56 xl:h-[600px] xl:ellipse-desarrollos"> 
-                        <SliderAmenidadesIndo/>
+                        <SliderAmenidadesTerravento/>
                     </div>
                 </div>
         </div>

@@ -6,7 +6,7 @@ import FormularioContacto from "../Aux/FormularioContacto"
 import MapSection from '../Aux/MapIndo'
 import Slider from './SliderIndo';
 import {RiCheckboxBlankCircleFill} from "react-icons/ri";
-import SliderAmenidadesIndo from './SliderAmenidadesIndo';
+import SliderAmenidadesIndo from './SliderAmenidades/SliderAmenidadesIndo';
 
 //Esta dirreccion es la correcta de indo en la pagina de Axeda
 const center = {
