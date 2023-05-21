@@ -36,7 +36,7 @@ const Reviews = () => {
                     className="w-10 h-10 md:w-16 md:h-16 object-cover rounded-full"
                 />
                 <img
-                    src="https://img.freepik.com/foto-gratis/hombre-negocios-dueno-empresa-oficina_1303-15851.jpg"
+                    src="/public/josemanuelcarreiro.jpg"
                     className="w-12 h-12 md:w-20 md:h-20 object-cover rounded-full ring-4 ring-axeda p-1 bg-white"
                 />
                 <img

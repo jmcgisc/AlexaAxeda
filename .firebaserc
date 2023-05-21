@@ -1,7 +1,7 @@
 {
   "projects": {
-    "default": "axeda-desarrollo-alexa",
-    "form": "axeda-desarrollo-alexa",
-    "staging": "axeda-desarrollo-alexa"
+    "default": "alexa-delgado-axeda",
+    "form": "alexa-delgado-axeda",
+    "staging": "alexa-delgado-axeda"
   }
 }

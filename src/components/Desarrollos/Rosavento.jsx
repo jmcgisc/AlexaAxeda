@@ -133,7 +133,7 @@ const Rosavento = () => {
                     </p>
  
                     <div className="flex items-center mt-6">
-                        <img className="object-cover object-center w-10 h-10 rounded-full" src="https://axeda.mx/hubfs/Comentario-Erika-Herrera.jpg" alt=""/>
+                        <img className="object-cover object-center w-10 h-10 rounded-full" src="/public/ErikaHerrera.png" alt=""/>
 
                         <div className="mx-4">
                             <h1 className="text-sm text-gray-700 dark:text-gray-800">Erika Herrera</h1>
@@ -244,18 +244,19 @@ const Rosavento = () => {
                     ¡ INVIERTE DESDE $1,906.00 MXN al mes ! 
                 </h1> 
         </div>
-
-        <div className="lg:col-start-3 lg:col-end-9 mt-2 mb-5"> 
-                <span className="text-xl xl:text-4xl font-body xl:leading-[5.5rem] text-cyan-100 px-24 py-2 border-8 border-axeda relative inline-block">
-                    <a  href={"https://crm.rosavento.mx/cotizador/ciudad-maya/bora_cdmaya/bora_real?vendedor=MTk2%0A"} target="_blank" rel="noopener noreferrer">
-                        Cotiza TU lote en Bora Real
-                    </a>
-                        <RiCheckboxBlankCircleFill className="text-orange-400 text-base absolute -left-5 -top-4 p-2 bg-axeda rounded-full box-content"/>
-                        <RiCheckboxBlankCircleFill className="text-orange-400 text-base absolute -right-5 -top-4 p-2 bg-axeda rounded-full box-content"/>
-                        <RiCheckboxBlankCircleFill className="text-orange-400 text-base absolute -left-5 -bottom-4 p-2 bg-axeda rounded-full box-content"/>
-                        <RiCheckboxBlankCircleFill className="text-orange-400 text-base absolute -right-5 -bottom-4 p-2 bg-axeda rounded-full box-content"/>
-                </span> 
-            </div>   
+ 
+        <div className="lg:col-start-2 lg:col-end-8 mb-5 text-center">
+            <span className="text-xl xl:text-4xl xl:leading-[5.5rem] text-cyan-100 px-24 py-2 border-8 border-axeda relative inline-block">
+                <a className="text-4xl xl:text-4xl text-white  font-body  text-lg text-2xl lg:text-5xl mt-5"
+                href={"https://crm.rosavento.mx/cotizador/ciudad-maya/bora_cdmaya/bora_real?vendedor=MTk2%0A"} target="_blank" rel="noopener noreferrer">
+                    Cotiza TU lote en Bora Real
+                </a> 
+                    <RiCheckboxBlankCircleFill className="text-orange-400 text-base absolute -left-5 -top-4 p-2 bg-axeda rounded-full box-content"/>
+                    <RiCheckboxBlankCircleFill className="text-orange-400 text-base absolute -right-5 -top-4 p-2 bg-axeda rounded-full box-content"/>
+                    <RiCheckboxBlankCircleFill className="text-orange-400 text-base absolute -left-5 -bottom-4 p-2 bg-axeda rounded-full box-content"/>
+                    <RiCheckboxBlankCircleFill className="text-orange-400 text-base absolute -right-5 -bottom-4 p-2 bg-axeda rounded-full box-content"/>
+            </span> 
+        </div>
 
         <div className ="lg:col-start-2 lg:col-end-8  mb-5">
             <h2 className ="text-gray-800 text-3xl text-white text-center font-sans text-justify px-12 py-2"> 
@@ -271,18 +272,18 @@ const Rosavento = () => {
                 </h1> 
             </div>
 
-        <div className="lg:col-start-3 lg:col-end-8 mt-2 mb-5"> 
-                <span className="text-xl xl:text-4xl font-body xl:leading-[5.5rem] text-cyan-100 px-24 py-2 border-8 border-axeda relative inline-block">
-                    <a  href={"https://crm.rosavento.mx/cotizador/cancun/cancun_levante/levante_real?vendedor=MTk2%0A"} target="_blank" rel="noopener noreferrer">
-                        Cotiza TU lote en Cancún
-                    </a>
-                    
+        <div className="lg:col-start-2 lg:col-end-8 mb-5 text-center">
+            <span className="text-xl xl:text-4xl xl:leading-[5.5rem] text-cyan-100 px-24 py-2 border-8 border-axeda relative inline-block">
+                <a className="text-4xl xl:text-4xl text-white  font-body  text-lg text-2xl lg:text-5xl mt-5"
+                href={"https://crm.rosavento.mx/cotizador/cancun/cancun_levante/levante_real?vendedor=MTk2%0A"} target="_blank" rel="noopener noreferrer">
+                    Cotiza TU lote en Bora Real
+                </a> 
                         <RiCheckboxBlankCircleFill className="text-orange-400 text-base absolute -left-5 -top-4 p-2 bg-axeda rounded-full box-content"/>
                         <RiCheckboxBlankCircleFill className="text-orange-400 text-base absolute -right-5 -top-4 p-2 bg-axeda rounded-full box-content"/>
                         <RiCheckboxBlankCircleFill className="text-orange-400 text-base absolute -left-5 -bottom-4 p-2 bg-axeda rounded-full box-content"/>
                         <RiCheckboxBlankCircleFill className="text-orange-400 text-base absolute -right-5 -bottom-4 p-2 bg-axeda rounded-full box-content"/>
                 </span> 
-            </div>   
+        </div>   
 
         <div className ="lg:col-start-2 lg:col-end-8  mb-5">
             <h2 className ="text-gray-800 text-3xl text-white text-center font-sans text-justify px-12 py-2"> 

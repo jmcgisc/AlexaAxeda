@@ -14,32 +14,29 @@ import Bio                from "./components/Aux/Bio"
 import Footer             from "./components/Footer"
 import { FloatingWhatsApp } from 'react-floating-whatsapp'
 import Error404 from "./Error404"
-
 import { Routes, Route , BrowserRouter} 
-                  from 'react-router-dom' 
+                  from 'react-router-dom'  
+
+// Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
-import { useLocation } from "react-router";
-
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyA4PbTwng883Rp6ob3XXRGAFaPkYt6DIrs",
-  authDomain: "axedaterrenoscancun.firebaseapp.com",
-  projectId: "axedaterrenoscancun",
-  storageBucket: "axedaterrenoscancun.appspot.com",
-  messagingSenderId: "1037310248574",
-  appId: "1:1037310248574:web:465e311c787be99324fa2f",
-  measurementId: "G-W1M6YXQPPG"
+  apiKey: "AIzaSyBXDKo2yo-lV27pFVF5RhlHvomcSmGdwfU",
+  authDomain: "alexa-delgado-axeda.firebaseapp.com",
+  projectId: "alexa-delgado-axeda",
+  storageBucket: "alexa-delgado-axeda.appspot.com",
+  messagingSenderId: "978283195370",
+  appId: "1:978283195370:web:ef44c4252d294b76a1e093",
+  measurementId: "G-DRS0M53RW1"
 };
-
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
-// const analytics = getAnalytics(app); 
-// const { pathname, search } = useLocation();
+const analytics = getAnalytics(app);
 
 function App() { 
    
