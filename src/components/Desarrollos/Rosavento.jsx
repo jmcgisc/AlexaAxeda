@@ -137,7 +137,7 @@ const Rosavento = () => {
 
                         <div className="mx-4">
                             <h1 className="text-sm text-gray-700 dark:text-gray-800">Erika Herrera</h1>
-                            <p className="text-sm text-gray-500 dark:text-gray-400">Inversionista</p>
+                            <p className="text-sm text-gray-500 dark:text-gray-400">Inversionista</p> 
                         </div>
                     </div>
                     </div>
