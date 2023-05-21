@@ -185,38 +185,36 @@ const Terravento = () => {
                     </div>
             </div>   
 
-    {/*Terravento cotizador*/} 
+
+    {/*Cotizador Indo*/} 
         <hr
             className="my-12 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-500 to-transparent opacity-25 dark:opacity-100"/>
 
-        <div className=" grid grid-cols-1 flex flex-cols lg:grid-cols-8 bg-gradient-to-r from-amber-900 to-amber-500">
+        <div className="grid grid-cols-1 flex flex-cols lg:grid-cols-8 bg-gradient-to-r from-orange-500 to-orange-900">
             <div className="lg:col-start-2 lg:col-end-8 mb-5 ">
-                
                 <h1 className="text-4xl xl:text-4xl font-title text-white text-center underline font-title text-lg text-2xl lg:text-5xl mt-5">
                     ¡ Desde: $1,436.40 MXN al mes !
                 </h1> 
-            </div>
-
-        <div className="lg:col-start-4 lg:col-end-8 mt-2 mb-5"> 
-                <span className="text-2xl xl:text-4xl font-body xl:leading-[5.5rem] text-cyan-100 px-24 py-2 border-8 border-axeda relative inline-block">
-                    <a  href={"https://crm.rosavento.mx/cotizador/cancun/cancun_levante/levante_real?vendedor=MTk2%0A"} target="_blank" rel="noopener noreferrer">
-                        Cotiza TU lote
-                    </a>
-                    
-                        <RiCheckboxBlankCircleFill className="text-orange-400 text-base absolute -left-5 -top-4 p-2 bg-axeda rounded-full box-content"/>
-                        <RiCheckboxBlankCircleFill className="text-orange-400 text-base absolute -right-5 -top-4 p-2 bg-axeda rounded-full box-content"/>
-                        <RiCheckboxBlankCircleFill className="text-orange-400 text-base absolute -left-5 -bottom-4 p-2 bg-axeda rounded-full box-content"/>
-                        <RiCheckboxBlankCircleFill className="text-orange-400 text-base absolute -right-5 -bottom-4 p-2 bg-axeda rounded-full box-content"/>
-                </span> 
-            </div>   
-
-            <div className ="lg:col-start-2 lg:col-end-8  mb-5">
-                <h2 className ="text-gray-800 lg:text-2xl text-xl text-yellow-100 uppercase text-center font-body text-justify font-extrabold tracking-widest
-                bg-orange-800 rounded-lg px-12 py-2"> 
-                    INDO en un paraíso productivo, un parque industrial a 12 minutos del libramiento de Mérida.
-                </h2>
-            </div>
         </div>
+ 
+        <div className="lg:col-start-2 lg:col-end-8 mb-5 text-center">
+            <span className="text-xl xl:text-4xl xl:leading-[5.5rem] text-cyan-100 px-24 py-2 border-8 border-axeda relative inline-block">
+                <a className="text-4xl xl:text-4xl text-white  font-body  text-lg text-2xl lg:text-5xl mt-5"
+                href={"https://crm.rosavento.mx/cotizador/ciudad-maya/bora_cdmaya/bora_real?vendedor=MTk2%0A"} target="_blank" rel="noopener noreferrer">
+                    Cotiza TU lote en Terravento
+                </a> 
+                    <RiCheckboxBlankCircleFill className="text-orange-400 text-base absolute -left-5 -top-4 p-2 bg-axeda rounded-full box-content"/>
+                    <RiCheckboxBlankCircleFill className="text-orange-400 text-base absolute -right-5 -top-4 p-2 bg-axeda rounded-full box-content"/>
+                    <RiCheckboxBlankCircleFill className="text-orange-400 text-base absolute -left-5 -bottom-4 p-2 bg-axeda rounded-full box-content"/>
+                    <RiCheckboxBlankCircleFill className="text-orange-400 text-base absolute -right-5 -bottom-4 p-2 bg-axeda rounded-full box-content"/>
+            </span> 
+        </div>
+
+        <div className ="lg:col-start-2 lg:col-end-8  mb-5">
+            <h2 className ="text-gray-800 text-3xl text-white text-center font-sans text-justify px-12 py-2"> 
+                    ¡Conoce la exclusividad de Terravento y sus 322 terrenos!
+            </h2>
+        </div> </div>
     
         {/*By Grupo Axeda*/}
         <hr
