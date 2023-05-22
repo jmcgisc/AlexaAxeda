@@ -133,7 +133,7 @@ const Rosavento = () => {
                     </p>
  
                     <div className="flex items-center mt-6">
-                        <img className="object-cover object-center w-10 h-10 rounded-full" src="/public/ErikaHerrera.png" alt=""/>
+                        <img className="object-cover object-center w-10 h-10 rounded-full" src="/public/ErikaHerrera.jpg" alt=""/>
 
                         <div className="mx-4">
                             <h1 className="text-sm lg:text-base text-gray-700 dark:text-gray-800">Erika Herrera</h1>
@@ -174,8 +174,8 @@ const Rosavento = () => {
                     </p>
  
                     <div className="flex items-center mt-6">
-                        <img className="object-cover object-center w-10 h-10 rounded-full" src="/public/IgnacioPadilla.png" alt="IgnacioPadilla cliente rosavento"/>
-
+                        <img className="object-cover object-center w-10 h-10 rounded-full" src="/public/IgnacioPadilla.jpg" alt="IgnacioPadilla cliente rosavento"/>
+ 
                         <div className="mx-4">
                             <h1 className="text-sm lg:text-base text-gray-700 dark:text-gray-800">Ignacio Padilla</h1>
                             <p className="text-sm text-gray-500 dark:text-gray-400">Inversionista</p>
@@ -308,7 +308,7 @@ const Rosavento = () => {
                             ¡Estarás cerca de todo!
                     </h1>
                     <div className="flex justify-center gap-6"> 
-                        <p className="max-w-2xl text-center text-base font-chivo text-gray-400">
+                        <p className="max-w-2xl text-center text-xl lg:font-chivo text-gray-400">
                             La perfecta ubicación del desarrollo en una de las carreteras más importantes de Cancún te conecta en solo minutos a paradisíacas playas.
                         </p>
                     </div>
@@ -350,13 +350,13 @@ const Rosavento = () => {
                             Empresa orgullosamente mexicana
                         </p>
 
-                        <p className="mt-3 text-base lg:text-xl lg:tracking-widest text-gray-700 font-body text-justify">
+                        <p className="mt-3 lg:text-base lg:text-xl lg:tracking-widest text-gray-700 font-body text-justify">
                                 Una empresa inmobiliaria que busca facilitar el acceso al mundo de las inversiones  de forma inteligente y 
                                 promoviendo alta calidad de vida, desarrollando bienes inmuebles en  las zonas de mayor crecimiento y demanda del 
                                 sureste mexicano, con un solo objetivo en  mente: 
 
                         </p>
-                        <p className="mt-3 text-base  lg:text-xl lg:tracking-widest text-gray-700 font-body text-justify">
+                        <p className="mt-3 lg:text-base lg:text-xl lg:tracking-widest text-gray-700 font-body text-justify">
                             <strong> Superar sus límites y generar abundancia a sus inversionistas. </strong>
                         </p>
                     </div>
