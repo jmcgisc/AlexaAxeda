@@ -118,16 +118,16 @@ const Rosavento = () => {
                         Mérida, Yucatán.
                     </a>
                     
-                    <p className="mt-3 text-sm lg:text-xl text-justify text-gray-500 dark:text-gray-600 md:text-sm">
+                    <p className="mt-3 text-sm lg:text-xl lg:font-body text-justify text-gray-500 dark:text-gray-600 md:text-sm">
                             Destaca por su belleza, cultura, calidad de vida y seguridad, lo que la ha posicionado a su capital entre las mejores ciudades para vivir e 
                             invertir del sureste mexicano.  
                     </p>
 
-                    <p className="mt-3 text-sm lg:text-xl text-justify text-gray-500 dark:text-gray-600 md:text-sm">
+                    <p className="mt-3 text-sm lg:text-xl lg:font-body text-justify text-gray-500 dark:text-gray-600 md:text-sm">
                             Su ubicación permite gran conectividad hacia diversos sitios de interés, así como a otros países a través de su Aeropuerto 
                             Internacional y el Puerto de Progreso. Su excelente ubicación ofrece cercanía con hospitales de primer nivel y centros comerciales; así como de playas y sitios turísticos.
                     </p>
-                    <p className="mt-3 text-sm lg:text-xl text-justify text-gray-500 dark:text-gray-600 md:text-sm">
+                    <p className="mt-3 text-sm lg:text-xl lg:font-body text-justify text-gray-500 dark:text-gray-600 md:text-sm">
                             “Rosavento lo elegí por su ubicación y porque Mérida es una de las ciudades más  seguras, esta ciudad tiene mucho futuro, 
                             aparte de que el financiamiento es bastante  cómodo”
                     </p>
@@ -163,12 +163,12 @@ const Rosavento = () => {
                         Cancún, Quintana Roo.
                     </a>
                     
-                    <p className="mt-3 text-sm lg:text-xl text-justify text-gray-500 dark:text-gray-600 md:text-sm">
+                    <p className="mt-3 text-sm lg:text-xl lg:font-body text-justify text-gray-500 dark:text-gray-600 md:text-sm">
                             Cuenta con municipios turísticos de alta demanda nacional e internacional, gracias a su ubicación privilegiada al colindar con el mar caribe, 
                             su Aeropuerto Internacional y su estilo de vida donde la naturaleza converge con infraestructuras de primer nivel, favoreciendo las inversiones y plusvalía.
                     </p>
  
-                    <p className="mt-3 text-sm lg:text-xl text-justify text-gray-500 dark:text-gray-600 md:text-sm">
+                    <p className="mt-3 text-sm lg:text-xl lg:font-body text-justify text-gray-500 dark:text-gray-600 md:text-sm">
                             “Me parece muy interesante todo lo que se ha desarrollado, afortunadamente la  inversión está bien respaldada, además de que la gente que trabaja en 
                             Axeda es muy  positiva, lo cual te motiva a invertir".
                     </p>
@@ -209,7 +209,7 @@ const Rosavento = () => {
             </div>
 
             <div className ="lg:col-start-2 lg:col-end-6  mb-5">
-                <h2 className ="text-gray-600 text-xl text-center font-body text-justify px-12 py-2"> 
+                <h2 className ="text-gray-600 text-xl text-center xl:font-body text-justify px-12 py-2"> 
                     El máster plan de Rosavento incluye 142 lotes unifamiliares excelentes para construir casas o villas individuales.
                     Las medidas de los terrenos van desde 240 m2
                 </h2>
