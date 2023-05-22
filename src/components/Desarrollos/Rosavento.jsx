@@ -42,27 +42,27 @@ const Rosavento = () => {
         <div className="grid xl:grid-cols-2 gap-4">
             <div className="flex flex-col lg:grid-cols-4 lg:gap-2 rounded-3xl"> 
                 <div className="grid grid-cols-1">  
-                    <h1 className="text-[45px] text-axeda font-title px-12 mt-10 lg:mt-18 ">
+                    <h1 className="text-[45px] text-axeda font-title px-6 lg:px-36 mt-10 lg:mt-18 ">
                         Rosavento -Ciudad Maya-
                     </h1>
-                        <p className ="text-gray-600 text-xl font-body text-gray-600 text-bold text-justify px-12 py-2">
+                        <p className ="text-gray-700 text-xl xl:font-body text-bold text-justify px-6 lg:px-36 py-2">
                             Terrenos residenciales al norte de Mérida. Un paraíso con mensualidades desde $1,992.00 MXN 
                         </p>   
 
-                    <h2 className="text-axeda font-title text-3xl px-12 py-2 mt-3">
+                    <h2 className="text-axeda text-3xl font-title px-6 lg:px-36 py-2 mt-3">
                             Rosavento Mérida
                     </h2>   
 
-                        <p className="text-gray-700 text-base font-body text-justify tracking-widest px-12 py-2">
-                            Nuestros terrenos residenciales se encuentran situados dentro de un desarrollo al norte de Mérida, con todos los servicios a pie de lote. Su excelente ubicación ofrece cercanía con hospitales de primer nivel y centros comerciales; así como de playas y sitios turísticos.
+                        <p className="text-gray-700 text-xl xl:font-body text-justify tracking-widest px-6 lg:px-36 py-2">
+                            Nuestros terrenos residenciales se encuentran situados dentro de un desarrollo al norte de Mérida, con todos los servicios a pie de lote. 
                         </p>
 
-                    <h2 className="text-axeda font-title text-3xl py-2 mt-3 px-12">
+                    <h2 className="text-axeda text-3xl font-title py-2 mt-3 px-6 lg:px-36">
                             Rosavento Cancún
                     </h2>   
  
-                        <p className="text-gray-700 text-base font-body text-justify tracking-widest px-12 py-2">
-                            Nuestros terrenos se encuentran dentro de un desarrollo residencial con amenidades que aseguran tu calidad de vida, seguridad y la plusvalía de tu patrimonio. La ubicación perfecta para invertir y disfrutar de la vida que siempre quisiste en el caribe mexicano.
+                        <p className="text-gray-700 text-xl xl:font-body text-justify tracking-widest px-6 lg:px-36 py-2 mb-4">
+                            Nuestros terrenos se encuentran dentro de un desarrollo residencial con amenidades que aseguran tu calidad de vida, seguridad y la plusvalía de tu patrimonio. 
                         </p>
                 </div> 
             </div>
@@ -87,7 +87,7 @@ const Rosavento = () => {
             </div>
 
             <div className="lg:col-span-3 flex flex-col justify-center"> 
-                <h1 className="font-sans text-lg uppercase tracking-[0.5rem] mb-4 italic text-clip"><span>Cancún</span>, Invierte de forma inteligente</h1>
+                <h1 className="font-sans text-base text-center lg:text-3xl uppercase tracking-[0.5rem] italic text-clip"><span>Cancún</span>, Invierte de forma inteligente</h1>
             </div>
         </div> 
  
@@ -118,16 +118,16 @@ const Rosavento = () => {
                         Mérida, Yucatán.
                     </a>
                     
-                    <p className="mt-3 text-sm text-gray-500 dark:text-gray-600 md:text-sm">
+                    <p className="mt-3 text-sm lg:text-xl text-justify text-gray-500 dark:text-gray-600 md:text-sm">
                             Destaca por su belleza, cultura, calidad de vida y seguridad, lo que la ha posicionado a su capital entre las mejores ciudades para vivir e 
                             invertir del sureste mexicano.  
                     </p>
 
-                    <p className="mt-3 text-sm text-gray-500 dark:text-gray-600 md:text-sm">
+                    <p className="mt-3 text-sm lg:text-xl text-justify text-gray-500 dark:text-gray-600 md:text-sm">
                             Su ubicación permite gran conectividad hacia diversos sitios de interés, así como a otros países a través de su Aeropuerto 
-                            Internacional y el Puerto de Progreso.
+                            Internacional y el Puerto de Progreso. Su excelente ubicación ofrece cercanía con hospitales de primer nivel y centros comerciales; así como de playas y sitios turísticos.
                     </p>
-                    <p className="mt-3 text-sm text-gray-500 dark:text-gray-600 md:text-sm">
+                    <p className="mt-3 text-sm lg:text-xl text-justify text-gray-500 dark:text-gray-600 md:text-sm">
                             “Rosavento lo elegí por su ubicación y porque Mérida es una de las ciudades más  seguras, esta ciudad tiene mucho futuro, 
                             aparte de que el financiamiento es bastante  cómodo”
                     </p>
@@ -136,7 +136,7 @@ const Rosavento = () => {
                         <img className="object-cover object-center w-10 h-10 rounded-full" src="/public/ErikaHerrera.png" alt=""/>
 
                         <div className="mx-4">
-                            <h1 className="text-sm text-gray-700 dark:text-gray-800">Erika Herrera</h1>
+                            <h1 className="text-sm lg:text-base text-gray-700 dark:text-gray-800">Erika Herrera</h1>
                             <p className="text-sm text-gray-500 dark:text-gray-400">Inversionista</p> 
                         </div>
                     </div>
@@ -163,12 +163,12 @@ const Rosavento = () => {
                         Cancún, Quintana Roo.
                     </a>
                     
-                    <p className="mt-3 text-sm text-gray-500 dark:text-gray-600 md:text-sm">
+                    <p className="mt-3 text-sm lg:text-xl text-justify text-gray-500 dark:text-gray-600 md:text-sm">
                             Cuenta con municipios turísticos de alta demanda nacional e internacional, gracias a su ubicación privilegiada al colindar con el mar caribe, 
                             su Aeropuerto Internacional y su estilo de vida donde la naturaleza converge con infraestructuras de primer nivel, favoreciendo las inversiones y plusvalía.
                     </p>
  
-                    <p className="mt-3 text-sm text-gray-500 dark:text-gray-600 md:text-sm">
+                    <p className="mt-3 text-sm lg:text-xl text-justify text-gray-500 dark:text-gray-600 md:text-sm">
                             “Me parece muy interesante todo lo que se ha desarrollado, afortunadamente la  inversión está bien respaldada, además de que la gente que trabaja en 
                             Axeda es muy  positiva, lo cual te motiva a invertir".
                     </p>
@@ -177,7 +177,7 @@ const Rosavento = () => {
                         <img className="object-cover object-center w-10 h-10 rounded-full" src="/public/IgnacioPadilla.png" alt="IgnacioPadilla cliente rosavento"/>
 
                         <div className="mx-4">
-                            <h1 className="text-sm text-gray-700 dark:text-gray-800">Ignacio Padilla</h1>
+                            <h1 className="text-sm lg:text-base text-gray-700 dark:text-gray-800">Ignacio Padilla</h1>
                             <p className="text-sm text-gray-500 dark:text-gray-400">Inversionista</p>
                         </div>
                     </div>
@@ -246,8 +246,8 @@ const Rosavento = () => {
         </div>
  
         <div className="lg:col-start-2 lg:col-end-8 mb-5 text-center">
-            <span className="text-xl xl:text-4xl xl:leading-[5.5rem] text-cyan-100 px-24 py-2 border-8 border-axeda relative inline-block">
-                <a className="text-4xl xl:text-4xl text-white  font-body  text-lg text-2xl lg:text-5xl mt-5"
+            <span className="text-xl  xl:leading-[5.5rem] text-cyan-100 px-24 py-2 border-8 border-axeda relative inline-block">
+                <a className=" text-white font-body lg:text-5xl mt-5 sm:title"
                 href={"https://crm.rosavento.mx/cotizador/ciudad-maya/bora_cdmaya/bora_real?vendedor=MTk2%0A"} target="_blank" rel="noopener noreferrer">
                     Cotiza TU lote en Bora Real
                 </a> 
@@ -273,10 +273,10 @@ const Rosavento = () => {
             </div>
 
         <div className="lg:col-start-2 lg:col-end-8 mb-5 text-center">
-            <span className="text-xl xl:text-4xl xl:leading-[5.5rem] text-cyan-100 px-24 py-2 border-8 border-axeda relative inline-block">
-                <a className="text-4xl xl:text-4xl text-white  font-body  text-lg text-2xl lg:text-5xl mt-5"
+            <span className="text-xl  xl:leading-[5.5rem] text-cyan-100 px-24 py-2 border-8 border-axeda relative inline-block">
+                <a className=" text-white font-body lg:text-5xl mt-5 sm:title"
                 href={"https://crm.rosavento.mx/cotizador/cancun/cancun_levante/levante_real?vendedor=MTk2%0A"} target="_blank" rel="noopener noreferrer">
-                    Cotiza TU lote en Bora Real
+                    Cotiza TU lote en Cancún
                 </a> 
                         <RiCheckboxBlankCircleFill className="text-orange-400 text-base absolute -left-5 -top-4 p-2 bg-axeda rounded-full box-content"/>
                         <RiCheckboxBlankCircleFill className="text-orange-400 text-base absolute -right-5 -top-4 p-2 bg-axeda rounded-full box-content"/>
