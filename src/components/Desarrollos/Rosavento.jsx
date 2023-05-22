@@ -174,7 +174,7 @@ const Rosavento = () => {
                     </p>
  
                     <div className="flex items-center mt-6">
-                        <img className="object-cover object-center w-10 h-10 rounded-full" src="https://axeda.mx/hubfs/Comentario-Ignacio-Padilla.jpg" alt=""/>
+                        <img className="object-cover object-center w-10 h-10 rounded-full" src="/public/IgnacioPadilla.png" alt="IgnacioPadilla cliente rosavento"/>
 
                         <div className="mx-4">
                             <h1 className="text-sm text-gray-700 dark:text-gray-800">Ignacio Padilla</h1>
