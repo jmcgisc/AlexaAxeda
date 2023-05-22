@@ -6,7 +6,7 @@ import FormularioContacto from "../Aux/FormularioContacto";
 import MapSection from '../Aux/MapRosenda'
 import Slider from './SliderRosenda'; 
 import { Swiper, SwiperSlide } from 'swiper/react'; 
-import SliderAmenidadesRosenda from './SliderAmenidades/SliderAmenidadesRosenda';
+import SliderAmenidades from './SliderAmenidades/SliderAmenidades';
 import { Pagination } from "swiper";
 
 const Rosenda = () => {  
@@ -105,98 +105,12 @@ const Rosenda = () => {
     
         {/*Ocultamos para mobile*/} 
         <div className="hidden lg:grid lg:grid-cols-1 lg:gap-8">
- 
         <hr
-            className="my-12 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-500 to-transparent opacity-25 dark:opacity-100"/>
- 
+            className="my-10 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-500 to-transparent opacity-25 dark:opacity-100"/>
         {/*Amenidades*/} 
+            <SliderAmenidades/>
+        </div>  
 
-        <Swiper
-        pagination={{
-          dynamicBullets: true,
-        }}
-        modules={[Pagination]}
-        className="mySwiper"
-      >
-      <SwiperSlide>
-            <div className="grid xl:grid-cols-7 xl:gap-4 place-items-center xl:py-30 bg-[url('/public/homeBack1.png')]">
-                <div></div>
-                        <img src="amenidades_azul.png" className="h-28 w-14 py-4 "/>    
-                        <p className ="text-3xl text-axeda py-10">Amenidades</p>
-                <div></div>
-                        <img src="maps_azul.png" className="h-28 w-14 py-4"/>
-                        <p className ="text-3xl text-axeda py-10 ">Ubicación</p>
-                <div></div>
-
-                <div></div>
-                        <img src="plusvalia_azul.png" className="h-28 w-14 py-4"/>
-                        <p className ="text-3xl text-axeda py-10">Plusvalía</p>
-                <div></div>
-                        <img src="areasv_azul.png" className="h-28 w-14 py-4"/>
-                        <p className ="text-3xl text-axeda  py-10">Áreas Verdes</p>
-                <div></div>
- 
-                <div></div>
-                        <img src="familia_azul.png" className="h-28 w-14 py-4"/>
-                        <p className ="text-3xl text-axeda py-10">Ambiente Familiar</p>
-                <div></div>
-                        <img src="credito_azul.png" className="h-28 w-14 py-4"/>
-                        <p className ="text-3xl text-axeda py-10 ">Facilidad de pago</p>
-                <div></div>
-
-                <div></div> 
-                        <img src="desarrollos_azul.png" className="h-28 w-14 py-4"/>
-                        <p className ="text-3xl text-axeda py-10">Desarrollos</p>
-                <div></div>
-                        <img src="ubicacion_azul.png" className="h-28 w-14 py-4"/>
-                        <p className ="text-3xl text-axeda py-10 ">Facilidad de pago</p>
-                <div></div>
-            </div> 
-        </SwiperSlide>
-        <SwiperSlide>
-            <div className="grid xl:grid-cols-7 xl:gap-4 place-items-center xl:py-30 bg-[url('/public/backGreen.png')]">
-                <div></div>
-                        <img src="amenidades.png" className="h-14 w-7 py-4 "/>    
-                        <p className ="text-3xl text-axeda py-10">Amenidades</p>
-                <div></div>
-                        <img src="maps.png" className="h-14 w-7 py-4"/>
-                        <p className ="text-3xl text-axeda py-10 ">Ubicación</p>
-                <div></div>
-                <div></div>
-                        <img src="plusvalia.png" className="h-14 w-7 py-4"/>
-                        <p className ="text-3xl text-axeda py-10">Plusvalía</p>
-                <div></div>
-                        <img src="areasv.png" className="h-14 w-7 py-4"/>
-                        <p className ="text-3xl text-axeda  py-10">Áreas Verdes</p>
-                <div></div>
-                <div></div>
-                        <img src="familia.png" className="h-14 w-7 py-4"/>
-                        <p className ="text-3xl text-axeda py-10">Ambiente Familiar</p>
-                <div></div>
-                        <img src="credito.png" className="h-14 w-7 py-4"/>
-                        <p className ="text-3xl text-axeda py-10 ">Facilidad de pago</p>
-                <div></div>
-                <div></div> 
-                        <img src="desarrollos.png" className="h-14 w-7 py-4"/>
-                        <p className ="text-3xl text-axeda py-10">Desarrollos</p>
-                <div></div>
-                        <img src="ubicacion.png" className="h-14 w-7 py-4"/>
-                        <p className ="text-3xl text-axeda py-10 ">Facilidad de pago</p>
-                <div></div>
-                </div>
-        </SwiperSlide>
-      </Swiper>
-
-            </div>
-
-            {/*Slider Mobile*/}
-            <div className="lg:hidden">
-                    <div className="grid grid-cols-1 gap-8">
-                        <div className="flex flex-row-reverse sm:col-start-1 w-full h-56 xl:h-[600px] xl:ellipse-desarrollos"> 
-                            <SliderAmenidadesRosenda/>
-                        </div>
-                    </div>
-            </div>
 
             {/*MasterPlan*/} 
             <hr
