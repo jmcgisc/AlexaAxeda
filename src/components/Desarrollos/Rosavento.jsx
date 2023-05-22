@@ -350,13 +350,13 @@ const Rosavento = () => {
                             Empresa orgullosamente mexicana
                         </p>
 
-                        <p className="mt-3 lg:text-base lg:text-xl lg:tracking-widest text-gray-700 font-body text-justify">
+                        <p className="mt-3 lg:text-xl lg:tracking-widest text-gray-700 lg:font-body text-justify">
                                 Una empresa inmobiliaria que busca facilitar el acceso al mundo de las inversiones  de forma inteligente y 
                                 promoviendo alta calidad de vida, desarrollando bienes inmuebles en  las zonas de mayor crecimiento y demanda del 
                                 sureste mexicano, con un solo objetivo en  mente: 
 
                         </p>
-                        <p className="mt-3 lg:text-base lg:text-xl lg:tracking-widest text-gray-700 font-body text-justify">
+                        <p className="mt-3 lg:text-xl lg:tracking-widest text-gray-700 lg:font-body text-justify">
                             <strong> Superar sus límites y generar abundancia a sus inversionistas. </strong>
                         </p>
                     </div>
