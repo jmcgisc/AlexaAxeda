@@ -70,7 +70,7 @@ function App() {
               statusMessage = "Desarrollos Axeda"
               darkMode="enable"
               chatMessage ="¡Hola! ¿En que proyecto estas interesado? 🤝 "   
-              avatar="public/AlexaDelgado.webp"
+              avatar="AlexaDelgado.webp"
         />
  
         <Footer/>     
