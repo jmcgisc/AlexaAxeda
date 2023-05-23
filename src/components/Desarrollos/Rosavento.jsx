@@ -13,7 +13,7 @@ import SliderAmenidades from './SliderAmenidades/SliderAmenidades';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 // Import Swiper styles
-import 'swiper/css';
+import 'swiper/css'; 
 
 import {RiCheckboxBlankCircleFill} from "react-icons/ri"
 
@@ -132,8 +132,8 @@ const Rosavento = () => {
                             aparte de que el financiamiento es bastante  cómodo”
                     </p>
  
-                    <div className="flex items-center mt-6">
-                        <img className="object-cover object-center w-10 h-10 rounded-full" src="/public/ErikaHerrera.jpg" alt=""/>
+                    <div className="flex items-center mt-6"> 
+                        <img className="object-cover object-center w-10 h-10 rounded-full" src="/public/ErikaHerrera.jpg" alt="ErikaHerrera"/>
 
                         <div className="mx-4">
                             <h1 className="text-sm lg:text-base text-gray-700 dark:text-gray-800">Erika Herrera</h1>
