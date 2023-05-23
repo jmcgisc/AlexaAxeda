@@ -133,7 +133,7 @@ const Rosavento = () => {
                     </p>
  
                     <div className="flex items-center mt-6"> 
-                        <img className="object-cover object-center w-10 h-10 rounded-full" src="/public/ErikaHerrera.jpg" alt="ErikaHerrera"/>
+                        <img className="object-cover object-center w-10 h-10 rounded-full" src='/public/ErikaHerrera.jpg' alt="ErikaHerrera"/>
 
                         <div className="mx-4">
                             <h1 className="text-sm lg:text-base text-gray-700 dark:text-gray-800">Erika Herrera</h1>
