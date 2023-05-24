@@ -110,14 +110,17 @@ export const Home = () => {
             <img
             src="Desarrollos.webp"
             className="w-10 h-10 md:w-20 md:h-20 object-cover rounded-full border-l-8 border-gray-600 absolute top-[12%] right-[20%] xl:right-[10%]"
+            alt=''
             />
             <img
             src="slide-1.webp"
             className="w-10 h-10 md:w-20 md:h-20 object-cover rounded-full border-l-8 border-gray-600 absolute top-[10%] xl:top-[2%] left-[20%] xl:left-[10%]"
+            alt=''
             />
             <img
             src="Rosavento-Cancun.webp"
             className="w-10 h-10 md:w-20 md:h-20 object-cover rounded-full absolute bottom-[5%] left-[15%] xl:left-[3%] -rotate-12"
+            alt=''
             />
             </div>
             
