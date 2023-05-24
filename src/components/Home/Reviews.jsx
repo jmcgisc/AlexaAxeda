@@ -30,22 +30,27 @@ const Reviews = () => {
                 <img
                     src="https://img.freepik.com/foto-gratis/empresaria-confiada-sonriente-que-presenta-brazos-cruzados_1262-20950.jpg"
                     className="w-8 h-8 md:w-14 md:h-14 object-cover rounded-full"
+                    alt=''
                 />
                 <img
                     src="https://img.freepik.com/foto-gratis/hombre-barbudo-feliz-sorprendido-camisa-apuntando-lejos_171337-5021.jpg"
                     className="w-10 h-10 md:w-16 md:h-16 object-cover rounded-full"
+                    alt=''
                 />
                 <img
                     src="https://img.freepik.com/foto-gratis/hombre-negocios-dueno-empresa-oficina_1303-15851.jpg"
                     className="w-12 h-12 md:w-20 md:h-20 object-cover rounded-full ring-4 ring-axeda p-1 bg-white"
+                    alt=''
                 />
                 <img
                     src="https://img.freepik.com/foto-gratis/retrato-hombre-afroamericano-inteligente-profesional-pie-manos-cruzadas-sobre-pecho-pose-confianza_176420-33861.jpg"
                     className="w-10 h-10 md:w-16 md:h-16 object-cover rounded-full"
+                    alt=''
                 />
                 <img
                     src="https://img.freepik.com/foto-gratis/feliz-joven_1098-20869.jpg"
                     className="w-8 h-8 md:w-14 md:h-14 object-cover rounded-full"
+                    alt=''
                 />
                 </div>
              
