@@ -2,10 +2,9 @@ import React from 'react';
 import ReactPlayer  from 'react-player';
 
 const Video = () => {
-    return (
-        <div>
-        {/*/ Desarrollos Axeda */}
-        <div className="bg-white dark:bg-gray-900">
+    return ( 
+        <div className="bg-BackgroundGray	 p-8 flex flex-col items-center justify-center gap-8 mt-20 xl:mt-0 overflow-x-auto">
+        {/*/ Desarrollos Axeda */} 
               <div className="container px-6 py-10 mx-auto">
                   <h1 className="text-3xl font-title text-center text-axeda capitalize lg:text-4xl"> 
                     Evento de "Supervisión de obra de "
@@ -40,9 +39,7 @@ const Video = () => {
                           </p>
                       </div>
                   </div>
-              </div>
-          </div>
-            
+              </div> 
         </div>
     )
 }
