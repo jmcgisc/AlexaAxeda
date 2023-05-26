@@ -1,10 +1,12 @@
-import React from 'react'
-import {RiCheckboxBlankCircleFill, RiPlayFill, RiStarFill} from "react-icons/ri"
-import Menciones from "./Menciones" 
-import Desarrollos from "./Desarrollos"
-import Reviews from "./Reviews"
-import FormularioContacto from "../Aux/FormularioContacto"
-import Popup from 'reactjs-popup';
+import React        from 'react';
+import {RiCheckboxBlankCircleFill, RiPlayFill, RiStarFill} 
+                    from "react-icons/ri";
+import Menciones    from "./Menciones";
+import Desarrollos  from "./Desarrollos";
+import Reviews      from "./Reviews";
+import FormularioContacto from "../Aux/FormularioContacto";
+import Video        from "../Aux/Video";
+import Popup        from 'reactjs-popup';
 import 'reactjs-popup/dist/index.css';
 import { getAnalytics, logEvent, setUserProperties } from "firebase/analytics"; 
 
@@ -128,6 +130,7 @@ export const Home = () => {
             
             {/*Body Page*/}
             <Desarrollos/>
+            <Video/>
             <Reviews/>
             <Menciones/>
             <FormularioContacto/> 
