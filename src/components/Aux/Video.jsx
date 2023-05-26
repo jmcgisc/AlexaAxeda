@@ -31,7 +31,7 @@ const Video = () => {
                           </p>
   
                           <p className="mt-3 text-base lg:text-xl lg:tracking-widest text-gray-700 font-body text-justify">
-                                  Presidente Municipal de Progreso 
+                                  Presidente Municipal de Progreso  
   
                           </p>
                           <p className="mt-3 text-base  lg:text-xl lg:tracking-widest text-gray-700 font-body text-justify">
