@@ -42,26 +42,26 @@ const Rosavento = () => {
         <div className="grid xl:grid-cols-2 gap-4">
             <div className="flex flex-col lg:grid-cols-4 lg:gap-2 rounded-3xl"> 
                 <div className="grid grid-cols-1">  
-                    <h1 className="text-[45px] text-axeda font-title px-6 lg:px-36 mt-10 lg:mt-18 ">
+                    <h1 className="text-[45px] text-axeda font-title px-6 lg:px-24 mt-10 lg:mt-18 ">
                         Rosavento -Ciudad Maya-
                     </h1>
-                        <p className ="text-gray-700 text-xl xl:font-body text-bold text-justify px-6 lg:px-36 py-2">
+                        <p className ="text-gray-700 text-xl xl:font-body text-bold text-justify px-6 lg:px-24 py-2">
                             Terrenos residenciales al norte de Mérida. Un paraíso con mensualidades desde $1,992.00 MXN 
                         </p>   
 
-                    <h2 className="text-axeda text-3xl font-title px-6 lg:px-36 py-2 mt-3">
+                    <h2 className="text-axeda text-3xl font-title px-6 lg:px-24 py-2 mt-3">
                             Rosavento Mérida
                     </h2>   
 
-                        <p className="text-gray-700 text-xl xl:font-body text-justify tracking-widest px-6 lg:px-36 py-2">
+                        <p className="text-gray-700 text-xl xl:font-body text-justify tracking-widest px-6 lg:px-24 py-2">
                             Nuestros terrenos residenciales se encuentran situados dentro de un desarrollo al norte de Mérida, con todos los servicios a pie de lote. 
                         </p>
 
-                    <h2 className="text-axeda text-3xl font-title py-2 mt-3 px-6 lg:px-36">
+                    <h2 className="text-axeda text-3xl font-title py-2 mt-3 px-6 lg:px-24">
                             Rosavento Cancún
                     </h2>   
  
-                        <p className="text-gray-700 text-xl xl:font-body text-justify tracking-widest px-6 lg:px-36 py-2 mb-4">
+                        <p className="text-gray-700 text-xl xl:font-body text-justify tracking-widest px-6 lg:px-24 py-2 mb-4">
                             Nuestros terrenos se encuentran dentro de un desarrollo residencial con amenidades que aseguran tu calidad de vida, seguridad y la plusvalía de tu patrimonio. 
                         </p>
                 </div> 
