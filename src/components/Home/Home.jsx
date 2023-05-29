@@ -1,12 +1,13 @@
 import React        from 'react';
 import {RiCheckboxBlankCircleFill, RiPlayFill, RiStarFill} 
                     from "react-icons/ri";
-import Menciones    from "./Menciones";
-import Desarrollos  from "./Desarrollos";
-import Reviews      from "./Reviews";
-import FormularioContacto from "../Aux/FormularioContacto";
-import VideoGobernador    from "../Aux/VideoGobernador";
 import Popup        from 'reactjs-popup';
+import Desarrollos  from "./Desarrollos";
+import Slider       from '../Aux/Slider';
+import VideoGobernador    from "../Aux/VideoGobernador";
+import Reviews      from "./Reviews";
+import Menciones    from "./Menciones";
+import FormularioContacto from "../Aux/FormularioContacto";
 import 'reactjs-popup/dist/index.css';
 import { getAnalytics, logEvent, setUserProperties } from "firebase/analytics"; 
 
@@ -135,6 +136,7 @@ export const Home = () => {
             
             {/*Body Page*/}
             <Desarrollos/>
+            <Slider/>
             <VideoGobernador/>
             <Reviews/>
             <Menciones/>
