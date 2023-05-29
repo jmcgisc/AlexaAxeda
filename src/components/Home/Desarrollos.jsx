@@ -19,10 +19,10 @@ const Desarrollos = () => {
                     <div className="flex flex-col gap-2 rounded-3xl"> 
                             <img    src="carrusel8.webp" className="w-full h-56 xl:h-[600px] rounded-3xl transition duration-700 ease-in-out transform hover:-translate-y-1 hover:scale-70 hover:shadow-2xl" 
                                     alt='Terrenos residenciales Axeda'/>
-                                <p className="text-axeda py-5"> Tu terreno la ciudad más bonita y segura de México.
-                                    <h3 className="text-2xl font-bold py-4">ROSAVENTO Ciudad Maya</h3>
+                                <p className="text-axeda py-5 text-center"> Tu terreno la ciudad más bonita y segura de México.
+                                    <h3 className="text-2xl font-bold py-4 text-center">ROSAVENTO Ciudad Maya</h3> 
+                                <p className="text-gray-500 font-chivo text-xl"> Terrenos residenciales al norte de Mérida Un paraíso con mensualidades desde $1,890.00 MXN.</p> 
                                 </p>
-                                <p className="text-gray-500 font-chivo "> Terrenos residenciales al norte de Mérida Un paraíso con mensualidades desde $1,890.00 MXN.</p> 
                     </div>          
                 </NavLink>   
 
@@ -65,7 +65,7 @@ const Desarrollos = () => {
                                     alt='Yucatan crecimiento económico' 
                                 alt='INDO AXEDA' />
                                 <p className="text-gray-500 font-chivo"> 
-                                Yucatán es considerado como el estado con mayor crecimiento económico de México, además es líder en la generación y distribución de energía eléctrica. </p>
+                                Yucatán es considerado como el estado con mayor crecimiento económico de México, líder en la generación de energía eléctrica. </p>
                                     <h3 className="text-2xl font-bold text-gray-400 ">INDO Parque Industrial</h3>
                         </div>
                     </NavLink>   

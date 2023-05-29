@@ -5,7 +5,7 @@ import Menciones    from "./Menciones";
 import Desarrollos  from "./Desarrollos";
 import Reviews      from "./Reviews";
 import FormularioContacto from "../Aux/FormularioContacto";
-import Video        from "../Aux/Video";
+import VideoGobernador    from "../Aux/VideoGobernador";
 import Popup        from 'reactjs-popup';
 import 'reactjs-popup/dist/index.css';
 import { getAnalytics, logEvent, setUserProperties } from "firebase/analytics"; 
@@ -93,8 +93,13 @@ export const Home = () => {
                 <h2 className="text-xl font-bold tracking-[1px] text-gray-800">
                     Te asesoramos desde el inicio
                 </h2>
-                <div className="flex items-center gap-2 text-lg text-gray-500">
-                <RiStarFill className="text-axeda" /> 5.0 ( + 1000 testimonios)
+                <div className="flex items-center gap-2 text-lg text-gray-500"> 5
+                <RiStarFill className="text-axeda" /> 
+                            <a href="https://web.facebook.com/profile.php?id=100063816524796&_rdc=1&_rdr" 
+                            target="_blank"
+                            rel="noopener"> 
+                                    Conoce Nuestros Testimonios
+                            </a>
                 </div>
                 <div className="absolute -right-12 -bottom-12 -z-10">
                 <div className="relative">
@@ -130,7 +135,7 @@ export const Home = () => {
             
             {/*Body Page*/}
             <Desarrollos/>
-            <Video/>
+            <VideoGobernador/>
             <Reviews/>
             <Menciones/>
             <FormularioContacto/> 
