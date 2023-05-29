@@ -136,10 +136,20 @@ export const Home = () => {
             
             {/*Body Page*/}
             <Desarrollos/>
+
+            {/*Imagenes*/}
             <Slider/>
+            
+            {/*Gobernador Kuri*/}
             <VideoGobernador/>
+            
+            {/*Opioniones*/}
             <Reviews/>
+            
+            {/*Prensa*/}
             <Menciones/>
+            
+            {/*Llamado a la acción*/}
             <FormularioContacto/> 
         </>
     ) 
