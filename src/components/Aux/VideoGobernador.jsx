@@ -3,9 +3,9 @@ import ReactPlayer  from 'react-player';
 
 const Video = () => {
     return ( 
-        <div className="bg-BackgroundGray	 p-8 flex flex-col items-center justify-center gap-8 mt-20 xl:mt-0 overflow-x-auto">
+        <div className="bg-BackgroundGray p-2 flex flex-col items-center justify-center gap-8 mt-20 xl:mt-0 overflow-x-auto">
         {/*/ Desarrollos Axeda */} 
-              <div className="container px-6 py-10 mx-auto">
+              <div className="container px-6 py-2 mx-auto">
                   <h1 className="text-3xl font-title text-center text-axeda capitalize lg:text-4xl"> 
                     Evento de "Supervisión de obra de "
                   <strong className="underline decoration-axeda/[.33]"> ROSAVENTO Ciudad Maya.</strong>
@@ -24,14 +24,11 @@ const Video = () => {
                       </div> 
                       
                       <div className="mt-6 lg:w-1/2 lg:mt-0 lg:mx-6 "> 
-  
                           <p className="block mt-4 text-2xl font-semibold text-axeda hover:underline md:text-3xl">
                             Julián Zacarías Curi
                           </p>
-  
                           <p className="mt-3 text-base lg:text-xl lg:tracking-widest text-gray-700 font-body text-justify">
                                   Presidente Municipal de Progreso  
-  
                           </p>
                           <p className="mt-3 text-base  lg:text-xl lg:tracking-widest text-gray-700 font-body text-justify">
                               <strong> El presidente municipal de Progreso, Julían Zacarías Curi, en el acto de Supervisión de la Obra
