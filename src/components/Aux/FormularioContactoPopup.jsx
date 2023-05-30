@@ -1,6 +1,4 @@
 import React, {useState, useEffect, useRef} from 'react'
-import {RiPhoneFill, RiMailFill} from "react-icons/ri"
-import {ImLocation} from "react-icons/im"
 import emailjs from 'emailjs-com'
 import InputField from './InputField'
 import InputEmail from './InputEmail' 
