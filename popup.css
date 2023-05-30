@@ -11,6 +11,20 @@
     transition: 200ms ease-in-out opacity;
 }
 
+.popupMobile {
+    position: fixed;
+    left:0;
+    top:0;
+    width: 100%;
+    height: 100%; 
+    z-index: 1;
+    display: grid; 
+    place-content: center;
+    opacity: 0; 
+    transition: 200ms ease-in-out opacity;
+}
+
+
 .popup-content{
     width: 40vw;
     background-color: #EEEEEE;
