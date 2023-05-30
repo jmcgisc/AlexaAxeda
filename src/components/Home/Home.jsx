@@ -1,7 +1,7 @@
 import React        from 'react';
 import {RiCheckboxBlankCircleFill, RiPlayFill, RiStarFill} 
                     from "react-icons/ri";
-import Popup        from 'reactjs-popup';
+import Popup        from 'reactjs-popup'; 
 import Desarrollos  from "./Desarrollos";
 import Slider       from '../Aux/Slider';
 import VideoGobernador    from "../Aux/VideoGobernador";
@@ -16,7 +16,8 @@ const contentStyle = { width: 1000 };
 
 export const Home = () => {
     return ( 
-        <>
+        <> 
+
         <section id="home" className="min-h-[90vh] grid grid-cols-1 xl:grid-cols-8">  
         {/*Information*/}
         <div className="md:col-span-5 flex items-center justify-center p-12 py-8 xl:p-16">
@@ -137,7 +138,7 @@ export const Home = () => {
             {/*Body Page*/}
             <Desarrollos/>
 
-            {/*Imagenes*/}
+            {/*Prensa*/}
             <Slider/>
             
             {/*Gobernador Kuri*/}

@@ -11,6 +11,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Cagliostro&display=swap" rel="stylesheet">   
     <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda&family=Cagliostro&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital@0;1&family=Cagliostro&family=Cormorant+Garamond:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="popup.css"/>
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
@@ -27,9 +29,36 @@
 
       gtag('config', 'G-XV0MLFH2DX');
     </script>
-    
   </head> 
-  <body>
+
+  <body> 
+
+    <div class="popup">
+      <div class="popup-content">
+          <h1 className="text-slate-80">
+            X
+          </h1>
+          <img src="/public/hotsales.jpg" alt="" />
+      </div>
+    </div>
+
+    <script>
+      const popup = document.querySelector('.popup');
+      const x = document.querySelector('.popup-content h1')
+
+      window.addEventListener('load', () => {
+        popup.classList.add('showPopup');
+        popup.childNodes[1].classList.add('showPopup');
+      })
+
+      x.addEventListener('click', () => {
+        popup.style.display ="none";
+        // popup.classList.add('showPopup');
+        // popup.childNodes[1].classList.remove('showPopup');
+      })
+
+    </script>
+
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
