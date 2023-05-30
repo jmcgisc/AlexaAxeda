@@ -11,7 +11,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Cagliostro&display=swap" rel="stylesheet">   
     <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda&family=Cagliostro&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital@0;1&family=Cagliostro&family=Cormorant+Garamond:wght@300&display=swap" rel="stylesheet">
-
     <link rel="stylesheet" href="popup.css"/>
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
@@ -22,20 +21,20 @@
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-XV0MLFH2DX">
     </script>
+
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-
       gtag('config', 'G-XV0MLFH2DX');
     </script>
   </head> 
 
   <body> 
 
-    <div class="popup">
-      <div class="popup-content">
-          <h1 className="text-slate-80">
+    <div class="popup-offer">
+      <div class="popup-offer-content">
+          <h1 className="text-slate-950">
             X
           </h1>
           <img src="/public/hotsales.jpg" alt="" />
@@ -43,37 +42,27 @@
     </div>
 
     <script>
-  let navegador = navigator.userAgent;
-        if (navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/webOS/i) || navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i) || navigator.userAgent.match(/iPod/i) || navigator.userAgent.match(/BlackBerry/i) || navigator.userAgent.match(/Windows Phone/i)) {
-                 
-      const popup = document.querySelector('.popupMobile');
-      const x = document.querySelector('.popup-content h1')
+
+      let navegador = navigator.userAgent;
+      if (navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/webOS/i) || navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i) || navigator.userAgent.match(/iPod/i) || navigator.userAgent.match(/BlackBerry/i) || navigator.userAgent.match(/Windows Phone/i)) {
+                  
+        console.log("version mobile")
+
+      } else {
+
+      const popupOffer = document.querySelector('.popup-offer');
+      const x = document.querySelector('.popup-offer-content h1')
 
       window.addEventListener('load', () => {
-        popup.classList.add('showPopup');
-        popup.childNodes[1].classList.add('showPopup');
+        popupOffer.classList.add('showPopup-offer');
+        popupOffer.childNodes[1].classList.add('showPopup-offer');
       })
 
       x.addEventListener('click', () => {
-        popup.style.display ="none";
+        popupOffer.style.display ="none"; 
         // popup.classList.add('showPopup');
         // popup.childNodes[1].classList.remove('showPopup');
-      })
-        } else {
-
-
-      const popup = document.querySelector('.popup');
-      const x = document.querySelector('.popup-content h1')
-
-      window.addEventListener('load', () => {
-        popup.classList.add('showPopup');
-        popup.childNodes[1].classList.add('showPopup');
-      })
-
-      x.addEventListener('click', () => {
-        popup.style.display ="none";
-        // popup.classList.add('showPopup');
-        // popup.childNodes[1].classList.remove('showPopup');
+        
       })
 
         }
