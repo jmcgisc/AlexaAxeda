@@ -46,40 +46,42 @@
       let navegador = navigator.userAgent;
       if (navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/webOS/i) || navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i) || navigator.userAgent.match(/iPod/i) || navigator.userAgent.match(/BlackBerry/i) || navigator.userAgent.match(/Windows Phone/i)) {
           
-        console.log("versión mobile")
-        // const popupOffer = document.querySelector('.popup-offer');
-        // const x = document.querySelector('.popup-offer-content h1')
-
-        // window.addEventListener('load', () => {
-
-        //   popupOffer.classList.remove('popup-offer');
-        //   popupOffer.classList.add('popup-offer-mobile'); 
-
-        //   popupOffer.childNodes[1].classList.add('showPopup-offer');
-        // })
-
-        // x.addEventListener('click', () => {
-        //   popupOffer.style.display ="none"; 
-          
-        // })
-
-
-      } else {
-
         const popupOffer = document.querySelector('.popup-offer');
         const x = document.querySelector('.popup-offer-content h1')
 
         window.addEventListener('load', () => {
-          popupOffer.classList.add('showPopup-offer');
+
+          popupOffer.classList.remove('popup-offer');
+          popupOffer.classList.add('popup-offer'); 
+
           popupOffer.childNodes[1].classList.add('showPopup-offer');
         })
 
         x.addEventListener('click', () => {
           popupOffer.style.display ="none"; 
-          // popup.classList.add('showPopup');
-          // popup.childNodes[1].classList.remove('showPopup');
+          
+        })
+
+
+      } else {
+        console.log("version web")
+
+      //   const popupOffer = document.querySelector('.popup-offer');
+      //   const x = document.querySelector('.popup-offer-content h1')
+
+      //   window.addEventListener('load', () => {
+      //     popupOffer.classList.add('showPopup-offer');
+      //     popupOffer.childNodes[1].classList.add('showPopup-offer');
+      //   })
+
+      //   x.addEventListener('click', () => {
+      //     popupOffer.style.display ="none"; 
+
+
+      //     // popup.classList.add('showPopup');
+      //     // popup.childNodes[1].classList.remove('showPopup');
         
-      })
+      // })
 
         }
     
