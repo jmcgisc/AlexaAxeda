@@ -31,7 +31,7 @@
   </head> 
 
   <body> 
-<!-- 
+
     <div class="popup-offer">
       <div class="popup-offer-content">
           <h1 className="text-slate-950">
@@ -39,33 +39,43 @@
           </h1>
           <img src="/public/hotsales.jpg" alt="" />
       </div>
-    </div> -->
+    </div>
 
     <script>
 
       let navegador = navigator.userAgent;
       if (navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/webOS/i) || navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i) || navigator.userAgent.match(/iPod/i) || navigator.userAgent.match(/BlackBerry/i) || navigator.userAgent.match(/Windows Phone/i)) {
-                  
+          
+        const popupOffer = document.querySelector('.popup-offer');
+        const x = document.querySelector('.popup-offer-content h1')
 
+        window.addEventListener('load', () => {
 
-        console.log("version mobile")
-         
+          popupOffer.classList.remove('popup-offer');
+          popupOffer.classList.add('popup-offer-mobile');
+          popupOffer.childNodes[1].classList.add('showPopup-offer');
+        })
+
+        x.addEventListener('click', () => {
+          popupOffer.style.display ="none"; 
+          
+        })
 
 
       } else {
 
-      const popupOffer = document.querySelector('.popup-offer');
-      const x = document.querySelector('.popup-offer-content h1')
+        const popupOffer = document.querySelector('.popup-offer');
+        const x = document.querySelector('.popup-offer-content h1')
 
-      window.addEventListener('load', () => {
-        popupOffer.classList.add('showPopup-offer');
-        popupOffer.childNodes[1].classList.add('showPopup-offer');
-      })
+        window.addEventListener('load', () => {
+          popupOffer.classList.add('showPopup-offer');
+          popupOffer.childNodes[1].classList.add('showPopup-offer');
+        })
 
-      x.addEventListener('click', () => {
-        popupOffer.style.display ="none"; 
-        // popup.classList.add('showPopup');
-        // popup.childNodes[1].classList.remove('showPopup');
+        x.addEventListener('click', () => {
+          popupOffer.style.display ="none"; 
+          // popup.classList.add('showPopup');
+          // popup.childNodes[1].classList.remove('showPopup');
         
       })
 
