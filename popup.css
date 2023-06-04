@@ -3,29 +3,18 @@
     width: 100%;
     height: 100%; 
     z-index: 1;
+    margin: 6%; 
     display: grid; 
     place-content: center;
     opacity: 1; 
     transition: 200ms ease-in-out opacity;
 }
-/* 
-.popup-offer-mobile{
-    position: fixed;
-    width: 100%;
-    height: 120%; 
-    z-index: 1;
-    display: grid; 
-    place-content: center;
-    opacity: 1; 
-    transition: 200ms ease-in-out opacity;
-}
- */
 
 .popup-offer-content{ 
-    width: 80vw;
+    width: 45vw;
     background-color: #EEEEEE;
     padding: 1rem;
-    box-shadow: 0 0 .5em rgba(2, 6, 23, 2);
+    box-shadow: 0 0 .5em rgba(2, 6, 23, 2); 
     border-radius: .8em;
     opacity: 0; 
     transform: translateY(20%);
@@ -33,7 +22,6 @@
                 200ms ease-in-out transform;
     position: relative;
 }
- 
 
 .popup-offer h1{
     position: absolute; 

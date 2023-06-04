@@ -46,43 +46,38 @@
       let navegador = navigator.userAgent;
       if (navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/webOS/i) || navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i) || navigator.userAgent.match(/iPod/i) || navigator.userAgent.match(/BlackBerry/i) || navigator.userAgent.match(/Windows Phone/i)) {
           
-        const popupOffer = document.querySelector('.popup-offer');
-        const x = document.querySelector('.popup-offer-content h1')
+          const popupOffer = document.querySelector('.popup-offer');
+          const x = document.querySelector('.popup-offer-content h1')
+  
+          window.addEventListener('load', () => {
 
-        window.addEventListener('load', () => {
+            popupOffer.childNodes[1].classList.add('showPopup-offer');
+          })
 
-          popupOffer.classList.remove('popup-offer');
-          popupOffer.classList.add('popup-offer'); 
-
-          popupOffer.childNodes[1].classList.add('showPopup-offer');
-        })
-
-        x.addEventListener('click', () => {
-          popupOffer.style.display ="none"; 
-          
-        })
-
+          x.addEventListener('click', () => {
+            popupOffer.style.display ="none"; 
+            // popup.classList.add('showPopup');
+            // popup.childNodes[1].classList.remove('showPopup');
+          })
 
       } else {
-        console.log("version web")
 
-      //   const popupOffer = document.querySelector('.popup-offer');
-      //   const x = document.querySelector('.popup-offer-content h1')
+          const popupOffer = document.querySelector('.popup-offer');
+          const x = document.querySelector('.popup-offer-content h1')
 
-      //   window.addEventListener('load', () => {
-      //     popupOffer.classList.add('showPopup-offer');
-      //     popupOffer.childNodes[1].classList.add('showPopup-offer');
-      //   })
+          window.addEventListener('load', () => {
 
-      //   x.addEventListener('click', () => {
-      //     popupOffer.style.display ="none"; 
+            popupOffer.classList.remove('popup-offer-content');
+            popupOffer.classList.add('popup-offer-content-moobile');
 
+            popupOffer.classList.add('showPopup-offer');
+            popupOffer.childNodes[1].classList.add('showPopup-offer');
+          })
 
-      //     // popup.classList.add('showPopup');
-      //     // popup.childNodes[1].classList.remove('showPopup');
-        
-      // })
-
+          x.addEventListener('click', () => {
+            popupOffer.style.display ="none"; 
+        })
+      
         }
     
     </script>

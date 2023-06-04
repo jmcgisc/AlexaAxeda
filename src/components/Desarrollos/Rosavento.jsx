@@ -240,14 +240,14 @@ const Rosavento = () => {
 
         <div className="grid grid-cols-1 flex flex-cols lg:grid-cols-8 bg-gradient-to-r from-orange-500 to-orange-900">
             <div className="lg:col-start-2 lg:col-end-8 mb-5 ">
-                <h1 className="text-4xl xl:text-4xl font-title text-white text-center underline font-title text-lg text-2xl lg:text-5xl mt-5">
-                    ¡ INVIERTE DESDE $1,906.00 MXN al mes ! 
+                <h1 className="text-lg lg:text-5xl font-title text-white text-center underline mt-5">
+                    ¡ INVIERTE DESDE $1,906.00 MXN AL MES ! 
                 </h1> 
         </div>
  
         <div className="lg:col-start-2 lg:col-end-8 mb-5 text-center">
-            <span className="text-xl  xl:leading-[5.5rem] text-cyan-100 px-24 py-2 border-8 border-axeda relative inline-block">
-                <a className=" text-white font-body lg:text-5xl mt-5 sm:title"
+            <span className="text-xl xl:leading-[5.5rem] text-cyan-100 px-24 py-2 border-8 border-axeda relative inline-block">
+                <a className=" text-white font-title lg:font-body lg:text-5xl mt-5 sm:title"
                 href={"https://crm.rosavento.mx/cotizador/ciudad-maya/bora_cdmaya/bora_real?vendedor=MTk2%0A"} target="_blank" rel="noopener noreferrer">
                     Cotiza TU lote en Bora Real
                 </a> 
@@ -267,8 +267,8 @@ const Rosavento = () => {
     {/*Cotizador Cancún*/}  
         <div className="grid grid-cols-1 flex flex-cols lg:grid-cols-8 bg-gradient-to-r from-emerald-900 to-emerald-300">
             <div className="lg:col-start-2 lg:col-end-8 mb-5 ">
-                <h1 className="text-4xl xl:text-4xl font-title text-white text-center underline font-title text-lg text-2xl lg:text-5xl mt-5">
-                    ¡ INVIERTE DESDE $3,162.77 MXN al mes ! 
+                <h1 className="text-4xl xl:text-4xl font-title text-white text-center underline text-lg text-2xl lg:text-5xl mt-5">
+                    ¡ INVIERTE DESDE $3,162.77 MXN AL MES ! 
                 </h1> 
             </div>
 
