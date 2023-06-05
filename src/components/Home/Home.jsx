@@ -138,7 +138,7 @@ export const Home = () => {
             {/*Body Page*/}
             <Desarrollos/>
 
-            {/*Prensa*/}
+            {/*Imagenes*/}
             <Slider/>
             
             {/*Gobernador Kuri*/}
