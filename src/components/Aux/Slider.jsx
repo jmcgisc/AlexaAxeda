@@ -23,7 +23,7 @@ const Slider = () => {
         <motion.div className='slider' drag='x' 
         dragConstraints={{right: 0, left:-8123}} >
         {images.map(image => (
-            <motion.div className='item transition duration-700 ease-in-out transform hover:-translate-y-1 hover:scale-125 '> 
+            <motion.div className='item transition duration-700 ease-in-out transform hover:-translate-y-1 hover:scale-75 lg:hover:scale-125'> 
                   <img classname="rounded-full" src={image} alt="" /> 
             </motion.div>
         ))}
