@@ -1,9 +1,9 @@
 .popup-offer{
     position: fixed;
-    width: 100%;
-    height: 100%; 
+    width: 90%;
+    height: 120%; 
     z-index: 1;
-    margin: 6%; 
+    margin: 1%; 
     display: grid; 
     place-content: center;
     opacity: 1; 
@@ -11,7 +11,7 @@
 }
 
 .popup-offer-content{ 
-    width: 45vw;
+    width: 40vw;
     background-color: #EEEEEE;
     padding: 1rem;
     box-shadow: 0 0 .5em rgba(2, 6, 23, 2); 
@@ -21,6 +21,31 @@
     transition: 200ms ease-in-out opacity,
                 200ms ease-in-out transform;
     position: relative;
+}
+
+.popup-offer-mobile{
+    position: fixed;
+    width: 100%;
+    height: 100%; 
+    z-index: 1;
+    margin: 1%; 
+    display: grid; 
+    place-content: center;
+    opacity: 1; 
+    transition: 200ms ease-in-out opacity;
+}
+
+.popup-offer-content-mobile{ 
+    width: 85vw;
+    background-color: #EEEEEE;
+    padding: 1rem;
+    box-shadow: 0 0 .5em rgba(2, 6, 23, 2); 
+    border-radius: .8em;
+    opacity: 1; 
+    transform: translateY(20%);
+    transition: 200ms ease-in-out opacity,
+                200ms ease-in-out transform;
+    position: fixed;
 }
 
 .popup-offer h1{
