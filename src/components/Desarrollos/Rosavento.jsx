@@ -247,9 +247,9 @@ const Rosavento = () => {
  
         <div className="lg:col-start-2 lg:col-end-8 mb-5 text-center">
             <span className="text-xl xl:leading-[5.5rem] text-cyan-100 px-24 py-2 border-8 border-axeda relative inline-block">
-                <a className=" text-white font-title lg:font-body lg:text-5xl mt-5 sm:title"
+                <a className="text-white font-title lg:font-body text-base lg:text-5xl mt-5 sm:title"
                 href={"https://crm.rosavento.mx/cotizador/ciudad-maya/bora_cdmaya/bora_real?vendedor=MTk2%0A"} target="_blank" rel="noopener noreferrer">
-                    Cotiza TU lote en Bora Real
+                    Cotiza aquí TU lote en Bora Real
                 </a> 
                     <RiCheckboxBlankCircleFill className="text-orange-400 text-base absolute -left-5 -top-4 p-2 bg-axeda rounded-full box-content"/>
                     <RiCheckboxBlankCircleFill className="text-orange-400 text-base absolute -right-5 -top-4 p-2 bg-axeda rounded-full box-content"/>
@@ -259,7 +259,7 @@ const Rosavento = () => {
         </div>
 
         <div className ="lg:col-start-2 lg:col-end-8  mb-5">
-            <h2 className ="text-gray-800 text-3xl text-white text-center font-sans text-justify px-12 py-2"> 
+            <h2 className ="text-gray-800 text-basea lg:text-3xl text-white text-center font-sans text-justify px-12 py-2"> 
                 Una ciudad planeada con todo lo que necesitas para disfrutar de la naturaleza.
             </h2>
         </div> </div>
@@ -274,9 +274,9 @@ const Rosavento = () => {
 
         <div className="lg:col-start-2 lg:col-end-8 mb-5 text-center">
             <span className="text-xl  xl:leading-[5.5rem] text-cyan-100 px-24 py-2 border-8 border-axeda relative inline-block">
-                <a className=" text-white font-body lg:text-5xl mt-5 sm:title"
+                <a className="text-white font-body text-basee lg:text-5xl mt-5 sm:title"
                 href={"https://crm.rosavento.mx/cotizador/cancun/cancun_levante/levante_real?vendedor=MTk2%0A"} target="_blank" rel="noopener noreferrer">
-                    Cotiza TU lote en Cancún
+                    Cotiza aquí TU lote en Cancún
                 </a> 
                         <RiCheckboxBlankCircleFill className="text-orange-400 text-base absolute -left-5 -top-4 p-2 bg-axeda rounded-full box-content"/>
                         <RiCheckboxBlankCircleFill className="text-orange-400 text-base absolute -right-5 -top-4 p-2 bg-axeda rounded-full box-content"/>
@@ -285,8 +285,8 @@ const Rosavento = () => {
                 </span> 
         </div>   
 
-        <div className ="lg:col-start-2 lg:col-end-8  mb-5">
-            <h2 className ="text-gray-800 text-3xl text-white text-center font-sans text-justify px-12 py-2"> 
+        <div className ="lg:col-start-2 lg:col-end-8 mb-5">
+            <h2 className ="text-gray-800 text-basea lg:text-3xl text-white text-center font-sans text-justify px-12 py-2"> 
                 El lugar perfecto para disfrutar de la vida que siempre quisiste, en el caribe mexicano, últimos días de financiamiento a 240 meses.
             </h2>
         </div> </div>

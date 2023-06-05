@@ -39,7 +39,7 @@ const Rosenda = () => {
                         ROSENDA TEMOZÓN II
                     </h1>   
 
-                        <p className="text-gray-100 text-base font-body text-justify tracking-widest px-12 py-2">
+                        <p className="text-gray-100 text-base font-body text-justify tracking-widest px-12 py-2 mb-4">
                             Tras el éxito de nuestro proyecto Rosenda, vendido en su totalidad de menos de 50 días; hemos creado Rosenda Temozón II, una colección de 80 departamentos en 10 modelos diferentes.
                         </p>
                 </div> 
@@ -124,8 +124,8 @@ const Rosenda = () => {
                     </h1> 
                 </div>
 
-                <div className ="lg:col-start-2 lg:col-end-6  mb-5">
-                    <h2 className ="text-gray-600 text-xl text-center font-body text-justify px-12 py-2"> 
+                <div className ="lg:col-start-2 lg:col-end-6 mb-5">
+                    <h2 className ="lg:text-xl text-sm font-body text-justify text-gray-500 px-12"> 
                         Tras el éxito de nuestro proyecto Rosenda, vendido en su totalidad de menos de 50 días;
                         hemos creado Rosenda Temozón II, una colección de 80 departamentos en 10 modelos diferentes.
                     </h2>
@@ -146,7 +146,7 @@ const Rosenda = () => {
                             ¡La mejor Ubicación!
                     </h1>
                     <div className="flex justify-center gap-6"> 
-                        <p className="max-w-2xl text-center text-base font-chivo text-gray-400">
+                        <p className="lg:max-w-4xl text-center text-base lg:text-xl font-chivo text-gray-400">
                             Al invertir en Rosenda Temozón II, estarás eligiendo vivir en la zona más demandada y equilibrada de la ciudad,
                             dentro de un área que reúne servicios exclusivos y alta plusvalía al norte de Mérida.
                         </p>
@@ -187,7 +187,7 @@ const Rosenda = () => {
                             Empresa orgullosamente mexicana
                         </p>
 
-                        <p className="mt-3 text-base lg:text-xl lg:tracking-widest text-gray-700 font-body text-justify">
+                        <p className="mt-3 lg:text-xl lg:tracking-widest text-gray-700 lg:font-body text-justify">
                                 Una empresa inmobiliaria que busca facilitar el acceso al mundo de las inversiones  de forma inteligente y 
                                 promoviendo alta calidad de vida, desarrollando bienes inmuebles en  las zonas de mayor crecimiento y demanda del 
                                 sureste mexicano, con un solo objetivo en  mente: 

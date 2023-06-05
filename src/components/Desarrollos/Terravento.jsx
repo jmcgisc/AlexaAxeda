@@ -201,7 +201,7 @@ const Terravento = () => {
             <span className="text-xl xl:text-4xl xl:leading-[5.5rem] text-cyan-100 px-24 py-2 border-8 border-axeda relative inline-block">
                 <a className="text-4xl xl:text-4xl text-white  font-body  text-lg text-2xl lg:text-5xl mt-5"
                 href={"https://crm.rosavento.mx/cotizador/ciudad-maya/bora_cdmaya/bora_real?vendedor=MTk2%0A"} target="_blank" rel="noopener noreferrer">
-                    Cotiza TU lote en Terravento
+                    Cotiza aquí TU lote en Terravento
                 </a> 
                     <RiCheckboxBlankCircleFill className="text-orange-400 text-base absolute -left-5 -top-4 p-2 bg-axeda rounded-full box-content"/>
                     <RiCheckboxBlankCircleFill className="text-orange-400 text-base absolute -right-5 -top-4 p-2 bg-axeda rounded-full box-content"/>
