@@ -39,7 +39,7 @@ const Rosenda = () => {
                         ROSENDA TEMOZÓN II
                     </h1>   
 
-                        <p className="text-gray-100 text-base font-body text-justify tracking-widest px-12 py-2 mb-4">
+                        <p className="text-gray-100 text-base font-body text-justify tracking-widest px-12 sm:py-2 sm:mb-4">
                             Tras el éxito de nuestro proyecto Rosenda, vendido en su totalidad de menos de 50 días; hemos creado Rosenda Temozón II, una colección de 80 departamentos en 10 modelos diferentes.
                         </p>
                 </div> 

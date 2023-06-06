@@ -20,7 +20,7 @@ const Terravento = () => {
         </div>
 
         {/*Background*/}
-        <div className="grid-cols-2 bg-[url('/public/homeBack1.png')]">
+        <div className="grid-cols-2 bg-[url('/public/backGreen.png')]">
 
         {/*Desarrollos*/}
         <div className="grid xl:grid-cols-2 gap-4">
@@ -29,7 +29,7 @@ const Terravento = () => {
                     <h1 className="text-[45px] text-axeda font-title px-6 lg:px-36 lg:mt-12">
                         Terravento -Pedregal Residencial-
                     </h1>
-                        <p className ="text-gray-700 lg:text-xl px-6 lg:px-36 lg:mt-2 font-body text-justify py-2">
+                        <p className ="text-gray-200 lg:text-xl px-6 lg:px-36 lg:mt-2 font-body text-justify py-2">
                            Un desarrollo de 412 terrenos residenciales, ubicados al noreste de Mérida, a solo 25 minutos de las hermosas 
                            playas que conforman la costa esmeralda de Yucatán.
                         </p>   
@@ -38,7 +38,7 @@ const Terravento = () => {
                         Amenidades exclusivas para los residentes
                     </h2>   
 
-                        <p className="text-gray-700 lg:text-xl px-6 lg:px-36 lg:mt-2 font-body text-justify py-2">
+                        <p className="text-gray-200 lg:text-xl px-6 lg:px-36 lg:mt-2 font-body text-justify py-2">
                             Un lugar donde el estilo mediterraneo y el cuidado en los detalles convergen bajo un lujo discreto    
                         </p>
 
