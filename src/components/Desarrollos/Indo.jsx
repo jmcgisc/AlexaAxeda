@@ -34,7 +34,7 @@ const Indo = () => {
             <div className="flex flex-col lg:grid-cols-4 lg:gap-2 rounded-3xl"> 
                 <div className="grid grid-cols-1">  
                     <h1 className="text-[45px] text-axeda font-title px-12 mt-24 lg:mt-24 ">
-                        -ROSENDA INDO-
+                        -ROSAVENTO INDO-
                     </h1>
                         <p className ="text-gray-500 lg:text-2xl font-body text-justify px-12 py-12">
                             TERRENOS INDUSTRIALES EN <strong>PREVENTA</strong> MENSUALIDADES DESDE <strong> $3,937.50 MXN </strong>
