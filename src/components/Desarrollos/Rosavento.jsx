@@ -273,15 +273,15 @@ const Rosavento = () => {
             </div>
 
         <div className="lg:col-start-2 lg:col-end-8 mb-5 text-center">
-            <span className="text-xl  xl:leading-[5.5rem] text-cyan-100 px-24 py-2 border-8 border-emerald-900 relative inline-block">
-                <a className="text-white font-body text-base lg:text-5xl mt-5 sm:title"
+            <span className="text-xl  xl:leading-[5.5rem] text-cyan-100 px-24 py-2 border-8 border-emerald-100 relative inline-block">
+                <a className="text-white font-title lg:font-body text-base lg:text-5xl mt-5 sm:title"
                 href={"https://crm.rosavento.mx/cotizador/cancun/cancun_levante/levante_real?vendedor=MTk2%0A"} target="_blank" rel="noopener noreferrer">
                     Cotiza aquí TU lote en Cancún
                 </a> 
-                        <RiCheckboxBlankCircleFill className="text-emerald-400 text-base absolute -left-5   -top-4 p-2 bg-emerald-700 rounded-full box-content"/>
-                        <RiCheckboxBlankCircleFill className="text-emerald-400 text-base absolute -right-5  -top-4 p-2 bg-emerald-700 rounded-full box-content"/>
-                        <RiCheckboxBlankCircleFill className="text-emerald-400 text-base absolute -left-5   -bottom-4 p-2 bg-emerald-700 rounded-full box-content"/>
-                        <RiCheckboxBlankCircleFill className="text-emerald-400 text-base absolute -right-5  -bottom-4 p-2 bg-emerald-700 rounded-full box-content"/>
+                        <RiCheckboxBlankCircleFill className="text-emerald-400 text-base absolute -left-5   -top-4 p-2 bg-emerald-100 rounded-full box-content"/>
+                        <RiCheckboxBlankCircleFill className="text-emerald-400 text-base absolute -right-5  -top-4 p-2 bg-emerald-100 rounded-full box-content"/>
+                        <RiCheckboxBlankCircleFill className="text-emerald-400 text-base absolute -left-5   -bottom-4 p-2 bg-emerald-100 rounded-full box-content"/>
+                        <RiCheckboxBlankCircleFill className="text-emerald-400 text-base absolute -right-5  -bottom-4 p-2 bg-emerald-100 rounded-full box-content"/>
                 </span> 
         </div>   
 
