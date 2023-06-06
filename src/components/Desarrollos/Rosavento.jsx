@@ -238,7 +238,7 @@ const Rosavento = () => {
         <hr
             className="my-12 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-500 to-transparent opacity-25 dark:opacity-100"/>
 
-        <div className="grid grid-cols-1 flex flex-cols lg:grid-cols-8 bg-gradient-to-r from-orange-500 to-orange-900">
+        <div className="grid grid-cols-1 flex flex-cols lg:grid-cols-8 bg-orange-700 lg:bg-gradient-to-r from-orange-500 to-orange-900">
             <div className="lg:col-start-2 lg:col-end-8 mb-5 ">
                 <h1 className="text-lg lg:text-5xl font-title text-white text-center underline mt-5">
                     ¡ INVIERTE DESDE $1,906.00 MXN AL MES ! 
@@ -265,7 +265,7 @@ const Rosavento = () => {
         </div> </div>
 
     {/*Cotizador Cancún*/}  
-        <div className="grid grid-cols-1 flex flex-cols lg:grid-cols-8 bg-gradient-to-r from-emerald-900 to-emerald-300">
+        <div className="grid grid-cols-1 flex flex-cols lg:grid-cols-8 bg-emerald-500 lg:bg-gradient-to-r from-emerald-900 to-emerald-300">
             <div className="lg:col-start-2 lg:col-end-8 mb-5 ">
                 <h1 className="text-4xl xl:text-4xl font-title text-white text-center underline text-lg text-2xl lg:text-5xl mt-5">
                     ¡ INVIERTE DESDE $3,162.77 MXN AL MES ! 
@@ -274,7 +274,7 @@ const Rosavento = () => {
 
         <div className="lg:col-start-2 lg:col-end-8 mb-5 text-center">
             <span className="text-xl  xl:leading-[5.5rem] text-cyan-100 px-24 py-2 border-8 border-axeda relative inline-block">
-                <a className="text-white font-body text-basee lg:text-5xl mt-5 sm:title"
+                <a className="text-white font-body text-base lg:text-5xl mt-5 sm:title"
                 href={"https://crm.rosavento.mx/cotizador/cancun/cancun_levante/levante_real?vendedor=MTk2%0A"} target="_blank" rel="noopener noreferrer">
                     Cotiza aquí TU lote en Cancún
                 </a> 
