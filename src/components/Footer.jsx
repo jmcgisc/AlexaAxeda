@@ -65,9 +65,9 @@ const Footer = () => {
           </p>
  
           <p  className="text-gray-200 lg:text-xl lg:mt-4">
-            <NavLink  to = "/components/footer/Inversores" 
+            <NavLink  to = "/preguntas" 
                       target="_blank"
-            > Inversores 
+            > Preguntas Frecuentes 
             </NavLink>
           </p>
 
