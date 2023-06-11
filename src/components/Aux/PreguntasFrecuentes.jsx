@@ -15,25 +15,13 @@ const PreguntasFrecuentes = () => {
                     ¿Cómo esta diseñado el esquema de inversión/financiamiento?
                 </h2>
             </div >
-        </div > 
+        </div >  
 
         <p className="mb-3 mt-3 px-3 text-base text-cyan-900">
             El éxito de nuestro proyecto se debe en gran parte al financiamiento.
             Un crédito directo con la desarrolladora,  tiempo de hasta 240 meses para pagar y 4 años TASA CERO, esto quiere decir que se pueden realizar pagos anticipados a capital sin penalización. 
             Liquida a tus tiempos y de acuerdo a tus finanzas.
         </p>  
-
-        <div className="grid grid-cols-1 bg-axeda bg-[url('/public/homeBack2.png')] rounded">
-            <div className="px-12 py-2"> 
-                <h2 className="text-xl text-teal-500 font-title py-2 uppercase">
-                    ¿Existe algún descuento al invertir en 2 o más lotes?
-                </h2>
-            </div>
-        </div>
-
-        <p className="mb-3 mt-3 px-3 text-base text-cyan-900">
-            No, sin embargo a partir de la compra de 5 terrenos se puede negociar un precio especial de venta por volumen.
-        </p>   
 
         <div className="grid grid-cols-1 bg-axeda bg-[url('/public/homeBack2.png')] rounded">
             <div className="px-12 py-2"> 
