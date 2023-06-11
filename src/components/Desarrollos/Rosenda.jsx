@@ -89,12 +89,12 @@ const Rosenda = () => {
                         Compra en la zona de mayor auge de la República Mexiana
                     </a>
 
-                    <p className="mt-3 text-sm text-gray-500 dark:text-gray-600 md:text-sm">
+                    <p className="mt-3 text-sm lg:text-xl lg:font-body text-justify text-gray-500 dark:text-gray-600 md:text-sm">
                             Es una colección de 51 departamentos exclusivos con 8 modelos diferentes que conjugan armonía, 
                             calidez y funcionalidad; adaptándose a tu estilo de vida, ubicados en una de las zonas más exclusivas en Mérida. 
                     </p>
 
-                    <p className="mt-3 text-sm text-gray-500 dark:text-gray-600 md:text-sm"> 
+                    <p className="mt-3 text-sm lg:text-xl lg:font-body text-justify text-gray-500 dark:text-gray-600 md:text-sm"> 
                             Cuenta con amenidades, así como proximidad a complejos comerciales de prestigio, hospitales y servicios de primer nivel.
                     </p>
 
@@ -125,7 +125,7 @@ const Rosenda = () => {
                 </div>
 
                 <div className ="lg:col-start-2 lg:col-end-6 mb-5">
-                    <h2 className ="lg:text-xl text-sm font-body text-justify text-gray-500 px-12"> 
+                    <h2 className ="lg:text-2xl text-sm font-body text-center text-gray-500 px-12"> 
                         Tras el éxito de nuestro proyecto Rosenda, vendido en su totalidad de menos de 50 días;
                         hemos creado Rosenda Temozón II, una colección de 80 departamentos en 10 modelos diferentes.
                     </h2>
