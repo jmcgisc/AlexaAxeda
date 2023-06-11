@@ -5,33 +5,23 @@ const PreguntasFrecuentes = () => {
     return (
         <> 
         <div>
-            <h1 className="text-axeda text-center font-title text-2xl lg:text-5xl mt-12 mb-4"><span>Axeda </span>-Preguntas Frecuentes-</h1>
+            <h1 className="text-axeda text-center font-title text-2xl lg:text-5xl mt-12 mb-4"><span>Axeda </span>-Preguntas y Respuestas Frecuentes-</h1>
         </div> 
 
         {/*Texto politica privacidad*/}
         <div className="grid grid-cols-1 bg-axeda bg-[url('/public/homeBack2.png')] rounded">
             <div className="px-12 py-2"> 
                 <h2 className="text-xl text-teal-500 font-title text-xl text-teal-500 font-title py-2 uppercase">
-                    ¿Cómo es el esquema de inversión?
+                    ¿Cómo esta diseñado el esquema de inversión/financiamiento?
                 </h2>
             </div >
         </div > 
 
         <p className="mb-3 mt-3 px-3 text-base text-cyan-900">
-            Es un crédito de 15 años, si el lote se liquida en los primeros 4 años no se pagan intereses y todo el abono va a capital, esto quiere decir que se pueden realizar pagos anticipados a capital. Nuestras mensualidades son fijas y a partir del 5° año incluirá un interés y cambiará la mensualidad.
-        </p>
-
-        <div className="grid grid-cols-1 bg-axeda bg-[url('/public/homeBack2.png')] rounded">
-            <div className="px-12 py-2"> 
-                <h2 className="text-xl text-teal-500 font-title py-2 uppercase">
-                    ¿Qué alternativas de inversión me ofrecen?
-                </h2>
-            </div> 
-        </div>
-        
-        <p className="mb-3 mt-3 px-3 text-base text-cyan-900">
-            El único método de crédito que se ofrece es el que otorga ROSAVENTO Ciudad Maya, nuestra opción es la más accesible ya que se cobra solo el 1% de interés mensual (12% anual) el cual es mucho mas bajo que el de un banco el cual es el 14.8% anual y el INFONAVIT el 17% anual.
-        </p>   
+            El éxito de nuestro proyecto se debe en gran parte al financiamiento.
+            Un crédito directo con la desarrolladora,  tiempo de hasta 240 meses para pagar y 4 años TASA CERO, esto quiere decir que se pueden realizar pagos anticipados a capital sin penalización. 
+            Liquida a tus tiempos y de acuerdo a tus finanzas.
+        </p>  
 
         <div className="grid grid-cols-1 bg-axeda bg-[url('/public/homeBack2.png')] rounded">
             <div className="px-12 py-2"> 
@@ -43,18 +33,6 @@ const PreguntasFrecuentes = () => {
 
         <p className="mb-3 mt-3 px-3 text-base text-cyan-900">
             No, sin embargo a partir de la compra de 5 terrenos se puede negociar un precio especial de venta por volumen.
-        </p>   
-
-        <div className="grid grid-cols-1 bg-axeda bg-[url('/public/homeBack2.png')] rounded">
-            <div className="px-12 py-2"> 
-                <h2 className="text-xl text-teal-500 font-title py-2 uppercase">
-                    ¿Qué pasa si no pago mis mensualidades?
-                </h2>
-            </div>
-        </div>
-
-        <p className="mb-3 mt-3 px-3 text-base text-cyan-900">
-            Tienes 3 meses para regularizar los pagos.
         </p>   
 
         <div className="grid grid-cols-1 bg-axeda bg-[url('/public/homeBack2.png')] rounded">
@@ -96,13 +74,13 @@ const PreguntasFrecuentes = () => {
         <div className="grid grid-cols-1 bg-axeda bg-[url('/public/homeBack2.png')] rounded">
             <div className="px-12 py-2"> 
                 <h2 className="text-xl text-teal-500 font-title py-2 uppercase">
-                    ¿Cuándo se puede escriturar?
+                    ¿EN QUÉ MOMENTO PUEDO ESCRITURAR?
                 </h2>
             </div>
         </div>
 
         <p className="mb-3 mt-3 px-3 text-base text-cyan-900">
-            Para escriturar deben suceder 2 cosas, que se entregue el terreno y que se haya liquidado el lote.
+            En el momento que se liquide y entregue el terrenoPropTypes.any,
         </p> 
 
         <div className="grid grid-cols-1 bg-axeda bg-[url('/public/homeBack2.png')] rounded">
@@ -114,7 +92,7 @@ const PreguntasFrecuentes = () => {
         </div>
 
         <p className="mb-3 mt-3 px-3 text-base text-cyan-900">
-            El concepto de ROSAVENTO Ciudad Maya consiste en un desarrollo en fraccionamiento, esto quiere decir que es propiedad privada, no es un lote ejidal ni de inversión.
+            Correcto.
         </p> 
 
         <div className="grid grid-cols-1 bg-axeda bg-[url('/public/homeBack2.png')] rounded">
@@ -169,43 +147,6 @@ const PreguntasFrecuentes = () => {
         <p className="mb-3 mt-3 px-3 text-base text-cyan-900">
             Sí, se cuenta con un régimen condominal. Te damos mayor información si contactas con nosotros.
         </p>
-
-        <div className="grid grid-cols-1 bg-axeda bg-[url('/public/homeBack2.png')] rounded">
-            <div className="px-12 py-2"> 
-                <h2 className="text-xl text-teal-500 font-title py-2 uppercase">
-                    ¿Cuáles son los permisos de construcción del predio y urbanización?
-                </h2>
-            </div >
-        </div > 
-
-        <p className="mb-3 mt-3 px-3 text-base text-cyan-900">
-            ROSAVENTO Ciudad Maya, cuenta con zonas tanto de uso comercial como residencial. 
-        </p>
-
-        <div className="grid grid-cols-1 bg-axeda bg-[url('/public/homeBack2.png')] rounded">
-            <div className="px-12 py-2"> 
-                <h2 className="text-xl text-teal-500 font-title py-2 uppercase">
-                    ¿Cuál es la fecha de entrega de la primera etapa?
-                </h2>
-            </div >
-        </div > 
-
-        <p className="mb-3 mt-3 px-3 text-base text-cyan-900">
-            Finales de 2022 con un periodo de 12 meses de gracia.
-        </p>
-
-        <div className="grid grid-cols-1 bg-axeda bg-[url('/public/homeBack2.png')] rounded">
-            <div className="px-12 py-2"> 
-                <h2 className="text-xl text-teal-500 font-title py-2 uppercase">
-                    ¿Con qué amenidades contaré?
-                </h2>
-            </div >
-        </div > 
-
-        <p className="mb-3 mt-3 px-3 text-base text-cyan-900">
-            Contarás con Casa Club, alberca, cancha de tenis multiusos, salón de usos múltiples con aire acondicionado, áreas verdes y parques Pet Friendly, de lectura, para niños, de relajación y para eventos a disposición de los colonos. Además de contar con ciclo vías a lo largo del desarrollo
-        </p>
-
 
         <div className="grid grid-cols-1 bg-axeda bg-[url('/public/homeBack2.png')] rounded">
             <div className="px-12 py-2"> 
