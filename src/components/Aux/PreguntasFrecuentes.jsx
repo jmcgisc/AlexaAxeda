@@ -12,7 +12,7 @@ const PreguntasFrecuentes = () => {
         <div className="grid grid-cols-1 bg-axeda bg-[url('/public/homeBack2.png')] rounded">
             <div className="px-12 py-2"> 
                 <h2 className="text-xl text-teal-500 font-title text-xl text-teal-500 font-title py-2 uppercase">
-                    ¿Cómo esta diseñado el esquema de inversión/financiamiento?
+                    ¿Cómo esta diseñado el esquema de inversión/financiamiento?.
                 </h2>
             </div >
         </div >  
@@ -26,7 +26,7 @@ const PreguntasFrecuentes = () => {
         <div className="grid grid-cols-1 bg-axeda bg-[url('/public/homeBack2.png')] rounded">
             <div className="px-12 py-2"> 
                 <h2 className="text-xl text-teal-500 font-title py-2 uppercase">
-                    ¿Puedo hacer pagos a capital?
+                    ¿Puedo hacer pagos a capital?.
                 </h2>
             </div>
         </div>
@@ -38,7 +38,7 @@ const PreguntasFrecuentes = () => {
         <div className="grid grid-cols-1 bg-axeda bg-[url('/public/homeBack2.png')] rounded">
             <div className="px-12 py-2"> 
                 <h2 className="text-xl text-teal-500 font-title py-2 uppercase">
-                    ¿Cuál es el tamaño de los lotes?
+                    ¿Cuál es el tamaño de los lotes?.
                 </h2>
             </div>
         </div>
@@ -50,7 +50,7 @@ const PreguntasFrecuentes = () => {
         <div className="grid grid-cols-1 bg-axeda bg-[url('/public/homeBack2.png')] rounded">
             <div className="px-12 py-2"> 
                 <h2 className="text-xl text-teal-500 font-title py-2 uppercase">
-                    ¿En cuanto tiempo se entrega el terreno?
+                    ¿En cuanto tiempo se entrega el terreno?.
                 </h2>
             </div>
         </div>
@@ -62,19 +62,19 @@ const PreguntasFrecuentes = () => {
         <div className="grid grid-cols-1 bg-axeda bg-[url('/public/homeBack2.png')] rounded">
             <div className="px-12 py-2"> 
                 <h2 className="text-xl text-teal-500 font-title py-2 uppercase">
-                    ¿EN QUÉ MOMENTO PUEDO ESCRITURAR?
+                    ¿EN QUÉ MOMENTO PUEDO ESCRITURAR?.
                 </h2>
             </div>
         </div>
 
         <p className="mb-3 mt-3 px-3 text-base text-cyan-900">
-            En el momento que se liquide y entregue el terrenoPropTypes.any,
+            En el momento que se liquide y entregue el terreno.
         </p> 
 
         <div className="grid grid-cols-1 bg-axeda bg-[url('/public/homeBack2.png')] rounded">
             <div className="px-12 py-2"> 
                 <h2 className="text-xl text-teal-500 font-title py-2 uppercase">
-                    ¿Es Propiedad privada?
+                    ¿Es Propiedad privada?.
                 </h2>
             </div>
         </div>
@@ -86,19 +86,19 @@ const PreguntasFrecuentes = () => {
         <div className="grid grid-cols-1 bg-axeda bg-[url('/public/homeBack2.png')] rounded">
             <div className="px-12 py-2"> 
                 <h2 className="text-xl text-teal-500 font-title py-2 uppercase">
-                    ¿Dónde puedo revisar la reglamentación de la documentación?
+                    ¿Dónde puedo revisar la reglamentación de la documentación?.
                 </h2>
             </div>
         </div>
 
         <p className="mb-3 mt-3 px-3 text-base text-cyan-900">
-            Puedes revisar los documentos en la siguiente página https://insejupi.com.mx, los predios del estado de Yucatán se revisan en el INSEJUPY
+            Puedes revisar los documentos en la siguiente página https://insejupi.com.mx, los predios del estado de Yucatán se revisan en el INSEJUPY.
         </p> 
 
         <div className="grid grid-cols-1 bg-axeda bg-[url('/public/homeBack2.png')] rounded">
             <div className="px-12 py-2"> 
                 <h2 className="text-xl text-teal-500 font-title py-2 uppercase">
-                    ¿Qué tasa de interés me estas cobrando?
+                    ¿Cuál es la tasa de interés?.
                 </h2>
             </div>
         </div>
@@ -115,19 +115,19 @@ const PreguntasFrecuentes = () => {
         <div className="grid grid-cols-1 bg-axeda bg-[url('/public/homeBack2.png')] rounded">
             <div className="px-12 py-2"> 
                 <h2 className="text-xl text-teal-500 font-title py-2 uppercase">
-                    ¿Cuánto costará el mantenimiento?
+                    ¿Cuánto costará el mantenimiento?.
                 </h2>
             </div >
         </div > 
 
         <p className="mb-3 mt-3 px-3 text-base text-cyan-900">
-            La cuota de mantenimiento mensual será de $750 aproximadamente
+            La cuota de mantenimiento mensual será de $750 aproximadamente.
         </p>
 
         <div className="grid grid-cols-1 bg-axeda bg-[url('/public/homeBack2.png')] rounded">
             <div className="px-12 py-2"> 
                 <h2 className="text-xl text-teal-500 font-title py-2 uppercase">
-                    ¿Existe algún reglamento de construcción?
+                    ¿Existe algún reglamento de construcción?.
                 </h2>
             </div >
         </div > 
@@ -139,7 +139,7 @@ const PreguntasFrecuentes = () => {
         <div className="grid grid-cols-1 bg-axeda bg-[url('/public/homeBack2.png')] rounded">
             <div className="px-12 py-2"> 
                 <h2 className="text-xl text-teal-500 font-title py-2 uppercase">
-                    ¿Cuánto mide la banqueta?
+                    ¿Cuánto mide la banqueta?.
                 </h2>
             </div >
         </div > 
@@ -147,15 +147,15 @@ const PreguntasFrecuentes = () => {
         <ul role="list" className="marker:text-axeda list-disc pl-5 space-y-3 text-slate-700 mb-3 mt-3">
             <li>3 metros de ancho de banquetas en vialidades centrales.</li>
             <li>3 metros de ancho de banquetas en vialidades secundarias.</li>
-            <li>1.5 metros de ancho de banquetas en vialidades internas de las Multi Privadas</li>
-            <li>1.5 metros de ancho de banquetas en vialidades internas de cada Privada</li>
+            <li>1.5 metros de ancho de banquetas en vialidades internas de las Multi Privadas.</li>
+            <li>1.5 metros de ancho de banquetas en vialidades internas de cada Privada.</li>
         </ul>
 
 
         <div className="grid grid-cols-1 bg-axeda bg-[url('/public/homeBack2.png')] rounded">
             <div className="px-12 py-2"> 
                 <h2 className="text-xl text-teal-500 font-title py-2 uppercase">
-                    ¿Cuánto miden las calles?
+                    ¿Cuánto miden las calles?.
                 </h2>
             </div >
         </div > 
@@ -175,31 +175,7 @@ const PreguntasFrecuentes = () => {
         <div className="grid grid-cols-1 bg-axeda bg-[url('/public/homeBack2.png')] rounded">
             <div className="px-12 py-2"> 
                 <h2 className="text-xl text-teal-500 font-title py-2 uppercase">
-                    ¿Cuántos terrenos tendrá cada privada o cluster?
-                </h2>
-            </div >
-        </div > 
-
-        <p className="mb-3 mt-3 px-3 text-base text-cyan-900">
-                Se ha planificado que cuente con 150 terrenos por cluster.
-        </p>
-
-        <div className="grid grid-cols-1 bg-axeda bg-[url('/public/homeBack2.png')] rounded">
-            <div className="px-12 py-2"> 
-                <h2 className="text-xl text-teal-500 font-title py-2 uppercase">
-                    ¿Con qué servicios contará el desarrollo?
-                </h2>
-            </div >
-        </div > 
-
-        <p className="mb-3 mt-3 px-3 text-base text-cyan-900">
-            Contará con todos los servicios sin embargo por cuestiones ecológicas contará con bio-digestores en lugar de drenaje.
-        </p>
-
-        <div className="grid grid-cols-1 bg-axeda bg-[url('/public/homeBack2.png')] rounded">
-            <div className="px-12 py-2"> 
-                <h2 className="text-xl text-teal-500 font-title py-2 uppercase">
-                    ¿Puedo construir como yo quiera?
+                    ¿Puedo construir como yo quiera?.
                 </h2>
             </div >
         </div > 
@@ -212,7 +188,7 @@ const PreguntasFrecuentes = () => {
         <div className="grid grid-cols-1 bg-axeda bg-[url('/public/homeBack2.png')] rounded">
             <div className="px-12 py-2"> 
                 <h2 className="text-xl text-teal-500 font-title py-2 uppercase">
-                    ¿Cuánto tiempo se hace al centro?
+                    ¿Cuánto tiempo se hace al centro?.
                 </h2>
             </div >
         </div > 
@@ -225,7 +201,7 @@ const PreguntasFrecuentes = () => {
         <div className="grid grid-cols-1 bg-axeda bg-[url('/public/homeBack2.png')] rounded">
             <div className="px-12 py-2"> 
                 <h2 className="text-xl text-teal-500 font-title py-2 uppercase">
-                    ¿Cuánto tiempo hago a la playa?
+                    ¿Cuánto tiempo hago a la playa?.
                 </h2>
             </div >
         </div > 
