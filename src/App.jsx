@@ -13,6 +13,7 @@ import PreguntasFrecuentes  from "./components/Aux/PreguntasFrecuentes"
 import FormularioContacto   from "./components/Aux/FormularioContacto"
 import Bio                  from "./components/Aux/Bio"
 import Footer               from "./components/Footer"
+import Post                 from "./components/Blog/Post"
 import { FloatingWhatsApp } from 'react-floating-whatsapp'
 import Error404 from "./Error404"
 import { Routes, Route , BrowserRouter} 
@@ -59,6 +60,7 @@ function App() {
             <Route path = '/privacidad'   element ={ <Privacidad/> } /> 
             <Route path = '/preguntas'    element ={ <PreguntasFrecuentes/> } /> 
             <Route path = '/formulario'   element ={ <FormularioContacto/> } /> 
+            <Route path = '/post'         element ={ <Post/> } /> 
             <Route path="*" element={<Error404 />} />
                 
           </Routes>

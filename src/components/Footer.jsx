@@ -87,7 +87,7 @@ const Footer = () => {
           </p> 
 
           <p  className="text-gray-200 lg:text-xl lg:mt-4">
-            <NavLink  to = "https://blog.axeda.mx/" 
+            <NavLink  to = "/post" 
                       target="_blank"
             > Blog
             </NavLink>
