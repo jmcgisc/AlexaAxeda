@@ -1,13 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-   
+    <meta charset="UTF-8" /> 
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon"> 
+    <link rel="icon" type="image/png" sizes="32x32" href="../landingPageAlexaAxeda/src/components/images/favicon-32x32.png"> 
+    <link rel="manifest" href="../landingPageAlexaAxeda/src/components/images/manifest.json">
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cagliostro&display=swap" rel="stylesheet">   
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda&family=Cagliostro&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital@0;1&family=Cagliostro&family=Cormorant+Garamond:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="popup.css"/>
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AXEDA | Alexa Delgado</title>  
+
+    <!-- Google tag (gtag.js) -->
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-XV0MLFH2DX">
+    </script>
+
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XV0MLFH2DX');
+    </script> -->
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-E9ET61M01F"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-E9ET61M01F');
+    </script>
     
   </head> 
 
   <body> 
   
+    <!--  Se comenta la parte de la publicidad
+    <div class="popup-offer">
+      <div class="popup-offer-content">
+          <h1 className="text-slate-200">
+            X
+          </h1>
+          <img src="/public/hotsales.jpg" alt="" />
+      </div>
+    </div> -->
+
+    <!-- <script>
+
+      let navegador = navigator.userAgent;
+      if (navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/webOS/i) || navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i) || navigator.userAgent.match(/iPod/i) || navigator.userAgent.match(/BlackBerry/i) || navigator.userAgent.match(/Windows Phone/i)) {
+          
+          const popupOffer = document.querySelector('.popup-offer');
+          const x = document.querySelector('.popup-offer-content h1')
+  
+          window.addEventListener('load', () => {
  
- 
+            popupOffer.childNodes[1].classList.add('showPopup-offer');
+          })
+
+          x.addEventListener('click', () => {
+            popupOffer.style.display ="none"; 
+
+
+            popup.classList.add('showPopup');
+            popup.childNodes[1].classList.remove('showPopup');
+          })
+
+      } else {
+
+          const popupOffer = document.querySelector('.popup-offer');
+          const x = document.querySelector('.popup-offer-content h1')
+
+          window.addEventListener('load', () => {
+
+            popupOffer.classList.add('showPopup-offer');
+            popupOffer.childNodes[1].classList.add('showPopup-offer');
+          })
+
+          x.addEventListener('click', () => {
+            popupOffer.style.display ="none"; 
+          })
+      
+          }
+    
+    </script> -->
+
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
