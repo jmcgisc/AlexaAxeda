@@ -1,5 +1,5 @@
 import React from 'react'
-import Blog from '../../../_posts/article.md' 
+// import Blog from '../../../_posts/article.md' 
 
 
 const Post = () => {
@@ -7,11 +7,11 @@ const Post = () => {
     <div>
 
 
-      
-    <Blog />
+      Hola
       
     </div>
   )
 }
 
 export default Post
+ 
