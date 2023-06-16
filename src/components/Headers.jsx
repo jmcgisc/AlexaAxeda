@@ -15,7 +15,7 @@ const Headers = () => {
     return (
    <> 
 
-     <header className="flex flex-cols items-center justify-between w-full py-20 px-8 h-[10vh] z-50 sticky top-6  bg-white">
+     <header className="flex flex-cols items-center justify-between w-full py-20 px-8 h-[10vh] z-50 sticky top-6 bg-white">
 
      <div className="flex flex-row-reverse bg-axeda fixed top-0 left-0 right-0 w-full"> 
                <div className="flex text-gray-100 text-base">Línea Asesor
