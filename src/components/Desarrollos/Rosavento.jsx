@@ -45,7 +45,7 @@ const Rosavento = () => {
                     <h1 className="text-[45px] text-axeda font-title px-6 lg:px-24 mt-10 lg:mt-18 ">
                         Rosavento -Ciudad Maya-
                     </h1>
-                        <p className ="text-gray-700 text-xl xl:font-body text-bold text-justify px-6 lg:px-24 py-2">
+                        <p className ="lg:text-xl text-lg xl:font-body font-serif text-bold text-justify text-gray-700 px-6 lg:px-24 py-2">
                             Terrenos residenciales al norte de Mérida. Un paraíso con mensualidades desde $1,992.00 MXN 
                         </p>   
 
@@ -53,7 +53,7 @@ const Rosavento = () => {
                             Rosavento Mérida
                     </h2>   
 
-                        <p className="text-gray-700 text-xl xl:font-body text-justify tracking-widest px-6 lg:px-24 py-2">
+                        <p className="lg:text-xl text-lg xl:font-body  font-serif text-justify tracking-widest text-gray-700 px-6 lg:px-24 py-2">
                             Nuestros terrenos residenciales se encuentran situados dentro de un desarrollo al norte de Mérida, con todos los servicios a pie de lote. 
                         </p>
 
@@ -61,7 +61,7 @@ const Rosavento = () => {
                             Rosavento Cancún
                     </h2>   
  
-                        <p className="text-gray-700 text-xl xl:font-body text-justify tracking-widest px-6 lg:px-24 py-2 mb-4">
+                        <p className="lg:text-xl text-lg xl:font-body font-serif text-justify tracking-widest text-gray-700 px-6 lg:px-24 py-2 mb-4">
                             Nuestros terrenos se encuentran dentro de un desarrollo residencial con amenidades que aseguran tu calidad de vida, seguridad y la plusvalía de tu patrimonio. 
                         </p>
                 </div> 
@@ -118,15 +118,16 @@ const Rosavento = () => {
                         Mérida, Yucatán.
                     </a>
                     
-                    <p className="mt-3 text-sm lg:text-xl lg:font-body text-justify text-gray-500 dark:text-gray-600 md:text-sm">
+                    <p className="lg:text-xl text-lg lg:font-body font-serif text-justify text-gray-800 dark:text-gray-600 mt-3">
                             Destaca por su belleza, cultura, calidad de vida y seguridad, lo que la ha posicionado a su capital entre las mejores ciudades para vivir e 
                             invertir del sureste mexicano.  
                     </p>
 
-                    <p className="mt-3 text-sm lg:text-xl lg:font-body text-justify text-gray-500 dark:text-gray-600 md:text-sm">
+                    <p className="lg:text-xl text-lg lg:font-body font-serif text-justify text-gray-800 dark:text-gray-600 mt-3">
                             Su ubicación permite gran conectividad hacia diversos sitios de interés, así como a otros países a través de su Aeropuerto 
                             Internacional y el Puerto de Progreso. Su excelente ubicación ofrece cercanía con hospitales de primer nivel y centros comerciales; así como de playas y sitios turísticos.
                     </p>
+
                     <p className="mt-3 text-sm lg:text-xl lg:font-body text-justify text-gray-500 dark:text-gray-600 md:text-sm">
                             “Rosavento lo elegí por su ubicación y porque Mérida es una de las ciudades más  seguras, esta ciudad tiene mucho futuro, 
                             aparte de que el financiamiento es bastante  cómodo”
@@ -163,7 +164,7 @@ const Rosavento = () => {
                         Cancún, Quintana Roo.
                     </a>
                     
-                    <p className="mt-3 text-sm lg:text-xl lg:font-body text-justify text-gray-500 dark:text-gray-600 md:text-sm">
+                    <p className="lg:text-xl text-lg lg:font-body font-serif text-justify text-gray-800 dark:text-gray-600 mt-3">
                             Cuenta con municipios turísticos de alta demanda nacional e internacional, gracias a su ubicación privilegiada al colindar con el mar caribe, 
                             su Aeropuerto Internacional y su estilo de vida donde la naturaleza converge con infraestructuras de primer nivel, favoreciendo las inversiones y plusvalía.
                     </p>
@@ -208,8 +209,8 @@ const Rosavento = () => {
                 </h1> 
             </div>
 
-            <div className ="lg:col-start-2 lg:col-end-6  mb-5">
-                <h2 className ="text-gray-600 text-xl text-center xl:font-body text-justify px-12 py-2"> 
+            <div className ="lg:col-start-2 lg:col-end-6 mb-5">
+                <h2 className ="lg:text-xl text-lg xl:font-body font-serif lg:text-center text-justify text-gray-600 px-4"> 
                     El máster plan de Rosavento incluye 142 lotes unifamiliares excelentes para construir casas o villas individuales.
                     Las medidas de los terrenos van desde 240 m2
                 </h2>
@@ -304,11 +305,11 @@ const Rosavento = () => {
             className="my-12 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-500 to-transparent opacity-25 dark:opacity-100"/>
         
         <div className="p-8 flex flex-col gap-8 bg-gray-100">
-                    <h1 className="text-[60px] text-center font-title ">
+                    <h1 className="lg:text-[60px] text-[35px] text-center font-title ">
                             ¡Estarás cerca de todo!
                     </h1>
                     <div className="flex justify-center gap-6"> 
-                        <p className="max-w-2xl text-center text-xl lg:font-chivo text-gray-400">
+                        <p className="lg:text-2xl text-xl lg:text-center text-justify lg:font-chivo font-serif lg:text-gray-400">
                             La perfecta ubicación del desarrollo en una de las carreteras más importantes de Cancún te conecta en solo minutos a paradisíacas playas.
                         </p>
                     </div>
@@ -350,13 +351,14 @@ const Rosavento = () => {
                             Empresa orgullosamente mexicana
                         </p>
 
-                        <p className="mt-3 lg:text-xl lg:tracking-widest text-gray-700 lg:font-body text-justify">
+                        <p className="text-xl lg:tracking-widest text-gray-900 lg:font-body font-serif text-justify mt-3"> 
                                 Una empresa inmobiliaria que busca facilitar el acceso al mundo de las inversiones  de forma inteligente y 
                                 promoviendo alta calidad de vida, desarrollando bienes inmuebles en  las zonas de mayor crecimiento y demanda del 
                                 sureste mexicano, con un solo objetivo en  mente: 
 
                         </p>
-                        <p className="mt-3 lg:text-xl lg:tracking-widest text-gray-700 lg:font-body text-justify">
+
+                        <p className="text-xl lg:tracking-widest text-gray-900 lg:font-body font-serif text-justify mt-3"> 
                             <strong> Superar sus límites y generar abundancia a sus inversionistas. </strong>
                         </p>
                     </div>
