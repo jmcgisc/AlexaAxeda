@@ -26,10 +26,10 @@ const Terravento = () => {
         <div className="grid xl:grid-cols-2 gap-4">
             <div className="flex flex-col lg:grid-cols-4 lg:gap-2 rounded-3xl"> 
                 <div className="grid grid-cols-1">  
-                    <h1 className="text-[45px] text-axeda font-title px-6 lg:px-36 lg:mt-12">
+                    <h1 className="text-[45px] text-axeda font-title px-4 lg:px-36 lg:mt-14 mt-6">
                         Terravento -Pedregal Residencial-
                     </h1>
-                        <p className ="text-gray-200 lg:text-xl px-6 lg:px-36 lg:mt-2 font-body text-justify py-2">
+                        <p className ="text-lg lg:text-2xl lg:mt-2 lg:font-body font-serif text-justify text-gray-100 py-2 px-4 lg:px-36 ">
                            Un desarrollo de 412 terrenos residenciales, ubicados al noreste de Mérida, a solo 25 minutos de las hermosas 
                            playas que conforman la costa esmeralda de Yucatán.
                         </p>   
@@ -38,7 +38,7 @@ const Terravento = () => {
                         Amenidades exclusivas para los residentes
                     </h2>   
 
-                        <p className="text-gray-200 lg:text-xl px-6 lg:px-36 lg:mt-2 font-body text-justify py-2">
+                        <p className="text-lg lg:text-xl lg:font-body font-serif text-justify text-gray-100 py-2 px-6 lg:px-36 lg:mt-2 mb-4">
                             Un lugar donde el estilo mediterraneo y el cuidado en los detalles convergen bajo un lujo discreto    
                         </p>
 
@@ -62,7 +62,7 @@ const Terravento = () => {
             </div>
 
             <div className="lg:col-span-3 flex flex-col justify-center"> 
-                <h1 className="font-sans text-lg uppercase tracking-[0.5rem] mb-4 italic text-clip"><span>Mérida</span>, 
+                <h1 className="text-lg font-serif px-3 uppercase tracking-[0.5rem] mb-4 mt-4 italic text-clip"><span>Mérida</span>, 
              la animada capital del estado de Yucatán en México, tiene una rica herencia maya y colonial.</h1>
             </div>
         </div> 
@@ -93,15 +93,15 @@ const Terravento = () => {
 
                 <div className="mt-6 lg:w-1/2 lg:mt-0 lg:mx-6 "> 
 
-                    <a href="#" className="block mt-4 text-2xl font-semibold text-gray-500 hover:underline md:text-3xl">
+                    <a href="#" className="block mt-4 text-2xl text-axeda font-semibold  hover:underline md:text-3xl">
                         Mérida, oportunidad única para invertir
                     </a>
 
-                    <p className="font-body mb-4 mt-4 text-xl text-gray-500 text-justify "> 
+                    <p className="lg:text-xl text-lg lg:font-body font-serif text-gray-500 text-justify mb-4 mt-4"> 
                         Es un desarrollo residenciales diseñado con la finalidad de rodearse de bienestar, y sumergirse en la armonía que brinda el lugar más pacífico de sureste de México.
                     </p>
 
-                    <p className="font-body text-xl text-gray-500 text-justify"> 
+                    <p className="lg:text-xl text-lg lg:font-body font-serif text-gray-500 text-justify"> 
                           
                         Un lugar donde el estilo mediterráneo y el cuidado de los detalles convergen bajo el lujo discreto, creando espacios que reflejan la calidez humana y el espíritu de sentirse en
                         libertad.
@@ -170,11 +170,11 @@ const Terravento = () => {
             className="my-12 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-500 to-transparent opacity-25 dark:opacity-100"/>
         
         <div className="p-8 flex flex-col gap-8 bg-gray-100">
-                    <h1 className="text-[60px] text-center font-title ">
+                    <h1 className="lg:text-[60px] text-[35px] text-center font-title ">
                             ¡Zonas comerciales, áreas verdes e increibles ventajas cerca de tu terreno!
                     </h1>
                     <div className="flex justify-center gap-6"> 
-                        <p className="max-w-2xl text-center text-xl lg:font-chivo text-gray-400">
+                        <p className="lg:text-3xl text-xl text-center lg:font-chivo font-serif lg:text-gray-400">
                             Un desarrollo residencial al noreste de Mérida, a sólo 30 minutos de las hermosas playas que conforman la Costa Esmeralda de Yucatán.
                         </p>
                     </div>
@@ -245,13 +245,13 @@ const Terravento = () => {
                             Empresa orgullosamente mexicana
                         </p>
 
-                        <p className="mt-3 lg:text-base lg:text-xl lg:tracking-widest text-gray-700 font-body text-justify">
+                        <p className="text-lg lg:text-xl lg:tracking-widest text-gray-700 lg:font-body font-serif text-justify mt-3"> 
                                 Una empresa inmobiliaria que busca facilitar el acceso al mundo de las inversiones  de forma inteligente y 
                                 promoviendo alta calidad de vida, desarrollando bienes inmuebles en  las zonas de mayor crecimiento y demanda del 
                                 sureste mexicano, con un solo objetivo en  mente: 
 
                         </p>
-                        <p className="mt-3 lg:text-base lg:text-xl lg:tracking-widest text-gray-700 font-body text-justify">
+                        <p className="text-xl lg:tracking-widest text-gray-900 lg:font-body font-serif text-justify mt-3"> 
                             <strong> Superar sus límites y generar abundancia a sus inversionistas. </strong>
                         </p>
                     </div>

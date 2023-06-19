@@ -31,18 +31,18 @@ const Rosenda = () => {
         <div className="grid xl:grid-cols-2 gap-4">
             <div className="flex flex-col lg:grid-cols-4 lg:gap-2 rounded-3xl"> 
                 <div className="grid grid-cols-1 lg:mt-24">  
-                    <h1 className="text-[45px] text-axeda font-title px-12 mt-10 lg:mt-18 ">
+                    <h1 className="text-[42px] lg:text-[45px]  text-axeda font-title px-12 py-6 mt-10 lg:mt-18">
                         ROSENDA TEMOZÓN 
                     </h1>
-                        <p className ="text-gray-100 text-xl font-body text-justify px-12">
+                        <p className ="text-gray-100 text-xl font-body text-justify tracking-widest px-12 sm:py-2 sm:mb-6">
                             Departamentos en Mérida Zona Norte desde 1.7 MDP
                         </p>   
 
-                    <h1 className="text-[45px] text-axeda font-title px-12 py-6 mt-10 lg:mt-18 ">
+                    <h1 className="text-[42px] lg:text-[45px]  text-axeda font-title px-12 py-6 mt-10 lg:mt-18 ">
                         ROSENDA TEMOZÓN II
                     </h1>   
 
-                        <p className="text-gray-100 text-base font-body text-justify tracking-widest px-12 sm:py-2 sm:mb-4">
+                        <p className="text-gray-100 text-base font-body text-justify tracking-widest px-12 sm:py-2 mb-5">
                             Tras el éxito de nuestro proyecto Rosenda, vendido en su totalidad de menos de 50 días; hemos creado Rosenda Temozón II, una colección de 80 departamentos en 10 modelos diferentes.
                         </p>
                 </div> 
@@ -128,8 +128,8 @@ const Rosenda = () => {
                 </div>
 
                 <div className ="lg:col-start-2 lg:col-end-6 mb-5">
-                    <h2 className ="lg:text-2xl text-sm font-body text-center text-gray-500 px-12"> 
-                        Tras el éxito de nuestro proyecto Rosenda, vendido en su totalidad de menos de 50 días;
+                    <h2 className ="lg:text-2xl text-base lg:font-body lg:text-center text-justify text-gray-500 px-12"> 
+                        Después del éxito de nuestro proyecto Rosenda, vendido en su totalidad de menos de 50 días;
                         hemos creado Rosenda Temozón II, una colección de 80 departamentos en 10 modelos diferentes.
                     </h2>
                 </div>
@@ -149,7 +149,7 @@ const Rosenda = () => {
                             ¡La mejor Ubicación!
                     </h1>
                     <div className="flex justify-center gap-6"> 
-                        <p className="lg:max-w-4xl text-center text-base lg:text-xl font-chivo text-gray-400">
+                        <p className="lg:max-w-4xl text-base lg:text-xl lg:text-center text-justify lg:font-chivo text-gray-400">
                             Al invertir en Rosenda Temozón II, estarás eligiendo vivir en la zona más demandada y equilibrada de la ciudad,
                             dentro de un área que reúne servicios exclusivos y alta plusvalía al norte de Mérida.
                         </p>
@@ -157,7 +157,7 @@ const Rosenda = () => {
                         <div className="flex xl:flex-col items-center justify-center gap-8">
                     <MapSection  
                         // center={{center}}  
-                        />
+                        /> 
                     </div>
             </div>   
 
@@ -196,8 +196,8 @@ const Rosenda = () => {
                                 sureste mexicano, con un solo objetivo en  mente: 
 
                         </p>
-                        <p className="mt-3 text-base  lg:text-xl lg:tracking-widest text-gray-700 font-body text-justify">
-                            <strong> Superar sus límites y generar abundancia a sus inversionistas. </strong>
+                        <p className="mt-3 lg:text-xl lg:tracking-widest text-gray-700 lg:font-body text-justify">
+                             Superar sus límites y generar abundancia a sus inversionistas.  
                         </p>
                     </div>
                 </div>

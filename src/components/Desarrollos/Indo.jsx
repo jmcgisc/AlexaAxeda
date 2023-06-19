@@ -32,15 +32,17 @@ const Indo = () => {
         {/*Desarrollos*/}
         <div className="grid xl:grid-cols-2 gap-4">
             <div className="flex flex-col lg:grid-cols-4 lg:gap-2 rounded-3xl"> 
-                <div className="grid grid-cols-1">  
-                    <h1 className="text-[45px] text-axeda font-title px-12 mt-24 lg:mt-24 ">
+                <div className="grid grid-cols-1">   
+                    <h1 className="lg:text-[45px] text-[35px] text-axeda font-title px-12 lg:mt-12 mt-8">
                         -ROSAVENTO INDO-
                     </h1>
-                        <p className ="text-gray-500 lg:text-2xl font-body text-justify px-12 py-12">
-                            TERRENOS INDUSTRIALES EN <strong>PREVENTA</strong> MENSUALIDADES DESDE <strong> $3,937.50 MXN </strong>
-                        </p>   
 
-                        <p className="text-gray-700 text-xl font-body text-justify tracking-widest px-12 py-8">
+                        <p className="text-lg lg:text-xl xl:font-body font-serif text-justify xl:text-gray-500 tracking-widest px-12 lg:py-8 lg:mt-6 py-4 mb-1">
+                            TERRENOS INDUSTRIALES EN <strong>PREVENTA</strong> MENSUALIDADES DESDE TAN SOLO
+                             <strong className="font-body">  $3,937.50 MXN </strong>
+                        </p>    
+
+                        <p className="text-lg texl:text-gray-500 text-base lg:text-xl xl:font-body font-serif text-justify tracking-widest px-12 mb-4">
                             Es un parque industrial a 12 minutos del libramiento de Mérida, con gran vanguardia de tecnología en materia de seguridad para sus operaciones y funcionalidad, integrado por grandes vialidades, áreas verdes y recreativas como cancha de fútbol y amenidades idóneas para el esparcimiento del personal.
                         </p>
                 </div> 
@@ -83,9 +85,9 @@ const Indo = () => {
 
                     <p className="block mt-2 text-xl font-semibold text-axeda hover:underline md:text-2xl text-justify ">
                     Durante 2022, Yucatán registró un histórico flujo acumulado de Inversión Extranjera Directa al alcanzar los 535.9 millones de dólares (mdd).
-                    </p>
+                    </p> 
 
-                    <p className="mt-3 text-base lg:text-xl lg:tracking-widest text-gray-700 font-body text-justify">
+                    <p className="text-lg lg:text-xl lg:font-body font-serif text-gray-700 text-justify lg:tracking-widest mt-3 ">
                             Indo es Parque industrial a 12 minutos del libramiento de Mérida, con gran vanguardia de tecnología en materia de 
                             seguridad para sus operaciones y funcionalidad, integrado por grandes vialidades, áreas verdes y recreativas como cancha de 
                             fútbol y amenidades idóneas para el esparcimiento del personal. 
@@ -158,7 +160,7 @@ const Indo = () => {
  
         <div className="lg:col-start-2 lg:col-end-8 mb-5 text-center">
             <span className="text-xl xl:text-4xl xl:leading-[5.5rem] text-cyan-100 px-24 py-2 border-8 border-axeda relative inline-block">
-                <a className="text-4xl xl:text-4xl text-white font-body text-base text-2xl lg:text-5xl mt-5"
+                <a className="text-4xl xl:text-4xl text-white lg:font-body text-base text-2xl lg:text-5xl mt-5"
                 href={"https://crm.rosavento.mx/cotizador/ciudad-maya/bora_cdmaya/bora_real?vendedor=MTk2%0A"} target="_blank" rel="noopener noreferrer">
                     Cotiza aquí TU lote 
                 </a> 
@@ -200,18 +202,18 @@ const Indo = () => {
                     
                     <div className="mt-6 lg:w-1/2 lg:mt-0 lg:mx-6 "> 
 
-                        <p className="block mt-4 text-2xl font-semibold text-axeda hover:underline md:text-3xl">
+                        <p className="block mt-2 text-2xl font-semibold text-axeda hover:underline md:text-3xl">
                             Empresa orgullosamente mexicana
                         </p>
 
-                        <p className="mt-3 text-base lg:text-xl lg:tracking-widest text-gray-700 font-body text-justify">
+                        <p className="text-lg lg:text-xl lg:tracking-widest text-gray-700 lg:font-body font-serif text-justify mt-3"> 
                                 Una empresa inmobiliaria que busca facilitar el acceso al mundo de las inversiones  de forma inteligente y 
                                 promoviendo alta calidad de vida, desarrollando bienes inmuebles en  las zonas de mayor crecimiento y demanda del 
                                 sureste mexicano, con un solo objetivo en  mente: 
 
                         </p>
-                        <p className="mt-3 text-base  lg:text-xl lg:tracking-widest text-gray-700 font-body text-justify">
-                            <strong> Superar sus límites y generar abundancia a sus inversionistas. </strong>
+                        <p className="text-xl lg:tracking-widest text-gray-900 lg:font-body font-serif text-justify mt-3"> 
+                            <strong> Superar sus límites y generar abundancia a sus inversionistas.  </strong>
                         </p>
                     </div>
                 </div>
