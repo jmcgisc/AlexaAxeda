@@ -1,5 +1,6 @@
 import React        from 'react'
 import ReactPlayer  from 'react-player'
+import YoutubeEmbed from "../Aux/YoutubeEmbed"
 import Banner       from "../Aux/Banner" 
 import pdf from '../../../public/INDO_Brochure.pdf'
 import FormularioContacto from "../Aux/FormularioContacto"  
@@ -71,14 +72,7 @@ const Indo = () => {
 
                 <div className="mt-8 lg:-mx-6 lg:flex lg:items-center">
                     <div className="object-cover  w-full lg:mx-6 lg:w-1/2 rounded-xl h-72 lg:h-96">
-                        <ReactPlayer
-                                    url='https://www.youtube.com/watch?v=0a1AdQCK8yY&t=5s'
-                                    className='react-player' 
-                                    controls 
-                                    width='100%'
-                                    height='100%' 
-                        />
-
+                        <YoutubeEmbed embedId="0a1AdQCK8yY&t=5s" /> 
                     </div> 
                     
                 <div className="mt-2 lg:w-1/2 lg:mt-0 lg:mx-6 "> 
@@ -190,14 +184,7 @@ const Indo = () => {
 
                 <div className="mt-8 lg:-mx-6 lg:flex lg:items-center">
                     <div className="object-cover  w-full lg:mx-6 lg:w-1/2 rounded-xl h-72 lg:h-96">
-                        <ReactPlayer
-                                    url='https://www.youtube.com/watch?v=e6qNM45bUHg'
-                                    className='react-player' 
-                                    controls 
-                                    width='100%'
-                                    height='100%' 
-                        />
-
+                        <YoutubeEmbed embedId="e6qNM45bUHg" /> 
                     </div> 
                     
                     <div className="mt-6 lg:w-1/2 lg:mt-0 lg:mx-6 "> 
