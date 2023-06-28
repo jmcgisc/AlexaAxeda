@@ -1,11 +1,10 @@
-import React        from 'react'
-import ReactPlayer  from 'react-player'
+import React        from 'react' 
 import YoutubeEmbed from "../Aux/YoutubeEmbed"
 import Banner       from "../Aux/Banner" 
 import pdf from '../../../public/INDO_Brochure.pdf'
 import FormularioContacto from "../Aux/FormularioContacto"  
 import MapSection from '../Aux/MapIndo'
-import Slider from './SliderIndo';
+import Slider from './SliderIndo'; 
 import {RiCheckboxBlankCircleFill} from "react-icons/ri";
 import SliderAmenidadesIndo from './SliderAmenidades/SliderAmenidadesIndo';
 
