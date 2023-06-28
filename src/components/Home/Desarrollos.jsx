@@ -16,8 +16,11 @@ const Desarrollos = () => {
             {/*Desarrollos*/}
             <div className="grid grid-cols-1 xl:grid-cols-2 gap-8">
                 <NavLink className ="text-center " to = "/rosavento" > 
-                    <div className="flex flex-col gap-2 rounded-3xl"> 
-                            <img    src="carrusel8.webp" className="w-full h-56 xl:h-[600px] rounded-3xl transition duration-700 ease-in-out transform hover:-translate-y-1 hover:scale-70 hover:shadow-2xl" 
+                    <div className="flex flex-col gap-2 rounded-3xl py-2"> 
+                            <img src="carrusel8.webp" 
+    //   class="rounded-full w-96 h-96 "        imagen redonda
+      class="h-56 xl:h-[600px] w-full rounded-lg  shadow-xl dark:shadow-gray-800 transition duration-700 ease-in-out transform hover:-translate-y-1 hover:scale-70  "  
+                            // className="inline w-full h-56 xl:h-[600px] rounded-3xl transition duration-700 ease-in-out transform hover:-translate-y-1 hover:scale-70 hover:shadow-2xl" 
                                     alt='Terrenos residenciales Axeda'/>
                                 <p className="text-axeda py-5 text-center"> Tu terreno la ciudad más bonita y segura de México.
                                     <h3 className="text-2xl font-bold py-4 text-center">ROSAVENTO Ciudad Maya</h3> 
