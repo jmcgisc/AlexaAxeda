@@ -3442,17 +3442,6 @@ react-messenger-chat-plugin@^3.0.5:
   resolved "https://registry.npmjs.org/react-messenger-chat-plugin/-/react-messenger-chat-plugin-3.0.5.tgz"
   integrity sha512-393uI68xyWLElbIYZknOb+zeb8onxIi6ZxmyhsJT76ct6yu/S2Jv7H1eKeB6BqG+vLHST3PrUlTL8gauZdoYIg==
 
-react-player@^2.11.2:
-  version "2.11.2"
-  resolved "https://registry.npmjs.org/react-player/-/react-player-2.11.2.tgz"
-  integrity sha512-V5bf3g6lIpOjfKPUw18Og+qfizmlv6PQfJojlFiGpkfn/e21w5U4nSXE8vSIrFkfllgCrLM35nNGR1/jYQ8KIw==
-  dependencies:
-    deepmerge "^4.0.0"
-    load-script "^1.0.0"
-    memoize-one "^5.1.1"
-    prop-types "^15.7.2"
-    react-fast-compare "^3.0.1"
-
 react-popper@2.3.0:
   version "2.3.0"
   resolved "https://registry.npmjs.org/react-popper/-/react-popper-2.3.0.tgz"

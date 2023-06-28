@@ -1,8 +1,4 @@
-
-
-
-import React        from 'react';
-import ReactPlayer  from 'react-player';
+import React        from 'react'; 
 import Banner       from "../Aux/Banner";
 import pdf from '../../../public/ROSENDA_Brochure.pdf';
 import FormularioContacto from "../Aux/FormularioContacto";
@@ -73,15 +69,7 @@ const Rosenda = () => {
                 
                 <div className="mt-8 lg:-mx-6 lg:flex lg:items-center">
                     <div className="object-cover  w-full lg:mx-6 lg:w-1/2 rounded-xl h-72 lg:h-96">
-                        <ReactPlayer
-                                    url='https://www.youtube.com/watch?v=oiZ4NmGF3h4&t=1s'
-                                    className='react-player' 
-                                    controls
-                                    playIcon	
-                                    width='100%'
-                                    height='100%' 
-                        />
-
+                        <YoutubeEmbed embedId="oiZ4NmGF3h4" />
                     </div>
             {/* <img className="object-cover w-full lg:mx-6 lg:w-1/2 rounded-xl h-72 lg:h-96" src="https://idesarges.unsplash.com/photo-1590283603385-17ffb3a7f29f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"alt=""/> */}
 
@@ -174,14 +162,7 @@ const Rosenda = () => {
 
                 <div className="mt-8 lg:-mx-6 lg:flex lg:items-center">
                     <div className="object-cover  w-full lg:mx-6 lg:w-1/2 rounded-xl h-72 lg:h-96">
-                        <ReactPlayer
-                                    url='https://www.youtube.com/watch?v=e6qNM45bUHg'
-                                    className='react-player' 
-                                    controls 
-                                    width='100%'
-                                    height='100%' 
-                        />
-
+                        <YoutubeEmbed embedId="e6qNM45bUHg" /> 
                     </div> 
                     
                     <div className="mt-6 lg:w-1/2 lg:mt-0 lg:mx-6 "> 
