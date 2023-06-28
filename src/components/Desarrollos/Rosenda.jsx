@@ -1,8 +1,9 @@
 import React        from 'react'; 
 import Banner       from "../Aux/Banner";
-import pdf from '../../../public/ROSENDA_Brochure.pdf';
-import FormularioContacto from "../Aux/FormularioContacto";
-import MapSection from '../Aux/MapRosenda'
+import pdf from '../../../public/ROSENDA_Brochure.pdf'; 
+import FormularioContacto   from "../Aux/FormularioContacto";
+import YoutubeEmbed         from "../Aux/YoutubeEmbed";
+import MapSection           from '../Aux/MapRosenda'
 import Slider from './SliderRosenda'; 
 import { Swiper, SwiperSlide } from 'swiper/react'; 
 import SliderAmenidades from './SliderAmenidades/SliderAmenidades';
