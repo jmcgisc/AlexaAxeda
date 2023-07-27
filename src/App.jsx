@@ -59,7 +59,7 @@ function App() {
             <Route path = '/privacidad'   element ={ <Privacidad/> } /> 
             <Route path = '/preguntas'    element ={ <PreguntasFrecuentes/> } /> 
             <Route path = '/formulario'   element ={ <FormularioContacto/> } /> 
-            <Route path = '/post'         element ={ <Post/> } /> 
+            <Route path='/post/:path' element={<Post />} />
             <Route path="*" element={<Error404 />} />
                 
           </Routes>

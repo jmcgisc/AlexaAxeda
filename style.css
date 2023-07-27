@@ -23,15 +23,13 @@
   }
    
   .close-icon {
-    content: 'x';
+    content: 'X';
     cursor: pointer;
     position: fixed;
     right: calc(15% - 30px);
     top: calc(100vh - 85vh - 33px);
     background: #000000;
-    color: black;
-    width: 25px;
-    height: 25px;
+    color: black; 
     border-radius: 50%;
     line-height: 20px;
     text-align: center;

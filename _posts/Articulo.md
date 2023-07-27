@@ -1,9 +1,10 @@
 ---
-title: 'Razones para sugerir el buceo a alguien con una enfermedad crónica'
+title: 'Avance de obra de ROSENDA Temozon, primer trimestre 2023'
 excerpt: 'Resulta anecdótico que bajo el agua, donde en teoría no se puede respirar, es donde la respiración es más que importante. Ahí, bajo la superficie, es clave saber cómo respirar. 
 ¿A qué se debe? Te preguntarás...'
 coverImage: '/images/buceoysalud.webp'
 date: '2022-08-07T05:35:07.322Z'
+path: "Articulo2"
 author: 
   name: Paloma Hornos
   picture: '/images/Paloma.webp'
