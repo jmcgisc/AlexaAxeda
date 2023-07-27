@@ -1,17 +1,16 @@
-/* .popup-offer{
+.popup-offer{
     position: fixed;
-    width: 90%;
-    height: 120%; 
-    z-index: 1;
-    margin: 1%; 
-    display: grid; 
-    place-content: center;
+    width: auto;
+    height: auto; 
+    z-index: 300;
+    margin: .5cm; 
+    display: flex;  
     opacity: 1; 
     transition: 200ms ease-in-out opacity;
 }
 
 .popup-offer-content{ 
-    width: 40vw;
+    width: 30vw;
     background-color: #EEEEEE;
     padding: 1rem;
     box-shadow: 0 0 .5em rgba(2, 6, 23, 2); 
@@ -22,6 +21,21 @@
                 200ms ease-in-out transform;
     position: relative;
 }
+
+.close-icon {
+    content: 'X';
+    cursor: pointer;
+    position: fixed;
+    right: calc(15% - 30px);
+    top: calc(100vh - 85vh - 33px);
+    background: #000000;
+    color: black; 
+    border-radius: 50%;
+    line-height: 20px;
+    text-align: center;
+    border: 1px solid #000000;
+    font-size: 20px;
+  }
 
 .popup-offer-mobile{
     position: fixed;
@@ -65,4 +79,4 @@
     opacity: 1;
     transform: translateY(0);
     pointer-events: all;
-} */
+} 
