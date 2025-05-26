@@ -24,7 +24,7 @@ const FormularioContacto = () => {
 
                             <div className="inline-flex space-x-2 items-center">
                                 <RiMailFill className="text-teal-300 text-xl"/>
-                                <span> asesor.alexadelgado@gmail.com </span>  
+                                <span> realtor.alexadelgado@gmail.com  </span>  
                             </div>
                             
                             <div className="inline-flex space-x-2 items-center">

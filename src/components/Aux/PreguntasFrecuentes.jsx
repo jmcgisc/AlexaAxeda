@@ -180,11 +180,6 @@ const PreguntasFrecuentes = () => {
             </div >
         </div > 
 
-        <p className="mb-3 mt-3 px-3 text-base text-cyan-900">
-            En ROSAVENTO se cuenta con un régimen condominal al que se tiene que  apegar la construcción. Dentro de lo más relevante es que deben ser construcciones blancas, cochera para 2 autos, la cochera no puede ser a pie de banqueta, en la parte de atrás mínimo debe de existir 1 metro y medio.
-        </p>
-
-
         <div className="grid grid-cols-1 bg-axeda bg-[url('/public/homeBack2.png')] rounded">
             <div className="px-12 py-2"> 
                 <h2 className="text-xl text-teal-500 font-title py-2 uppercase">

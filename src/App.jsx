@@ -3,10 +3,6 @@ import 'mdb-react-ui-kit/dist/css/mdb.min.css';
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import Headers    from "./components/Headers"
 import { Home }   from "./components/Home/Home" 
-import Terravento from "./components/Desarrollos/Terravento"
-import Rosavento  from "./components/Desarrollos/Rosavento"
-import Rosenda              from "./components/Desarrollos/Rosenda"
-import Indo                 from "./components/Desarrollos/Indo" 
 import Privacidad           from "./components/Aux/Privacidad" 
 import PreguntasFrecuentes  from "./components/Aux/PreguntasFrecuentes"
 import FormularioContacto   from "./components/Aux/FormularioContacto"
@@ -16,7 +12,9 @@ import Post                 from "./components/Blog/Post"
 import { FloatingWhatsApp } from 'react-floating-whatsapp'
 import Error404 from "./Error404"
 import { Routes, Route , BrowserRouter} 
-                  from 'react-router-dom'  
+                  from 'react-router-dom';
+import { Helmet } from "react-Helmet";
+
 
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
@@ -43,6 +41,28 @@ const analytics = getAnalytics(app);
 function App() { 
    
   return( 
+      <>
+        <div className="min-h-screen bg-white text-black dark:bg-black dark:text-white transition-colors duration-300"> 
+
+        <Helmet>
+        <title>Isla Diamante | Alexa Delgado</title>
+        <meta name="description" content="Axeda terrenos residenciales en Mérida y Cancún, inversiones inmobiliarias, sin comprobar buró de crédito." />
+
+        {/* Open Graph / Facebook */}
+        <meta property="og:title" content="Isla Diamante | Alexa Delgado" />
+        <meta property="og:description" content="Un proyecto único, planeado de manera integral, cuidando siempre el entorno ecológico de la zona. Ofrecemos una gran variedad de servicios y amenidades que te ofrecen la mejor calidad de vida y seguridad que mereces" />
+        <meta property="og:image" content="https://alexadelgado.netlify.app/AlexaDelgado.webp" />
+        <meta property="og:url" content="https://alexadelgado.netlify.app" />
+        <meta property="og:type" content="website" />
+
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Isla Diamante | Alexa Delgado" />
+        <meta name="twitter:description" content="Un proyecto único, planeado de manera integral, cuidando siempre el entorno ecológico de la zona. Ofrecemos una gran variedad de servicios y amenidades que te ofrecen la mejor calidad de vida y seguridad que mereces." />
+        <meta name="twitter:image" content="https://alexadelgado.netlify.app/AlexaDelgado.webp" />
+ 
+      </Helmet>
+      
       <div className="App">  
       <BrowserRouter>
         <Headers/> 
@@ -51,10 +71,6 @@ function App() {
             <Route path = '/bio'          element ={ <Bio/> } /> 
             {/*Home*/}
             <Route path = '/'             element ={ <Home/> } />
-            <Route path = '/rosavento'    element ={ <Rosavento/> } />
-            <Route path = '/rosenda'      element ={ <Rosenda/> } />
-            <Route path = '/indo'         element ={ <Indo/> } />
-            <Route path = '/terravento'   element ={ <Terravento/> } />
             {/* Footer */}
             <Route path = '/privacidad'   element ={ <Privacidad/> } /> 
             <Route path = '/preguntas'    element ={ <PreguntasFrecuentes/> } /> 
@@ -71,7 +87,7 @@ function App() {
               allowClickAway
               notification 
               notificationSound 
-              statusMessage = "Desarrollos Axeda"
+              statusMessage = "Desarrollos Isla Diamante"
               darkMode="enable"
               chatMessage ="¡Hola! ¿En que proyecto estas interesado? 🤝 "   
               avatar="AlexaDelgado.webp"
@@ -86,8 +102,10 @@ function App() {
                 <button onclick={() => {setMessengerBottomSpacing(100)}}>set chat 100px in bottom spacing</button>
                   <MessengerChat pageId='108115258193252' /> */}
                 {/**/} 
-  </BrowserRouter>
+      </BrowserRouter>  {/* <Headers /> y demás contenido */}
       </div>
+      </div>
+      </>
       
   );
 } 

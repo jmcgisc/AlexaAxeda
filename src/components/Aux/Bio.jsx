@@ -6,7 +6,7 @@ const Bio = () => {
   
         <div>
             <div>
-            <h1 className="text-axeda text-center font-title text-2xl lg:text-5xl mt-12 mb-6">Alexa Delgado </h1>
+            <h1 className="text-diamante text-center font-title text-2xl lg:text-5xl mt-12 mb-6">Alexa Delgado </h1>
         </div> 
   
         <div className='flex items-center justify-center min-h-screen from-gray-700 via-gray-800 to-gray-900 bg-gradient-to-br'>
@@ -23,7 +23,7 @@ const Bio = () => {
                 <div className="mt-20 mt-20 text-center">
                     <h3 className="mb-4 mt-22 text-2xl font-bold leading-normal text-gray-700 dark:text-gray-300">Tanya Alexa Delgado</h3>
                     <div className="flex flex-row justify-center w-full mx-auto space-x-2 text-center"> 
-                        <div className="text-sm font-bold tracking-wide text-axeda font-mono text-xl">Coordinadora Comercial</div> 
+                        <div className="text-sm font-bold tracking-wide text-diamante font-mono text-xl">Gerente Comercial</div> 
                     </div>
 
                     <div className="w-full text-center">
@@ -84,7 +84,7 @@ const Bio = () => {
                             <strong>
                             ¡Hola!. Mi nombre es Alexa Delgado
                             </strong>
-                             , soy coordinadora comercial de grupo Axeda con 5 años de experiencia en la comercialización de bienes inmuebles.
+                             , soy gerente comercial en Isla Diamante con 6 años de experiencia en la comercialización de bienes inmuebles.
 
                             Me especializo en inversiones de preventas generando rendimientos anuales muy por encima del 15%. 
                             </p>
@@ -103,7 +103,7 @@ const Bio = () => {
                             </p>
                             
                             <p className="mb-4 italic leading-relaxed text-xl font-body text-axeda dark:text-gray-400">
-                            AXEDA.
+                            Isla Diamante.
                             
                             </p>
                             

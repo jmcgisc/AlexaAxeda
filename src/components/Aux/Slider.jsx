@@ -7,19 +7,18 @@ import { motion } from 'framer-motion'
 const Slider = () => {
   return (
     <>      
-    
-    <div className="container px-6 py-4 mx-auto">
-    <h1 className="text-3xl font-title text-center text-gray-800 capitalize lg:text-4xl"> 
-       Echa un vistazo a Nuestras  
-    <strong className=" decoration-axeda/[.33]"> Urbanizaciones de Lujo</strong>
-    <p className="text-xl font-title text-center text-gray-800 capitalize ">
-      Todas nuestras construcciones son pensadas a alto nivel residencial con accesibles formas de pago.
-    </p>
-    </h1>
 
+    <div className=" px-6 py-4 dark:bg-gray-700">
+      <h1 className="text-3xl font-title text-center dark:bg-gray-700 text-gray-400 lg:text-4xl"> 
+        Echa un vistazo a nuestras  
+        <strong className=" decoration-axeda/[.33]"> urbanizaciones de lujo</strong>
+        <p className="text-xl font-title text-center text-gray-800 dark:text-gray-300 lg:text-2xl">
+          Todas nuestras construcciones son pensadas a alto nivel residencial con accesibles formas de pago.
+        </p>
+      </h1>
     </div>
     
-    <motion.div className='slider-container '>
+    <motion.div className='slider-container dark:bg-gray-700'>
         <motion.div className='slider' drag='x' 
         dragConstraints={{right: 0, left:-8123}} >
         {images.map(image => (
