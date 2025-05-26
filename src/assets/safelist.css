@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .ellipse-desarrollos {
+    clip-path: ellipse(80% 95% at 80% 45%);
+  }
+}

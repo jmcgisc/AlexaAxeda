@@ -93,7 +93,7 @@ const FormularioContacto = () => {
                             </div>  
                             <div className="inline-flex space-x-2 items-center">
                                 <RiMailFill className="text-teal-300 text-xl"/>
-                                <span> asesor.alexadelgado@gmail.com </span>  
+                                <span> realtor.alexadelgado@gmail.com  </span>  
                             </div> 
                             <div className="inline-flex space-x-2 items-center"> 
                                 <ImLocation className="text-teal-300 text-xl"/>
@@ -111,7 +111,7 @@ const FormularioContacto = () => {
                             <form onSubmit={handleSubmit} id="form" action ="" className="flex flex-col space-y-4 " >
                                 <InputField value={values.nombreCompleto}   handleChange={handleChange} label="Nombre Completo" name="nombreCompleto"   type="text"     placeholder="Juan Perez" />
                                 <InputField value={values.telefonoMovil}    handleChange={handleChange} label="Teléfono Móvil"  name="telefonoMovil"    type="text"     placeholder="+52 55 55 55 55 55" />
-                                <InputEmail value={values.email}            handleChange={handleChange} label="E-Mail"          name="email"            type="email"    placeholder="asesor.alexadelgado@gmail.com" />
+                                <InputEmail value={values.email}            handleChange={handleChange} label="E-Mail"          name="email"            type="email"    placeholder="realtor.alexadelgado@gmail.com " />
                                 <SelectFieldsProperties                     handleChange={handleChange} label="Desarrollos"                         name="desarrollos"  />
                                 <SelectFieldsBudget                         handleChange={handleChange} label="Inversión estimada para el enganche" name="presupuesto"  />
                                 <SelectFieldsInvestment                     handleChange={handleChange} label="Destino de la compra"                name="interesadoEn" />

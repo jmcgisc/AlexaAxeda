@@ -10,7 +10,7 @@ const Reviews = () => {
 
             <div className="flex justify-center gap-4">
 
-                <span className="text-5xl text-axeda">
+                <span className="text-5xl text-chivo">
                     <RiDoubleQuotesL/>
                 </span>
 
@@ -19,7 +19,7 @@ const Reviews = () => {
                             Axeda y con Alexa Delgado como asesor.
                 </p>
 
-                <span className="text-5xl text-axeda">
+                <span className="text-5xl text-chivo">
                     <RiDoubleQuotesR/>
                 </span>
             </div>

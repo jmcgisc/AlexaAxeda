@@ -1,5 +1,4 @@
 User-agent: *
-Disallow: /sample-*
-Disallow: /blog/sample-*
-Disallow: /_hcms/preview/
-Disallow: /hs/manage-preferences/
+Allow: /
+
+Sitemap: https://https://alexadelgado.netlify.app/sitemap.xml
