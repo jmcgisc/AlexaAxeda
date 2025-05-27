@@ -27,7 +27,7 @@ const TraditionSection = () => {
             <blockquote className="italic text-xl md:text-2xl text-gray-700 dark:text-gray-300 border-l-4 border-diamante pl-4">
               "Las raíces culturales de nuestra tierra dan forma a cada espacio en Isla Diamante. Honramos la historia mientras construimos el porvenir."
             </blockquote>
-            <p className="mt-6 text-lg text-gray-600 dark:text-gray-400">
+            <p className="mt-6 text-lg text-gray-200 dark:text-gray-400">
               Cada detalle del desarrollo refleja elementos de la herencia maya y la arquitectura regional, adaptados a un estilo de vida moderno y sostenible.
             </p>
           </div>

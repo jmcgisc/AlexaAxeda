@@ -16,7 +16,6 @@ const FormularioContacto = () => {
             nombreCompleto: '',
             telefonoMovil:  '',
             email:          '',
-            desarrollos:    '',
             presupuesto:    '',
             interesadoEn:   '',
             mensaje:        ''
@@ -42,7 +41,6 @@ const FormularioContacto = () => {
                             nombreCompleto: '',
                             telefonoMovil: '',
                             email: '',
-                            desarrollos: '',
                             presupuesto: '',
                             interesadoEn: '',
                             mensaje: '',
@@ -79,7 +77,7 @@ const FormularioContacto = () => {
 
     return ( 
         <div className ="antialiased bg-gray-100 overflow-hidden">
-            <div className="flex flex-col grid grid-cols-1 w-full justify-center items-center overflow-hidden">
+            <div className="flex flex-col grid-cols-1 w-full justify-center items-center overflow-hidden">
                 <div className ="flex flex-col md:flex-row md:space-x-6 md:space-y-0 space-y-6 bg-cyan-700 p-8 rounded-xl shadow-lg text-white overflow-hidden">  
                         
                         <div className ="flex flex-col space-y-8 justify-berween">
@@ -97,7 +95,7 @@ const FormularioContacto = () => {
                             </div> 
                             <div className="inline-flex space-x-2 items-center"> 
                                 <ImLocation className="text-teal-300 text-xl"/>
-                                <span> Cd. México, Merida, Cancún </span>  
+                                <span> Cd. México, Cancún </span>  
                             </div>  
                         </div>
 
@@ -112,7 +110,6 @@ const FormularioContacto = () => {
                                 <InputField value={values.nombreCompleto}   handleChange={handleChange} label="Nombre Completo" name="nombreCompleto"   type="text"     placeholder="Juan Perez" />
                                 <InputField value={values.telefonoMovil}    handleChange={handleChange} label="Teléfono Móvil"  name="telefonoMovil"    type="text"     placeholder="+52 55 55 55 55 55" />
                                 <InputEmail value={values.email}            handleChange={handleChange} label="E-Mail"          name="email"            type="email"    placeholder="realtor.alexadelgado@gmail.com " />
-                                <SelectFieldsProperties                     handleChange={handleChange} label="Desarrollos"                         name="desarrollos"  />
                                 <SelectFieldsBudget                         handleChange={handleChange} label="Inversión estimada para el enganche" name="presupuesto"  />
                                 <SelectFieldsInvestment                     handleChange={handleChange} label="Destino de la compra"                name="interesadoEn" />
                                 <TextAreaField value={values.mensaje}       handleChange={handleChange} label="Mensaje "                            name="mensaje" />
@@ -120,8 +117,8 @@ const FormularioContacto = () => {
                                 <button 
                                     id= "button"
                                     type="submit"
-                                    className=" inline-block self-end font-semibold py-2 px-6 bg-axeda text-white rounded-xl shadow-lg shadow-indigo-500/40 py-2 uppercase text-sm"
-                                >
+                                     className=" inline-block self-end font-semibold px-6 bg-sand text-diamonBlack rounded-xl shadow-lg shadow-indigo-500/40 py-2 uppercase text-sm"
+                               >
                                     Envíar Formulario
                                 </button>
 
