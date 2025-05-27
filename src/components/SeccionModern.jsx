@@ -6,7 +6,7 @@ const features = [
   {
     id: "location",
     title: "Ubicación Estratégica",
-    icon: <MapPin className="w-8 h-8 text-diamante " />,
+    icon: <MapPin className="w-8 h-8 text-diamante" />,
     description: "Conectado con las mejores zonas de Cancún para disfrutar, invertir o vivir."
 },
   {

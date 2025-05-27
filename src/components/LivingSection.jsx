@@ -27,16 +27,19 @@ const amenities = [
 
 const LivingSection = () => {
   return (
-    <section id="living" className="py-24 px-6 md:px-16 dark:bg-diamonBlack dark:text-white">
+    <section id="living" className="py-24 px-6 md:px-16 dark:bg-diamonBlack text-white">
       <div className="max-w-6xl mx-auto text-center mb-16 ">
         <motion.h2
           className="text-3xl md:text-5xl font-bold mb-4 "
           initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
+          whileInView={{ opacity: 1, y: 0 }} 
           transition={{ duration: 0.7 }}
           viewport={{ once: true }}
         >
+        <div className="py-24 px-6 md:px-16 text-gray-500">
           Estilo de vida que transforma
+        </div>
+          
         </motion.h2>
         <p className="text-xl text-gray-300 max-w-2xl mx-auto">
           Vive cada día con libertad, bienestar y comunidad en Isla Diamante.

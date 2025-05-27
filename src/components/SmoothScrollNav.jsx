@@ -47,12 +47,12 @@ const SmoothScrollNav = () => {
 
       {/* Columna central: Menú */}
       <ul className="flex justify-center gap-6 text-sm md:text-base font-medium text-gray-800 dark:text-white">            
-        <li><Link to="location" smooth duration={600} offset={-80} className="cursor-pointer hover:text-diamante">Ubicación</Link></li>
+        <li><Link to="location" smooth duration={600} offset={-80} className="cursor-pointer hover:text-diamante ">Ubicación</Link></li>
         <li><Link to="connectivity" smooth duration={600} offset={-80} className="cursor-pointer hover:text-diamante ">Conectividad</Link></li>
-        <li><Link to="tradition" smooth duration={600} offset={-80} className="cursor-pointer hover:text-diamante">Tradición</Link></li>
-        <li><Link to="design" smooth duration={600} offset={-80} className="cursor-pointer hover:text-diamante">Diseño</Link></li>
-        <li><Link to="living" smooth duration={600} offset={-80} className="cursor-pointer hover:text-diamante">Estilo</Link></li>
-        <li><Link to="engineering" smooth duration={600} offset={-80} className="cursor-pointer hover:text-diamante">Ingeniería</Link></li>
+        <li><Link to="tradition" smooth duration={600} offset={-80} className="cursor-pointer hover:text-diamante ">Tradición</Link></li>
+        <li><Link to="design" smooth duration={600} offset={-80} className="cursor-pointer hover:text-diamante ">Diseño</Link></li>
+        <li><Link to="living" smooth duration={600} offset={-80} className="cursor-pointer hover:text-diamante ">Estilo</Link></li>
+        <li><Link to="engineering" smooth duration={600} offset={-80} className="cursor-pointer hover:text-diamante ">Ingeniería</Link></li>
       </ul>
 
       {/* Columna derecha: Toggle */}
