@@ -13,7 +13,8 @@ import { FloatingWhatsApp } from 'react-floating-whatsapp'
 import Error404 from "./Error404"
 import { Routes, Route , BrowserRouter} 
                   from 'react-router-dom';
-import { Helmet } from "react-Helmet";
+import { Helmet } from 'react-helmet';
+
 
 
 // Import the functions you need from the SDKs you need
