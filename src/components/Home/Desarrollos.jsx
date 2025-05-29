@@ -21,8 +21,8 @@ const Desarrollos = () => {
                                  class="h-56 xl:h-[600px] w-full rounded-lg  shadow-xl dark:shadow-gray-800 transition duration-700 ease-in-out transform hover:-translate-y-1 hover:scale-70  "  
                             // className="inline w-full h-56 xl:h-[600px] rounded-3xl transition duration-700 ease-in-out transform hover:-translate-y-1 hover:scale-70 hover:shadow-2xl" 
                                     alt='Terrenos residenciales Isla Dimante'/>
-<h3 className="text-2xl font-bold text-gray-400 ">Santorini</h3> 
-                                <p> className="text-gray-500 font-chivo text-xl"> Santorini: Donde la elegancia se encuentra con el confort.
+                                <h3 className="text-2xl font-bold text-gray-400 ">Santorini</h3> 
+                                <p>  Donde la elegancia se encuentra con el confort.
                                     Inspirado en los paisajes blancos y azules de la joya del mar Egeo, esta privada redefine el lujo cotidiano en un ambiente íntimo, seguro y cuidadosamente diseñado con una increíble vista al lago. Mensualidades $6,260.89 MXN.
                                 </p>
                     </div>          
