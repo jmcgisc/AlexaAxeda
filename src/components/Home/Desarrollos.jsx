@@ -17,13 +17,13 @@ const Desarrollos = () => {
             <div className="grid grid-cols-1 xl:grid-cols-2 gap-8">
                 <NavLink className ="text-center " to = "/rosavento" > 
                     <div className="flex flex-col gap-2 rounded-3xl py-2"> 
-                            <img src="Isla_1.webp"  
+                            <img src="Santorini.jpeg"  
                                  class="h-56 xl:h-[600px] w-full rounded-lg  shadow-xl dark:shadow-gray-800 transition duration-700 ease-in-out transform hover:-translate-y-1 hover:scale-70  "  
                             // className="inline w-full h-56 xl:h-[600px] rounded-3xl transition duration-700 ease-in-out transform hover:-translate-y-1 hover:scale-70 hover:shadow-2xl" 
                                     alt='Terrenos residenciales Isla Dimante'/>
-                                <p className="text-axeda py-5 text-center"> Tu terreno la ciudad más bonita y segura de México.
-                                    <h3 className="text-2xl font-bold py-4 text-center">ROSAVENTO Ciudad Maya</h3> 
-                                <p className="text-gray-500 font-chivo text-xl"> Terrenos residenciales al norte de Mérida Un paraíso con enganche desde $71,400.00 MXN. y mensualidades desde $2,182.00 MXN.</p> 
+<h3 className="text-2xl font-bold text-gray-400 ">Santorini</h3> 
+                                <p> className="text-gray-500 font-chivo text-xl"> Santorini: Donde la elegancia se encuentra con el confort.
+                                    Inspirado en los paisajes blancos y azules de la joya del mar Egeo, esta privada redefine el lujo cotidiano en un ambiente íntimo, seguro y cuidadosamente diseñado con una increíble vista al lago. Mensualidades $6,260.89 MXN.
                                 </p>
                     </div>          
                 </NavLink>   
@@ -33,31 +33,36 @@ const Desarrollos = () => {
                     <NavLink className ="text-center " to = "/rosavento" > 
                         <div className="flex flex-col gap-4">
 
-                                <img  src="Isla_4.webp" className="w-full h-56 object-cover rounded-3xl 
+                                <img  src="Anzores.jpeg" className="w-full h-56 object-cover rounded-3xl 
                                         transition duration-700 ease-in-out transform hover:-translate-y-1 hover:scale-110 hover:shadow-2xl" 
                                         alt='Desarrollos en Ciudad Maya' />
                                 <p className="text-gray-500 font-chivo"> 
-                                    Terrenos residenciales en Cancún. Enganche desde $208,780.00 MXN. y mensualidades desde $3,480.00 MXN.
+                                    Minimalismo elegante, inspiración oceánica.
+                                    Azores evoca la pureza del Atlántico con una propuesta arquitectónica limpia, sobria y profundamente estética. Un estilo de vida refinado, rodeado de serenidad y diseño consciente, para quienes buscan una residencia con carácter. Menusualidades: $8,160.00 MXN
                                 </p>
-                                    <h3 className="text-2xl font-bold text-gray-400 ">ROSAVENTO Cancún</h3>
+                                    <h3 className="text-2xl font-bold text-gray-400 ">Azores – Colección Atlántica</h3>
                         </div>
                     </NavLink>   
 
                     <NavLink className ="text-center " to = "/rosenda" > 
                         <div className="flex flex-col gap-4">
-                            <img    src="Isla_3.webp" className="w-full h-56 object-cover rounded-3xl transition duration-700 ease-in-out transform hover:-translate-y-1 hover:scale-110 hover:shadow-2xl" 
+                            <img    src="Madeira.jpeg" className="w-full h-56 object-cover rounded-3xl transition duration-700 ease-in-out transform hover:-translate-y-1 hover:scale-110 hover:shadow-2xl" 
                                     alt='Invierte en rosenda' />
-                            <p className="text-gray-500 font-chivo"> Rosenda Temozón, una colección de 80 departamentos en 10 modelos diferentes. </p>
-                                <h3 className="text-2xl font-bold text-gray-400 ">ROSENDA TEMOZÓN </h3> 
+                            <p className="text-gray-500 font-chivo"> 
+                                Refugio entre lo verde y lo sofisticado.
+                                        Inspirada en los paisajes exuberantes de Portugal, Madeira ofrece un estilo de vida íntimo, rodeado de vegetación, diseño sobrio y materiales nobles. Un enclave para reconectar con lo esencial sin renunciar a lo extraordinario. Mensualidades: $3,400.00 MXN.
+                                 </p>
+                                <h3 className="text-2xl font-bold text-gray-400 ">Madeira - Colección Natural </h3> 
                         </div>
                     </NavLink>   
 
                     <NavLink className ="text-center " to = "/terravento" > 
                         <div className="flex flex-col gap-4">
-                            <img src="Isla_2.webp" className="w-full h-56 object-cover rounded-3xl transition duration-700 ease-in-out transform hover:-translate-y-1 hover:scale-110 hover:shadow-2xl" 
+                            <img src="Madeira.jpeg" className="w-full h-56 object-cover rounded-3xl transition duration-700 ease-in-out transform hover:-translate-y-1 hover:scale-110 hover:shadow-2xl" 
                                 alt ='Plusvalía en Mérida'/>
-                            <p className="text-gray-500 font-chivo">Un proyecto en preventa con rendimientos del 48% y 4 años de financiamiento sin intereses. </p>
-                                <h3 className="text-2xl font-bold text-gray-400 ">Terravento Pedregal Residencial </h3>
+                            <p className="text-gray-500 font-chivo">Sofisticación cálida, esencia insular.
+Boracay captura la frescura del trópico con una visión contemporánea. Ambientes amplios, luz natural y acabados cálidos crean un oasis de relajación privada, ideal para quienes encuentran el lujo en la sencillez bien pensada. Mensualidades $3,124.00 MXN</p>
+                                <h3 className="text-2xl font-bold text-gray-400 ">Boracay – Colección Tropical </h3>
                         </div>
                     </NavLink>   
 
