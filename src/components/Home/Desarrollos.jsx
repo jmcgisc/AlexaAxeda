@@ -20,7 +20,7 @@ const Desarrollos = () => {
                             <img src="Isla_1.webp"  
                                  class="h-56 xl:h-[600px] w-full rounded-lg  shadow-xl dark:shadow-gray-800 transition duration-700 ease-in-out transform hover:-translate-y-1 hover:scale-70  "  
                             // className="inline w-full h-56 xl:h-[600px] rounded-3xl transition duration-700 ease-in-out transform hover:-translate-y-1 hover:scale-70 hover:shadow-2xl" 
-                                    alt='Terrenos residenciales Axeda'/>
+                                    alt='Terrenos residenciales Isla Dimante'/>
                                 <p className="text-axeda py-5 text-center"> Tu terreno la ciudad más bonita y segura de México.
                                     <h3 className="text-2xl font-bold py-4 text-center">ROSAVENTO Ciudad Maya</h3> 
                                 <p className="text-gray-500 font-chivo text-xl"> Terrenos residenciales al norte de Mérida Un paraíso con enganche desde $71,400.00 MXN. y mensualidades desde $2,182.00 MXN.</p> 

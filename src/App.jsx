@@ -1,7 +1,7 @@
 import React      from 'react'
 import 'mdb-react-ui-kit/dist/css/mdb.min.css';
-import "@fortawesome/fontawesome-free/css/all.min.css";
-import Headers    from "./components/Headers"
+import "@fortawesome/fontawesome-free/css/all.min.css"; 
+import SmoothScrollNav from './components/SmoothScrollNav';
 import { Home }   from "./components/Home/Home" 
 import Privacidad           from "./components/Aux/Privacidad" 
 import PreguntasFrecuentes  from "./components/Aux/PreguntasFrecuentes"
@@ -66,7 +66,7 @@ function App() {
       
       <div className="App">  
       <BrowserRouter>
-        <Headers/> 
+        <SmoothScrollNav/> 
           <Routes>
             {/*Header*/}
             <Route path = '/bio'          element ={ <Bio/> } /> 
