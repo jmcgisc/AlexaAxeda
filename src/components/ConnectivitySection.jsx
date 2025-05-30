@@ -18,30 +18,30 @@ const conexiones = [
   {
     icon: <Plane className="w-8 h-8 text-diamante" />,
     titulo: "Aeropuerto Internacional",
-    imagenes: ["/icons/aeropuerto.webp", "/icons/aeropuerto2.webp"],
+    imagenes: ["AeropuertoCancun.webp", "AeropuertoCancun.webp"],
     descripcion:
-      " Alta conectividad internacional y nacional, ideal para viajeros frecuentes, turistas y negocios. Mayor atracción para inversores extranjeros o compradores internacionales, por la facilidad de acceso. Aumento del valor del inmueble gracias a la proximidad a una infraestructura clave.",
+      "Enclavados en una ubicación estratégica, justo al costado del nuevo Anillo Periférico y a minutos del Aeropuerto Internacional de Cancún, uno de los hubs aéreos más importantes de Latinoamérica. Ideal para conectar con mercados globales y atraer turismo internacional.",
   },
   {
     icon: <Train className="w-8 h-8 text-diamante" />,
     titulo: "Tren Maya",
-    imagenes: ["/icons/trenmaya.webp"],
+    imagenes: ["TrenMayaCancun.webp","EstacionTrenMayaCancun.webp"],
     descripcion:
-      "   Acceso rápido a otros destinos turísticos de la península de Yucatán, como Tulum, Playa del Carmen, Bacalar y Mérida. Impulso turístico y económico en la zona, lo que puede traducirse en mayor plusvalía y desarrollo comercial. Oportunidades para negocios enfocados al turismo, como hospedaje, experiencias, gastronomía y transporte.",
+      "A tan solo 10 minutos de la nueva estación del Tren Maya, una de las infraestructuras ferroviarias más ambiciosas del país, diseñada para impulsar el desarrollo del sureste mexicano. Perfecto para ampliar el alcance comercial y turístico del proyecto.",
   },
   {
     icon: <Car className="w-8 h-8 text-diamante" />,
     titulo: "Vías rápidas",
     imagenes: ["/vias_rapidas.webp"],
     descripcion:
-      "Ubicados en una zona estratégica, encontramos Isla Diamante a un costado del nuevo Anillo Periférico ó libramiento Cancún que ofrecerá acceso rápido al aeropuerto internacional de Cancún. Conexión directa a la Carretera Federal 307 (Cancún - Playa del Carmen - Tulum).",
+      "Estamos conectados con las principales arterias viales de Cancún: a solo 2.5 km de la Av. López Portillo, colindantes con el nuevo Anillo Periférico, y a minutos de la Av. Huayacán, epicentro de crecimiento residencial y comercial con alta plusvalía.",
   },
   {
     icon: <Bus className="w-8 h-8 text-diamante" />,
     titulo: "Transporte urbano",
-    imagenes: ["/icons/autobus.webp"],
+    imagenes: ["AutobusCancun.webp"],
     descripcion:
-      "A solo 2.5 km de Av. López Portillo, y minutos de Av. Guayacán, una zona de alta plusvalía.",
+      "La conectividad con zonas clave de la ciudad se traduce en facilidad de acceso para residentes, visitantes y servicios logísticos. Esta integración con el sistema urbano eleva el valor estratégico de la ubicación.",
   },
 ];
 
