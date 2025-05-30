@@ -4,7 +4,6 @@ function SeccionInvestment() {
   return (
     <div>
 
-
      <section id="home" className="min-h-[100vh] bg-diamonBlack text-white grid grid-cols-1 xl:grid-cols-8 px-6 xl:px-24 py-24 gap-8 relative overflow-hidden">
       {/* Información */}
       <div className="xl:col-span-5 flex items-center">
