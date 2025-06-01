@@ -1,4 +1,4 @@
-import React      from 'react'
+import React, { Suspense } from 'react';
 import 'mdb-react-ui-kit/dist/css/mdb.min.css';
 import "@fortawesome/fontawesome-free/css/all.min.css"; 
 import SmoothScrollNav from './components/SmoothScrollNav';
@@ -6,6 +6,7 @@ import { Home }   from "./components/Home/Home"
 import Privacidad           from "./components/Aux/Privacidad" 
 import PreguntasFrecuentes  from "./components/Aux/PreguntasFrecuentes"
 import FormularioContacto   from "./components/Aux/FormularioContacto"
+import SantoriniPage        from "../src/components/Desarrollos/SantoriniPage"
 import Bio                  from "./components/Aux/Bio"
 import Footer               from "./components/Footer"
 import Post                 from "./components/Blog/Post"
@@ -14,6 +15,7 @@ import Error404 from "./Error404"
 import { Routes, Route , BrowserRouter} 
                   from 'react-router-dom';
 import { Helmet } from 'react-helmet';
+import Spinner from './components/Spinner';  
 
 
 
@@ -37,7 +39,8 @@ const firebaseConfig = {
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
+const analytics = getAnalytics(app); 
+const TestimoniosPage = React.lazy(() => import("./components/TestimoniosPage"));
 
 function App() { 
    
@@ -76,9 +79,18 @@ function App() {
             <Route path = '/privacidad'   element ={ <Privacidad/> } /> 
             <Route path = '/preguntas'    element ={ <PreguntasFrecuentes/> } /> 
             <Route path = '/formulario'   element ={ <FormularioContacto/> } /> 
+            <Route path = '/santorini'    element ={ <SantoriniPage/> } /> 
             <Route path='/post/:path' element={<Post />} />
             <Route path="*" element={<Error404 />} />
-                
+
+          <Route
+            path="/testimonios"
+            element={ 
+                <Suspense fallback={<Spinner />}>
+                  <TestimoniosPage />
+                </Suspense> 
+            }
+          />
           </Routes>
       
           <FloatingWhatsApp

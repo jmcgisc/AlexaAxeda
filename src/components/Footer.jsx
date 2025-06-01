@@ -119,7 +119,7 @@ const Footer = () => {
 
       {/* Derechos reservados y Powered by */}
       <div className="mt-6 text-center text-xs text-gray-400 dark:text-gray-600">
-        <p>© {new Date().getFullYear()} Vagamocion Travel. Todos los derechos reservados.</p>
+        <p>© {new Date().getFullYear()} Isla Diamante. Todos los derechos reservados.</p>
         <p className="mt-1 text-[11px] italic text-indigo-200"> Powered by 
           <a href="https://codexa.com" target="_blank" rel="noopener noreferrer" className="font-semibold text-indigo-500 transition"> CODEXA</a>
         </p>

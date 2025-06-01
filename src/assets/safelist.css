@@ -2,8 +2,4 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer components {
-  .ellipse-desarrollos {
-    clip-path: ellipse(80% 95% at 80% 45%);
-  }
-}
+/* Forzar a Tailwind a no eliminar estas clases */

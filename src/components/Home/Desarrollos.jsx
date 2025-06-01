@@ -4,28 +4,28 @@ const desarrollos = [
   {
     nombre: "Santorini - Colección Mediterránea",
     descripcion: "Donde la elegancia se encuentra con el confort. Inspirado en los paisajes del mar Egeo. Privada con vista al lago, lujo cotidiano y seguridad.",
-    imagen: "Santorini.jpeg",
+    imagen: "Santorini.webp",
     precio: "Mensualidades desde $6,260 MXN",
     to: "/santorini"
   },
   {
     nombre: "Azores – Colección Atlántica",
     descripcion: "Minimalismo elegante, inspiración oceánica. Azores evoca la pureza del Atlántico con arquitectura sobria y estética.",
-    imagen: "Anzores.jpeg",
+    imagen: "Anzores.webp",
     precio: "Mensualidades desde $8,160 MXN",
     to: "/anzores"
   },
   {
     nombre: "Madeira – Colección Natural",
     descripcion: "Refugio entre lo verde y lo sofisticado. Inspirada en los paisajes de Portugal, Madeira ofrece diseño sobrio, vegetación y materiales nobles.",
-    imagen: "Madeira.jpeg",
+    imagen: "Madeira.webp",
     precio: "Mensualidades desde $3,400 MXN",
     to: "/madeira"
   },
   {
     nombre: "Boracay – Colección Tropical",
     descripcion: "Sofisticación cálida, esencia insular. Ambientes amplios, luz natural y acabados cálidos crean un oasis de relajación.",
-    imagen: "Boracay.jpeg",
+    imagen: "Boracay.webp",
     precio: "Mensualidades desde $3,124 MXN",
     to: "/boracay"
   }
@@ -64,9 +64,9 @@ const Desarrollos = () => {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
 
-            <NavLink className ="text-center " to = "/indo" > 
+            <NavLink className ="text-center " to = "/santorini" > 
                 <div className="flex flex-col gap-4">
-                    <img    src="Santorini.jpeg" className="w-full h-56 object-cover rounded-3xl transition duration-700 ease-in-out transform hover:-translate-y-1 hover:scale-110 hover:shadow-2xl"
+                    <img    src="Santorini.webp" className="w-full h-56 object-cover rounded-3xl transition duration-700 ease-in-out transform hover:-translate-y-1 hover:scale-110 hover:shadow-2xl"
                             alt='Yucatan crecimiento económico'
                     />
                     <h3 className="text-2xl font-bold text-gray-400 ">Santorini - Colección Mediterranea</h3>
@@ -75,7 +75,7 @@ const Desarrollos = () => {
 
             <NavLink className ="text-center " to = "/rosavento" > 
                 <div className="flex flex-col gap-4">
-                    <img    src="Anzores.jpeg" 
+                    <img    src="Anzores.webp" 
                             className="w-full h-56 object-cover rounded-3xl transition duration-700 ease-in-out transform hover:-translate-y-1 hover:scale-110 hover:shadow-2xl" 
                             alt='Desarrollos en Ciudad Maya' 
                     />   
@@ -85,7 +85,7 @@ const Desarrollos = () => {
 
             <NavLink className ="text-center " to = "/rosenda" > 
                 <div className="flex flex-col gap-4">
-                    <img    src="Madeira.jpeg" 
+                    <img    src="Madeira.webp" 
                             className="w-full h-56 object-cover rounded-3xl transition duration-700 ease-in-out transform hover:-translate-y-1 hover:scale-110 hover:shadow-2xl" 
                             alt='Invierte en rosenda' 
                     />     
@@ -95,7 +95,7 @@ const Desarrollos = () => {
 
             <NavLink className ="text-center " to = "/terravento" > 
                 <div className="flex flex-col gap-4">
-                    <img    src="Boracay.jpeg" 
+                    <img    src="Boracay.webp" 
                             className="w-full h-56 object-cover rounded-3xl transition duration-700 ease-in-out transform hover:-translate-y-1 hover:scale-110 hover:shadow-2xl" 
                             alt ='Plusvalía en Mérida'
                     />

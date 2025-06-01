@@ -20,10 +20,12 @@ import TraditionSection from '../../components/TraditionSection';
 import DesingSection from '../../components/DesingSection';
 import LivingSection from '../../components/LivingSection';
 import EngineeringSection from '../../components/EngineeringSection'; 
+import TestimoniosSlider from '../Aux/TestimoniosSlider';
 import pdf from '../../../public/ISLA_DIAMANTE.pdf'; 
  
 const contentStyle = { width: 1000 }; 
-const isMobile = window.innerWidth < 768;
+import useIsMobile from '../../hooks/useIsMobile';
+const isMobile = useIsMobile();
 
 export const Home = () => {
     return ( 
@@ -39,6 +41,7 @@ export const Home = () => {
             playsInline
             >
             <source src="/video-presentacion.mp4" type="video/mp4" />
+              Tu navegador no soporta video HTML5.
             </video>
         ) : (
             <img
@@ -166,6 +169,9 @@ export const Home = () => {
 
         {/*Opioniones*/}
         <Reviews/>
+
+        {/*Testimonios*/}
+        <TestimoniosSlider/> 
  
         {/*Llamado a la acción*/}
         <FormularioContacto/> 
