@@ -6,7 +6,7 @@ const fs = require("fs");
 const path = require("path");
 
 const app = express();
-const PORT = 8080;
+const PORT = 8888;
 
 // Middleware
 app.use(cors());
