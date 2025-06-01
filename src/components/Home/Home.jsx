@@ -21,18 +21,15 @@ import DesingSection from '../../components/DesingSection';
 import LivingSection from '../../components/LivingSection';
 import EngineeringSection from '../../components/EngineeringSection'; 
 import TestimoniosSlider from '../Aux/TestimoniosSlider';
-import pdf from '../../../public/ISLA_DIAMANTE.pdf'; 
+import pdf from '../../../public/ISLA_DIAMANTE.pdf';
  
-const contentStyle = { width: 1000 }; 
-import useIsMobile from '../../hooks/useIsMobile';
-const isMobile = useIsMobile();
-
+const contentStyle = { width: 1000 };
+ 
 export const Home = () => {
     return ( 
     <> 
         <section id="home" className="relative w-full h-screen overflow-hidden">
         {/* Video o imagen de fondo */}
-        {!isMobile ? (
             <video
             className="absolute top-0 left-0 w-full h-full object-cover z-0"
             autoPlay
@@ -49,7 +46,7 @@ export const Home = () => {
             alt="Fondo móvil"
             className="absolute top-0 left-0 w-full h-full object-cover z-0"
             />
-        )}
+        )
 
         {/* Capa oscura para contraste */}
         <div className="absolute top-0 left-0 w-full h-full bg-black/50 z-10" />
