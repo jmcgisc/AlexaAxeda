@@ -54,9 +54,7 @@
     "swiper": "^9.4.1",
     "vite": "^4.5.0",
     "vite-plugin-mdx": "^3.5.11",
-    "vite-plugin-ssr": "^0.4.131"
-  },
-  "devDependencies": {
+    "vite-plugin-ssr": "^0.4.131",
     "@iconify/icons-mdi": "^1.2.44",
     "@iconify/react": "^4.1.0",
     "@pity/vite-plugin-react-markdown": "^0.1.1",
