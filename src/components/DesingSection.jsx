@@ -15,7 +15,7 @@ const designItems = [
   },
   {
     title: "Diseño Vanguardista",
-    image: "/Santorini.jpeg",
+    image: "/Santorini.webp",
     description: "Cada espacio está diseñado para maximizar la funcionalidad y el confort, utilizando materiales de alta calidad y técnicas de construcción modernas.",
   },
 ];
