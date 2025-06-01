@@ -58,7 +58,7 @@ export default function TestimoniosSlider() {
   return (
     <section id="testimonios" className="bg-gradient-to-b from-white to-blue-50 px-4 sm:px-6 md:px-20 py-24 text-center relative">
       <h3 className="text-4xl font-extrabold text-gray-800 mb-12">
-        Testimonios de nuestros viajeros
+        ¡Testimonios de nuestros INVERSIONISTAS!
       </h3>
 
       <div
