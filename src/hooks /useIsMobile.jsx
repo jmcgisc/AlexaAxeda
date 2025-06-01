@@ -1,5 +1,5 @@
 
-// src/hooks/useIsMobile.js
+// src/hooks/useIsMobile.jsx
 import { useState, useEffect } from 'react';
 
 const useIsMobile = (breakpoint = 768) => {

@@ -51,7 +51,7 @@ export default function NuevaReseña({ onPublicado }) {
     <> 
       <form onSubmit={handleSubmit} className="pt-40 max-w-xl mt-10 mx-auto p-2 bg-white shadow-md">
         <h2 className="text-4xl font-bold mb-4 text-center py-1 mt-20">¿Cómo fue tu experiencia con </h2>
-        <h2 className="text-4xl font-bold mb-4 text-center py-1 text-primary"> Isla Diamante</h2>
+        <h2 className="text-4xl font-bold mb-4 text-center py-1 text-primary"> Alexa Delgado?</h2>
 
         <label className="block mb-2 font-medium py-4">¡Calificanos con estrellas!</label>
         <span className="text-2xl font-semibold mb-6 text-center py-1 text-secondary">
@@ -69,11 +69,11 @@ export default function NuevaReseña({ onPublicado }) {
           ))}
         </div>
 
-        <label className="block mb-2 font-medium">¿Con qué servicio te ayudamos? *</label>
+        <label className="block mb-2 font-medium">¿En dónde fue tu inversión? *</label>
         <input
           type="text"
           className="w-full p-2 mb-4 border rounded"
-          placeholder="Ej. Viaje, Hotel, Visado..."
+          placeholder="Ej. Cancún, Ciudad de México, Mérida..."
           value={servicio}
           onChange={(e) => setServicio(e.target.value)}
         />
