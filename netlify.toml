@@ -9,6 +9,10 @@
   command = "npm run dev"
   targetPort = 5173
 
+[build.environment]
+  NODE_ENV = "production"
+  CI = "false"
+
 [functions]
   node_bundler = "esbuild"
 
