@@ -7,6 +7,9 @@ import Privacidad           from "./components/Aux/Privacidad"
 import PreguntasFrecuentes  from "./components/Aux/PreguntasFrecuentes"
 import FormularioContacto   from "./components/Aux/FormularioContacto"
 import SantoriniPage        from "../src/components/Desarrollos/SantoriniPage"
+import MadeiraPage          from "../src/components/Desarrollos/MadeiraPage"
+import AzoresPage          from "../src/components/Desarrollos/AzoresPage"
+import BoracayPage          from "../src/components/Desarrollos/BoracayPage"
 import Bio                  from "./components/Aux/Bio"
 import Footer               from "./components/Footer"
 import Post                 from "./components/Blog/Post"
@@ -80,6 +83,9 @@ function App() {
             <Route path = '/preguntas'    element ={ <PreguntasFrecuentes/> } /> 
             <Route path = '/formulario'   element ={ <FormularioContacto/> } /> 
             <Route path = '/santorini'    element ={ <SantoriniPage/> } /> 
+            <Route path = '/madeira'      element ={ <MadeiraPage/> } /> 
+            <Route path = '/azores'       element ={ <AzoresPage/> } /> 
+            <Route path = '/boracay'      element ={ <BoracayPage/> } /> 
             <Route path='/post/:path' element={<Post />} />
             <Route path="*" element={<Error404 />} />
 
