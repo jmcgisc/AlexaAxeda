@@ -1,34 +1,60 @@
-const { createClient } = require("@supabase/supabase-js");
+exports.handler = async (event) => {
+  // Configuración básica de CORS
+  const headers = {
+    'Content-Type': 'application/json',
+    'Access-Control-Allow-Origin': '*',
+    'Access-Control-Allow-Headers': 'Content-Type'
+  };
 
-const supabase = createClient(process.env.SUPABASE_URL, process.env.SUPABASE_KEY);
-
-exports.handler = async function (event) {
-  if (event.httpMethod === "POST") {
-    const body = JSON.parse(event.body);
-
-    const { ip, city, region, country, countryCode, isp, userAgent, consented, timestamp } = body;
-
-    const { error } = await supabase.from("cookies").insert([
-      {
-        ip,
-        city,
-        region,
-        country,
-        country_code: countryCode,
-        isp,
-        user_agent: userAgent,
-        consented,
-        timestamp,
-      },
-    ]);
-
-    if (error) {
-      console.error("Error guardando en Supabase:", error);
-      return { statusCode: 500, body: JSON.stringify({ error: "Error al guardar" }) };
+  try {
+    // Solo aceptar POST
+    if (event.httpMethod !== 'POST') {
+      return {
+        statusCode: 405,
+        headers,
+        body: JSON.stringify({ error: 'Método no permitido' })
+      };
     }
 
-    return { statusCode: 200, body: JSON.stringify({ success: true }) };
-  }
+    // Parsear datos
+    const data = JSON.parse(event.body);
+    
+    // Validación básica
+    if (typeof data.accepted !== 'boolean') {
+      return {
+        statusCode: 400,
+        headers,
+        body: JSON.stringify({ error: 'Datos inválidos' })
+      };
+    }
 
-  return { statusCode: 405, body: "Method Not Allowed" };
+    // Aquí puedes:
+    // 1. Guardar en una base de datos
+    // 2. Registrar en un servicio externo
+    // 3. Procesar como necesites
+    
+    console.log('Consentimiento recibido:', {
+      accepted: data.accepted,
+      userAgent: data.user_agent,
+      ip: data.ip_address || 'unknown',
+      timestamp: data.timestamp
+    });
+
+    return {
+      statusCode: 200,
+      headers,
+      body: JSON.stringify({ success: true })
+    };
+  } catch (error) {
+    console.error('Error en la función:', error);
+    
+    return {
+      statusCode: 500,
+      headers,
+      body: JSON.stringify({ 
+        error: 'Error interno del servidor',
+        details: process.env.NODE_ENV === 'development' ? error.message : undefined
+      })
+    };
+  }
 };
