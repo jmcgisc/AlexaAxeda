@@ -36,31 +36,29 @@ const Desarrollos = () => {
         <div className="relative px-6 md:px-12 py-24 bg-gradient-to-b from-white to-gray-100 dark:from-gray-800 dark:to-gray-900 text-center overflow-hidden">
         {/* Marca de agua decorativa */}
             <div className="absolute inset-0 flex justify-center items-center pointer-events-none opacity-5">
-                <img src="/icons/logo-icon-transparente.svg" alt="Decoración" className="w-[300px] md:w-[400px]" />
+                <img src="/icons/logo-icon-transparente.svg" alt="" className="w-[300px] md:w-[400px]" />
             </div>
             <div className="relative z-10 max-w-4xl mx-auto">
                 <h1 className="text-4xl md:text-5xl font-title font-extrabold text-gray-900 dark:text-white leading-tight mb-4">
                     Donde vivir e invertir <span className="text-diamante">coexisten</span>
                 </h1>
             <div className="w-24 h-1 mx-auto bg-diamante rounded-full" />
-                <p className="text-lg md:text-xl text-gray-600 dark:text-gray-300 font-sans mb-4">
+                <p className="text-lg md:text-xl dark:text-gray-200 font-sans mb-4">
                     Desarrollos residenciales en Cancún con diseño exclusivo. <br />
-            <span className="font-medium text-diamonBlack">Cuatro colecciones. Cuatro formas de vivir con distinción.</span>
+            <span className="font-mediumd dark:text-gray-200">Cuatro colecciones. Cuatro formas de vivir con distinción.</span>
             </p>
         </div>
         {/*Desarrollos*/}
-        <div className="grid grid-cols-1 xl:grid-cols-2 gap-8">
-            <NavLink className ="text-center " to = "/rosavento" > 
+        <div className="grid grid-cols-1 xl:grid-cols-2 gap-8"> 
                 <div className="flex flex-col gap-2 rounded-3xl py-2"> 
                     <img    src="Isla_2.webp"  
-                            class="h-56 xl:h-[600px] w-full rounded-lg  shadow-xl dark:shadow-gray-800 transition duration-700 ease-in-out transform hover:-translate-y-1 hover:scale-70  "  
+                            class="h-56 xl:h-[600px] w-full rounded-lg  shadow-xl  transition duration-700 ease-in-out transform hover:-translate-y-1 hover:scale-70  "  
                             alt='Terrenos residenciales Isla Dimante'/>
-                    <h3 className="text-2xl font-bold text-gray-400 ">Isla Diamante</h3> 
-                     <p>
-                        En Isla Diamante, cada privada es una expresión de estilo, lujo y carácter. Inspiradas en rincones icónicos del mundo, nuestras colecciones residenciales ofrecen experiencias de vida únicas, diseñadas para quienes valoran lo excepcional. Cuatro colecciones. Cuatro formas de vivir con distinción.                                    
+                    <h3 className="text-2xl font-bold dark:text-gray-200 mb-4">Isla Diamante</h3> 
+                     <p className="dark:text-gray-200 mb-4">
+                        En Isla Diamante, cada privada es una expresión de estilo, lujo y carácter. Inspiradas en rincones icónicos del mundo, nuestras colecciones residenciales ofrecen experiencias de vida únicas, diseñadas para quienes valoran lo excepcional.                                  
                     </p>
-                </div>          
-            </NavLink>   
+                </div>     
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
 

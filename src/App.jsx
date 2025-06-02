@@ -8,8 +8,9 @@ import PreguntasFrecuentes  from "./components/Aux/PreguntasFrecuentes"
 import FormularioContacto   from "./components/Aux/FormularioContacto"
 import SantoriniPage        from "../src/components/Desarrollos/SantoriniPage"
 import MadeiraPage          from "../src/components/Desarrollos/MadeiraPage"
-import AzoresPage          from "../src/components/Desarrollos/AzoresPage"
+import AzoresPage           from "../src/components/Desarrollos/AzoresPage"
 import BoracayPage          from "../src/components/Desarrollos/BoracayPage"
+import CookieConsentBanner  from "./components/Aux/CookieConsentBanner";
 import Bio                  from "./components/Aux/Bio"
 import Footer               from "./components/Footer"
 import Post                 from "./components/Blog/Post"
@@ -49,6 +50,7 @@ function App() {
    
   return( 
       <>
+      <CookieConsentBanner />
         <div className="min-h-screen bg-white text-black dark:bg-black dark:text-white transition-colors duration-300"> 
 
         <Helmet>
@@ -99,7 +101,8 @@ function App() {
           />
           </Routes>
       
-          <FloatingWhatsApp
+          <FloatingWhatsApp className='-inset-3 -bottom-20 fixed z-50'
+
               phoneNumber="525570137764"
               accountName="Asesor Alexa"
               allowEsc
