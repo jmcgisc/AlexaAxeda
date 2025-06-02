@@ -92,7 +92,7 @@ const Headers = () => {
                           active ? "bg-gray-100 text-gray-900 dark:bg-gray-700 dark:text-white" : "text-gray-700 dark:text-gray-200",
                           "block px-4 py-2 text-sm font-mono text-center"
                         )}
-                        to="/rosenda"
+                        to="/madeira"
                       >
                         Rosenda II
                       </NavLink>

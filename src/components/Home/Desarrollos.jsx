@@ -73,27 +73,27 @@ const Desarrollos = () => {
                 </div>
             </NavLink>   
 
-            <NavLink className ="text-center " to = "/rosavento" > 
+            <NavLink className ="text-center " to = "/azores" > 
                 <div className="flex flex-col gap-4">
                     <img    src="Anzores.webp" 
                             className="w-full h-56 object-cover rounded-3xl transition duration-700 ease-in-out transform hover:-translate-y-1 hover:scale-110 hover:shadow-2xl" 
                             alt='Desarrollos en Ciudad Maya' 
                     />   
                     <h3 className="text-2xl font-bold text-gray-400 ">Azores – Colección Atlántica</h3>
-                </div>
+                </div> 
             </NavLink>   
 
-            <NavLink className ="text-center " to = "/rosenda" > 
+            <NavLink className ="text-center " to = "/madeira" > 
                 <div className="flex flex-col gap-4">
                     <img    src="Madeira.webp" 
                             className="w-full h-56 object-cover rounded-3xl transition duration-700 ease-in-out transform hover:-translate-y-1 hover:scale-110 hover:shadow-2xl" 
-                            alt='Invierte en rosenda' 
+                            alt='Invierte en Maderira' 
                     />     
                     <h3 className="text-2xl font-bold text-gray-400 ">Madeira - Colección Natural </h3> 
                 </div>
             </NavLink>   
 
-            <NavLink className ="text-center " to = "/terravento" > 
+            <NavLink className ="text-center " to = "/boracay" > 
                 <div className="flex flex-col gap-4">
                     <img    src="Boracay.webp" 
                             className="w-full h-56 object-cover rounded-3xl transition duration-700 ease-in-out transform hover:-translate-y-1 hover:scale-110 hover:shadow-2xl" 

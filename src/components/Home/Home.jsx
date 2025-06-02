@@ -165,7 +165,7 @@ export const Home = () => {
       <div className="w-full h-[1px] bg-gray-200 dark:bg-gray-200" />
 
         {/*Opioniones*/}
-        <Reviews/>
+        {/* <Reviews/> */}
 
         {/*Testimonios*/}
         <TestimoniosSlider/> 
