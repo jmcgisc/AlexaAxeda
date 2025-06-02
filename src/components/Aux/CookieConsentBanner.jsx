@@ -1,8 +1,15 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 
-const CookieConsentBanner = () => {
+const CookieConsent = () => {
   const [showBanner, setShowBanner] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState(null);
+
+  // Configuración de la URL basada en el entorno
+  const API_URL = process.env.NODE_ENV === 'development' 
+    ? 'http://localhost:8888/.netlify/functions/cookies' 
+    : '/.netlify/functions/cookies';
 
   useEffect(() => {
     const consentGiven = localStorage.getItem("cookie_consent");
@@ -11,49 +18,86 @@ const CookieConsentBanner = () => {
     }
   }, []);
 
-  const handleConsent = async () => {
-    try {
-      // Obtener IP y geolocalización
-      const geoRes = await axios.get("https://ipapi.co/json/");
-      const { ip, city, region, country_name, country_code, org: isp } = geoRes.data;
-      const userAgent = navigator.userAgent;
+  const handleConsent = async (accepted) => {
+    setLoading(true);
+    setError(null);
 
-      // Enviar a Netlify Function (guardado en Supabase)
-      await axios.post("/.netlify/functions/cookies", {
-        ip,
-        city,
-        region,
-        country: country_name,
-        countryCode: country_code,
-        isp,
-        userAgent,
-        consented: true,
-        timestamp: new Date().toISOString(),
+    try {
+      // Obtener información del usuario
+      const userAgent = navigator.userAgent;
+      const ipRes = await fetch("https://api.ipify.org?format=json");
+      const ipData = await ipRes.json();
+      const ip = ipData.ip;
+
+      const data = {
+        accepted,
+        user_agent: userAgent,
+        ip_address: ip,
+      };
+
+      // Enviar consentimiento al backend
+      await axios.post(API_URL, data, {
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        timeout: 5000 // 5 segundos de timeout
       });
 
-      // Marcar consentimiento en el navegador
-      localStorage.setItem("cookie_consent", "true");
+      // Guardar en localStorage
+      localStorage.setItem("cookie_consent", accepted ? "true" : "false");
       setShowBanner(false);
-    } catch (err) {
-      console.error("Error al guardar consentimiento:", err);
+    } catch (error) {
+      console.error("Error al registrar el consentimiento:", error);
+      setError("No pudimos guardar tu preferencia. Por favor, intenta nuevamente.");
+      
+      // Fallback: guardar solo en localStorage si falla la API
+      localStorage.setItem("cookie_consent", accepted ? "true" : "false");
+      setShowBanner(false);
+    } finally {
+      setLoading(false);
     }
   };
 
   if (!showBanner) return null;
 
   return (
-    <div className="fixed bottom-0 left-0 w-full bg-gray-800 text-white p-4 z-50 flex flex-col md:flex-row items-center justify-between gap-4 shadow-lg">
-      <p className="text-sm">
-        Usamos cookies para mejorar tu experiencia. Al continuar, aceptas nuestra política de privacidad.
-      </p>
-      <button
-        onClick={handleConsent}
-        className="bg-diamante hover:bg-diamante/90 text-white text-sm px-4 py-2 rounded-md transition"
-      >
-        Aceptar cookies
-      </button>
+    <div className="fixed bottom-0 left-0 w-full bg-gray-900 text-white py-4 px-6 shadow-md z-50">
+      <div className="max-w-5xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
+        <div className="flex-1">
+          <p className="text-sm md:text-base">
+            Utilizamos cookies para mejorar tu experiencia en nuestro sitio. Al aceptar, 
+            nos permites analizar cómo interactúas con él.
+          </p>
+          {error && (
+            <p className="text-red-400 text-sm mt-2">
+              ⚠️ {error}
+            </p>
+          )}
+        </div>
+        
+        <div className="flex gap-4 mt-2 md:mt-0">
+          <button
+            onClick={() => handleConsent(true)}
+            className={`px-4 py-2 rounded text-sm ${
+              loading ? 'bg-gray-600 cursor-not-allowed' : 'bg-green-600 hover:bg-green-700'
+            }`}
+            disabled={loading}
+          >
+            {loading ? 'Procesando...' : 'Aceptar'}
+          </button>
+          <button
+            onClick={() => handleConsent(false)}
+            className={`px-4 py-2 rounded text-sm ${
+              loading ? 'bg-gray-600 cursor-not-allowed' : 'bg-red-600 hover:bg-red-700'
+            }`}
+            disabled={loading}
+          >
+            {loading ? 'Procesando...' : 'Rechazar'}
+          </button>
+        </div>
+      </div>
     </div>
   );
 };
 
-export default CookieConsentBanner;
+export default CookieConsent;

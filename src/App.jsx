@@ -101,8 +101,8 @@ function App() {
           />
           </Routes>
       
-          <FloatingWhatsApp className='-inset-3 -bottom-20 fixed z-50'
-
+          <FloatingWhatsApp className='left-4 bottom-4 md:left-8 md:bottom-8'
+              accountAddress="https://wa.me/525570137764"
               phoneNumber="525570137764"
               accountName="Asesor Alexa"
               allowEsc
