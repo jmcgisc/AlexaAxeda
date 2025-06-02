@@ -1,10 +1,13 @@
+// Importar el cliente de Supabase
+const { createClient } = require('@supabase/supabase-js')
+
 exports.handler = async (event) => {
-  // Configuración básica de CORS
+  // Configuración de CORS
   const headers = {
     'Content-Type': 'application/json',
     'Access-Control-Allow-Origin': '*',
     'Access-Control-Allow-Headers': 'Content-Type'
-  };
+  }
 
   try {
     // Solo aceptar POST
@@ -13,48 +16,63 @@ exports.handler = async (event) => {
         statusCode: 405,
         headers,
         body: JSON.stringify({ error: 'Método no permitido' })
-      };
+      }
     }
 
-    // Parsear datos
-    const data = JSON.parse(event.body);
+    // Parsear y validar datos
+    const { accepted, user_agent, ip_address, timestamp } = JSON.parse(event.body)
     
-    // Validación básica
-    if (typeof data.accepted !== 'boolean') {
+    if (typeof accepted !== 'boolean') {
       return {
         statusCode: 400,
         headers,
-        body: JSON.stringify({ error: 'Datos inválidos' })
-      };
+        body: JSON.stringify({ error: 'Datos inválidos: accepted debe ser boolean' })
+      }
     }
 
-    // Aquí puedes:
-    // 1. Guardar en una base de datos
-    // 2. Registrar en un servicio externo
-    // 3. Procesar como necesites
-    
-    console.log('Consentimiento recibido:', {
-      accepted: data.accepted,
-      userAgent: data.user_agent,
-      ip: data.ip_address || 'unknown',
-      timestamp: data.timestamp
-    });
+    // Inicializar cliente Supabase
+    const supabaseUrl = process.env.SUPABASE_URL
+    const supabaseKey = process.env.SUPABASE_SERVICE_KEY
+    const supabase = createClient(supabaseUrl, supabaseKey)
+
+    // Insertar en la tabla de Supabase
+    const { data, error } = await supabase
+      .from('cookie_consents')
+      .insert([
+        {
+          accepted,
+          user_agent: user_agent || 'unknown',
+          ip_address: ip_address || 'unknown',
+          created_at: timestamp || new Date().toISOString()
+        }
+      ])
+      .select()
+
+    if (error) {
+      throw error
+    }
+
+    console.log('Registro insertado en Supabase:', data)
 
     return {
       statusCode: 200,
       headers,
-      body: JSON.stringify({ success: true })
-    };
+      body: JSON.stringify({ 
+        success: true,
+        record: data[0]
+      })
+    }
+
   } catch (error) {
-    console.error('Error en la función:', error);
+    console.error('Error en la función:', error)
     
     return {
       statusCode: 500,
       headers,
       body: JSON.stringify({ 
-        error: 'Error interno del servidor',
+        error: 'Error al guardar en Supabase',
         details: process.env.NODE_ENV === 'development' ? error.message : undefined
       })
-    };
+    }
   }
-};
+}
