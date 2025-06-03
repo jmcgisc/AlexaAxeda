@@ -10,7 +10,7 @@ import SantoriniPage        from "../src/components/Desarrollos/SantoriniPage"
 import MadeiraPage          from "../src/components/Desarrollos/MadeiraPage"
 import AzoresPage           from "../src/components/Desarrollos/AzoresPage"
 import BoracayPage          from "../src/components/Desarrollos/BoracayPage"
-import CookieConsentBanner  from "./components/Aux/CookieConsentBanner";
+import CookieConsent        from "./components/Aux/CookieConsent";
 import Bio                  from "./components/Aux/Bio"
 import Footer               from "./components/Footer"
 import Post                 from "./components/Blog/Post"
@@ -50,7 +50,7 @@ function App() {
    
   return( 
       <>
-      <CookieConsentBanner />
+      <CookieConsent />
         <div className="min-h-screen bg-white text-black dark:bg-black dark:text-white transition-colors duration-300"> 
 
         <Helmet>
