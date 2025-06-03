@@ -32,7 +32,7 @@ exports.handler = async (event) => {
 
     // Inicializar cliente Supabase
     const supabaseUrl = process.env.SUPABASE_URL
-    const supabaseKey = process.env.SUPABASE_SERVICE_KEY
+    const supabaseKey = process.env.SUPABASE_KEY
     const supabase = createClient(supabaseUrl, supabaseKey)
 
     // Insertar en la tabla de Supabase
