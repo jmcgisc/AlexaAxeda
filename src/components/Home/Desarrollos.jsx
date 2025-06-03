@@ -13,7 +13,7 @@ const desarrollos = [
     descripcion: "Minimalismo elegante, inspiración oceánica. Azores evoca la pureza del Atlántico con arquitectura sobria y estética.",
     imagen: "Anzores.webp",
     precio: "Mensualidades desde $8,160 MXN",
-    to: "/anzores"
+    to: "/azores"
   },
   {
     nombre: "Madeira – Colección Natural",

@@ -40,8 +40,8 @@ function SeccionInvestment() {
               whileHover={{ scale: 1.05 }}
               className="flex items-center gap-3 text-white text-lg hover:text-diamante transition"
             >
-              <RiPlayFill className="text-4xl bg-diamante text-white p-2 rounded-full shadow-lg" />
-              Mira nuestro recorrido 360º
+              {/* <RiPlayFill className="text-4xl bg-diamante text-white p-2 rounded-full shadow-lg" />
+              Mira nuestro recorrido 360º */}
             </motion.button>
           </div>
         </motion.div>

@@ -93,7 +93,7 @@ const Footer = () => {
             </NavLink>
           </p> 
  
-          <button  
+          {/* <button  
             onClick={(e) => {
                 e.preventDefault();
                 window.open('https://eva3d.com/recorridos-virtuales-360/axeda/rosavento/index.htm', '_blank');
@@ -101,10 +101,10 @@ const Footer = () => {
                 className="text-2xl flex items-center justify-start gap-4 py-9 px-20 rounded-xl text-gray-200
                 hover:drop-shadow-xl
                 " >
-                    
+{/*                     
                     <RiPlayFill className="bg-diamante p-8 rounded-full box-content"/> 
-                      Recorrido 360º 
-          </button>
+                      Recorrido 360º  */}
+          {/* </button> */}
 
         </nav>
         

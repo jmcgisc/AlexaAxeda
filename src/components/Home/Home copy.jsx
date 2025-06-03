@@ -32,7 +32,7 @@ function Home copy() {
                                                 <FormularioContactoPopup/>
                                             </div>
                                         </Popup> 
-                                        <button  onClick={(e) => {
+                                        {/* <button  onClick={(e) => {
                                                 e.preventDefault();
                                                 window.open('https://eva3d.com/recorridos-virtuales-360/axeda/rosavento/index.htm', '_blank');
                                                 }} 
@@ -40,8 +40,8 @@ function Home copy() {
                                                 hover:drop-shadow-xl
                                                 " >
                                                     <RiPlayFill className="bg-diamante text-white p-8 rounded-full box-content"/> 
-                                                    Mira nuestro recorrido 360º 
-                                        </button>
+                                                
+                                        </button> */}
                                     </div> 
                                 </div>  
                             </div>
