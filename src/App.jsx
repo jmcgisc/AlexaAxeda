@@ -1,4 +1,4 @@
-import React, { Suspense } from 'react';
+import React, { Suspense,useEffect } from 'react';
 import 'mdb-react-ui-kit/dist/css/mdb.min.css';
 import "@fortawesome/fontawesome-free/css/all.min.css"; 
 import SmoothScrollNav from './components/SmoothScrollNav';
@@ -45,11 +45,16 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app); 
 const TestimoniosPage = React.lazy(() => import("./components/TestimoniosPage"));
+ useEffect(() => {
+    initEmailJS();
+  }, []);
+
 
 function App() { 
    
   return( 
       <>
+      
       <CookieConsent />
         <div className="min-h-screen bg-white text-black dark:bg-black dark:text-white transition-colors duration-300"> 
 
