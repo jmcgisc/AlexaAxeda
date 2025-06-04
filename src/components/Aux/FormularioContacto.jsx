@@ -12,6 +12,10 @@ import ReCAPTCHA from "react-google-recaptcha";
 
 const FormularioContacto = () => {
 
+      useEffect(() => {
+        emailjs.init('user_W2TCADC87aLv81yS0'); 
+    }, []);
+
     const [values, setValues] = useState({  
             nombreCompleto: '',
             telefonoMovil:  '',
