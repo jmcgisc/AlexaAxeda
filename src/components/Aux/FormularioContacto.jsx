@@ -128,7 +128,9 @@ const FormularioContacto = () => {
                                     <ReCAPTCHA
                                     ref={captcha}
                                     onChange={onChangeCaptcha}
-                                    sitekey={import.meta.env.VITE_PUBLIC_KEY_CAPTCHA}
+                                    // sitekey={import.meta.env.VITE_PUBLIC_KEY_CAPTCHA}
+                                    sitekey={"6LfUIlUrAAAAAEkjBb8F0jo93uMtzjVtFZeefYE_"}
+
                                     theme="light" 
                                     />
                                 </div>
