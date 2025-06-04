@@ -8,7 +8,6 @@ import TextAreaField from './TextAreaField';
 import ReCAPTCHA from "react-google-recaptcha";
 import { motion } from "framer-motion";
 
-
 const FormularioContacto = ({ onClose }) => {
   const [values, setValues] = useState({
     nombreCompleto: '',
@@ -34,7 +33,7 @@ const FormularioContacto = ({ onClose }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (captchaValido === true) {
-      emailjs.send('service_nnxz7td', 'template_9h35fdq', values, 'dl2zb3hc6kkbEGaOj')
+      emailjs.send('service_z2mixkm', 'template_tj7jp4g', values, 'W2TCADC87aLv81yS0')
         .then(() => {
           setValues({
             nombreCompleto: '',
