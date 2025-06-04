@@ -33,7 +33,7 @@ const FormularioContacto = ({ onClose }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (captchaValido === true) {
-      emailjs.send('service_z2mixkm', 'template_tj7jp4g', values, 'W2TCADC87aLv81yS0')
+                emailjs.send('service_z2mixkm', 'template_tj7jp4g', values, 'user_W2TCADC87aLv81yS0')
         .then(() => {
           setValues({
             nombreCompleto: '',
