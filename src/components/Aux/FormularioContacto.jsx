@@ -34,7 +34,7 @@ const FormularioContacto = () => {
             e.preventDefault(); 
 
             if (captchaValido === true) {
-                emailjs.send('service_nnxz7td', 'template_9h35fdq', values, 'dl2zb3hc6kkbEGaOj')
+                emailjs.send('service_z2mixkm', 'template_tj7jp4g', values, 'W2TCADC87aLv81yS0')
                     .then(response => {
                         console.log('Success!!', response);
                         setValues({
