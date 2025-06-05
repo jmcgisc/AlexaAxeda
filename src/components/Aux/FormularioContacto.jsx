@@ -13,7 +13,7 @@ import ReCAPTCHA from "react-google-recaptcha";
 const FormularioContacto = () => {
 
       useEffect(() => {
-        emailjs.init('W2TCADC87aLv81yS0'); 
+        emailjs.init('8Iqmyiz3wv_KpATTN'); 
     }, []);
 
     const [values, setValues] = useState({  
@@ -38,7 +38,7 @@ const FormularioContacto = () => {
             e.preventDefault(); 
 
             if (captchaValido === true) {
-                emailjs.send('service_z2mixkm', 'template_tj7jp4g', values, 'user_W2TCADC87aLv81yS0')
+                emailjs.send('service_z2mixkm', 'template_tj7jp4g', values, '8Iqmyiz3wv_KpATTN')
                     .then(response => {
                         console.log('Success!!', response);
                         setValues({
