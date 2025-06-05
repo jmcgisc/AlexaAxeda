@@ -28,7 +28,7 @@ const Headers = () => {
   return (
     <div>
       {/* Línea asesor fija en la parte superior */}
-      <div className="fixed top-0 left-0 w-full text-sm py-1 px-4 flex justify-end items-center gap-2 z-50  dark:bg-gray-800 dark:text-white transition-colors duration-300">
+      <div className="fixed top-0 left-0 w-full text-sm py-1 px-4 flex justify-end items-center gap-2 z-50 bg-gray-800 text-white transition-colors duration-300">
         <span>Línea Asesor:</span>
         <a href="tel:+525570137764" className="underline">
           +(52) 55 7013 7764
