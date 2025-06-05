@@ -11,7 +11,7 @@ const SmoothScrollNav = () => {
   return (
     <>
       {/* Línea asesor */}
-      <div className="fixed top-0 left-0 w-full text-sm py-1 px-4 flex justify-end items-center gap-2 z-50 bg-white dark:bg-gray-800 dark:text-black transition-colors duration-300">
+      <div className="fixed top-0 left-0 w-full text-sm py-1 px-4 flex justify-end items-center gap-2 z-50 dark:bg-gray-800 dark:text-white duration-300">
         <span>Línea Asesor:</span>
         <a href="tel:+525570137764" className="underline">+(52) 55 7013 7764</a>
         <RiPhoneFill />
@@ -91,6 +91,22 @@ const SmoothScrollNav = () => {
             {section.charAt(0).toUpperCase() + section.slice(1)}
           </Link>
         ))}
+
+         {/* Tarjeta de contacto con íconos */}
+              <div className="mt-4 p-4 bg-white dark:bg-gray-800 rounded-xl shadow-md text-sm space-y-4">
+                <p className="font-semibold text-gray-700 h-8">¿Necesitas ayuda?</p>
+                <p className="text-gray-600 dark:text-gray-300 h-8"> <a href="mailto:admin@vagamociontravel.com" className="text-blue-600 dark:text-blue-400 underline text-xs">realtor.alexadelgado@gmail.com</a></p>
+                <p className="text-gray-600 dark:text-gray-300 h-8">📞 <span className="font-semibold">+52 55 70 13 77 64</span></p>
+              
+                <a
+                  href="#contacto"
+                  onClick={() => setOpen(false)}
+                  className="inline-block w-full text-center mt-2 px-4 py-2 bg-gradient-to-r from-blue-500 to-purple-600 text-white font-semibold rounded-full shadow-md hover:scale-105 transition-transform duration-300"
+                >
+                  ¡Contáctanos ahora!
+                </a>
+              
+              </div>
       </div>
     </>
   );

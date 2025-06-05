@@ -39,7 +39,7 @@ const Desarrollos = () => {
                 <img src="/icons/logo-icon-transparente.svg" alt="" className="w-[300px] md:w-[400px]" />
             </div>
             <div className="relative z-10 max-w-4xl mx-auto">
-                <h1 className="text-4xl md:text-5xl font-title font-extrabold text-gray-900 dark:text-white leading-tight mb-4">
+                <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900 dark:text-white leading-tight mb-4">
                     Donde vivir e invertir <span className="text-diamante">coexisten</span>
                 </h1>
             <div className="w-24 h-1 mx-auto bg-diamante rounded-full" />

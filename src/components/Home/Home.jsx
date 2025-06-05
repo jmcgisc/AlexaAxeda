@@ -41,11 +41,7 @@ export const Home = () => {
               Tu navegador no soporta video HTML5.
             </video>
         ) : (
-            <img
-            src="/fallback-movil.jpg"
-            alt="Fondo móvil"
-            className="absolute top-0 left-0 w-full h-full object-cover z-0"
-            />
+        
         )
 
         {/* Capa oscura para contraste */}
