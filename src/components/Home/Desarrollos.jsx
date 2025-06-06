@@ -60,7 +60,7 @@ const Desarrollos = () => {
                     </p>
                 </div>     
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="hidden md:grid grid-cols-1 md:grid-cols-2 gap-8">
 
             <NavLink className ="text-center " to = "/santorini" > 
                 <div className="flex flex-col gap-4">
