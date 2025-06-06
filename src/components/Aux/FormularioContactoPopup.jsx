@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import emailjs from 'emailjs-com';
 import InputField from './InputField';
 import InputEmail from './InputEmail';
@@ -18,6 +18,11 @@ const FormularioContacto = ({ onClose }) => {
     mensaje: '',
   });
 
+  
+      useEffect(() => {
+        emailjs.init(process.env.VITE_REACT_APP_EMAILJS_PUBLIC_KEY); 
+    }, []);
+
   const [status, setStatus] = useState('');
   const [captchaValido, cambiarCaptchaValido] = useState(null);
   const captcha = useRef(null);
@@ -33,8 +38,8 @@ const FormularioContacto = ({ onClose }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (captchaValido === true) {
-        emailjs.send('service_z2mixkm', 'template_tj7jp4g', values, '8Iqmyiz3wv_KpATTN')
-        .then(() => {
+        emailjs.send(process.env.VITE_REACT_APP_EMAILJS_SERVICE_ID, process.env.VITE_REACT_APP_EMAILJS_TEMPLATE_ID, values, process.env.VITE_REACT_APP_EMAILJS_PUBLIC_KEY)
+          .then(() => {
           setValues({
             nombreCompleto: '',
             telefonoMovil: '',
