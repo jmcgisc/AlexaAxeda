@@ -15,15 +15,25 @@ const SelectFields = (props) => {
                             </option>
 
                             <option className="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 outline-none focus:ring-2 focus:ring-teal-300 " 
-                            value="Al rededor de  $45,000 mil y mensualidades 1890 de enganche 140 m2 de terreno">
-                                Al rededor de  $45,000 mil y mensualidades 1890 de enganche 140 m2 de terreno
+                            value="Desde $126,000 mxn ">
+                                Desde $126,000 mxn 
                             </option>
 
                             <option className="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 outline-none focus:ring-2 focus:ring-teal-300 " 
-                            value="Al rededor de $95,000 mil y mensualidades 6500 de enganche 300 m2 de terreno">
-                                Al rededor de $95,000 mil y mensualidades 6500 de enganche 300 m2 de terreno
+                            value="Desde $86,500 mxn">
+                                Desde $86,500 mxn 
                             </option>
 
+                            <option className="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 outline-none focus:ring-2 focus:ring-teal-300 " 
+                            value="Desde $72,000 mxn">
+                                Desde $72,000 mxn 
+                            </option>
+
+                            <option className="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 outline-none focus:ring-2 focus:ring-teal-300 " 
+                            value="Desde $66,500 mxn">
+                                Desde $66,500 mxn 
+                            </option>
+                            
                             <option className="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 outline-none focus:ring-2 focus:ring-teal-300 " 
                             value="Aun no se,  esto evaluandolo">
                                 Aun no lo sé, estoy evaluandolo
