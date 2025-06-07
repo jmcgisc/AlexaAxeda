@@ -1,4 +1,4 @@
-import  {useState, useEffect, useRef} from 'react'
+import React, {useState, useEffect, useRef} from 'react'
 import {RiPhoneFill, RiMailFill} from "react-icons/ri"
 import {ImLocation} from "react-icons/im"
 import emailjs from 'emailjs-com'
@@ -13,7 +13,7 @@ import ReCAPTCHA from "react-google-recaptcha";
 const FormularioContacto = () => {
 
       useEffect(() => {
-        emailjs.init(process.env.VITE_REACT_APP_EMAILJS_PUBLIC_KEY); 
+        emailjs.init(import.meta.env.VITE_REACT_APP_EMAILJS_PUBLIC_KEY); 
     }, []);
 
     const [values, setValues] = useState({  
@@ -38,7 +38,7 @@ const FormularioContacto = () => {
             e.preventDefault(); 
 
             if (captchaValido === true) {
-                emailjs.send(process.env.VITE_REACT_APP_EMAILJS_SERVICE_ID, process.env.VITE_REACT_APP_EMAILJS_TEMPLATE_ID, values, process.env.VITE_REACT_APP_EMAILJS_PUBLIC_KEY)
+                emailjs.send(import.meta.env.VITE_REACT_APP_EMAILJS_SERVICE_ID, import.meta.env.VITE_REACT_APP_EMAILJS_TEMPLATE_ID, values, import.meta.env.VITE_REACT_APP_EMAILJS_PUBLIC_KEY)
                     .then(response => {
                         console.log('Success!!', response);
                         setValues({
