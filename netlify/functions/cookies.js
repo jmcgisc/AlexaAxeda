@@ -45,7 +45,7 @@ exports.handler = async (event) => {
         typeof body.ipAddress === 'string' ? body.ipAddress : null
       ),
       created_at: typeof body.timestamp === 'string' ? body.timestamp : new Date().toISOString(),
-      user_id: typeof body.user_id === 'string' ? body.user_id : null,
+      user_id: body.user_id || null,
     };
 
     console.log("Datos que se intentan guardar en Supabase:", payload);

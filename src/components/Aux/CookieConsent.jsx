@@ -32,7 +32,7 @@ const CookieConsent = () => {
         accepted,
         user_agent: navigator.userAgent,
         timestamp: new Date().toISOString(),
-        user_id: getOrCreateUserId(),
+        // user_id: getOrCreateUserId(),
         purpose: "análisis de comportamiento",
         services: ["Google Analytics", "Facebook Pixel"], 
         ip_address: null,
