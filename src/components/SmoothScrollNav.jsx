@@ -11,7 +11,7 @@ const SmoothScrollNav = () => {
   return (
     <>
       {/* Línea asesor */}
-      <div className="fixed top-0 left-0 w-full text-sm py-1 px-4 flex justify-end items-center gap-2 z-50 dark:bg-gray-800 dark:text-white duration-300">
+      <div className="fixed top-0 left-0 w-full text-sm py-1 px-4 flex justify-end items-center gap-2 z-50 dark:bg-gray-800 dark:text-white fduration-300">
         <span>Línea Asesor:</span>
         <a href="tel:+525570137764" className="underline">+(52) 55 7013 7764</a>
         <RiPhoneFill />
