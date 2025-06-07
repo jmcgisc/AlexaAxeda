@@ -1,6 +1,16 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 
+// Genera o recupera un user_id persistente
+const getOrCreateUserId = () => {
+  let id = localStorage.getItem("user_id");
+  if (!id) {
+    id = crypto.randomUUID();
+    localStorage.setItem("user_id", id);
+  }
+  return id;
+};
+
 const CookieConsent = () => {
   const [showBanner, setShowBanner] = useState(false);
   const [loading, setLoading] = useState(false);
@@ -18,17 +28,21 @@ const CookieConsent = () => {
     setIpLoading(true);
 
     try {
-      const userData = {
+      const consentData = {
         accepted,
         user_agent: navigator.userAgent,
         timestamp: new Date().toISOString(),
+        user_id: getOrCreateUserId(),
+        purpose: "análisis de comportamiento",
+        services: "Google Analytics, Facebook Pixel",
+        ip_address: null,
       };
 
-      // Obtener IP de forma opcional
+      // Obtener IP (opcional)
       try {
         const ipRes = await fetch("https://api.ipify.org?format=json");
         if (ipRes.ok) {
-          userData.ip_address = (await ipRes.json()).ip;
+          consentData.ip_address = (await ipRes.json()).ip;
         }
       } catch (ipError) {
         console.warn("No se pudo obtener IP:", ipError);
@@ -36,28 +50,24 @@ const CookieConsent = () => {
         setIpLoading(false);
       }
 
-      // Usar directamente el endpoint de producción en desarrollo
-      const API_URL = '/.netlify/functions/cookies';
-
-      const response = await axios.post(API_URL, userData, {
-        headers: { 'Content-Type': 'application/json' },
-        timeout: 8000
+      const response = await axios.post("/.netlify/functions/cookies", consentData, {
+        headers: { "Content-Type": "application/json" },
+        timeout: 8000,
       });
 
       localStorage.setItem("cookie_consent", accepted.toString());
       setShowBanner(false);
-      
+
     } catch (error) {
       console.error("Error completo:", error);
-      
+
       let errorMessage = "Error al procesar tu solicitud";
-      
-      if (error.code === 'ERR_NETWORK') {
+      if (error.code === "ERR_NETWORK") {
         errorMessage = "Problema de conexión. Tus preferencias se guardaron localmente.";
       } else if (error.response?.status === 500) {
-        errorMessage = "Error interno del servidor. Tus preferencias se guardaron localmente.";
+        errorMessage = "Error del servidor. Tus preferencias se guardaron localmente.";
       }
-      
+
       setError(errorMessage);
       localStorage.setItem("cookie_consent", accepted.toString());
       setTimeout(() => setShowBanner(false), 3000);
@@ -77,9 +87,7 @@ const CookieConsent = () => {
             Usamos cookies para mejorar tu experiencia.
           </p>
           {error && (
-            <div className="mt-2 p-2 bg-red-900/50 rounded text-sm">
-              ⚠️ {error}
-            </div>
+            <div className="mt-2 p-2 bg-red-900/50 rounded text-sm">⚠️ {error}</div>
           )}
           {(loading || ipLoading) && (
             <p className="text-xs text-gray-400 mt-1">
@@ -92,19 +100,19 @@ const CookieConsent = () => {
             onClick={() => handleConsent(false)}
             disabled={loading}
             className={`px-4 py-2 rounded text-sm ${
-              loading ? 'bg-gray-600 cursor-not-allowed' : 'bg-red-600 hover:bg-red-700'
+              loading ? "bg-gray-600 cursor-not-allowed" : "bg-red-600 hover:bg-red-700"
             }`}
           >
-            {loading ? '...' : 'Rechazar'}
+            {loading ? "..." : "Rechazar"}
           </button>
           <button
             onClick={() => handleConsent(true)}
             disabled={loading}
             className={`px-4 py-2 rounded text-sm ${
-              loading ? 'bg-gray-600 cursor-not-allowed' : 'bg-green-600 hover:bg-green-700'
+              loading ? "bg-gray-600 cursor-not-allowed" : "bg-green-600 hover:bg-green-700"
             }`}
           >
-            {loading ? '...' : 'Aceptar'}
+            {loading ? "..." : "Aceptar"}
           </button>
         </div>
       </div>
