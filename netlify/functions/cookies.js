@@ -37,7 +37,7 @@ exports.handler = async (event) => {
       accepted: body.accepted,
       type: typeof body.type === 'string' ? body.type : (body.accepted ? 'full' : 'necessary'),
       purpose: typeof body.purpose === 'string' ? body.purpose : null,
-      services: typeof body.services === 'string' ? body.services : null,
+      services: Array.isArray(body.services) ? body.services : null, 
       user_agent: typeof body.user_agent === 'string' ? body.user_agent : (
         typeof body.userAgent === 'string' ? body.userAgent : null
       ),
