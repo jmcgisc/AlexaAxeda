@@ -1,14 +1,17 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 
-// Genera o recupera un user_id persistente
-const getOrCreateUserId = () => {
-  let id = localStorage.getItem("user_id");
-  if (!id) {
-    id = crypto.randomUUID();
-    localStorage.setItem("user_id", id);
-  }
-  return id;
+const detectActiveServices = () => {
+  const services = [];
+
+  if (window.gtag || window.ga) services.push("Google Analytics");
+  if (window.fbq) services.push("Facebook Pixel");
+  if (window.ym) services.push("Yandex Metrica");
+  if (window._paq) services.push("Matomo");
+  if (window.hj) services.push("Hotjar");
+  if (window.analytics) services.push("Segment");
+
+  return services;
 };
 
 const CookieConsent = () => {
@@ -28,21 +31,20 @@ const CookieConsent = () => {
     setIpLoading(true);
 
     try {
-      const consentData = {
+      const userData = {
         accepted,
         user_agent: navigator.userAgent,
         timestamp: new Date().toISOString(),
-        // user_id: getOrCreateUserId(),
-        purpose: "análisis de comportamiento",
-        services: ["Google Analytics", "Facebook Pixel"], 
-        ip_address: null,
+        services: accepted ? detectActiveServices() : [], // Detect dinámico
+        purpose: accepted ? "análisis de comportamiento" : "solo necesarias",
+        user_id: crypto.randomUUID?.() || null // Puedes sustituirlo por tu lógica real
       };
 
-      // Obtener IP (opcional)
+      // Obtener IP
       try {
         const ipRes = await fetch("https://api.ipify.org?format=json");
         if (ipRes.ok) {
-          consentData.ip_address = (await ipRes.json()).ip;
+          userData.ip_address = (await ipRes.json()).ip;
         }
       } catch (ipError) {
         console.warn("No se pudo obtener IP:", ipError);
@@ -50,25 +52,19 @@ const CookieConsent = () => {
         setIpLoading(false);
       }
 
-      const response = await axios.post("/.netlify/functions/cookies", consentData, {
-        headers: { "Content-Type": "application/json" },
-        timeout: 8000,
+      const API_URL = '/.netlify/functions/cookies';
+
+      await axios.post(API_URL, userData, {
+        headers: { 'Content-Type': 'application/json' },
+        timeout: 8000
       });
 
       localStorage.setItem("cookie_consent", accepted.toString());
       setShowBanner(false);
-
+      
     } catch (error) {
       console.error("Error completo:", error);
-
-      let errorMessage = "Error al procesar tu solicitud";
-      if (error.code === "ERR_NETWORK") {
-        errorMessage = "Problema de conexión. Tus preferencias se guardaron localmente.";
-      } else if (error.response?.status === 500) {
-        errorMessage = "Error del servidor. Tus preferencias se guardaron localmente.";
-      }
-
-      setError(errorMessage);
+      setError("Hubo un problema al guardar tus preferencias. Se han guardado localmente.");
       localStorage.setItem("cookie_consent", accepted.toString());
       setTimeout(() => setShowBanner(false), 3000);
     } finally {
@@ -87,11 +83,13 @@ const CookieConsent = () => {
             Usamos cookies para mejorar tu experiencia.
           </p>
           {error && (
-            <div className="mt-2 p-2 bg-red-900/50 rounded text-sm">⚠️ {error}</div>
+            <div className="mt-2 p-2 bg-red-900/50 rounded text-sm">
+              ⚠️ {error}
+            </div>
           )}
           {(loading || ipLoading) && (
             <p className="text-xs text-gray-400 mt-1">
-              {ipLoading ? "Detectando ubicación..." : "Guardando preferencias..."}
+              {ipLoading ? "Detectando IP..." : "Guardando preferencias..."}
             </p>
           )}
         </div>
@@ -100,19 +98,19 @@ const CookieConsent = () => {
             onClick={() => handleConsent(false)}
             disabled={loading}
             className={`px-4 py-2 rounded text-sm ${
-              loading ? "bg-gray-600 cursor-not-allowed" : "bg-red-600 hover:bg-red-700"
+              loading ? 'bg-gray-600 cursor-not-allowed' : 'bg-red-600 hover:bg-red-700'
             }`}
           >
-            {loading ? "..." : "Rechazar"}
+            {loading ? '...' : 'Rechazar'}
           </button>
           <button
             onClick={() => handleConsent(true)}
             disabled={loading}
             className={`px-4 py-2 rounded text-sm ${
-              loading ? "bg-gray-600 cursor-not-allowed" : "bg-green-600 hover:bg-green-700"
+              loading ? 'bg-gray-600 cursor-not-allowed' : 'bg-green-600 hover:bg-green-700'
             }`}
           >
-            {loading ? "..." : "Aceptar"}
+            {loading ? '...' : 'Aceptar'}
           </button>
         </div>
       </div>
