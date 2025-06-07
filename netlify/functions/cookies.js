@@ -40,21 +40,25 @@ exports.handler = async (event) => {
       user_id: body.user_id || null,
     };
 
+    console.log("Payload recibido en cookies.js:", payload);
+
     const { data, error } = await supabase
       .from("cookie_consents")
       .insert([payload])
       .select();
 
     if (error) {
-      console.error("Supabase insert error:", error);
-      throw error;
-    }
-
+    console.error("Supabase insert error:", error);
     return {
-      statusCode: 200,
+      statusCode: 500,
       headers,
-      body: JSON.stringify({ success: true, inserted: data }),
-    };
+      body: JSON.stringify({ 
+        error: "Error al guardar en Supabase", 
+        details: error.message || error 
+        }),
+      };
+    }
+    console.log("Body recibido:", body);
 
   } catch (err) {
     console.error("Function error:", err);
@@ -63,5 +67,6 @@ exports.handler = async (event) => {
       headers,
       body: JSON.stringify({ error: "Error al procesar datos" }),
     };
+    console.log("Body recibido:", body);
   }
 };
