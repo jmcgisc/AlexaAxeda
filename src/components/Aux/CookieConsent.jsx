@@ -34,7 +34,7 @@ const CookieConsent = () => {
         timestamp: new Date().toISOString(),
         user_id: getOrCreateUserId(),
         purpose: "análisis de comportamiento",
-        services: "Google Analytics, Facebook Pixel",
+        services: ["Google Analytics", "Facebook Pixel"], 
         ip_address: null,
       };
 
