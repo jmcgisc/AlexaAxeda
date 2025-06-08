@@ -24,12 +24,22 @@ const Dashboard = () => {
 
   useEffect(() => {
     fetch("/.netlify/functions/get-cookie-consents")
-      .then((res) => res.json())
+      .then((res) => {
+        if (!res.ok) {
+          throw new Error("Error al cargar datos");
+        }
+        return res.json();
+      })
       .then((data) => {
         setConsents(data);
+      })
+      .catch((error) => {
+        console.error("Error al obtener consentimientos:", error);
+      })
+      .finally(() => {
         setLoading(false);
       });
-  }, []);
+    }, []);
 
   const filtered = consents.filter((c) => {
     const matchSearch =
@@ -59,6 +69,14 @@ const Dashboard = () => {
     return acc;
   }, {});
 
+  if (loading) {
+  return <div className="p-6 text-center text-gray-500">Cargando dashboard...</div>;
+    }
+
+    if (!loading && consents.length === 0) {
+      return <div className="p-6 text-center text-red-600">No hay datos para mostrar.</div>;
+    }
+    
   return (
     <div className="p-6 bg-gray-50 dark:bg-black min-h-screen">
     <h1 className="text-3xl font-bold mb-6 text-center text-teal-600">Dashboard de Cookies</h1>
