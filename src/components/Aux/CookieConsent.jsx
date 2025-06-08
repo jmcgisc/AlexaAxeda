@@ -80,7 +80,8 @@ const CookieConsent = () => {
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
         <div className="flex-1">
           <p className="text-sm md:text-base">
-            Usamos cookies para mejorar tu experiencia.
+            Utilizamos cookies para darte la mejor experiencia de usuario y entrega de publicidad, entre otras cosas. Si continúas navegando el sitio, das tu consentimiento para utilizar dicha tecnología, según nuestra Política de cookies. 
+            Puedes cambiar la configuración en tu navegador cuando gustes.
           </p>
           {error && (
             <div className="mt-2 p-2 bg-red-900/50 rounded text-sm">
