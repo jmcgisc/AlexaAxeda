@@ -2,7 +2,7 @@ const consentData = {
   accepted,
   type: accepted ? "full" : "necessary",
   purpose: accepted ? "marketing, analytics" : "basic",
-  services: accepted ? "Google Analytics, Meta Pixel" : "none",
+  services: accepted ? ["Google Analytics", "Meta Pixel"] : [],
   user_agent: navigator.userAgent || "unknown",
   timestamp: new Date().toISOString()
 };
