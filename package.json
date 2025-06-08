@@ -60,6 +60,7 @@
     "react-scripts": "^5.0.1",
     "react-scroll": "^1.9.3",
     "react-swipeable": "^7.0.2",
+    "react-ui-cards": "^3.1.0",
     "reactjs-popup": "^2.0.5",
     "remark-gfm": "^3.0.1",
     "swiper": "^9.4.1",
