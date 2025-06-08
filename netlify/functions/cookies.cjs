@@ -36,17 +36,19 @@ exports.handler = async (event) => {
     const payload = {
       accepted: body.accepted,
       type: typeof body.type === 'string' ? body.type : (body.accepted ? 'full' : 'necessary'),
-      purpose: typeof body.purpose === 'string' ? body.purpose : null,
-      services: Array.isArray(body.services) ? body.services : null, 
-      user_agent: typeof body.user_agent === 'string' ? body.user_agent : (
-        typeof body.userAgent === 'string' ? body.userAgent : null
-      ),
-      ip_address: typeof body.ip_address === 'string' ? body.ip_address : (
-        typeof body.ipAddress === 'string' ? body.ipAddress : null
-      ),
-      created_at: typeof body.timestamp === 'string' ? body.timestamp : new Date().toISOString(),
+      purpose: body.purpose || null,
+      services: Array.isArray(body.services) ? body.services : null,
+      user_agent: body.user_agent || null,
+      ip_address: body.ip_address || null,
+      created_at: body.timestamp || new Date().toISOString(),
       user_id: body.user_id || null,
+      path: body.path || null,
+      referrer: body.referrer || null,
+      utm_source: body.utm_source || null,
+      utm_medium: body.utm_medium || null,
+      utm_campaign: body.utm_campaign || null,
     };
+
 
     console.log("Datos que se intentan guardar en Supabase:", payload);
 

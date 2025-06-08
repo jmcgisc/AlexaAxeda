@@ -3,14 +3,12 @@ import axios from "axios";
 
 const detectActiveServices = () => {
   const services = [];
-
   if (window.gtag || window.ga) services.push("Google Analytics");
   if (window.fbq) services.push("Facebook Pixel");
   if (window.ym) services.push("Yandex Metrica");
   if (window._paq) services.push("Matomo");
   if (window.hj) services.push("Hotjar");
   if (window.analytics) services.push("Segment");
-
   return services;
 };
 
@@ -35,12 +33,16 @@ const CookieConsent = () => {
         accepted,
         user_agent: navigator.userAgent,
         timestamp: new Date().toISOString(),
-        services: accepted ? detectActiveServices() : [], // Detect dinámico
+        services: accepted ? detectActiveServices() : [],
         purpose: accepted ? "análisis de comportamiento" : "solo necesarias",
         user_id: null,
+        path: window.location.pathname,
+        referrer: document.referrer || null,
+        utm_source: new URLSearchParams(window.location.search).get("utm_source"),
+        utm_medium: new URLSearchParams(window.location.search).get("utm_medium"),
+        utm_campaign: new URLSearchParams(window.location.search).get("utm_campaign"),
       };
-
-      // Obtener IP
+      
       try {
         const ipRes = await fetch("https://api.ipify.org?format=json");
         if (ipRes.ok) {
@@ -61,10 +63,9 @@ const CookieConsent = () => {
 
       localStorage.setItem("cookie_consent", accepted.toString());
       setShowBanner(false);
-      
     } catch (error) {
       console.error("Error completo:", error);
-      setError("Hubo un problema al guardar tus preferencias. Se han guardado localmente.");
+      setError("Hubo un problema al guardar tus preferencias.");
       localStorage.setItem("cookie_consent", accepted.toString());
       setTimeout(() => setShowBanner(false), 3000);
     } finally {
@@ -76,42 +77,38 @@ const CookieConsent = () => {
   if (!showBanner) return null;
 
   return (
-    <div className="fixed bottom-0 left-0 right-0 bg-gray-800 text-white p-4 shadow-lg z-50">
-      <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
-        <div className="flex-1">
-          <p className="text-sm md:text-base">
-            Utilizamos cookies para darte la mejor experiencia de usuario y entrega de publicidad, entre otras cosas. Si continúas navegando el sitio, das tu consentimiento para utilizar dicha tecnología, según nuestra Política de cookies. 
-            Puedes cambiar la configuración en tu navegador cuando gustes.
+    <div className="fixed bottom-0 left-0 right-0 z-50 bg-black/90 text-white py-6 px-4 shadow-lg">
+      <div className="max-w-2xl mx-auto text-center">
+        <p className="text-sm md:text-base leading-relaxed mb-4">
+          Usamos cookies para mejorar tu experiencia y mostrar contenido relevante. Al aceptar, consientes el uso de tecnologías con fines de análisis y marketing. Puedes conocer más detalles en nuestra{" "}
+          <a href="/privacidad" className="underline text-amber-400 hover:text-amber-300">política de privacidad</a>.
+        </p>
+
+        {error && (
+          <div className="mt-2 p-2 bg-red-900/60 rounded text-sm">{error}</div>
+        )}
+
+        {(loading || ipLoading) && (
+          <p className="text-xs text-gray-400 mt-2">
+            {ipLoading ? "Detectando IP..." : "Guardando preferencias..."}
           </p>
-          {error && (
-            <div className="mt-2 p-2 bg-red-900/50 rounded text-sm">
-              ⚠️ {error}
-            </div>
-          )}
-          {(loading || ipLoading) && (
-            <p className="text-xs text-gray-400 mt-1">
-              {ipLoading ? "Detectando IP..." : "Guardando preferencias..."}
-            </p>
-          )}
-        </div>
-        <div className="flex gap-3">
-          <button
-            onClick={() => handleConsent(false)}
-            disabled={loading}
-            className={`px-4 py-2 rounded text-sm ${
-              loading ? 'bg-gray-600 cursor-not-allowed' : 'bg-red-600 hover:bg-red-700'
-            }`}
+        )}
+
+        <div className="flex justify-center mt-4 gap-4">
+          <a
+            href="/privacidad"
+            className="px-4 py-2 text-sm rounded border border-white hover:bg-white hover:text-black transition"
           >
-            {loading ? '...' : 'Rechazar'}
-          </button>
+            Saber más
+          </a>
           <button
             onClick={() => handleConsent(true)}
             disabled={loading}
-            className={`px-4 py-2 rounded text-sm ${
-              loading ? 'bg-gray-600 cursor-not-allowed' : 'bg-green-600 hover:bg-green-700'
+            className={`px-4 py-2 text-sm rounded bg-green-600 hover:bg-green-700 transition ${
+              loading ? "opacity-50 cursor-not-allowed" : ""
             }`}
           >
-            {loading ? '...' : 'Aceptar'}
+            {loading ? "..." : "Aceptar"}
           </button>
         </div>
       </div>
