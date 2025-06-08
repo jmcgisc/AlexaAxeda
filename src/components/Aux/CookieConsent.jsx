@@ -37,7 +37,7 @@ const CookieConsent = () => {
         timestamp: new Date().toISOString(),
         services: accepted ? detectActiveServices() : [], // Detect dinámico
         purpose: accepted ? "análisis de comportamiento" : "solo necesarias",
-        user_id: body.user_id || null,
+        user_id: null,
       };
 
       // Obtener IP
