@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Card, CardContent } from "@/components/ui/card";
+import { Card, CardContent } from "../ui/card";
 import { Bar, Pie } from "react-chartjs-2";
 import {
   Chart as ChartJS,
@@ -10,7 +10,9 @@ import {
   Tooltip,
   Legend,
 } from "chart.js";
-import "leaflet/dist/leaflet.css";
+import 'leaflet/dist/leaflet.css';
+
+
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 
 ChartJS.register(CategoryScale, LinearScale, BarElement, ArcElement, Tooltip, Legend);
