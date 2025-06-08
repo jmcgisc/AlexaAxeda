@@ -90,7 +90,7 @@ function App() {
             <Route path = '/madeira'      element ={ <MadeiraPage/> } /> 
             <Route path = '/azores'       element ={ <AzoresPage/> } /> 
             <Route path = '/boracay'      element ={ <BoracayPage/> } /> 
-            <Route path = '/boracay'      element ={ <CookieDashboard/> } /> 
+            <Route path="/panel-cookies" element={<DashboardConsent />} />
             <Route path='/post/:path' element={<Post />} />
             <Route path="*" element={<Error404 />} />
 

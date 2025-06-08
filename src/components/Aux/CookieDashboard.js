@@ -59,7 +59,7 @@ const Dashboard = () => {
 
   return (
     <div className="p-6 bg-gray-50 dark:bg-black min-h-screen">
-      <h1 className="text-3xl font-bold mb-6 text-center text-diamante">Dashboard de Cookies</h1>
+    <h1 className="text-3xl font-bold mb-6 text-center text-teal-600">Dashboard de Cookies</h1>
 
       <div className="grid md:grid-cols-3 gap-4 mb-8">
         <input
