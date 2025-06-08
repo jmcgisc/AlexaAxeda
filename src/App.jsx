@@ -10,7 +10,7 @@ import SantoriniPage        from "../src/components/Desarrollos/SantoriniPage"
 import MadeiraPage          from "../src/components/Desarrollos/MadeiraPage"
 import AzoresPage           from "../src/components/Desarrollos/AzoresPage"
 import BoracayPage          from "../src/components/Desarrollos/BoracayPage"
-import BoracayPage          from "../src/components/Aux/CookieDashboard"
+import CookieDashboard          from "../src/components/Aux/CookieDashboard"
 import CookieConsent        from "./components/Aux/CookieConsent";
 import Bio                  from "./components/Aux/Bio"
 import Footer               from "./components/Footer"
@@ -90,6 +90,7 @@ function App() {
             <Route path = '/madeira'      element ={ <MadeiraPage/> } /> 
             <Route path = '/azores'       element ={ <AzoresPage/> } /> 
             <Route path = '/boracay'      element ={ <BoracayPage/> } /> 
+            <Route path = '/boracay'      element ={ <CookieDashboard/> } /> 
             <Route path='/post/:path' element={<Post />} />
             <Route path="*" element={<Error404 />} />
 
