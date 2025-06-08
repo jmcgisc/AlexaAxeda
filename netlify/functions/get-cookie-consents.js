@@ -1,25 +1,44 @@
-const consentData = {
-  accepted,
-  type: accepted ? "full" : "necessary",
-  purpose: accepted ? "marketing, analytics" : "basic",
-  services: accepted ? ["Google Analytics", "Meta Pixel"] : [],
-  user_agent: navigator.userAgent || "unknown",
-  timestamp: new Date().toISOString()
-};
+const { createClient } = require('@supabase/supabase-js');
 
-try {
-  const ipRes = await fetch("https://api.ipify.org?format=json");
-  if (ipRes.ok) {
-    const ipData = await ipRes.json();
-    consentData.ip_address = ipData.ip;
+exports.handler = async () => {
+  const headers = {
+    'Access-Control-Allow-Origin': '*',
+    'Access-Control-Allow-Headers': 'Content-Type',
+    'Content-Type': 'application/json',
+  };
+
+  try {
+    const supabase = createClient(
+      process.env.SUPABASE_URL,
+      process.env.SUPABASE_KEY
+    );
+
+    const { data, error } = await supabase
+      .from('cookie_consents')
+      .select('*')
+      .order('created_at', { ascending: false })
+      .limit(200); // Puedes ajustar el límite según necesidad
+
+    if (error) {
+      console.error("Error de Supabase:", error);
+      return {
+        statusCode: 500,
+        headers,
+        body: JSON.stringify({ error: 'Error al obtener los datos', details: error.message })
+      };
+    }
+
+    return {
+      statusCode: 200,
+      headers,
+      body: JSON.stringify(data),
+    };
+  } catch (err) {
+    console.error("Error general en la función:", err);
+    return {
+      statusCode: 500,
+      headers,
+      body: JSON.stringify({ error: 'Error interno del servidor', details: err.message }),
+    };
   }
-} catch (err) {
-  console.warn("IP no detectada");
-}
-
-// Enviar a Netlify Function
-await fetch("/.netlify/functions/cookies", {
-  method: "POST",
-  headers: { "Content-Type": "application/json" },
-  body: JSON.stringify(consentData)
-});
+};
