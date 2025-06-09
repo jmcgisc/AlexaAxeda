@@ -17,7 +17,7 @@ export default function NotFound() {
         <h2 className="text-2xl md:text-3xl font-semibold mt-4 text-gray-800">
           ¡Ups! Parece que nos perdimos...
         </h2>
-        <p className="mt-2 text-gray-600">
+        <p className="mt-2 text-gray-900">
           No encontramos la página que buscas. Quizás tomamos el camino equivocado.
         </p>
 
