@@ -67,12 +67,15 @@
     "react-ui-cards": "^3.1.0",
     "reactjs-popup": "^2.0.5",
     "remark-gfm": "^3.0.1",
+    "sitemap": "^8.0.0",
     "swiper": "^9.4.1",
     "tailwind-clip-path": "^1.0.0",
     "tailwindcss": "^3.2.7",
     "vite": "^4.5.0",
-    "vite-plugin-compression": "^0.5.1",
     "vite-plugin-mdx": "^3.5.11",
     "vite-plugin-ssr": "^0.4.131"
+  },
+  "devDependencies": {
+    "vite-plugin-compression": "^0.5.1"
   }
 }

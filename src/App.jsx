@@ -13,10 +13,13 @@ import BoracayPage          from "../src/components/Desarrollos/BoracayPage"
 import CookieDashboard      from "../src/components/Aux/CookieDashboard"
 import CookieConsent        from "./components/Aux/CookieConsent";
 import Bio                  from "./components/Aux/Bio"
-import Footer               from "./components/Footer"
-import Post                 from "./components/Blog/Post"
+import Footer               from "./components/Footer" 
 import { FloatingWhatsApp } from 'react-floating-whatsapp'
-import Error404 from "./Error404"
+import Error404             from "./Error404"
+import BlogHome             from "./components/Blog/BlogHome";
+import Post                 from "./components/Blog/Post";
+import Schema               from "./components/Aux/Schema";
+
 import { Routes, Route , BrowserRouter} 
                   from 'react-router-dom';
 import { Helmet } from 'react-helmet';
@@ -91,7 +94,8 @@ function App() {
             <Route path = '/azores'         element ={ <AzoresPage/> } /> 
             <Route path = '/boracay'        element ={ <BoracayPage/> } /> 
             <Route path = '/panel-cookies'  element={<CookieDashboard />} />
-            <Route path='/post/:path'       element={<Post />} />
+            <Route path="/blog"             element={<BlogHome />} />
+            <Route path="/post/:path"       element={<Post />} />
             <Route path="*"                 element={<Error404 />} />
 
           <Route

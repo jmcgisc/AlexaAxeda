@@ -137,6 +137,13 @@ const AzoresPage = () => {
           {/* <GaleriaFlotante />  */}
         </div>
 
+        <MetaTags
+          title="Isla Diamante - Invierte con confianza"
+          description="Terrenos residenciales en Cancún con plusvalía garantizada."
+          url="https://alexadelgado.netlify.app/"
+          image="https://alexadelgado.netlify.app/Alexa_.jpeg"
+        />
+
     </section>
   );
 };

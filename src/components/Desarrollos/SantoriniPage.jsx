@@ -11,6 +11,7 @@ import {
   Sofa,
   Dumbbell
 } from "lucide-react";
+import SEO from "../SEO";
 import GaleriaFlotante from "../GaleriaFlotante";
 
 const amenityGroups = [
@@ -133,6 +134,21 @@ const SantoriniPage = () => {
           {/* Galería flotante */}
           {/* <GaleriaFlotante />  */}
         </div>
+
+        <MetaTags
+          title="Isla Diamante - Invierte con confianza"
+          description="Terrenos residenciales en Cancún con plusvalía garantizada."
+          url="https://alexadelgado.netlify.app/"
+          image="https://alexadelgado.netlify.app/Alexa_.jpeg"
+        />
+
+        <SEO
+          title="Santorini - Isla Diamante"
+          description="Conoce Santorini: terrenos residenciales exclusivos en Cancún, conectados con naturaleza y modernidad."
+          image="https://alexadelgado.netlify.app/santorini.jpg"
+          url="https://alexadelgado.netlify.app/santorini"
+        />
+
 
     </section>
   );
