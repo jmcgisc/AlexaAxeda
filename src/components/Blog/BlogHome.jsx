@@ -1,7 +1,6 @@
 // src/components/Blog/BlogHome.jsx
 import { Link } from "react-router-dom";
-import SEO from "../Aux/SEO"; 
-
+import SEO from "../SEO"
 const posts = [
   {
     title: "¿Cómo invertir en terrenos en Cancún?",
