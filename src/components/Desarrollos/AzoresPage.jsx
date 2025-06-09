@@ -25,7 +25,7 @@ const amenityGroups = [
     items: [
       { name: "Canchas de pádel", icon: Medal },
       { name: "Gimnasio equipado", icon: Dumbbell },
-      { name: "Canchas multideporte", icon: Volleyball }
+      { name: "Canchas multideporte", icon: Volleyball },
       { name: "Mini golf ", icon: LandPlot }
     ]
   },
