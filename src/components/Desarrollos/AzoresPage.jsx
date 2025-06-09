@@ -8,7 +8,8 @@ import {
   Trees, 
   Dumbbell,
   Medal,
-  Flame
+  Flame,
+  LandPlot
 } from "lucide-react";
 
 const amenityGroups = [
