@@ -79,7 +79,7 @@ function App() {
       
       <div className="App">  
       <BrowserRouter>
-        <SmoothScrollNav/> 
+        {/* <SmoothScrollNav/>  */}
           <Routes>
             {/*Header*/}
             <Route path = '/bio'            element ={ <Bio/> } /> 
@@ -94,9 +94,9 @@ function App() {
             <Route path = '/azores'         element ={ <AzoresPage/> } /> 
             <Route path = '/boracay'        element ={ <BoracayPage/> } /> 
             <Route path = '/panel-cookies'  element={<CookieDashboard />} />
-            <Route path="/blog"             element={<BlogHome />} />
-            <Route path="/post/:path"       element={<Post />} />
-            
+            <Route path=  "/blog"           element={<BlogHome />} />
+            <Route path=  "/post/:path"     element={<Post />} />
+
             <Route path="*"                 element={<Error404 />} />
 
           <Route

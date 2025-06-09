@@ -1,38 +1,52 @@
-// src/components/Blog/BlogHome.jsx
+import { useEffect, useState } from "react";
+import matter from "gray-matter";
 import { Link } from "react-router-dom";
-import SEO from "../SEO"
-const posts = [
-  {
-    title: "¿Cómo invertir en terrenos en Cancún?",
-    slug: "invertir-en-terrenos-en-cancun",
-    excerpt: "Guía para quienes buscan invertir en tierra con alto potencial turístico y plusvalía.",
-  },
-  // Puedes ir agregando más
-];
 
-const BlogHome = () => (
-  <div className="max-w-3xl mx-auto p-6">
-    <h1 className="text-3xl font-bold mb-6">Blog de Isla Diamante</h1>
-    <ul className="space-y-6">
-      {posts.map((post) => (
-        <li key={post.slug}>
-          <Link to={`/post/${post.slug}`} className="text-2xl text-teal-700 hover:underline">
-            {post.title}
+const BlogHome = () => {
+  const [posts, setPosts] = useState([]);
+
+  useEffect(() => {
+    const postList = [
+      "invertir-en-terrenos-en-cancun"
+    ];
+
+    const loadPosts = async () => {
+      const loaded = await Promise.all(
+        postList.map(async (slug) => {
+          const res = await fetch(`/posts/${slug}.md`);
+          const text = await res.text();
+          const { data } = matter(text);
+          return { slug, ...data };
+        })
+      );
+
+      setPosts(loaded);
+    };
+
+    loadPosts();
+  }, []);
+
+  return (
+    <div className="max-w-5xl mx-auto p-6">
+      <h1 className="text-3xl font-bold mb-6 text-center">Blog de Isla Diamante</h1>
+
+      <div className="grid md:grid-cols-2 gap-6">
+        {posts.map((post) => (
+          <Link
+            to={`/post/${post.slug}`}
+            key={post.slug}
+            className="block bg-white dark:bg-gray-900 p-5 rounded shadow hover:shadow-md transition"
+          >
+            <h2 className="text-xl font-semibold text-amber-600 mb-1">{post.title}</h2>
+            <p className="text-sm text-gray-500 mb-2">
+              {new Date(post.date).toLocaleDateString()}
+            </p>
+            <p className="text-gray-700 dark:text-gray-300">{post.description}</p>
           </Link>
-          <p className="text-sm text-gray-500">{post.excerpt}</p>
-        </li>
-      ))}
-    </ul>
-
-    <SEO
-        title="¿Cómo invertir en terrenos en Cancún? | Blog Isla Diamante"
-        description="Descubre consejos clave para invertir inteligentemente en terrenos en una de las zonas con más plusvalía de México."
-        image="https://alexadelgado.netlify.app/blog/terrenos-cancun.jpg"
-        url="https://alexadelgado.netlify.app/blog/como-invertir-en-terrenos-en-cancun"
-        schemaType="Article"
-      />
-  </div>
-  
-);
+        ))}
+      </div>
+    </div>
+  );
+};
 
 export default BlogHome;
