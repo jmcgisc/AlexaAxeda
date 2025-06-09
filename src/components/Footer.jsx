@@ -87,7 +87,7 @@ const Footer = () => {
           </p> 
 
           <p  className="text-primary_isla lg:text-xl lg:mt-4">
-            <NavLink  to = "/post" 
+            <NavLink  to = "/blog" 
                       target="_blank"
             > Blog
             </NavLink>
