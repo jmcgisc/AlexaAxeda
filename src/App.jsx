@@ -79,7 +79,7 @@ function App() {
       
       <div className="App">  
       <BrowserRouter>
-        {/* <SmoothScrollNav/>  */}
+        <SmoothScrollNav/> 
           <Routes>
             {/*Header*/}
             <Route path = '/bio'            element ={ <Bio/> } /> 
