@@ -1,16 +1,9 @@
 ---
-title: "¿Cómo invertir en terrenos en Cancún?"
-date: "2025-06-08"
-excerpt: "Guía para quienes buscan invertir en tierra con alto potencial turístico y plusvalía."
-slug: "invertir-en-terrenos-en-cancun"
+title: Cómo invertir en terrenos en Cancún
+date: 2025-06-08
+description: Aprende a invertir sin buró en Cancún
 ---
 
-Invertir en Cancún es apostar por una zona con turismo creciente y gran proyección.
+# Bienvenido a la inversión
 
-## Ventajas
-
-- Alta rentabilidad
-- Demanda creciente
-- Zona en desarrollo
-
-Consulta siempre proyectos con legalidad comprobada, como **Isla Diamante**.
+Este artículo te enseña a invertir en terrenos...

@@ -96,6 +96,7 @@ function App() {
             <Route path = '/panel-cookies'  element={<CookieDashboard />} />
             <Route path="/blog"             element={<BlogHome />} />
             <Route path="/post/:path"       element={<Post />} />
+            
             <Route path="*"                 element={<Error404 />} />
 
           <Route
