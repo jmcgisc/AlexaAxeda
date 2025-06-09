@@ -16,7 +16,7 @@ const amenityGroups = [
     title: "Social y Recreación",
     items: [
       { name: "Salón de usos múltiples", icon: PartyPopper },
-      { name: "Terrazas", icon: Trees }
+      { name: "Terrazas", icon: Trees },
       { name: "Fire Pit", icon: Flame }
     ]
   },
