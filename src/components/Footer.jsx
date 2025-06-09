@@ -26,23 +26,23 @@ const Footer = () => {
 
         {/* Social media */}
         <nav className="flex items-center gap-4">
-          <a href="https://www.instagram.com/asesor.alexadelgado/"          target= "_blank" className="block text-white p-4 bg-diamante rounded-full"> 
+          <a href="https://www.instagram.com/altan.are?igsh=MWU2NTZsZ2FjeXRjZQ=="          target= "_blank" className="block text-white p-4 bg-primary_isla rounded-full"> 
             <FaInstagramSquare />
           </a>
 
-          <a href="https://www.facebook.com/profile.php?id=100063816524796" target= "_blank" className="block text-white p-4 bg-diamante rounded-full">
+          <a href="https://www.facebook.com/share/r/19ERrYf2a4/" target= "_blank" className="block text-white p-4 bg-primary_isla rounded-full">
             <FaFacebook />
           </a>
 
-          <a href="#" className="block text-white p-4 bg-diamante rounded-full">
+          <a href="#" className="block text-white p-4 bg-primary_isla rounded-full">
             <FaTwitter />
           </a> 
 
-          <a href="https://mx.linkedin.com/in/alexa-delgado-37201b214"       target= "_blank"className="block text-white p-4 bg-diamante rounded-full">
+          <a href="https://www.linkedin.com/in/alexa-delgado-65028a351?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"       target= "_blank"className="block text-white p-4 bg-primary_isla rounded-full">
             <FaLinkedin />
           </a> 
 
-          <a href="https://www.tiktok.com/@alexadelgadoasesor?is_from_webapp=1&sender_device=pc" className="block text-white p-4 bg-diamante rounded-full">
+          <a href="" className="block text-white p-4 bg-primary_isla rounded-full">
             <FaTiktok />
           </a> 
 
@@ -102,7 +102,7 @@ const Footer = () => {
                 hover:drop-shadow-xl
                 " >
 {/*                     
-                    <RiPlayFill className="bg-diamante p-8 rounded-full box-content"/> 
+                    <RiPlayFill className="bg-primary_isla p-8 rounded-full box-content"/> 
                       Recorrido 360º  */}
           {/* </button> */}
 

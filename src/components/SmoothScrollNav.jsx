@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-scroll";
 import { RiMenuLine, RiCloseLine, RiPhoneFill } from "react-icons/ri";
+import { NavLink }  from "react-router-dom"; 
 import ThemeToggle from "../components/DarkModeToggle";
 import imageBlack from "./images/LogoBlancoTransparente.png";
 import imageWhite from "./images/LogoNegroTransparente.png";
@@ -78,8 +79,9 @@ const SmoothScrollNav = () => {
           isOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
-        {["location", "connectivity", "tradition", "design", "living", "engineering"].map((section) => (
-          <Link
+        
+        {["santorini", "azores", "madeira", "boracay"].map((section) => (
+          <NavLink
             key={section}
             to={section}
             smooth
@@ -89,7 +91,7 @@ const SmoothScrollNav = () => {
             className="cursor-pointer hover:text-diamante"
           >
             {section.charAt(0).toUpperCase() + section.slice(1)}
-          </Link>
+          </NavLink>
         ))}
 
          {/* Tarjeta de contacto con íconos */}

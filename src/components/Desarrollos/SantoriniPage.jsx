@@ -26,7 +26,7 @@ const amenityGroups = [
   {
     title: "Deportivas",
     items: [
-      { name: "Canchas de pádel", icon: Dumbbell }
+      { name: "Parque tematico con Canchas de pádel", icon: Dumbbell }
     ]
   },
   {
@@ -38,7 +38,7 @@ const amenityGroups = [
       { name: "Baños y regaderas", icon: ShowerHead }
     ]
   }
-];
+]; 
 
 const SantoriniPage = () => {
   return (
@@ -54,7 +54,7 @@ const SantoriniPage = () => {
           <h1 className="text-4xl md:text-6xl font-bold">Santorini</h1>
           <p className="text-xl text-gray-600 dark:text-gray-400">
             149 terrenos - Inspirado en la elegancia del mar Egeo, Santorini fusiona lujo, serenidad y funcionalidad en cada rincón.
-          </p>
+          </p>  
         </motion.div>
 
         {/* Imagen + Descripción */}

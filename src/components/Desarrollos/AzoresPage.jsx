@@ -7,7 +7,8 @@ import {
   Volleyball,
   Trees, 
   Dumbbell,
-  Medal
+  Medal,
+  Flame
 } from "lucide-react";
 
 const amenityGroups = [
@@ -16,6 +17,7 @@ const amenityGroups = [
     items: [
       { name: "Salón de usos múltiples", icon: PartyPopper },
       { name: "Terrazas", icon: Trees }
+      { name: "Fire Pit", icon: Flame }
     ]
   },
   {
@@ -24,6 +26,7 @@ const amenityGroups = [
       { name: "Canchas de pádel", icon: Medal },
       { name: "Gimnasio equipado", icon: Dumbbell },
       { name: "Canchas multideporte", icon: Volleyball }
+      { name: "Mini golf ", icon: LandPlot }
     ]
   },
   {

@@ -14,14 +14,13 @@ const amenityGroups = [
     title: "Social y Recreación",
     items: [
       { name: "Salón de usos múltiples", icon: PartyPopper },
-      { name: "Salón con firepit", icon: Flame },
       { name: "Terrazas", icon: Trees }
     ]
   },
   {
     title: "Deportivas",
     items: [
-      { name: "Mini golf ", icon: LandPlot }
+      { name: "Parque Infantil ", icon: LandPlot }
     ]
   },
   {

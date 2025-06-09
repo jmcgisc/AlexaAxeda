@@ -10,7 +10,7 @@ import SantoriniPage        from "../src/components/Desarrollos/SantoriniPage"
 import MadeiraPage          from "../src/components/Desarrollos/MadeiraPage"
 import AzoresPage           from "../src/components/Desarrollos/AzoresPage"
 import BoracayPage          from "../src/components/Desarrollos/BoracayPage"
-import CookieDashboard     from "../src/components/Aux/CookieDashboard"
+import CookieDashboard      from "../src/components/Aux/CookieDashboard"
 import CookieConsent        from "./components/Aux/CookieConsent";
 import Bio                  from "./components/Aux/Bio"
 import Footer               from "./components/Footer"
@@ -79,20 +79,20 @@ function App() {
         <SmoothScrollNav/> 
           <Routes>
             {/*Header*/}
-            <Route path = '/bio'          element ={ <Bio/> } /> 
+            <Route path = '/bio'            element ={ <Bio/> } /> 
             {/*Home*/}
-            <Route path = '/'             element ={ <Home/> } />
-            {/* Footer */}
-            <Route path = '/privacidad'   element ={ <Privacidad/> } /> 
-            <Route path = '/preguntas'    element ={ <PreguntasFrecuentes/> } /> 
-            <Route path = '/formulario'   element ={ <FormularioContacto/> } /> 
-            <Route path = '/santorini'    element ={ <SantoriniPage/> } /> 
-            <Route path = '/madeira'      element ={ <MadeiraPage/> } /> 
-            <Route path = '/azores'       element ={ <AzoresPage/> } /> 
-            <Route path = '/boracay'      element ={ <BoracayPage/> } /> 
-            <Route path="/panel-cookies"  element={<CookieDashboard />} />
-            <Route path='/post/:path' element={<Post />} />
-            <Route path="*" element={<Error404 />} />
+            <Route path = '/'               element ={ <Home/> } />
+            {/* Footer */}  
+            <Route path = '/privacidad'     element ={ <Privacidad/> } /> 
+            <Route path = '/preguntas'      element ={ <PreguntasFrecuentes/> } /> 
+            <Route path = '/formulario'     element ={ <FormularioContacto/> } /> 
+            <Route path = '/santorini'      element ={ <SantoriniPage/> } /> 
+            <Route path = '/madeira'        element ={ <MadeiraPage/> } /> 
+            <Route path = '/azores'         element ={ <AzoresPage/> } /> 
+            <Route path = '/boracay'        element ={ <BoracayPage/> } /> 
+            <Route path = '/panel-cookies'  element={<CookieDashboard />} />
+            <Route path='/post/:path'       element={<Post />} />
+            <Route path="*"                 element={<Error404 />} />
 
           <Route
             path="/testimonios"

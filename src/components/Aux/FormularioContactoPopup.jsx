@@ -18,9 +18,8 @@ const FormularioContacto = ({ onClose }) => {
     mensaje: '',
   });
 
-  
       useEffect(() => {
-        emailjs.init(process.env.VITE_REACT_APP_EMAILJS_PUBLIC_KEY); 
+        emailjs.init(import.meta.env.VITE_REACT_APP_EMAILJS_PUBLIC_KEY); 
     }, []);
 
   const [status, setStatus] = useState('');
@@ -38,7 +37,7 @@ const FormularioContacto = ({ onClose }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (captchaValido === true) {
-        emailjs.send(process.env.VITE_REACT_APP_EMAILJS_SERVICE_ID, process.env.VITE_REACT_APP_EMAILJS_TEMPLATE_ID, values, process.env.VITE_REACT_APP_EMAILJS_PUBLIC_KEY)
+                emailjs.send(import.meta.env.VITE_REACT_APP_EMAILJS_SERVICE_ID, import.meta.env.VITE_REACT_APP_EMAILJS_TEMPLATE_ID, values, import.meta.env.VITE_REACT_APP_EMAILJS_PUBLIC_KEY)
           .then(() => {
           setValues({
             nombreCompleto: '',

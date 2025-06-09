@@ -24,55 +24,58 @@ const CookieConsent = () => {
   }, []);
 
   const handleConsent = async (accepted) => {
-    setLoading(true);
-    setError(null);
-    setIpLoading(true);
+      setLoading(true);
+      setError(null);
+      setIpLoading(true);
 
-    try {
-      const userData = {
-        accepted,
-        user_agent: navigator.userAgent,
-        timestamp: new Date().toISOString(),
-        services: accepted ? detectActiveServices() : [],
-        purpose: accepted ? "análisis de comportamiento" : "solo necesarias",
-        user_id: null,
-        path: window.location.pathname,
-        referrer: document.referrer || null,
-        utm_source: new URLSearchParams(window.location.search).get("utm_source"),
-        utm_medium: new URLSearchParams(window.location.search).get("utm_medium"),
-        utm_campaign: new URLSearchParams(window.location.search).get("utm_campaign"),
-      };
-      
       try {
-        const ipRes = await fetch("https://api.ipify.org?format=json");
-        if (ipRes.ok) {
-          userData.ip_address = (await ipRes.json()).ip;
+        const url = new URL(window.location.href);
+        const params = new URLSearchParams(url.search);
+
+        const userData = {
+          accepted,
+          user_agent: navigator.userAgent,
+          timestamp: new Date().toISOString(),
+          services: accepted ? detectActiveServices() : [],
+          purpose: accepted ? "análisis de comportamiento" : "solo necesarias",
+          user_id: null,
+          referrer: document.referrer || null,
+          path: window.location.pathname,
+          utm_campaign: new URLSearchParams(window.location.search).get("utm_campaign"),
+          utm_source: new URLSearchParams(window.location.search).get("utm_source"),
+          utm_medium: new URLSearchParams(window.location.search).get("utm_medium")
+        };
+
+        // Obtener IP
+        try {
+          const ipRes = await fetch("https://api.ipify.org?format=json");
+          if (ipRes.ok) {
+            userData.ip_address = (await ipRes.json()).ip;
+          }
+        } catch (ipError) {
+          console.warn("No se pudo obtener IP:", ipError);
+        } finally {
+          setIpLoading(false);
         }
-      } catch (ipError) {
-        console.warn("No se pudo obtener IP:", ipError);
+
+       await axios.post("/.netlify/functions/cookies", userData, {
+          headers: { 'Content-Type': 'application/json' },
+          timeout: 8000
+        });
+
+        localStorage.setItem("cookie_consent", accepted.toString());
+        setShowBanner(false);
+
+      } catch (error) {
+        console.error("Error completo:", error);
+        setError("Hubo un problema al guardar tus preferencias. Se han guardado localmente.");
+        localStorage.setItem("cookie_consent", accepted.toString());
+        setTimeout(() => setShowBanner(false), 3000);
       } finally {
+        setLoading(false);
         setIpLoading(false);
       }
-
-      const API_URL = '/.netlify/functions/cookies';
-
-      await axios.post(API_URL, userData, {
-        headers: { 'Content-Type': 'application/json' },
-        timeout: 8000
-      });
-
-      localStorage.setItem("cookie_consent", accepted.toString());
-      setShowBanner(false);
-    } catch (error) {
-      console.error("Error completo:", error);
-      setError("Hubo un problema al guardar tus preferencias.");
-      localStorage.setItem("cookie_consent", accepted.toString());
-      setTimeout(() => setShowBanner(false), 3000);
-    } finally {
-      setLoading(false);
-      setIpLoading(false);
-    }
-  };
+    };
 
   if (!showBanner) return null;
 
