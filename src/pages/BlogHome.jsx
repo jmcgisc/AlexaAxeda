@@ -20,8 +20,8 @@ export default function BlogHome() {
     <SEO
         title="¿Cómo invertir en terrenos en Cancún? | Blog Isla Diamante"
         description="Descubre consejos clave para invertir inteligentemente en terrenos en una de las zonas con más plusvalía de México."
-        image="https://alexadelgado.netlify.app/blog/terrenos-cancun.jpg"
-        url="https://alexadelgado.netlify.app/blog/como-invertir-en-terrenos-en-cancun"
+        image="https://desarrollosdiamante.com/blog/terrenos-cancun.jpg"
+        url="https://desarrollosdiamante.com/blog/como-invertir-en-terrenos-en-cancun"
         schemaType="Article"
       />
     </div>

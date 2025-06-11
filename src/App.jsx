@@ -56,7 +56,7 @@ function App() {
       <>
       
       <CookieConsent />
-        <div className="min-h-screen bg-white text-black dark:bg-black dark:text-white transition-colors duration-300"> 
+        <div className="min-h-screen text-black dark:bg-black dark:text-white transition-colors duration-300"> 
 
         <Helmet>
         <title>Isla Diamante | Alexa Delgado</title>
@@ -65,15 +65,15 @@ function App() {
         {/* Open Graph / Facebook */}
         <meta property="og:title" content="Isla Diamante | Alexa Delgado" />
         <meta property="og:description" content="Un proyecto único, planeado de manera integral, cuidando siempre el entorno ecológico de la zona. Ofrecemos una gran variedad de servicios y amenidades que te ofrecen la mejor calidad de vida y seguridad que mereces" />
-        <meta property="og:image" content="https://alexadelgado.netlify.app/Alexa_.jpeg" />
-        <meta property="og:url" content="https://alexadelgado.netlify.app" />
+        <meta property="og:image" content="https://desarrollosdiamante.com/Alexa_.jpeg" />
+        <meta property="og:url" content="https://desarrollosdiamante.com/" />
         <meta property="og:type" content="website" />
 
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Isla Diamante | Alexa Delgado" />
         <meta name="twitter:description" content="Un proyecto único, planeado de manera integral, cuidando siempre el entorno ecológico de la zona. Ofrecemos una gran variedad de servicios y amenidades que te ofrecen la mejor calidad de vida y seguridad que mereces." />
-        <meta name="twitter:image" content="https://alexadelgado.netlify.app/Alexa_.jpeg" />
+        <meta name="twitter:image" content="https://desarrollosdiamante.com/Alexa_.jpeg" />
  
       </Helmet>
       

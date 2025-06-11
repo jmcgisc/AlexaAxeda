@@ -15,8 +15,7 @@ const Reviews = () => {
                 </span>
 
                 <p className="max-w-2xl text-center text-gray-400">Alexa me transmitió desde el inicio una gran confianza, es una 
-                            profesional increíble que domina su campo y me ayudo en todo momento de la compra, ha sido una gran desición el invertir con 
-                            Axeda y con Alexa Delgado como asesor.
+                            profesional increíble que domina su campo
                 </p>
 
                 <span className="text-5xl text-chivo">

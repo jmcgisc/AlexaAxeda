@@ -47,5 +47,6 @@ module.exports = {
   plugins: [
     require('tailwind-clip-path'),
     require('@tailwindcss/aspect-ratio'),
+    require('@tailwindcss/typography'),
   ],
 }

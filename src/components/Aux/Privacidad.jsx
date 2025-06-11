@@ -12,8 +12,8 @@ const Privacidad = () => {
 
         <p>
           En <strong>Isla Diamante</strong>, operado por <strong>Alexa Delgado</strong>, valoramos tu privacidad y nos comprometemos a proteger la información que compartes con nosotros al visitar nuestro sitio web:{" "}
-          <a href="https://alexadelgado.netlify.app" className="text-primary_isla underline" target="_blank" rel="noopener noreferrer">
-            alexadelgado.netlify.app
+          <a href="https://desarrollosdiamante.com" className="text-primary_isla underline" target="_blank" rel="noopener noreferrer">
+            https://desarrollosdiamante.com/
           </a>.
         </p>
 
@@ -63,7 +63,7 @@ const Privacidad = () => {
           <strong>Alexa Delgado</strong><br />
           Gerente Comercial – Isla Diamante<br />
           📧 <a href="mailto:realtor.alexadelgado@gmail.com" className="underline text-primary_isla">realtor.alexadelgado@gmail.com</a><br />
-          📍 Mérida, Ciudad de México
+          📍 Cancún, Ciudad de México
         </p>
       </div>
     <div className="mt-12 bg-gray-100 dark:bg-gray-800 p-6 rounded-lg shadow-md">

@@ -36,7 +36,7 @@ function SeccionInvestment() {
             </motion.div>
 
             <motion.button
-              onClick={() => window.open('https://eva3d.com/recorridos-virtuales-360/axeda/rosavento/index.htm', '_blank')}
+              onClick={() => window.open('', '_blank')}
               whileHover={{ scale: 1.05 }}
               className="flex items-center gap-3 text-white text-lg hover:text-diamante transition"
             >

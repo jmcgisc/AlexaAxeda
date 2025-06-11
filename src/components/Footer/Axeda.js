@@ -3,7 +3,7 @@ import React from 'react'
 const Axeda = () => {
     return (
         <div>
-            Axeda
+            nada
         </div>
     )
 }

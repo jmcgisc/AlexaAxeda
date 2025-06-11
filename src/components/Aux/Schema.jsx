@@ -7,8 +7,8 @@ const Schema = () => (
         "@context": "https://schema.org",
         "@type": "Organization",
         "name": "Isla Diamante",
-        "url": "https://alexadelgado.netlify.app",
-        "logo": "https://alexadelgado.netlify.app/logo.png",
+        "url": "https://desarrollosdiamante.com/",
+        "logo": "https://desarrollosdiamante.com/logo.png",
         "sameAs": [
             "https://www.facebook.com/share/r/19ERrYf2a4/",
             "https://www.instagram.com/altan.are?igsh=MWU2NTZsZ2FjeXRjZQ=="        

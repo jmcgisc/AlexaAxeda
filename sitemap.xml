@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://alexadelgado.netlify.app/</loc>
+    <loc>https://desarrollosdiamante.com/</loc>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://alexadelgado.netlify.app/santorini</loc>
+    <loc>https://desarrollosdiamante.com/santorini</loc>
   </url>
   <url>
-    <loc>https://alexadelgado.netlify.app/blog</loc>
+    <loc>https://desarrollosdiamante.com/blog</loc>
   </url>
 </urlset>

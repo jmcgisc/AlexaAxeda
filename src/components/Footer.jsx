@@ -71,13 +71,13 @@ const Footer = () => {
             </NavLink>
           </p>
 
-          <p  className="text-primary_isla lg:text-xl lg:mt-4">
+          {/* <p  className="text-primary_isla lg:text-xl lg:mt-4">
             <NavLink 
                       to = "/components/footer/Eventos" 
                       target="_blank"
             > Eventos 
             </NavLink>
-          </p>
+          </p> */}
           
           <p  className="text-primary_isla lg:text-xl lg:mt-4">
             <NavLink  to = "/privacidad" 

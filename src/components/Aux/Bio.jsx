@@ -40,18 +40,15 @@ const Bio = () => {
             <div className="mt-16 max-w-5xl mx-auto">
                 <h3 className="text-2xl font-semibold text-center mb-6 text-gray-800 dark:text-gray-100">¿Por qué Isla Diamante?</h3>
                 <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-gray-700 dark:text-gray-300 list-disc list-inside">
-                    <li>Descarga nuestro anexo legal</li>
-                    <li>Fideicomiso</li>
-                    <li>Servicios a pie de lote</li>
-                    <li>Reutilización de agua pluvial</li>
-                    <li>Servicios ocultos</li>
-                    <li>Alumbrado con planta solar</li>
-                    <li>Calles de adocreto (mayor durabilidad)</li>
-                    <li>Enganche desde el 10%</li>
-                    <li>Hasta 48 meses sin intereses</li>
-                    <li>Mensualidades cómodas hasta 240 meses</li>
-                    <li>Sin penalización por pagos anticipados</li>
-                    <li>Sin revisión de buró ni aval</li>
+                    <li>Fideicomiso inmobiliario   </li>
+                    <li>Servicios a pie de lote   </li>
+                    <li>Reutilizacion de agua pluvial   </li>
+                    <li>Servicios ocultos   </li>
+                    <li>Enganche 15%  </li>
+                    <li>Hasta 120 meses sin intereses   </li>
+                    <li>Sin penalización por pagos anticipados   </li>
+                    <li>Sin revisión de buró   </li>
+                    <li>Sin aval  </li>
                 </ul>
             </div>
 
@@ -61,23 +58,23 @@ const Bio = () => {
                    
                     {/* Social media */}
                     <nav className="flex items-center gap-4">
-                      <a href="https://www.instagram.com/asesor.alexadelgado/"          target= "_blank" className="block text-white p-4 bg-diamante rounded-full"> 
+                      <a href="https://www.instagram.com/asesor.alexadelgado/"          target= "_blank" className="block text-primary_isla p-4 bg-diamante rounded-full"> 
                         <FaInstagramSquare />
                       </a>
 
-                      <a href="https://www.facebook.com/profile.php?id=100063816524796" target= "_blank" className="block text-white p-4 bg-diamante rounded-full">
+                      <a href="https://www.facebook.com/profile.php?id=100063816524796" target= "_blank" className="block text-primary_isla p-4 bg-diamante rounded-full">
                         <FaFacebook />
                       </a>
 
-                      <a href="#" className="block text-white p-4 bg-diamante rounded-full">
+                      <a href="#" className="block text-primary_isla p-4 bg-diamante rounded-full">
                         <FaTwitter />
                       </a> 
 
-                      <a href="https://mx.linkedin.com/in/alexa-delgado-37201b214"       target= "_blank"className="block text-white p-4 bg-diamante rounded-full">
+                      <a href="https://mx.linkedin.com/in/alexa-delgado-37201b214"       target= "_blank"className="block text-primary_isla p-4 bg-diamante rounded-full">
                         <FaLinkedin />
                       </a> 
 
-                      <a href="https://www.tiktok.com/@alexadelgadoasesor?is_from_webapp=1&sender_device=pc" className="block text-white p-4 bg-diamante rounded-full">
+                      <a href="https://www.tiktok.com/@alexadelgadoasesor?is_from_webapp=1&sender_device=pc" className="block text-primary_isla p-4 bg-diamante rounded-full">
                         <FaTiktok />
                       </a> 
 
