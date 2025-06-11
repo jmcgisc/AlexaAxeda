@@ -48,7 +48,8 @@ const CookieConsent = () => {
 
         // Obtener IP
         try {
-          const ipRes = await fetch("https://api.ipify.org?format=json");
+          const ipRes = 
+          await Promise.race([fetch("https://api.ipify.org?format=json"),new Promise((_, reject) => setTimeout(() => reject(new Error("IP fetch timeout")), 3000))])
           if (ipRes.ok) {
             userData.ip_address = (await ipRes.json()).ip;
           }
