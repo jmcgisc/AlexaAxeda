@@ -39,11 +39,11 @@ const CookieConsent = () => {
           services: accepted ? detectActiveServices() : [],
           purpose: accepted ? "análisis de comportamiento" : "solo necesarias",
           user_id: null,
-          path: new URLSearchParams(window.location.search).get("path"),
-          referrer: new URLSearchParams(window.location.search).get("referrer"),
-          utm_campaign: new URLSearchParams(window.location.search).get("utm_campaign"),
-          utm_source: new URLSearchParams(window.location.search).get("utm_source"),
-          utm_medium: new URLSearchParams(window.location.search).get("utm_medium")
+          path: window.location.pathname,
+          referrer: document.referrer || null,
+          utm_campaign: params.get("utm_campaign"),
+          utm_source: params.get("utm_source"),
+          utm_medium: params.get("utm_medium"),
         };
 
         // Obtener IP
