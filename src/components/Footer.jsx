@@ -78,6 +78,14 @@ const Footer = () => {
             > Eventos 
             </NavLink>
           </p> */}
+
+          <p  className="text-primary_isla lg:text-xl lg:mt-4">
+            <NavLink  to = "/blog" 
+                      target="_blank"
+            > Blog
+            </NavLink>
+          </p> 
+          
           
           <p  className="text-primary_isla lg:text-xl lg:mt-4">
             <NavLink  to = "/privacidad" 
@@ -86,12 +94,6 @@ const Footer = () => {
             </NavLink>
           </p> 
 
-          <p  className="text-primary_isla lg:text-xl lg:mt-4">
-            <NavLink  to = "/blog" 
-                      target="_blank"
-            > Blog
-            </NavLink>
-          </p> 
  
           {/* <button  
             onClick={(e) => {
