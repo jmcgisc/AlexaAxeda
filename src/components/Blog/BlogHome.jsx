@@ -71,10 +71,10 @@ const BlogHome = () => {
             <Link
               to={`/post/${post.slug}`}
               key={index}
-              className="block dark:bg-black shadow-md hover:shadow-xl rounded-lg overflow-hidden transition duration-300 border border-gray-200 hover:border-teal-500"
+              className="block dark:bg-black dark:text-white shadow-md hover:shadow-xl rounded-lg overflow-hidden transition duration-300 border border-gray-200 hover:border-teal-500"
             >
               <div className="p-6">
-                <h2 className="text-2xl font-semibold  dark:bg-black  text-gray-800 mb-2">{post.title}</h2>
+                <h2 className="text-2xl font-semibold   dark:text-white dark:bg-black  text-gray-800 mb-2">{post.title}</h2>
                 <p className="text-sm text-gray-500 mb-2">{new Date(post.date).toLocaleDateString()}</p>
                 <p className="text-gray-700 text-base leading-relaxed mb-2">{post.description}</p>
                 {post.tags && (

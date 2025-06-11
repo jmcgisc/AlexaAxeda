@@ -65,11 +65,10 @@ const SmoothScrollNav = () => {
         </ul> */}
 
         <NavLink
-          className="cursor-pointer hover:text-diamante dark:text-white"
+          className="hidden xl:flex justify-center gap-6 text-sm md:text-base font-medium text-gray-800 dark:text-white"
           to="/"
         >
           Home
-
         </NavLink>
           {["santorini", "azores", "madeira", "boracay"].map((section) => (
           <NavLink
@@ -79,7 +78,7 @@ const SmoothScrollNav = () => {
             duration={600}
             offset={-80}
             onClick={() => setIsOpen(false)}
-            className="cursor-pointer hover:text-diamante dark:text-white"
+            className="hidden xl:flex justify-center gap-6 text-sm md:text-base font-medium text-gray-800 dark:text-white"
           >
             {section.charAt(0).toUpperCase() + section.slice(1)}
           </NavLink>
