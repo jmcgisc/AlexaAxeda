@@ -48,7 +48,7 @@ const SmoothScrollNav = () => {
         </div>
 
         {/* Menú horizontal para desktop */}
-        <ul className="hidden xl:flex justify-center gap-6 text-sm md:text-base font-medium text-gray-800 dark:text-white">
+        {/* <ul className="hidden xl:flex justify-center gap-6 text-sm md:text-base font-medium text-gray-800 dark:text-white">
           {["location", "connectivity", "tradition", "design", "living", "engineering"].map((section) => (
             <li key={section}>
               <Link
@@ -62,7 +62,27 @@ const SmoothScrollNav = () => {
               </Link>
             </li>
           ))}
-        </ul>
+        </ul> */}
+
+        <NavLink
+         to="/"
+        >
+          Home
+
+        </NavLink>
+          {["santorini", "azores", "madeira", "boracay"].map((section) => (
+          <NavLink
+            key={section}
+            to={section}
+            smooth
+            duration={600}
+            offset={-80}
+            onClick={() => setIsOpen(false)}
+            className="cursor-pointer hover:text-diamante"
+          >
+            {section.charAt(0).toUpperCase() + section.slice(1)}
+          </NavLink>
+        ))}
       </nav>
 
       {/* Fondo oscuro (overlay) */}
@@ -78,8 +98,7 @@ const SmoothScrollNav = () => {
         className={`fixed top-[80px] right-0 w-full max-w-[300px] h-screen bg-white dark:bg-gray-900 shadow-md p-6 flex flex-col gap-6 z-50 xl:hidden transform transition-transform duration-300 ${
           isOpen ? "translate-x-0" : "translate-x-full"
         }`}
-      >
-        
+       >
         {["santorini", "azores", "madeira", "boracay"].map((section) => (
           <NavLink
             key={section}

@@ -11,6 +11,7 @@ import {
   Flame,
   LandPlot
 } from "lucide-react";
+import MetaTags from "../../../src/MetaTags";
 
 const amenityGroups = [
   {
@@ -117,7 +118,7 @@ const AzoresPage = () => {
         <div className="mt-20">
           <h3 className="text-2xl font-semibold text-center mb-8 dark:text-white">Vistas del desarrollo</h3>
           <div className="flex flex-wrap justify-between gap-6">
-            {["/Azores/AzoresAcceso.png", "/Azores/AzoresTerraza.webp", "/Azores/AlbercaAzores.webp"].map((src, i) => (
+            {["/Azores/AzoresAcceso.webp", "/Azores/AzoresTerraza.webp", "/Azores/AlbercaAzores.webp"].map((src, i) => (
               <motion.img
                 key={i}
                 src={src}

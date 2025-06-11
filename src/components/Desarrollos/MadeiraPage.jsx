@@ -9,6 +9,7 @@ import {
   Dumbbell,
   Medal
 } from "lucide-react";
+import MetaTags from "../../../src/MetaTags";
 
 const amenityGroups = [
   {

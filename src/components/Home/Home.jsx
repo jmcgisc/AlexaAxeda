@@ -1,11 +1,7 @@
-import React        from 'react';
-import {RiCheckboxBlankCircleFill, RiPlayFill, RiStarFill} 
-                    from "react-icons/ri";
+
 import Popup        from 'reactjs-popup'; 
 import Desarrollos  from "./Desarrollos";
-import Slider       from '../Aux/Slider'; 
-import YoutubeEmbed from "../Aux/YoutubeEmbed"
-import Reviews      from "./Reviews"; 
+import Slider       from '../Aux/Slider';   
 import FormularioContacto from "../Aux/FormularioContacto";
 import 'reactjs-popup/dist/index.css';
 import "../Aux/style.css";

@@ -8,6 +8,7 @@ import {
   Trees, 
   Flame
 } from "lucide-react";
+import MetaTags from "../../../src/MetaTags";
 
 const amenityGroups = [
   {

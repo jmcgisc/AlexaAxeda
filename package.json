@@ -62,6 +62,7 @@
     "react-leaflet": "^5.0.0",
     "react-markdown": "^8.0.7",
     "react-messenger-chat-plugin": "^3.0.5",
+    "react-meta-tags": "^1.0.1",
     "react-router-dom": "^6.8.1",
     "react-scripts": "^5.0.1",
     "react-scroll": "^1.9.3",

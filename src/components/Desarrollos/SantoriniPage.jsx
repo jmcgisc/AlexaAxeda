@@ -11,6 +11,7 @@ import {
   Sofa,
   Dumbbell
 } from "lucide-react";
+import MetaTags from "../../../src/MetaTags";
 import SEO from "../SEO";
 import GaleriaFlotante from "../GaleriaFlotante";
 
