@@ -1,1 +1,5 @@
-https://desarrollosdiamante.com/:splat  301!
+# Forzar HTTPS
+http://* https://:splat 301!
+
+# Redirigir www a sin www
+https://www.desarrollosdiamante.com/* https://desarrollosdiamante.com/:splat 301!
