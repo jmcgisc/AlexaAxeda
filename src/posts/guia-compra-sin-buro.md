@@ -1,20 +1,36 @@
 ---
-title: Guía para comprar un terreno sin buró de crédito
-date: 2025-06-08
-description: ¿Es posible invertir sin historial crediticio? Sí, te mostramos cómo lograrlo.
-tags: crédito, accesible, terrenos, inversión
+title: Ejemplo de Estilos en Markdown
+date: 2025-06-10
+description: Un artículo para probar todos los estilos del blog
 ---
 
-En Isla Diamante te damos facilidades sin revisar buró de crédito.
+## Introducción
 
-## ¿Cómo funciona?
+Este es un **texto de prueba** para verificar cómo se aplican los estilos en tu blog. Vamos a incluir varios elementos comunes de Markdown.
 
-- Requiere un enganche inicial accesible.
-- Pagos mensuales fijos sin intereses ocultos.
-- No necesitas comprobar ingresos.
+## Párrafos y listas
 
-## Ventajas
+Este es un párrafo con texto normal.
 
-- Empiezas a invertir desde ya.
-- Construyes patrimonio incluso sin historial bancario.
-- Flexibilidad y respaldo legal.
+- Elemento de lista 1
+- Elemento de lista 2
+  - Sub-elemento
+
+1. Lista ordenada
+2. Otro ítem
+
+## Citas
+
+> Esta es una cita destacada.
+
+## Código
+
+Texto en línea como `console.log('Hola mundo')`.
+
+Bloque de código:
+
+```js
+function saludar(nombre) {
+  return `Hola, ${nombre}`;
+}
+

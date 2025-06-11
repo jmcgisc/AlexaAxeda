@@ -39,8 +39,8 @@ const CookieConsent = () => {
           services: accepted ? detectActiveServices() : [],
           purpose: accepted ? "análisis de comportamiento" : "solo necesarias",
           user_id: null,
-          referrer: document.referrer || null,
-          path: window.location.pathname,
+          path: new URLSearchParams(window.location.search).get("path"),
+          referrer: new URLSearchParams(window.location.search).get("referrer"),
           utm_campaign: new URLSearchParams(window.location.search).get("utm_campaign"),
           utm_source: new URLSearchParams(window.location.search).get("utm_source"),
           utm_medium: new URLSearchParams(window.location.search).get("utm_medium")
@@ -60,7 +60,7 @@ const CookieConsent = () => {
 
        await axios.post("/.netlify/functions/cookies", userData, {
           headers: { 'Content-Type': 'application/json' },
-          timeout: 8000
+          timeout: 15000
         });
 
         localStorage.setItem("cookie_consent", accepted.toString());

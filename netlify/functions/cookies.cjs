@@ -37,17 +37,16 @@ exports.handler = async (event) => {
       accepted: body.accepted,
       type: body.type || (body.accepted ? "full" : "necessary"),
       purpose: body.purpose || null,
-      services: Array.isArray(body.services) ? body.services : null,
+      services: Array.isArray(body.services) ? body.services : [],
       user_agent: body.user_agent || body.userAgent || null,
       ip_address: body.ip_address || body.ipAddress || null,
       created_at: body.timestamp || new Date().toISOString(),
       user_id: body.user_id || null,
-      utm_campaign: params.get("utm_campaign") || "direct",
-      utm_source: params.get("utm_source") || "direct",
-      utm_medium: params.get("utm_medium") || "none",
-      referrer: document.referrer || "direct",
-      path: window.location.pathname || "/",
-
+      utm_campaign: body.utm_campaign || "direct",
+      utm_source: body.utm_source || "direct",
+      utm_medium: body.utm_medium || "none",
+      referrer: body.referrer || "direct",
+      path: body.path || "/",
     };
 
     console.log("Datos que se intentan guardar en Supabase:", payload);
