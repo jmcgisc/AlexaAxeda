@@ -65,7 +65,8 @@ const SmoothScrollNav = () => {
         </ul> */}
 
         <NavLink
-         to="/"
+          className="cursor-pointer hover:text-diamante dark:text-white"
+          to="/"
         >
           Home
 
@@ -78,7 +79,7 @@ const SmoothScrollNav = () => {
             duration={600}
             offset={-80}
             onClick={() => setIsOpen(false)}
-            className="cursor-pointer hover:text-diamante"
+            className="cursor-pointer hover:text-diamante dark:text-white"
           >
             {section.charAt(0).toUpperCase() + section.slice(1)}
           </NavLink>
