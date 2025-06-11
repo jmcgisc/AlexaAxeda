@@ -59,3 +59,6 @@ Proyectos como **Santorini, Madeira y Azores** en Isla Diamante están bien posi
 **Invertir en Cancún es más que comprar tierra. Es plantar tu patrimonio en una de las zonas con mayor proyección de América Latina.**
 
 ¿Listo para dar el primer paso? Descubre más en [www.desarrollosdiamante.com](https://www.desarrollosdiamante.com) con tu asesor de confianza Alexa Delgado.
+
+Alexa Delgado - Asesor inmobiliaria 
++(52) 55 7013 7764

@@ -109,3 +109,6 @@ Conoce Isla Diamante Cancún y asegura tu lote hoy.
 
 
 > Alexa Delgado es tu mejor opción como asesor, deja que facilitemos tu desición, tu asesor mejor calificado.
+
+Alexa Delgado - Asesor inmobiliaria 
++(52) 55 7013 7764

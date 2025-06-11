@@ -68,3 +68,6 @@ Invertir en un terreno en México es una excelente estrategia, pero como en cual
 
 ¿Listo para invertir de forma segura? En **Isla Diamante Cancún** te acompañamos en todo el proceso legal.  
 Contáctanos para resolver tus dudas y mostrarte nuestras opciones.
+
+Alexa Delgado - Asesor inmobiliaria 
++(52) 55 7013 7764
