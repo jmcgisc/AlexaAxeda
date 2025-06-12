@@ -2,25 +2,31 @@ import React, { Suspense } from 'react';
 import 'mdb-react-ui-kit/dist/css/mdb.min.css';
 import "@fortawesome/fontawesome-free/css/all.min.css"; 
 import SmoothScrollNav from './components/SmoothScrollNav';
-import { Home }   from "./components/Home/Home" 
-import Privacidad           from "./components/Aux/Privacidad" 
-import PreguntasFrecuentes  from "./components/Aux/PreguntasFrecuentes"
-import FormularioContacto   from "./components/Aux/FormularioContacto"
-import SantoriniPage        from "../src/components/Desarrollos/SantoriniPage"
-import MadeiraPage          from "../src/components/Desarrollos/MadeiraPage"
-import AzoresPage           from "../src/components/Desarrollos/AzoresPage"
-import BoracayPage          from "../src/components/Desarrollos/BoracayPage"
-import CookieDashboard      from "../src/components/Aux/CookieDashboard"
+import PrivacidadEs         from "./components/Aux/PrivacidadEs"; 
+import PrivacidadEn         from "./components/Aux/PrivacidadEn"; 
+import PreguntasFrecuentes  from "./components/Aux/PreguntasFrecuentes";
+import FormularioContacto   from "./components/Aux/FormularioContacto";
+import SantoriniPage        from "../src/components/Desarrollos/SantoriniPage";
+import SantoriniPageEn      from "../src/components/Desarrollos/SantoriniPageEn";
+import MadeiraPage          from "../src/components/Desarrollos/MadeiraPage";
+import MadeiraPageEn        from "../src/components/Desarrollos/MadeiraPageEn";
+import AzoresPage           from "../src/components/Desarrollos/AzoresPage";
+import AzoresPageEn         from "../src/components/Desarrollos/AzoresPageEn";
+import BoracayPage          from "../src/components/Desarrollos/BoracayPage";
+import BoracayPageEn        from "../src/components/Desarrollos/BoracayPageEn";
+import CookieDashboard      from "../src/components/Aux/CookieDashboard";
 import CookieConsent        from "./components/Aux/CookieConsent";
-import Bio                  from "./components/Aux/Bio"
-import Footer               from "./components/Footer" 
-import { FloatingWhatsApp } from 'react-floating-whatsapp'
-import Error404             from "./Error404"
+import Bio                  from "./components/Aux/Bio";
+import BioEn                  from "./components/Aux/BioEn";
+import { HomeEs }           from "./components/Home/HomeEs";
+import { HomeEn }           from "./components/Home/HomeEn";
+import Footer               from "./components/Footer";
+import { FloatingWhatsApp } from 'react-floating-whatsapp';
+import Error404             from "./Error404";
 import BlogHome             from "./components/Blog/BlogHome";
 import Post                 from "./components/Blog/Post";
-import Schema               from "./components/Aux/Schema";
 
-import { Routes, Route , BrowserRouter} 
+import { Routes, Route , BrowserRouter, Navigate} 
                   from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 import Spinner from './components/Spinner';  
@@ -49,6 +55,7 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app); 
 const TestimoniosPage = React.lazy(() => import("./components/TestimoniosPage"));
+
 
 function App() { 
    
@@ -79,34 +86,44 @@ function App() {
       
       <div className="App">  
       <BrowserRouter>
+            {/*Header*/}
         <SmoothScrollNav/> 
           <Routes>
-            {/*Header*/}
-            <Route path = '/bio'            element ={ <Bio/> } /> 
-            {/*Home*/}
-            <Route path = '/'               element ={ <Home/> } />
-            {/* Footer */}  
-            <Route path = '/privacidad'     element ={ <Privacidad/> } /> 
+
+            <Route path="/" element={<HomeEn />} />
+            <Route path="/es" element={<HomeEs />} />
+            <Route path="/en" element={<HomeEn />} />
+                      
+            <Route path = '/bio'            element ={<Bio/> } /> 
+            <Route path = '/bio-en'            element ={<BioEn/> } /> 
+             
+            <Route path="*"                 element={<Error404 />} />
+            <Route path = '/privacidad'     element ={ <PrivacidadEs/> } /> 
+            <Route path = '/privacy'        element ={ <PrivacidadEn/> } /> 
             <Route path = '/preguntas'      element ={ <PreguntasFrecuentes/> } /> 
             <Route path = '/formulario'     element ={ <FormularioContacto/> } /> 
             <Route path = '/santorini'      element ={ <SantoriniPage/> } /> 
+            <Route path = '/santorini-en'   element ={ <SantoriniPageEn/> } /> 
             <Route path = '/madeira'        element ={ <MadeiraPage/> } /> 
+            <Route path = '/madeira-en'     element ={ <MadeiraPageEn/> } /> 
             <Route path = '/azores'         element ={ <AzoresPage/> } /> 
+            <Route path = '/azores-en'      element ={ <AzoresPageEn/> } /> 
             <Route path = '/boracay'        element ={ <BoracayPage/> } /> 
+            <Route path = '/boracay-en'     element ={ <BoracayPageEn/> } /> 
             <Route path = '/panel-cookies'  element={<CookieDashboard />} />
             <Route path=  "/blog"           element={<BlogHome />} />
             <Route path=  "/post/:path"     element={<Post />} />
 
-            <Route path="*"                 element={<Error404 />} />
-
-          <Route
-            path="/testimonios"
-            element={ 
-                <Suspense fallback={<Spinner />}>
-                  <TestimoniosPage />
-                </Suspense> 
+            <Route path="/testimonios"        element={ <Suspense fallback={<Spinner />}><TestimoniosPage /></Suspense> 
             }
           />
+
+          {/* Ingles */} 
+
+ 
+            <Route path="/" element={<Navigate to="/es" />} /> 
+
+
           </Routes>
       
           <FloatingWhatsApp className='left-4 bottom-4 md:left-8 md:bottom-8'

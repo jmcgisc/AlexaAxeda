@@ -53,7 +53,7 @@ const SantoriniPage = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <h1 className="text-4xl md:text-6xl font-bold">Santorini</h1>
+          <h1 className="text-4xl md:text-6xl font-bold dark:text-gray-400">Santorini</h1>
           <p className="text-xl text-gray-600 dark:text-gray-400">
             149 terrenos - Inspirado en la elegancia del mar Egeo, Santorini fusiona lujo, serenidad y funcionalidad en cada rincón.
           </p>  
