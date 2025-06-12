@@ -87,42 +87,40 @@ function App() {
             {/*Header*/}
         <SmoothScrollNav/> 
           <Routes>
-            <Route path="*"                 element={<Error404 />} />
-
-            <Route path="/" element={<HomeEs />} />
+            <Route path="*"   element={<Error404 />} />
+            <Route path="/"   element={<HomeEs />} />
             <Route path="/es" element={<HomeEs />} />
             <Route path="/en" element={<HomeEn />} />
                       
             <Route path = '/bio'            element ={<Bio/> } /> 
-            <Route path = '/bio-en'            element ={<BioEn/> } /> 
+            <Route path = '/bio-en'         element ={<BioEn/> } /> 
              
             <Route path = '/privacidad'     element ={ <PrivacidadEs/> } /> 
             <Route path = '/privacy'        element ={ <PrivacidadEn/> } /> 
             
             <Route path = '/santorini'      element ={ <SantoriniPage/> } /> 
             <Route path = '/santorini-en'   element ={ <SantoriniPageEn/> } /> 
+
             <Route path = '/madeira'        element ={ <MadeiraPage/> } /> 
-            <Route path = '/madeira-en'     element ={ <MadeiraPageEn/> } /> 
+            <Route path = '/madeira-en'     element ={ <MadeiraPageEn/> } />
+
             <Route path = '/azores'         element ={ <AzoresPage/> } /> 
-            <Route path = '/azores-en'      element ={ <AzoresPageEn/> } /> 
+            <Route path = '/azores-en'      element ={ <AzoresPageEn/> } />
+
             <Route path = '/boracay'        element ={ <BoracayPage/> } /> 
-            <Route path = '/boracay-en'     element ={ <BoracayPageEn/> } /> 
+            <Route path = '/boracay-en'     element ={ <BoracayPageEn/> } />
+
             <Route path = '/preguntas'      element ={ <PreguntasFrecuentes/> } /> 
-            <Route path = '/formulario'     element ={ <FormularioContacto/> } /> 
+            <Route path = '/formulario'     element ={ <FormularioContacto/> } />
+
             <Route path = '/panel-cookies'  element={<CookieDashboard />} />
             <Route path=  "/blog"           element={<BlogHome />} />
             <Route path=  "/post/:path"     element={<Post />} />
+            <Route path="/testimonios"      element={ <Suspense fallback={<Spinner />}><TestimoniosPage /></Suspense> } />
 
-            <Route path="/testimonios"        element={ <Suspense fallback={<Spinner />}><TestimoniosPage /></Suspense> 
-            }
-          />
+         </Routes>
 
-          {/* Ingles */} 
-          <Route path="/" element={<Navigate to="/es" />} /> 
- 
-         
-          </Routes>
-      
+          <FooterEs/>
           <FloatingWhatsApp className='left-4 bottom-4 md:left-8 md:bottom-8'
               accountAddress="https://wa.me/525570137764"
               phoneNumber="525570137764"
@@ -136,16 +134,7 @@ function App() {
               chatMessage ="¡Hola! ¿En que proyecto estas interesado? 🤝 "   
               avatar="Alexa_.jpeg"
         /> 
-
-              {/* 
-                <button onClick={() => {showMessenger(true)}}>show messenger</button>
-                <button onClick={() => {hideMessenger()}}>hide messenger</button>
-                <button onClick={() => {showDialog()}}>show dialog</button>
-                <button onClick={() => {hideDialog()}}>hide dialog</button>
-                <button onclick={() => {setMessengerBottomSpacing(100)}}>set chat 100px in bottom spacing</button>
-                  <MessengerChat pageId='108115258193252' /> */}
-                {/**/} 
-      </BrowserRouter>  {/* <Headers /> y demás contenido */}
+      </BrowserRouter>  
       </div>
       </div>
       </>

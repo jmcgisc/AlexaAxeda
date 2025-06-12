@@ -51,7 +51,7 @@ const SantoriniPageEn = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <h1 className="text-4xl md:text-6xl font-bold dark:text-gray-400">Santorini</h1>
+          <h1 className="text-4xl md:text-6xl font-bold dark:text-gray-200">Santorini</h1>
           <p className="text-xl text-gray-600 dark:text-gray-400">
             149 plots of land - Inspired by the elegance of the Aegean Sea, Santorini fuses luxury, serenity and functionality in every corner.          </p>  
         </motion.div>
@@ -82,7 +82,7 @@ const SantoriniPageEn = () => {
 
         {/* Amenidades */}
        {/* Grid de amenidades por categoría */}
-        <motion.div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
+        <motion.div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8 dark:text-white">
           {amenityGroups.map((group, i) => (
             <motion.div
               key={i}
