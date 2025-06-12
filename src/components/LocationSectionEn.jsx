@@ -28,7 +28,7 @@ const LocationSectionEn = () => {
       {/* Contenido */}
       <div className="relative z-20 flex flex-col items-center justify-center h-full text-center px-6">
         <motion.h2
-          className="text-4xl md:text-5xl font-bold text-diamante mb-6"
+          className="text-4xl md:text-5xl font-bold text-diamante mb-12 md:mt-28"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}

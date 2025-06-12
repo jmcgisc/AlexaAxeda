@@ -27,7 +27,7 @@ const amenities = [
 
 const LivingSection = () => {
   return (
-    <section id="living" className="py-24 px-6 md:px-16 dark:bg-diamonBlack text-white">
+    <section id="living" className="py-12 px-2 md:px-8 dark:bg-diamonBlack text-white">
       <div className="max-w-6xl mx-auto text-center mb-16 ">
         <motion.h2
           className="text-3xl md:text-5xl font-bold mb-4 "
@@ -36,7 +36,7 @@ const LivingSection = () => {
           transition={{ duration: 0.7 }}
           viewport={{ once: true }}
         >
-        <div className="py-24 px-6 md:px-16 text-gray-500">
+        <div className="px-6 md:px-6 text-gray-500">
           Estilo de vida que transforma
         </div>
           

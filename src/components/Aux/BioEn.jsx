@@ -31,7 +31,7 @@ const BioEn = () => {
                     </p>
                     <p className="mb-4 leading-relaxed">
                         My commitment is to accompany you throughout the entire process, providing you with the best investment options. <em>The best time to invest was yesterday, the second best is today.</em>                    </p>
-                    <p className="text-primary font-title text-lg font-bold mb-4 text-center">¡Enhorabuena por la mejor decisión!</p>
+                    <p className="text-primary font-title text-lg font-bold mb-4 text-center">Congratulations on the best decision!</p>
                     <p className="italic text-axeda text-center mb-6">Isla Diamante.</p>
                 </div>
             </div>

@@ -16,22 +16,22 @@ import BoracayPage          from "../src/components/Desarrollos/BoracayPage";
 import BoracayPageEn        from "../src/components/Desarrollos/BoracayPageEn";
 import CookieDashboard      from "../src/components/Aux/CookieDashboard";
 import CookieConsent        from "./components/Aux/CookieConsent";
+import LanguageDetector     from "./components/Aux/LanguageDetector";
 import Bio                  from "./components/Aux/Bio";
-import BioEn                  from "./components/Aux/BioEn";
+import BioEn                from "./components/Aux/BioEn";
 import { HomeEs }           from "./components/Home/HomeEs";
-import { HomeEn }           from "./components/Home/HomeEn";
-import Footer               from "./components/Footer";
-import { FloatingWhatsApp } from 'react-floating-whatsapp';
+import { HomeEn }           from "./components/Home/HomeEn"; 
+import FooterEs             from "./components/FooterEs";
+import FooterEn             from "./components/FooterEn"; 
+import { FloatingWhatsApp } from 'react-floating-whatsapp'; 
 import Error404             from "./Error404";
 import BlogHome             from "./components/Blog/BlogHome";
 import Post                 from "./components/Blog/Post";
 
-import { Routes, Route , BrowserRouter, Navigate} 
+import { Routes, Route , BrowserRouter, Navigate, useLocation} 
                   from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 import Spinner from './components/Spinner';  
-
-
 
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
@@ -56,12 +56,10 @@ const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app); 
 const TestimoniosPage = React.lazy(() => import("./components/TestimoniosPage"));
 
-
 function App() { 
-   
   return( 
       <>
-      
+       {/* <LanguageDetector/> */}
       <CookieConsent />
         <div className="min-h-screen text-black dark:bg-black dark:text-white transition-colors duration-300"> 
 
@@ -89,19 +87,18 @@ function App() {
             {/*Header*/}
         <SmoothScrollNav/> 
           <Routes>
+            <Route path="*"                 element={<Error404 />} />
 
-            <Route path="/" element={<HomeEn />} />
+            <Route path="/" element={<HomeEs />} />
             <Route path="/es" element={<HomeEs />} />
             <Route path="/en" element={<HomeEn />} />
                       
             <Route path = '/bio'            element ={<Bio/> } /> 
             <Route path = '/bio-en'            element ={<BioEn/> } /> 
              
-            <Route path="*"                 element={<Error404 />} />
             <Route path = '/privacidad'     element ={ <PrivacidadEs/> } /> 
             <Route path = '/privacy'        element ={ <PrivacidadEn/> } /> 
-            <Route path = '/preguntas'      element ={ <PreguntasFrecuentes/> } /> 
-            <Route path = '/formulario'     element ={ <FormularioContacto/> } /> 
+            
             <Route path = '/santorini'      element ={ <SantoriniPage/> } /> 
             <Route path = '/santorini-en'   element ={ <SantoriniPageEn/> } /> 
             <Route path = '/madeira'        element ={ <MadeiraPage/> } /> 
@@ -110,6 +107,8 @@ function App() {
             <Route path = '/azores-en'      element ={ <AzoresPageEn/> } /> 
             <Route path = '/boracay'        element ={ <BoracayPage/> } /> 
             <Route path = '/boracay-en'     element ={ <BoracayPageEn/> } /> 
+            <Route path = '/preguntas'      element ={ <PreguntasFrecuentes/> } /> 
+            <Route path = '/formulario'     element ={ <FormularioContacto/> } /> 
             <Route path = '/panel-cookies'  element={<CookieDashboard />} />
             <Route path=  "/blog"           element={<BlogHome />} />
             <Route path=  "/post/:path"     element={<Post />} />
@@ -119,11 +118,9 @@ function App() {
           />
 
           {/* Ingles */} 
-
+          <Route path="/" element={<Navigate to="/es" />} /> 
  
-            <Route path="/" element={<Navigate to="/es" />} /> 
-
-
+         
           </Routes>
       
           <FloatingWhatsApp className='left-4 bottom-4 md:left-8 md:bottom-8'
@@ -138,9 +135,8 @@ function App() {
               darkMode="enable"
               chatMessage ="¡Hola! ¿En que proyecto estas interesado? 🤝 "   
               avatar="Alexa_.jpeg"
-        />
- 
-        <Footer/>     
+        /> 
+
               {/* 
                 <button onClick={() => {showMessenger(true)}}>show messenger</button>
                 <button onClick={() => {hideMessenger()}}>hide messenger</button>
