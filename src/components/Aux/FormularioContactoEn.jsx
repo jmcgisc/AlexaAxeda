@@ -4,9 +4,8 @@ import {ImLocation} from "react-icons/im"
 import emailjs from 'emailjs-com'
 import InputField from './InputField'
 import InputEmail from './InputEmail' 
-import SelectFieldsBudget       from './SelectFieldsBudget'
-import SelectFieldsProperties   from './SelectFieldsProperties'
-import SelectFieldsInvestment   from './SelectFieldsInvestment'
+import SelectFieldsBudgetEn       from './SelectFieldsBudgetEn' 
+import SelectFieldsInvestmentEn   from './SelectFieldsInvestmentEn'
 import TextAreaField from './TextAreaField' 
 import ReCAPTCHA from "react-google-recaptcha";
 
@@ -87,8 +86,7 @@ const FormularioContacto = () => {
                         <div className ="flex flex-col space-y-8 justify-berween">
                             <div>    
                                 <h1 className="font-title text-5xl xl:text-7xl tracking-wide py-10 xl:py-20"> Contáctame </h1>
-                                <p  className ="p-2 text-cyan-100 text-sm">Te asesoramos desde el primer momento y te acompañamos en todo el proceso de compra, estás a un paso de comenzar con la mejor inversión</p>
-                            </div> 
+                                <p className ="p-2 text-cyan-100 text-sm">We advise you from the first moment and accompany you throughout the purchase process, you are one step away from starting with the best investment</p>                            </div> 
                             <div className="inline-flex space-x-2 items-center">
                                 <RiPhoneFill className="text-teal-300 text-xl"/>
                                 <span> +(52) 55 7013 7764 </span>  
@@ -99,7 +97,7 @@ const FormularioContacto = () => {
                             </div> 
                             <div className="inline-flex space-x-2 items-center"> 
                                 <ImLocation className="text-teal-300 text-xl"/>
-                                <span> Cd. México, Cancún </span>  
+                                <span> Mexico City, Cancún </span>  
                             </div>  
                         </div>
 
@@ -111,19 +109,19 @@ const FormularioContacto = () => {
 
                             {status && renderAlet()}
                             <form onSubmit={handleSubmit} id="form" action ="" className="flex flex-col space-y-4 " >
-                                <InputField value={values.nombreCompleto}   handleChange={handleChange} label="Nombre Completo" name="nombreCompleto"   type="text"     placeholder="Juan Perez" />
-                                <InputField value={values.telefonoMovil}    handleChange={handleChange} label="Teléfono Móvil"  name="telefonoMovil"    type="text"     placeholder="+52 55 55 55 55 55" />
+                                <InputField value={values.nombreCompleto}   handleChange={handleChange} label="Full name"       name="nombreCompleto"   type="text"     placeholder="Juan Perez" />
+                                <InputField value={values.telefonoMovil}    handleChange={handleChange} label="Phone number"    name="telefonoMovil"    type="text"     placeholder="+52 55 55 55 55 55" />
                                 <InputEmail value={values.email}            handleChange={handleChange} label="E-Mail"          name="email"            type="email"    placeholder="realtor.alexadelgado@gmail.com " />
-                                <SelectFieldsBudget                         handleChange={handleChange} label="Inversión estimada para el enganche" name="presupuesto"  />
-                                <SelectFieldsInvestment                     handleChange={handleChange} label="Destino de la compra"                name="interesadoEn" />
-                                <TextAreaField value={values.mensaje}       handleChange={handleChange} label="Mensaje "                            name="mensaje" />
+                                <SelectFieldsBudgetEn                       handleChange={handleChange} label="Estimated investment for the down payment" name="presupuesto"  />
+                                <SelectFieldsInvestmentEn                   handleChange={handleChange} label="Purchase destination"                name="interesadoEn" />
+                                <TextAreaField value={values.mensaje}       handleChange={handleChange} label="Message "                            name="mensaje" />
  
                                 <button 
                                     id= "button"
                                     type="submit"
                                      className=" inline-block self-end font-semibold px-6 bg-sand text-diamonBlack rounded-xl shadow-lg shadow-indigo-500/40 py-2 uppercase text-sm"
                                >
-                                    Envíar Formulario
+                                    Submit Form
                                 </button>
 
                                 <br></br>
@@ -140,7 +138,7 @@ const FormularioContacto = () => {
                                 </div>
                                 {captchaValido === false &&
                                     <div className="text-blue-20 br-100 text-center font-sans text-SM font-medium uppercase">
-                                        Valida que no eres un Robot
+                                       Validate that you are not a Robot
                                     </div>}
 
                             </form> 
@@ -148,8 +146,7 @@ const FormularioContacto = () => {
                         </div>   
                             {status ?(
                                 <div className="text-base px-4 py-3 text-axeda bg-blue-100 rounded-lg mb-1 mt-4 text-center">
-                                    <p>  ¡Su mensaje ha sido enviado con éxito!. En breve nos comunicaremos con ud. ¡¡GRACIAS!! </p>
-                                </div> 
+                                    <p> Your message has been sent successfully! We will contact you shortly. THANK YOU!! </p>                                </div> 
                             ): <div></div>
                             }
                         </div>

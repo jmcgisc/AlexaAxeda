@@ -5,7 +5,6 @@ import emailjs from 'emailjs-com'
 import InputField from './InputField'
 import InputEmail from './InputEmail' 
 import SelectFieldsBudget       from './SelectFieldsBudget'
-import SelectFieldsProperties   from './SelectFieldsProperties'
 import SelectFieldsInvestment   from './SelectFieldsInvestment'
 import TextAreaField from './TextAreaField' 
 import ReCAPTCHA from "react-google-recaptcha";
