@@ -4,8 +4,8 @@ const fs = require('fs');
 const path = require('path');
 const { Readable } = require('stream');
 
-const supabaseKey = import.meta.env.VITE_SUPABASE_KEY;
-const supabaseUrl = import.meta.env.VITE_SUPABASE_URL;
+const supabaseKey = process.env.SUPABASE_KEY;
+const supabaseUrl = process.env.SUPABASE_URL;
 
 if (!supabaseUrl || !supabaseKey) {
   throw new Error("supabaseUrl and supabaseKey are required.");
@@ -51,7 +51,6 @@ exports.handler = async function (event) {
     return new Promise((resolve) => {
       const form = new multiparty.Form();
 
-      // Simular request para multiparty
       const bodyBuffer = Buffer.from(event.body, 'base64');
 
       const req = new Readable();
