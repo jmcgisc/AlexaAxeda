@@ -3,10 +3,10 @@ import {RiPhoneFill, RiMailFill} from "react-icons/ri"
 import {ImLocation} from "react-icons/im"
 import emailjs from 'emailjs-com'
 import InputField from './InputField'
-import InputEmail from './InputEmail' 
+import InputEmailEn from './InputEmailEn' 
 import SelectFieldsBudgetEn       from './SelectFieldsBudgetEn' 
 import SelectFieldsInvestmentEn   from './SelectFieldsInvestmentEn'
-import TextAreaField from './TextAreaField' 
+import TextAreaFieldEn from './TextAreaFieldEn' 
 import ReCAPTCHA from "react-google-recaptcha";
 
 const FormularioContacto = () => {
@@ -85,7 +85,7 @@ const FormularioContacto = () => {
                         
                         <div className ="flex flex-col space-y-8 justify-berween">
                             <div>    
-                                <h1 className="font-title text-5xl xl:text-7xl tracking-wide py-10 xl:py-20"> Contáctame </h1>
+                                <h1 className="font-title text-5xl xl:text-7xl tracking-wide py-10 xl:py-20"> Contact me </h1>
                                 <p className ="p-2 text-cyan-100 text-sm">We advise you from the first moment and accompany you throughout the purchase process, you are one step away from starting with the best investment</p>                            </div> 
                             <div className="inline-flex space-x-2 items-center">
                                 <RiPhoneFill className="text-teal-300 text-xl"/>
@@ -97,7 +97,7 @@ const FormularioContacto = () => {
                             </div> 
                             <div className="inline-flex space-x-2 items-center"> 
                                 <ImLocation className="text-teal-300 text-xl"/>
-                                <span> Mexico City, Cancún </span>  
+                                <span> Mexico City, Cancun </span>  
                             </div>  
                         </div>
 
@@ -109,12 +109,12 @@ const FormularioContacto = () => {
 
                             {status && renderAlet()}
                             <form onSubmit={handleSubmit} id="form" action ="" className="flex flex-col space-y-4 " >
-                                <InputField value={values.nombreCompleto}   handleChange={handleChange} label="Full name"       name="nombreCompleto"   type="text"     placeholder="Juan Perez" />
-                                <InputField value={values.telefonoMovil}    handleChange={handleChange} label="Phone number"    name="telefonoMovil"    type="text"     placeholder="+52 55 55 55 55 55" />
-                                <InputEmail value={values.email}            handleChange={handleChange} label="E-Mail"          name="email"            type="email"    placeholder="realtor.alexadelgado@gmail.com " />
-                                <SelectFieldsBudgetEn                       handleChange={handleChange} label="Estimated investment for the down payment" name="presupuesto"  />
-                                <SelectFieldsInvestmentEn                   handleChange={handleChange} label="Purchase destination"                name="interesadoEn" />
-                                <TextAreaField value={values.mensaje}       handleChange={handleChange} label="Message "                            name="mensaje" />
+                                <InputField     value={values.nombreCompleto}   handleChange={handleChange} label="Full name"       name="nombreCompleto"   type="text"     placeholder="Juan Perez" />
+                                <InputField     value={values.telefonoMovil}    handleChange={handleChange} label="Phone number"    name="telefonoMovil"    type="text"     placeholder="+52 55 55 55 55 55" />
+                                <InputEmailEn   value={values.email}            handleChange={handleChange} label="E-Mail"          name="email"            type="email"    placeholder="realtor.alexadelgado@gmail.com " />
+                                <SelectFieldsBudgetEn                           handleChange={handleChange} label="Estimated investment for the down payment" name="presupuesto"  />
+                                <SelectFieldsInvestmentEn                       handleChange={handleChange} label="Purchase destination"                name="interesadoEn" />
+                                <TextAreaFieldEn value={values.mensaje}         handleChange={handleChange} label="Message "                            name="mensaje" />
  
                                 <button 
                                     id= "button"

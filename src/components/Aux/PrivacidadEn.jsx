@@ -1,6 +1,5 @@
 // components/Aux/Privacy.jsx
-import ContactForm from "./FormularioContacto";
-import React from "react";
+import FormularioContactoEn from "./FormularioContactoEn";
 
 const PrivacyEn = () => {
   return (
@@ -67,7 +66,7 @@ const PrivacyEn = () => {
         </p>
       </div>
       <div className="mt-12 bg-gray-100 dark:bg-gray-800 p-6 rounded-lg shadow-md">
-        <ContactForm />
+        <FormularioContactoEn />
       </div>
     </section>
   );

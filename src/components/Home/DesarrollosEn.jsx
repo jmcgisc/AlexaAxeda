@@ -64,7 +64,7 @@ const DesarrollosEn = () => {
         </div>     
 
         <div className="hidden md:grid grid-cols-1 md:grid-cols-2 gap-8">
-          <NavLink className="text-center" to="/santorini-en"> 
+          <NavLink className="text-center" to="/en-santorini"> 
             <div className="flex flex-col gap-4">
               <img
                 src="Santorini.webp"
@@ -75,7 +75,7 @@ const DesarrollosEn = () => {
             </div>
           </NavLink>   
 
-          <NavLink className="text-center" to="/azores-en"> 
+          <NavLink className="text-center" to="/en-azores"> 
             <div className="flex flex-col gap-4">
               <img
                 src="Anzores.webp"
@@ -86,7 +86,7 @@ const DesarrollosEn = () => {
             </div> 
           </NavLink>   
 
-          <NavLink className="text-center" to="/madeira-en"> 
+          <NavLink className="text-center" to="/en-madeira"> 
             <div className="flex flex-col gap-4">
               <img
                 src="Madeira.webp"
@@ -97,7 +97,7 @@ const DesarrollosEn = () => {
             </div>
           </NavLink>   
 
-          <NavLink className="text-center" to="/boracay-en"> 
+          <NavLink className="text-center" to="/en-boracay"> 
             <div className="flex flex-col gap-4">
               <img
                 src="Boracay.webp"

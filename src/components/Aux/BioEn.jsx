@@ -1,5 +1,5 @@
 import React from 'react';
-import FormularioContacto from "../Aux/FormularioContacto";
+import FormularioContactoEn from "../Aux/FormularioContactoEn";
 // Icons 
 import {FaTiktok, 
         FaFacebook, 
@@ -82,7 +82,7 @@ const BioEn = () => {
             </div>
 
             <div className="mt-24">
-                <FormularioContacto />
+                <FormularioContactoEn />
             </div>
         </div>
     );

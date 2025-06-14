@@ -1,4 +1,3 @@
-import React from 'react'
 
 const TextAreaField = (props) => {
     const {handleChange, label, name, value} = props

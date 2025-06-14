@@ -1,7 +1,6 @@
 import React, { Suspense } from 'react';
 import 'mdb-react-ui-kit/dist/css/mdb.min.css';
 import "@fortawesome/fontawesome-free/css/all.min.css"; 
-import SmoothScrollNav from './components/SmoothScrollNav';
 import PrivacidadEs         from "./components/Aux/PrivacidadEs"; 
 import PrivacidadEn         from "./components/Aux/PrivacidadEn"; 
 import PreguntasFrecuentes  from "./components/Aux/PreguntasFrecuentes";
@@ -16,18 +15,20 @@ import AzoresPageEn         from "../src/components/Desarrollos/AzoresPageEn";
 import BoracayPage          from "../src/components/Desarrollos/BoracayPage";
 import BoracayPageEn        from "../src/components/Desarrollos/BoracayPageEn";
 import CookieDashboard      from "../src/components/Aux/CookieDashboard";
+import ChatLogsDashboard    from "../src/components/Aux/ChatLogsDashboard";
 import CookieConsent        from "./components/Aux/CookieConsent";
 import LanguageDetector     from "./components/Aux/LanguageDetector";
 import Bio                  from "./components/Aux/Bio";
 import BioEn                from "./components/Aux/BioEn";
+import Chatbot              from "./components/Aux/Chatbot";
+import ChatbotGPT           from "./components/Aux/ChatbotGPT";
 import { HomeEs }           from "./components/Home/HomeEs";
 import { HomeEn }           from "./components/Home/HomeEn"; 
-import FooterEs             from "./components/FooterEs";
-import FooterEn             from "./components/FooterEn"; 
 import { FloatingWhatsApp } from 'react-floating-whatsapp'; 
 import Error404             from "./Error404";
 import BlogHome             from "./components/Blog/BlogHome";
 import Post                 from "./components/Blog/Post";
+
 
 import { Routes, Route , BrowserRouter, useMatch} 
                   from 'react-router-dom';
@@ -85,8 +86,6 @@ function App() {
       
       <div className="App">  
       <BrowserRouter>
-            {/*Header*/}
-        {/* <SmoothScrollNav/>  */}
 
           <Routes>
             <Route path="*"   element={<Error404 />} />
@@ -117,15 +116,17 @@ function App() {
             <Route path = '/formulario'     element ={ <FormularioContacto/> } />
 
             <Route path = '/panel-cookies'  element={<CookieDashboard />} />
+            <Route path = '/panel-ia'       element={<ChatLogsDashboard />} />
+            
             <Route path=  "/blog"           element={<BlogHome />} />
             <Route path=  "/post/:path"     element={<Post />} />
             <Route path="/testimonios"      element={ <Suspense fallback={<Spinner />}><TestimoniosPage /></Suspense> } />
    
          </Routes>
+        <ChatbotGPT />
         <LanguageDetector/>          
-       
-          
-          <FloatingWhatsApp className='left-4 bottom-4 md:left-8 md:bottom-8'
+             
+        <FloatingWhatsApp className='left-4 bottom-4 md:left-8 md:bottom-8'
               accountAddress="https://wa.me/525570137764"
               phoneNumber="525570137764"
               accountName="Asesor Alexa"
@@ -137,7 +138,8 @@ function App() {
               darkMode="enable"
               chatMessage ="¡Hola! ¿En que proyecto estas interesado? 🤝 "   
               avatar="Alexa_.jpeg"
-        /> 
+        />  
+
       </BrowserRouter>  
       </div>
       </div>
