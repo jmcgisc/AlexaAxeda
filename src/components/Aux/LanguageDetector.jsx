@@ -1,27 +1,19 @@
-import { useLocation } from 'react-router-dom';
+import FooterEs             from "../../components/FooterEs";
+import FooterEn             from "../../components/FooterEn";
+import { Routes, Route, useLocation } from "react-router-dom";
+// Puedes importar más páginas según necesites
 
-function LanguageDetector() {
-  const location = useLocation();
-  const pathParts = location.pathname.split('/');
-  const language = pathParts[1] || 'default'; 
-  
-// const isEnglish = () => {
-//   const { pathname } = useLocation();
-//   const isEnglish = pathname.startsWith("/en");
-// } 
+const LayoutWithLanguage = () => {
+  const { pathname } = useLocation();
+  const isEnglish = pathname.startsWith("/en");
 
-//     {isEnglish ? <FooterEn /> : <FooterEs />}
-
-
-  console.log('Detected language:', language);
   return (
-    <div>
-    
-      <p>Detected language: {language}</p>
-      {/* Other components */}
-    </div>
-    
-  );
-}
+    <>
 
-export default LanguageDetector;
+      {/* Footer según idioma */}
+      {isEnglish ? <FooterEn /> : <FooterEs />}
+    </>
+  );
+};
+
+export default LayoutWithLanguage;

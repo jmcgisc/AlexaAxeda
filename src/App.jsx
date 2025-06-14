@@ -5,6 +5,7 @@ import SmoothScrollNav from './components/SmoothScrollNav';
 import PrivacidadEs         from "./components/Aux/PrivacidadEs"; 
 import PrivacidadEn         from "./components/Aux/PrivacidadEn"; 
 import PreguntasFrecuentes  from "./components/Aux/PreguntasFrecuentes";
+import PreguntasFrecuentesEn from "./components/Aux/PreguntasFrecuentesEn";
 import FormularioContacto   from "./components/Aux/FormularioContacto";
 import SantoriniPage        from "../src/components/Desarrollos/SantoriniPage";
 import SantoriniPageEn      from "../src/components/Desarrollos/SantoriniPageEn";
@@ -28,7 +29,7 @@ import Error404             from "./Error404";
 import BlogHome             from "./components/Blog/BlogHome";
 import Post                 from "./components/Blog/Post";
 
-import { Routes, Route , BrowserRouter, Navigate, useLocation} 
+import { Routes, Route , BrowserRouter, useMatch} 
                   from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 import Spinner from './components/Spinner';  
@@ -56,10 +57,10 @@ const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app); 
 const TestimoniosPage = React.lazy(() => import("./components/TestimoniosPage"));
 
+
 function App() { 
   return( 
       <>
-       {/* <LanguageDetector/> */}
       <CookieConsent />
         <div className="min-h-screen text-black dark:bg-black dark:text-white transition-colors duration-300"> 
 
@@ -86,6 +87,7 @@ function App() {
       <BrowserRouter>
             {/*Header*/}
         <SmoothScrollNav/> 
+
           <Routes>
             <Route path="*"   element={<Error404 />} />
             <Route path="/"   element={<HomeEs />} />
@@ -93,10 +95,10 @@ function App() {
             <Route path="/en" element={<HomeEn />} />
                       
             <Route path = '/bio'            element ={<Bio/> } /> 
-            <Route path = '/bio-en'         element ={<BioEn/> } /> 
+            <Route path = '/en-bio'         element ={<BioEn/> } /> 
              
             <Route path = '/privacidad'     element ={ <PrivacidadEs/> } /> 
-            <Route path = '/privacy'        element ={ <PrivacidadEn/> } /> 
+            <Route path = '/en-privacy'     element ={ <PrivacidadEn/> } /> 
             
             <Route path = '/santorini'      element ={ <SantoriniPage/> } /> 
             <Route path = '/santorini-en'   element ={ <SantoriniPageEn/> } /> 
@@ -111,16 +113,18 @@ function App() {
             <Route path = '/boracay-en'     element ={ <BoracayPageEn/> } />
 
             <Route path = '/preguntas'      element ={ <PreguntasFrecuentes/> } /> 
+            <Route path = '/en-faq'         element ={ <PreguntasFrecuentesEn/> } /> 
             <Route path = '/formulario'     element ={ <FormularioContacto/> } />
 
             <Route path = '/panel-cookies'  element={<CookieDashboard />} />
             <Route path=  "/blog"           element={<BlogHome />} />
             <Route path=  "/post/:path"     element={<Post />} />
             <Route path="/testimonios"      element={ <Suspense fallback={<Spinner />}><TestimoniosPage /></Suspense> } />
-
+   
          </Routes>
-
-          <FooterEs/>
+        <LanguageDetector/>          
+       
+          
           <FloatingWhatsApp className='left-4 bottom-4 md:left-8 md:bottom-8'
               accountAddress="https://wa.me/525570137764"
               phoneNumber="525570137764"

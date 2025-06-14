@@ -7,6 +7,7 @@ export default function NuevaReseña({ onPublicado }) {
   const [servicio, setServicio] = useState("");
   const [estrellas, setEstrellas] = useState(0);
   const [mensaje, setMensaje] = useState("");
+  const [destino, setDestino] = useState("");
   const [imagen, setImagen] = useState(null);
 
     const handleSubmit = async (e) => {
@@ -22,6 +23,7 @@ export default function NuevaReseña({ onPublicado }) {
       formData.append("texto", comentario);
       formData.append("servicio", servicio);
       formData.append("estrellas", estrellas);
+      formData.append("destino", destino);
     
       if (imagen) {
         formData.append("imagen", imagen);
@@ -38,6 +40,7 @@ export default function NuevaReseña({ onPublicado }) {
         setComentario("");
         setServicio("");
         setEstrellas(0);
+        setDestino("");
         setImagen(null); 
         if (onPublicado) onPublicado();
         setTimeout(() => setMensaje(""), 3000);

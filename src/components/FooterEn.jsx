@@ -52,7 +52,7 @@ const Footer = () => {
       {/* 2da Línea Footer */}
       <div className="mt-8">
         <h3 className="text-lg font-bold text-   text-center md:text-left">
-          Acerca de Isla Diamante 
+          About Isla Diamante 
         </h3>
 
         <nav className="mt-4 flex flex-col md:flex-row items-center justify-between gap-4">
@@ -65,9 +65,9 @@ const Footer = () => {
           </p>
   
           <p  className="text-primary_isla lg:text-xl lg:mt-4">
-            <NavLink  to = "/preguntas" 
+            <NavLink  to = "/en-faq" 
                       target="_blank"
-            > Preguntas Frecuentes 
+            > FAQ
             </NavLink>
           </p>
 
@@ -88,9 +88,9 @@ const Footer = () => {
           
           
           <p  className="text-primary_isla lg:text-xl lg:mt-4">
-            <NavLink  to = "/privacidad" 
+            <NavLink  to = "/en-privacy" 
                       target="_blank"
-            > Política de Privacidad
+            > Privacy Policy
             </NavLink>
           </p> 
 
