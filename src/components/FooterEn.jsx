@@ -58,7 +58,7 @@ const Footer = () => {
         <nav className="mt-4 flex flex-col md:flex-row items-center justify-between gap-4">
   
           <p  className="text-primary_isla lg:text-xl lg:mt-4"> 
-            <NavLink  to = "/bio" 
+            <NavLink  to = "/en-bio" 
                       target="_blank"
             > Alexa Delgado 
             </NavLink>

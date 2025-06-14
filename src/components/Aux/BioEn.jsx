@@ -25,7 +25,7 @@ const BioEn = () => {
                 </div>
 
                 <div className="max-w-2xl text-gray-700 dark:text-gray-200">
-                    <h3 className="text-2xl font-semibold mb-4">Sobre mí</h3>
+                    <h3 className="text-2xl font-semibold mb-4">About me</h3>
                     <p className="mb-4 leading-relaxed">
                         Hi! My name is <strong>Alexa Delgado</strong>, commercial manager in Isla Diamante with more than 6 years of experience in the marketing of real estate. I specialize in pre-sale investments that generate annual returns greater than 15%.
                     </p>
@@ -37,7 +37,7 @@ const BioEn = () => {
             </div>
 
             <div className="mt-16 max-w-5xl mx-auto">
-                <h3 className="text-2xl font-semibold text-center mb-6 text-gray-800 dark:text-gray-100">¿Por qué Isla Diamante?</h3>
+                <h3 className="text-2xl font-semibold text-center mb-6 text-gray-800 dark:text-gray-100">Why Isla Diamante?</h3>
                 <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-gray-700 dark:text-gray-300 list-disc list-inside">
                     <li>Real estate trust </li>
                     <li>Services at the foot of the lot </li>
@@ -52,7 +52,7 @@ const BioEn = () => {
             </div>
 
             <div className="mt-16 text-center">
-                <h3 className="text-2xl font-semibold text-gray-800 dark:text-white mb-6">Conecta conmigo</h3>
+                <h3 className="text-2xl font-semibold text-gray-800 dark:text-white mb-6">Connect with me</h3>
                 <div className="flex justify-center space-x-6">
                    
                     {/* Social media */}

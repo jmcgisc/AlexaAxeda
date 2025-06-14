@@ -86,7 +86,7 @@ function App() {
       <div className="App">  
       <BrowserRouter>
             {/*Header*/}
-        <SmoothScrollNav/> 
+        {/* <SmoothScrollNav/>  */}
 
           <Routes>
             <Route path="*"   element={<Error404 />} />
@@ -101,16 +101,16 @@ function App() {
             <Route path = '/en-privacy'     element ={ <PrivacidadEn/> } /> 
             
             <Route path = '/santorini'      element ={ <SantoriniPage/> } /> 
-            <Route path = '/santorini-en'   element ={ <SantoriniPageEn/> } /> 
+            <Route path = '/en-santorini'   element ={ <SantoriniPageEn/> } /> 
 
             <Route path = '/madeira'        element ={ <MadeiraPage/> } /> 
-            <Route path = '/madeira-en'     element ={ <MadeiraPageEn/> } />
+            <Route path = '/en-madeira'     element ={ <MadeiraPageEn/> } />
 
             <Route path = '/azores'         element ={ <AzoresPage/> } /> 
-            <Route path = '/azores-en'      element ={ <AzoresPageEn/> } />
+            <Route path = '/en-azores'      element ={ <AzoresPageEn/> } />
 
             <Route path = '/boracay'        element ={ <BoracayPage/> } /> 
-            <Route path = '/boracay-en'     element ={ <BoracayPageEn/> } />
+            <Route path = '/en-boracay'     element ={ <BoracayPageEn/> } />
 
             <Route path = '/preguntas'      element ={ <PreguntasFrecuentes/> } /> 
             <Route path = '/en-faq'         element ={ <PreguntasFrecuentesEn/> } /> 

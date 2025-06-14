@@ -1,6 +1,8 @@
 import FooterEs             from "../../components/FooterEs";
 import FooterEn             from "../../components/FooterEn";
-import { Routes, Route, useLocation } from "react-router-dom";
+import SmoothScrollNav      from '../../components/SmoothScrollNav';
+import SmoothScrollNavEn    from '../../components/SmoothScrollNavEn';
+import { useLocation } from "react-router-dom";
 // Puedes importar más páginas según necesites
 
 const LayoutWithLanguage = () => {
@@ -9,6 +11,8 @@ const LayoutWithLanguage = () => {
 
   return (
     <>
+      {/* Header */}
+      {isEnglish ? <SmoothScrollNavEn /> : <SmoothScrollNav />}
 
       {/* Footer según idioma */}
       {isEnglish ? <FooterEn /> : <FooterEs />}
