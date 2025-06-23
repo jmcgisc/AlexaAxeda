@@ -30,9 +30,13 @@ exports.handler = async (event) => {
     }
 
     const embeddingRes = await openai.embeddings.create({
-      model: "text-embedding-ada-002",
-      input: question,
+    model: "text-embedding-ada-002",
+    input: question,
     });
+
+    if (!embeddingRes.data || embeddingRes.data.length === 0) {
+      throw new Error("No se generó embedding para la pregunta.");
+    }
 
     const questionEmbedding = embeddingRes.data[0].embedding;
 
