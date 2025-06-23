@@ -1,4 +1,4 @@
-[
+module.exports = [
   {
     "question": "¿Qué es Isla Diamante Cancún?",
     "answer": "Es un desarrollo residencial en condominio con 3,284 terrenos distribuidos en 19 privadas exclusivas y una zona comercial."
@@ -95,4 +95,4 @@
     "question": "¿Quién es la desarrolladora de Isla Diamante?",
     "answer": "LAOC urbanizadora y desarrolladora sa de cv"
   }
-]
+];
