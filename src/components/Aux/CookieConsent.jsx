@@ -11,13 +11,13 @@ const detectActiveServices = () => {
   if (window.analytics) services.push("Segment");
   return services;
 };
-  useEffect(() => {
+/*   useEffect(() => {
     const consent = localStorage.getItem("cookie_consent");
     if (consent === "true") {
       gtag('js', new Date());
       gtag('config', 'G-6RHRR28PKT'); // 
     }
-  }, []);
+  }, []); */
 
 const CookieConsent = () => {
   const [showBanner, setShowBanner] = useState(false);
