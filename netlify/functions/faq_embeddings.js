@@ -92,7 +92,7 @@ module.exports = [
     "answer": "Consulta con tu asesor Alexa Delgado +(52) 55 7013 7764"
   },
   {
-    "question": "¿Quién es la desarrolladora de Isla Diamante?",
+    "question": "¿Quién es la desarrolladora de Isla Diamante?", 
     "answer": "LAOC urbanizadora y desarrolladora sa de cv"
   }
 ]

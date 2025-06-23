@@ -1,5 +1,5 @@
 const { OpenAI } = require("openai");
-const faqData = require("./faq_embeddings"); // Cargamos FAQ ya embebido
+const faqData = require("./faq_embeddings.js"); // Cargamos FAQ ya embebido
 
 const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
 
@@ -7,7 +7,7 @@ const headers = {
   "Access-Control-Allow-Origin": "*",
   "Access-Control-Allow-Headers": "Content-Type",
   "Content-Type": "application/json",
-};
+}; 
 
 const cosineSimilarity = (vecA, vecB) => {
   const dot = vecA.reduce((sum, a, i) => sum + a * vecB[i], 0);
