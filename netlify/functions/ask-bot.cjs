@@ -1,13 +1,15 @@
 const { OpenAI } = require("openai");
-const faqData = require("./faq_embeddings.js"); // Cargamos FAQ ya embebido
+const { createClient } = require("@supabase/supabase-js");
+const faqData = require("./faq_embeddings.js"); // Asegúrate que este archivo existe y contiene los embeddings
 
 const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
+const supabase = createClient(process.env.SUPABASE_URL, process.env.SUPABASE_KEY);
 
 const headers = {
   "Access-Control-Allow-Origin": "*",
   "Access-Control-Allow-Headers": "Content-Type",
   "Content-Type": "application/json",
-}; 
+};
 
 const cosineSimilarity = (vecA, vecB) => {
   const dot = vecA.reduce((sum, a, i) => sum + a * vecB[i], 0);
@@ -30,8 +32,8 @@ exports.handler = async (event) => {
     }
 
     const embeddingRes = await openai.embeddings.create({
-    model: "text-embedding-ada-002",
-    input: question,
+      model: "text-embedding-ada-002",
+      input: question,
     });
 
     if (!embeddingRes.data || embeddingRes.data.length === 0) {
@@ -83,6 +85,10 @@ exports.handler = async (event) => {
     };
   } catch (err) {
     console.error("ask-bot error:", err);
-    return { statusCode: 500, headers, body: JSON.stringify({ error: err.message }) };
+    return {
+      statusCode: 500,
+      headers,
+      body: JSON.stringify({ error: err.message }),
+    };
   }
 };
