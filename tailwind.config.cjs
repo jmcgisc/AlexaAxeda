@@ -39,7 +39,7 @@ module.exports = {
         body:   ['Poppins'],
         chivo:  ['Chivo'],
         bodoni: ['Bodoni Moda'],
-        sans:   ["Cagliostro",  ...defaultTheme.fontFamily.sans],
+        sans:   [  ...defaultTheme.fontFamily.sans],
         serif:  ["Cormorant Garamond","Bodoni Moda",  ...defaultTheme.fontFamily.serif],
       },
     }, 
