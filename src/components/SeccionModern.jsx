@@ -63,7 +63,7 @@ const SeccionValores = () => {
               className="bg-gray-900 p-6 relative rounded-3xl shadow-2xl hover:shadow-[0_0_10px_2px_#00fff7] transition-all duration-900 cursor-pointer">
               <div className="mb-4 flex justify-center">{feature.icon}</div>
               <h3 className="text-xl font-semibold mb-2">{feature.title}</h3>
-              <p className="text-gray-400">{feature.description}</p>
+              <p className="text-gray-400">{feature.description} href={`#${feature.id}`} </p>
             </motion.div>
           </Link>
 
