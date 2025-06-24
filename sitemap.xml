@@ -1,13 +1,75 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset 
+  xmlns="https://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml"
+>
   <url>
     <loc>https://desarrollosdiamante.com/</loc>
+    <lastmod>2025-06-23</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
+
   <url>
     <loc>https://desarrollosdiamante.com/santorini</loc>
+    <lastmod>2025-06-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
   </url>
+
+    <url>
+      <loc>https://desarrollosdiamante.com/madeira</loc>
+      <lastmod>2025-06-10</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.9</priority>
+    </url>
+
+    <url>
+      <loc>https://desarrollosdiamante.com/azores</loc>
+      <lastmod>2025-06-10</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.9</priority>
+    </url>
+
+    <url>
+      <loc>https://desarrollosdiamante.com/boracay</loc> 
+      <lastmod>2025-06-10</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.9</priority>
+    </url>
+
   <url>
-    <loc>https://desarrollosdiamante.com/blog</loc>
+      <loc>https://desarrollosdiamante.com/blog</loc>
+      <lastmod>2025-06-22</lastmod>
+      <changefreq>weekly</changefreq>
+      <priority>0.8</priority>
+    </url>
+
+  <url>
+    <loc>https://desarrollosdiamante.com/privacidad</loc>
+    <lastmod>2025-06-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://desarrollosdiamante.com/bio</loc>
+    <lastmod>2025-06-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://desarrollosdiamante.com/contacto</loc>
+    <lastmod>2025-06-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://desarrollosdiamante.com/privacidad</loc>
+    <lastmod>2025-05-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
   </url>
 </urlset>
