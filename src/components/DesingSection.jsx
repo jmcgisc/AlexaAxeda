@@ -5,13 +5,13 @@ import "reactjs-popup/dist/index.css";
 const designItems = [
   {
     title: "Arquitectura Sustentable",
-    image: "/ArqSustentable.jpeg",
+    image: "/ArqSustentable.webp",
     description:
       "La zona está integrada en el Plan Municipal de Desarrollo Urbano, lo que garantiza un crecimiento ordenado y sostenible, con infraestructura adecuada para soportar el desarrollo residencial y comercial.",
   },
   {
     title: "Espacios Inteligentes",
-    image: "/BeachClub.jpeg",
+    image: "/BeachClub.webp",
     description:
       "La inversión en infraestructura, incluyendo pavimentación, alumbrado y servicios públicos, mejora la habitabilidad y atractivo de la zona para futuros desarrollos.",
   },

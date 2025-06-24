@@ -5,13 +5,13 @@ import "reactjs-popup/dist/index.css";
 const designItems = [
   {
     title: "Sustainable Architecture",
-    image: "/ArqSustentable.jpeg",
+    image: "/ArqSustentable.webp",
     description:
       "The area is integrated into the Municipal Urban Development Plan, ensuring orderly and sustainable growth, with adequate infrastructure to support residential and commercial development.",
   },
   {
     title: "Smart Spaces",
-    image: "/BeachClub.jpeg",
+    image: "/BeachClub.webp",
     description:
       "Investment in infrastructure — including paving, lighting, and public services — enhances the livability and appeal of the area for future developments.",
   },
