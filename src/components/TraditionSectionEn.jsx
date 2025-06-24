@@ -67,6 +67,7 @@ const TraditionSectionEn = () => {
               {(close) => (
                 <div className="relative">
                   <button
+                    id="Cerrar"
                     onClick={close}
                     className="absolute top-2 right-2 text-white text-3xl z-10 hover:text-diamante"
                   >

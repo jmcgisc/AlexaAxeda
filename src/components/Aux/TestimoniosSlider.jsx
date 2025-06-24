@@ -115,6 +115,7 @@ export default function TestimoniosSlider() {
       </div>
 
       <button
+        id="Anterior"
         onClick={goToPrevious}
         className="absolute left-4 sm:left-6 top-1/2 transform -translate-y-1/2 bg-white border border-gray-300 hover:bg-blue-100 text-gray-700 p-3 rounded-full shadow-lg transition hidden md:block"
         aria-label="Anterior"
@@ -123,6 +124,7 @@ export default function TestimoniosSlider() {
       </button>
 
       <button
+        id="Siguiente"
         onClick={goToNext}
         className="absolute right-4 sm:right-6 top-1/2 transform -translate-y-1/2 bg-white border border-gray-300 hover:bg-blue-100 text-gray-700 p-3 rounded-full shadow-lg transition hidden md:block"
         aria-label="Siguiente"
@@ -133,6 +135,7 @@ export default function TestimoniosSlider() {
       <div className="flex justify-center mt-10 gap-3 md:hidden">
         {testimonios.map((_, index) => (
           <button
+            id="Anterior"
             key={index}
             onClick={() => setCurrent(index)}
             className={`h-4 w-4 sm:h-5 sm:w-5 rounded-full transition-all duration-300 ${

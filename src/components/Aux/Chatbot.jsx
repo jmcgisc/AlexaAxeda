@@ -46,7 +46,9 @@ const Chatbot = () => {
           className="flex-1 p-2 text-sm border rounded-l"
           placeholder="Escribe algo..."
         />
-        <button onClick={handleSend} className="bg-diamante px-4 text-white rounded-r">Enviar</button>
+        <button 
+        id="Enviar"
+        onClick={handleSend} className="bg-diamante px-4 text-white rounded-r">Enviar</button>
       </div>
     </div>
   );

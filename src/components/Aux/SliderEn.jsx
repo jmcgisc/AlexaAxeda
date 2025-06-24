@@ -41,12 +41,14 @@ const Slider = () => {
         {/* Botones arriba a la derecha */}
         <div className="flex justify-end gap-4 mb-6">
           <button
+            id="click left"
             onClick={scrollLeft}
             className="bg-white dark:bg-gray-900 border border-gray-300 dark:border-white/30 p-2 rounded-full shadow-md hover:bg-primary_isla hover:text-primary_isla transition"
           >
             <ChevronLeft className="w-6 h-6 text-gray-800 dark:text-primary_isla" />
           </button>
           <button
+            id="click right"
             onClick={scrollRight}
             className="bg-white dark:bg-gray-900 border border-gray-300 dark:border-white/30 p-2 rounded-full shadow-md hover:bg-primary_isla hover:text-primary_isla transition"
           >
@@ -90,6 +92,7 @@ const Slider = () => {
               onClick={(e) => e.stopPropagation()}
             >
               <button
+                id="CLose Modal"
                 onClick={closeModal}
                 className="absolute top-2 right-2 bg-white rounded-full p-1 shadow-md"
               >

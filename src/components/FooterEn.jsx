@@ -26,11 +26,17 @@ const Footer = () => {
 
         {/* Social media */}
         <nav className="flex items-center gap-4">
-          <a href="https://www.instagram.com/altan.are?igsh=MWU2NTZsZ2FjeXRjZQ=="          target= "_blank" className="block text-white p-4 bg-primary_isla rounded-full"> 
+          <a  href="https://www.instagram.com/altan.are?igsh=MWU2NTZsZ2FjeXRjZQ=="          
+              target= "_blank" 
+              className="block text-white p-4 bg-primary_isla rounded-full"
+              aria-label="Instagram Alexa Delgado" > 
             <FaInstagramSquare />
           </a>
 
-          <a href="https://www.facebook.com/share/r/19ERrYf2a4/" target= "_blank" className="block text-white p-4 bg-primary_isla rounded-full">
+          <a  href="https://www.facebook.com/share/r/19ERrYf2a4/" 
+              target= "_blank" 
+              className="block text-white p-4 bg-primary_isla rounded-full"
+              aria-label="Facebook Alexa Delgado" >
             <FaFacebook />
           </a>
 

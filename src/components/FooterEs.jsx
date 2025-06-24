@@ -24,23 +24,39 @@ const FooterEs = () => {
 
         {/* Social media */}
         <nav className="flex items-center gap-4">
-          <a href="https://www.instagram.com/altan.are?igsh=MWU2NTZsZ2FjeXRjZQ=="          target= "_blank" className="block text-white p-4 bg-primary_isla rounded-full"> 
+          <a  href="https://www.instagram.com/altan.are?igsh=MWU2NTZsZ2FjeXRjZQ=="          
+              target= "_blank" 
+              className="block text-white p-4 bg-primary_isla rounded-full"
+              aria-label="Instagram Alexa Delgado" > 
             <FaInstagramSquare />
           </a>
 
-          <a href="https://www.facebook.com/share/r/19ERrYf2a4/" target= "_blank" className="block text-white p-4 bg-primary_isla rounded-full">
+          <a  href="https://www.facebook.com/share/r/19ERrYf2a4/" 
+              target= "_blank" 
+              className="block text-white p-4 bg-primary_isla rounded-full"
+              aria-label="Facebook Alexa Delgado" > 
             <FaFacebook />
           </a>
 
-          <a href="#" className="block text-white p-4 bg-primary_isla rounded-full">
+          <a  href="#" 
+              className="block text-white p-4 bg-primary_isla rounded-full"
+              aria-label="X Alexa Delgado" 
+          >
             <FaTwitter />
           </a> 
 
-          <a href="https://www.linkedin.com/in/alexa-delgado-65028a351?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"       target= "_blank"className="block text-white p-4 bg-primary_isla rounded-full">
+          <a href="https://www.linkedin.com/in/alexa-delgado-65028a351?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"       
+              target= "_blank"
+              className="block text-white p-4 bg-primary_isla rounded-full"
+              aria-label="Linkedin Alexa Delgado" 
+              >
             <FaLinkedin />
           </a> 
 
-          <a href="" className="block text-white p-4 bg-primary_isla rounded-full">
+          <a href="" 
+              className="block text-white p-4 bg-primary_isla rounded-full"
+              aria-label="Tik Tok Alexa Delgado" 
+              >
             <FaTiktok />
           </a> 
 

@@ -79,6 +79,7 @@ function Amenidades() {
         <div className="bg-white dark:bg-gray-900 rounded-3xl shadow-2xl p-6 md:p-10 max-w-xl w-full relative animate-fade-in transition-all">
         {/* Cerrar */}
         <button
+            id="Cerrar Modal"
             className="absolute top-4 right-5 text-gray-500 hover:text-red-500 text-2xl font-bold"
             onClick={closeModal}
             aria-label="Cerrar modal"
@@ -101,10 +102,13 @@ function Amenidades() {
         </p> 
         {/* Acciones */}
         <div className="flex justify-center gap-4">
-            <button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-full transition font-semibold shadow-md">
+            <button 
+            id="Reservar Ahora"
+            className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-full transition font-semibold shadow-md">
             Reservar ahora
             </button>
             <button
+            id="Ver más fotos"
             onClick={() => setMostrarGaleria(true)}
             className="border border-blue-600 text-blue-600 hover:bg-blue-50 px-6 py-3 rounded-full transition font-semibold"
             > 
@@ -121,6 +125,7 @@ function Amenidades() {
         
         {/* Botón cerrar */}
         <button
+            id='Cerrar Galería'
             className="absolute top-4 right-4 text-gray-400 hover:text-red-500 text-2xl"
             onClick={() => setMostrarGaleria(false)}
             aria-label="Cerrar galería"

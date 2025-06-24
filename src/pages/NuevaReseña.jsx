@@ -107,6 +107,7 @@ export default function NuevaReseña({ onPublicado }) {
           />
 
         <button
+          id="submit"
           type="submit"
           className="w-full bg-primary hover:bg-secondary text-white py-3 px-4 full-rounded transition"
         >

@@ -32,6 +32,7 @@ const ChatInput = ({ onSend }) => {
           onChange={(e) => setMessage(e.target.value)}
         />
         <button
+          id="Enviar Mensaje"
           type="submit"
           className="bg-teal-600 hover:bg-teal-700 text-white rounded p-2 transition"
           title="Enviar"

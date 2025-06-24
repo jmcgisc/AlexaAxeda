@@ -81,6 +81,7 @@ const FormularioContacto = ({ onClose }) => {
       
        {/* Botón de cierre */}
         <button
+          id="Cerrar Formulario"
           onClick={onClose}
           type="button"
           className="absolute top-4 right-4 bg-gray-200 dark:bg-zinc-700 hover:bg-red-500 text-gray-700 dark:text-gray-100 hover:text-white rounded-full w-10 h-10 flex items-center justify-center transition-all duration-300 shadow"

@@ -82,6 +82,7 @@ const FormularioContacto = () => {
                                 </div>
  
                                 <button
+                                    id="Enviar Formulario"
                                     type="button"
                                     className=" inline-block self-end font-semibold py-2 px-6 bg-axeda text-white rounded-xl shadow-lg shadow-indigo-500/40 py-2 uppercase text-sm"
                                 >

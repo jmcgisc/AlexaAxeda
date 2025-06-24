@@ -45,6 +45,7 @@ const SmoothScrollNav = () => {
         {/* Derecha: Botón hamburguesa */}
         <div className="xl:hidden">
           <button
+            id="Cerrar"
             onClick={() => setIsOpen(!isOpen)}
             className="text-3xl text-gray-700 dark:text-white"
           >

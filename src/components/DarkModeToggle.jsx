@@ -24,6 +24,7 @@ export default function ThemeToggle() {
 
   return (
     <button
+      id="Dark Mode"
       onClick={toggleTheme}
       className={`relative flex items-center w-14 h-8 p-1 bg-gray-300 dark:bg-gray-700 rounded-full transition-colors duration-300 focus:outline-none shadow-inner`}
     >

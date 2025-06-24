@@ -83,6 +83,7 @@ const DesignSectionEn = () => {
             {(close) => (
               <div className="relative text-center dark:text-white dark:bg-black px-2">
                 <button
+                  id="CLose"
                   onClick={close}
                   className="absolute top-2 right-4 text-gray-500 hover:text-red-500 text-2xl font-bold"
                   aria-label="Close"

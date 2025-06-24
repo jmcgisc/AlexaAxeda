@@ -105,6 +105,7 @@ const ConnectivitySection = () => {
                 className="relative text-black dark:text-white"
               >
                 <button
+                  id="Cerrar"
                   onClick={close}
                   className="absolute top-2 right-2 text-gray-500 hover:text-red-500 text-2xl font-bold"
                   aria-label="Cerrar"

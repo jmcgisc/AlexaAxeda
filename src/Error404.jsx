@@ -21,7 +21,9 @@ export default function NotFound() {
           No encontramos la página que buscas. Quizás tomamos el camino equivocado.
         </p>
 
-        <Popup trigger={<button className= "bg-gradient-to-r from-axeda to-blue-500 hover:from-blue-500 hover:to-orange-500 text-white font-b px-6 py-3 rounded-md mr-6" 
+        <Popup 
+        id="Contáctame"
+        trigger={<button className= "bg-gradient-to-r from-axeda to-blue-500 hover:from-blue-500 hover:to-orange-500 text-white font-b px-6 py-3 rounded-md mr-6" 
         > Contáctame</button>} {...{   contentStyle }}
             position="right center">
             <div className="flex flex-full">
@@ -30,7 +32,9 @@ export default function NotFound() {
         </Popup> 
                             
         <a href="/" rel="noopener noreferrer">
-            <button className="bg-gradient-to-r from-axeda to-blue-500 hover:from-blue-500 hover:to-orange-500 text-white font-b px-6 py-3 rounded-md mr-6" 
+            <button 
+            id="Home"
+            className="bg-gradient-to-r from-axeda to-blue-500 hover:from-blue-500 hover:to-orange-500 text-white font-b px-6 py-3 rounded-md mr-6" 
             >HOME</button>
         </a>
       </div>

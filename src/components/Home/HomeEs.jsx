@@ -26,16 +26,18 @@ export const HomeEs = () => {
     <> 
         <section id="home" className="relative w-full h-screen overflow-hidden">
         {/* Video o imagen de fondo */}
-            <video
+           <video
             className="absolute top-0 left-0 w-full h-full object-cover z-0"
             autoPlay
             loop
             muted
             playsInline
-            >
+            preload="none"
+            poster="/fallback.jpg" // imagen liviana de vista previa
+          >
             <source src="/video-presentacion.mp4" type="video/mp4" />
-              Tu navegador no soporta video HTML5.
-            </video>
+            Tu navegador no soporta video HTML5.
+          </video>
         ) : (
         
         )

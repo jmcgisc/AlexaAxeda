@@ -120,7 +120,7 @@ const FormularioContacto = () => {
                                 <button 
                                     id= "button"
                                     type="submit"
-                                     className=" inline-block self-end font-semibold px-6 bg-sand text-diamonBlack rounded-xl shadow-lg shadow-indigo-500/40 py-2 uppercase text-sm"
+                                    className=" inline-block self-end font-semibold px-6 bg-sand text-diamonBlack rounded-xl shadow-lg shadow-indigo-500/40 py-2 uppercase text-sm"
                                >
                                     Envíar Formulario
                                 </button>
