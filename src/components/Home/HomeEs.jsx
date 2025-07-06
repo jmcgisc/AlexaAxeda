@@ -46,11 +46,20 @@ export const HomeEs = () => {
             muted
             playsInline
             preload="none"
-            poster="/fallback.jpg" // imagen liviana de vista previa
+            poster="/fallback.jpg" 
           >
             <source src="/video-presentacion.mp4" type="video/mp4" />
             Tu navegador no soporta video HTML5.
           </video>
+
+          {/* Capa de respaldo para cuando el video aún no carga */}
+          <noscript>
+            <img
+              src="/fallback.jpg"
+              alt="Vista previa del desarrollo"
+              className="absolute top-0 left-0 w-full h-full object-cover"
+            />
+          </noscript>
         ) : (
         
         )

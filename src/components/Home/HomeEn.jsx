@@ -31,10 +31,20 @@ export const HomeEn = () => {
             loop
             muted
             playsInline
+            preload="none"
+            poster="/fallback.jpg" 
             >
             <source src="/video-presentacion.mp4" type="video/mp4" />
               Your browser does not support HTML5 video.
             </video>
+          {/* Capa de respaldo para cuando el video aún no carga */}
+          <noscript>
+            <img
+              src="/fallback.jpg"
+              alt="Vista previa del desarrollo"
+              className="absolute top-0 left-0 w-full h-full object-cover"
+            />
+          </noscript>
         ) : (
         
         )

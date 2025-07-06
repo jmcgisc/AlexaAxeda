@@ -27,7 +27,7 @@ import { FloatingWhatsApp } from 'react-floating-whatsapp';
 import Error404             from "./Error404";
 import BlogHome             from "./components/Blog/BlogHome";
 import Post                 from "./components/Blog/Post";
-
+import SeoJsonLd from "./components/SeoJsonLd";
 
 import { Routes, Route , BrowserRouter, useMatch} 
                   from 'react-router-dom';
@@ -63,6 +63,7 @@ function App() {
   return( 
       <>
 
+      <SeoJsonLd />
       <CookieConsent />
         <div className="min-h-screen text-black dark:bg-black dark:text-white transition-colors duration-300"> 
 
