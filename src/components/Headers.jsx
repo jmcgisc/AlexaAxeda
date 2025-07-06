@@ -1,5 +1,4 @@
-import React, { Fragment, useState, useEffect } from "react";
-import image from "./images/LogoBlanco.webp";
+import { Fragment, useState, useEffect } from "react";
 import { RiMenuLine, RiCloseLine, RiPhoneFill } from "react-icons/ri";
 import { BiChevronDown } from "react-icons/bi";
 import { NavLink, Link } from "react-router-dom";
