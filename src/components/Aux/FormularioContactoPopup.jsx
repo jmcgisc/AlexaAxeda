@@ -95,12 +95,12 @@ const FormularioContacto = ({ onClose }) => {
 
         {/* Formulario */}
         <form onSubmit={handleSubmit} className="space-y-4 text-diamonBlack">
-          <InputField value={values.nombreCompleto} handleChange={handleChange} label="Nombre Completo" name="nombreCompleto" type="text" placeholder="Juan Pérez" />
-          <InputField value={values.telefonoMovil} handleChange={handleChange} label="Teléfono Móvil" name="telefonoMovil" type="text" placeholder="+52 55 55 55 55 55" />
-          <InputEmail value={values.email} handleChange={handleChange} label="Correo Electrónico" name="email" placeholder="ejemplo@correo.com" />
-          <SelectFieldsBudget handleChange={handleChange} label="Inversión estimada" name="presupuesto" />
-          <SelectFieldsInvestment handleChange={handleChange} label="Destino de la compra" name="interesadoEn" />
-          <TextAreaField value={values.mensaje} handleChange={handleChange} label="Mensaje" name="mensaje" />
+          <InputField value={values.nombreCompleto} handleChange={handleChange} aria-labelledby="Nombre Completo"       name="nombreCompleto" type="text" placeholder="Juan Pérez" />
+          <InputField value={values.telefonoMovil}  handleChange={handleChange} aria-labelledby="Teléfono Móvil"        name="telefonoMovil"  type="text" placeholder="+52 55 55 55 55 55" />
+          <InputEmail value={values.email}          handleChange={handleChange} aria-labelledby="Correo Electrónico"    name="email"                    placeholder="ejemplo@correo.com" />
+          <SelectFieldsBudget                       handleChange={handleChange} aria-labelledby="Inversión estimada"    name="presupuesto" />
+          <SelectFieldsInvestment                   handleChange={handleChange} aria-labelledby="Destino de la compra"  name="interesadoEn" />
+          <TextAreaField value={values.mensaje}     handleChange={handleChange} aria-labelledby="Mensaje"               name="mensaje" />
 
           {/* Botón de envío */}
           <div className="flex justify-end">

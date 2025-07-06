@@ -41,14 +41,14 @@ const Slider = () => {
         {/* Botones arriba a la derecha */}
         <div className="flex justify-end gap-4 mb-6">
           <button
-            id="click a la izquierda"
+            id="imagen anterior"
             onClick={scrollLeft}
             className="bg-white dark:bg-gray-900 border border-gray-300 dark:border-white/30 p-2 rounded-full shadow-md hover:bg-primary_isla hover:text-primary_isla transition"
           >
             <ChevronLeft className="w-6 h-6 text-gray-800 dark:text-primary_isla" />
           </button>
           <button
-            id="click a la derecha"
+            id="siguente imagen"
             onClick={scrollRight}
             className="bg-white dark:bg-gray-900 border border-gray-300 dark:border-white/30 p-2 rounded-full shadow-md hover:bg-primary_isla hover:text-primary_isla transition"
           >

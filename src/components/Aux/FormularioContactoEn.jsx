@@ -109,12 +109,12 @@ const FormularioContacto = () => {
 
                             {status && renderAlet()}
                             <form onSubmit={handleSubmit} id="form" action ="" className="flex flex-col space-y-4 " >
-                                <InputField     value={values.nombreCompleto}   handleChange={handleChange} label="Full name"       name="nombreCompleto"   type="text"     placeholder="Juan Perez" />
-                                <InputField     value={values.telefonoMovil}    handleChange={handleChange} label="Phone number"    name="telefonoMovil"    type="text"     placeholder="+52 55 55 55 55 55" />
-                                <InputEmailEn   value={values.email}            handleChange={handleChange} label="E-Mail"          name="email"            type="email"    placeholder="realtor.alexadelgado@gmail.com " />
-                                <SelectFieldsBudgetEn                           handleChange={handleChange} label="Estimated investment for the down payment" name="presupuesto"  />
-                                <SelectFieldsInvestmentEn                       handleChange={handleChange} label="Purchase destination"                name="interesadoEn" />
-                                <TextAreaFieldEn value={values.mensaje}         handleChange={handleChange} label="Message "                            name="mensaje" />
+                                <InputField     value={values.nombreCompleto}   handleChange={handleChange} aria-labelledby="Full name"       name="nombreCompleto"   type="text"     placeholder="Juan Perez" />
+                                <InputField     value={values.telefonoMovil}    handleChange={handleChange} aria-labelledby="Phone number"    name="telefonoMovil"    type="text"     placeholder="+52 55 55 55 55 55" />
+                                <InputEmailEn   value={values.email}            handleChange={handleChange} aria-labelledby="E-Mail"          name="email"            type="email"    placeholder="realtor.alexadelgado@gmail.com " />
+                                <SelectFieldsBudgetEn                           handleChange={handleChange} aria-labelledby="Estimated investment for the down payment" name="presupuesto"  />
+                                <SelectFieldsInvestmentEn                       handleChange={handleChange} aria-labelledby="Purchase destination"                name="interesadoEn" />
+                                <TextAreaFieldEn value={values.mensaje}         handleChange={handleChange} aria-labelledby="Message "                            name="mensaje" />
  
                                 <button 
                                     id= "button"
