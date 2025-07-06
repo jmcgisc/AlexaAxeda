@@ -118,7 +118,7 @@ export const HomeEs = () => {
                 className="cursor-pointer"
             >
             <img
-                src="brochure.png"
+                src="brochure.webp"
                 alt="Brochure Isla Diamante"
                 className="w-10 h-10 object-contain hover:scale-105 transition-transform duration-300"
             />

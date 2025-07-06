@@ -2,8 +2,8 @@ import { useState } from "react";
 import { RiMenuLine, RiCloseLine, RiPhoneFill } from "react-icons/ri";
 import { NavLink, Link }  from "react-router-dom"; 
 import ThemeToggle  from "../components/DarkModeToggle";
-import imageBlack   from "./images/LogoBlancoTransparente.png";
-import imageWhite   from "./images/LogoNegroTransparente.png"; 
+import imageBlack   from "./images/LogoBlancoTransparente.webp";
+import imageWhite   from "./images/LogoNegroTransparente.webp"; 
 
 const SmoothScrollNav = () => {
   const [isOpen, setIsOpen] = useState(false);
