@@ -6,6 +6,7 @@ import PrivacidadEn         from "./components/Aux/PrivacidadEn";
 import PreguntasFrecuentes  from "./components/Aux/PreguntasFrecuentes";
 import PreguntasFrecuentesEn from "./components/Aux/PreguntasFrecuentesEn";
 import FormularioContacto   from "./components/Aux/FormularioContacto";
+import TestimoniosPage      from "./components/TestimoniosPage";
 import SantoriniPage        from "../src/components/Desarrollos/SantoriniPage";
 import SantoriniPageEn      from "../src/components/Desarrollos/SantoriniPageEn";
 import MadeiraPage          from "../src/components/Desarrollos/MadeiraPage";
@@ -34,30 +35,6 @@ import { Routes, Route , BrowserRouter, useMatch}
 import { Helmet } from 'react-helmet';
 import { HelmetProvider } from "react-helmet-async";
 import Spinner from './components/Spinner';  
-
-// Import the functions you need from the SDKs you need
-import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
-
-// Your web app's Firebase configuration
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
-const firebaseConfig = {
-  apiKey: "AIzaSyBXDKo2yo-lV27pFVF5RhlHvomcSmGdwfU",
-  authDomain: "alexa-delgado-axeda.firebaseapp.com",
-  projectId: "alexa-delgado-axeda",
-  storageBucket: "alexa-delgado-axeda.appspot.com",
-  messagingSenderId: "978283195370",
-  appId: "1:978283195370:web:ef44c4252d294b76a1e093",
-  measurementId: "G-DRS0M53RW1"
-};
-
-// Initialize Firebase
-const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app); 
-const TestimoniosPage = React.lazy(() => import("./components/TestimoniosPage"));
-
 
 function App() { 
   return( 

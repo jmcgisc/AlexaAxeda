@@ -1,4 +1,3 @@
-import { getAnalytics, logEvent, setUserProperties } from "firebase/analytics"; 
 import 'reactjs-popup/dist/index.css';
 import "../Aux/style.css";
 import Popup                from 'reactjs-popup'; 

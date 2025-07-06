@@ -6,7 +6,6 @@ import FormularioContacto from "../Aux/FormularioContacto";
 import 'reactjs-popup/dist/index.css';
 import "../Aux/style.css";
 import { motion } from "framer-motion";  
-import { getAnalytics, logEvent, setUserProperties } from "firebase/analytics"; 
 import FormularioContactoPopup from '../Aux/FormularioContactoPopup'; 
 import SeccionModern from '../SeccionModern';
 import LocationSection from '../LocationSection';
