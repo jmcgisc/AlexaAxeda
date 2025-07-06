@@ -18,12 +18,25 @@ import LivingSection from '../LivingSection';
 import EngineeringSection from '../EngineeringSection'; 
 import TestimoniosSlider from '../Aux/TestimoniosSlider';
 import pdf from '../../../public/ISLA_DIAMANTE.pdf';
+import { Helmet } from "react-helmet-async";
  
 const contentStyle = { width: 1000 };
  
 export const HomeEs = () => {
     return ( 
     <> 
+      <Helmet>
+
+       <title>Isla Diamante - Invierte en Cancún</title>
+        <meta name="isla diamante" content="Terrenos exclusivos en Cancún dentro de privadas con club de playa, sin buró, con plusvalía garantizada, sin intereses en toda la vida del crédito." />
+        <meta property="og:title" content="Isla Diamante - Invierte en Cancún" />
+        <meta property="og:description" content="Invierte en el paraíso. Compra tu terreno en Cancún con seguridad, plusvalía y sin intereses." />
+        <meta property="og:image" content="https://desarrollosdiamante.com/Alexa_.jpeg" /> 
+        <meta property="og:url" content="https://desarrollosdiamante.com/" /> 
+        <link rel="canonical" href="https://desarrollosdiamante.com/" />
+
+      </Helmet>
+
         <section id="home" className="relative w-full h-screen overflow-hidden">
         {/* Video o imagen de fondo */}
            <video

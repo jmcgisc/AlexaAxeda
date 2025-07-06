@@ -1,5 +1,5 @@
-import React from 'react';
 import FormularioContacto from "../Aux/FormularioContacto";
+import { Helmet } from "react-helmet-async";
 
 
 const faqData = [
@@ -145,6 +145,17 @@ const faqData = [
 const PreguntasFrecuentes = () => {
     return (
         <> 
+
+        <Helmet>
+          <title>Preguntas Frecuentes - Isla Diamante Cancún</title>
+          <meta name="description" content="Resuelve todas tus dudas sobre los terrenos, privadas, financiamiento y proceso de compra en Isla Diamante." />
+          <link rel="canonical" href="https://desarrollosdiamante.com/preguntas" />
+          <meta property="og:title" content="FAQ Isla Diamante" />
+          <meta property="og:description" content="¿Cómo comprar? ¿Quién es la desarrolladora? ¿Hay plusvalía? Todo lo que necesitas saber está aquí." />
+          <meta property="og:image" content="https://desarrollosdiamante.com/meta-preguntas.webp" />
+          <meta property="og:url" content="https://desarrollosdiamante.com/preguntas" />
+          <meta name="twitter:card" content="summary_large_image" />
+        </Helmet>
 
         <div className="max-w-5xl mx-auto py-32">
         <h1 className="text-3xl font-bold text-center mb-8">Preguntas Frecuentes</h1>

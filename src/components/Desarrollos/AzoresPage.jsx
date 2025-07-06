@@ -12,6 +12,7 @@ import {
   LandPlot
 } from "lucide-react";
 import MetaTags from "../../../src/MetaTags";
+import { Helmet } from "react-helmet-async";
 
 const amenityGroups = [
   {
@@ -44,6 +45,19 @@ const amenityGroups = [
 
 const AzoresPage = () => {
   return (
+    <>          
+    
+    <Helmet>
+          <title>Azores - Privada moderna y natural | Isla Diamante</title>
+          <meta name="description" content="Azores combina naturaleza y arquitectura minimalista. Una privada ideal para invertir y vivir rodeado de tranquilidad." />
+          <link rel="canonical" href="https://desarrollosdiamante.com/azores" />
+          <meta property="og:title" content="Privada Azores - Isla Diamante" />
+          <meta property="og:description" content="Vive o invierte en Azores, una privada con mini golf, terrazas, parque temático y club." />
+          <meta property="og:image" content="https://desarrollosdiamante.com/Azores/AzoresAcceso.webp" />
+          <meta property="og:url" content="https://desarrollosdiamante.com/azores" />
+          <meta name="twitter:card" content="summary_large_image" />
+    </Helmet>
+
     <section className="min-h-screen bg-gradient-to-b from-white to-diamonBlack dark:from-black dark:to-gray-900 py-36 px-6 md:px-16 text-black dark:text-white">
       <div className="max-w-6xl mx-auto">
         {/* Encabezado */}
@@ -146,6 +160,7 @@ const AzoresPage = () => {
         />
 
     </section>
+    </>
   );
 };
 

@@ -13,7 +13,7 @@ import {
 } from "lucide-react";
 import MetaTags from "../../../src/MetaTags";
 import SEO from "../SEO";
-import GaleriaFlotante from "../GaleriaFlotante";
+import { Helmet } from "react-helmet-async";
 
 const amenityGroups = [
   {
@@ -44,6 +44,18 @@ const amenityGroups = [
 
 const SantoriniPage = () => {
   return (
+    <>
+
+    <Helmet>
+      <title>Boracay - Privada con estilo tropical | Isla Diamante</title>
+      <meta name="description" content="Santorini ofrece un estilo de vida tropical, ideal para familias que buscan tranquilidad, plusvalía y amenidades." />
+      <link rel="canonical" href="https://desarrollosdiamante.com/santorini" />
+      <meta property="og:title" content="Privada Boracay - Isla Diamante" />
+      <meta property="og:description" content="Descubre Santorini, privada con parques temáticos, casa club y ubicación privilegiada." />
+      <meta property="og:image" content="https://desarrollosdiamante.com/Boracay/Santorini_1.webp" />
+      <meta property="og:url" content="https://desarrollosdiamante.com/santorini" /> 
+    </Helmet>
+
     <section className="min-h-screen bg-gradient-to-b from-white to-diamonBlack dark:from-black dark:to-gray-900 py-36 px-6 md:px-16 text-black dark:text-white">
       <div className="max-w-6xl mx-auto">
         {/* Encabezado */}
@@ -152,6 +164,8 @@ const SantoriniPage = () => {
 
 
     </section>
+
+    </>
   );
 };
 

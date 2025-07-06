@@ -50,6 +50,18 @@ const BlogHome = () => {
   });
 
   return (
+    <>
+    <Helmet>
+      <title>Blog Isla Diamante - Inversión en Cancún</title>
+      <meta name="description" content="Lee artículos sobre inversión inmobiliaria, plusvalía, tips legales y análisis de terrenos en Cancún." />
+      <link rel="canonical" href="https://desarrollosdiamante.com/blog" />
+      <meta property="og:title" content="Blog Isla Diamante" />
+      <meta property="og:description" content="Aprende todo sobre inversión segura en tierra, tendencias inmobiliarias y desarrollos en Cancún." />
+      <meta property="og:image" content="https://desarrollosdiamante.com/meta-blog.jpg" />
+      <meta property="og:url" content="https://desarrollosdiamante.com/blog" />
+      <meta name="twitter:card" content="summary_large_image" />
+    </Helmet>
+    
     <div className="max-w-6xl mx-auto px-4 py-12 p-24 mt-36 bg-gray-50 dark:bg-gray-900 rounded-lg shadow-lg">
       <h1 className="text-4xl font-bold mb-8 text-center text-teal-700">Blog de Isla Diamante</h1>
 
@@ -96,6 +108,8 @@ const BlogHome = () => {
         </div>
       )}
     </div>
+
+    </>
   );
 };
 
