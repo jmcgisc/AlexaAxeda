@@ -84,6 +84,7 @@
     "vite-plugin-ssr": "^0.4.131"
   },
   "devDependencies": {
+    "sharp": "^0.34.2",
     "vite-plugin-compression": "^0.5.1"
   }
 }

@@ -64,8 +64,13 @@ const Desarrollos = () => {
 
             <NavLink className ="text-center " to = "/santorini" > 
                 <div className="flex flex-col gap-4">
-                    <img    src="Santorini.webp" className="w-full h-56 object-cover rounded-3xl transition duration-700 ease-in-out transform hover:-translate-y-1 hover:scale-110 hover:shadow-2xl"
-                            alt='Yucatan crecimiento económico'
+                    <img    src="Santorini.webp" 
+                            className="w-full h-56 object-cover rounded-3xl transition duration-700 ease-in-out transform hover:-translate-y-1 hover:scale-110 hover:shadow-2xl"
+                            //srcSet="/Santorini-1440.webp 2x"
+                            width="364"
+                            height="428"
+                            alt="Terreno en Santorini"
+                            loading="lazy"
                     />
                     <h3 className="text-2xl font-bold text-gray-400 ">Santorini - Colección Mediterranea</h3>
                 </div>
@@ -75,7 +80,10 @@ const Desarrollos = () => {
                 <div className="flex flex-col gap-4">
                     <img    src="Anzores.webp" 
                             className="w-full h-56 object-cover rounded-3xl transition duration-700 ease-in-out transform hover:-translate-y-1 hover:scale-110 hover:shadow-2xl" 
-                            alt='Desarrollos en Ciudad Maya' 
+                            width="364"
+                            height="428"
+                            alt="Terreno en Azores"
+                            loading="lazy" 
                     />   
                     <h3 className="text-2xl font-bold text-gray-400 ">Azores – Colección Atlántica</h3>
                 </div> 
@@ -86,6 +94,9 @@ const Desarrollos = () => {
                     <img    src="Madeira.webp" 
                             className="w-full h-56 object-cover rounded-3xl transition duration-700 ease-in-out transform hover:-translate-y-1 hover:scale-110 hover:shadow-2xl" 
                             alt='Invierte en Maderira' 
+                            width="364"
+                            height="428" 
+                            loading="lazy" 
                     />     
                     <h3 className="text-2xl font-bold text-gray-400 ">Madeira - Colección Natural </h3> 
                 </div>
@@ -118,6 +129,9 @@ const Desarrollos = () => {
                         src={d.imagen}
                         alt={d.nombre}
                         className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500"
+                        width="364"
+                        height="428"
+                        loading="lazy" 
                     />
                     <div className="p-6 space-y-4 text-left">
                         <h3 className="text-2xl text-center font-bold text-diamante dark:text-primary_isla">{d.nombre}</h3>

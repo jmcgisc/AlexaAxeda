@@ -60,6 +60,9 @@ const DesignSectionEn = () => {
                 <img
                   src={item.image}
                   alt={item.title}
+                  width="364"
+                  height="364"
+                  loading="lazy"
                   className="w-full h-64 sm:h-72 md:h-80 object-cover group-hover:scale-105 transition-transform duration-500"
                 />
                 <div className="absolute bottom-0 left-0 right-0 bg-black/60 text-white p-4">
