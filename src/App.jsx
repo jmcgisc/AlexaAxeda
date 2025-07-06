@@ -62,14 +62,12 @@ const TestimoniosPage = React.lazy(() => import("./components/TestimoniosPage"))
 function App() { 
   return( 
       <>
-
+      <HelmetProvider>
       <SeoJsonLd />
       <CookieConsent />
         <div className="min-h-screen text-black dark:bg-black dark:text-white transition-colors duration-300"> 
 
         <Helmet>
-
-      <HelmetProvider>
 
         <title>Isla Diamante | Alexa Delgado</title>
         <meta name="description" content="Axeda terrenos residenciales en Mérida y Cancún, inversiones inmobiliarias, sin comprobar buró de crédito." />
@@ -86,8 +84,6 @@ function App() {
         <meta name="twitter:title" content="Isla Diamante | Alexa Delgado" />
         <meta name="twitter:description" content="Un proyecto único, planeado de manera integral, cuidando siempre el entorno ecológico de la zona. Ofrecemos una gran variedad de servicios y amenidades que te ofrecen la mejor calidad de vida y seguridad que mereces." />
         <meta name="twitter:image" content="https://desarrollosdiamante.com/Alexa_.jpeg" />
-
-      </HelmetProvider>
  
       </Helmet>
       
@@ -150,6 +146,8 @@ function App() {
       </BrowserRouter>  
       </div>
       </div>
+
+      </HelmetProvider>
       </>
       
   );
