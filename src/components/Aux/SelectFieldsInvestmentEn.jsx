@@ -6,8 +6,10 @@ const SelectFieldsInvestment = (props) => {
         <div> 
              <div>
                 <label className="text-sm"  htmlFor={name} > {label} </label >
-                    <select  className="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 outline-none focus:ring-2 focus:ring-teal-300"
-                                onChange={handleChange} defaultValue = "interesadoEn" name={name}> 
+                    <select     className="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 outline-none focus:ring-2 focus:ring-teal-300"
+                                onChange={handleChange} 
+                                aria-labelledby="Interested in"
+                                defaultValue = "interesadoEn" name={name}> 
 
                         <option className="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 outline-none focus:ring-2 focus:ring-teal-300 " value="interesadoEn " disabled>
                             I'm interested ...

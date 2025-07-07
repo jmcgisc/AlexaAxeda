@@ -5,8 +5,11 @@ const SelectFields = (props) => {
         <div>
              <div>
                 <label className="text-sm"  htmlFor={name} > {label} </label >
-                    <select className="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 outline-none focus:ring-2 focus:ring-teal-300" 
-                                onChange={handleChange} defaultValue = "presupuesto" name={name}> 
+                    <select className="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 outline-none focus:ring-2 focus:ring-teal-300"     
+                            aria-labelledby="Interested in"
+                            onChange={handleChange} 
+                            defaultValue = "presupuesto" 
+                            name={name}> 
 
                             <option className="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 outline-none focus:ring-2 focus:ring-teal-300 " 
                             value="presupuesto" disabled>

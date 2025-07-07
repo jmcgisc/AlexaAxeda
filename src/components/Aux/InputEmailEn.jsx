@@ -7,7 +7,10 @@ const InputEmailEn = (props) => {
                 <label className="text-sm after:content-['*'] after:ml-0.5 after:text-red-500" htmlFor={name}>
                     E-mail </label>
 
-                <input  type={type} onChange={handleChange} value={value} name={name} required 
+                <input  type={type} onChange={handleChange} 
+                        value={value} 
+                        aria-labelledby="Interested in" 
+                        name={name} required 
                         className="peer w-full rounded-md px-4 py-2 outline-none ring-1 ring-gray-300 focus:ring-2 
                         focus:ring-teal-300 invalid:border-pink-500 invalid:text-pink-600 focus:invalid:border-pink-500 
                         focus:invalid:ring-pink-500" 

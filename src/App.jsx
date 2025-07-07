@@ -1,4 +1,4 @@
-import React, { Suspense } from 'react';
+import { useState, useEffect, Suspense } from 'react';
 import 'mdb-react-ui-kit/dist/css/mdb.min.css';
 import "@fortawesome/fontawesome-free/css/all.min.css"; 
 import PrivacidadEs         from "./components/Aux/PrivacidadEs"; 
@@ -37,6 +37,13 @@ import { HelmetProvider } from "react-helmet-async";
 import Spinner from './components/Spinner';  
 
 function App() { 
+
+  const [showExtras, setShowExtras] = useState(false);
+
+  useEffect(() => {
+    setTimeout(() => setShowExtras(true), 2000); 
+  }, []);
+
   return( 
       <>
       <HelmetProvider>
@@ -103,10 +110,12 @@ function App() {
             <Route path="/testimonios"      element={ <Suspense fallback={<Spinner />}><TestimoniosPage /></Suspense> } />
    
          </Routes>
-        <ChatbotGPT />
-        <LanguageDetector/>          
-             
-        <FloatingWhatsApp className='left-4 bottom-4 md:left-8 md:bottom-8'
+        <LanguageDetector/>  
+
+        {showExtras && (
+          <>
+            <ChatbotGPT />
+             <FloatingWhatsApp className='left-4 bottom-4 md:left-8 md:bottom-8'
               accountAddress="https://wa.me/525570137764"
               phoneNumber="525570137764"
               accountName="Asesor Alexa"
@@ -118,7 +127,9 @@ function App() {
               darkMode="enable"
               chatMessage ="¡Hola! ¿En que proyecto estas interesado? 🤝 "   
               avatar="Alexa_.jpeg"
-        />  
+           />  
+          </>
+        )}   
 
       </BrowserRouter>  
       </div>
