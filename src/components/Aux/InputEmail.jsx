@@ -1,4 +1,3 @@
-import React from 'react'
 
 const InputEmail = (props) => {
     const{handleChange, label, name, type, value} = props;
