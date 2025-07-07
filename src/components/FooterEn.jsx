@@ -1,16 +1,14 @@
-import React from "react";
-import { NavLink }  from "react-router-dom"; 
-import {RiPlayFill} from "react-icons/ri"
+import { NavLink }  from "react-router-dom";  
 
 import image from "./images/DiamanteLogo.jpeg"
 
 // Icons 
 import {FaTiktok, 
         FaFacebook, 
-        FaTwitter, 
         FaInstagramSquare, 
         FaLinkedin}       from "react-icons/fa"
-  
+import { FaXTwitter } from "react-icons/fa6";
+ 
 const Footer = () => {
   return (
     <footer className="bg-black p-8 xl:p-20">
@@ -40,8 +38,8 @@ const Footer = () => {
             <FaFacebook />
           </a>
 
-          <a href="#" className="block text-white p-4 bg-primary_isla rounded-full">
-            <FaTwitter />
+          <a href="https://x.com/AlexaDelga38913?s=09" className="block text-white p-4 bg-primary_isla rounded-full">
+            <FaXTwitter />
           </a> 
 
           <a href="https://www.linkedin.com/in/alexa-delgado-65028a351?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"       target= "_blank"className="block text-white p-4 bg-primary_isla rounded-full">
@@ -77,14 +75,6 @@ const Footer = () => {
             </NavLink>
           </p>
 
-          {/* <p  className="text-primary_isla lg:text-xl lg:mt-4">
-            <NavLink 
-                      to = "/components/footer/Eventos" 
-                      target="_blank"
-            > Eventos 
-            </NavLink>
-          </p> */}
-
           <p  className="text-primary_isla lg:text-xl lg:mt-4">
             <NavLink  to = "/blog" 
                       target="_blank"
@@ -99,21 +89,6 @@ const Footer = () => {
             > Privacy Policy
             </NavLink>
           </p> 
-
- 
-          {/* <button  
-            onClick={(e) => {
-                e.preventDefault();
-                window.open('https://eva3d.com/recorridos-virtuales-360/axeda/rosavento/index.htm', '_blank');
-                }} 
-                className="text-2xl flex items-center justify-start gap-4 py-9 px-20 rounded-xl text-gray-200
-                hover:drop-shadow-xl
-                " >
-{/*                     
-                    <RiPlayFill className="bg-primary_isla p-8 rounded-full box-content"/> 
-                      Recorrido 360º  */}
-          {/* </button> */}
-
         </nav>
         
       </div>

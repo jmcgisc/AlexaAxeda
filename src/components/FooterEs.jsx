@@ -5,9 +5,9 @@ import image from "./images/DiamanteLogo.jpeg"
 // Icons 
 import {FaTiktok, 
         FaFacebook, 
-        FaTwitter, 
         FaInstagramSquare, 
         FaLinkedin}       from "react-icons/fa"
+import { FaXTwitter } from "react-icons/fa6";
   
 const FooterEs = () => {
   return (
@@ -37,12 +37,12 @@ const FooterEs = () => {
               aria-label="Facebook Alexa Delgado" > 
             <FaFacebook />
           </a>
-
-          <a  href="#" 
+          
+          <a  href="https://x.com/AlexaDelga38913?s=09" 
               className="block text-white p-4 bg-primary_isla rounded-full"
               aria-label="X Alexa Delgado" 
           >
-            <FaTwitter />
+            <FaXTwitter />
           </a> 
 
           <a href="https://www.linkedin.com/in/alexa-delgado-65028a351?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"       
