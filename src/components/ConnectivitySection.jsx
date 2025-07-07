@@ -128,6 +128,7 @@ const ConnectivitySection = () => {
                           src={img}
                           alt={`${item.titulo} ${index}`}
                           className="w-full h-60 object-cover rounded-lg shadow-md"
+                          loading="lazy"
                         />
                       </SwiperSlide>
                     ))}

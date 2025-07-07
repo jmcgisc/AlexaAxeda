@@ -17,7 +17,11 @@ const Footer = () => {
         {/* Logo */}
         <div className="w-1/6">
           <a href="#" className="text-2xl font-bold relative p-1 bg-white">
-                  <img className=" " src={image} alt="Logotipo Isla Diamante"/>  
+          <img  className=" " 
+                src={image} 
+                alt="Logotipo Isla Diamante"
+                loading="lazy"/>  
+                  
           </a>
 
         </div>

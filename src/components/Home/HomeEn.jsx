@@ -42,6 +42,7 @@ export const HomeEn = () => {
               src="/fallback_optimized.webp"
               alt="Vista previa del desarrollo"
               className="absolute top-0 left-0 w-full h-full object-cover"
+              loading="lazy"
             />
           </noscript>
         ) : (
@@ -107,6 +108,7 @@ export const HomeEn = () => {
                 src="brochure.webp"
                 alt="Brochure Isla Diamante"
                 className="w-10 h-10 object-contain hover:scale-105 transition-transform duration-300"
+                loading="lazy"
             />
             </a>
             {/* El texto no tiene cursor-pointer */}
@@ -164,8 +166,7 @@ export const HomeEn = () => {
       {/* Línea decorativa inferior */}
       <div className="w-full h-[1px] bg-gray-200 dark:bg-gray-200" />
 
-        {/*Opioniones*/}
-        {/* <Reviews/> */}
+        {/*Opioniones*/} 
 
         {/*Testimonios*/}
         <TestimoniosSlider/> 

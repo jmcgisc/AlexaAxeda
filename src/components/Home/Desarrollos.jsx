@@ -36,7 +36,8 @@ const Desarrollos = () => {
         <div className="relative px-6 md:px-12 py-24 bg-gradient-to-b from-white to-gray-100 dark:from-gray-800 dark:to-gray-900 text-center overflow-hidden">
         {/* Marca de agua decorativa */}
             <div className="absolute inset-0 flex justify-center items-center pointer-events-none opacity-5">
-                <img src="/icons/logo-icon-transparente.svg" alt="" className="w-[300px] md:w-[400px]" />
+                <img src="/icons/logo-icon-transparente.svg" alt="logo isla diamante" className="w-[300px] md:w-[400px]" 
+                loading="lazy"/>
             </div>
             <div className="relative z-10 max-w-4xl mx-auto">
                 <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900 dark:text-white leading-tight mb-4">
@@ -53,7 +54,8 @@ const Desarrollos = () => {
                 <div className="flex flex-col gap-2 rounded-3xl py-2"> 
                     <img    src="Isla_2.webp"  
                             class="h-56 xl:h-[600px] w-full rounded-lg  shadow-xl  transition duration-700 ease-in-out transform hover:-translate-y-1 hover:scale-70  "  
-                            alt='Terrenos residenciales Isla Dimante'/>
+                            alt='Terrenos residenciales Isla Dimante'
+                            loading="lazy"/>
                     <h3 className="text-2xl font-bold dark:text-gray-200 mb-4">Isla Diamante</h3> 
                      <p className="dark:text-gray-200 mb-4">
                         En Isla Diamante, cada privada es una expresión de estilo, lujo y carácter. Inspiradas en rincones icónicos del mundo, nuestras colecciones residenciales ofrecen experiencias de vida únicas, diseñadas para quienes valoran lo excepcional.                                  
@@ -106,7 +108,8 @@ const Desarrollos = () => {
                 <div className="flex flex-col gap-4">
                     <img    src="Boracay.webp" 
                             className="w-full h-56 object-cover rounded-3xl transition duration-700 ease-in-out transform hover:-translate-y-1 hover:scale-110 hover:shadow-2xl" 
-                            alt ='Plusvalía en Mérida'
+                            alt ='Plusvalía en Cancún'
+                            loading="lazy"
                     />
                     <h3 className="text-2xl font-bold text-gray-400 ">Boracay – Colección Tropical </h3>
                 </div>

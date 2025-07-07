@@ -68,7 +68,7 @@ const Slider = () => {
               whileHover={{ scale: 1.05 }}
               onClick={() => handleImageClick(image)}
             >
-              <img src={image} alt={`slide-${index}`} className="w-full h-[250px] object-cover" />
+              <img src={image} alt={`slide-${index}`} className="w-full h-[250px] object-cover" loading="lazy"/>
             </motion.div>
           ))}
         </motion.div>
@@ -102,6 +102,7 @@ const Slider = () => {
                 src={selectedImage}
                 alt="Ampliada"
                 className="w-full h-full object-contain rounded-lg"
+                loading="lazy"
               />
             </motion.div>
           </motion.div>

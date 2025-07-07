@@ -26,11 +26,13 @@ const SmoothScrollNav = () => {
               src={imageBlack}
               alt="Logo Isla Diamante"
               className="hidden dark:block h-12 object-contain"
+              loading="lazy"
             />
             <img
               src={imageWhite}
               alt="Logo Isla Diamante"
               className="block dark:hidden h-12 object-contain"
+              loading="lazy"
             />
           </a>
           <ThemeToggle />
@@ -50,23 +52,6 @@ const SmoothScrollNav = () => {
             {isOpen ? <RiCloseLine /> : <RiMenuLine />}
           </button>
         </div>
-
-        {/* Menú horizontal para desktop */}
-        {/* <ul className="hidden xl:flex justify-center gap-6 text-sm md:text-base font-medium text-gray-800 dark:text-white">
-          {["location", "connectivity", "tradition", "design", "living", "engineering"].map((section) => (
-            <li key={section}>
-              <Link
-                to={section}
-                smooth
-                duration={600}
-                offset={-80}
-                className="cursor-pointer hover:text-diamante"
-              >
-                {section.charAt(0).toUpperCase() + section.slice(1)}
-              </Link>
-            </li>
-          ))}
-        </ul> */}
 
         <NavLink
           className="hidden xl:flex justify-center gap-6 text-sm md:text-base font-medium text-gray-800 dark:text-white"

@@ -57,6 +57,7 @@ function SeccionInvestment() {
         <div className="relative z-10">
           <img
             src="LAGO-CENTRAL-CASA-CLUB-PRINCIPAL.webp"
+            loading="lazy"
             alt="Asesor Axeda Terrenos en Mérida y Cancún"
             className="w-[280px] h-[280px] md:w-[320px] md:h-[320px] object-cover rounded-full border-8 border-white shadow-2xl"
           />
@@ -77,6 +78,7 @@ function SeccionInvestment() {
                   src={`https://img.freepik.com/foto-gratis/foto-persona-${i + 1}.jpg`}
                   alt={`Persona ${i + 1}`}
                   className="w-10 h-10 object-cover rounded-full ring-2 ring-white"
+                  loading="lazy"
                 />
               ))}
             </div>
@@ -102,16 +104,19 @@ function SeccionInvestment() {
           src="Isla_4.webp"
           className="w-10 h-10 md:w-20 md:h-20 object-cover rounded-full absolute top-[10%] right-[5%] xl:right-[10%] border-4 border-white shadow-xl"
           alt="Logo flotante"
+          loading="lazy"
         />
         <img
           src="Isla_3.webp"
           className="w-10 h-10 md:w-20 md:h-20 object-cover rounded-full absolute top-[5%] left-[10%] border-4 border-white shadow-xl"
           alt="Logo flotante"
+          loading="lazy"
         />
         <img
           src="Isla_4.webp"
           className="w-10 h-10 md:w-20 md:h-20 object-cover rounded-full absolute bottom-[5%] left-[5%] -rotate-12 border-4 border-white shadow-xl"
           alt="Logo flotante"
+          loading="lazy"
         />
       </motion.div>
     </section>

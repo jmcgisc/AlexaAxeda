@@ -36,7 +36,7 @@ const DesarrollosEn = () => {
     <div className="relative px-6 md:px-12 py-24 bg-gradient-to-b from-white to-gray-100 dark:from-gray-800 dark:to-gray-900 text-center overflow-hidden">
       {/* Decorative watermark */}
       <div className="absolute inset-0 flex justify-center items-center pointer-events-none opacity-5">
-        <img src="/icons/logo-icon-transparente.svg" alt="" className="w-[300px] md:w-[400px]" />
+        <img src="/icons/logo-icon-transparente.svg" alt="" className="w-[300px] md:w-[400px]" loading="lazy"/>
       </div>
       <div className="relative z-10 max-w-4xl mx-auto">
         <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900 dark:text-white leading-tight mb-4">
@@ -56,6 +56,7 @@ const DesarrollosEn = () => {
             src="DesarrollosEN.webp"
             className="h-56 xl:h-[600px] w-full rounded-lg shadow-xl transition duration-700 ease-in-out transform hover:-translate-y-1 hover:scale-70"
             alt='Residential land Isla Diamante'
+            loading="lazy"
           />
           <h3 className="text-2xl font-bold dark:text-gray-200 mb-4">Isla Diamante</h3> 
           <p className="dark:text-gray-200 mb-4">
@@ -70,6 +71,7 @@ const DesarrollosEn = () => {
                 src="Santorini.webp"
                 className="w-full h-56 object-cover rounded-3xl transition duration-700 ease-in-out transform hover:-translate-y-1 hover:scale-110 hover:shadow-2xl"
                 alt='Yucatan economic growth'
+                loading="lazy"
               />
               <h3 className="text-2xl font-bold text-gray-400">Santorini – Mediterranean Collection</h3>
             </div>
@@ -80,7 +82,8 @@ const DesarrollosEn = () => {
               <img
                 src="Anzores.webp"
                 className="w-full h-56 object-cover rounded-3xl transition duration-700 ease-in-out transform hover:-translate-y-1 hover:scale-110 hover:shadow-2xl"
-                alt='Developments in Ciudad Maya'
+                alt='Developments in Cancun'
+                loading="lazy"
               />   
               <h3 className="text-2xl font-bold text-gray-400">Azores – Atlantic Collection</h3>
             </div> 
@@ -92,6 +95,7 @@ const DesarrollosEn = () => {
                 src="Madeira.webp"
                 className="w-full h-56 object-cover rounded-3xl transition duration-700 ease-in-out transform hover:-translate-y-1 hover:scale-110 hover:shadow-2xl"
                 alt='Invest in Madeira'
+                loading="lazy"
               />     
               <h3 className="text-2xl font-bold text-gray-400">Madeira – Natural Collection</h3> 
             </div>
@@ -102,7 +106,8 @@ const DesarrollosEn = () => {
               <img
                 src="Boracay.webp"
                 className="w-full h-56 object-cover rounded-3xl transition duration-700 ease-in-out transform hover:-translate-y-1 hover:scale-110 hover:shadow-2xl"
-                alt='Value appreciation in Mérida'
+                alt='Value appreciation in Cancun'
+                loading="lazy"
               />
               <h3 className="text-2xl font-bold text-gray-400">Boracay – Tropical Collection</h3>
             </div>
@@ -125,6 +130,7 @@ const DesarrollosEn = () => {
                   src={d.imagen}
                   alt={d.nombre}
                   className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500"
+                  loading="lazy"
                 />
                 <div className="p-6 space-y-4 text-left">
                   <h3 className="text-2xl text-center font-bold text-diamante dark:text-primary_isla">{d.nombre}</h3>
