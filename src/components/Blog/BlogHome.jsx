@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import { Helmet } from 'react-helmet';
 
 const posts = import.meta.glob('../../posts/*.md', { as: 'raw' });
 
