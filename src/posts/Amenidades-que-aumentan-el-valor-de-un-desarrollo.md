@@ -1,5 +1,5 @@
 ---
-title: Amenidades que aumentan el valor de un desarrollo
+title:Amenidades-que-aumentan-el-valor-de-un-desarrollo
 date: 2025-06-10
 description: Conoce qué amenidades marcan la diferencia al momento de invertir en un desarrollo.
 ---
