@@ -1,3 +1,4 @@
+
 ---
 title: ¿Qué considerar al diseñar tu casa dentro de un desarrollo cerrado?
 date: 2025-06-10
