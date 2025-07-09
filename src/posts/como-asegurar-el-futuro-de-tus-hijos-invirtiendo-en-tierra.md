@@ -1,5 +1,5 @@
 ---
-title:Cómo asegurar el futuro de tus hijos invirtiendo en tierra
+title: Cómo asegurar el futuro de tus hijos invirtiendo en tierra
 date: 2025-06-10
 description: Descubre cómo los terrenos pueden ser parte del legado familiar.
 ---

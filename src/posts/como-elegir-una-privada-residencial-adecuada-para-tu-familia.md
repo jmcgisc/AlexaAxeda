@@ -1,5 +1,5 @@
 ---
-title:Cómo elegir una privada residencial adecuada para tu familia
+title: Cómo elegir una privada residencial adecuada para tu familia
 date: 2025-06-10
 description: Aprende qué factores considerar al buscar un desarrollo ideal para vivir o invertir.
 ---
