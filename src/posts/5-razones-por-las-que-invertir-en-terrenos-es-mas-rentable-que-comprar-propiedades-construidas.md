@@ -1,4 +1,8 @@
-    # 5 razones por las que invertir en terrenos es más rentable que comprar propiedades construidas
+---
+title: "5 razones por las que invertir en terrenos es más rentable que comprar propiedades construidas"
+date: 2025-07-11
+slug: errores-al-invertir-en-terrenos
+---
 
 Invertir en bienes raíces es una de las decisiones más inteligentes que puedes tomar, pero... ¿es mejor comprar un terreno o una propiedad construida?  
 La respuesta puede sorprenderte. Aquí te damos 5 razones por las que los terrenos ganan terreno (literalmente).
