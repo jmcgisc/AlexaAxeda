@@ -27,15 +27,47 @@ los terrenos han incrementado su valor año tras año. **Isla Diamante** se encu
 Lo que garantiza una **revalorización rápida** del terreno.
 
 ---
+Comparativa de Inversión: ¿Por qué Isla Diamante destaca?
 
-## Comparativa: Terrenos en Cancún vs otros activos
+🔹 Terrenos en Cancún (Isla Diamante)
 
-| Activo               | Riesgo        | Rendimiento potencial | Liquidez       | Control del activo |
-|----------------------|---------------|------------------------|----------------|---------------------|
-| Terrenos en Cancún (Isla Diamante) | Bajo a medio | Alto (plusvalía constante) | Medio | Alto |
-| Renta fija           | Bajo          | Bajo                   | Alto           | Nulo |
-| Renta variable       | Medio a alto  | Variable               | Alto           | Bajo |
-| Criptomonedas        | Alto          | Muy alto / Muy bajo   | Alto           | Bajo |
+Riesgo: Bajo a medio
+
+Rendimiento potencial: Alto, gracias a la plusvalía constante y la ubicación estratégica en crecimiento.
+
+Liquidez: Media, con alta demanda proyectada a corto y mediano plazo.
+
+Control del activo: Total. Tú decides cuándo vender, construir o mantener.
+
+🔸 Renta Fija (CETES, bonos, etc.)
+
+Riesgo: Bajo
+
+Rendimiento potencial: Bajo. Ideal para conservar valor, pero con poco crecimiento real.
+
+Liquidez: Alta
+
+Control del activo: Nulo. El emisor define términos y pagos.
+
+🔸 Renta Variable (acciones, fondos, ETFs)
+
+Riesgo: Medio a alto
+
+Rendimiento potencial: Variable, depende del mercado
+
+Liquidez: Alta
+
+Control del activo: Bajo. El inversionista rara vez tiene injerencia directa.
+
+🔸 Criptomonedas
+
+Riesgo: Alto
+
+Rendimiento potencial: Muy alto o muy bajo (alta volatilidad)
+
+Liquidez: Alta
+
+Control del activo: Bajo, sujeto a fluctuaciones del mercado global.
 
 👉 Con **Isla Diamante**, inviertes en un activo real, tangible, que **no depende del mercado financiero**, y que históricamente ha mostrado **una línea ascendente de valorización**.
 
