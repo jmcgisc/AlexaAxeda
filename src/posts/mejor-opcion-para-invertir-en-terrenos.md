@@ -57,16 +57,48 @@ Ubicada a minutos de la **zona urbana de Cancún** y muy cerca de **Playa Mujere
 4. Proyecto con visión a futuro: habitacional, patrimonial y turístico
 
 ---
+ 
+## ✅ Comparativa de Beneficios – Terrenos vs. Otros Activos
 
-## 📊 Comparativa: Isla Diamante vs. otras inversiones
 
-| Tipo de inversión     | Inflación segura | Mantenimiento | Rentabilidad | Riesgo |
-|-----------------------|------------------|---------------|--------------|--------|
-| Cuenta bancaria       | ❌               | ❌            | Bajo         | Bajo   |
-| Criptomonedas         | ❌               | ❌            | Volátil      | Alto   |
-| Departamento usado    | ⚠️               | Alto          | Medio        | Medio  |
-| Terreno en Cancún     | ✅               | Bajo          | Alto         | Bajo   |
-| **Isla Diamante**     | ✅✅              | Bajo          | **Muy alto** | Bajo   |
+### 🔍 Comparativa de inversión
+
+**🟢 Terrenos en Cancún (Isla Diamante)**
+- ✅ Alta plusvalía y crecimiento constante.
+- ✅ Bajo costo de entrada.
+- ✅ Cero mantenimiento.
+- ✅ Sin necesidad de buró de crédito.
+- ✅ Escrituración inmediata.
+- ✅ Ideal para protegerse contra la inflación.
+- ✅ Planes de pago flexibles.
+- ✅ Retorno en mediano plazo (1 a 2 años).
+- 🔐 Activo físico y tangible.
+
+---
+
+**🟡 Bienes raíces construidos**
+- 🔸 Plusvalía más lenta.
+- 🔸 Costos altos de mantenimiento y entrada.
+- 🔸 Requiere historial crediticio.
+- 🔸 Retorno más lento (5+ años).
+
+---
+
+**🔴 Bolsa de valores**
+- ⚠️ Alta volatilidad.
+- ⚠️ Riesgo medio-alto.
+- ⚠️ Depende del mercado global.
+- 🔸 Requiere conocimiento técnico.
+
+---
+
+**🔴 Criptomonedas**
+- ⚠️ Muy volátiles y riesgosas.
+- ⚠️ Sin respaldo físico.
+- ⚠️ No aptas para perfiles conservadores.
+- 🔸 Alta especulación.
+
+---
 
 ---
 
