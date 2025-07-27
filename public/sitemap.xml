@@ -323,7 +323,6 @@
     <priority>0.7</priority>
   </url>
 
-
   <url>
     <loc>https://desarrollosdiamante.com/post/mejor-opcion-para-invertir-en-terrenos</loc>
     <lastmod>2025-07-26</lastmod>
@@ -331,5 +330,12 @@
     <priority>0.7</priority>
   </url>
 
+
+  <url>
+    <loc>https://desarrollosdiamante.com/post/isla-diamante-revoluciona-el-mercado-de-los-terenos</loc>
+    <lastmod>2025-07-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
 
 </urlset>
