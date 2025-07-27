@@ -71,7 +71,7 @@ const Desarrollos = () => {
                             //srcSet="/Santorini-1440.webp 2x"
                             width="364"
                             height="428"
-                            alt="Terreno en Santorini"
+                            alt="Terreno en Santorini Isla Diamante"
                             loading="lazy"
                     />
                     <h3 className="text-2xl font-bold text-gray-400 ">Santorini - Colección Mediterranea</h3>
@@ -84,7 +84,7 @@ const Desarrollos = () => {
                             className="w-full h-56 object-cover rounded-3xl transition duration-700 ease-in-out transform hover:-translate-y-1 hover:scale-110 hover:shadow-2xl" 
                             width="364"
                             height="428"
-                            alt="Terreno en Azores"
+                            alt="Terreno en Azores Isla Diamante"
                             loading="lazy" 
                     />   
                     <h3 className="text-2xl font-bold text-gray-400 ">Azores – Colección Atlántica</h3>
@@ -95,7 +95,7 @@ const Desarrollos = () => {
                 <div className="flex flex-col gap-4">
                     <img    src="Madeira.webp" 
                             className="w-full h-56 object-cover rounded-3xl transition duration-700 ease-in-out transform hover:-translate-y-1 hover:scale-110 hover:shadow-2xl" 
-                            alt='Invierte en Maderira' 
+                            alt='Invierte en Maderira Isla Diamante' 
                             width="364"
                             height="428" 
                             loading="lazy" 

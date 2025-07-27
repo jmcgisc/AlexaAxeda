@@ -40,7 +40,7 @@ export const HomeEn = () => {
           <noscript>
             <img
               src="/fallback_optimized.webp"
-              alt="Vista previa del desarrollo"
+              alt="Preview of Isla Diamante development"
               className="absolute top-0 left-0 w-full h-full object-cover"
               loading="lazy"
             />

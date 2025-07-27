@@ -60,7 +60,7 @@ const SantoriniPageEn = () => {
         <div className="grid md:grid-cols-2 gap-10 items-center mb-10">
           <motion.img
             src="/Santorini/planoSantorini.webp"
-            alt="Santorini desarrollo"
+            alt="Santorini desarrollo Isla Diamante"
             className="w-full h-[400px] object-cover rounded-full border-[8px] border-diamante shadow-xl"
             initial={{ opacity: 0, scale: 0.9 }}
             whileInView={{ opacity: 1, scale: 1 }}
