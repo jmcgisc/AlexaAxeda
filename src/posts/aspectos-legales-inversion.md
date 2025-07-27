@@ -1,5 +1,5 @@
 ---
-title:Aspectos-legales-al-invertir-en-terrenos-en-México
+title:Aspectos legales al invertir en terrenos en México
 date:2025-06-11
 description: Conoce los aspectos legales más importantes al comprar un terreno en México y protege tu inversión.
 ---
