@@ -27,7 +27,8 @@ const desarrollos = [
     descripcion: "Sofisticación cálida, esencia insular. Ambientes amplios, luz natural y acabados cálidos crean un oasis de relajación.",
     imagen: "Boracay.webp",
     precio: "Mensualidades desde $3,124 MXN",
-    to: "/boracay"
+    to: "/boracay",
+    soldOut: true,
   }
 ];
 
@@ -104,47 +105,72 @@ const Desarrollos = () => {
                 </div>
             </NavLink>   
 
-            <NavLink className ="text-center " to = "/boracay" > 
-                <div className="flex flex-col gap-4">
-                    <img    src="Boracay.webp" 
-                            className="w-full h-56 object-cover rounded-3xl transition duration-700 ease-in-out transform hover:-translate-y-1 hover:scale-110 hover:shadow-2xl" 
-                            alt ='Plusvalía en Cancún'
-                            loading="lazy"
-                    />
-                    <h3 className="text-2xl font-bold text-gray-400 ">Boracay – Colección Tropical </h3>
+            <NavLink className="text-center relative group" to="/boracay">
+                {/* Etiqueta SOLD OUT */}
+                <div className="absolute top-2 right-2 bg-red-600 text-white text-xs px-2 py-1 rounded-full shadow-md z-10">
+                    SOLD OUT
                 </div>
-            </NavLink>   
+
+                <div className="flex flex-col gap-4">
+                    <img
+                    src="Boracay.webp"
+                    className="w-full h-56 object-cover rounded-3xl grayscale opacity-60 transition duration-700 ease-in-out transform group-hover:-translate-y-1 group-hover:scale-110 group-hover:shadow-2xl"
+                    alt="Plusvalía en Cancún"
+                    loading="lazy"
+                    />
+                    <h3 className="text-2xl font-bold text-gray-400">Boracay – Colección Tropical</h3>
+                </div>
+                </NavLink>  
             </div>
         </div>
 
-        <section className="bg-white dark:bg-gray-900 dark:text-white px-6 py-16">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-                {desarrollos.map((d, idx) => (
-                <NavLink to={d.to} key={idx} className="group">
-                    <div className="relative bg-gray-50 dark:bg-gray-800 rounded-3xl shadow-xl hover:shadow-2xl transition overflow-hidden"> 
-                    {/* Etiqueta de precio */}
-                    {d.precio && (
-                        <div className="absolute top-4 left-4 bg-diamonBlack text-white text-sm px-3 py-1 rounded-full shadow-md z-10">
-                        {d.precio}
-                        </div>
-                    )}
-                    <img
-                        src={d.imagen}
-                        alt={d.nombre}
-                        className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500"
-                        width="364"
-                        height="428"
-                        loading="lazy" 
-                    />
-                    <div className="p-6 space-y-4 text-left">
-                        <h3 className="text-2xl text-center font-bold text-diamante dark:text-primary_isla">{d.nombre}</h3>
-                        <p className="text-gray-700 dark:text-gray-300 font-chivo text-base leading-relaxed">{d.descripcion}</p>
-                    </div>
-                    </div>
-                </NavLink>
-                ))}
-            </div>
-        </section>
+ {/* Desarrollos */}
+      <section className="bg-white dark:bg-gray-900 dark:text-white px-6 py-16">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+          {desarrollos.map((d, idx) => (
+            <NavLink
+              to={d.soldOut ? "#" : d.to}
+              key={idx}
+              className={`group ${d.soldOut ? "pointer-events-none opacity-80" : ""}`}
+            >
+              <div className="relative bg-gray-50 dark:bg-gray-800 rounded-3xl shadow-xl hover:shadow-2xl transition overflow-hidden">
+                {/* Etiqueta SOLD OUT */}
+                {d.soldOut && (
+                  <div className="absolute top-4 right-4 bg-red-600 text-white text-xs px-3 py-1 rounded-full z-10 shadow-md">
+                    SOLD OUT
+                  </div>
+                )}
+
+                {/* Etiqueta de precio */}
+                {d.precio && (
+                  <div className="absolute top-4 left-4 bg-diamonBlack text-white text-sm px-3 py-1 rounded-full shadow-md z-10">
+                    {d.precio}
+                  </div>
+                )}
+
+                <img
+                  src={d.imagen}
+                  alt={d.nombre}
+                  className={`w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500 ${
+                    d.soldOut ? "grayscale opacity-60" : ""
+                  }`}
+                  width="364"
+                  height="428"
+                  loading="lazy"
+                />
+                <div className="p-6 space-y-4 text-left">
+                  <h3 className="text-2xl text-center font-bold text-diamante dark:text-primary_isla">
+                    {d.nombre}
+                  </h3>
+                  <p className="text-gray-700 dark:text-gray-300 font-chivo text-base leading-relaxed">
+                    {d.descripcion}
+                  </p>
+                </div>
+              </div>
+            </NavLink>
+          ))}
+        </div>
+      </section>
     </div> 
     )
 }
