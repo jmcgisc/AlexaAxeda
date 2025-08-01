@@ -330,10 +330,16 @@
     <priority>0.7</priority>
   </url>
 
-
   <url>
     <loc>https://desarrollosdiamante.com/post/isla-diamante-revoluciona-el-mercado-de-los-terrenos</loc>
     <lastmod>2025-07-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://desarrollosdiamante.com/post/inveriones-sin-credito-bancario</loc>
+    <lastmod>2025-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
