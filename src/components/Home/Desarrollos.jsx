@@ -134,17 +134,18 @@ const Desarrollos = () => {
               className={`group ${d.soldOut ? "pointer-events-none opacity-80" : ""}`}
             >
               <div className="relative bg-gray-50 dark:bg-gray-800 rounded-3xl shadow-xl hover:shadow-2xl transition overflow-hidden">
-                {/* Etiqueta SOLD OUT */}
-                {d.soldOut && (
-                  <div className="absolute top-4 right-4 bg-red-600 text-white text-xs px-3 py-1 rounded-full z-10 shadow-md">
-                    SOLD OUT
-                  </div>
-                )}
-
+            
                 {/* Etiqueta de precio */}
                 {d.precio && (
                   <div className="absolute top-4 left-4 bg-diamonBlack text-white text-sm px-3 py-1 rounded-full shadow-md z-10">
                     {d.precio}
+                  </div>
+                )}   
+                
+                 {/* Etiqueta SOLD OUT */}
+                {d.soldOut && (
+                  <div className="absolute top-4 right-4 bg-red-600 text-white text-xs px-3 py-1 rounded-full z-10 shadow-md">
+                    SOLD OUT
                   </div>
                 )}
 
