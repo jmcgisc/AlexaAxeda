@@ -72,12 +72,12 @@ const FormularioContacto = ({ onClose }) => {
 
       {/* Contenedor del formulario */}
       <motion.div
-  initial={{ x: '100%', opacity: 0 }}
-  animate={{ x: 0, opacity: 1 }}
-  exit={{ x: '100%', opacity: 0 }}
-  transition={{ type: 'spring', stiffness: 80, damping: 15 }}
-  className="relative z-10 bg-white dark:bg-zinc-900 text-gray-700 dark:text-gray-100 rounded-2xl p-8 shadow-2xl w-full max-w-2xl mx-auto"
->
+          initial={{ x: '100%', opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
+          exit={{ x: '100%', opacity: 0 }}
+          transition={{ type: 'spring', stiffness: 80, damping: 15 }}
+          className="relative z-10 bg-white dark:bg-zinc-900 text-gray-700 dark:text-gray-100 rounded-2xl p-8 shadow-2xl w-full max-w-2xl mx-auto"
+        >
       
        {/* Botón de cierre */}
         <button
