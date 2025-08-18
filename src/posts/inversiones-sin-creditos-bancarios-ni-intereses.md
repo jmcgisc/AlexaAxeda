@@ -1,4 +1,8 @@
-# Invertir en Cancún sin créditos bancarios: la oportunidad de **Isla Diamante**
+---
+title: Invertir sin creditos bancarios ni intereses
+date: 2025-08-17
+description: Guía práctica para invertir con éxito en terrenos en Cancún, sin buró de crédito y con alta plusvalía.
+---
 
 La inversión inmobiliaria en Cancún sigue siendo una de las opciones más atractivas en México gracias a su creciente plusvalía, conectividad internacional y alta demanda turística. Sin embargo, muchos inversionistas se enfrentan al reto de los **créditos bancarios**, sus requisitos y, sobre todo, los **altos intereses** que reducen la rentabilidad a largo plazo.
 
