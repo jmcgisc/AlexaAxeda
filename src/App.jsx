@@ -28,6 +28,7 @@ import { FloatingWhatsApp } from 'react-floating-whatsapp';
 import Error404             from "./Error404";
 import BlogHome             from "./components/Blog/BlogHome";
 import Post                 from "./components/Blog/Post";
+import AsesoresPage         from "./pages/asesores";
 import SeoJsonLd from "./components/SeoJsonLd";
 
 import { Routes, Route , BrowserRouter, useMatch} 
@@ -107,6 +108,7 @@ function App() {
             
             <Route path=  "/blog"           element={<BlogHome />} />
             <Route path=  "/post/:path"     element={<Post />} />
+            <Route path=  "/asesores"       element={<AsesoresPage />} />
             <Route path="/testimonios"      element={ <Suspense fallback={<Spinner />}><TestimoniosPage /></Suspense> } />
    
          </Routes>
