@@ -4,7 +4,7 @@ const { createClient } = require("@supabase/supabase-js");
 
 // ---- CLIENTES
 const client = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
-const supabase = createClient(process.env.SUPABASE_URL_IA, process.env.SUPABASE_KEY_IA;
+const supabase = createClient(process.env.SUPABASE_URL_IA, process.env.SUPABASE_KEY_IA);
 
 // ---- HEURÍSTICAS DE PALABRAS CLAVE PARA BÚSQUEDA DE TEXTO
 function keywordsHeuristic(q) {
