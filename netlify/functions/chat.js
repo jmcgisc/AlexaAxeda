@@ -31,7 +31,7 @@ exports.handler = async (event, context) => {
       match_threshold: 0.3, // prueba con 0.5 (más flexible)
       match_count: 3,
     });
-
+ 
     if (error) {
       console.error("❌ Error en match_documents:", error);
     }
