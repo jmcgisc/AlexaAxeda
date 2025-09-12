@@ -28,7 +28,7 @@ exports.handler = async (event, context) => {
     // 2. Buscar fragmentos relevantes en Supabase
     const { data: matches, error } = await supabase.rpc("match_documents", {
       query_embedding: queryEmbedding,
-      match_threshold: 0.5, // prueba con 0.5 (más flexible)
+      match_threshold: 0.3, // prueba con 0.5 (más flexible)
       match_count: 3,
     });
 
@@ -56,13 +56,14 @@ exports.handler = async (event, context) => {
         {
           role: "system",
           content: `
-Eres el Coordinador de Desarrollos Diamante.
-Usa el siguiente contexto si es relevante:
----
-${contextText}
----
-Si el contexto no es útil, responde de forma general sin inventar.
-Siempre invita a visitar desarrollosdiamante.com.
+            Eres el Coordinador de Desarrollos Diamante.
+            Debes responder **usando exclusivamente la información del contexto** cuando esté disponible.
+            Si el contexto no responde a la pregunta, di claramente: "No encontré información en los documentos".
+            No inventes ni des respuestas genéricas.
+            Siempre invita a visitar desarrollosdiamante.com.
+            ---
+            Contexto:
+            ${contextText}
           `,
         },
         { role: "user", content: message },
