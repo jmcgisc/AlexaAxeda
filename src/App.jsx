@@ -28,6 +28,7 @@ import { FloatingWhatsApp } from 'react-floating-whatsapp';
 import Error404             from "./Error404";
 import BlogHome             from "./components/Blog/BlogHome";
 import Post                 from "./components/Blog/Post";
+import ChatBubble           from "./components/ChatBubble";
 import AsesoresPage         from "./pages/asesores";
 import SeoJsonLd from "./components/SeoJsonLd";
 
@@ -115,26 +116,41 @@ function App() {
         <LanguageDetector/>  
 
         {showExtras && (
-          <>
-            <ChatbotGPT />
-             <FloatingWhatsApp className='left-4 bottom-4 md:left-8 md:bottom-8'
-              accountAddress="https://wa.me/525570137764"
-              phoneNumber="525570137764"
-              accountName="Asesor Alexa"
-              allowEsc
-              allowClickAway
-              notification 
-              notificationSound 
-              statusMessage = "Desarrollos Isla Diamante"
-              darkMode="enable"
-              chatMessage ="¡Hola! ¿En que proyecto estas interesado? 🤝 "   
-              avatar="Alexa_.jpeg"
-           />  
-          </>
-        )}   
-
-      </BrowserRouter>  
+                <>
+                  <ChatBubble />
+                  <ChatbotGPT />
+                  <div className="whatsapp-left-container">
+                    <FloatingWhatsApp 
+                      accountAddress="https://wa.me/525570137764"
+                      phoneNumber="525570137764"
+                      accountName="Asesor Alexa"
+                      allowEsc
+                      allowClickAway
+                      notification 
+                      notificationSound 
+                      statusMessage="Desarrollos Isla Diamante"
+                      darkMode="enable"
+                      chatMessage="¡Hola! ¿En qué proyecto estás interesado? 🤝"   
+                      avatar="Alexa_.jpeg"
+                    />  
+                  </div>
+                </>
+              )}   
+            </BrowserRouter>  
       </div>
+
+        {/* Estilos para posicionar WhatsApp a la izquierda */}
+        <style jsx>{`
+          .whatsapp-left-container :global(.floating-whatsapp) {
+            left: 20px !important;
+            right: auto !important;
+          }
+          
+          .whatsapp-left-container :global(.floating-whatsapp-button) {
+            left: 20px !important;
+            right: auto !important;
+          }
+        `}</style>
       </div>
 
       </HelmetProvider>

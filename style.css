@@ -36,3 +36,14 @@
     border: 1px solid #000000;
     font-size: 20px;
   }
+
+  /* En tu archivo CSS global */
+.floating-whatsapp {
+  left: 20px !important;
+  right: auto !important;
+}
+
+.floating-whatsapp-button {
+  left: 20px !important;
+  right: auto !important;
+}
