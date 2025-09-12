@@ -1,8 +1,9 @@
 const OpenAI = require("openai");
 const { createClient } = require("@supabase/supabase-js");
 
-const client = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
-const supabase = createClient(process.env.SUPABASE_URL, process.env.SUPABASE_KEY);
+// 🔑 Inicializa clientes
+const client = new OpenAI({ apiKey: process.env.OPENAI_API_KEY_IA });
+const supabase = createClient(process.env.SUPABASE_URL, process.env.SUPABASE_KEY_IA);
 
 exports.handler = async (event, context) => {
   try {
@@ -12,48 +13,71 @@ exports.handler = async (event, context) => {
 
     const { message } = JSON.parse(event.body);
 
-    // 1. Crear embedding de la consulta del usuario
+    console.log("💬 Mensaje recibido:", message);
+    console.log("🔑 SUPABASE_URL:", process.env.SUPABASE_URL);
+    console.log("🔑 SUPABASE_KEY cargada:", !!process.env.SUPABASE_KEY);
+
+    // 1. Crear embedding de la consulta
     const embeddingRes = await client.embeddings.create({
       model: "text-embedding-3-small",
       input: message,
     });
     const queryEmbedding = embeddingRes.data[0].embedding;
+    console.log("📐 Embedding generado, longitud:", queryEmbedding.length);
 
     // 2. Buscar fragmentos relevantes en Supabase
-    const { data: matches } = await supabase.rpc("match_documents", {
+    const { data: matches, error } = await supabase.rpc("match_documents", {
       query_embedding: queryEmbedding,
-      match_threshold: 0.6, // ajusta sensibilidad
-      match_count: 3,        // cuantos fragmentos quieres
+      match_threshold: 0.5, // prueba con 0.5 (más flexible)
+      match_count: 3,
     });
 
-    const contextText = matches.map((m) => m.content).join("\n---\n");
+    if (error) {
+      console.error("❌ Error en match_documents:", error);
+    }
 
-    // 3. Pasar contexto al modelo de chat
+    if (!matches || matches.length === 0) {
+      console.warn("⚠️ No se encontraron matches en Supabase");
+    } else {
+      console.log("📄 Matches recibidos:", matches.length);
+    }
+
+    // fallback para evitar crash
+    const safeMatches = Array.isArray(matches) ? matches : [];
+    const contextText =
+      safeMatches.length > 0
+        ? safeMatches.map((m) => m.content).join("\n---\n")
+        : "No se encontró contexto relevante en documentos.";
+
+    // 3. Pasar contexto al modelo
     const completion = await client.chat.completions.create({
       model: "gpt-4o-mini",
       messages: [
         {
           role: "system",
           content: `
-          Eres el Coordinador de Desarrollos Diamante.
-          Usa el siguiente contexto (si es relevante) para responder de manera precisa:
-          ---
-          ${contextText}
-          ---
-          Si el contexto no es útil, responde de forma general.
-          Siempre invita a visitar desarrollosdiamante.com.
+Eres el Coordinador de Desarrollos Diamante.
+Usa el siguiente contexto si es relevante:
+---
+${contextText}
+---
+Si el contexto no es útil, responde de forma general sin inventar.
+Siempre invita a visitar desarrollosdiamante.com.
           `,
         },
         { role: "user", content: message },
       ],
     });
 
+    const reply = completion.choices[0].message.content;
+    console.log("🤖 Respuesta generada:", reply);
+
     return {
       statusCode: 200,
-      body: JSON.stringify({ reply: completion.choices[0].message.content }),
+      body: JSON.stringify({ reply }),
     };
   } catch (err) {
-    console.error(err);
+    console.error("🔥 Error general en chat.js:", err);
     return { statusCode: 500, body: "Error procesando mensaje" };
   }
 };
