@@ -30,10 +30,10 @@ export default function ChatBubble() {
       setTimeout(async () => {
         // Aquí llamas a tu backend o función serverless
         const res = await fetch("/.netlify/functions/chat", {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ message: input }),
-        });
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ message: input }),
+            });
         const data = await res.json();
 
         setMessages((prev) => [...prev, { 

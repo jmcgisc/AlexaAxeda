@@ -1,17 +1,20 @@
-import OpenAI from "openai";
-import express from "express";
+const OpenAI = require("openai");
 
-const app = express();
-app.use(express.json());
-
-const client = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
-
-app.post("/api/chat", async (req, res) => {
+exports.handler = async (event, context) => {
   try {
-    const { message } = req.body;
+    if (event.httpMethod !== "POST") {
+      return {
+        statusCode: 405,
+        body: JSON.stringify({ error: "Método no permitido" }),
+      };
+    }
+
+    const { message } = JSON.parse(event.body);
+
+    const client = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
 
     const completion = await client.chat.completions.create({
-      model: "gpt-4o-mini", // o el que uses
+      model: "gpt-4o-mini",
       messages: [
         {
           role: "system",
@@ -26,11 +29,15 @@ app.post("/api/chat", async (req, res) => {
       ],
     });
 
-    res.json({ reply: completion.choices[0].message.content });
-  } catch (err) {
-    console.error(err);
-    res.status(500).json({ reply: "⚠️ Error procesando el mensaje." });
+    return {
+      statusCode: 200,
+      body: JSON.stringify({ reply: completion.choices[0].message.content }),
+    };
+  } catch (error) {
+    console.error(error);
+    return {
+      statusCode: 500,
+      body: JSON.stringify({ reply: "⚠️ Error procesando el mensaje." }),
+    };
   }
-});
-
-app.listen(3001, () => console.log("API escuchando en puerto 3001"));
+};
