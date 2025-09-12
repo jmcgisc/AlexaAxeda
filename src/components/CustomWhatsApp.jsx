@@ -1,57 +1,70 @@
-import { useState } from "react";
+const OpenAI = require("openai");
+const { createClient } = require("@supabase/supabase-js");
 
-export default function CustomWhatsApp() {
-  const [isOpen, setIsOpen] = useState(false);
+const client = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
+const supabase = createClient(process.env.SUPABASE_URL, process.env.SUPABASE_KEY);
 
-  return (
-    <div className="fixed left-6 bottom-6 z-50">
-      {/* Botón de WhatsApp */}
-      <button
-        onClick={() => setIsOpen(!isOpen)}
-        className="bg-green-500 hover:bg-green-600 text-white w-14 h-14 rounded-full shadow-lg flex items-center justify-center text-2xl transition-all duration-300 transform hover:scale-110"
-      >
-        <i className="fab fa-whatsapp"></i>
-      </button>
+exports.handler = async (event, context) => {
+  try {
+    if (event.httpMethod !== "POST") {
+      return { statusCode: 405, body: "Método no permitido" };
+    }
 
-      {/* Chat de WhatsApp */}
-      {isOpen && (
-        <div className="absolute bottom-16 left-0 w-80 bg-white rounded-lg shadow-xl overflow-hidden border border-gray-200">
-          <div className="bg-green-500 p-3 text-white flex justify-between items-center">
-            <div className="flex items-center">
-              <img 
-                src="Alexa_.jpeg" 
-                alt="Asesor Alexa" 
-                className="w-10 h-10 rounded-full mr-3"
-              />
-              <div>
-                <p className="font-semibold">Asesor Alexa</p>
-                <p className="text-xs">Desarrollos Isla Diamante</p>
-              </div>
-            </div>
-            <button 
-              onClick={() => setIsOpen(false)} 
-              className="text-white hover:text-gray-200"
-            >
-              ✕
-            </button>
-          </div>
-          <div className="p-4 bg-gray-100">
-            <p className="text-sm text-gray-700">
-              ¡Hola! ¿En qué proyecto estás interesado? 🤝
-            </p>
-          </div>
-          <div className="p-3 bg-white">
-            <a
-              href="https://wa.me/525570137764"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="block text-center bg-green-500 text-white py-2 rounded-lg hover:bg-green-600 transition-colors"
-            >
-              Abrir conversación en WhatsApp
-            </a>
-          </div>
-        </div>
-      )}
-    </div>
-  );
-}
+    const { message } = JSON.parse(event.body);
+
+    // 1. Crear embedding de la consulta del usuario
+    const embeddingRes = await client.embeddings.create({
+      model: "text-embedding-3-small",
+      input: message,
+    });
+    const queryEmbedding = embeddingRes.data[0].embedding;
+
+    // 2. Buscar fragmentos relevantes en Supabase
+    const { data: matches, error } = await supabase.rpc("match_documents", {
+      query_embedding: queryEmbedding,
+      match_threshold: 0.5, // baja el umbral para que encuentre más fácil
+      match_count: 3,
+    });
+
+    if (error) {
+      console.error("❌ Error en match_documents:", error);
+    }
+
+    console.log("📄 Matches recibidos:", matches);
+
+    // fallback: si matches es null, usar array vacío
+    const safeMatches = matches || [];
+    const contextText =
+      safeMatches.length > 0
+        ? safeMatches.map((m) => m.content).join("\n---\n")
+        : "No se encontró contexto relevante en documentos.";
+
+    // 3. Pasar contexto al modelo de chat
+    const completion = await client.chat.completions.create({
+      model: "gpt-4o-mini",
+      messages: [
+        {
+          role: "system",
+          content: `
+Eres el Coordinador de Desarrollos Diamante.
+Usa el siguiente contexto si es relevante:
+---
+${contextText}
+---
+Si el contexto no es útil, responde de forma general sin inventar.
+Siempre invita a visitar desarrollosdiamante.com.
+          `,
+        },
+        { role: "user", content: message },
+      ],
+    });
+
+    return {
+      statusCode: 200,
+      body: JSON.stringify({ reply: completion.choices[0].message.content }),
+    };
+  } catch (err) {
+    console.error("🔥 Error general en chat.js:", err);
+    return { statusCode: 500, body: "Error procesando mensaje" };
+  }
+};
