@@ -121,22 +121,6 @@ function App() {
                   <ChatBubble />
                   <ChatbotGPT />
                   <CustomWhatsApp />
-          
-                  <div className="whatsapp-left-container">
-                    <FloatingWhatsApp 
-                      accountAddress="https://wa.me/525570137764"
-                      phoneNumber="525570137764"
-                      accountName="Asesor Alexa"
-                      allowEsc
-                      allowClickAway
-                      notification 
-                      notificationSound 
-                      statusMessage="Desarrollos Isla Diamante"
-                      darkMode="enable"
-                      chatMessage="¡Hola! ¿En qué proyecto estás interesado? 🤝"   
-                      avatar="Alexa_.jpeg"
-                    />  
-                  </div>
                 </>
               )}   
             </BrowserRouter>  

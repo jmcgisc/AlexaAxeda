@@ -1,5 +1,4 @@
-// components/CustomWhatsApp.js
-import { useState } from 'react'; 
+import { useState } from "react";
 
 export default function CustomWhatsApp() {
   const [isOpen, setIsOpen] = useState(false);

@@ -13,9 +13,10 @@
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.3.0",
     "@fortawesome/fontawesome-svg-core": "^6.7.2",
+    "@fortawesome/free-brands-svg-icons": "^7.0.1",
     "@fortawesome/free-regular-svg-icons": "^6.7.2",
     "@fortawesome/free-solid-svg-icons": "^6.7.2",
-    "@fortawesome/react-fontawesome": "^0.2.2",
+    "@fortawesome/react-fontawesome": "^0.2.6",
     "@headlessui/react": "^1.7.11",
     "@iconify/icons-mdi": "^1.2.44",
     "@iconify/react": "^4.1.0",
