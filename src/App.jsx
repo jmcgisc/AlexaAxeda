@@ -29,6 +29,7 @@ import Error404             from "./Error404";
 import BlogHome             from "./components/Blog/BlogHome";
 import Post                 from "./components/Blog/Post";
 import ChatBubble           from "./components/ChatBubble";
+import CustomWhatsApp       from "./components/CustomWhatsApp";
 import AsesoresPage         from "./pages/asesores";
 import SeoJsonLd from "./components/SeoJsonLd";
 
@@ -119,6 +120,8 @@ function App() {
                 <>
                   <ChatBubble />
                   <ChatbotGPT />
+                  <CustomWhatsApp />
+          
                   <div className="whatsapp-left-container">
                     <FloatingWhatsApp 
                       accountAddress="https://wa.me/525570137764"
@@ -138,19 +141,6 @@ function App() {
               )}   
             </BrowserRouter>  
       </div>
-
-        {/* Estilos para posicionar WhatsApp a la izquierda */}
-        <style jsx>{`
-          .whatsapp-left-container :global(.floating-whatsapp) {
-            left: 20px !important;
-            right: auto !important;
-          }
-          
-          .whatsapp-left-container :global(.floating-whatsapp-button) {
-            left: 20px !important;
-            right: auto !important;
-          }
-        `}</style>
       </div>
 
       </HelmetProvider>
