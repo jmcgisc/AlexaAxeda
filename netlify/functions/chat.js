@@ -1,13 +1,15 @@
 // netlify/functions/chat.js
 const OpenAI = require("openai");
 const { createClient } = require("@supabase/supabase-js");
-const fetch = require("node-fetch");
+
+// 🔥 Fix para node-fetch (ESM en CommonJS)
+const fetch = (...args) => import("node-fetch").then(({ default: fetch }) => fetch(...args));
 
 // ---- CLIENTES
 const client = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
 const supabase = createClient(process.env.SUPABASE_URL_IA, process.env.SUPABASE_KEY_IA);
 
-// ---- HEURÍSTICAS DE PALABRAS CLAVE
+// ---- HEURÍSTICAS
 function keywordsHeuristic(q) {
   const s = q.toLowerCase();
   const kws = [];
@@ -54,7 +56,7 @@ async function searchByText(query, limit = 5) {
   return Array.isArray(data) ? data.map((d) => ({ id: d.id, content: d.content, similarity: 0.25 })) : [];
 }
 
-// ---- CONSTRUCCIÓN DE CONTEXTO
+// ---- CONTEXTO
 function buildContext(matches, maxChars = 3500) {
   const sorted = [...matches].sort((a, b) => (b.similarity || 0) - (a.similarity || 0));
   let total = 0;
@@ -104,7 +106,7 @@ exports.handler = async (event) => {
 
     console.log("💬 Mensaje:", message);
 
-    // 1) Embedding de la consulta
+    // 1) Embedding
     const embRes = await client.embeddings.create({
       model: "text-embedding-3-small",
       input: message,
@@ -120,7 +122,7 @@ exports.handler = async (event) => {
       matches = await searchByText(message, 6);
     }
 
-    // 3) Contexto inicial
+    // 3) Contexto
     let contextText = matches && matches.length > 0 ? buildContext(matches) : "";
 
     // 4) Preguntas de precio
