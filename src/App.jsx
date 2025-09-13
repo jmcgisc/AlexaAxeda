@@ -119,7 +119,7 @@ function App() {
         {showExtras && (
                 <>
                   <ChatBubble />
-                  <ChatbotGPT />
+                  {/* <ChatbotGPT /> */}
                   <CustomWhatsApp />
                 </>
               )}   
