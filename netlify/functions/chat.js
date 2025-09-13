@@ -1,6 +1,7 @@
 // netlify/functions/chat.js
 const OpenAI = require("openai");
 const { createClient } = require("@supabase/supabase-js");
+const fetch = require("node-fetch");
 
 // ---- CLIENTES
 const client = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
@@ -15,7 +16,7 @@ function keywordsHeuristic(q) {
   if (/(escritur|notar|legal|contrato)/.test(s)) kws.push("escritur");
   if (/(pago|mensual|financia|anticipo|plan)/.test(s)) kws.push("pago");
   if (/(plusval|roi|rendimien|invers)/.test(s)) kws.push("plusval");
-  if (/(precio|costo|cuánto|vale|cuestan|mensualidad)/.test(s)) kws.push("precio"); // 🔥 NUEVO
+  if (/(precio|costo|cuánto|vale|cuestan|mensualidad)/.test(s)) kws.push("precio");
   return [...new Set(kws)];
 }
 
@@ -64,10 +65,32 @@ function buildContext(matches, maxChars = 3500) {
     const c = (m.content || "").trim();
     if (!c) continue;
     if (total + c.length > maxChars) break;
-    used.push(`(sim: ${Number(m.similarity || 0).toFixed(2)} | id: ${m.id || "s/n"})\n${c}`);
+    used.push(c);
     total += c.length;
   }
   return used.join("\n\n---\n\n");
+}
+
+// ---- BÚSQUEDA EN INTERNET (Fallback externo)
+async function searchInternet(query) {
+  try {
+    const url = `https://api.duckduckgo.com/?q=${encodeURIComponent(query)}&format=json&no_redirect=1&no_html=1`;
+    const res = await fetch(url);
+    const json = await res.json();
+
+    // Tomamos abstracts o primeros resultados
+    const text = [
+      json.AbstractText,
+      ...(json.RelatedTopics || []).map((t) => t.Text).slice(0, 3),
+    ]
+      .filter(Boolean)
+      .join("\n\n");
+
+    return text || "";
+  } catch (err) {
+    console.error("🌐 Error en búsqueda web:", err);
+    return "";
+  }
 }
 
 exports.handler = async (event) => {
@@ -104,30 +127,36 @@ exports.handler = async (event) => {
       matches = textHits;
     }
 
-    // 4) Contexto
-    let contextText =
-      matches && matches.length > 0
-        ? buildContext(matches)
-        : "No encontré información en los documentos.";
+    // 4) Contexto desde DB
+    let contextText = matches && matches.length > 0 ? buildContext(matches) : "";
 
-    console.log("📌 Contexto (primeros 400 chars):", contextText.slice(0, 400));
-
-    // 🔥 5) Detectar si es pregunta de precios sin respuesta
+    // 🔥 5) Manejo especial para PRECIOS
     const lowerMsg = message.toLowerCase();
-    if (
-      /precio|costo|cuánto|vale|cuestan|mensualidad/.test(lowerMsg) &&
-      (!matches || matches.length === 0)
-    ) {
-      return {
-        statusCode: 200,
-        body: JSON.stringify({
-          reply:
-            "No encontré información en los documentos sobre precios. Para más información contacta con nuestro asesor **Alexa Delgado** al 📲 +52 55 7013 7764.",
-        }),
-      };
+    const isPriceQuestion = /precio|costo|cuánto|vale|cuestan|mensualidad/.test(lowerMsg);
+
+    if (isPriceQuestion) {
+      const contextHasPrice = /[0-9]+(\s?mil|\s?\$|\s?mxn|\s?pesos)/i.test(contextText);
+      if (!contextHasPrice) {
+        return {
+          statusCode: 200,
+          body: JSON.stringify({
+            reply:
+              "No encontré información en los documentos sobre precios. Para más información contacta con nuestro asesor **Alexa Delgado** al 📲 +52 55 7013 7764.",
+          }),
+        };
+      }
     }
 
-    // 6) Prompt normal
+    // 🔥 6) Si no hay nada en documentos → buscar en internet
+    if (!contextText) {
+      console.log("🌐 Buscando en internet...");
+      const internetText = await searchInternet(`Isla Diamante Cancún ${message}`);
+      if (internetText) {
+        contextText = `INFO DE INTERNET (usar solo si es relevante y confiable):\n${internetText}`;
+      }
+    }
+
+    // 7) Prompt normal
     const systemPrompt = `
 Eres el Coordinador de Desarrollos Diamante. 
 Usa EXCLUSIVAMENTE la información del CONTEXTO si responde la pregunta.
@@ -137,7 +166,7 @@ Al final, sugiere visitar desarrollosdiamante.com.
 
 CONTEXTO:
 ---
-${contextText}
+${contextText || "Sin datos relevantes"}
 ---
     `.trim();
 
