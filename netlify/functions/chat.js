@@ -4,16 +4,9 @@ const { createClient } = require("@supabase/supabase-js");
 
 // ---- CLIENTES
 const client = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
-const supabase = createClient(
-  process.env.SUPABASE_URL_IA,
-  process.env.SUPABASE_KEY_IA
-);
+const supabase = createClient(process.env.SUPABASE_URL_IA, process.env.SUPABASE_KEY_IA);
 
-// ---- RESPUESTA POR DEFECTO
-const fallbackReply =
-  "Para más información contacta con nuestro asesor Alexa Delgado Línea Asesor: +(52) 55 7013 7764";
-
-// ---- HEURÍSTICAS DE PALABRAS CLAVE
+// ---- HEURÍSTICAS DE PALABRAS CLAVE PARA BÚSQUEDA DE TEXTO
 function keywordsHeuristic(q) {
   const s = q.toLowerCase();
   const kws = [];
@@ -22,53 +15,44 @@ function keywordsHeuristic(q) {
   if (/(escritur|notar|legal|contrato)/.test(s)) kws.push("escritur");
   if (/(pago|mensual|financia|anticipo|plan)/.test(s)) kws.push("pago");
   if (/(plusval|roi|rendimien|invers)/.test(s)) kws.push("plusval");
+  if (/(precio|costo|cuánto|vale|cuestan|mensualidad)/.test(s)) kws.push("precio"); // 🔥 NUEVO
   return [...new Set(kws)];
 }
 
 // ---- BÚSQUEDA POR EMBEDDINGS (RPC)
-async function searchByEmbeddings(queryEmbedding, { threshold = 0.2, k = 8 } = {}) {
-  try {
-    const { data, error } = await supabase.rpc("match_documents", {
-      query_embedding: queryEmbedding,
-      match_threshold: threshold,
-      match_count: k,
-    });
-    if (error) {
-      console.error("❌ RPC match_documents error:", error);
-      return [];
-    }
-    return Array.isArray(data) ? data : [];
-  } catch (err) {
-    console.error("🔥 Error en searchByEmbeddings:", err);
+async function searchByEmbeddings(queryEmbedding, { threshold = 0.15, k = 8 } = {}) {
+  const { data, error } = await supabase.rpc("match_documents", {
+    query_embedding: queryEmbedding,
+    match_threshold: threshold,
+    match_count: k,
+  });
+  if (error) {
+    console.error("❌ RPC match_documents error:", error);
     return [];
   }
+  if (!Array.isArray(data)) return [];
+  return data;
 }
 
 // ---- BÚSQUEDA POR TEXTO (FALLBACK)
 async function searchByText(query, limit = 5) {
-  try {
-    const kw = keywordsHeuristic(query);
-    const likes = [];
-    for (const k of kw) likes.push(`content.ilike.%${k}%`);
-    if (!likes.length) likes.push(`content.ilike.%${query.split(/\s+/)[0]}%`);
+  const kw = keywordsHeuristic(query);
+  let q = query;
+  const likes = [];
+  for (const k of kw) likes.push(`content.ilike.%${k}%`);
+  if (!likes.length) likes.push(`content.ilike.%${q.split(/\s+/)[0]}%`);
 
-    const { data, error } = await supabase
-      .from("documents")
-      .select("id, content")
-      .or(likes.join(","))
-      .limit(limit);
+  const { data, error } = await supabase
+    .from("documents")
+    .select("id, content")
+    .or(likes.join(","))
+    .limit(limit);
 
-    if (error) {
-      console.error("❌ Text search error:", error);
-      return [];
-    }
-    return Array.isArray(data)
-      ? data.map((d) => ({ id: d.id, content: d.content, similarity: 0.25 }))
-      : [];
-  } catch (err) {
-    console.error("🔥 Error en searchByText:", err);
+  if (error) {
+    console.error("❌ Text search error:", error);
     return [];
   }
+  return Array.isArray(data) ? data.map((d) => ({ id: d.id, content: d.content, similarity: 0.25 })) : [];
 }
 
 // ---- CONSTRUCCIÓN DE CONTEXTO
@@ -99,41 +83,57 @@ exports.handler = async (event) => {
 
     console.log("💬 Mensaje:", message);
 
-    // 1) Intentar embeddings
-    let queryEmbedding = null;
-    try {
-      const embRes = await client.embeddings.create({
-        model: "text-embedding-3-small",
-        input: message,
-      });
-      queryEmbedding = embRes.data?.[0]?.embedding;
-      console.log("📐 Embedding len:", queryEmbedding?.length);
-    } catch (err) {
-      console.error("⚠️ Error generando embeddings:", err);
-    }
+    // 1) Embedding de la consulta
+    const embRes = await client.embeddings.create({
+      model: "text-embedding-3-small",
+      input: message,
+    });
+    const queryEmbedding = embRes.data?.[0]?.embedding;
 
-    // 2) Recuperar contexto
+    // 2) Recuperación por embeddings
     let matches = [];
     if (queryEmbedding?.length) {
-      matches = await searchByEmbeddings(queryEmbedding, { threshold: 0.2, k: 8 });
+      matches = await searchByEmbeddings(queryEmbedding, { threshold: 0.15, k: 8 });
+      console.log("📄 Matches por embeddings:", matches?.length || 0);
     }
+
+    // 3) Fallback a búsqueda por texto si no hay matches
     if (!matches || matches.length === 0) {
       const textHits = await searchByText(message, 6);
+      console.log("📝 Matches por texto (fallback):", textHits?.length || 0);
       matches = textHits;
     }
 
-    const contextText =
+    // 4) Contexto
+    let contextText =
       matches && matches.length > 0
         ? buildContext(matches)
-        : "";
+        : "No encontré información en los documentos.";
 
-    // 3) Prompt
+    console.log("📌 Contexto (primeros 400 chars):", contextText.slice(0, 400));
+
+    // 🔥 5) Detectar si es pregunta de precios sin respuesta
+    const lowerMsg = message.toLowerCase();
+    if (
+      /precio|costo|cuánto|vale|cuestan|mensualidad/.test(lowerMsg) &&
+      (!matches || matches.length === 0)
+    ) {
+      return {
+        statusCode: 200,
+        body: JSON.stringify({
+          reply:
+            "No encontré información en los documentos sobre precios. Para más información contacta con nuestro asesor **Alexa Delgado** al 📲 +52 55 7013 7764.",
+        }),
+      };
+    }
+
+    // 6) Prompt normal
     const systemPrompt = `
-Eres el Coordinador de Desarrollos Diamante.
-Debes responder **usando exclusivamente el CONTEXTO** si contiene la información.
-Si el contexto no responde a la pregunta, no inventes y responde exactamente: 
-"${fallbackReply}"
-Al final de toda respuesta válida, también sugiere visitar desarrollosdiamante.com.
+Eres el Coordinador de Desarrollos Diamante. 
+Usa EXCLUSIVAMENTE la información del CONTEXTO si responde la pregunta.
+Si el contexto no contiene la respuesta, di explícitamente: "No encontré información en los documentos sobre eso."
+No inventes ni respondas genérico si hay contexto relevante. 
+Al final, sugiere visitar desarrollosdiamante.com.
 
 CONTEXTO:
 ---
@@ -141,28 +141,21 @@ ${contextText}
 ---
     `.trim();
 
-    // 4) Generar respuesta
-    let reply = fallbackReply;
-    try {
-      const completion = await client.chat.completions.create({
-        model: "gpt-4o-mini",
-        messages: [
-          { role: "system", content: systemPrompt },
-          { role: "user", content: message },
-        ],
-        temperature: 0.2,
-      });
-      reply = completion.choices?.[0]?.message?.content || fallbackReply;
-    } catch (err) {
-      console.error("⚠️ Error en completions:", err);
-      reply = fallbackReply;
-    }
+    const completion = await client.chat.completions.create({
+      model: "gpt-4o-mini",
+      messages: [
+        { role: "system", content: systemPrompt },
+        { role: "user", content: message },
+      ],
+      temperature: 0.2,
+    });
 
-    console.log("🤖 Respuesta:", reply.slice(0, 200));
+    const reply = completion.choices?.[0]?.message?.content || "No se pudo generar respuesta.";
+    console.log("🤖 Respuesta:", reply.slice(0, 300));
 
     return { statusCode: 200, body: JSON.stringify({ reply }) };
   } catch (err) {
-    console.error("🔥 Error chat.js (global):", err);
-    return { statusCode: 500, body: JSON.stringify({ reply: fallbackReply }) };
+    console.error("🔥 Error chat.js:", err);
+    return { statusCode: 500, body: "Error procesando mensaje" };
   }
 };
