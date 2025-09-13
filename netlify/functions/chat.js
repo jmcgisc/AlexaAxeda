@@ -2,14 +2,11 @@
 const OpenAI = require("openai");
 const { createClient } = require("@supabase/supabase-js");
 
-// 🔥 Fix para node-fetch (ESM en CommonJS)
-const fetch = (...args) => import("node-fetch").then(({ default: fetch }) => fetch(...args));
-
 // ---- CLIENTES
 const client = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
 const supabase = createClient(process.env.SUPABASE_URL_IA, process.env.SUPABASE_KEY_IA);
 
-// ---- HEURÍSTICAS
+// ---- HEURÍSTICAS DE PALABRAS CLAVE PARA BÚSQUEDA DE TEXTO
 function keywordsHeuristic(q) {
   const s = q.toLowerCase();
   const kws = [];
@@ -18,12 +15,12 @@ function keywordsHeuristic(q) {
   if (/(escritur|notar|legal|contrato)/.test(s)) kws.push("escritur");
   if (/(pago|mensual|financia|anticipo|plan)/.test(s)) kws.push("pago");
   if (/(plusval|roi|rendimien|invers)/.test(s)) kws.push("plusval");
-  if (/(precio|costo|cuánto|vale|cuestan|mensualidad)/.test(s)) kws.push("precio");
+  if (/(precio|costo|cuánto|vale|cuestan|mensualidad)/.test(s)) kws.push("precio"); // 🔥 NUEVO
   return [...new Set(kws)];
 }
 
-// ---- BÚSQUEDA POR EMBEDDINGS
-async function searchByEmbeddings(queryEmbedding, { threshold = 0.15, k = 8 } = {}) {
+// ---- BÚSQUEDA POR EMBEDDINGS (RPC)
+async function searchByEmbeddings(queryEmbedding, { threshold = 0.05, k = 12 } = {}) { // 🔥 más flexible
   const { data, error } = await supabase.rpc("match_documents", {
     query_embedding: queryEmbedding,
     match_threshold: threshold,
@@ -33,15 +30,17 @@ async function searchByEmbeddings(queryEmbedding, { threshold = 0.15, k = 8 } = 
     console.error("❌ RPC match_documents error:", error);
     return [];
   }
-  return Array.isArray(data) ? data : [];
+  if (!Array.isArray(data)) return [];
+  return data;
 }
 
-// ---- BÚSQUEDA POR TEXTO
-async function searchByText(query, limit = 5) {
+// ---- BÚSQUEDA POR TEXTO (FALLBACK)
+async function searchByText(query, limit = 8) {
   const kw = keywordsHeuristic(query);
+  let q = query;
   const likes = [];
   for (const k of kw) likes.push(`content.ilike.%${k}%`);
-  if (!likes.length) likes.push(`content.ilike.%${query.split(/\s+/)[0]}%`);
+  if (!likes.length) likes.push(`content.ilike.%${q.split(/\s+/)[0]}%`);
 
   const { data, error } = await supabase
     .from("documents")
@@ -56,41 +55,19 @@ async function searchByText(query, limit = 5) {
   return Array.isArray(data) ? data.map((d) => ({ id: d.id, content: d.content, similarity: 0.25 })) : [];
 }
 
-// ---- CONTEXTO
+// ---- CONSTRUCCIÓN DE CONTEXTO
 function buildContext(matches, maxChars = 3500) {
   const sorted = [...matches].sort((a, b) => (b.similarity || 0) - (a.similarity || 0));
-  let total = 0;
   const used = [];
+  let total = 0;
   for (const m of sorted) {
     const c = (m.content || "").trim();
     if (!c) continue;
     if (total + c.length > maxChars) break;
-    used.push(c);
+    used.push(`(sim: ${Number(m.similarity || 0).toFixed(2)} | id: ${m.id || "s/n"})\n${c}`);
     total += c.length;
   }
   return used.join("\n\n---\n\n");
-}
-
-// ---- BÚSQUEDA EN INTERNET
-async function searchInternet(query) {
-  try {
-    const url = `https://api.duckduckgo.com/?q=${encodeURIComponent(query)}&format=json&no_redirect=1&no_html=1`;
-    const res = await fetch(url);
-    const json = await res.json();
-
-    const text = [
-      json.AbstractText,
-      ...(json.RelatedTopics || []).map((t) => t.Text).slice(0, 3),
-    ]
-      .filter(Boolean)
-      .join("\n\n");
-
-    console.log("🌐 Texto recuperado de internet:", text.slice(0, 200));
-    return text || "";
-  } catch (err) {
-    console.error("🌐 Error en búsqueda web:", err);
-    return "";
-  }
 }
 
 exports.handler = async (event) => {
@@ -106,51 +83,56 @@ exports.handler = async (event) => {
 
     console.log("💬 Mensaje:", message);
 
-    // 1) Embedding
+    // 1) Embedding de la consulta
     const embRes = await client.embeddings.create({
       model: "text-embedding-3-small",
       input: message,
     });
     const queryEmbedding = embRes.data?.[0]?.embedding;
 
-    // 2) Recuperación
+    // 2) Recuperación por embeddings
     let matches = [];
     if (queryEmbedding?.length) {
-      matches = await searchByEmbeddings(queryEmbedding, { threshold: 0.15, k: 8 });
+      matches = await searchByEmbeddings(queryEmbedding, { threshold: 0.05, k: 12 });
+      console.log("📄 Matches por embeddings:", matches?.length || 0);
     }
+
+    // 3) Fallback a búsqueda por texto si no hay matches
     if (!matches || matches.length === 0) {
-      matches = await searchByText(message, 6);
+      const textHits = await searchByText(message, 8);
+      console.log("📝 Matches por texto (fallback):", textHits?.length || 0);
+      matches = textHits;
     }
 
-    // 3) Contexto
-    let contextText = matches && matches.length > 0 ? buildContext(matches) : "";
+    // 3.1) Fuerza búsqueda de precios si es pregunta de precio
+    const isPriceQuestion = /precio|costo|cuánto|vale|cuestan|mensualidad/.test(message.toLowerCase());
+    if (isPriceQuestion && (!matches || matches.length === 0)) {
+      console.log("💰 Fuerza búsqueda por precio...");
+      const { data, error } = await supabase
+        .from("documents")
+        .select("id, content")
+        .or("content.ilike.%precio%,content.ilike.%mensual%,content.ilike.%\\$%,content.ilike.%[0-9]%")
+        .limit(5);
 
-    // 4) Preguntas de precio
-    const lowerMsg = message.toLowerCase();
-    const isPriceQuestion = /precio|costo|cuánto|vale|cuestan|mensualidad/.test(lowerMsg);
-    if (isPriceQuestion && !/[0-9]/.test(contextText)) {
-      return {
-        statusCode: 200,
-        body: JSON.stringify({
-          reply:
-            "No encontré información en los documentos sobre precios. Para más información contacta con nuestro asesor **Alexa Delgado** al 📲 +52 55 7013 7764.",
-        }),
-      };
+      if (!error && data?.length) {
+        matches = data.map((d) => ({ id: d.id, content: d.content, similarity: 0.3 }));
+      }
     }
 
-    // 5) Si no hay nada, intentamos internet
-    if (!contextText) {
-      console.log("🌐 Intentando búsqueda en internet...");
-      const internetText = await searchInternet(`Isla Diamante Cancún ${message}`);
-      contextText = internetText || "No encontré información en los documentos ni en fuentes externas.";
-    }
+    // 4) Contexto
+    const contextText =
+      matches && matches.length > 0
+        ? buildContext(matches)
+        : "No encontré información en los documentos sobre eso. Para conocer precios y planes actualizados de Isla Diamante, contacta con nuestra asesora Alexa Delgado 📲 +52 55 7013 7764.";
 
-    // 6) Prompt
+    console.log("📌 Contexto (primeros 400 chars):", contextText.slice(0, 400));
+
+    // 5) Prompt
     const systemPrompt = `
 Eres el Coordinador de Desarrollos Diamante. 
 Usa EXCLUSIVAMENTE la información del CONTEXTO si responde la pregunta.
-Si el contexto no contiene la respuesta, di: "No encontré información en los documentos sobre eso."
-Si se usó información de internet, indícalo al usuario.
+Si el contexto no contiene la respuesta, di explícitamente lo que hay en CONTEXTO.
+No inventes ni respondas genérico si hay contexto relevante. 
 Al final, sugiere visitar desarrollosdiamante.com.
 
 CONTEXTO:
@@ -169,7 +151,7 @@ ${contextText}
     });
 
     const reply = completion.choices?.[0]?.message?.content || "No se pudo generar respuesta.";
-    console.log("🤖 Respuesta:", reply.slice(0, 200));
+    console.log("🤖 Respuesta:", reply.slice(0, 300));
 
     return { statusCode: 200, body: JSON.stringify({ reply }) };
   } catch (err) {
