@@ -7,7 +7,7 @@ const fetch = require("node-fetch");
 const client = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
 const supabase = createClient(process.env.SUPABASE_URL_IA, process.env.SUPABASE_KEY_IA);
 
-// ---- HEURÍSTICAS DE PALABRAS CLAVE PARA BÚSQUEDA DE TEXTO
+// ---- HEURÍSTICAS DE PALABRAS CLAVE
 function keywordsHeuristic(q) {
   const s = q.toLowerCase();
   const kws = [];
@@ -20,7 +20,7 @@ function keywordsHeuristic(q) {
   return [...new Set(kws)];
 }
 
-// ---- BÚSQUEDA POR EMBEDDINGS (RPC)
+// ---- BÚSQUEDA POR EMBEDDINGS
 async function searchByEmbeddings(queryEmbedding, { threshold = 0.15, k = 8 } = {}) {
   const { data, error } = await supabase.rpc("match_documents", {
     query_embedding: queryEmbedding,
@@ -31,17 +31,15 @@ async function searchByEmbeddings(queryEmbedding, { threshold = 0.15, k = 8 } = 
     console.error("❌ RPC match_documents error:", error);
     return [];
   }
-  if (!Array.isArray(data)) return [];
-  return data;
+  return Array.isArray(data) ? data : [];
 }
 
-// ---- BÚSQUEDA POR TEXTO (FALLBACK)
+// ---- BÚSQUEDA POR TEXTO
 async function searchByText(query, limit = 5) {
   const kw = keywordsHeuristic(query);
-  let q = query;
   const likes = [];
   for (const k of kw) likes.push(`content.ilike.%${k}%`);
-  if (!likes.length) likes.push(`content.ilike.%${q.split(/\s+/)[0]}%`);
+  if (!likes.length) likes.push(`content.ilike.%${query.split(/\s+/)[0]}%`);
 
   const { data, error } = await supabase
     .from("documents")
@@ -59,8 +57,8 @@ async function searchByText(query, limit = 5) {
 // ---- CONSTRUCCIÓN DE CONTEXTO
 function buildContext(matches, maxChars = 3500) {
   const sorted = [...matches].sort((a, b) => (b.similarity || 0) - (a.similarity || 0));
-  const used = [];
   let total = 0;
+  const used = [];
   for (const m of sorted) {
     const c = (m.content || "").trim();
     if (!c) continue;
@@ -71,14 +69,13 @@ function buildContext(matches, maxChars = 3500) {
   return used.join("\n\n---\n\n");
 }
 
-// ---- BÚSQUEDA EN INTERNET (Fallback externo)
+// ---- BÚSQUEDA EN INTERNET
 async function searchInternet(query) {
   try {
     const url = `https://api.duckduckgo.com/?q=${encodeURIComponent(query)}&format=json&no_redirect=1&no_html=1`;
     const res = await fetch(url);
     const json = await res.json();
 
-    // Tomamos abstracts o primeros resultados
     const text = [
       json.AbstractText,
       ...(json.RelatedTopics || []).map((t) => t.Text).slice(0, 3),
@@ -86,6 +83,7 @@ async function searchInternet(query) {
       .filter(Boolean)
       .join("\n\n");
 
+    console.log("🌐 Texto recuperado de internet:", text.slice(0, 200));
     return text || "";
   } catch (err) {
     console.error("🌐 Error en búsqueda web:", err);
@@ -113,60 +111,49 @@ exports.handler = async (event) => {
     });
     const queryEmbedding = embRes.data?.[0]?.embedding;
 
-    // 2) Recuperación por embeddings
+    // 2) Recuperación
     let matches = [];
     if (queryEmbedding?.length) {
       matches = await searchByEmbeddings(queryEmbedding, { threshold: 0.15, k: 8 });
-      console.log("📄 Matches por embeddings:", matches?.length || 0);
     }
-
-    // 3) Fallback a búsqueda por texto si no hay matches
     if (!matches || matches.length === 0) {
-      const textHits = await searchByText(message, 6);
-      console.log("📝 Matches por texto (fallback):", textHits?.length || 0);
-      matches = textHits;
+      matches = await searchByText(message, 6);
     }
 
-    // 4) Contexto desde DB
+    // 3) Contexto inicial
     let contextText = matches && matches.length > 0 ? buildContext(matches) : "";
 
-    // 🔥 5) Manejo especial para PRECIOS
+    // 4) Preguntas de precio
     const lowerMsg = message.toLowerCase();
     const isPriceQuestion = /precio|costo|cuánto|vale|cuestan|mensualidad/.test(lowerMsg);
-
-    if (isPriceQuestion) {
-      const contextHasPrice = /[0-9]+(\s?mil|\s?\$|\s?mxn|\s?pesos)/i.test(contextText);
-      if (!contextHasPrice) {
-        return {
-          statusCode: 200,
-          body: JSON.stringify({
-            reply:
-              "No encontré información en los documentos sobre precios. Para más información contacta con nuestro asesor **Alexa Delgado** al 📲 +52 55 7013 7764.",
-          }),
-        };
-      }
+    if (isPriceQuestion && !/[0-9]/.test(contextText)) {
+      return {
+        statusCode: 200,
+        body: JSON.stringify({
+          reply:
+            "No encontré información en los documentos sobre precios. Para más información contacta con nuestro asesor **Alexa Delgado** al 📲 +52 55 7013 7764.",
+        }),
+      };
     }
 
-    // 🔥 6) Si no hay nada en documentos → buscar en internet
+    // 5) Si no hay nada, intentamos internet
     if (!contextText) {
-      console.log("🌐 Buscando en internet...");
+      console.log("🌐 Intentando búsqueda en internet...");
       const internetText = await searchInternet(`Isla Diamante Cancún ${message}`);
-      if (internetText) {
-        contextText = `INFO DE INTERNET (usar solo si es relevante y confiable):\n${internetText}`;
-      }
+      contextText = internetText || "No encontré información en los documentos ni en fuentes externas.";
     }
 
-    // 7) Prompt normal
+    // 6) Prompt
     const systemPrompt = `
 Eres el Coordinador de Desarrollos Diamante. 
 Usa EXCLUSIVAMENTE la información del CONTEXTO si responde la pregunta.
-Si el contexto no contiene la respuesta, di explícitamente: "No encontré información en los documentos sobre eso."
-No inventes ni respondas genérico si hay contexto relevante. 
+Si el contexto no contiene la respuesta, di: "No encontré información en los documentos sobre eso."
+Si se usó información de internet, indícalo al usuario.
 Al final, sugiere visitar desarrollosdiamante.com.
 
 CONTEXTO:
 ---
-${contextText || "Sin datos relevantes"}
+${contextText}
 ---
     `.trim();
 
@@ -180,7 +167,7 @@ ${contextText || "Sin datos relevantes"}
     });
 
     const reply = completion.choices?.[0]?.message?.content || "No se pudo generar respuesta.";
-    console.log("🤖 Respuesta:", reply.slice(0, 300));
+    console.log("🤖 Respuesta:", reply.slice(0, 200));
 
     return { statusCode: 200, body: JSON.stringify({ reply }) };
   } catch (err) {
