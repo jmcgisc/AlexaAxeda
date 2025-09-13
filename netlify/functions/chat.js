@@ -4,9 +4,16 @@ const { createClient } = require("@supabase/supabase-js");
 
 // ---- CLIENTES
 const client = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
-const supabase = createClient(process.env.SUPABASE_URL_IA, process.env.SUPABASE_KEY_IA);
+const supabase = createClient(
+  process.env.SUPABASE_URL_IA,
+  process.env.SUPABASE_KEY_IA
+);
 
-// ---- HEURÍSTICAS DE PALABRAS CLAVE PARA BÚSQUEDA DE TEXTO
+// ---- RESPUESTA POR DEFECTO
+const fallbackReply =
+  "Para más información contacta con nuestro asesor Alexa Delgado Línea Asesor: +(52) 55 7013 7764";
+
+// ---- HEURÍSTICAS DE PALABRAS CLAVE
 function keywordsHeuristic(q) {
   const s = q.toLowerCase();
   const kws = [];
@@ -20,47 +27,52 @@ function keywordsHeuristic(q) {
 
 // ---- BÚSQUEDA POR EMBEDDINGS (RPC)
 async function searchByEmbeddings(queryEmbedding, { threshold = 0.2, k = 8 } = {}) {
-  const { data, error } = await supabase.rpc("match_documents", {
-    query_embedding: queryEmbedding,
-    match_threshold: threshold,
-    match_count: k,
-  });
-  if (error) {
-    console.error("❌ RPC match_documents error:", error);
+  try {
+    const { data, error } = await supabase.rpc("match_documents", {
+      query_embedding: queryEmbedding,
+      match_threshold: threshold,
+      match_count: k,
+    });
+    if (error) {
+      console.error("❌ RPC match_documents error:", error);
+      return [];
+    }
+    return Array.isArray(data) ? data : [];
+  } catch (err) {
+    console.error("🔥 Error en searchByEmbeddings:", err);
     return [];
   }
-  if (!Array.isArray(data)) return [];
-  return data;
 }
 
 // ---- BÚSQUEDA POR TEXTO (FALLBACK)
 async function searchByText(query, limit = 5) {
-  const kw = keywordsHeuristic(query);
-  let q = query;
-  // Si detectamos intención, buscamos por ILIKE con ese “stem”
-  const likes = [];
-  for (const k of kw) likes.push(`content.ilike.%${k}%`);
-  // Si no hay heurística, intentamos con palabra clave más fuerte de la pregunta
-  if (!likes.length) likes.push(`content.ilike.%${q.split(/\s+/)[0]}%`);
+  try {
+    const kw = keywordsHeuristic(query);
+    const likes = [];
+    for (const k of kw) likes.push(`content.ilike.%${k}%`);
+    if (!likes.length) likes.push(`content.ilike.%${query.split(/\s+/)[0]}%`);
 
-  // Construimos OR manual
-  // Nota: con supabase-js v2 no hay "or" simple en JS, usamos .or() en la query string
-  const { data, error } = await supabase
-    .from("documents")
-    .select("id, content")
-    .or(likes.join(","))
-    .limit(limit);
+    const { data, error } = await supabase
+      .from("documents")
+      .select("id, content")
+      .or(likes.join(","))
+      .limit(limit);
 
-  if (error) {
-    console.error("❌ Text search error:", error);
+    if (error) {
+      console.error("❌ Text search error:", error);
+      return [];
+    }
+    return Array.isArray(data)
+      ? data.map((d) => ({ id: d.id, content: d.content, similarity: 0.25 }))
+      : [];
+  } catch (err) {
+    console.error("🔥 Error en searchByText:", err);
     return [];
   }
-  return Array.isArray(data) ? data.map((d) => ({ id: d.id, content: d.content, similarity: 0.25 })) : [];
 }
 
 // ---- CONSTRUCCIÓN DE CONTEXTO
 function buildContext(matches, maxChars = 3500) {
-  // Ordena por similitud (desc) si existe
   const sorted = [...matches].sort((a, b) => (b.similarity || 0) - (a.similarity || 0));
   const used = [];
   let total = 0;
@@ -86,68 +98,71 @@ exports.handler = async (event) => {
     }
 
     console.log("💬 Mensaje:", message);
-    console.log("🔑 SUPABASE_URL:", process.env.SUPABASE_URL);
-    console.log("🔑 SUPABASE_KEY cargada:", !!process.env.SUPABASE_KEY);
 
-    // 1) Embedding de la consulta
-    const embRes = await client.embeddings.create({
-      model: "text-embedding-3-small",
-      input: message,
-    });
-    const queryEmbedding = embRes.data?.[0]?.embedding;
-    console.log("📐 Embedding len:", queryEmbedding?.length);
+    // 1) Intentar embeddings
+    let queryEmbedding = null;
+    try {
+      const embRes = await client.embeddings.create({
+        model: "text-embedding-3-small",
+        input: message,
+      });
+      queryEmbedding = embRes.data?.[0]?.embedding;
+      console.log("📐 Embedding len:", queryEmbedding?.length);
+    } catch (err) {
+      console.error("⚠️ Error generando embeddings:", err);
+    }
 
-    // 2) Recuperación por embeddings (top-k + threshold bajo)
+    // 2) Recuperar contexto
     let matches = [];
     if (queryEmbedding?.length) {
       matches = await searchByEmbeddings(queryEmbedding, { threshold: 0.2, k: 8 });
-      console.log("📄 Matches por embeddings:", matches?.length || 0);
     }
-
-    // 3) Fallback a búsqueda por texto si no hay matches
     if (!matches || matches.length === 0) {
       const textHits = await searchByText(message, 6);
-      console.log("📝 Matches por texto (fallback):", textHits?.length || 0);
       matches = textHits;
     }
 
-    // 4) Contexto
     const contextText =
       matches && matches.length > 0
         ? buildContext(matches)
-        : "Sin contexto. Si el usuario pregunta por ubicación, amenidades, pagos, escrituración o plusvalía, solicita permiso para brindar una respuesta general y siempre invita a visitarnos.";
+        : "";
 
-    console.log("📌 Contexto (primeros 400 chars):", contextText.slice(0, 400));
-
-    // 5) Prompt que obliga a usar el contexto
+    // 3) Prompt
     const systemPrompt = `
-Eres el Coordinador de Desarrollos Diamante. 
-DEBES responder usando EXCLUSIVAMENTE la información del CONTEXTO si ésta responde a la pregunta.
-Si el contexto no contiene la respuesta, di explícitamente: "No encontré información en los documentos sobre eso."
-No inventes, no respondas genérico si hay contexto relevante. 
-Al final, sugiere visitar desarrollosdiamante.com.
+Eres el Coordinador de Desarrollos Diamante.
+Debes responder **usando exclusivamente el CONTEXTO** si contiene la información.
+Si el contexto no responde a la pregunta, no inventes y responde exactamente: 
+"${fallbackReply}"
+Al final de toda respuesta válida, también sugiere visitar desarrollosdiamante.com.
 
-CONTEXTO (fragmentos con similitud e id):
+CONTEXTO:
 ---
 ${contextText}
 ---
     `.trim();
 
-    const completion = await client.chat.completions.create({
-      model: "gpt-4o-mini",
-      messages: [
-        { role: "system", content: systemPrompt },
-        { role: "user", content: message },
-      ],
-      temperature: 0.2,
-    });
+    // 4) Generar respuesta
+    let reply = fallbackReply;
+    try {
+      const completion = await client.chat.completions.create({
+        model: "gpt-4o-mini",
+        messages: [
+          { role: "system", content: systemPrompt },
+          { role: "user", content: message },
+        ],
+        temperature: 0.2,
+      });
+      reply = completion.choices?.[0]?.message?.content || fallbackReply;
+    } catch (err) {
+      console.error("⚠️ Error en completions:", err);
+      reply = fallbackReply;
+    }
 
-    const reply = completion.choices?.[0]?.message?.content || "No se pudo generar respuesta.";
-    console.log("🤖 Respuesta:", reply.slice(0, 300));
+    console.log("🤖 Respuesta:", reply.slice(0, 200));
 
     return { statusCode: 200, body: JSON.stringify({ reply }) };
   } catch (err) {
-    console.error("🔥 Error chat.js:", err);
-    return { statusCode: 500, body: "Error procesando mensaje" };
+    console.error("🔥 Error chat.js (global):", err);
+    return { statusCode: 500, body: JSON.stringify({ reply: fallbackReply }) };
   }
 };
