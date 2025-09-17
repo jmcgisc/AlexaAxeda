@@ -5,8 +5,8 @@ const SelectFields = (props) => {
     return (
         <div>
              <div>
-                <label className="text-sm"  htmlFor={name} > {label} </label >
-                    <select className="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 outline-none focus:ring-2 focus:ring-teal-300" 
+                <label className="text-sm "  htmlFor={name} > {label} </label >
+                    <select className="ring-1 ring-gray-300 text-black w-full rounded-md px-4 py-2 outline-none focus:ring-2 focus:ring-teal-300" 
                             aria-label="presupuesto"
                             onChange={handleChange} 
                             defaultValue = "presupuesto" 

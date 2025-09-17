@@ -9,10 +9,19 @@ import {
   Dumbbell,
   Medal,
   Flame,
-  LandPlot
+  LandPlot,
+  Home,
+  Shield,
+  TrendingUp,
+  MapPin,
+  Eye,
+  Calendar,
+  Leaf
 } from "lucide-react";
-import MetaTags from "../../../src/MetaTags";
 import { Helmet } from "react-helmet-async";
+import MetaTags from "../../../src/MetaTags";
+import FormularioContactoPopup from '../Aux/FormularioContactoPopup'; 
+import Popup      from 'reactjs-popup'; 
 
 const amenityGroups = [
   {
@@ -29,7 +38,7 @@ const amenityGroups = [
       { name: "Canchas de pádel", icon: Medal },
       { name: "Gimnasio equipado", icon: Dumbbell },
       { name: "Canchas multideporte", icon: Volleyball },
-      { name: "Mini golf ", icon: LandPlot }
+      { name: "Mini golf", icon: LandPlot }
     ]
   },
   {
@@ -43,101 +52,238 @@ const amenityGroups = [
   }
 ];
 
+const features = [
+  { icon: Home, text: "174 terrenos disponibles" },
+  { icon: Shield, text: "Seguridad 24/7" },
+  { icon: TrendingUp, text: "Alta plusvalía garantizada" },
+  { icon: MapPin, text: "Ubicación privilegiada en Cancún" },
+  { icon: Leaf, text: "Diseño minimalista y natural" }
+];
+
 const AzoresPage = () => {
   return (
     <>          
-    
-    <Helmet>
-          <title>Azores - Privada moderna y natural | Isla Diamante</title>
-          <meta name="description" content="Azores combina naturaleza y arquitectura minimalista. Una privada ideal para invertir y vivir rodeado de tranquilidad." />
-          <link rel="canonical" href="https://desarrollosdiamante.com/azores" />
-          <meta property="og:title" content="Privada Azores - Isla Diamante" />
-          <meta property="og:description" content="Vive o invierte en Azores, una privada con mini golf, terrazas, parque temático y club." />
-          <meta property="og:image" content="https://desarrollosdiamante.com/Azores/AzoresAcceso.webp" />
-          <meta property="og:url" content="https://desarrollosdiamante.com/azores" />
-          <meta name="twitter:card" content="summary_large_image" />
-    </Helmet>
+      <Helmet>
+        <title>Azores - Privada Residencial con Diseño Minimalista y Natural | Isla Diamante</title>
+        <meta name="description" content="Descubre Azores: 174 terrenos con amenidades premium en Cancún. Combina naturaleza y arquitectura minimalista en un entorno tranquilo y seguro con alta plusvalía." />
+        <meta name="keywords" content="Azores, terrenos Cancún, privada residencial, plusvalía, albercas, mini golf, canchas pádel, desarrollo inmobiliario, Isla Diamante, diseño minimalista" />
+        <link rel="canonical" href="https://desarrollosdiamante.com/azores" />
+        <meta property="og:title" content="Privada Azores - Desarrollo Residencial con Estilo Minimalista" />
+        <meta property="og:description" content="Vive en Azores, la privada que combina naturaleza y arquitectura minimalista. Albercas, mini golf, áreas deportivas y seguridad 24/7 en Cancún." />
+        <meta property="og:image" content="https://desarrollosdiamante.com/Azores/AzoresAcceso.webp" />
+        <meta property="og:url" content="https://desarrollosdiamante.com/azores" />
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Azores - Privada Residencial en Cancún | Isla Diamante" />
+        <meta name="twitter:description" content="Conoce Azores: terrenos residenciales con diseño minimalista, amenidades premium y conexión con la naturaleza en Cancún." />
+      </Helmet>
 
-    <section className="min-h-screen bg-gradient-to-b from-white to-diamonBlack dark:from-black dark:to-gray-900 py-36 px-6 md:px-16 text-black dark:text-white">
-      <div className="max-w-6xl mx-auto">
-        {/* Encabezado */}
-        <motion.div
-          className="text-center mb-8"
-          initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-        >
-          <h1 className="text-4xl md:text-6xl font-bold dark:text-gray-200">Azores</h1>
-          <p className="text-xl text-gray-600 dark:text-gray-200">
-            Azores 174 terrenos 
-          </p>
-        </motion.div>
-
-        {/* Imagen + Descripción */}
-        <div className="grid md:grid-cols-2 gap-10 items-center mb-10">
-          <motion.img
-            src="/Azores/Azores.webp"
-            alt="Azores desarrollo"
-            className="w-full h-[400px] object-cover rounded-full border-[8px] border-diamante shadow-xl"
-            initial={{ opacity: 0, scale: 0.9 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.6 }}
-          />
-
+      <section className="min-h-screen bg-gradient-to-b from-rose to-rose-50 dark:from-gray-900 dark:to-emerald-950 py-20 px-4 md:px-8 text-gray-800 ">
+        <div className="max-w-6xl mx-auto">
+          {/* Hero Section */}
           <motion.div
-            initial={{ opacity: 0, x: 40 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            className="text-center mb-16 pt-10"
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="text-lg text-gray-700 dark:text-gray-300"
           >
-            <p className="mb-6">
-              Azores representa la sofisticación del minimalismo: espacios de líneas limpias, atmósferas tranquilas y una estética que abraza lo esencial. 
-              Con alberca para adultos, chapoteadero, y terrazas diseñadas para la contemplación, esta privada ofrece un refugio con carácter.
-            </p>
-            <p>
-              La casa club incorpora un salón de usos múltiples, pergolado con barra grill, y una refinada sala con firepit para veladas íntimas al aire libre.
-              El parque temático, con su distintivo campo de mini golf, brinda una experiencia lúdica elevada, ideal para quienes encuentran el placer en los detalles bien ejecutados.
-            </p>
-          </motion.div>
-        </div>
-
-        {/* Amenidades */}
-       {/* Grid de amenidades por categoría */}
-        <motion.div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
-          {amenityGroups.map((group, i) => (
             <motion.div
-              key={i}
-              className="bg-white/80 dark:bg-gray-800 border border-diamante/20 rounded-2xl p-6 shadow-lg backdrop-blur-md"
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ delay: i * 0.2, duration: 0.6 }}
+              initial={{ scale: 0 }}
+              animate={{ scale: 1 }}
+              transition={{ delay: 0.2, type: "spring", stiffness: 150 }}
+              className="inline-flex items-center justify-center p-3 bg-gradient-to-r from-rose-400 to-rose-600 rounded-full mb-6"
+            >
+              <Leaf className="h-8 w-8 text-white" />
+            </motion.div>
+            
+            <h1 className="text-4xl md:text-6xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-rose-600 to-rose-800 dark:from-rose-400 dark:to-rose-300">
+              Azores
+            </h1>
+            <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-8 max-w-3xl mx-auto">
+              Donde el <span className="font-semibold text-rose-600 dark:text-rose-400">minimalismo se encuentra con la naturaleza</span> en un entorno de tranquilidad y elegancia
+            </p>
+            
+            <div className="flex flex-wrap justify-center gap-4 mt-10">
+              {features.map((feature, index) => {
+                const Icon = feature.icon;
+                return (
+                  <motion.div
+                    key={index}
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: index * 0.1 }}
+                    className="flex items-center gap-2 bg-white dark:bg-gray-800 px-4 py-2 rounded-full shadow-md"
+                  >
+                    <Icon className="h-5 w-5 text-rose-600" />
+                    <span className="text-sm font-medium">{feature.text}</span>
+                  </motion.div>
+                );
+              })}
+            </div>
+          </motion.div>
+
+          {/* Imagen + Descripción */}
+          <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
+            <motion.div
+              className="relative"
+              initial={{ opacity: 0, x: -40 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.7 }}
               viewport={{ once: true }}
             >
-              <h3 className="text-lg font-semibold dark:text-white mb-4 border-b border-diamante/30 pb-2">{group.title}</h3>
-              <ul className="space-y-4 text-left dark:text-white">
-                {group.items.map(({ name, icon: Icon }, idx) => (
-                  <li key={idx} className="flex items-start gap-4">
-                    <div className="bg-diamante/10 p-2 rounded-full text-diamante">
-                      <Icon className="w-5 h-5" />
-                    </div>
-                    <span className="text-base text-gray-800 dark:text-gray-200">{name}</span>
-                  </li>
-                ))}
-              </ul>
+              <div className="absolute -inset-4 bg-gradient-to-r from-rose-400 to-rose-600 rounded-3xl transform -rotate-3 opacity-20"></div>
+              <img
+                src="/Azores/Azores.webp"
+                alt="Vista de la privada Azores con diseño minimalista y áreas verdes"
+                className="w-full h-[400px] object-cover rounded-2xl shadow-xl relative z-10"
+              />
             </motion.div>
-          ))}
-        </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, x: 40 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8 }}
+              viewport={{ once: true }}
+              className="text-lg text-gray-700 dark:text-gray-300"
+            >
+              <h2 className="text-3xl font-bold mb-6 text-gray-800 dark:text-white">Minimalismo Natural en Cancún</h2>
+              <p className="mb-6 leading-relaxed">
+                Azores representa la sofisticación del minimalismo: espacios de líneas limpias, atmósferas tranquilas y una estética que abraza lo esencial. 
+                Con alberca para adultos, chapoteadero, y terrazas diseñadas para la contemplación, esta privada ofrece un refugio con carácter.
+              </p>
+              <p className="leading-relaxed">
+                La casa club incorpora un salón de usos múltiples, pergolado con barra grill, y una refinada sala con firepit para veladas íntimas al aire libre.
+                El parque temático, con su distintivo campo de mini golf, brinda una experiencia lúdica elevada, ideal para quienes encuentran el placer en los detalles bien ejecutados.
+              </p>
+            </motion.div>
+          </div>
+
+          {/* Amenidades */}
+          <motion.div 
+            className="mb-20"
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+          >
+            <h2 className="text-3xl font-bold text-center mb-4 text-gray-800 dark:text-white">Amenidades de <span className="text-rose-600">Estilo Minimalista</span></h2>
+            <p className="text-center text-gray-600 dark:text-gray-400 mb-12 max-w-2xl mx-auto">
+              Disfruta de espacios diseñados para la armonía, el deporte y la convivencia en un entorno natural
+            </p>
+            
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              {amenityGroups.map((group, i) => (
+                <motion.div
+                  key={i}
+                  className="bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-lg border border-rose-100 dark:border-gray-700 hover:shadow-xl transition-all duration-300"
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ delay: i * 0.2, duration: 0.6 }}
+                  viewport={{ once: true }}
+                  whileHover={{ y: -5 }}
+                >
+                  <h3 className="text-xl font-semibold mb-4 pb-2 border-b border-rose-200 dark:border-rose-700/30 flex items-center gap-2">
+                    <div className="p-2 bg-rose-100 rounded-lg">
+                      {group.items[0] && (() => {
+                        const Icon = group.items[0].icon;
+                        return <Icon className="h-5 w-5 text-rose-600 " />;
+                      })()}
+                    </div>
+                    {group.title}
+                  </h3>
+                  <ul className="space-y-4 text-left">
+                    {group.items.map(({ name, icon: Icon }, idx) => (
+                      <li key={idx} className="flex items-start gap-4">
+                        <div className="bg-rose-100 dark:bg-rose-900/20 p-2 rounded-full text-rose-600 dark:text-rose-400 mt-1">
+                          <Icon className="w-5 h-5" />
+                        </div>
+                        <span className="text-base text-gray-800 ">{name}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </motion.div>
+              ))}
+            </div>
+          </motion.div>
+
+          {/* Galería de imágenes */}
+          <motion.div 
+            className="mb-20"
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+          >
+            <h2 className="text-3xl font-bold text-center mb-4 text-rose-800 dark:rose-400">Descubre el <span className="text-rose-600">Estilo Azores</span></h2>
+            <p className="text-center text-gray-600 dark:text-gray-400 mb-12 max-w-2xl mx-auto">
+              Conoce los espacios que hacen de Azores el refugio ideal para quienes valoran el diseño y la tranquilidad
+            </p>
+            
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              {["/Azores/AzoresAcceso.webp", "/Azores/AzoresTerraza.webp", "/Azores/AlbercaAzores.webp"].map((src, i) => (
+                <motion.div
+                  key={i}
+                  className="relative overflow-hidden rounded-2xl group"
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ delay: i * 0.2, duration: 0.6 }}
+                  viewport={{ once: true }}
+                >
+                  <img
+                    src={src}
+                    alt={`Vista ${i + 1} de la privada Azores`}
+                    className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                    <div className="text-white transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                      <h3 className="font-semibold text-lg">Armonía y diseño</h3>
+                      <p className="text-sm">Espacios minimalistas en la naturaleza</p>
+                    </div>
+                  </div>
+                </motion.div>
+              ))}
+            </div>
+          </motion.div>
+
+           {/* CTA Section */}
+          <motion.div 
+            className="bg-gradient-to-r from-rose-500 to-rose-700 rounded-3xl p-10 text-center text-white"
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+          >
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">¿Listo para vivir en Azores?</h2>
+            <p className="text-lg mb-8 max-w-2xl mx-auto">
+              Contáctanos hoy mismo para agendar una visita y descubrir por qué Azores es el nuevo paraiso en Cancún.
+            </p>
+           
+            <Popup
+                trigger={
+                <button    className="bg-white text-rose-700 px-8 py-4 rounded-full font-bold text-lg shadow-lg hover:bg-gray-100 transition-colors">
+                  Solicitar información
+                </button>
+                }
+                modal
+                nested
+                contentStyle={{ width: 400 }}
+                position="center center"
+            >
+                {(close) => <FormularioContactoPopup onClose={close} />}
+            </Popup>
+          </motion.div>
+        </div>
+      </section>
 
         {/* Galería de imágenes */}
         <div className="mt-20">
-          <h3 className="text-2xl font-semibold text-center mb-8 dark:text-white">Vistas del desarrollo</h3>
           <div className="flex flex-wrap justify-between gap-6">
-            {["/Azores/AzoresAcceso.webp", "/Azores/AzoresTerraza.webp", "/Azores/AlbercaAzores.webp"].map((src, i) => (
+              {["/Azores/AzoresAcceso.webp", "/Azores/AzoresTerraza.webp", "/Azores/AlbercaAzores.webp"].map((src, i) => (
               <motion.img
                 key={i}
                 src={src}
                 alt={`Vista ${i + 1}`}
-                className="w-56 h-56 object-cover rounded-full border-4 border-white shadow-lg hover:scale-105 transition-transform"
+                className="w-56 h-56 object-cover rounded-full border-4 border-rose shadow-lg hover:scale-105 transition-transform"
                 initial={{ opacity: 0, scale: 0.9 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 transition={{ delay: i * 0.2, duration: 0.5 }}
@@ -145,21 +291,14 @@ const AzoresPage = () => {
             ))}
           </div>
         </div>
-      </div>
-
-        <div className="mt-20">
-          {/* Galería flotante */}
-          {/* <GaleriaFlotante />  */}
-        </div>
 
         <MetaTags
           title="Isla Diamante - Invierte con confianza"
           description="Terrenos residenciales en Cancún con plusvalía garantizada."
           url="https://desarrollosdiamante.com/"
           image="https://desarrollosdiamante.com/Alexa_.jpeg"
-        />
 
-    </section>
+        />
     </>
   );
 };

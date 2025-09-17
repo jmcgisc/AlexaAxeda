@@ -3,7 +3,7 @@ const InputField = (props) => {
   const { handleChange, label, name, type, value, placeholder } = props;
 
   return (
-    <div className="mb-4">
+    <div className="mb-4 text-black">
       <label
         htmlFor={name}
         className="block text-sm font-medium text-gray-700 after:content-['*'] after:ml-0.5 after:text-red-500"

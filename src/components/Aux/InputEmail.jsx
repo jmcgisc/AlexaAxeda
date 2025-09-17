@@ -3,7 +3,7 @@ const InputEmail = (props) => {
     const{handleChange, label, name, type, value} = props;
     return (
         <div> 
-            <div> 
+            <div className="text-black"> 
                 <label className="text-sm after:content-['*'] after:ml-0.5 after:text-red-500" htmlFor={name}>
                     Correo Electrónico </label>
 
