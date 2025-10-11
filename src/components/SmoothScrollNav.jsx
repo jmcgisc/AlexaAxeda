@@ -53,25 +53,24 @@ const SmoothScrollNav = () => {
           </button>
         </div>
 
-        <NavLink
-          className="hidden xl:flex justify-center gap-6 text-sm md:text-base font-medium text-gray-800 dark:text-white"
-          to="/"
-        >
-          Home
-        </NavLink>
-          {["santorini", "azores", "madeira", "boracay"].map((section) => (
+        {/* Navegación desktop */}
+        <div className="hidden xl:flex items-center gap-6">
           <NavLink
-            key={section}
-            to={section}
-            smooth
-            duration={600}
-            offset={-80}
-            onClick={() => setIsOpen(false)}
-            className="hidden xl:flex justify-center gap-6 text-sm md:text-base font-medium text-gray-800 dark:text-white"
+            to="/"
+            className="text-sm md:text-base font-medium text-gray-800 dark:text-white hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
           >
-            {section.charAt(0).toUpperCase() + section.slice(1)}
+            Home
           </NavLink>
-        ))}
+          {["santorini", "azores", "madeira", "boracay", "palau"].map((section) => (
+            <NavLink
+              key={section}
+              to={`/${section}`}
+              className="text-sm md:text-base font-medium text-gray-800 dark:text-white hover:text-blue-600 dark:hover:text-blue-400 transition-colors px-2 py-1 rounded"
+            >
+              {section.charAt(0).toUpperCase() + section.slice(1)}
+            </NavLink>
+          ))}
+        </div>
       </nav>
 
       {/* Fondo oscuro (overlay) */}
@@ -88,15 +87,20 @@ const SmoothScrollNav = () => {
           isOpen ? "translate-x-0" : "translate-x-full"
         }`}
        >
-        {["santorini", "azores", "madeira", "boracay"].map((section) => (
+        <NavLink
+          to="/"
+          onClick={() => setIsOpen(false)}
+          className="cursor-pointer hover:text-diamante py-2"
+        >
+          Home
+        </NavLink>
+        
+        {["santorini", "azores", "madeira", "boracay", "palau"].map((section) => (
           <NavLink
             key={section}
-            to={section}
-            smooth
-            duration={600}
-            offset={-80}
+            to={`/${section}`}
             onClick={() => setIsOpen(false)}
-            className="cursor-pointer hover:text-diamante"
+            className="cursor-pointer hover:text-diamante py-2 border-b border-gray-200 dark:border-gray-700"
           >
             {section.charAt(0).toUpperCase() + section.slice(1)}
           </NavLink>
@@ -110,7 +114,7 @@ const SmoothScrollNav = () => {
               
                 <a
                   href="#contacto"
-                  onClick={() => setOpen(false)}
+                  onClick={() => setIsOpen(false)}
                   className="inline-block w-full text-center mt-2 px-4 py-2 bg-gradient-to-r from-blue-500 to-purple-600 text-white font-semibold rounded-full shadow-md hover:scale-105 transition-transform duration-300"
                 >
                   ¡Contáctanos ahora!
@@ -121,6 +125,5 @@ const SmoothScrollNav = () => {
     </>
   );
 };
-
 
 export default SmoothScrollNav;

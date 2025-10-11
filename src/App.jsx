@@ -15,6 +15,8 @@ import AzoresPage           from "../src/components/Desarrollos/AzoresPage";
 import AzoresPageEn         from "../src/components/Desarrollos/AzoresPageEn";
 import BoracayPage          from "../src/components/Desarrollos/BoracayPage";
 import BoracayPageEn        from "../src/components/Desarrollos/BoracayPageEn";
+import PalauPage            from "../src/components/Desarrollos/PalauPage";
+import PalauPageEn          from "../src/components/Desarrollos/PalauPageEn";
 import CookieDashboard      from "../src/components/Aux/CookieDashboard";
 import ChatLogsDashboard    from "../src/components/Aux/ChatLogsDashboard";
 import CookieConsent        from "./components/Aux/CookieConsent";
@@ -100,6 +102,9 @@ function App() {
 
             <Route path = '/boracay'        element ={ <BoracayPage/> } /> 
             <Route path = '/en-boracay'     element ={ <BoracayPageEn/> } />
+
+            <Route path = '/palau'          element ={ <PalauPage/> } /> 
+            <Route path = '/en-palau'       element ={ <PalauPageEn/> } />
 
             <Route path = '/preguntas'      element ={ <PreguntasFrecuentes/> } /> 
             <Route path = '/en-faq'         element ={ <PreguntasFrecuentesEn/> } /> 

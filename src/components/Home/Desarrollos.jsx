@@ -29,6 +29,13 @@ const desarrollos = [
     precio: "Mensualidades desde $3,124 MXN",
     to: "/boracay",
     soldOut: true,
+  },
+  {
+    nombre: "Palau – Colección Serena",
+    descripcion: "En el corazón de Isla Diamante, la Colección Palau representa la elegancia más serena.",
+    imagen: "Palau1.jpeg",
+    precio: "Mensualidades desde $3,613 MXN",
+    to: "/palau",
   }
 ];
 
@@ -105,8 +112,10 @@ const Desarrollos = () => {
                 </div>
             </NavLink>   
 
+
+{/* 
             <NavLink className="text-center relative group" to="/boracay">
-                {/* Etiqueta SOLD OUT */}
+        
                 <div className="absolute top-2 right-2 bg-red-600 text-white text-xs px-2 py-1 rounded-full shadow-md z-10">
                     SOLD OUT
                 </div>
@@ -121,6 +130,23 @@ const Desarrollos = () => {
                     <h3 className="text-2xl font-bold text-gray-400">Boracay – Colección Tropical</h3>
                 </div>
                 </NavLink>  
+ */}
+
+
+            <NavLink className="text-center relative group" to="/palau">
+
+                <div className="flex flex-col gap-4">
+                    <img
+                    src="Palau1.jpeg"
+                    className="w-full h-56 object-cover rounded-3xl transition duration-700 ease-in-out transform group-hover:-translate-y-1 group-hover:scale-110 group-hover:shadow-2xl"
+                    alt="Plusvalía en Cancún"
+                    loading="lazy"
+                    />
+                    <h3 className="text-2xl font-bold text-gray-400">Palau – Colección Serena</h3>
+                </div>
+                </NavLink>  
+
+
             </div>
         </div>
 
