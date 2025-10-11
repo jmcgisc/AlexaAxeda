@@ -339,8 +339,8 @@ const BoracayPageEn = () => {
                     <div className={`inline-flex items-center justify-center p-3 bg-gradient-to-r ${dev.color} rounded-full mb-4 self-start`}>
                       <Icon className="h-6 w-6 text-white" />
                     </div>
-                    <h3 className="text-xl font-semibold mb-3 text-gray-800 dark:text-white">{dev.name}</h3>
-                    <p className="text-gray-600 dark:text-gray-300 mb-4 flex-grow">{dev.description}</p>
+                    <h3 className="text-xl font-semibold mb-3 text-gray-800 dark:text-gray-600">{dev.name}</h3>
+                    <p className="text-gray-600 dark:text-gray-400 mb-4 flex-grow">{dev.description}</p>
                     <ul className="space-y-2 mb-4">
                       {dev.features.map((feature, idx) => (
                         <li key={idx} className="flex items-center text-sm text-gray-500 dark:text-gray-400">
