@@ -191,7 +191,7 @@ const PalauPageEn = () => {
             >
               <div className="absolute -inset-4 bg-gradient-to-r from-blue-400 to-teal-600 rounded-3xl transform -rotate-3 opacity-20"></div>
               <img
-                src="/Palau/Palau1.jpeg"
+                src="/Palau/Palau.jpeg"
                 alt="View of Palau Collection with serene design and natural integration"
                 className="w-full h-[400px] object-cover rounded-2xl shadow-xl relative z-10"
               />
