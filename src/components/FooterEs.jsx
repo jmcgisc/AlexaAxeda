@@ -137,9 +137,14 @@ const FooterEs = () => {
       {/* Derechos reservados y Powered by */}
       <div className="mt-6 text-center text-xs text-gray-400 dark:text-gray-600">
         <p>© {new Date().getFullYear()} Isla Diamante. Todos los derechos reservados.</p>
-        <p className="mt-1 text-[11px] italic text-indigo-200"> Powered by 
-          <a href="https://stratik.com.mx" target="_blank" rel="noopener noreferrer" className="font-semibold text-indigo-500 transition"> STRATIK </a>
-        </p>
+         <div className="flex items-center gap-2 text-sm text-neutral-500 dark:text-neutral-500">
+            <span>Desarrollado con</span>
+            <span className="text-red-500">❤️</span>
+            <span>por</span>
+            <a href="https://stratik.com.mx" className="font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+              Stratik
+            </a>
+          </div>
       </div>
 
     </footer>
