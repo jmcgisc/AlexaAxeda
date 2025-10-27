@@ -21,7 +21,7 @@ const url = `https://desarrollosdiamante.com/privadas/blog/${post.slug}`
 
 
 return (
-<div className="dd-container dd-post">
+<div className="dd-container dd-post mt-24 text-gray-600">
 <Breadcrumbs items={[
 { name:'Inicio', to:'/' },
 { name:'Privadas', to:'/privadas' },
