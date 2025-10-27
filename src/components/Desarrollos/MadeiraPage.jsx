@@ -15,17 +15,15 @@ import {
   TrendingUp,
   MapPin,
   Building,
-  Landmark,
-  BarChart3,
-  Heart,
   Globe,
   Key,
-  HomeIcon,
-  Zap
+  HomeIcon
 } from "lucide-react";
 import FormularioContactoPopup from '../Aux/FormularioContactoPopup'; 
 import { Helmet } from "react-helmet-async";
 import MetaTags from "../../../src/MetaTags";
+import { Link } from "react-router-dom";
+import { Newspaper } from "lucide-react";
 
 const amenityGroups = [
   {
@@ -80,12 +78,12 @@ const developmentInfo = [
     icon: Sun
   },
   {
-    name: "Madeira",
-    description: "Enfocado en deporte y vitalidad, Madeira ofrece canchas, gimnasio y áreas de actividad física para familias activas.",
-    image: "/Madeira/Madeira.webp",
-    features: ["Enfoque deportivo", "Gimnasio equipado", "Canchas multiusos"],
-    color: "from-emerald-500 to-emerald-700",
-    icon: Dumbbell
+    name: "Palau",
+    description: "Una propuesta de naturaleza y aventura con senderos, miradores y vegetación tropical para un estilo de vida activo y relajado.",
+    image: "/Palau/Palau.webp",
+    features: ["Naturaleza exuberante", "Rutas y aventura", "Ambiente relajado"],
+    color: "from-teal-500 to-teal-700",
+    icon: WavesLadder
   },
   {
     name: "Santorini",
@@ -270,6 +268,42 @@ const MadeiraPage = () => {
             </div>
           </motion.div>
 
+          <div className="mt-10">  
+            <Link
+              to="/privadas/blog"
+              className="
+                group
+                block 
+                rounded-3xl 
+                border border-gray-200 dark:border-gray-700 
+                bg-white/90 dark:bg-gray-800/70 
+                backdrop-blur-sm
+                p-6 
+                text-center 
+                shadow-lg hover:shadow-2xl transition-all duration-300 ease-out
+                transform hover:-translate-y-1
+                hover:border-indigo-200 dark:hover:border-green-800
+                focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2
+                active:scale-95
+              "
+            >
+              <div className="flex items-center justify-center gap-3 text-green-600 dark:text-green-400">
+                <Newspaper className="h-7 w-7 transition-transform duration-300 group-hover:scale-110" />
+                <span className="text-xl font-bold bg-gradient-to-r from-green-600 to-green-600 dark:from-green-400 dark:to-green-400 bg-clip-text text-transparent">
+                  Explora nuestro Blog
+                </span>
+              </div>
+              <p className="text-base text-gray-600 dark:text-gray-300 mt-3 leading-relaxed">
+                Consejos de inversión, plusvalía y análisis de desarrollos en Cancún.
+              </p>
+              
+              {/* Indicador visual adicional */}
+              <div className="flex items-center justify-center gap-1 mt-4 text-sm text-gray-400 dark:text-gray-500 group-hover:text-green-500 transition-colors duration-300">
+                <span>Descubre más</span> 
+              </div>
+            </Link>
+          </div>
+
           {/* Galería de imágenes */}
           <motion.div 
             className="mb-20"
@@ -278,8 +312,8 @@ const MadeiraPage = () => {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-3xl font-bold text-center mb-4 text-gray-800 dark:text-white">Vive la Experiencia <span className="text-emerald-600">Madeira</span></h2>
-            <p className="text-center text-gray-600 dark:text-gray-400 mb-12 max-w-2xl mx-auto">
+            <h2 className="text-3xl font-bold text-center mb-4 mt-12 text-gray-800 dark:text-white">Vive la Experiencia <span className="text-emerald-600">Madeira</span></h2>
+            <p className="text-center text-gray-600 dark:text-gray-400 mb-4 max-w-2xl mx-auto">
               Conoce los espacios que hacen de Madeira el lugar ideal para tu familia activa
             </p>
             

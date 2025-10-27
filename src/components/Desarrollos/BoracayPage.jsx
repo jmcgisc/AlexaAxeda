@@ -6,16 +6,13 @@ import {
   ShowerHead, 
   WavesLadder,
   LandPlot,
-  Trees, 
-  Flame,
+  Trees,
   Home,
   Users,
   Shield,
   TrendingUp,
   MapPin,
   Building,
-  Landmark,
-  BarChart3,
   Globe,
   Key,
   HomeIcon,
@@ -24,6 +21,8 @@ import {
 import FormularioContactoPopup from '../Aux/FormularioContactoPopup'; 
 import MetaTags from "../../../src/MetaTags";
 import { Helmet } from "react-helmet-async";
+import { Link } from "react-router-dom";
+import { Newspaper } from "lucide-react";
 
 const amenityGroups = [
   {
@@ -68,14 +67,6 @@ const developmentInfo = [
     icon: Trees
   },
   {
-    name: "Boracay",
-    description: "Con estilo tropical, Boracay evoca paraísos playeros con amenidades acuáticas, palmeras y un ambiente vacacional permanente.",
-    image: "/Boracay/Boracay.webp",
-    features: ["Estilo tropical", "Amenidades acuáticas", "Ambiente vacacional"],
-    color: "from-amber-500 to-amber-700",
-    icon: Trees
-  },
-  {
     name: "Madeira",
     description: "Enfocado en deporte y vitalidad, Madeira ofrece canchas, gimnasio y áreas de actividad física para familias activas.",
     image: "/Madeira/Madeira.webp",
@@ -90,7 +81,15 @@ const developmentInfo = [
     features: ["Estilo mediterráneo", "Elegancia y modernidad", "Entorno exclusivo"],
     color: "from-blue-500 to-blue-700",
     icon: HomeIcon
-  }
+  },
+  {
+    name: "Palau",
+    description: "Una propuesta de naturaleza y aventura con senderos, miradores y vegetación tropical para un estilo de vida activo y relajado.",
+    image: "/Palau/Palau.webp",
+    features: ["Naturaleza exuberante", "Rutas y aventura", "Ambiente relajado"],
+    color: "from-teal-500 to-teal-700",
+    icon: WavesLadder
+  },
 ];
 
 const investmentInfo = [
@@ -166,7 +165,7 @@ const BoracayPage = () => {
             <h1 className="text-4xl md:text-6xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-amber-600 to-amber-800 dark:from-amber-400 dark:to-amber-300">
               Boracay
             </h1>
-            <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-8 max-w-3xl mx-auto">
+            <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-12 max-w-3xl mx-auto">
               Vive la experiencia de un <span className="font-semibold text-amber-600 dark:text-amber-400">paraíso tropical</span> con todas las comodidades modernas
             </p>
             
@@ -271,6 +270,42 @@ const BoracayPage = () => {
             </div>
           </motion.div>
 
+          <div className="mt-10">  
+            <Link
+              to="/privadas/blog"
+              className="
+                group
+                block 
+                rounded-3xl 
+                border border-gray-200 dark:border-gray-700 
+                bg-white/90 dark:bg-gray-800/70 
+                backdrop-blur-sm
+                p-6 
+                text-center 
+                shadow-lg hover:shadow-2xl transition-all duration-300 ease-out
+                transform hover:-translate-y-1
+                hover:border-indigo-200 dark:hover:border-red-800
+                focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2
+                active:scale-95
+              "
+            >
+              <div className="flex items-center justify-center gap-3 text-yellow-600 dark:text-yellow-400">
+                <Newspaper className="h-7 w-7 transition-transform duration-300 group-hover:scale-110" />
+                <span className="text-xl font-bold bg-gradient-to-r from-yellow-600 to-yellow-600 dark:from-yellow-400 dark:to-yellow-400 bg-clip-text text-transparent">
+                  Explora nuestro Blog
+                </span>
+              </div>
+              <p className="text-base text-gray-600 dark:text-gray-300 mt-3 leading-relaxed">
+                Consejos de inversión, plusvalía y análisis de desarrollos en Cancún.
+              </p>
+              
+              {/* Indicador visual adicional */}
+              <div className="flex items-center justify-center gap-1 mt-4 text-sm text-gray-400 dark:text-gray-500 group-hover:text-yellow-500 transition-colors duration-300">
+                <span>Descubre más</span> 
+              </div>
+            </Link>
+          </div>
+
           {/* Galería de imágenes */}
           <motion.div 
             className="mb-20"
@@ -279,8 +314,8 @@ const BoracayPage = () => {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-3xl font-bold text-center mb-4 text-gray-800 dark:text-white">Vive la Experiencia <span className="text-amber-600">Boracay</span></h2>
-            <p className="text-center text-gray-600 dark:text-gray-400 mb-12 max-w-2xl mx-auto">
+            <h2 className="text-3xl font-bold text-center mb-4 mt-12 text-gray-800 dark:text-white">Vive la Experiencia <span className="text-amber-600">Boracay</span></h2>
+            <p className="text-center text-gray-600 dark:text-gray-400 mb-4 max-w-2xl mx-auto">
               Conoce los espacios que hacen de Boracay el lugar ideal para tu familia
             </p>
             

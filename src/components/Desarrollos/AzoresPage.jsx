@@ -14,21 +14,18 @@ import {
   Shield,
   TrendingUp,
   MapPin,
-  Eye,
-  Calendar,
   Leaf,
   Building,
-  Landmark,
-  BarChart3,
   Globe,
   Key,
-  HomeIcon,
-  Zap
+  HomeIcon
 } from "lucide-react";
 import { Helmet } from "react-helmet-async";
 import MetaTags from "../../../src/MetaTags";
 import FormularioContactoPopup from '../Aux/FormularioContactoPopup'; 
-import Popup from 'reactjs-popup'; 
+import Popup from 'reactjs-popup';  
+import { Link } from "react-router-dom";
+import { Newspaper } from "lucide-react";
 
 const amenityGroups = [
   {
@@ -69,12 +66,12 @@ const features = [
 
 const developmentInfo = [
   {
-    name: "Azores",
-    description: "Inspirado en las islas portuguesas, Azores ofrece un concepto de vida tranquilo y natural con amplias áreas verdes y diseño sustentable.",
-    image: "/Azores/Azores.webp",
-    features: ["Amplias áreas verdes", "Diseño sustentable", "Comunidad tranquila"],
-    color: "from-rose-500 to-rose-700",
-    icon: Leaf
+    name: "Palau",
+    description: "Una propuesta de naturaleza y aventura con senderos, miradores y vegetación tropical para un estilo de vida activo y relajado.",
+    image: "/Palau/Palau.webp",
+    features: ["Naturaleza exuberante", "Rutas y aventura", "Ambiente relajado"],
+    color: "from-teal-500 to-teal-700",
+    icon: WavesLadder
   },
   {
     name: "Boracay",
@@ -275,6 +272,42 @@ const AzoresPage = () => {
             </div>
           </motion.div>
 
+          <div className="mt-10">
+          <Link
+            to="/privadas/blog"
+            className="
+              group
+              block 
+              rounded-3xl 
+              border border-gray-200 dark:border-gray-700 
+              bg-white/90 dark:bg-gray-800/70 
+              backdrop-blur-sm
+              p-6 
+              text-center 
+              shadow-lg hover:shadow-2xl transition-all duration-300 ease-out
+              transform hover:-translate-y-1
+              hover:border-indigo-200 dark:hover:border-red-800
+              focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2
+              active:scale-95
+            "
+          >
+            <div className="flex items-center justify-center gap-3 text-red-600 dark:text-red-400">
+              <Newspaper className="h-7 w-7 transition-transform duration-300 group-hover:scale-110" />
+              <span className="text-xl font-bold bg-gradient-to-r from-red-600 to-red-600 dark:from-red-400 dark:to-red-400 bg-clip-text text-transparent">
+                Explora nuestro Blog
+              </span>
+            </div>
+            <p className="text-base text-gray-600 dark:text-gray-300 mt-3 leading-relaxed">
+              Consejos de inversión, plusvalía y análisis de desarrollos en Cancún.
+            </p>
+            
+            {/* Indicador visual adicional */}
+            <div className="flex items-center justify-center gap-1 mt-4 text-sm text-gray-400 dark:text-gray-500 group-hover:text-red-500 transition-colors duration-300">
+              <span>Descubre más</span> 
+            </div>
+          </Link>
+        </div>
+
           {/* Galería de imágenes */}
           <motion.div 
             className="mb-20"
@@ -283,8 +316,8 @@ const AzoresPage = () => {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-3xl font-bold text-center mb-4 text-gray-800 dark:text-white">Descubre el <span className="text-rose-600">Estilo Azores</span></h2>
-            <p className="text-center text-gray-600 dark:text-gray-400 mb-12 max-w-2xl mx-auto">
+            <h2 className="text-3xl font-bold text-center mb-4 mt-14 text-gray-800 dark:text-white">Descubre el <span className="text-rose-600">Estilo Azores</span></h2>
+            <p className="text-center text-gray-600 dark:text-gray-400 mb-8 max-w-2xl mx-auto">
               Conoce los espacios que hacen de Azores el refugio ideal para quienes valoran el diseño y la tranquilidad
             </p>
             
@@ -371,7 +404,7 @@ const AzoresPage = () => {
             viewport={{ once: true }}
           >
             <h2 className="text-3xl font-bold text-center mb-4 text-gray-800 dark:text-white">Invertir en <span className="text-rose-600">Cancún</span></h2>
-            <p className="text-center text-gray-600 dark:text-gray-400 mb-12 max-w-2xl mx-auto">
+            <p className="text-center text-gray-600 dark:text-gray-400 mb-22 max-w-2xl mx-auto">
               Descubre por qué Cancún es el destino ideal para tu inversión inmobiliaria
             </p>
             
@@ -479,7 +512,7 @@ const AzoresPage = () => {
             />
           ))}
         </div>
-      </div>
+      </div> 
 
       <MetaTags
         title="Isla Diamante - Invierte con confianza"

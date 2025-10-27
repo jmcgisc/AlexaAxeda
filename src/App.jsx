@@ -33,10 +33,10 @@ import Post                 from "./components/Blog/Post";
 import ChatBubble           from "./components/ChatBubble";
 import CustomWhatsApp       from "./components/CustomWhatsApp";
 import AsesoresPage         from "./pages/asesores";
-import SeoJsonLd from "./components/SeoJsonLd";
-
-import { Routes, Route , BrowserRouter, useMatch} 
-                  from 'react-router-dom';
+import SeoJsonLd  from "./components/SeoJsonLd";
+import { BrowserRouter, Routes, Route, useMatch } from "react-router-dom";
+import BlogIndex  from "./components/Desarrollos/blog/BlogIndex";
+import BlogPost   from "./components/Desarrollos/blog/BlogPost";
 import { Helmet } from 'react-helmet';
 import { HelmetProvider } from "react-helmet-async";
 import Spinner from './components/Spinner';  
@@ -117,7 +117,10 @@ function App() {
             <Route path=  "/post/:path"     element={<Post />} />
             <Route path=  "/asesores"       element={<AsesoresPage />} />
             <Route path="/testimonios"      element={ <Suspense fallback={<Spinner />}><TestimoniosPage /></Suspense> } />
-   
+
+            <Route path="/privadas/blog" element={<BlogIndex />} />
+            <Route path="/privadas/blog/:slug" element={<BlogPost />} />
+
          </Routes>
         <LanguageDetector/>  
 

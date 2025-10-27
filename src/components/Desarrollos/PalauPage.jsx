@@ -20,6 +20,8 @@ import {
 import FormularioContactoPopup from '../Aux/FormularioContactoPopup'; 
 import { Helmet } from "react-helmet-async";
 import MetaTags from "../../../src/MetaTags";
+import { Link } from "react-router-dom";
+import { Newspaper } from "lucide-react";
 
 const amenityGroups = [
   {
@@ -306,6 +308,42 @@ const PalauPage = () => {
             </div>
           </motion.div>
 
+          <div className="mt-10">  
+            <Link
+              to="/privadas/blog"
+              className="
+                group
+                block 
+                rounded-3xl 
+                border border-gray-200 dark:border-gray-700 
+                bg-white/90 dark:bg-gray-800/70 
+                backdrop-blur-sm
+                p-6 
+                text-center 
+                shadow-lg hover:shadow-2xl transition-all duration-300 ease-out
+                transform hover:-translate-y-1
+                hover:border-indigo-200 dark:hover:border-blue-800
+                focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2
+                active:scale-95
+              "
+            >
+              <div className="flex items-center justify-center gap-3 text-blue-600 dark:text-blue-400">
+                <Newspaper className="h-7 w-7 transition-transform duration-300 group-hover:scale-110" />
+                <span className="text-xl font-bold bg-gradient-to-r from-blue-600 to-blue-600 dark:from-blue-400 dark:to-blue-400 bg-clip-text text-transparent">
+                  Explora nuestro Blog
+                </span>
+              </div>
+              <p className="text-base text-gray-600 dark:text-gray-300 mt-3 leading-relaxed">
+                Consejos de inversión, plusvalía y análisis de desarrollos en Cancún.
+              </p>
+              
+              {/* Indicador visual adicional */}
+              <div className="flex items-center justify-center gap-1 mt-4 text-sm text-gray-400 dark:text-gray-500 group-hover:text-blue-500 transition-colors duration-300">
+                <span>Descubre más</span> 
+              </div>
+            </Link>
+          </div>
+
           {/* Galería de imágenes */}
           <motion.div 
             className="mb-20"
@@ -314,8 +352,8 @@ const PalauPage = () => {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-3xl font-bold text-center mb-4 text-gray-800 dark:text-white">Experimenta la <span className="text-blue-600">Serenidad</span></h2>
-            <p className="text-center text-gray-600 dark:text-gray-400 mb-12 max-w-2xl mx-auto">
+            <h2 className="text-3xl font-bold text-center mb-4 mt-12 text-gray-800 dark:text-white">Experimenta la <span className="text-blue-600">Serenidad</span></h2>
+            <p className="text-center text-gray-600 dark:text-gray-400 mb-4 max-w-2xl mx-auto">
               Conoce los espacios que hacen de Palau un refugio de paz y elegancia
             </p>
             
