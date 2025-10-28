@@ -58,6 +58,7 @@ import a2 from "../content/blog/2025-09-10-terrenos-vs-departamentos.md?raw";
 import a3 from "../content/blog/2025-09-15-como-aprovechar-la-preventa-inmobiliaria.md?raw";
 import a4 from "../content/blog/2025-09-28-invertir-en-terrenos-en-cancun.md?raw";
 import a5 from "../content/blog/2025-10-12-isla-diamante-plusvalia.md?raw";
+import a6 from "../content/blog/2025-10-27-una-inversion-ideal-para-el-futuro.md?raw";
 
 const files: Record<string, string> = {
   "../content/blog/2025-08-25-por-que-invertir-en-cancun-hoy.md": a1,
@@ -65,6 +66,7 @@ const files: Record<string, string> = {
   "../content/blog/2025-09-15-como-aprovechar-la-preventa-inmobiliaria.md": a3,
   "../content/blog/2025-09-28-invertir-en-terrenos-en-cancun.md": a4,
   "../content/blog/2025-10-12-isla-diamante-plusvalia.md": a5,
+  "../content/blog/2025-10-27-una-inversion-ideal-para-el-futuro.md": a6,
 };
 
 // ----------------------------------------------------------------------
