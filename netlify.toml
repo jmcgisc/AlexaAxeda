@@ -22,7 +22,6 @@
 
 [functions]
   node_bundler = "zisi"
-  node_version = "20"
   included_files = ["netlify/functions/testimonios.json"]
 
 [[redirects]]
