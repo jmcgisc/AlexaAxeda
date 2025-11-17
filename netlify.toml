@@ -21,7 +21,7 @@
   CI = "false"
 
 [functions]
-  node_bundler = "zisi"
+  node_bundler = "esbuild"
   included_files = ["netlify/functions/testimonios.json"]
 
 [[redirects]]
