@@ -15,7 +15,7 @@ function keywordsHeuristic(q) {
   if (/(escritur|notar|legal|contrato)/.test(s)) kws.push("escritur");
   if (/(pago|mensual|financia|anticipo|plan)/.test(s)) kws.push("pago");
   if (/(plusval|roi|rendimien|invers)/.test(s)) kws.push("plusval");
-  if (/(precio|costo|cuánto|vale|cuestan|mensualidad)/.test(s)) kws.push("precio"); // 🔥 NUEVO
+  if (/(precio|costo|cuánto|vale|cuestan|mensualidad)/.test(s)) kws.push("precio");   
   return [...new Set(kws)];
 }
 
@@ -72,6 +72,26 @@ function buildContext(matches, maxChars = 3500) {
 
 exports.handler = async (event) => {
   try {
+
+    // --- 🔴 INICIO: PRUEBA DE CONEXIÓN RÁPIDA ---
+    const { error: testError } = await supabase
+      .from('documents') // Intenta leer tu tabla
+      .select('id')      // Solo 1 columna
+      .limit(1);         // Solo 1 fila
+
+    if (testError) {
+      // Si hay un error aquí, es un fallo de conexión
+      console.error("🔥🔥🔥 FALLO DE CONEXIÓN A SUPABASE:", testError.message);
+      
+      // Devuelve un error claro al usuario
+      return { 
+        statusCode: 500, 
+        body: JSON.stringify({ reply: "Error crítico: No se pudo conectar a la base de datos." }) 
+      };
+    }
+    console.log("✅ Conexión a Supabase exitosa.");
+    // --- 🔴 FIN: PRUEBA DE CONEXIÓN RÁPIDA ---
+
     if (event.httpMethod !== "POST") {
       return { statusCode: 405, body: "Método no permitido" };
     }
