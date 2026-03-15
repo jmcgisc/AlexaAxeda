@@ -1,4 +1,4 @@
-import { NavLink }  from "react-router-dom"; 
+import { NavLink } from "react-router-dom";
 
 const desarrollos = [
   {
@@ -20,7 +20,8 @@ const desarrollos = [
     descripcion: "Refugio entre lo verde y lo sofisticado. Inspirada en los paisajes de Portugal, Madeira ofrece diseño sobrio, vegetación y materiales nobles.",
     imagen: "Madeira.webp",
     precio: "Mensualidades desde $3,400 MXN",
-    to: "/madeira"
+    to: "/madeira",
+    soldOut: true,
   },
   {
     nombre: "Boracay – Colección Tropical",
@@ -40,80 +41,83 @@ const desarrollos = [
 ];
 
 const Desarrollos = () => {
-    return (
-        <div className="relative px-6 md:px-12 py-24 bg-gradient-to-b from-white to-gray-100 dark:from-gray-800 dark:to-gray-900 text-center overflow-hidden">
-        {/* Marca de agua decorativa */}
-            <div className="absolute inset-0 flex justify-center items-center pointer-events-none opacity-5">
-                <img src="/icons/logo-icon-transparente.svg" alt="logo isla diamante" className="w-[300px] md:w-[400px]" 
-                loading="lazy"/>
-            </div>
-            <div className="relative z-10 max-w-4xl mx-auto">
-                <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900 dark:text-white leading-tight mb-4">
-                    Donde vivir e invertir <span className="text-diamante">coexisten</span>
-                </h1>
-            <div className="w-24 h-1 mx-auto bg-diamante rounded-full" />
-                <p className="text-lg md:text-xl dark:text-gray-200 font-sans mb-4">
-                    Desarrollos residenciales en Cancún con diseño exclusivo. <br />
-            <span className="font-mediumd dark:text-gray-200">Cuatro colecciones. Cuatro formas de vivir con distinción.</span>
-            </p>
+  return (
+    <div className="relative px-6 md:px-12 py-24 bg-gradient-to-b from-white to-gray-100 dark:from-gray-800 dark:to-gray-900 text-center overflow-hidden">
+      {/* Marca de agua decorativa */}
+      <div className="absolute inset-0 flex justify-center items-center pointer-events-none opacity-5">
+        <img src="/icons/logo-icon-transparente.svg" alt="logo isla diamante" className="w-[300px] md:w-[400px]"
+          loading="lazy" />
+      </div>
+      <div className="relative z-10 max-w-4xl mx-auto">
+        <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900 dark:text-white leading-tight mb-4">
+          Donde vivir e invertir <span className="text-diamante">coexisten</span>
+        </h1>
+        <div className="w-24 h-1 mx-auto bg-diamante rounded-full" />
+        <p className="text-lg md:text-xl dark:text-gray-200 font-sans mb-4">
+          Desarrollos residenciales en Cancún con diseño exclusivo. <br />
+          <span className="font-mediumd dark:text-gray-200">Cuatro colecciones. Cuatro formas de vivir con distinción.</span>
+        </p>
+      </div>
+      {/*Desarrollos*/}
+      <div className="grid grid-cols-1 xl:grid-cols-2 gap-8">
+        <div className="flex flex-col gap-2 rounded-3xl py-2">
+          <img src="Isla_2.webp"
+            class="h-56 xl:h-[600px] w-full rounded-lg  shadow-xl  transition duration-700 ease-in-out transform hover:-translate-y-1 hover:scale-70  "
+            alt='Terrenos residenciales Isla Dimante'
+            loading="lazy" />
+          <h3 className="text-2xl font-bold dark:text-gray-200 mb-4">Isla Diamante</h3>
+          <p className="dark:text-gray-200 mb-4">
+            En Isla Diamante, cada privada es una expresión de estilo, lujo y carácter. Inspiradas en rincones icónicos del mundo, nuestras colecciones residenciales ofrecen experiencias de vida únicas, diseñadas para quienes valoran lo excepcional.
+          </p>
         </div>
-        {/*Desarrollos*/}
-        <div className="grid grid-cols-1 xl:grid-cols-2 gap-8"> 
-                <div className="flex flex-col gap-2 rounded-3xl py-2"> 
-                    <img    src="Isla_2.webp"  
-                            class="h-56 xl:h-[600px] w-full rounded-lg  shadow-xl  transition duration-700 ease-in-out transform hover:-translate-y-1 hover:scale-70  "  
-                            alt='Terrenos residenciales Isla Dimante'
-                            loading="lazy"/>
-                    <h3 className="text-2xl font-bold dark:text-gray-200 mb-4">Isla Diamante</h3> 
-                     <p className="dark:text-gray-200 mb-4">
-                        En Isla Diamante, cada privada es una expresión de estilo, lujo y carácter. Inspiradas en rincones icónicos del mundo, nuestras colecciones residenciales ofrecen experiencias de vida únicas, diseñadas para quienes valoran lo excepcional.                                  
-                    </p>
-                </div>     
 
-            <div className="hidden md:grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="hidden md:grid grid-cols-1 md:grid-cols-2 gap-8">
 
-            <NavLink className ="text-center " to = "/santorini" > 
-                <div className="flex flex-col gap-4">
-                    <img    src="Santorini.webp" 
-                            className="w-full h-56 object-cover rounded-3xl transition duration-700 ease-in-out transform hover:-translate-y-1 hover:scale-110 hover:shadow-2xl"
-                            //srcSet="/Santorini-1440.webp 2x"
-                            width="364"
-                            height="428"
-                            alt="Terreno en Santorini Isla Diamante"
-                            loading="lazy"
-                    />
-                    <h3 className="text-2xl font-bold text-gray-400 ">Santorini - Colección Mediterranea</h3>
-                </div>
-            </NavLink>   
+          <NavLink className="text-center " to="/santorini" >
+            <div className="flex flex-col gap-4">
+              <img src="Santorini.webp"
+                className="w-full h-56 object-cover rounded-3xl transition duration-700 ease-in-out transform hover:-translate-y-1 hover:scale-110 hover:shadow-2xl"
+                //srcSet="/Santorini-1440.webp 2x"
+                width="364"
+                height="428"
+                alt="Terreno en Santorini Isla Diamante"
+                loading="lazy"
+              />
+              <h3 className="text-2xl font-bold text-gray-400 ">Santorini - Colección Mediterranea</h3>
+            </div>
+          </NavLink>
 
-            <NavLink className ="text-center " to = "/azores" > 
-                <div className="flex flex-col gap-4">
-                    <img    src="Anzores.webp" 
-                            className="w-full h-56 object-cover rounded-3xl transition duration-700 ease-in-out transform hover:-translate-y-1 hover:scale-110 hover:shadow-2xl" 
-                            width="364"
-                            height="428"
-                            alt="Terreno en Azores Isla Diamante"
-                            loading="lazy" 
-                    />   
-                    <h3 className="text-2xl font-bold text-gray-400 ">Azores – Colección Atlántica</h3>
-                </div> 
-            </NavLink>   
+          <NavLink className="text-center " to="/azores" >
+            <div className="flex flex-col gap-4">
+              <img src="Anzores.webp"
+                className="w-full h-56 object-cover rounded-3xl transition duration-700 ease-in-out transform hover:-translate-y-1 hover:scale-110 hover:shadow-2xl"
+                width="364"
+                height="428"
+                alt="Terreno en Azores Isla Diamante"
+                loading="lazy"
+              />
+              <h3 className="text-2xl font-bold text-gray-400 ">Azores – Colección Atlántica</h3>
+            </div>
+          </NavLink>
 
-            <NavLink className ="text-center " to = "/madeira" > 
-                <div className="flex flex-col gap-4">
-                    <img    src="Madeira.webp" 
-                            className="w-full h-56 object-cover rounded-3xl transition duration-700 ease-in-out transform hover:-translate-y-1 hover:scale-110 hover:shadow-2xl" 
-                            alt='Invierte en Maderira Isla Diamante' 
-                            width="364"
-                            height="428" 
-                            loading="lazy" 
-                    />     
-                    <h3 className="text-2xl font-bold text-gray-400 ">Madeira - Colección Natural </h3> 
-                </div>
-            </NavLink>   
+          <NavLink className="text-center relative group" to="/madeira">
+            <div className="absolute top-2 right-2 bg-red-600 text-white text-xs px-2 py-1 rounded-full shadow-md z-10">
+              SOLD OUT
+            </div>
+            <div className="flex flex-col gap-4">
+              <img src="Madeira.webp"
+                className="w-full h-56 object-cover rounded-3xl grayscale opacity-60 transition duration-700 ease-in-out transform group-hover:-translate-y-1 group-hover:scale-110 group-hover:shadow-2xl"
+                alt='Invierte en Maderira Isla Diamante'
+                width="364"
+                height="428"
+                loading="lazy"
+              />
+              <h3 className="text-2xl font-bold text-gray-400 ">Madeira - Colección Natural </h3>
+            </div>
+          </NavLink>
 
 
-{/* 
+          {/* 
             <NavLink className="text-center relative group" to="/boracay">
         
                 <div className="absolute top-2 right-2 bg-red-600 text-white text-xs px-2 py-1 rounded-full shadow-md z-10">
@@ -133,24 +137,24 @@ const Desarrollos = () => {
  */}
 
 
-            <NavLink className="text-center relative group" to="/palau">
+          <NavLink className="text-center relative group" to="/palau">
 
-                <div className="flex flex-col gap-4">
-                    <img
-                    src="Palau1.jpeg"
-                    className="w-full h-56 object-cover rounded-3xl transition duration-700 ease-in-out transform group-hover:-translate-y-1 group-hover:scale-110 group-hover:shadow-2xl"
-                    alt="Plusvalía en Cancún"
-                    loading="lazy"
-                    />
-                    <h3 className="text-2xl font-bold text-gray-400">Palau – Colección Serena</h3>
-                </div>
-                </NavLink>  
-
-
+            <div className="flex flex-col gap-4">
+              <img
+                src="Palau1.jpeg"
+                className="w-full h-56 object-cover rounded-3xl transition duration-700 ease-in-out transform group-hover:-translate-y-1 group-hover:scale-110 group-hover:shadow-2xl"
+                alt="Plusvalía en Cancún"
+                loading="lazy"
+              />
+              <h3 className="text-2xl font-bold text-gray-400">Palau – Colección Serena</h3>
             </div>
-        </div>
+          </NavLink>
 
- {/* Desarrollos */}
+
+        </div>
+      </div>
+
+      {/* Desarrollos */}
       <section className="bg-white dark:bg-gray-900 dark:text-white px-6 py-16">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {desarrollos.map((d, idx) => (
@@ -160,15 +164,15 @@ const Desarrollos = () => {
               className={`group ${d.soldOut ? "pointer-events-none opacity-80" : ""}`}
             >
               <div className="relative bg-gray-50 dark:bg-gray-800 rounded-3xl shadow-xl hover:shadow-2xl transition overflow-hidden">
-            
+
                 {/* Etiqueta de precio */}
                 {d.precio && (
                   <div className="absolute top-4 left-4 bg-diamonBlack text-white text-sm px-3 py-1 rounded-full shadow-md z-10">
                     {d.precio}
                   </div>
-                )}   
-                
-                 {/* Etiqueta SOLD OUT */}
+                )}
+
+                {/* Etiqueta SOLD OUT */}
                 {d.soldOut && (
                   <div className="absolute top-4 right-4 bg-red-600 text-white text-xs px-3 py-1 rounded-full z-10 shadow-md">
                     SOLD OUT
@@ -178,9 +182,8 @@ const Desarrollos = () => {
                 <img
                   src={d.imagen}
                   alt={d.nombre}
-                  className={`w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500 ${
-                    d.soldOut ? "grayscale opacity-60" : ""
-                  }`}
+                  className={`w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500 ${d.soldOut ? "grayscale opacity-60" : ""
+                    }`}
                   width="364"
                   height="428"
                   loading="lazy"
@@ -198,8 +201,8 @@ const Desarrollos = () => {
           ))}
         </div>
       </section>
-    </div> 
-    )
+    </div>
+  )
 }
 
 export default Desarrollos
