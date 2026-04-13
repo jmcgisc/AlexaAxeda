@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ExternalLink, Users, Target, BarChart3, Megaphone, Handshake, Scale, CreditCard, HeartHandshake } from "lucide-react";
+import { Helmet } from "react-helmet-async";
 
 const agentes = [
   {
@@ -75,8 +76,15 @@ export default function AsesoresPage() {
   const [active, setActive] = useState("coordinador");
 
   return (
-    <section className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50 dark:from-neutral-900 dark:to-slate-900 py-12 px-4 sm:px-6">
-      <div className="max-w-6xl mx-auto">
+    <>
+      <Helmet>
+        <title>Asesores - Isla Diamante Cancún</title>
+        <meta name="description" content="Conecta con el experto adecuado para cada necesidad en Desarrollos Diamante. Coordinadores, ventas, especialistas en inversiones y más." />
+        <meta name="keywords" content="Isla Diamante Cancún, Terrenos en Cancún, Inversiones" />
+        <link rel="canonical" href="https://desarrollosdiamante.com/asesores" />
+      </Helmet>
+      <section className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50 dark:from-neutral-900 dark:to-slate-900 py-12 px-4 sm:px-6">
+        <div className="max-w-6xl mx-auto">
         {/* Header */}
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
@@ -174,5 +182,6 @@ export default function AsesoresPage() {
         </motion.div>
       </div>
     </section>
+    </>
   );
 }

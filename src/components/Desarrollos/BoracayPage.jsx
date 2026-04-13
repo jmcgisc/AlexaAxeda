@@ -125,7 +125,7 @@ const BoracayPage = () => {
       <Helmet>
         <title>Boracay - Privada Residencial con Estilo Tropical | Isla Diamante</title>
         <meta name="description" content="Descubre Boracay: 171 terrenos con amenidades de lujo en Cancún. Albercas, áreas recreativas y plusvalía garantizada en un entorno tropical único." />
-        <meta name="keywords" content="Boracay, terrenos Cancún, privada residencial, plusvalía, albercas, parque infantil, desarrollo inmobiliario, Isla Diamante" />
+        <meta name="keywords" content="Isla Diamante Cancún, Terrenos en Cancún, Inversiones" />
         <link rel="canonical" href="https://desarrollosdiamante.com/boracay" />
         <meta property="og:title" content="Privada Boracay - Desarrollo Residencial con Amenidades de Lujo" />
         <meta property="og:description" content="Vive en Boracay, la privada con estilo tropical, albercas, áreas recreativas y seguridad 24/7. Terrenos con alta plusvalía en Cancún." />

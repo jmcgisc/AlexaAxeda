@@ -16,12 +16,23 @@ import LivingSectionEn from '../LivingSectionEn';
 import EngineeringSectionEn from '../EngineeringSectionEn';
 import TestimoniosSlider from '../Aux/TestimoniosSlider';
 import pdf from '../../../public/ISLA_DIAMANTE.pdf';
+import { Helmet } from "react-helmet-async";
 
 const contentStyle = { width: 1000 };
 
 export const HomeEn = () => {
   return (
     <>
+      <Helmet>
+        <title>Isla Diamante - Invest in Cancun</title>
+        <meta name="description" content="Exclusive land in Cancun within private communities with a beach club, without credit checks, with guaranteed capital gains, interest-free for the lifetime of the credit." />
+        <meta name="keywords" content="Isla Diamante Cancún, Terrenos en Cancún, Inversiones" />
+        <meta property="og:title" content="Isla Diamante - Invest in Cancun" />
+        <meta property="og:description" content="Invest in paradise. Buy your land in Cancun with security, capital gains and without interests." />
+        <meta property="og:image" content="https://desarrollosdiamante.com/Alexa_.jpeg" />
+        <meta property="og:url" content="https://desarrollosdiamante.com/" />
+        <link rel="canonical" href="https://desarrollosdiamante.com/" />
+      </Helmet>
       <section id="home" className="relative w-full h-screen overflow-hidden">
         {/* Video o imagen de fondo */}
         <video

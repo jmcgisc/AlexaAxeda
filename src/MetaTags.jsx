@@ -1,9 +1,10 @@
 import { Helmet } from "react-helmet";
 
-const MetaTags = ({ title, description, image, url }) => (
+const MetaTags = ({ title, description, image, url, keywords = "Isla Diamante Cancún, Terrenos en Cancún, Inversiones" }) => (
   <Helmet>
     <title>{title}</title>
     <meta name="description" content={description} />
+    <meta name="keywords" content={keywords} />
 
     {/* Open Graph */}
     <meta property="og:type" content="website" />

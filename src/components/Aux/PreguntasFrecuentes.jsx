@@ -149,6 +149,7 @@ const PreguntasFrecuentes = () => {
         <Helmet>
           <title>Preguntas Frecuentes - Isla Diamante Cancún</title>
           <meta name="description" content="Resuelve todas tus dudas sobre los terrenos, privadas, financiamiento y proceso de compra en Isla Diamante." />
+          <meta name="keywords" content="Isla Diamante Cancún, Terrenos en Cancún, Inversiones" />
           <link rel="canonical" href="https://desarrollosdiamante.com/preguntas" />
           <meta property="og:title" content="FAQ Isla Diamante" />
           <meta property="og:description" content="¿Cómo comprar? ¿Quién es la desarrolladora? ¿Hay plusvalía? Todo lo que necesitas saber está aquí." />

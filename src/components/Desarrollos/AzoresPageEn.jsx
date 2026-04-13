@@ -135,7 +135,7 @@ const AzoresPageEn = () => {
       <Helmet>
         <title>Azores - Residential Community with Minimalist and Natural Design | Isla Diamante</title>
         <meta name="description" content="Discover Azores: 174 lots with premium amenities in Cancún. Combines nature and minimalist architecture in a tranquil and secure environment with high appreciation." />
-        <meta name="keywords" content="Azores, Cancún lots, residential community, appreciation, swimming pools, mini golf, padel courts, real estate development, Isla Diamante, minimalist design" />
+        <meta name="keywords" content="Isla Diamante Cancún, Terrenos en Cancún, Inversiones" />
         <link rel="canonical" href="https://desarrollosdiamante.com/en/azores" />
         <meta property="og:title" content="Azores Community - Residential Development with Minimalist Style" />
         <meta property="og:description" content="Live in Azores, the community that combines nature and minimalist architecture. Swimming pools, mini golf, sports areas and 24/7 security in Cancún." />

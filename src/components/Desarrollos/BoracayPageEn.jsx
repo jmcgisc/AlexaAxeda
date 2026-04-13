@@ -126,7 +126,7 @@ const BoracayPageEn = () => {
       <Helmet>
         <title>Boracay - Residential Community with Tropical Style | Isla Diamante</title>
         <meta name="description" content="Discover Boracay: 171 lots with luxury amenities in Cancún. Swimming pools, recreational areas and guaranteed appreciation in a unique tropical environment." />
-        <meta name="keywords" content="Boracay, Cancún lots, residential community, appreciation, swimming pools, playground, real estate development, Isla Diamante" />
+        <meta name="keywords" content="Isla Diamante Cancún, Terrenos en Cancún, Inversiones" />
         <link rel="canonical" href="https://desarrollosdiamante.com/en/boracay" />
         <meta property="og:title" content="Boracay Community - Residential Development with Luxury Amenities" />
         <meta property="og:description" content="Live in Boracay, the community with tropical style, swimming pools, recreational areas and 24/7 security. Lots with high appreciation in Cancún." />

@@ -128,7 +128,7 @@ const MadeiraPage = () => {
       <Helmet>
         <title>Madeira - Privada Residencial Deportiva | Isla Diamante</title>
         <meta name="description" content="Descubre Madeira: 165 terrenos con amenidades deportivas de lujo. Gimnasio, canchas multideporte, albercas y áreas sociales en un entorno seguro y moderno." />
-        <meta name="keywords" content="Madeira, terrenos Cancún, privada residencial, plusvalía, albercas, canchas deportivas, gimnasio, desarrollo inmobiliario, Isla Diamante" />
+        <meta name="keywords" content="Isla Diamante Cancún, Terrenos en Cancún, Inversiones" />
         <link rel="canonical" href="https://desarrollosdiamante.com/madeira" />
         <meta property="og:title" content="Privada Madeira - Desarrollo Residencial Deportivo" />
         <meta property="og:description" content="Vive en Madeira, la privada con enfoque deportivo: gimnasio, canchas multideporte, albercas y seguridad 24/7. Terrenos con alta plusvalía." />

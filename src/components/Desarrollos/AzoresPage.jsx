@@ -132,7 +132,7 @@ const AzoresPage = () => {
       <Helmet>
         <title>Azores - Privada Residencial con Diseño Minimalista y Natural | Isla Diamante</title>
         <meta name="description" content="Descubre Azores: 174 terrenos con amenidades premium in Cancún. Combina naturaleza y arquitectura minimalista en un entorno tranquilo y seguro con alta plusvalía." />
-        <meta name="keywords" content="Azores, terrenos Cancún, privada residencial, plusvalía, albercas, mini golf, canchas pádel, desarrollo inmobiliario, Isla Diamante, diseño minimalista" />
+        <meta name="keywords" content="Isla Diamante Cancún, Terrenos en Cancún, Inversiones" />
         <link rel="canonical" href="https://desarrollosdiamante.com/azores" />
         <meta property="og:title" content="Privada Azores - Desarrollo Residencial con Estilo Minimalista" />
         <meta property="og:description" content="Vive en Azores, la privada que combina naturaleza y arquitectura minimalista. Albercas, mini golf, áreas deportivas y seguridad 24/7 en Cancún." />

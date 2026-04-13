@@ -127,7 +127,7 @@ const SantoriniPage = () => {
       <Helmet>
         <title>Santorini - Privada Residencial con Estilo Mediterráneo | Isla Diamante</title>
         <meta name="description" content="Descubre Santorini: 149 terrenos con amenidades de lujo en Cancún. Inspirado en el mar Egeo, fusiona elegancia, serenidad y funcionalidad en un entorno seguro." />
-        <meta name="keywords" content="Santorini, terrenos Cancún, privada residencial, plusvalía, albercas, canchas pádel, desarrollo inmobiliario, Isla Diamante, estilo mediterráneo" />
+        <meta name="keywords" content="Isla Diamante Cancún, Terrenos en Cancún, Inversiones" />
         <link rel="canonical" href="https://desarrollosdiamante.com/santorini" />
         <meta property="og:title" content="Privada Santorini - Desarrollo Residencial con Estilio Mediterráneo" />
         <meta property="og:description" content="Vive en Santorini, la privada inspirada en el mar Egeo con albercas, canchas de pádel, áreas sociales y seguridad 24/7. Terrenos con alta plusvalía en Cancún." />

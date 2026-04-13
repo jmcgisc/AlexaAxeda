@@ -55,6 +55,7 @@ const BlogHome = () => {
     <Helmet>
       <title>Blog Isla Diamante - Inversión en Cancún</title>
       <meta name="description" content="Lee artículos sobre inversión inmobiliaria, plusvalía, tips legales y análisis de terrenos en Cancún." />
+      <meta name="keywords" content="Isla Diamante Cancún, Terrenos en Cancún, Inversiones" />
       <link rel="canonical" href="https://desarrollosdiamante.com/blog" />
       <meta property="og:title" content="Blog Isla Diamante" />
       <meta property="og:description" content="Aprende todo sobre inversión segura en tierra, tendencias inmobiliarias y desarrollos en Cancún." />

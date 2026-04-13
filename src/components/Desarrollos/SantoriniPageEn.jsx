@@ -132,7 +132,7 @@ const SantoriniPageEn = () => {
       <Helmet>
         <title>Santorini - Residential Community with Mediterranean Style | Isla Diamante</title>
         <meta name="description" content="Discover Santorini: 149 lots with luxury amenities in Cancún. Inspired by the Aegean Sea, it fuses elegance, serenity and functionality in a secure environment." />
-        <meta name="keywords" content="Santorini, Cancún lots, residential community, appreciation, swimming pools, padel courts, real estate development, Isla Diamante, Mediterranean style" />
+        <meta name="keywords" content="Isla Diamante Cancún, Terrenos en Cancún, Inversiones" />
         <link rel="canonical" href="https://desarrollosdiamante.com/en/santorini" />
         <meta property="og:title" content="Santorini Community - Residential Development with Mediterranean Style" />
         <meta property="og:description" content="Live in Santorini, the community inspired by the Aegean Sea with swimming pools, padel courts, social areas and 24/7 security. Lots with high appreciation in Cancún." />

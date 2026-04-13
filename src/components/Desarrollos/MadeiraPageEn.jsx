@@ -130,7 +130,7 @@ const MadeiraPageEn = () => {
       <Helmet>
         <title>Madeira - Sports Residential Community | Isla Diamante</title>
         <meta name="description" content="Discover Madeira: 165 lots with luxury sports amenities. Gym, multi-sport courts, swimming pools and social areas in a safe and modern environment." />
-        <meta name="keywords" content="Madeira, Cancún lots, residential community, appreciation, swimming pools, sports courts, gym, real estate development, Isla Diamante" />
+        <meta name="keywords" content="Isla Diamante Cancún, Terrenos en Cancún, Inversiones" />
         <link rel="canonical" href="https://desarrollosdiamante.com/en-madeira" />
         <meta property="og:title" content="Madeira Community - Sports Residential Development" />
         <meta property="og:description" content="Live in Madeira, the community with sports focus: gym, multi-sport courts, swimming pools and 24/7 security. Lots with high appreciation." />

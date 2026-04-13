@@ -27,7 +27,8 @@ export const HomeEs = () => {
       <Helmet>
 
         <title>Isla Diamante - Invierte en Cancún</title>
-        <meta name="isla diamante" content="Terrenos exclusivos en Cancún dentro de privadas con club de playa, sin buró, con plusvalía garantizada, sin intereses en toda la vida del crédito." />
+        <meta name="description" content="Terrenos exclusivos en Cancún dentro de privadas con club de playa, sin buró, con plusvalía garantizada, sin intereses en toda la vida del crédito." />
+        <meta name="keywords" content="Isla Diamante Cancún, Terrenos en Cancún, Inversiones" />
         <meta property="og:title" content="Isla Diamante - Invierte en Cancún" />
         <meta property="og:description" content="Invierte en el paraíso. Compra tu terreno en Cancún con seguridad, plusvalía y sin intereses." />
         <meta property="og:image" content="https://desarrollosdiamante.com/Alexa_.jpeg" />

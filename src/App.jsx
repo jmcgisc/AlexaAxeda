@@ -60,6 +60,7 @@ function App() {
 
         <title>Isla Diamante | Alexa Delgado</title>
         <meta name="description" content="Axeda terrenos residenciales en Mérida y Cancún, inversiones inmobiliarias, sin comprobar buró de crédito." />
+        <meta name="keywords" content="Isla Diamante Cancún, Terrenos en Cancún, Inversiones" />
 
         {/* Open Graph / Facebook */}
         <meta property="og:title" content="Isla Diamante | Alexa Delgado" />

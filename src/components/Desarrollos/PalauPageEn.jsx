@@ -124,7 +124,7 @@ const PalauPageEn = () => {
       <Helmet>
         <title>Palau - Serene Luxury Residential Collection | Isla Diamante</title>
         <meta name="description" content="Discover Palau: 164 exclusive lots with conscious design and wellness amenities. Water mirrors, organic clubhouse, and architecture integrating luxury with tranquility." />
-        <meta name="keywords" content="Palau, Cancún lots, serene luxury, appreciation, water mirror, clubhouse, sustainable development, Isla Diamante, exclusive collection" />
+        <meta name="keywords" content="Isla Diamante Cancún, Terrenos en Cancún, Inversiones" />
         <link rel="canonical" href="https://desarrollosdiamante.com/en-palau" />
         <meta property="og:title" content="Palau Collection - Serene Luxury and Conscious Design" />
         <meta property="og:description" content="Live in Palau, the collection celebrating the connection between luxury and tranquility. Exclusive lots with wellness amenities and organic design." />

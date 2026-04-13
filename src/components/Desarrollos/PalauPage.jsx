@@ -126,7 +126,7 @@ const PalauPage = () => {
       <Helmet>
         <title>Palau - Residencial de Lujo Sereno | Isla Diamante</title>
         <meta name="description" content="Descubre Palau: 164 terrenos exclusivos con diseño consciente y amenities de bienestar. Espejos de agua, casa club orgánica y arquitectura integrada con la naturaleza." />
-        <meta name="keywords" content="Palau, terrenos Cancún, lujo sereno, plusvalía, espejo de agua, casa club, desarrollo sustentable, Isla Diamante, colección exclusiva" />
+        <meta name="keywords" content="Isla Diamante Cancún, Terrenos en Cancún, Inversiones" />
         <link rel="canonical" href="https://desarrollosdiamante.com/palau" />
         <meta property="og:title" content="Palau - Lujo Sereno y Diseño Consciente" />
         <meta property="og:description" content="Vive en Palau, la colección que celebra la conexión entre lujo y tranquilidad. Terrenos exclusivos con amenities de bienestar y diseño orgánico." />
