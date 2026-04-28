@@ -33,6 +33,7 @@ import Post                 from "./components/Blog/Post";
 import ChatBubble           from "./components/ChatBubble";
 import CustomWhatsApp       from "./components/CustomWhatsApp";
 import AsesoresPage         from "./pages/asesores";
+import Reventas             from "./pages/Reventas";
 import SeoJsonLd  from "./components/SeoJsonLd";
 import { BrowserRouter, Routes, Route, useMatch } from "react-router-dom";
 import BlogIndex  from "./components/Desarrollos/blog/BlogIndex";
@@ -117,6 +118,8 @@ function App() {
             <Route path=  "/blog"           element={<BlogHome />} />
             <Route path=  "/post/:path"     element={<Post />} />
             <Route path=  "/asesores"       element={<AsesoresPage />} />
+            <Route path=  "/reventas"       element={<Reventas />} />
+            <Route path=  "/en-reventas"    element={<Reventas />} />
             <Route path="/testimonios"      element={ <Suspense fallback={<Spinner />}><TestimoniosPage /></Suspense> } />
 
             <Route path="/privadas/blog" element={<BlogIndex />} />

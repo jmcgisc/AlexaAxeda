@@ -1,10 +1,10 @@
-import { useState, useEffect } from "react"; 
+import { useState, useEffect } from "react";
 import { RiMenuLine, RiCloseLine, RiPhoneFill } from "react-icons/ri";
-import { NavLink, Link }  from "react-router-dom"; 
-import ThemeToggle  from "./DarkModeToggle";
-import imageBlack   from "./images/LogoBlancoTransparente.webp";
-import imageWhite   from "./images/LogoNegroTransparente.webp"; 
-    
+import { NavLink, Link } from "react-router-dom";
+import ThemeToggle from "./DarkModeToggle";
+import imageBlack from "./images/LogoBlancoTransparente.webp";
+import imageWhite from "./images/LogoNegroTransparente.webp";
+
 const SmoothScrollNavEn = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -35,7 +35,7 @@ const SmoothScrollNavEn = () => {
           </a>
           <ThemeToggle />
         </div>
-        
+
         <div className="flex gap-4">
           <Link to="/es" className="hover:underline text-4xl ">🇲🇽</Link>
           <Link to="/en" className="hover:underline text-4xl ">🇺🇸</Link>
@@ -59,7 +59,7 @@ const SmoothScrollNavEn = () => {
           >
             Home
           </NavLink>
-          {["en-santorini", "en-azores", "en-madeira", "en-boracay", "en-palau"].map((section) => (
+          {["en-reventas", "en-santorini", "en-azores", "en-madeira", "en-boracay", "en-palau"].map((section) => (
             <NavLink
               key={section}
               to={`/${section}`}
@@ -81,10 +81,9 @@ const SmoothScrollNavEn = () => {
 
       {/* Menú móvil lateral animado */}
       <div
-        className={`fixed top-[80px] right-0 w-full max-w-[300px] h-screen bg-white dark:bg-gray-900 shadow-md p-6 flex flex-col gap-6 z-50 xl:hidden transform transition-transform duration-300 ${
-          isOpen ? "translate-x-0" : "translate-x-full"
-        }`}
-       >
+        className={`fixed top-[80px] right-0 w-full max-w-[300px] h-screen bg-white dark:bg-gray-900 shadow-md p-6 flex flex-col gap-6 z-50 xl:hidden transform transition-transform duration-300 ${isOpen ? "translate-x-0" : "translate-x-full"
+          }`}
+      >
         <NavLink
           to="/"
           onClick={() => setIsOpen(false)}
@@ -92,8 +91,8 @@ const SmoothScrollNavEn = () => {
         >
           Home
         </NavLink>
-        
-        {["santorini", "azores", "madeira", "boracay", "palau"].map((section) => (
+
+        {["reventas", "santorini", "azores", "madeira", "boracay", "palau"].map((section) => (
           <NavLink
             key={section}
             to={`/en-${section}`}
@@ -104,21 +103,21 @@ const SmoothScrollNavEn = () => {
           </NavLink>
         ))}
 
-         {/* Tarjeta de contacto con íconos */}
-              <div className="mt-4 p-4 bg-white dark:bg-gray-800 rounded-xl shadow-md text-sm space-y-4">
-                <p className="font-semibold text-gray-700 h-8">Need Help?</p>
-                <p className="text-gray-600 dark:text-gray-300 h-8"> <a href="mailto:admin@vagamociontravel.com" className="text-blue-600 dark:text-blue-400 underline text-xs">realtor.alexadelgado@gmail.com</a></p>
-                <p className="text-gray-600 dark:text-gray-300 h-8">📞 <span className="font-semibold">+52 55 70 13 77 64</span></p>
-              
-                <a
-                  href="#contacto"
-                  onClick={() => setIsOpen(false)}
-                  className="inline-block w-full text-center mt-2 px-4 py-2 bg-gradient-to-r from-blue-500 to-purple-600 text-white font-semibold rounded-full shadow-md hover:scale-105 transition-transform duration-300"
-                >
-                  Contact us now!
-                </a>
-              
-              </div>
+        {/* Tarjeta de contacto con íconos */}
+        <div className="mt-4 p-4 bg-white dark:bg-gray-800 rounded-xl shadow-md text-sm space-y-4">
+          <p className="font-semibold text-gray-700 h-8">Need Help?</p>
+          <p className="text-gray-600 dark:text-gray-300 h-8"> <a href="mailto:admin@vagamociontravel.com" className="text-blue-600 dark:text-blue-400 underline text-xs">realtor.alexadelgado@gmail.com</a></p>
+          <p className="text-gray-600 dark:text-gray-300 h-8">📞 <span className="font-semibold">+52 55 70 13 77 64</span></p>
+
+          <a
+            href="#contacto"
+            onClick={() => setIsOpen(false)}
+            className="inline-block w-full text-center mt-2 px-4 py-2 bg-gradient-to-r from-blue-500 to-purple-600 text-white font-semibold rounded-full shadow-md hover:scale-105 transition-transform duration-300"
+          >
+            Contact us now!
+          </a>
+
+        </div>
       </div>
     </>
   );
