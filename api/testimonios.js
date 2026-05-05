@@ -3,15 +3,6 @@ import multiparty from 'multiparty';
 import fs from 'fs';
 import path from 'path';
 
-const supabaseKey = process.env.SUPABASE_KEY;
-const supabaseUrl = process.env.SUPABASE_URL;
-
-if (!supabaseUrl || !supabaseKey) {
-  console.warn("supabaseUrl and supabaseKey are required. Skipping initialization in dev if not present.");
-}
-
-const supabase = createClient(supabaseUrl || "https://dummy.supabase.co", supabaseKey || "dummy");
-
 export const config = {
   api: {
     bodyParser: false,
@@ -25,6 +16,16 @@ export default async function handler(req, res) {
   if (req.method === 'OPTIONS') {
     return res.status(200).end();
   }
+
+  const supabaseUrl = process.env.SUPABASE_URL;
+  const supabaseKey = process.env.SUPABASE_KEY;
+
+  if (!supabaseUrl || !supabaseKey) {
+    console.error("Faltan credenciales de Supabase");
+    return res.status(500).json({ error: "Faltan credenciales de base de datos" });
+  }
+
+  const supabase = createClient(supabaseUrl, supabaseKey);
 
   if (req.method === 'GET') {
     const { data, error } = await supabase

@@ -1,12 +1,5 @@
 import OpenAI from "openai";
 import { createClient } from "@supabase/supabase-js";
-
-// ---- CLIENTES
-const client = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
-const supabaseUrl = process.env.SUPABASE_URL_IA || process.env.SUPABASE_URL;
-const supabaseKey = process.env.SUPABASE_KEY_IA || process.env.SUPABASE_KEY;
-const supabase = createClient(supabaseUrl, supabaseKey);
-
 // ---- HEURÍSTICAS DE PALABRAS CLAVE PARA BÚSQUEDA DE TEXTO
 function keywordsHeuristic(q) {
   const s = q.toLowerCase();
@@ -21,7 +14,7 @@ function keywordsHeuristic(q) {
 }
 
 // ---- BÚSQUEDA POR EMBEDDINGS (RPC)
-async function searchByEmbeddings(queryEmbedding, { threshold = 0.05, k = 12 } = {}) {
+async function searchByEmbeddings(supabase, queryEmbedding, { threshold = 0.05, k = 12 } = {}) {
   const { data, error } = await supabase.rpc("match_documents", {
     query_embedding: queryEmbedding,
     match_threshold: threshold,
@@ -36,7 +29,7 @@ async function searchByEmbeddings(queryEmbedding, { threshold = 0.05, k = 12 } =
 }
 
 // ---- BÚSQUEDA POR TEXTO (FALLBACK)
-async function searchByText(query, limit = 8) {
+async function searchByText(supabase, query, limit = 8) {
   const kw = keywordsHeuristic(query);
   let q = query;
   const likes = [];
@@ -80,6 +73,22 @@ export default async function handler(req, res) {
   }
 
   try {
+    const supabaseUrl = process.env.SUPABASE_URL_IA || process.env.SUPABASE_URL;
+    const supabaseKey = process.env.SUPABASE_KEY_IA || process.env.SUPABASE_KEY;
+    
+    if (!supabaseUrl || !supabaseKey) {
+      console.error("Faltan credenciales de Supabase");
+      return res.status(500).json({ error: "Faltan credenciales de base de datos" });
+    }
+
+    if (!process.env.OPENAI_API_KEY) {
+      console.error("Falta API Key de OpenAI");
+      return res.status(500).json({ error: "Falta API Key de OpenAI" });
+    }
+
+    const supabase = createClient(supabaseUrl, supabaseKey);
+    const client = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
+
     // --- 🔴 INICIO: PRUEBA DE CONEXIÓN RÁPIDA ---
     const { error: testError } = await supabase
       .from('documents')
@@ -117,13 +126,13 @@ export default async function handler(req, res) {
     // 2) Recuperación por embeddings
     let matches = [];
     if (queryEmbedding?.length) {
-      matches = await searchByEmbeddings(queryEmbedding, { threshold: 0.05, k: 12 });
+      matches = await searchByEmbeddings(supabase, queryEmbedding, { threshold: 0.05, k: 12 });
       console.log("📄 Matches por embeddings:", matches?.length || 0);
     }
 
     // 3) Fallback a búsqueda por texto si no hay matches
     if (!matches || matches.length === 0) {
-      const textHits = await searchByText(message, 8);
+      const textHits = await searchByText(supabase, message, 8);
       console.log("📝 Matches por texto (fallback):", textHits?.length || 0);
       matches = textHits;
     }
