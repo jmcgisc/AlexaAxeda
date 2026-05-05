@@ -4,8 +4,8 @@ import { MessageCircle, X, Send, Bot, User } from "lucide-react";
 export default function ChatBubble() {
   const [isOpen, setIsOpen] = useState(false);
   const [messages, setMessages] = useState([
-    { 
-      sender: "bot", 
+    {
+      sender: "bot",
       text: "👋 ¡Hola! Soy Alexa, coordinadora de Desarrollos Diamante. ¿En qué puedo ayudarte hoy?",
       timestamp: new Date()
     },
@@ -16,8 +16,8 @@ export default function ChatBubble() {
   const sendMessage = async () => {
     if (!input.trim()) return;
 
-    const userMessage = { 
-      sender: "user", 
+    const userMessage = {
+      sender: "user",
       text: input,
       timestamp: new Date()
     };
@@ -27,28 +27,41 @@ export default function ChatBubble() {
 
     try {
       // Simulamos un tiempo de respuesta
-      setTimeout(async () => {
-        // Aquí llamas a tu backend o función serverless
-        const res = await fetch("/.netlify/functions/chat", {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({ message: input }),
-            });
-        const data = await res.json();
+      await new Promise(resolve => setTimeout(resolve, 1000));
 
-        setMessages((prev) => [...prev, { 
-          sender: "bot", 
-          text: data.reply,
-          timestamp: new Date()
-        }]);
-        setLoading(false);
-      }, 1000);
+      // Aquí llamas a tu backend o función serverless
+      const res = await fetch("/api/chat", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ message: input }),
+      });
+
+      const text = await res.text();
+      if (!text) {
+        throw new Error("Respuesta vacía del servidor");
+      }
+
+      let data;
+      try {
+        data = JSON.parse(text);
+      } catch (e) {
+        console.error("No se pudo parsear el JSON:", text);
+        throw new Error("Respuesta inválida del servidor");
+      }
+
+      setMessages((prev) => [...prev, {
+        sender: "bot",
+        text: data.reply || data.error || "No pude generar una respuesta.",
+        timestamp: new Date()
+      }]);
     } catch (error) {
-      setMessages((prev) => [...prev, { 
-        sender: "bot", 
+      console.error("Error en el chat:", error);
+      setMessages((prev) => [...prev, {
+        sender: "bot",
         text: "⚠️ Lo siento, estoy teniendo dificultades técnicas. Por favor intenta nuevamente.",
         timestamp: new Date()
       }]);
+    } finally {
       setLoading(false);
     }
   };
@@ -85,7 +98,7 @@ export default function ChatBubble() {
                 <p className="text-xs text-white/80">Desarrollos Diamante</p>
               </div>
             </div>
-            <button 
+            <button
               onClick={() => setIsOpen(false)}
               className="text-white/80 hover:text-white transition-colors"
             >
@@ -113,11 +126,10 @@ export default function ChatBubble() {
                     )}
                   </div>
                   <div
-                    className={`px-4 py-3 rounded-2xl ${
-                      msg.sender === "user"
+                    className={`px-4 py-3 rounded-2xl ${msg.sender === "user"
                         ? "bg-gradient-to-r from-blue-500 to-blue-600 text-white rounded-br-none"
                         : "bg-white dark:bg-neutral-800 text-gray-800 dark:text-gray-200 rounded-bl-none border border-gray-200 dark:border-neutral-700"
-                    }`}
+                      }`}
                   >
                     <p className="text-sm">{msg.text}</p>
                     <p className={`text-xs mt-1 ${msg.sender === "user" ? "text-blue-100" : "text-gray-500"}`}>
@@ -127,7 +139,7 @@ export default function ChatBubble() {
                 </div>
               </div>
             ))}
-            
+
             {loading && (
               <div className="flex justify-start">
                 <div className="flex items-end max-w-[85%]">
@@ -139,8 +151,8 @@ export default function ChatBubble() {
                   <div className="px-4 py-3 rounded-2xl rounded-bl-none bg-white dark:bg-neutral-800 border border-gray-200 dark:border-neutral-700">
                     <div className="flex space-x-1">
                       <div className="w-2 h-2 bg-gray-400 rounded-full animate-bounce"></div>
-                      <div className="w-2 h-2 bg-gray-400 rounded-full animate-bounce" style={{animationDelay: '0.2s'}}></div>
-                      <div className="w-2 h-2 bg-gray-400 rounded-full animate-bounce" style={{animationDelay: '0.4s'}}></div>
+                      <div className="w-2 h-2 bg-gray-400 rounded-full animate-bounce" style={{ animationDelay: '0.2s' }}></div>
+                      <div className="w-2 h-2 bg-gray-400 rounded-full animate-bounce" style={{ animationDelay: '0.4s' }}></div>
                     </div>
                   </div>
                 </div>

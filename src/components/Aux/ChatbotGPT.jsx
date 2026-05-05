@@ -7,7 +7,7 @@ const ChatbotGPT = () => {
   const handleUserQuestion = async (msg) => {
     setMessages((prev) => [...prev, { type: "user", text: msg }]);
 
-    const response = await fetch("/.netlify/functions/ask-bot", {
+    const response = await fetch("/api/ask-bot", {
         
       method: "POST",
       body: JSON.stringify({ question: msg }),

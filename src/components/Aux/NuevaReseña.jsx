@@ -30,7 +30,7 @@ export default function NuevaReseña({ onPublicado }) {
       }
     
       try {
-        await axios.post("/.netlify/functions/testimonios", formData, {
+        await axios.post("/api/testimonios", formData, {
           headers: {
             "Content-Type": "multipart/form-data",
           },

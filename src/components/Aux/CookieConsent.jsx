@@ -66,7 +66,7 @@ const CookieConsent = () => {
           setIpLoading(false);
         }
 
-       await axios.post("/.netlify/functions/cookies", userData, {
+       await axios.post("/api/cookies", userData, {
           headers: { 'Content-Type': 'application/json' },
           timeout: 15000
         });

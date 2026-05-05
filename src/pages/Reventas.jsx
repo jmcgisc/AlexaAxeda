@@ -97,7 +97,7 @@ export default function Reventas() {
                   <div className="p-3 rounded-xl" style={{ backgroundColor: `${axedaColor}15` }}>
                     <Building2 style={{ color: axedaColor }} className="w-6 h-6" />
                   </div>
-                  <h2 className="text-2xl font-bold text-gray-900 ">LOTE 2 – BORA 78A</h2>
+                  <h2 className="text-2xl font-bold text-gray-900">LOTE 2 – BORA 78A</h2>
                 </div>
 
                 <div className="space-y-4 mb-8 text-base">
