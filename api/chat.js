@@ -189,6 +189,6 @@ ${contextText}
     return res.status(200).json({ reply });
   } catch (err) {
     console.error("🔥 Error chat.js:", err);
-    return res.status(500).json({ error: "Error procesando mensaje" });
+    return res.status(500).json({ error: "Error procesando mensaje", details: err.message });
   }
 }
